@@ -130,3 +130,7 @@ This companion is part of [doctor-ew/floating-browser](https://github.com/doctor
 Channel scheduling was inspired by [Old Time Radio by Rob Dawson](https://github.com/codebox/old-time-radio). This companion was independently implemented; no radio implementation code was copied. Show names identify their respective series. Media is served by Internet Archive, YouTube, or Tubi, and this project is not affiliated with those services or the listed shows.
 
 To refresh selected reviewed cartoon collections while retaining other records, set `CARTOON_SHOWS` to comma-separated show IDs. For example, `CARTOON_SHOWS=spider-friends,hulk-1982 node scripts/cartoon-discovery.mjs`, then `npm run build:library`. The discovery artifact records which shows were refreshed. A selected collection yielding no episodes leaves the previous artifact unchanged.
+
+## Additional Saturday Morning shows
+
+The reviewed catalog adds Bionic Six, Jayce and the Wheeled Warriors, Pole Position, Turbo Teen, BraveStarr, Defenders of the Earth, Drak Pack, and Dragon’s Lair. Dungeons & Dragons retains 27 episodes. Turbo Teen has 12 complete entries with episode 12 missing; episodes 1–5 and 11 are labeled for non-English audio with English subtitles. BraveStarr currently has 19 reviewed English entries. See [source coverage and validation](../docs/9/SATURDAY-MORNING-EXPANSION.md).

@@ -17,7 +17,7 @@ function fixture() {
 
 test('starter catalog includes the original list, all extras and a separately labeled compilation', () => {
   const c = validateCatalog(createSeed());
-  assert.equal(c.shows.length, 36);
+  assert.equal(c.shows.length, 44);
   for (const title of ['Mighty Orbots', 'Street Hawk', 'The Phoenix', 'SilverHawks', 'V']) assert(c.shows.some(s => s.title === title));
   assert.equal(c.shows.find(s => s.id === 'saturday-simulator').episodes[0].sources[0].availability, 'unverified');
   assert.equal(buildSchedule(c).length, 1);

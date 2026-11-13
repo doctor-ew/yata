@@ -47,3 +47,28 @@ test('Marvel cartoon additions have distinct stories, exclude title cards and me
  assert.equal(installed.shows.find(show => show.id === 'hulk').channel, 'action');
  assert.equal(new Set(spiders.episodes.map(episode => `${episode.season}:${episode.number}`)).size, 24);
 });
+
+test('Saturday Morning expansion preserves known gaps, source order and older libraries', async () => {
+ const packs = await Promise.all(['action', 'cartoon', 'youtube'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
+ const counts = {'bionic-six':65, jayce:65, 'pole-position':13, 'turbo-teen':12, bravestarr:19, 'defenders-earth':65, 'drak-pack':16, 'dragons-lair':13};
+ const seed = createSeed();
+ const old = structuredClone(seed); old.shows = old.shows.filter(show => !(show.id in counts)); old.settings.channel = 'cartoons';
+ for (const show of seed.shows) if (!old.shows.some(existing => existing.id === show.id)) old.shows.push({...show, episodes: []});
+ const rows = discoveryRows(old, packs), installed = mergeLibraryBatch(old, rows).catalog;
+ for (const [id, count] of Object.entries(counts)) {
+  const show = installed.shows.find(show => show.id === id);
+  assert.equal(show.channel, 'cartoons'); assert.equal(show.episodes.length, count, id);
+  assert.ok(show.episodes.every(episode => episode.durationSeconds >= 1000 && episode.durationSeconds <= 1900));
+  assert.equal(new Set(show.episodes.flatMap(episode => episode.sources.map(source => source.url))).size, count);
+ }
+ const get = id => installed.shows.find(show => show.id === id).episodes;
+ assert.deepEqual(get('pole-position').map(e => [e.season, e.number]), Array.from({length:13}, (_,i) => [1,i+1]));
+ assert.deepEqual(get('turbo-teen').map(e => e.number), [1,2,3,4,5,6,7,8,9,10,11,13]);
+ assert.deepEqual(get('turbo-teen').filter(e => /non-English audio/.test(e.title)).map(e => e.number), [1,2,3,4,5,11]);
+ assert.deepEqual(get('drak-pack').map(e => e.number), Array.from({length:16}, (_,i) => i+1));
+ assert.deepEqual([1,2].map(season => get('bionic-six').filter(e => e.season === season).length), [22,43]);
+ assert.equal(get('dungeons-dragons').length,27);
+ assert.equal(installed.settings.channel,'cartoons');
+ assert.equal(mergeLibraryBatch(installed,rows).added,0);
+ assert.ok(buildSchedule(installed,'cartoons').some(slot => slot.show.id === 'dragons-lair'));
+});

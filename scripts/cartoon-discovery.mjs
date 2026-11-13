@@ -18,6 +18,14 @@ const sources = {
   'inspector-gadget': ['inspector-gadget-go-go-gadget-series'],
   'spider-friends': ['spider-man-and-his-amazing-friends_202403'],
   'hulk-1982': ['incredible-hulk-1982-cartoon-series'],
+  'bionic-six': ['bionic-six-complete'],
+  jayce: ['jayce-and-the-wheeled-warriors-e-59'],
+  'pole-position': ['pole-position-complete-series-1984'],
+  'turbo-teen': ['TurboTeenCollection'],
+  bravestarr: ['bravestarr-english'],
+  'defenders-earth': ['defenders-of-the-earth-s-01-'],
+  'drak-pack': ['hanna-barbera-drak-pack-1980-animated-series'],
+  'dragons-lair': ['dragons-lair-complete-series-1984'],
 };
 const notes = {
   'he-man': 'Two English original-series season collections; 65 filename-numbered episodes each. Alternate encodes collapsed.',
@@ -35,6 +43,16 @@ const notes = {
 };
 notes['spider-friends'] = 'Original cartoon collection contains 24 distinct season/episode-numbered stories (13/3/8). Zero-padded and unpadded duplicate filename encodes collapse by season/episode. The other item titled Full Series lacks several stories and was not needed.';
 notes['hulk-1982'] = 'English 1982 animated collection contains 13 filename-numbered stories. The five-second Episode 00 title card is excluded by the runtime filter. Season remains zero because these filenames provide no season.';
+Object.assign(notes, {
+  'bionic-six': 'English collection: explicit season 1 episodes 1–22 and season 2 episodes 1–43.',
+  jayce: 'Collection contains filename-numbered E01–E65. Season zero preserves source sequence without asserting broadcast seasons; source language metadata is absent.',
+  'pole-position': 'English collection uses filenames 101–113; interpreted as season 1 episodes 1–13.',
+  'turbo-teen': 'Twelve complete episodes: 1–11 and 13. Episode 12 exists only as short clips and is excluded. Uploader identifies episodes 1–5 and 11 as non-English audio with English subtitles; those titles are labeled. Season zero denotes source episode numbering.',
+  bravestarr: 'English subset with unnumbered titles. Season zero and stable collection sequence do not establish broadcast order. Duplicate MP4 encodes collapse by title. Other language collections and unmapped whole-disc DVD files are excluded.',
+  'defenders-earth': 'Source collection contains explicit season 1 episodes 1–65; language metadata is absent.',
+  'drak-pack': 'English collection contains source-numbered episodes 1–16. Season zero retains source numbering; alternate collection with conflicting numbering is not merged.',
+  'dragons-lair': 'English original cartoon collection: season 1 episodes 1–13; excludes video game material.',
+});
 const outputUrl = new URL('../data/cartoon-discovery.json', import.meta.url);
 const selected = process.env.CARTOON_SHOWS?.split(',').map(id => id.trim()).filter(Boolean);
 if (selected?.some(id => !Object.hasOwn(sources, id))) throw Error('CARTOON_SHOWS contains an unknown show.');
@@ -66,6 +84,7 @@ async function worker() {
           if (itemId === 'Centurions08DenverIsDown' && !/^Centurions - 0[234] - /.test(filename)) continue;
           if (show.id === 'spider-friends' && !/^Spider-Man and His Amazing Friends Season \d+ Episode \d+/i.test(filename)) continue;
           if (show.id === 'hulk-1982' && !/^Hulk 1982 Episode \d+/i.test(filename)) continue;
+          if (show.id === 'turbo-teen' && !/^E\d+\s/.test(filename)) continue;
           // Exclude DVD menus, clips, movies and feature-length compilations.
           if (/fan[ -]made|Requiem/i.test(filename)) continue;
           if (!episode.durationSeconds || episode.durationSeconds < 1000 || episode.durationSeconds > 1900) continue;
@@ -73,12 +92,20 @@ async function worker() {
           const order = filename.match(/\bSeason\s+(\d+)\s+Episode\s+(\d+)/i) || filename.match(/\bS(\d+)\s*E(\d+)/i) || filename.match(/\b(\d+)x(\d+)\b/i) || filename.match(/^(\d+)-(\d+)\./);
           if (order) { episode.season = Number(order[1]); episode.number = Number(order[2]); }
           else {
-            const number = filename.match(/(?:Episode|Ep\.?)[\s-]*(\d+)/i) || filename.match(/^(\d+)\./) || filename.match(/ - (\d+) - /);
-            if (!number && show.id !== 'centurions') continue;
+            const number = filename.match(/(?:Episode|Ep\.?)[\s-]*(\d+)/i) || filename.match(/\bE(\d+)\b/i) || filename.match(/^(\d+)\./) || filename.match(/ - (\d+) - /);
+            if (!number && !['centurions', 'bravestarr', 'pole-position'].includes(show.id)) continue;
             episode.season = 0;
-            episode.number = number ? Number(number[1]) : 1;
+            episode.number = number ? Number(number[1]) : show.id === 'bravestarr' ? episodes.length + 1 : 1;
             if (itemId === 'gi-joe-2') episode.season = 1;
             if (itemId === 'gi-joe-3') episode.season = 2;
+          }
+          if (show.id === 'pole-position') {
+            const order = filename.match(/^Pole Position (1)(\d{2})\s*-\s*/);
+            if (!order) continue;
+            episode.season = Number(order[1]); episode.number = Number(order[2]);
+          }
+          if (show.id === 'turbo-teen' && [1, 2, 3, 4, 5, 11].includes(episode.number)) {
+            episode.title += ' · non-English audio / English subtitles';
           }
           if (itemId === 'gi-joe-1') {
             const part = filename.match(/^(\d+)-(\d+)\./);

@@ -24,6 +24,14 @@ const cartoons = [
   ['inspector-gadget', 'Inspector Gadget'],
   ['spider-friends', 'Spider-Man and His Amazing Friends'],
   ['hulk-1982', 'The Incredible Hulk (1982 animated)'],
+  ["bionic-six", "Bionic Six"],
+  ["jayce", "Jayce and the Wheeled Warriors"],
+  ["pole-position", "Pole Position"],
+  ["turbo-teen", "Turbo Teen"],
+  ["bravestarr", "BraveStarr"],
+  ["defenders-earth", "Defenders of the Earth"],
+  ["drak-pack", "Drak Pack"],
+  ["dragons-lair", "Dragon’s Lair"],
 ];
 
 export function createSeed() {

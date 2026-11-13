@@ -1,13 +1,13 @@
 {
-  "revision": "expanded-0a3712cd69673706",
+  "revision": "expanded-e68c9a1296454c69",
   "checkedAt": [
     "2026-11-13T18:42:19.392Z",
-    "2026-11-13T20:01:42.662Z",
+    "2026-11-13T20:10:36.444Z",
     "2026-11-13T18:34:49.891Z"
   ],
-  "episodes": 1926,
-  "ready": 1832,
-  "streamSlots": 5122,
+  "episodes": 2194,
+  "ready": 2100,
+  "streamSlots": 6290,
   "shows": [
     {
       "id": "dukes",
@@ -255,6 +255,62 @@
       "sources": 13
     },
     {
+      "id": "bionic-six",
+      "title": "Bionic Six",
+      "episodes": 65,
+      "ready": 65,
+      "sources": 65
+    },
+    {
+      "id": "jayce",
+      "title": "Jayce and the Wheeled Warriors",
+      "episodes": 65,
+      "ready": 65,
+      "sources": 65
+    },
+    {
+      "id": "pole-position",
+      "title": "Pole Position",
+      "episodes": 13,
+      "ready": 13,
+      "sources": 13
+    },
+    {
+      "id": "turbo-teen",
+      "title": "Turbo Teen",
+      "episodes": 12,
+      "ready": 12,
+      "sources": 12
+    },
+    {
+      "id": "bravestarr",
+      "title": "BraveStarr",
+      "episodes": 19,
+      "ready": 19,
+      "sources": 19
+    },
+    {
+      "id": "defenders-earth",
+      "title": "Defenders of the Earth",
+      "episodes": 65,
+      "ready": 65,
+      "sources": 65
+    },
+    {
+      "id": "drak-pack",
+      "title": "Drak Pack",
+      "episodes": 16,
+      "ready": 16,
+      "sources": 16
+    },
+    {
+      "id": "dragons-lair",
+      "title": "Dragon’s Lair",
+      "episodes": 13,
+      "ready": 13,
+      "sources": 13
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -262,6 +318,6 @@
       "sources": 1
     }
   ],
-  "bytes": 728919,
+  "bytes": 823819,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }
