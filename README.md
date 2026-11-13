@@ -40,6 +40,18 @@ Inside a show's episode list, **Edit details / add another source** changes its 
 
 Adjacent episodes with the same multipart group stay together. Mark a supplied item as a bumper/commercial and enable **Include my bumpers** to interleave it. No commercial clips are included by default.
 
+## Seed playlists in bulk
+
+Choose **Seed playlists +** near the bottom of the page. Select a show, paste Archive item or YouTube playlist/video links (one per line), and choose **Discover episodes**. Review and edit the show, title, season, episode number and multipart group for each entry. Uncheck anything unwanted, then choose **Add selected episodes**. Duplicate source URLs are skipped across the catalog; your existing sources and settings are retained.
+
+**Use Transformers collection** fills in the official Hasbro Pulse collection URL and selects The Transformers as the destination. Choose **Discover episodes** to review the videos; the provider can change this collection over time.
+
+**Load cartoon starter pack** stages five official-channel candidates for He-Man, G.I. Joe and Transformers, including all three More Than Meets the Eye parts. It works with an existing saved catalog and does not require clearing browser data. Play each YouTube candidate from its library card to check embedded playback and enter the live rotation. Metadata discovery alone does not establish playback availability.
+
+YouTube discovery requires `yt-dlp` available on the Node server's PATH. It reads metadata with downloads disabled; no API key is required. The server limits discovery to 200 videos per source and one request at a time. Use smaller playlists when a request exceeds the limit or times out. Archive discovery uses public item metadata and needs no additional tool. Archive collection pages are not recursively expanded; paste their individual item links.
+
+If a playlist fails, its error is shown beside the successful discovery count. Review successful entries before approving a partial batch. Closing the dialog saves nothing. Export a catalog copy after seeding to keep a backup.
+
 ## Catalog storage
 
 The catalog and channel settings are saved in this browser's local storage under `drew-tv.catalog.v1`. Guest/private browsing or clearing site data can discard them. **Export catalog** downloads a JSON copy; **Import catalog** validates the complete file before replacing the current catalog. Imports are limited to 2 MB, 100 shows, 5,000 episode items, and 20 sources per episode. Export before removing items or replacing a catalog if you want a restore point.
@@ -69,7 +81,7 @@ npm run check
 
 To repeat the optional real Archive metadata and media range check, run `npm run verify:archive`. It requires network access and does not establish browser decoding.
 
-Tests use Node's built-in test runner and local provider stand-ins. No provider credentials or live playback are required to run them. See [the specification](../docs/1/SPEC.md) and [validation report](../docs/1/VALIDATION.md) in the repository for task scope and observed results.
+Tests use Node's built-in test runner and local provider stand-ins. No provider credentials or live playback are required to run them. Bulk seeding scope and results are in [its specification](../docs/2/SPEC.md) and [validation report](../docs/2/VALIDATION.md). See [the specification](../docs/1/SPEC.md) and [validation report](../docs/1/VALIDATION.md) in the repository for task scope and observed results.
 
 ## Attribution
 

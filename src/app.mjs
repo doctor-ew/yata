@@ -1,3 +1,5 @@
+import { STARTER_PACK } from './starter-pack.mjs';
+import { youtubeEpisodes, mergeBatch } from './bulk.mjs';
 import { CHANNELS, createSeed } from './catalog.mjs';
 import { parseSourceUrl, parseDuration, importArchive, validateCatalog, parseCatalogJson,
   readCatalog, saveCatalog, buildSchedule, schedulePosition, stationSource, timeLabel, MAX_IMPORT_BYTES } from './domain.mjs';
@@ -358,3 +360,84 @@ render();
 if (loaded.error) notify(loaded.error);
 setInterval(renderGuide, 15000);
 window.addEventListener('pagehide', () => session?.dispose());
+
+let batchRows = [];
+$('bulk-open').addEventListener('click', () => {
+  $('bulk-show').replaceChildren(...catalog.shows.map(show => { const option = element('option', show.title); option.value = show.id; return option; }));
+  $('bulk-show').value = selectedShowId;
+  $('bulk-dialog').showModal();
+});
+$('bulk-close').addEventListener('click', () => $('bulk-dialog').close());
+$('bulk-discover').addEventListener('click', async () => {
+  const links = $('bulk-links').value.split(/\n/).map(s => s.trim()).filter(Boolean);
+  if (!links.length || links.length > 10) { $('bulk-status').textContent = 'Enter 1–10 source links.'; return; }
+  const showId = $('bulk-show').value;
+  $('bulk-discover').disabled = true; $('bulk-starter').disabled = true; $('bulk-transformers').disabled = true; $('bulk-close').disabled = true; $('bulk-approve').hidden = true;
+  $('bulk-preview').replaceChildren(); batchRows = [];
+  const errors = [];
+  try {
+    for (const [index, raw] of links.entries()) {
+      $('bulk-status').textContent = `Discovering source ${index + 1} of ${links.length}…`;
+      try {
+        const parsed = parseSourceUrl(raw);
+        let episodes;
+        if (parsed.provider === 'archive' && parsed.kind === 'item') episodes = await importArchive(raw);
+        else if (parsed.provider === 'youtube') {
+          const response = await fetch(`/api/youtube?url=${encodeURIComponent(parsed.url)}`);
+          const data = await response.json();
+          if (!response.ok) throw Error(data.error || 'YouTube discovery failed.');
+          episodes = data.episodes;
+        } else throw Error('Bulk discovery supports Archive item and YouTube links. Add Tubi links individually.');
+        if (batchRows.length + episodes.length > 1000) throw Error('This batch exceeds 1,000 episodes. Use smaller batches.');
+        batchRows.push(...episodes.map(episode => ({ selected: true, showId, episode })));
+      } catch (error) { errors.push(`Source ${index + 1}: ${error.message}`); }
+    }
+    renderBatch();
+    $('bulk-status').textContent = `${batchRows.length} episodes ready to review. Duplicate URLs are skipped on approval. ${errors.join(' ')}`;
+    $('bulk-approve').hidden = !batchRows.length;
+  } finally { $('bulk-discover').disabled = false; $('bulk-starter').disabled = false; $('bulk-transformers').disabled = false; $('bulk-close').disabled = false; }
+});
+$('bulk-approve').addEventListener('click', () => {
+  try {
+    const result = mergeBatch(catalog, batchRows);
+    if (!commit(result.catalog)) return;
+    batchRows = []; $('bulk-preview').replaceChildren(); $('bulk-approve').hidden = true;
+    $('bulk-status').textContent = `Added ${result.added} ${result.added === 1 ? 'episode' : 'episodes'}; skipped ${result.skipped} duplicates.`;
+    render();
+  } catch (error) { $('bulk-status').textContent = error.message; }
+});
+
+function renderBatch() {
+  $('bulk-preview').replaceChildren();
+    for (const row of batchRows) {
+      const box = element('fieldset', null, 'bulk-row');
+      const include = element('input'); include.type = 'checkbox'; include.checked = row.selected;
+      const label = element('label', 'Include episode'); label.prepend(include); box.append(label);
+      include.addEventListener('change', () => { row.selected = include.checked; });
+      const select = element('select'); select.setAttribute('aria-label', 'Episode show');
+      for (const show of catalog.shows) { const o = element('option', show.title); o.value = show.id; select.append(o); }
+      select.value = row.showId; select.addEventListener('change', () => { row.showId = select.value; }); box.append(select);
+      for (const [key, caption, type] of [['title','Title','text'], ['season','Season','number'], ['number','Episode','number'], ['group','Multipart group','text']]) {
+        const field = element('label', caption), input = element('input'); input.type = type; input.value = row.episode[key];
+        if (type === 'number') { input.min = '0'; input.step = '1'; }
+        input.addEventListener('input', () => { row.episode[key] = type === 'number' ? Number(input.value) : input.value; });
+        field.append(input); box.append(field);
+      }
+      box.append(element('p', `${row.episode.durationSeconds ? timeLabel(row.episode.durationSeconds) : 'Runtime unknown'} · ${row.episode.sources[0].provider === 'youtube' ? 'Needs playback check before live rotation' : 'Archive metadata checked'}`, 'muted'), link('Original source ↗', row.episode.sources[0].url));
+      $('bulk-preview').append(box);
+    }
+
+}
+$('bulk-starter').addEventListener('click', () => {
+  batchRows = STARTER_PACK.map(item => {
+    const episode = youtubeEpisodes(item)[0];
+    return { selected: true, showId: item.showId, episode };
+  });
+  renderBatch(); $('bulk-approve').hidden = false;
+  $('bulk-status').textContent = 'Five official-channel episode candidates. Review titles and order before adding. YouTube playback still needs checking; season 0 means unknown.';
+});
+$('bulk-transformers').addEventListener('click', () => {
+  $('bulk-show').value = 'transformers';
+  $('bulk-links').value = 'https://www.youtube.com/playlist?list=PLD3dCMp2WHixUHTv2TETDETzoB148KoPy';
+  $('bulk-status').textContent = 'Official Hasbro Pulse collection selected. Choose Discover episodes, then review episode order before adding.';
+});

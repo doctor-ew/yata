@@ -1127,3 +1127,7 @@ form label {
     transition:none!important
   }
 }
+
+#bulk-dialog { width: min(900px, 94vw); }
+#bulk-links { width: 100%; background: #17131f; color: inherit; border: 1px solid #51465e; border-radius: 8px; padding: 12px; }
+.bulk-row { border: 1px solid #51465e; border-radius: 12px; padding: 16px; margin: 16px 0; display: grid; gap: 10px; }
