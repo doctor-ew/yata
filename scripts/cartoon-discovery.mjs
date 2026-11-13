@@ -26,6 +26,22 @@ const sources = {
   'defenders-earth': ['defenders-of-the-earth-s-01-'],
   'drak-pack': ['hanna-barbera-drak-pack-1980-animated-series'],
   'dragons-lair': ['dragons-lair-complete-series-1984'],
+  'speed-buggy': ['speed_buggy_Lando18'],
+  'captain-caveman': ['captain-caveman-and-the-teen-angels_202608'],
+  'hong-kong-phooey': ['hong-kong-phooey-s-01-e-08-mirror-mirror-on-the-wall-great-movie-mystery'],
+  dynomutt: ['dynomutt-dog-wonder_202608'],
+  'yogi-bear': ['68-yogis-birthday-party_202109'],
+  'galaxy-rangers': ['adventures-of-the-galaxy-rangers-complete-series-1986'],
+  visionaries: ['visionaries-knights-of-the-magical-light-s-01-e-13-dawn-of-the-sun-imps'],
+  'space-ghost': ['space-ghost-and-dino-boy-complete-series-dvdrip-dolby-digital'],
+  galtar: ['Galtar'],
+  herculoids: ['the-herculoids_202509'],
+  birdman: ['birdman-and-the-galaxy-trio'],
+  'jonny-quest': ['jonny-quest-e-07-calcutta-adventure'],
+  'super-friends': ['super-friends-1973-season-1'],
+  flintstones: ['the-flintstones-s-06-e-01-no-biz-like-show-biz'],
+  jetsons: ['the.-jetsons'],
+  'wacky-races': ['WackyR'],
 };
 const notes = {
   'he-man': 'Two English original-series season collections; 65 filename-numbered episodes each. Alternate encodes collapsed.',
@@ -53,6 +69,33 @@ Object.assign(notes, {
   'drak-pack': 'English collection contains source-numbered episodes 1–16. Season zero retains source numbering; alternate collection with conflicting numbering is not merged.',
   'dragons-lair': 'English original cartoon collection: season 1 episodes 1–13; excludes video game material.',
 });
+Object.assign(notes, {
+  'speed-buggy': 'English collection contains 16 explicitly E-numbered episodes. Season zero denotes the source sequence.',
+  'captain-caveman': 'Reviewed collection contains 16 E-numbered original cartoon segments of approximately 11 minutes. Season zero denotes source sequence. Language metadata is absent; this is a partial collection.',
+  'hong-kong-phooey': 'Collection contains 16 season/episode-numbered bundles of cartoon stories. Keep each bundle intact; bonus featurettes are excluded. Language metadata is absent.',
+  dynomutt: 'Collection has explicit S1 E01–E16 and S2 E01–E04 numbering. Four alternate Blue Falcon filename aliases and derivative MP4 duplicates collapse by explicit season/episode. Language metadata is absent.',
+  'yogi-bear': 'Original short collection contains numbered items 1–68, generally seven minutes; the birthday story is longer. Season zero denotes collection order rather than broadcast seasons. Language metadata is absent.',
+});
+Object.assign(notes, {
+  'galaxy-rangers': 'English collection contains 65 Ep.-numbered episodes. Season zero preserves explicit source sequence without asserting broadcast seasons.',
+  visionaries: 'English collection contains 13 explicitly numbered season 1 episodes.',
+  'space-ghost': 'Twenty bundled programs, each containing three shorts: 18 season 1 bundles and two season 2 bundles. Preserve all three source segment numbers in the title; the first number sorts each intact bundle. The feature-length Alex Toth documentary is excluded. Language metadata is absent.',
+  galtar: 'Collection contains 21 explicit season 1 stories; derivative MP4 duplicates collapse. Language metadata is absent.',
+  herculoids: 'English collection contains 18 numbered programs, each bundling two stories. Preserve each intact pair; season zero denotes the collection sequence.',
+});
+Object.assign(notes, {
+  birdman: 'English collection: 20 season 1 bundled programs, each preserving its Birdman and Galaxy Trio stories.',
+  'jonny-quest': 'Original 1964 series collection: 26 E-numbered episodes. Season zero preserves explicit collection sequence. Language metadata is absent.',
+  'super-friends': 'Original 1973 series: 16 S1 EP-numbered programs of approximately 45 minutes. Language metadata is absent.',
+  flintstones: 'Reviewed subset: 26 season 6 episodes only. Earlier seasons are not included in this release. Language metadata is absent.',
+  jetsons: 'Original series season 1: 24 explicitly numbered stories. Derivative MP4 duplicates collapse. Language metadata is absent.',
+  'wacky-races': 'Original 1968 collection contains 17 explicitly numbered season 1 paired-story programs. Preserve complete source paths. Language metadata is absent.',
+});
+const runtimeBounds = {
+  'captain-caveman': [600, 900],
+  'super-friends': [2500, 2900],
+  'yogi-bear': [350, 1900],
+};
 const outputUrl = new URL('../data/cartoon-discovery.json', import.meta.url);
 const selected = process.env.CARTOON_SHOWS?.split(',').map(id => id.trim()).filter(Boolean);
 if (selected?.some(id => !Object.hasOwn(sources, id))) throw Error('CARTOON_SHOWS contains an unknown show.');
@@ -87,12 +130,13 @@ async function worker() {
           if (show.id === 'turbo-teen' && !/^E\d+\s/.test(filename)) continue;
           // Exclude DVD menus, clips, movies and feature-length compilations.
           if (/fan[ -]made|Requiem/i.test(filename)) continue;
-          if (!episode.durationSeconds || episode.durationSeconds < 1000 || episode.durationSeconds > 1900) continue;
+          const [minimum, maximum] = runtimeBounds[show.id] || [1000, 1900];
+          if (!episode.durationSeconds || episode.durationSeconds < minimum || episode.durationSeconds > maximum) continue;
           episode.title = filename;
-          const order = filename.match(/\bSeason\s+(\d+)\s+Episode\s+(\d+)/i) || filename.match(/\bS(\d+)\s*E(\d+)/i) || filename.match(/\b(\d+)x(\d+)\b/i) || filename.match(/^(\d+)-(\d+)\./);
+          const order = filename.match(/\bSeason\s+(\d+)\s+Episode\s+(\d+)/i) || filename.match(/\bS(\d+)\s*E(?:P)?(\d+)/i) || filename.match(/\b(\d+)x(\d+)\b/i) || filename.match(/^(\d+)-(\d+)\./);
           if (order) { episode.season = Number(order[1]); episode.number = Number(order[2]); }
           else {
-            const number = filename.match(/(?:Episode|Ep\.?)[\s-]*(\d+)/i) || filename.match(/\bE(\d+)\b/i) || filename.match(/^(\d+)\./) || filename.match(/ - (\d+) - /);
+            const number = filename.match(/(?:Episode|Ep\.?)[\s-]*(\d+)/i) || filename.match(/\bE(\d+)\b/i) || filename.match(/^(\d+)\./) || (show.id === 'yogi-bear' ? filename.match(/^(\d+)\s/) : null) || (show.id === 'herculoids' ? filename.match(/^The Herculoids (\d+) -/) : null) || filename.match(/ - (\d+) - /);
             if (!number && !['centurions', 'bravestarr', 'pole-position'].includes(show.id)) continue;
             episode.season = 0;
             episode.number = number ? Number(number[1]) : show.id === 'bravestarr' ? episodes.length + 1 : 1;
@@ -104,6 +148,8 @@ async function worker() {
             if (!order) continue;
             episode.season = Number(order[1]); episode.number = Number(order[2]);
           }
+          if (show.id === 'space-ghost') episode.title += ' · three-story bundle';
+          if (show.id === 'herculoids') episode.title += ' · two-story bundle';
           if (show.id === 'turbo-teen' && [1, 2, 3, 4, 5, 11].includes(episode.number)) {
             episode.title += ' · non-English audio / English subtitles';
           }

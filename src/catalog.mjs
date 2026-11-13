@@ -32,6 +32,22 @@ const cartoons = [
   ["defenders-earth", "Defenders of the Earth"],
   ["drak-pack", "Drak Pack"],
   ["dragons-lair", "Dragon’s Lair"],
+  ["galaxy-rangers", "The Adventures of the Galaxy Rangers"],
+  ["visionaries", "Visionaries: Knights of the Magical Light"],
+  ["space-ghost", "Space Ghost and Dino Boy"],
+  ["herculoids", "The Herculoids"],
+  ["galtar", "Galtar and the Golden Lance"],
+  ["speed-buggy", "Speed Buggy"],
+  ["captain-caveman", "Captain Caveman and the Teen Angels"],
+  ["hong-kong-phooey", "Hong Kong Phooey"],
+  ["dynomutt", "Dynomutt, Dog Wonder"],
+  ["yogi-bear", "Yogi Bear (original shorts)"],
+  ["birdman", "Birdman and the Galaxy Trio"],
+  ["jonny-quest", "Jonny Quest (1964)"],
+  ["super-friends", "Super Friends (1973)"],
+  ["flintstones", "The Flintstones"],
+  ["jetsons", "The Jetsons"],
+  ["wacky-races", "Wacky Races (1968)"],
 ];
 
 export function createSeed() {

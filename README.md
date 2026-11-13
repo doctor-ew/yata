@@ -134,3 +134,7 @@ To refresh selected reviewed cartoon collections while retaining other records, 
 ## Additional Saturday Morning shows
 
 The reviewed catalog adds Bionic Six, Jayce and the Wheeled Warriors, Pole Position, Turbo Teen, BraveStarr, Defenders of the Earth, Drak Pack, and Dragon’s Lair. Dungeons & Dragons retains 27 episodes. Turbo Teen has 12 complete entries with episode 12 missing; episodes 1–5 and 11 are labeled for non-English audio with English subtitles. BraveStarr currently has 19 reviewed English entries. See [source coverage and validation](../docs/9/SATURDAY-MORNING-EXPANSION.md).
+
+## Hanna-Barbera and adventure cartoons
+
+The next reviewed expansion adds 402 items across 16 shows, including original Yogi Bear shorts, Space Ghost and Dino Boy bundles, The Herculoids, Jonny Quest, Birdman, Super Friends, The Jetsons, Wacky Races, Speed Buggy, Hong Kong Phooey, Dynomutt, Captain Caveman, a season-six Flintstones subset, Galaxy Rangers, Visionaries, and Galtar. Short segments and longer programs retain their source runtimes. This is a partial Hanna-Barbera collection; see [coverage, source language limits and validation](../docs/10/HANNA-BARBERA.md).

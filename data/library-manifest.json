@@ -1,13 +1,13 @@
 {
-  "revision": "expanded-e68c9a1296454c69",
+  "revision": "expanded-0663df382e0473de",
   "checkedAt": [
     "2026-11-13T18:42:19.392Z",
-    "2026-11-13T20:10:36.444Z",
+    "2026-11-13T20:15:22.975Z",
     "2026-11-13T18:34:49.891Z"
   ],
-  "episodes": 2194,
-  "ready": 2100,
-  "streamSlots": 6290,
+  "episodes": 2596,
+  "ready": 2502,
+  "streamSlots": 8626,
   "shows": [
     {
       "id": "dukes",
@@ -311,6 +311,118 @@
       "sources": 13
     },
     {
+      "id": "galaxy-rangers",
+      "title": "The Adventures of the Galaxy Rangers",
+      "episodes": 65,
+      "ready": 65,
+      "sources": 65
+    },
+    {
+      "id": "visionaries",
+      "title": "Visionaries: Knights of the Magical Light",
+      "episodes": 13,
+      "ready": 13,
+      "sources": 13
+    },
+    {
+      "id": "space-ghost",
+      "title": "Space Ghost and Dino Boy",
+      "episodes": 20,
+      "ready": 20,
+      "sources": 20
+    },
+    {
+      "id": "herculoids",
+      "title": "The Herculoids",
+      "episodes": 18,
+      "ready": 18,
+      "sources": 18
+    },
+    {
+      "id": "galtar",
+      "title": "Galtar and the Golden Lance",
+      "episodes": 21,
+      "ready": 21,
+      "sources": 21
+    },
+    {
+      "id": "speed-buggy",
+      "title": "Speed Buggy",
+      "episodes": 16,
+      "ready": 16,
+      "sources": 16
+    },
+    {
+      "id": "captain-caveman",
+      "title": "Captain Caveman and the Teen Angels",
+      "episodes": 16,
+      "ready": 16,
+      "sources": 16
+    },
+    {
+      "id": "hong-kong-phooey",
+      "title": "Hong Kong Phooey",
+      "episodes": 16,
+      "ready": 16,
+      "sources": 16
+    },
+    {
+      "id": "dynomutt",
+      "title": "Dynomutt, Dog Wonder",
+      "episodes": 20,
+      "ready": 20,
+      "sources": 20
+    },
+    {
+      "id": "yogi-bear",
+      "title": "Yogi Bear (original shorts)",
+      "episodes": 68,
+      "ready": 68,
+      "sources": 68
+    },
+    {
+      "id": "birdman",
+      "title": "Birdman and the Galaxy Trio",
+      "episodes": 20,
+      "ready": 20,
+      "sources": 20
+    },
+    {
+      "id": "jonny-quest",
+      "title": "Jonny Quest (1964)",
+      "episodes": 26,
+      "ready": 26,
+      "sources": 26
+    },
+    {
+      "id": "super-friends",
+      "title": "Super Friends (1973)",
+      "episodes": 16,
+      "ready": 16,
+      "sources": 16
+    },
+    {
+      "id": "flintstones",
+      "title": "The Flintstones",
+      "episodes": 26,
+      "ready": 26,
+      "sources": 26
+    },
+    {
+      "id": "jetsons",
+      "title": "The Jetsons",
+      "episodes": 24,
+      "ready": 24,
+      "sources": 24
+    },
+    {
+      "id": "wacky-races",
+      "title": "Wacky Races (1968)",
+      "episodes": 17,
+      "ready": 17,
+      "sources": 17
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -318,6 +430,6 @@
       "sources": 1
     }
   ],
-  "bytes": 823819,
+  "bytes": 981617,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

@@ -72,3 +72,29 @@ test('Saturday Morning expansion preserves known gaps, source order and older li
  assert.equal(mergeLibraryBatch(installed,rows).added,0);
  assert.ok(buildSchedule(installed,'cartoons').some(slot => slot.show.id === 'dragons-lair'));
 });
+
+test('Hanna-Barbera expansion preserves shorts, long programs and intact story bundles', async () => {
+ const packs = await Promise.all(['action', 'cartoon', 'youtube'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
+ const counts = {'galaxy-rangers':65, visionaries:13, 'space-ghost':20, herculoids:18, galtar:21, 'speed-buggy':16, 'captain-caveman':16, 'hong-kong-phooey':16, dynomutt:20, 'yogi-bear':68, birdman:20, 'jonny-quest':26, 'super-friends':16, flintstones:26, jetsons:24, 'wacky-races':17};
+ const seed = createSeed(), old = structuredClone(seed);
+ old.shows = old.shows.filter(show => !(show.id in counts)); old.settings.channel = 'cartoons';
+ for (const show of seed.shows) if (!old.shows.some(existing => existing.id === show.id)) old.shows.push({...show,episodes:[]});
+ const rows = discoveryRows(old,packs), installed = mergeLibraryBatch(old,rows).catalog;
+ const get = id => installed.shows.find(show => show.id === id).episodes;
+ const scheduled = new Set(buildSchedule(installed,'cartoons').map(slot => slot.episode.id));
+ for (const [id,count] of Object.entries(counts)) {
+  assert.equal(get(id).length,count,id);
+  assert.ok(get(id).every(e => scheduled.has(e.id)),id);
+  assert.equal(new Set(get(id).map(e => `${e.season}:${e.number}`)).size,count,id);
+ }
+ assert.ok(get('captain-caveman').every(e => e.durationSeconds >= 600 && e.durationSeconds <= 900));
+ assert.equal(get('yogi-bear').filter(e => e.durationSeconds < 600).length,67);
+ assert.ok(get('super-friends').every(e => e.durationSeconds >= 2500 && e.durationSeconds <= 2900));
+ assert.ok(get('space-ghost').every(e => /three-story bundle/.test(e.title) && e.durationSeconds < 1900 && e.season > 0));
+ assert.ok(get('herculoids').every(e => /two-story bundle/.test(e.title)));
+ assert.ok(get('flintstones').every(e => e.season === 6));
+ assert.deepEqual(get('jetsons').map(e => e.number),Array.from({length:24},(_,i) => i+1));
+ assert.deepEqual([1,2].map(season => get('dynomutt').filter(e => e.season === season).length),[16,4]);
+ assert.equal(mergeLibraryBatch(installed,rows).added,0);
+ assert.equal(installed.settings.channel,'cartoons');
+});
