@@ -26,7 +26,8 @@ const manifest = {
   revision: `expanded-${createHash('sha256').update(texts.join('\n')).digest('hex').slice(0, 16)}`,
   checkedAt: packs.map(pack => pack.checkedAt).filter(Boolean),
   episodes: shows.reduce((count, show) => count + show.episodes, 0),
-  ready: buildSchedule(result.catalog).length,
+  ready: shows.reduce((count, show) => count + show.ready, 0),
+  streamSlots: buildSchedule(result.catalog).length,
   shows, bytes: Buffer.byteLength(serialized),
   note: 'A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played.',
 };

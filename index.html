@@ -20,6 +20,13 @@
     <section id="watch" aria-labelledby="station-heading">
       <div class="intro"><div><p class="eyebrow">WELCOME BACK TO YOUR LIVING ROOM</p><h1 id="station-heading">Nothing to scroll.<br><em>Something good on.</em></h1></div><p class="intro-note">The heroes. The theme songs.<br>The Saturday mornings that lasted forever.<br><strong>Your own little cable network.</strong></p></div>
       <div id="channels" class="channels" role="group" aria-label="Choose a channel"></div>
+      <section class="stream-controls" aria-label="Stream settings">
+        <label>Rotation<select id="stream-rotation"><option value="random">Random shows &amp; episodes</option><option value="ordered">Episodes in order</option></select></label>
+        <label>Stream<select id="stream-show"><option value="">Any show in this channel</option></select></label>
+        <label>Stories per show turn<select id="stream-run"><option value="1">1 story</option><option value="2">2 stories</option><option value="3">3 stories</option></select></label>
+        <button id="stream-reshuffle" class="button">↻ New mix &amp; play</button>
+        <p id="stream-description">Random episodes from random shows. Multipart stories stay together.</p>
+      </section>
       <div class="watch-layout">
         <div class="screen-column">
           <div class="screen-top"><span id="channel-label">CH 01 · DREW TV</span><span id="playback-state">READY TO TUNE</span></div>
@@ -55,7 +62,7 @@
     <section class="collection-tools" aria-labelledby="collection-heading"><div><h2 id="collection-heading">Make yourself at home.</h2><p>Your catalog stays in this browser. Export a copy to keep it or move it to another device.</p></div><div class="tool-actions"><button id="seed-all" class="button primary">Fill all shows</button><button id="bulk-open" class="button small">Seed playlists +</button><button id="export-catalog" class="button small">Export catalog ↓</button><label class="button small import-button" for="import-catalog">Import catalog ↑<input id="import-catalog" type="file" accept="application/json,.json"></label><label class="bumper-setting"><input id="bumpers" type="checkbox"> Include my bumpers</label></div></section>
   </main>
   <footer><a class="footer-brand" href="#watch">DREW TV</a><span>A little less now. A little more then.</span><a href="README.md" target="_blank" rel="noopener">About &amp; source guide ↗</a></footer>
-  <dialog id="show-dialog" aria-labelledby="show-title"><div class="dialog-top"><p class="eyebrow">IN YOUR COLLECTION</p><button class="icon-button" id="close-show" aria-label="Close show details">×</button></div><h2 id="show-title"></h2><div id="show-episodes"></div><div class="dialog-actions"><button id="show-add" class="button primary">+ Add an episode source</button><a id="show-imdb" target="_blank" rel="noopener noreferrer" hidden>IMDb reference ↗</a></div></dialog>
+  <dialog id="show-dialog" aria-labelledby="show-title"><div class="dialog-top"><p class="eyebrow">IN YOUR COLLECTION</p><button class="icon-button" id="close-show" aria-label="Close show details">×</button></div><h2 id="show-title"></h2><div id="show-episodes"></div><div class="dialog-actions"><button id="show-shuffle" class="button primary">▶ Shuffle this show</button><button id="show-add" class="button primary">+ Add an episode source</button><a id="show-imdb" target="_blank" rel="noopener noreferrer" hidden>IMDb reference ↗</a></div></dialog>
   <dialog id="source-dialog" aria-labelledby="source-heading"><div class="dialog-top"><p class="eyebrow">BUILD YOUR CHANNEL</p><button class="icon-button" id="close-source" aria-label="Close source editor">×</button></div><h2 id="source-heading">Bring your favorites.</h2><p class="muted">Add an Archive item, a YouTube video or playlist, or a Tubi watch link. Unchecked sources stay out of the live rotation.</p>
     <form id="source-form">
       <label>Show<select id="source-show" required></select></label>

@@ -9,7 +9,7 @@ function episode(id, number, durationSeconds = 10, group = '') {
     sources: [{ id: `${id}-source`, provider: 'youtube', availability: 'verified', url: 'https://www.youtube.com/watch?v=RmycafPZFl8' }] };
 }
 function fixture() {
-  return { version: 1, epoch: 1000, settings: { channel: 'mixed', bumpers: false }, shows: [
+  return { version: 1, epoch: 1000, settings: { channel: 'mixed', bumpers: false, rotation: 'ordered', shuffleSeed: 1984, storiesPerTurn: 1, streamShow: null }, shows: [
     { id: 'a', title: 'A', channel: 'action', imdbUrl: null, episodes: [episode('a2', 2), episode('a1', 1)] },
     { id: 'b', title: 'B', channel: 'cartoons', imdbUrl: null, episodes: [episode('b1', 1), episode('b2', 2)] },
   ] };

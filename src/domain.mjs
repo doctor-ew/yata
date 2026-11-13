@@ -1,3 +1,4 @@
+import { randomRotation } from './shuffle.mjs';
 export const STORAGE_KEY = 'drew-tv.catalog.v1';
 export const MAX_IMPORT_BYTES = 2_000_000;
 const ID = /^[\w.-]{1,160}$/;
@@ -110,6 +111,14 @@ export function validateCatalog(raw) {
   if (!raw || raw.version !== 1 || !Array.isArray(raw.shows) || raw.shows.length > 100 || !raw.shows.length) fail('Expected a version-1 Drew TV catalog with 1–100 shows.');
   if (!Number.isFinite(raw.epoch) || raw.epoch < 0) fail('Invalid station start time.');
   if (!raw.settings || !['mixed', 'action', 'cartoons'].includes(raw.settings.channel) || typeof raw.settings.bumpers !== 'boolean') fail('Invalid station settings.');
+  const rotation = raw.settings.rotation ?? 'random';
+  const shuffleSeed = raw.settings.shuffleSeed ?? 1984;
+  const storiesPerTurn = raw.settings.storiesPerTurn ?? 1;
+  const streamShow = raw.settings.streamShow ?? null;
+  if (!['random', 'ordered'].includes(rotation)) fail('Choose random or ordered rotation.');
+  if (!Number.isInteger(shuffleSeed) || shuffleSeed < 0 || shuffleSeed > 4294967295) fail('Invalid shuffle seed.');
+  if (![1, 2, 3].includes(storiesPerTurn)) fail('Choose 1, 2 or 3 stories per show turn.');
+  if (streamShow !== null) id(streamShow);
   const showIds = new Set(), episodeIds = new Set();
   let count = 0;
   const shows = raw.shows.map(s => {
@@ -145,7 +154,8 @@ export function validateCatalog(raw) {
     });
     return { id: sid, title: text(s.title, 'show title'), channel: s.channel, imdbUrl, episodes };
   });
-  return { version: 1, epoch: raw.epoch, shows, settings: { channel: raw.settings.channel, bumpers: raw.settings.bumpers } };
+  if (streamShow !== null && !shows.some(show => show.id === streamShow && (raw.settings.channel === 'mixed' || show.channel === raw.settings.channel))) fail('The selected stream show is not in this channel.');
+  return { version: 1, epoch: raw.epoch, shows, settings: { channel: raw.settings.channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, streamShow } };
 }
 
 export function parseCatalogJson(input) {
@@ -172,12 +182,13 @@ export function stationSource(episode) {
 }
 
 export function buildSchedule(catalog, channel = catalog.settings.channel) {
-  const shows = catalog.shows.filter(s => channel === 'mixed' || s.channel === channel);
+  const shows = catalog.shows.filter(s => (channel === 'mixed' || s.channel === channel) && (!catalog.settings.streamShow || s.id === catalog.settings.streamShow));
   const eligible = e => parseDuration(e.durationSeconds) !== null && stationSource(e);
   const entries = s => s.episodes.filter(eligible).sort((a, b) => a.season - b.season || a.number - b.number)
     .map(episode => ({ show: s, episode, source: stationSource(episode), duration: episode.durationSeconds }));
   const queues = shows.map(s => entries(s).filter(e => e.episode.kind === 'episode'));
   const bumpers = shows.flatMap(s => entries(s).filter(e => e.episode.kind === 'bumper'));
+  if ((catalog.settings.rotation ?? 'random') === 'random') return randomRotation(queues, bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShow || 'all'}`, storiesPerTurn: catalog.settings.storiesPerTurn ?? 1, includeBumpers: catalog.settings.bumpers });
   const result = [];
   let bumperIndex = 0;
   while (queues.some(q => q.length)) {

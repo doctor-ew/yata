@@ -14,7 +14,7 @@ test('shipped library covers every requested show, fits storage and repeats with
  assert.ok(parsed.shows.filter(show => show.id !== 'saturday-simulator').every(show => show.episodes.length > 0));
  const manifest = JSON.parse(await readFile(new URL('library-manifest.json', data), 'utf8'));
  assert.equal(parsed.shows.reduce((n, show) => n + show.episodes.length, 0), manifest.episodes);
- assert.equal(buildSchedule(parsed).length, manifest.ready);
+ assert.equal(new Set(buildSchedule(parsed).map(entry => entry.episode.id)).size, manifest.ready);
  assert.ok(Buffer.byteLength(json) < 2_000_000);
  const again = mergeLibraryBatch(parsed, rows);
  assert.equal(again.added, 0); assert.equal(again.alternatives, 0);

@@ -21,7 +21,12 @@ export function adjacentPlayback(catalog, active, direction) {
   const queue = playbackQueue(catalog, active);
   const position = active?.queuePosition;
   const matches = index => queue[index]?.episode.id === active?.episodeId && (!position || queue[(index - 1 + queue.length) % queue.length]?.episode.id === position.previousId);
-  const index = position && Number.isInteger(position.index) && matches(position.index) ? position.index : queue.findIndex((entry, index) => matches(index));
+  let index = position && Number.isInteger(position.index) && matches(position.index) ? position.index : queue.findIndex((entry, index) => matches(index));
+  if (index < 0 && active) {
+    // Catalog edits can change the predecessor; retain the nearest current occurrence.
+    const candidates = queue.map((entry, index) => entry.episode.id === active.episodeId ? index : -1).filter(index => index >= 0);
+    if (candidates.length) index = candidates.reduce((best, candidate) => Math.abs(candidate - (position?.index ?? 0)) < Math.abs(best - (position?.index ?? 0)) ? candidate : best);
+  }
   if (index < 0 || ![-1, 1].includes(direction) || !queue.length) return null;
   const next = index + direction;
   if (active.queueMode !== 'station' && (next < 0 || next >= queue.length)) return null;

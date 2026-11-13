@@ -80,7 +80,7 @@ test('station previous/next retains repeated bumper occurrence instead of loopin
  catalog.shows.forEach(s => { s.episodes = []; });
  show.episodes = [1, 2, 3].map(number => ({ ...structuredClone(original), id: `episode-${number}`, number }));
  show.episodes.push({ ...structuredClone(original), id: 'bumper', kind: 'bumper', durationSeconds: 15 });
- catalog.settings.bumpers = true;
+ catalog.settings.bumpers = true; catalog.settings.rotation = 'ordered';
  let active = { showId: show.id, episodeId: 'episode-1', queueMode: 'station' };
  const visited = [];
  for (let i = 0; i < 6; i++) {
@@ -91,4 +91,12 @@ test('station previous/next retains repeated bumper occurrence instead of loopin
  const previous = adjacentPlayback(catalog, active, -1);
  assert.equal(previous.queuePosition.index, 5);
  assert.equal(adjacentPlayback(catalog, { ...active, episodeId: previous.episode.id, queuePosition: previous.queuePosition }, -1).episode.id, 'episode-3');
+});
+
+test('queue navigation recovers after a catalog edit changes the predecessor', () => {
+ const catalog = createSeed(), show = catalog.shows.find(s => s.id === 'dukes'), base = show.episodes[0];
+ show.episodes = [1, 3].map(number => ({ ...structuredClone(base), id: `entry-${number}`, number }));
+ const active = { showId: show.id, episodeId: 'entry-3', queueMode: 'show', queuePosition: { index: 1, previousId: 'entry-1' } };
+ show.episodes.push({ ...structuredClone(base), id: 'entry-2', number: 2 });
+ assert.equal(adjacentPlayback(catalog, active, -1).episode.id, 'entry-2');
 });

@@ -23,6 +23,16 @@ Open the printed address: <http://127.0.0.1:4173>. Keep the terminal running. Pr
 
 The preview started during this session runs independently of the chat terminal through the per-user macOS job `com.drew-tv.local-preview`. To stop that preview before starting a manual server on the same port, run `launchctl remove com.drew-tv.local-preview`.
 
+## Random continuous streams
+
+The three channel buttons are random streams by default: **Saturday Morning** mixes the checked cartoon shows, **Action Adventure** mixes action shows, and **Drew TV** mixes everything. Choose a channel and **Tune in live**, or use **New mix & play** for a fresh shuffle starting now.
+
+For random episodes of one show, choose it in the **Stream** selector or open its library card and select **Shuffle this show**. Clear that selector back to **Any show** to mix the genre again. **Stories per show turn** chooses 1–3 before switching shows. Multipart stories stay together; smaller libraries keep receiving a turn instead of disappearing after their episode pool is exhausted.
+
+Rotation, selected show, shuffle seed and story count are saved with the catalog. The same catalog/settings produce the same schedule, so refreshing preserves the station clock and lineup. Press Play to rejoin after a refresh. **New mix & play** deliberately changes the seed and resets the clock. Choose **Episodes in order** to retain sequential rotation.
+
+Each show draws from shuffled story pools during the generated station cycle. The finite station schedule eventually loops, so repeats can occur at that overall loop boundary. This is browser-local scheduling, not a server-synchronized broadcast; differing catalogs/settings can have different lineups. Only checked sources with known runtimes enter continuous streams.
+
 ## Watch
 
 - Select Drew TV, Action Adventure, or Saturday Morning.
@@ -85,7 +95,7 @@ The catalog and channel settings are saved in this browser's local storage under
 A version-1 catalog contains:
 
 - `epoch`: a station start time in Unix seconds.
-- `settings`: selected `channel` (`mixed`, `action`, or `cartoons`) and boolean `bumpers`.
+- `settings`: selected `channel` (`mixed`, `action`, or `cartoons`), boolean `bumpers`, `rotation` (`random` or `ordered`), integer `shuffleSeed`, `storiesPerTurn` (1–3), and `streamShow` (a show ID or null). Older catalogs receive random-mode defaults when these fields are absent.
 - `shows`: unique `id`, `title`, `channel` (`action` or `cartoons`), optional `imdbUrl`, and `episodes`.
 - Episodes: unique `id`, `title`, `season`, `number`, `durationSeconds` (positive number or null), `group`, `kind` (`episode` or `bumper`), and `sources`.
 - Sources: `id`, `provider` (`archive`, `youtube`, or `tubi`), HTTPS `url`, and `availability` (`verified` or `unverified`). A checked source can still become unavailable later.

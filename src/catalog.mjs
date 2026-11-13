@@ -1,7 +1,7 @@
 export const CHANNELS = [
-  { id: 'mixed', number: '01', name: 'Drew TV', subtitle: 'A little bit of everything', accent: '#ffc66e' },
-  { id: 'action', number: '02', name: 'Action Adventure', subtitle: 'Fast cars. Impossible missions.', accent: '#ff927b' },
-  { id: 'cartoons', number: '03', name: 'Saturday Morning', subtitle: 'Just add a bowl of cereal.', accent: '#ac9aff' },
+  { id: 'mixed', number: '01', name: 'Drew TV', subtitle: 'Everything, shuffled', accent: '#ffc66e' },
+  { id: 'action', number: '02', name: 'Action Adventure', subtitle: 'Random heroes. Impossible missions.', accent: '#ff927b' },
+  { id: 'cartoons', number: '03', name: 'Saturday Morning', subtitle: 'Random cartoons. Add cereal.', accent: '#ac9aff' },
 ];
 
 const action = [
@@ -48,5 +48,5 @@ export function createSeed() {
         url: 'https://www.youtube.com/watch?v=RmycafPZFl8' }] }],
   });
   return { version: 1, epoch: Date.UTC(2026, 0, 1) / 1000, shows,
-    settings: { channel: 'mixed', bumpers: false } };
+    settings: { channel: 'mixed', bumpers: false, rotation: 'random', shuffleSeed: 1984, storiesPerTurn: 1, streamShow: null } };
 }

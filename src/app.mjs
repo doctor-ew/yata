@@ -48,17 +48,19 @@ function episodeDetail(e) {
 function renderChannels() {
   $('channels').replaceChildren(...CHANNELS.map(c => {
     const node = button('', () => {
-      const next = copyCatalog(); next.settings.channel = c.id;
+      const next = copyCatalog(); next.settings.channel = c.id; next.settings.streamShow = null;
       if (commit(next)) { selectedShowId = channelShows()[0]?.id || catalog.shows[0].id; stopPlayer(); render(); }
     }, 'channel');
     node.setAttribute('aria-pressed', String(c.id === catalog.settings.channel));
     node.setAttribute('aria-label', `Channel ${c.number}: ${c.name}`);
     const number = element('span', null, 'channel-number'); number.append(element('small', 'CH'), document.createTextNode(c.number));
-    const label = element('span'); label.append(element('span', c.name, 'channel-name'), element('span', c.subtitle, 'channel-subtitle'));
+    const label = element('span'); label.append(element('span', c.name, 'channel-name'), element('span', catalog.settings.rotation === 'ordered' ? 'Episodes in order' : c.subtitle, 'channel-subtitle'));
     node.append(number, label, element('span', null, 'dot')); return node;
   }));
   const channel = selectedChannel();
-  $('channel-label').textContent = `CH ${channel.number} · ${channel.name.toUpperCase()}`;
+  const streamShow = catalog.shows.find(show => show.id === catalog.settings.streamShow);
+  $('channel-label').textContent = `CH ${channel.number} · ${(streamShow?.title || channel.name).toUpperCase()} · ${catalog.settings.rotation === 'random' ? 'RANDOM STREAM' : 'IN ORDER'}`;
+  renderStreamSettings();
   $('bumpers').checked = catalog.settings.bumpers;
 }
 
@@ -87,7 +89,8 @@ function renderGuide() {
     }
     row.append(body); list.append(row); startsAt += entry.duration;
   }
-  $('rotation-note').textContent = `${schedule.length} checked ${schedule.length === 1 ? 'episode' : 'items'} in rotation. ${schedule.length === 1 ? 'This episode loops until you add more sources.' : 'Episode order stays intact within each show.'}`;
+  const unique = new Set(schedule.map(entry => entry.episode.id)).size;
+  $('rotation-note').textContent = `${unique} checked ${unique === 1 ? 'item' : 'items'} · ${catalog.settings.rotation === 'random' ? 'Random episodes, balanced show turns. Multipart stories stay together.' : 'Episodes in order within each show.'} Your station clock stays stable across refreshes.`;
   if (!active) {
     $('playing-show').textContent = position.current.show.title.toUpperCase();
     $('playing-title').textContent = position.current.episode.title;
@@ -122,6 +125,7 @@ function openShow(showId) {
   const show = catalog.shows.find(s => s.id === showId);
   if (!show) return;
   $('show-title').textContent = show.title;
+  $('show-shuffle').disabled = !show.episodes.some(episode => episode.kind === 'episode' && episode.durationSeconds > 0 && stationSource(episode));
   const imdb = $('show-imdb'); imdb.hidden = !show.imdbUrl;
   if (show.imdbUrl) imdb.href = show.imdbUrl;
   const rows = show.episodes.slice().sort((a, b) => a.season - b.season || a.number - b.number).map(e => {
@@ -407,8 +411,8 @@ $('retry').addEventListener('click', () => {
   if (source) playEpisode(show, episode, source, active.offset, active.mode, active.queueMode, active.queuePosition);
 });
 $('bumpers').addEventListener('change', () => {
-  const next = copyCatalog(); next.settings.bumpers = $('bumpers').checked;
-  if (commit(next)) { renderGuide(); notify(next.settings.bumpers ? 'Bumpers enabled. Only your supplied, checked bumper sources are used.' : 'Bumpers are off.'); }
+  const enabled = $('bumpers').checked;
+  if (configureStream({ bumpers: enabled })) notify(enabled ? 'Bumpers enabled. Only your supplied, checked bumper sources are used.' : 'Bumpers are off.');
   else $('bumpers').checked = catalog.settings.bumpers;
 });
 $('export-catalog').addEventListener('click', () => {
@@ -597,3 +601,40 @@ if (staticHosting) {
   const note = element('p', 'This hosted station supports the curated library and Archive bulk discovery. Add YouTube videos or playlists through Manage sources; expanding a new YouTube playlist into individual episodes requires the local importer.', 'muted');
   $('bulk-links').parentElement.before(note);
 }
+
+function renderStreamSettings() {
+  $('stream-rotation').value = catalog.settings.rotation;
+  const all = element('option', catalog.settings.channel === 'mixed' ? 'Any show · everything' : `Any show · ${selectedChannel().name}`); all.value = '';
+  $('stream-show').replaceChildren(all, ...channelShows().map(show => {
+    const count = show.episodes.filter(episode => episode.kind === 'episode' && episode.durationSeconds > 0 && stationSource(episode)).length;
+    const option = element('option', `${show.title} · ${count} checked`); option.value = show.id; option.disabled = !count; return option;
+  }));
+  $('stream-show').value = catalog.settings.streamShow || '';
+  $('stream-run').value = String(catalog.settings.storiesPerTurn);
+  $('stream-run').disabled = catalog.settings.rotation !== 'random' || !!catalog.settings.streamShow;
+  $('stream-reshuffle').disabled = catalog.settings.rotation !== 'random';
+  const title = catalog.shows.find(show => show.id === catalog.settings.streamShow)?.title;
+  $('stream-description').textContent = catalog.settings.rotation === 'random'
+    ? title ? `Random ${title} episodes, continuously. Each story plays before its pool repeats.`
+      : `Random episodes from random shows · ${catalog.settings.storiesPerTurn} ${catalog.settings.storiesPerTurn === 1 ? 'story' : 'stories'} per show turn. Smaller libraries keep their turn; multipart stories stay together.`
+    : `${title || 'All shows in this channel'} in episode order. Switch to random for a shuffled stream.`;
+}
+function configureStream(patch, play = false) {
+  const wasPlaying = transportState()?.paused === false;
+  const next = copyCatalog(); Object.assign(next.settings, patch); next.epoch = Date.now() / 1000;
+  if (!commit(next)) { renderStreamSettings(); return false; }
+  stopPlayer(); render();
+  if (play || wasPlaying) tuneLive();
+  return true;
+}
+function newMix() { return Number.parseInt(crypto.randomUUID().slice(0, 8), 16); }
+$('stream-rotation').addEventListener('change', () => configureStream({ rotation: $('stream-rotation').value }));
+$('stream-show').addEventListener('change', () => configureStream({ streamShow: $('stream-show').value || null }));
+$('stream-run').addEventListener('change', () => configureStream({ storiesPerTurn: Number($('stream-run').value) }));
+$('stream-reshuffle').addEventListener('click', () => configureStream({ rotation: 'random', shuffleSeed: newMix() }, true));
+$('show-shuffle').addEventListener('click', () => {
+  const show = catalog.shows.find(show => show.id === selectedShowId); if (!show) return;
+  $('show-dialog').close();
+  configureStream({ channel: show.channel, streamShow: show.id, rotation: 'random', shuffleSeed: newMix() }, true);
+  $('watch').scrollIntoView();
+});
