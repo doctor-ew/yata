@@ -1157,3 +1157,21 @@ form label {
 .stream-controls p { grid-column: 1 / -1; color: var(--muted); font-size: 11px; margin: 0; line-height: 1.6; }
 @media (max-width: 900px) { .stream-controls { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 500px) { .stream-controls { grid-template-columns: 1fr; } }
+
+.window-exit { position: absolute; right: 14px; top: 14px; z-index: 5; background: #14151eeb; border: 1px solid #ffffff50; color: white; min-height: 42px; }
+.window-exit small { margin-left: 8px; color: #a8a8b8; }
+body.window-mode { overflow: hidden; }
+.window-mode #screen-column { position: fixed; inset: 0; z-index: 1000; width: 100vw; height: 100vh; height: 100dvh; display: flex; flex-direction: column; background: #000; gap: 0; padding: 0; }
+.window-mode #screen-column .screen-top, .window-mode #screen-column .watch-info, .window-mode #screen-column .playback-actions, .window-mode #screen-column .playback-note { display: none; }
+.window-mode #player-shell { flex: 1 1 0; min-height: 0; width: 100%; aspect-ratio: auto; border: 0; border-radius: 0; }
+.window-mode #player-host video { object-fit: contain; }
+.window-mode .transport { flex: 0 0 auto; margin: 0; border-radius: 0; border-width: 1px 0 0; max-height: 42vh; max-height: 42dvh; overflow-y: auto; padding: 10px max(12px, env(safe-area-inset-right)) max(10px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left)); }
+.window-mode .player-error { flex: 0 0 auto; margin: 0; max-height: 25vh; overflow-y: auto; }
+@media (max-width: 600px) { .window-exit { right: 8px; top: 8px; } .window-mode .transport-buttons .button { min-height: 36px; padding: 6px 8px; } }
+
+footer { flex-wrap: wrap; align-items: flex-start; }
+.creator-credit { display: grid; gap: 7px; text-align: center; flex: 1; min-width: 230px; }
+.creator-credit strong { color: var(--text); }
+.creator-credit nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; }
+.creator-credit small { font-size: 9px; color: var(--muted); }
+@media (max-width: 600px) { .creator-credit { order: 3; flex-basis: 100%; text-align: left; } .creator-credit nav { justify-content: flex-start; } }

@@ -35,6 +35,8 @@ Each show draws from shuffled story pools during the generated station cycle. Th
 
 ## Watch
 
+**Fill window** expands the video and transport controls to the browser viewport. Use **Exit window** or Escape while the page has focus to return. It keeps the current player in place, so the presentation change does not recreate the video or YouTube iframe. Native/provider fullscreen remains available in the original player controls.
+
 - Select YATA, Action Adventure, or Saturday Morning.
 - **Tune in live** joins a checked episode at the position calculated from your station clock. **Start from beginning** starts the selected episode at zero.
 - The playback bar provides play/pause, scrubbing, ±10 seconds, restart, previous/next, volume/mute, and elapsed/total time in `HH:MM:SS`. Controls activate when the source is ready; unknown duration stays explicit. Restart seeks within the current player. Manual browsing follows the selected show; station playback follows the channel queue. YouTube playlists keep their own previous/next navigation.
@@ -120,6 +122,8 @@ To repeat the optional real Archive metadata and media range check, run `npm run
 Tests use Node's built-in test runner and local provider stand-ins. No provider credentials or live playback are required to run them. Bulk seeding scope and results are in [its specification](../docs/2/SPEC.md) and [validation report](../docs/2/VALIDATION.md). See [the specification](../docs/1/SPEC.md) and [validation report](../docs/1/VALIDATION.md) in the repository for task scope and observed results.
 
 ## Attribution
+
+YATA — Yet Another TV App is created by **Drew Schillinger**: [GitHub](https://github.com/doctor-ew) · [CTO2GO](https://cto2go.co) · [doctorew.com](https://doctorew.com).
 
 This companion is part of [doctor-ew/floating-browser](https://github.com/doctor-ew/floating-browser), based on Floating Browser by Chris Hansen. The original copyright notice and MIT license remain in the repository root.
 

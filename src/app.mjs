@@ -1,3 +1,4 @@
+import { mountWindowMode } from './window-mode.mjs';
 import { playbackTime, adjacentPlayback } from './transport.mjs';
 import { STARTER_PACK } from './starter-pack.mjs';
 import { youtubeEpisodes, mergeBatch, mergeLibraryBatch, discoveryRows } from './bulk.mjs';
@@ -638,3 +639,5 @@ $('show-shuffle').addEventListener('click', () => {
   configureStream({ channel: show.channel, streamShow: show.id, rotation: 'random', shuffleSeed: newMix() }, true);
   $('watch').scrollIntoView();
 });
+
+mountWindowMode({ documentRef: document, screen: $('screen-column'), toggle: $('fill-window'), closeButton: $('exit-window') });
