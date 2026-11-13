@@ -6,7 +6,7 @@
     "start": "node server.mjs",
     "test": "node --test test/*.test.mjs",
     "verify:archive": "node test/live-archive.mjs",
-    "check": "node --check src/domain.mjs && node --check src/catalog.mjs && node --check src/players.mjs && node --check src/app.mjs && node --check server.mjs && node --check src/bulk.mjs && node --check src/starter-pack.mjs && node --check youtube-metadata.mjs && node --check scripts/action-discovery.mjs && node --check scripts/cartoon-discovery.mjs && node --check scripts/youtube-discovery.mjs && node --check scripts/build-library.mjs && node --check scripts/build-static.mjs && node --check scripts/deploy-static.mjs",
+    "check": "node --check src/domain.mjs && node --check src/catalog.mjs && node --check src/players.mjs && node --check src/app.mjs && node --check server.mjs && node --check src/bulk.mjs && node --check src/starter-pack.mjs && node --check youtube-metadata.mjs && node --check scripts/action-discovery.mjs && node --check scripts/cartoon-discovery.mjs && node --check scripts/youtube-discovery.mjs && node --check scripts/build-library.mjs && node --check scripts/build-static.mjs && node --check scripts/deploy-static.mjs && node --check src/transport.mjs",
     "build:library": "node scripts/build-library.mjs",
     "deploy:aws": "node scripts/deploy-static.mjs"
   }

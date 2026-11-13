@@ -28,9 +28,22 @@
             <div id="standby" class="standby"><span class="test-pattern" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="standby-logo">DREW<span>TV</span></span><p>YOUR REGULARLY SCHEDULED ESCAPE</p><button id="standby-play" class="button primary">▶ Tune in</button><small>Press play. Settle in. Stay a while.</small></div>
           </div>
           <div id="player-error" class="player-error" role="alert" hidden><p id="player-error-text"></p><div><button id="retry" class="button small">Retry</button><button id="skip-error" class="button small">Skip episode</button><a id="error-original" class="button small" target="_blank" rel="noopener noreferrer">Open original ↗</a></div></div>
+          <section class="transport" aria-label="Video playback controls">
+            <div class="transport-position"><label for="video-seek">POSITION</label><output id="video-time">00:00:00 out of --:--:--</output></div>
+            <input id="video-seek" type="range" min="0" max="1" step="1" value="0" aria-label="Playback position" disabled>
+            <div class="transport-buttons">
+              <button id="previous-episode" class="button small" aria-label="Previous episode" disabled>⏮ Back</button>
+              <button id="rewind-ten" class="button small" aria-label="Back 10 seconds" disabled>↶ 10s</button>
+              <button id="toggle-play" class="button small primary" aria-label="Play video" disabled>▶ Play</button>
+              <button id="forward-ten" class="button small" aria-label="Forward 10 seconds" disabled>10s ↷</button>
+              <button id="start-over" class="button small" aria-label="Restart video" disabled>↺ Restart</button>
+              <button id="skip" class="button small" aria-label="Next episode" disabled>Next ⏭</button>
+              <div class="transport-volume"><button id="video-mute" class="button small" aria-label="Mute video" aria-pressed="false" disabled>Mute</button><input id="video-volume" type="range" min="0" max="100" step="1" value="100" aria-label="Volume" disabled><output id="video-volume-value">100%</output></div>
+            </div>
+          </section>
           <div class="watch-info"><div><p id="playing-show" class="eyebrow">ON THE STATION CLOCK</p><h2 id="playing-title">A familiar favorite is waiting.</h2><p id="playing-detail" class="muted"></p></div><a id="original-link" target="_blank" rel="noopener noreferrer" class="source-link" hidden>Original source ↗</a></div>
-          <div class="playback-actions"><button id="tune-live" class="button primary">▶ Tune in live</button><button id="start-over" class="button">↶ Start from beginning</button><button id="skip" class="button quiet">Next episode →</button></div>
-          <p class="playback-note">Live follows your station clock. Start from beginning watches on your time. YouTube ads and browser autoplay can affect timing.</p>
+          <div class="playback-actions"><button id="tune-live" class="button primary">▶ Tune in live</button></div>
+          <p class="playback-note">Live follows your station clock. Scrub, skip 10 seconds, or restart to watch on your time. YouTube ads and browser autoplay can affect timing.</p>
         </div>
         <aside class="guide" aria-labelledby="guide-heading"><div class="guide-heading"><h2 id="guide-heading">On the guide</h2><span>LOCAL TIME</span></div><div id="guide-list"></div><p id="rotation-note" class="guide-foot"></p><button id="guide-add" class="guide-add">Build out this channel <span>+</span></button></aside>
       </div>

@@ -1,3 +1,4 @@
+import { playbackTime, adjacentPlayback } from './transport.mjs';
 import { STARTER_PACK } from './starter-pack.mjs';
 import { youtubeEpisodes, mergeBatch, mergeLibraryBatch, discoveryRows } from './bulk.mjs';
 import { CHANNELS, createSeed } from './catalog.mjs';
@@ -12,6 +13,8 @@ const loaded = readCatalog(storage, createSeed());
 let catalog = loaded.catalog;
 let selectedShowId = catalog.shows[0].id, editingEpisodeId = null;
 let session = null, active = null, playerGeneration = 0, importBusy = false;
+let scrubbing = false, scrubSession = null, audioSession = null, preferredAudio = null, audioLockUntil = 0;
+let navCatalog = null, navActive = null, previousEntry = null, nextEntry = null;
 const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'Tubi' };
 const tiles = ['#435a53', '#5c4257', '#3f526a', '#67513d', '#514a70', '#4f5e40', '#674849', '#3c6262'];
 const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
@@ -68,8 +71,6 @@ function renderGuide() {
     list.append(element('p', 'This channel is waiting for its first checked episode. Add an Archive item or play a YouTube video to check its source and runtime.', 'empty'));
     $('rotation-note').textContent = 'Tubi links and YouTube playlists are available in the library, outside the live rotation.';
     if (!active) { $('playing-show').textContent = 'YOUR CHANNEL, YOUR COLLECTION'; $('playing-title').textContent = 'The next good thing starts with you.'; $('playing-detail').textContent = 'Add an episode source to begin.'; }
-    $('start-over').disabled = !active;
-    $('skip').disabled = !active;
     return;
   }
   let startsAt = Date.now() / 1000 - position.offset;
@@ -92,8 +93,6 @@ function renderGuide() {
     $('playing-title').textContent = position.current.episode.title;
     $('playing-detail').textContent = `${episodeDetail(position.current.episode)} · ${providerName[position.current.source.provider]}`;
   }
-  $('start-over').disabled = false;
-  $('skip').disabled = schedule.length < 2 && !active;
 }
 
 function renderLibrary() {
@@ -183,7 +182,8 @@ function openSource(showId = selectedShowId, episodeId = null) {
 }
 
 function stopPlayer() {
-  playerGeneration++; session?.dispose(); session = null; active = null;
+  playerGeneration++; session?.dispose(); session = null; active = null; scrubbing = false; scrubSession = null;
+  renderTransport();
   $('player-host').replaceChildren(); $('standby').hidden = false;
   $('player-error').hidden = true; $('original-link').hidden = true;
   $('playback-state').textContent = 'READY TO TUNE';
@@ -196,10 +196,10 @@ function playerError(message, generation) {
   $('playback-state').textContent = 'PLAYBACK NEEDS ATTENTION';
 }
 
-function playEpisode(show, episode, source, offset = 0, mode = 'start') {
+function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMode = mode === 'live' ? 'station' : 'show', queuePosition = null) {
   stopPlayer();
   const generation = playerGeneration;
-  active = { showId: show.id, episodeId: episode.id, sourceId: source.id, offset, mode };
+  active = { showId: show.id, episodeId: episode.id, sourceId: source.id, offset, mode, queueMode, queuePosition };
   $('standby').hidden = true;
   $('playing-show').textContent = show.title.toUpperCase();
   $('playing-title').textContent = episode.title;
@@ -249,27 +249,96 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start') {
 }
 
 function tuneLive() {
-  const p = currentGuide();
-  if (p) playEpisode(p.current.show, p.current.episode, p.current.source, p.offset, 'live');
+  const queue = buildSchedule(catalog), p = schedulePosition(queue, catalog.epoch);
+  if (p) playEpisode(p.current.show, p.current.episode, p.current.source, p.offset, 'live', 'station', { index: p.index, previousId: queue[(p.index - 1 + queue.length) % queue.length].episode.id });
   else openSource();
 }
-function startOver() {
-  if (active) {
-    const show = catalog.shows.find(s => s.id === active.showId), episode = show?.episodes.find(e => e.id === active.episodeId);
-    const source = episode?.sources.find(s => s.id === active.sourceId);
-    if (source) { playEpisode(show, episode, source); return; }
-  }
-  const p = currentGuide(); if (p) playEpisode(p.current.show, p.current.episode, p.current.source);
+function markTimeShift() {
+  if (!active) return;
+  active.mode = 'start';
+  const show = catalog.shows.find(s => s.id === active.showId), episode = show?.episodes.find(e => e.id === active.episodeId);
+  const source = episode?.sources.find(s => s.id === active.sourceId);
+  if (episode && source) $('playing-detail').textContent = `${episodeDetail(episode)} · Watching on your time · ${providerName[source.provider]}`;
 }
-function advance(manual) {
-  const schedule = buildSchedule(catalog);
-  if (!schedule.length || (manual && schedule.length === 1 && schedule[0].episode.id === active?.episodeId)) {
-    notify('There isn’t another checked episode in this channel yet. Add a source from the library.'); return;
-  }
-  const index = schedule.findIndex(e => e.episode.id === active?.episodeId);
-  const entry = schedule[(index + 1) % schedule.length];
-  if (entry) playEpisode(entry.show, entry.episode, entry.source, 0, active?.mode || 'start');
+function seekVideo(seconds) {
+  if (session?.seek(seconds)) { if (active) active.offset = Math.max(0, Math.min(seconds, transportState()?.duration ?? seconds)); markTimeShift(); renderTransport(); return true; }
+  return false;
 }
+function startOver() { if (seekVideo(0)) session?.play(); }
+function advance(manual, direction = 1) {
+  if (!active) return;
+  if (manual && session?.navigatePlaylist?.(direction)) { renderTransport(); return; }
+  const entry = adjacentPlayback(catalog, active, direction);
+  if (!entry || (manual && entry.episode.id === active.episodeId)) {
+    if (manual) notify(direction < 0 ? 'You are at the first playable episode in this queue.' : 'There isn’t another playable episode in this queue.');
+    else $('playback-state').textContent = 'FINISHED';
+    return;
+  }
+  const queueMode = active.queueMode;
+  playEpisode(entry.show, entry.episode, entry.source, 0, 'start', queueMode, entry.queuePosition);
+}
+
+function transportState() { try { return session?.getState(); } catch { return null; } }
+function showPosition(seconds, duration) {
+  const text = `${playbackTime(seconds)} out of ${playbackTime(duration)}`;
+  if ($('video-time').textContent !== text) $('video-time').textContent = text;
+  $('video-seek').setAttribute('aria-valuetext', text);
+}
+function renderTransport() {
+  let state = transportState();
+  const ready = !!state?.ready;
+  if (ready && audioSession !== session) {
+    audioSession = session;
+    if (preferredAudio) { session.setVolume(preferredAudio.volume); session.setMuted(preferredAudio.muted); audioLockUntil = Date.now() + 750; }
+    state = transportState();
+  }
+  if (ready && Date.now() >= audioLockUntil) preferredAudio = { volume: state.volume, muted: state.muted };
+  if (ready && active && Number.isFinite(state.currentTime)) active.offset = state.currentTime;
+  const seekable = ready && Number.isFinite(state.duration) && state.duration > 0;
+  for (const id of ['toggle-play', 'video-mute', 'video-volume']) $(id).disabled = !ready;
+  for (const id of ['video-seek', 'rewind-ten', 'forward-ten', 'start-over']) $(id).disabled = !seekable;
+  $('toggle-play').textContent = ready && !state.paused ? '❚❚ Pause' : '▶ Play';
+  $('toggle-play').setAttribute('aria-label', ready && !state.paused ? 'Pause video' : 'Play video');
+  if (!scrubbing) {
+    $('video-seek').max = seekable ? String(state.duration) : '1';
+    $('video-seek').value = seekable ? String(state.currentTime) : '0';
+    showPosition(state?.currentTime || 0, state?.duration ?? null);
+  }
+  const audio = preferredAudio && Date.now() < audioLockUntil ? preferredAudio : state;
+  const percent = audio?.muted ? 0 : Math.round((audio?.volume ?? 1) * 100);
+  if (document.activeElement !== $('video-volume')) $('video-volume').value = String(percent);
+  $('video-volume-value').textContent = `${percent}%`;
+  $('video-mute').textContent = audio?.muted ? 'Unmute' : 'Mute';
+  $('video-mute').setAttribute('aria-label', audio?.muted ? 'Unmute video' : 'Mute video');
+  $('video-mute').setAttribute('aria-pressed', String(!!audio?.muted));
+  if (navCatalog !== catalog || navActive !== active) {
+    navCatalog = catalog; navActive = active;
+    previousEntry = adjacentPlayback(catalog, active, -1); nextEntry = adjacentPlayback(catalog, active, 1);
+  }
+  $('previous-episode').disabled = state?.playlist ? !ready : !previousEntry || previousEntry.episode.id === active?.episodeId;
+  $('skip').disabled = state?.playlist ? !ready : !nextEntry || nextEntry.episode.id === active?.episodeId;
+}
+$('toggle-play').addEventListener('click', () => { const state = transportState(); if (state?.ready) { if (state.paused) session.play(); else session.pause(); } renderTransport(); });
+$('rewind-ten').addEventListener('click', () => seekVideo((transportState()?.currentTime || 0) - 10));
+$('forward-ten').addEventListener('click', () => seekVideo((transportState()?.currentTime || 0) + 10));
+$('previous-episode').addEventListener('click', () => advance(true, -1));
+$('video-seek').addEventListener('input', () => { scrubbing = true; scrubSession = session; showPosition(Number($('video-seek').value), transportState()?.duration ?? null); });
+$('video-seek').addEventListener('change', () => { const value = Number($('video-seek').value); const same = scrubSession === session; scrubbing = false; scrubSession = null; if (same) seekVideo(value); renderTransport(); });
+$('video-seek').addEventListener('pointercancel', () => { scrubbing = false; scrubSession = null; renderTransport(); });
+$('video-volume').addEventListener('input', () => {
+  const volume = Number($('video-volume').value) / 100;
+  preferredAudio = { volume, muted: volume === 0 }; audioLockUntil = Date.now() + 750;
+  session?.setVolume(volume); renderTransport();
+});
+$('video-mute').addEventListener('click', () => {
+  const state = transportState(); if (!state?.ready) return;
+  const muted = !(preferredAudio && Date.now() < audioLockUntil ? preferredAudio.muted : state.muted);
+  preferredAudio = { volume: state.volume > 0 ? state.volume : 1, muted };
+  if (!muted && !state.volume) session.setVolume(1);
+  session.setMuted(muted); audioLockUntil = Date.now() + 750; renderTransport();
+});
+renderTransport();
+setInterval(renderTransport, 250);
 
 $('source-form').addEventListener('submit', async event => {
   event.preventDefault(); if (importBusy) return;
@@ -335,7 +404,7 @@ $('retry').addEventListener('click', () => {
   if (!active) return;
   const show = catalog.shows.find(s => s.id === active.showId), episode = show?.episodes.find(e => e.id === active.episodeId);
   const source = episode?.sources.find(s => s.id === active.sourceId);
-  if (source) playEpisode(show, episode, source, active.offset, active.mode);
+  if (source) playEpisode(show, episode, source, active.offset, active.mode, active.queueMode, active.queuePosition);
 });
 $('bumpers').addEventListener('change', () => {
   const next = copyCatalog(); next.settings.bumpers = $('bumpers').checked;
