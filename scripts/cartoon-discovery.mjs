@@ -16,6 +16,8 @@ const sources = {
   centurions: ['centurions-ep.-58-the-better-half-part-1-480p-dvdrip', 'centurions-premiere-4-7-1986', 'Centurions08DenverIsDown'],
   thundarr: ['thundarr-the-barbarian_202605'],
   'inspector-gadget': ['inspector-gadget-go-go-gadget-series'],
+  'spider-friends': ['spider-man-and-his-amazing-friends_202403'],
+  'hulk-1982': ['incredible-hulk-1982-cartoon-series'],
 };
 const notes = {
   'he-man': 'Two English original-series season collections; 65 filename-numbered episodes each. Alternate encodes collapsed.',
@@ -31,6 +33,12 @@ const notes = {
   thundarr: 'Original-series collection contains source-numbered seasons 1–2.',
   'inspector-gadget': 'English original-series collection: 65 source-numbered season 1 entries and 21 season 2 entries. Alternate upscale collection uses a different pilot numbering convention and was not merged.',
 };
+notes['spider-friends'] = 'Original cartoon collection contains 24 distinct season/episode-numbered stories (13/3/8). Zero-padded and unpadded duplicate filename encodes collapse by season/episode. The other item titled Full Series lacks several stories and was not needed.';
+notes['hulk-1982'] = 'English 1982 animated collection contains 13 filename-numbered stories. The five-second Episode 00 title card is excluded by the runtime filter. Season remains zero because these filenames provide no season.';
+const outputUrl = new URL('../data/cartoon-discovery.json', import.meta.url);
+const selected = process.env.CARTOON_SHOWS?.split(',').map(id => id.trim()).filter(Boolean);
+if (selected?.some(id => !Object.hasOwn(sources, id))) throw Error('CARTOON_SHOWS contains an unknown show.');
+const previous = selected ? JSON.parse(await readFile(outputUrl, 'utf8')) : null;
 const cache = process.env.CARTOON_METADATA_CACHE;
 async function metadata(id) {
   if (cache) return JSON.parse(await readFile(`${cache}/${id}.json`, 'utf8'));
@@ -38,7 +46,8 @@ async function metadata(id) {
   if (!response.ok) throw Error(`Metadata HTTP ${response.status}`);
   return response.json();
 }
-const shows = createSeed().shows.filter(show => show.channel === 'cartoons' && sources[show.id]);
+const allShows = createSeed().shows.filter(show => show.channel === 'cartoons' && sources[show.id]);
+const shows = allShows.filter(show => !selected || selected.includes(show.id));
 let cursor = 0;
 const result = [];
 async function worker() {
@@ -55,11 +64,13 @@ async function worker() {
           const filename = decodeURIComponent(new URL(source.url).pathname).split('/').pop().replace(/(?:\.ia)?\.mp4$/i, '');
           // Exclude other shows in this mixed collection and retain only the identified gap files.
           if (itemId === 'Centurions08DenverIsDown' && !/^Centurions - 0[234] - /.test(filename)) continue;
+          if (show.id === 'spider-friends' && !/^Spider-Man and His Amazing Friends Season \d+ Episode \d+/i.test(filename)) continue;
+          if (show.id === 'hulk-1982' && !/^Hulk 1982 Episode \d+/i.test(filename)) continue;
           // Exclude DVD menus, clips, movies and feature-length compilations.
           if (/fan[ -]made|Requiem/i.test(filename)) continue;
           if (!episode.durationSeconds || episode.durationSeconds < 1000 || episode.durationSeconds > 1900) continue;
           episode.title = filename;
-          const order = filename.match(/\bS(\d+)\s*E(\d+)/i) || filename.match(/\b(\d+)x(\d+)\b/i) || filename.match(/^(\d+)-(\d+)\./);
+          const order = filename.match(/\bSeason\s+(\d+)\s+Episode\s+(\d+)/i) || filename.match(/\bS(\d+)\s*E(\d+)/i) || filename.match(/\b(\d+)x(\d+)\b/i) || filename.match(/^(\d+)-(\d+)\./);
           if (order) { episode.season = Number(order[1]); episode.number = Number(order[2]); }
           else {
             const number = filename.match(/(?:Episode|Ep\.?)[\s-]*(\d+)/i) || filename.match(/^(\d+)\./) || filename.match(/ - (\d+) - /);
@@ -101,6 +112,8 @@ async function worker() {
   }
 }
 await Promise.all([worker(), worker(), worker()]);
-result.sort((a, b) => shows.findIndex(s => s.id === a.showId) - shows.findIndex(s => s.id === b.showId));
-const output = { checkedAt: new Date().toISOString(), provider: 'archive', scope: 'Reviewed original-series public MP4 metadata collections for all 12 cartoon shows. Search initially inspected up to 100 download-ranked title matches per show; not exhaustive internet availability or rights verification. Public source metadata does not establish browser decoding or future availability.', shows: result };
-await writeFile(new URL('../data/cartoon-discovery.json', import.meta.url), JSON.stringify(output, null, 2) + '\n');
+if (selected && result.some(show => !show.episodes.length)) throw Error('Partial refresh found an empty show; previous discovery pack is unchanged.');
+if (previous) result.push(...previous.shows.filter(show => !selected.includes(show.showId)));
+result.sort((a, b) => allShows.findIndex(s => s.id === a.showId) - allShows.findIndex(s => s.id === b.showId));
+const output = { checkedAt: new Date().toISOString(), provider: 'archive', scope: 'Reviewed original-series public MP4 metadata collections. Partial refreshes preserve earlier records; updatedShows identifies the refreshed records. Search initially inspected up to 100 download-ranked title matches per show; not exhaustive internet availability or rights verification. Public source metadata does not establish browser decoding or future availability.', shows: result, ...(previous ? { previousCheckedAt: previous.checkedAt, updatedShows: selected } : {}) };
+await writeFile(outputUrl, JSON.stringify(output, null, 2) + '\n');

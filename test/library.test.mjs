@@ -24,3 +24,26 @@ test('shipped library covers every requested show, fits storage and repeats with
  const portable = parseCatalogJson(await readFile(new URL('expanded-catalog.json', data), 'utf8'));
  assert.equal(portable.shows.reduce((n, show) => n + show.episodes.length, 0), manifest.episodes);
 });
+
+
+test('Marvel cartoon additions have distinct stories, exclude title cards and merge into older saved catalogs', async () => {
+ const packs = await Promise.all(['action', 'cartoon', 'youtube'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
+ const seed = createSeed();
+ const oldCatalog = structuredClone(seed);
+ oldCatalog.shows = oldCatalog.shows.filter(show => !['spider-friends', 'hulk-1982'].includes(show.id));
+ oldCatalog.settings.channel = 'action';
+ const base = structuredClone(oldCatalog);
+ for (const show of seed.shows) if (!base.shows.some(existing => existing.id === show.id)) base.shows.push({...show, episodes: []});
+ const installed = mergeLibraryBatch(base, discoveryRows(base, packs)).catalog;
+ assert.equal(installed.settings.channel, 'action');
+ const spiders = installed.shows.find(show => show.id === 'spider-friends');
+ const hulk = installed.shows.find(show => show.id === 'hulk-1982');
+ assert.equal(spiders.channel, 'cartoons'); assert.equal(hulk.channel, 'cartoons');
+ assert.equal(spiders.episodes.length, 24); assert.equal(hulk.episodes.length, 13);
+ assert.deepEqual([1, 2, 3].map(season => spiders.episodes.filter(episode => episode.season === season).length), [13, 3, 8]);
+ assert.deepEqual(hulk.episodes.map(episode => episode.number), Array.from({length: 13}, (_, i) => i + 1));
+ assert.ok([...spiders.episodes, ...hulk.episodes].every(episode => episode.durationSeconds >= 1000 && episode.durationSeconds <= 1900 && !/title card/i.test(episode.title)));
+ assert.equal(installed.shows.find(show => show.id === 'fall-guy').episodes.length, 110);
+ assert.equal(installed.shows.find(show => show.id === 'hulk').channel, 'action');
+ assert.equal(new Set(spiders.episodes.map(episode => `${episode.season}:${episode.number}`)).size, 24);
+});

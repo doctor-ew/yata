@@ -3204,8 +3204,8 @@
         "https://www.youtube.com/results?search_query=He-Man%20and%20the%20Masters%20of%20the%20Universe%20original%20full%20episodes"
       ],
       "notes": [
-        "Playlist returned 748 entries; individual 18\u201365 minute candidates retained. Playlist labels are not used to infer episode numbering; entries without explicit numbering remain season 0.",
-        "Playlist returned 215 entries; individual 18\u201365 minute candidates retained. Playlist labels are not used to infer episode numbering; entries without explicit numbering remain season 0.",
+        "Playlist returned 748 entries; individual 18–65 minute candidates retained. Playlist labels are not used to infer episode numbering; entries without explicit numbering remain season 0.",
+        "Playlist returned 215 entries; individual 18–65 minute candidates retained. Playlist labels are not used to infer episode numbering; entries without explicit numbering remain season 0.",
         "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
         "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded.",
         "Exact canonical episode-title matches against Archive original-series filenames: 110. Excluded 85 ambiguous retitles/commentaries/specials. S/E only copied after exact title match."
@@ -3528,7 +3528,7 @@
         "https://www.youtube.com/results?search_query=G.I.%20Joe%3A%20A%20Real%20American%20Hero%20original%20full%20episodes"
       ],
       "notes": [
-        "Playlist returned 42 entries; individual 18\u201365 minute candidates retained. Playlist labels are not used to infer episode numbering; entries without explicit numbering remain season 0.",
+        "Playlist returned 42 entries; individual 18–65 minute candidates retained. Playlist labels are not used to infer episode numbering; entries without explicit numbering remain season 0.",
         "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
         "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded.",
         "Removed non-episode fanstream/interview videos. G.I. Joe positive S/E retained only where number and title agree with Archive; conflicting miniseries numbering stays season zero."
@@ -5159,7 +5159,7 @@
         "https://www.youtube.com/results?search_query=The%20Transformers%20original%20full%20episodes"
       ],
       "notes": [
-        "Playlist returned 90 entries; individual 18\u201365 minute candidates retained. Playlist labels are not used to infer episode numbering; entries without explicit numbering remain season 0.",
+        "Playlist returned 90 entries; individual 18–65 minute candidates retained. Playlist labels are not used to infer episode numbering; entries without explicit numbering remain season 0.",
         "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
         "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
       ]
@@ -5270,6 +5270,24 @@
       "notes": [
         "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
         "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "spider-friends",
+      "title": "Spider-Man and His Amazing Friends",
+      "episodes": [],
+      "searched": [],
+      "notes": [
+        "YouTube discovery has not been run for this addition; no YouTube availability conclusion. Archive sources are recorded separately."
+      ]
+    },
+    {
+      "showId": "hulk-1982",
+      "title": "The Incredible Hulk (1982 animated)",
+      "episodes": [],
+      "searched": [],
+      "notes": [
+        "YouTube discovery has not been run for this addition; no YouTube availability conclusion. Archive sources are recorded separately."
       ]
     }
   ],

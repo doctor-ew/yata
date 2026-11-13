@@ -128,3 +128,5 @@ YATA — Yet Another TV App is created by **Drew Schillinger**: [GitHub](https:/
 This companion is part of [doctor-ew/floating-browser](https://github.com/doctor-ew/floating-browser), based on Floating Browser by Chris Hansen. The original copyright notice and MIT license remain in the repository root.
 
 Channel scheduling was inspired by [Old Time Radio by Rob Dawson](https://github.com/codebox/old-time-radio). This companion was independently implemented; no radio implementation code was copied. Show names identify their respective series. Media is served by Internet Archive, YouTube, or Tubi, and this project is not affiliated with those services or the listed shows.
+
+To refresh selected reviewed cartoon collections while retaining other records, set `CARTOON_SHOWS` to comma-separated show IDs. For example, `CARTOON_SHOWS=spider-friends,hulk-1982 node scripts/cartoon-discovery.mjs`, then `npm run build:library`. The discovery artifact records which shows were refreshed. A selected collection yielding no episodes leaves the previous artifact unchanged.

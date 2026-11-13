@@ -1,13 +1,13 @@
 {
-  "revision": "expanded-323e929cf602667a",
+  "revision": "expanded-0a3712cd69673706",
   "checkedAt": [
     "2026-11-13T18:42:19.392Z",
-    "2026-11-13T18:35:03.817Z",
+    "2026-11-13T20:01:42.662Z",
     "2026-11-13T18:34:49.891Z"
   ],
-  "episodes": 1889,
-  "ready": 1795,
-  "streamSlots": 4830,
+  "episodes": 1926,
+  "ready": 1832,
+  "streamSlots": 5122,
   "shows": [
     {
       "id": "dukes",
@@ -241,6 +241,20 @@
       "sources": 86
     },
     {
+      "id": "spider-friends",
+      "title": "Spider-Man and His Amazing Friends",
+      "episodes": 24,
+      "ready": 24,
+      "sources": 24
+    },
+    {
+      "id": "hulk-1982",
+      "title": "The Incredible Hulk (1982 animated)",
+      "episodes": 13,
+      "ready": 13,
+      "sources": 13
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -248,6 +262,6 @@
       "sources": 1
     }
   ],
-  "bytes": 711849,
+  "bytes": 728919,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

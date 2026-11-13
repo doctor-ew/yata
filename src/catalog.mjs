@@ -22,6 +22,8 @@ const cartoons = [
   ['silverhawks', 'SilverHawks'], ['dungeons-dragons', 'Dungeons & Dragons'],
   ['centurions', 'The Centurions'], ['thundarr', 'Thundarr the Barbarian'],
   ['inspector-gadget', 'Inspector Gadget'],
+  ['spider-friends', 'Spider-Man and His Amazing Friends'],
+  ['hulk-1982', 'The Incredible Hulk (1982 animated)'],
 ];
 
 export function createSeed() {

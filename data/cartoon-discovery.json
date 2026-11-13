@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-11-13T18:35:03.817Z",
+  "checkedAt": "2026-11-13T20:01:42.662Z",
   "provider": "archive",
-  "scope": "Reviewed original-series public MP4 metadata collections for all 12 cartoon shows. Search initially inspected up to 100 download-ranked title matches per show; not exhaustive internet availability or rights verification. Public source metadata does not establish browser decoding or future availability.",
+  "scope": "Reviewed original-series public MP4 metadata collections. Partial refreshes preserve earlier records; updatedShows identifies the refreshed records. Search initially inspected up to 100 download-ranked title matches per show; not exhaustive internet availability or rights verification. Public source metadata does not establish browser decoding or future availability.",
   "shows": [
     {
       "showId": "he-man",
@@ -3890,7 +3890,7 @@
           "retained": 30
         }
       ],
-      "notes": "1983/84 miniseries: season 0, source order 1–10. Source titles explicitly identify regular season 1 (55) and season 2 (30). Movie omitted from episode pack.",
+      "notes": "1983/84 miniseries: season 0, source order 1\u201310. Source titles explicitly identify regular season 1 (55) and season 2 (30). Movie omitted from episode pack.",
       "sampleCheck": {
         "url": "https://archive.org/download/gi-joe-1/1-1.%20The%20M.A.S.S.%20Device%20Part%201.mp4",
         "status": 206,
@@ -4185,7 +4185,7 @@
           "retained": 16
         }
       ],
-      "notes": "Only original-series Archive season 1 expanded here. Popular season 2–4 item contains a 30-second download-information placeholder and was excluded. Official YouTube collection is a separate discovery source.",
+      "notes": "Only original-series Archive season 1 expanded here. Popular season 2\u20134 item contains a 30-second download-information placeholder and was excluded. Official YouTube collection is a separate discovery source.",
       "sampleCheck": {
         "url": "https://archive.org/download/transformers-season-1/S01E01%20More%20Than%20Meets%20The%20Eye%20(Part%201).mp4",
         "status": 206,
@@ -6662,7 +6662,7 @@
           "retained": 130
         }
       ],
-      "notes": "English original-series collection labels seasons 1–4. Uploader reports chronological reordering; numbering reflects these source filenames, not independently verified broadcast order.",
+      "notes": "English original-series collection labels seasons 1\u20134. Uploader reports chronological reordering; numbering reflects these source filenames, not independently verified broadcast order.",
       "sampleCheck": {
         "url": "https://archive.org/download/thundercats_20250306/ThunderCats%20-%20S01E01%20-%20Exodus%20(Pilot%20Part%201).mp4",
         "status": 206,
@@ -6676,7 +6676,7 @@
       "episodes": [
         {
           "id": "cartoon-voltron-490b0950962adafb76d5",
-          "title": "Lion Force · Episode 01",
+          "title": "Lion Force \u00b7 Episode 01",
           "season": 0,
           "number": 1,
           "durationSeconds": 1396.23,
@@ -6693,7 +6693,7 @@
         },
         {
           "id": "cartoon-voltron-201e662efc50b09204de",
-          "title": "Lion Force · Episode 02",
+          "title": "Lion Force \u00b7 Episode 02",
           "season": 0,
           "number": 2,
           "durationSeconds": 1397.43,
@@ -6710,7 +6710,7 @@
         },
         {
           "id": "cartoon-voltron-392ee461e890553ba76a",
-          "title": "Lion Force · Episode 03",
+          "title": "Lion Force \u00b7 Episode 03",
           "season": 0,
           "number": 3,
           "durationSeconds": 1395.76,
@@ -6727,7 +6727,7 @@
         },
         {
           "id": "cartoon-voltron-2e38728bf74c35c68ce6",
-          "title": "Lion Force · Episode 04",
+          "title": "Lion Force \u00b7 Episode 04",
           "season": 0,
           "number": 4,
           "durationSeconds": 1398.5,
@@ -6744,7 +6744,7 @@
         },
         {
           "id": "cartoon-voltron-595be3b2daa2756e1ef9",
-          "title": "Lion Force · Episode 05",
+          "title": "Lion Force \u00b7 Episode 05",
           "season": 0,
           "number": 5,
           "durationSeconds": 1396.6,
@@ -6761,7 +6761,7 @@
         },
         {
           "id": "cartoon-voltron-b90defc76137b3e4aaba",
-          "title": "Lion Force · Episode 06",
+          "title": "Lion Force \u00b7 Episode 06",
           "season": 0,
           "number": 6,
           "durationSeconds": 1396.36,
@@ -6778,7 +6778,7 @@
         },
         {
           "id": "cartoon-voltron-22bcb28a958ed1e467c4",
-          "title": "Lion Force · Episode 07",
+          "title": "Lion Force \u00b7 Episode 07",
           "season": 0,
           "number": 7,
           "durationSeconds": 1396.63,
@@ -6795,7 +6795,7 @@
         },
         {
           "id": "cartoon-voltron-863c68af7bb7ca22f1c5",
-          "title": "Lion Force · Episode 08",
+          "title": "Lion Force \u00b7 Episode 08",
           "season": 0,
           "number": 8,
           "durationSeconds": 1399.3,
@@ -6812,7 +6812,7 @@
         },
         {
           "id": "cartoon-voltron-a5407f0cae49fe89390a",
-          "title": "Lion Force · Episode 09",
+          "title": "Lion Force \u00b7 Episode 09",
           "season": 0,
           "number": 9,
           "durationSeconds": 1394.3,
@@ -6829,7 +6829,7 @@
         },
         {
           "id": "cartoon-voltron-74375016bf6802250a1c",
-          "title": "Lion Force · Episode 10",
+          "title": "Lion Force \u00b7 Episode 10",
           "season": 0,
           "number": 10,
           "durationSeconds": 1396,
@@ -6846,7 +6846,7 @@
         },
         {
           "id": "cartoon-voltron-5e1b33c0a18c9fef5185",
-          "title": "Lion Force · Episode 11",
+          "title": "Lion Force \u00b7 Episode 11",
           "season": 0,
           "number": 11,
           "durationSeconds": 1394.76,
@@ -6863,7 +6863,7 @@
         },
         {
           "id": "cartoon-voltron-19fd6dd5085238cab73f",
-          "title": "Lion Force · Episode 12",
+          "title": "Lion Force \u00b7 Episode 12",
           "season": 0,
           "number": 12,
           "durationSeconds": 1396.63,
@@ -6880,7 +6880,7 @@
         },
         {
           "id": "cartoon-voltron-b1350c914702aa639f03",
-          "title": "Lion Force · Episode 13",
+          "title": "Lion Force \u00b7 Episode 13",
           "season": 0,
           "number": 13,
           "durationSeconds": 1396.96,
@@ -6897,7 +6897,7 @@
         },
         {
           "id": "cartoon-voltron-894aa29e69dcb879f144",
-          "title": "Lion Force · Episode 14",
+          "title": "Lion Force \u00b7 Episode 14",
           "season": 0,
           "number": 14,
           "durationSeconds": 1397.7,
@@ -6914,7 +6914,7 @@
         },
         {
           "id": "cartoon-voltron-3051694ac2176abe718b",
-          "title": "Lion Force · Episode 15",
+          "title": "Lion Force \u00b7 Episode 15",
           "season": 0,
           "number": 15,
           "durationSeconds": 1397.16,
@@ -6931,7 +6931,7 @@
         },
         {
           "id": "cartoon-voltron-a28a0173dec072cc900e",
-          "title": "Lion Force · Episode 16",
+          "title": "Lion Force \u00b7 Episode 16",
           "season": 0,
           "number": 16,
           "durationSeconds": 1395.43,
@@ -6948,7 +6948,7 @@
         },
         {
           "id": "cartoon-voltron-f3a75ac106188f558006",
-          "title": "Lion Force · Episode 17",
+          "title": "Lion Force \u00b7 Episode 17",
           "season": 0,
           "number": 17,
           "durationSeconds": 1391.93,
@@ -6965,7 +6965,7 @@
         },
         {
           "id": "cartoon-voltron-d179134aa4fdc27a9558",
-          "title": "Lion Force · Episode 18",
+          "title": "Lion Force \u00b7 Episode 18",
           "season": 0,
           "number": 18,
           "durationSeconds": 1397.23,
@@ -6982,7 +6982,7 @@
         },
         {
           "id": "cartoon-voltron-52836119d27bc3ce4050",
-          "title": "Lion Force · Episode 19",
+          "title": "Lion Force \u00b7 Episode 19",
           "season": 0,
           "number": 19,
           "durationSeconds": 1396.86,
@@ -6999,7 +6999,7 @@
         },
         {
           "id": "cartoon-voltron-a2ba12c94c82b022df00",
-          "title": "Lion Force · Episode 20",
+          "title": "Lion Force \u00b7 Episode 20",
           "season": 0,
           "number": 20,
           "durationSeconds": 1396.23,
@@ -7016,7 +7016,7 @@
         },
         {
           "id": "cartoon-voltron-f872782bc2fadfef215e",
-          "title": "Lion Force · Episode 21",
+          "title": "Lion Force \u00b7 Episode 21",
           "season": 0,
           "number": 21,
           "durationSeconds": 1398.03,
@@ -7033,7 +7033,7 @@
         },
         {
           "id": "cartoon-voltron-fec0a643bdc3cf63961c",
-          "title": "Lion Force · Episode 22",
+          "title": "Lion Force \u00b7 Episode 22",
           "season": 0,
           "number": 22,
           "durationSeconds": 1399.77,
@@ -7050,7 +7050,7 @@
         },
         {
           "id": "cartoon-voltron-b7fafec9bc511e2a2419",
-          "title": "Lion Force · Episode 23",
+          "title": "Lion Force \u00b7 Episode 23",
           "season": 0,
           "number": 23,
           "durationSeconds": 1397.1,
@@ -7067,7 +7067,7 @@
         },
         {
           "id": "cartoon-voltron-8fe2deab154b7bcc71e2",
-          "title": "Lion Force · Episode 24",
+          "title": "Lion Force \u00b7 Episode 24",
           "season": 0,
           "number": 24,
           "durationSeconds": 1398.47,
@@ -7084,7 +7084,7 @@
         },
         {
           "id": "cartoon-voltron-3d3f1276c5c0e56c8f79",
-          "title": "Lion Force · Episode 25",
+          "title": "Lion Force \u00b7 Episode 25",
           "season": 0,
           "number": 25,
           "durationSeconds": 1397.26,
@@ -7101,7 +7101,7 @@
         },
         {
           "id": "cartoon-voltron-40d1214e9f4ed08e9b3e",
-          "title": "Lion Force · Episode 26",
+          "title": "Lion Force \u00b7 Episode 26",
           "season": 0,
           "number": 26,
           "durationSeconds": 1398.77,
@@ -7118,7 +7118,7 @@
         },
         {
           "id": "cartoon-voltron-e92b0420e405335faf63",
-          "title": "Lion Force · Episode 27",
+          "title": "Lion Force \u00b7 Episode 27",
           "season": 0,
           "number": 27,
           "durationSeconds": 1397.93,
@@ -7135,7 +7135,7 @@
         },
         {
           "id": "cartoon-voltron-402651782b4c6fdebcd6",
-          "title": "Lion Force · Episode 28",
+          "title": "Lion Force \u00b7 Episode 28",
           "season": 0,
           "number": 28,
           "durationSeconds": 1399.93,
@@ -7152,7 +7152,7 @@
         },
         {
           "id": "cartoon-voltron-60a7ec217f927b5a088c",
-          "title": "Lion Force · Episode 29",
+          "title": "Lion Force \u00b7 Episode 29",
           "season": 0,
           "number": 29,
           "durationSeconds": 1398.2,
@@ -7169,7 +7169,7 @@
         },
         {
           "id": "cartoon-voltron-43f88ecad141e2144ebe",
-          "title": "Lion Force · Episode 30",
+          "title": "Lion Force \u00b7 Episode 30",
           "season": 0,
           "number": 30,
           "durationSeconds": 1397.7,
@@ -7186,7 +7186,7 @@
         },
         {
           "id": "cartoon-voltron-ae98138646b45ec92e7d",
-          "title": "Lion Force · Episode 31",
+          "title": "Lion Force \u00b7 Episode 31",
           "season": 0,
           "number": 31,
           "durationSeconds": 1397.1,
@@ -7203,7 +7203,7 @@
         },
         {
           "id": "cartoon-voltron-8bc101c48ac8c453d59d",
-          "title": "Lion Force · Episode 32",
+          "title": "Lion Force \u00b7 Episode 32",
           "season": 0,
           "number": 32,
           "durationSeconds": 1398.83,
@@ -7220,7 +7220,7 @@
         },
         {
           "id": "cartoon-voltron-0e57572fc751b80ea1e0",
-          "title": "Lion Force · Episode 33",
+          "title": "Lion Force \u00b7 Episode 33",
           "season": 0,
           "number": 33,
           "durationSeconds": 1398.8,
@@ -7237,7 +7237,7 @@
         },
         {
           "id": "cartoon-voltron-ddb36e508dd9ff5b4af4",
-          "title": "Lion Force · Episode 34",
+          "title": "Lion Force \u00b7 Episode 34",
           "season": 0,
           "number": 34,
           "durationSeconds": 1398.57,
@@ -7254,7 +7254,7 @@
         },
         {
           "id": "cartoon-voltron-965e012cd39b595f621a",
-          "title": "Lion Force · Episode 35",
+          "title": "Lion Force \u00b7 Episode 35",
           "season": 0,
           "number": 35,
           "durationSeconds": 1398.03,
@@ -7271,7 +7271,7 @@
         },
         {
           "id": "cartoon-voltron-c38ec322656c43e283dd",
-          "title": "Lion Force · Episode 36",
+          "title": "Lion Force \u00b7 Episode 36",
           "season": 0,
           "number": 36,
           "durationSeconds": 1398.33,
@@ -7288,7 +7288,7 @@
         },
         {
           "id": "cartoon-voltron-c72d96ed253b2d3d5ddd",
-          "title": "Lion Force · Episode 37",
+          "title": "Lion Force \u00b7 Episode 37",
           "season": 0,
           "number": 37,
           "durationSeconds": 1396.43,
@@ -7305,7 +7305,7 @@
         },
         {
           "id": "cartoon-voltron-7056c06e2a3b7361e6ff",
-          "title": "Lion Force · Episode 38",
+          "title": "Lion Force \u00b7 Episode 38",
           "season": 0,
           "number": 38,
           "durationSeconds": 1397.16,
@@ -7322,7 +7322,7 @@
         },
         {
           "id": "cartoon-voltron-3dfad8aacbf5d82005a0",
-          "title": "Lion Force · Episode 39",
+          "title": "Lion Force \u00b7 Episode 39",
           "season": 0,
           "number": 39,
           "durationSeconds": 1398.17,
@@ -7339,7 +7339,7 @@
         },
         {
           "id": "cartoon-voltron-24dddfe2322d84e2dd38",
-          "title": "Lion Force · Episode 40",
+          "title": "Lion Force \u00b7 Episode 40",
           "season": 0,
           "number": 40,
           "durationSeconds": 1399.07,
@@ -7356,7 +7356,7 @@
         },
         {
           "id": "cartoon-voltron-fff601fbe3e5d29da8ba",
-          "title": "Lion Force · Episode 41",
+          "title": "Lion Force \u00b7 Episode 41",
           "season": 0,
           "number": 41,
           "durationSeconds": 1399.33,
@@ -7373,7 +7373,7 @@
         },
         {
           "id": "cartoon-voltron-02abe799c2da2a82c2bf",
-          "title": "Lion Force · Episode 42",
+          "title": "Lion Force \u00b7 Episode 42",
           "season": 0,
           "number": 42,
           "durationSeconds": 1396.7,
@@ -7390,7 +7390,7 @@
         },
         {
           "id": "cartoon-voltron-8ced8e296c3ebdfdd3ea",
-          "title": "Lion Force · Episode 43",
+          "title": "Lion Force \u00b7 Episode 43",
           "season": 0,
           "number": 43,
           "durationSeconds": 1397.37,
@@ -7407,7 +7407,7 @@
         },
         {
           "id": "cartoon-voltron-d8759bd8f245d80e1a8a",
-          "title": "Lion Force · Episode 44",
+          "title": "Lion Force \u00b7 Episode 44",
           "season": 0,
           "number": 44,
           "durationSeconds": 1398.93,
@@ -7424,7 +7424,7 @@
         },
         {
           "id": "cartoon-voltron-3df6adda2d86db64c11b",
-          "title": "Lion Force · Episode 45",
+          "title": "Lion Force \u00b7 Episode 45",
           "season": 0,
           "number": 45,
           "durationSeconds": 1396.2,
@@ -7441,7 +7441,7 @@
         },
         {
           "id": "cartoon-voltron-c16280bedb99069b4d9d",
-          "title": "Lion Force · Episode 46",
+          "title": "Lion Force \u00b7 Episode 46",
           "season": 0,
           "number": 46,
           "durationSeconds": 1398.03,
@@ -7458,7 +7458,7 @@
         },
         {
           "id": "cartoon-voltron-283bf939738011efcbb5",
-          "title": "Lion Force · Episode 47",
+          "title": "Lion Force \u00b7 Episode 47",
           "season": 0,
           "number": 47,
           "durationSeconds": 1396.36,
@@ -7475,7 +7475,7 @@
         },
         {
           "id": "cartoon-voltron-a1ca90d2517381048731",
-          "title": "Lion Force · Episode 48",
+          "title": "Lion Force \u00b7 Episode 48",
           "season": 0,
           "number": 48,
           "durationSeconds": 1396.83,
@@ -7492,7 +7492,7 @@
         },
         {
           "id": "cartoon-voltron-460c602e4d86114c15bd",
-          "title": "Lion Force · Episode 49",
+          "title": "Lion Force \u00b7 Episode 49",
           "season": 0,
           "number": 49,
           "durationSeconds": 1397.57,
@@ -7509,7 +7509,7 @@
         },
         {
           "id": "cartoon-voltron-933d0db9ade239179780",
-          "title": "Lion Force · Episode 50",
+          "title": "Lion Force \u00b7 Episode 50",
           "season": 0,
           "number": 50,
           "durationSeconds": 1397.23,
@@ -7526,7 +7526,7 @@
         },
         {
           "id": "cartoon-voltron-280c9fd8689b3ae5c5ed",
-          "title": "Lion Force · Episode 51",
+          "title": "Lion Force \u00b7 Episode 51",
           "season": 0,
           "number": 51,
           "durationSeconds": 1398.07,
@@ -7543,7 +7543,7 @@
         },
         {
           "id": "cartoon-voltron-25387308d50a801f7377",
-          "title": "Lion Force · Episode 52",
+          "title": "Lion Force \u00b7 Episode 52",
           "season": 0,
           "number": 52,
           "durationSeconds": 1399.37,
@@ -7560,7 +7560,7 @@
         },
         {
           "id": "cartoon-voltron-799fe4d361d6af564e5e",
-          "title": "Lion Force · Episode 53",
+          "title": "Lion Force \u00b7 Episode 53",
           "season": 0,
           "number": 53,
           "durationSeconds": 1394.76,
@@ -7577,7 +7577,7 @@
         },
         {
           "id": "cartoon-voltron-fb28c99358c16bb6ab2f",
-          "title": "Lion Force · Episode 54",
+          "title": "Lion Force \u00b7 Episode 54",
           "season": 0,
           "number": 54,
           "durationSeconds": 1395.53,
@@ -7594,7 +7594,7 @@
         },
         {
           "id": "cartoon-voltron-df070885ac3b1cecbea7",
-          "title": "Lion Force · Episode 55",
+          "title": "Lion Force \u00b7 Episode 55",
           "season": 0,
           "number": 55,
           "durationSeconds": 1395.43,
@@ -7611,7 +7611,7 @@
         },
         {
           "id": "cartoon-voltron-4f9f92a6ad7f55859103",
-          "title": "Lion Force · Episode 56",
+          "title": "Lion Force \u00b7 Episode 56",
           "season": 0,
           "number": 56,
           "durationSeconds": 1396.8,
@@ -7628,7 +7628,7 @@
         },
         {
           "id": "cartoon-voltron-1df2899ef50e85720e2e",
-          "title": "Lion Force · Episode 57",
+          "title": "Lion Force \u00b7 Episode 57",
           "season": 0,
           "number": 57,
           "durationSeconds": 1396.8,
@@ -7645,7 +7645,7 @@
         },
         {
           "id": "cartoon-voltron-39186b6d65a24a7d5eb6",
-          "title": "Lion Force · Episode 58",
+          "title": "Lion Force \u00b7 Episode 58",
           "season": 0,
           "number": 58,
           "durationSeconds": 1398.37,
@@ -7662,7 +7662,7 @@
         },
         {
           "id": "cartoon-voltron-5a3a5f6757d079fb5b22",
-          "title": "Lion Force · Episode 59",
+          "title": "Lion Force \u00b7 Episode 59",
           "season": 0,
           "number": 59,
           "durationSeconds": 1398.57,
@@ -7679,7 +7679,7 @@
         },
         {
           "id": "cartoon-voltron-eb60c34780599c43f6ed",
-          "title": "Lion Force · Episode 60",
+          "title": "Lion Force \u00b7 Episode 60",
           "season": 0,
           "number": 60,
           "durationSeconds": 1396.36,
@@ -7696,7 +7696,7 @@
         },
         {
           "id": "cartoon-voltron-6c0e6edf3070580f8197",
-          "title": "Lion Force · Episode 61",
+          "title": "Lion Force \u00b7 Episode 61",
           "season": 0,
           "number": 61,
           "durationSeconds": 1395.53,
@@ -7713,7 +7713,7 @@
         },
         {
           "id": "cartoon-voltron-2b44e9b6a40438976eef",
-          "title": "Lion Force · Episode 62",
+          "title": "Lion Force \u00b7 Episode 62",
           "season": 0,
           "number": 62,
           "durationSeconds": 1395.7,
@@ -7730,7 +7730,7 @@
         },
         {
           "id": "cartoon-voltron-bf5986d2b24350d3bd8a",
-          "title": "Lion Force · Episode 63",
+          "title": "Lion Force \u00b7 Episode 63",
           "season": 0,
           "number": 63,
           "durationSeconds": 1393.03,
@@ -7747,7 +7747,7 @@
         },
         {
           "id": "cartoon-voltron-ed62c0a19091e9acad3f",
-          "title": "Lion Force · Episode 64",
+          "title": "Lion Force \u00b7 Episode 64",
           "season": 0,
           "number": 64,
           "durationSeconds": 1392.36,
@@ -7764,7 +7764,7 @@
         },
         {
           "id": "cartoon-voltron-43c81c52f422b47655fc",
-          "title": "Lion Force · Episode 65",
+          "title": "Lion Force \u00b7 Episode 65",
           "season": 0,
           "number": 65,
           "durationSeconds": 1393.33,
@@ -7781,7 +7781,7 @@
         },
         {
           "id": "cartoon-voltron-0e8786e9abbb6bb0e4f9",
-          "title": "Lion Force · Episode 66",
+          "title": "Lion Force \u00b7 Episode 66",
           "season": 0,
           "number": 66,
           "durationSeconds": 1393.03,
@@ -7798,7 +7798,7 @@
         },
         {
           "id": "cartoon-voltron-f2ecb0e3e31fe37f31de",
-          "title": "Lion Force · Episode 67",
+          "title": "Lion Force \u00b7 Episode 67",
           "season": 0,
           "number": 67,
           "durationSeconds": 1392.83,
@@ -7815,7 +7815,7 @@
         },
         {
           "id": "cartoon-voltron-044a85ebe43d12a13542",
-          "title": "Lion Force · Episode 68",
+          "title": "Lion Force \u00b7 Episode 68",
           "season": 0,
           "number": 68,
           "durationSeconds": 1393.89,
@@ -7832,7 +7832,7 @@
         },
         {
           "id": "cartoon-voltron-7c5f7af2bbe252828664",
-          "title": "Lion Force · Episode 69",
+          "title": "Lion Force \u00b7 Episode 69",
           "season": 0,
           "number": 69,
           "durationSeconds": 1393.79,
@@ -7849,7 +7849,7 @@
         },
         {
           "id": "cartoon-voltron-e1665f55c2ed2b84a08f",
-          "title": "Lion Force · Episode 70",
+          "title": "Lion Force \u00b7 Episode 70",
           "season": 0,
           "number": 70,
           "durationSeconds": 1393.09,
@@ -7866,7 +7866,7 @@
         },
         {
           "id": "cartoon-voltron-77adec23c7827bc2ec59",
-          "title": "Lion Force · Episode 71",
+          "title": "Lion Force \u00b7 Episode 71",
           "season": 0,
           "number": 71,
           "durationSeconds": 1394.5,
@@ -7883,7 +7883,7 @@
         },
         {
           "id": "cartoon-voltron-97577a93640c6a028c4f",
-          "title": "Lion Force · Episode 72",
+          "title": "Lion Force \u00b7 Episode 72",
           "season": 0,
           "number": 72,
           "durationSeconds": 1396.33,
@@ -7900,7 +7900,7 @@
         },
         {
           "id": "cartoon-voltron-92d8ebb240950686ec1a",
-          "title": "Vehicle Force · Voltron Vehicle Force - 01 - In Search Of New Worlds",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 01 - In Search Of New Worlds",
           "season": 0,
           "number": 73,
           "durationSeconds": 1390.36,
@@ -7917,7 +7917,7 @@
         },
         {
           "id": "cartoon-voltron-8944204b51ca7214fe04",
-          "title": "Vehicle Force · Voltron Vehicle Force - 02 - First Day On A New World",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 02 - First Day On A New World",
           "season": 0,
           "number": 74,
           "durationSeconds": 1391.87,
@@ -7934,7 +7934,7 @@
         },
         {
           "id": "cartoon-voltron-6a1c5e1919f36c21d871",
-          "title": "Vehicle Force · Voltron Vehicle Force - 03 - Building A New World",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 03 - Building A New World",
           "season": 0,
           "number": 75,
           "durationSeconds": 1389.91,
@@ -7951,7 +7951,7 @@
         },
         {
           "id": "cartoon-voltron-00659f10d6a186e0121b",
-          "title": "Vehicle Force · Voltron Vehicle Force - 04 - Goodbye New World",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 04 - Goodbye New World",
           "season": 0,
           "number": 76,
           "durationSeconds": 1389.48,
@@ -7968,7 +7968,7 @@
         },
         {
           "id": "cartoon-voltron-360206aa88b06880b691",
-          "title": "Vehicle Force · Voltron Vehicle Force - 05 - Try This World For Size",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 05 - Try This World For Size",
           "season": 0,
           "number": 77,
           "durationSeconds": 1389.68,
@@ -7985,7 +7985,7 @@
         },
         {
           "id": "cartoon-voltron-a4aed159ecf8f1642461",
-          "title": "Vehicle Force · Voltron Vehicle Force - 06 - A Storm Of Meteors",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 06 - A Storm Of Meteors",
           "season": 0,
           "number": 78,
           "durationSeconds": 1389.36,
@@ -8002,7 +8002,7 @@
         },
         {
           "id": "cartoon-voltron-5a0fdd8ec3428fbba9d0",
-          "title": "Vehicle Force · Voltron Vehicle Force - 07 - Help Not Wanted",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 07 - Help Not Wanted",
           "season": 0,
           "number": 79,
           "durationSeconds": 1390.44,
@@ -8019,7 +8019,7 @@
         },
         {
           "id": "cartoon-voltron-e8716af483cebf84e28f",
-          "title": "Vehicle Force · Voltron Vehicle Force - 08 - Ghost Fleet From Another Planet",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 08 - Ghost Fleet From Another Planet",
           "season": 0,
           "number": 80,
           "durationSeconds": 1397.23,
@@ -8036,7 +8036,7 @@
         },
         {
           "id": "cartoon-voltron-55bd690e1e771d7a7197",
-          "title": "Vehicle Force · Voltron Vehicle Force - 09 - A Very Short Vacation",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 09 - A Very Short Vacation",
           "season": 0,
           "number": 81,
           "durationSeconds": 1389.44,
@@ -8053,7 +8053,7 @@
         },
         {
           "id": "cartoon-voltron-037c1102fa4ec86188be",
-          "title": "Vehicle Force · Voltron Vehicle Force - 10 - Planet Of Bats",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 10 - Planet Of Bats",
           "season": 0,
           "number": 82,
           "durationSeconds": 1388.95,
@@ -8070,7 +8070,7 @@
         },
         {
           "id": "cartoon-voltron-ee014f6c0ba389e0b14a",
-          "title": "Vehicle Force · Voltron Vehicle Force - 11 - A Temporary Truce",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 11 - A Temporary Truce",
           "season": 0,
           "number": 83,
           "durationSeconds": 1390.64,
@@ -8087,7 +8087,7 @@
         },
         {
           "id": "cartoon-voltron-5c87a7e5f24a8f7c33c7",
-          "title": "Vehicle Force · Voltron Vehicle Force - 12 - Wolos Lost World",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 12 - Wolos Lost World",
           "season": 0,
           "number": 84,
           "durationSeconds": 1390.96,
@@ -8104,7 +8104,7 @@
         },
         {
           "id": "cartoon-voltron-de36b439262313dd9aca",
-          "title": "Vehicle Force · Voltron Vehicle Force - 13 - Planet Stop For Repairs",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 13 - Planet Stop For Repairs",
           "season": 0,
           "number": 85,
           "durationSeconds": 1390.17,
@@ -8121,7 +8121,7 @@
         },
         {
           "id": "cartoon-voltron-4a3280776f4d68639a93",
-          "title": "Vehicle Force · Voltron Vehicle Force - 14 - A Curious Comet",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 14 - A Curious Comet",
           "season": 0,
           "number": 86,
           "durationSeconds": 1390.96,
@@ -8138,7 +8138,7 @@
         },
         {
           "id": "cartoon-voltron-b7dd7762478a9446c01c",
-          "title": "Vehicle Force · Voltron Vehicle Force - 15 - In The Enemy Camp",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 15 - In The Enemy Camp",
           "season": 0,
           "number": 87,
           "durationSeconds": 1389.85,
@@ -8155,7 +8155,7 @@
         },
         {
           "id": "cartoon-voltron-0d283bea3eb61850c963",
-          "title": "Vehicle Force · Voltron Vehicle Force - 16 - Who's On First",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 16 - Who's On First",
           "season": 0,
           "number": 88,
           "durationSeconds": 1390.91,
@@ -8172,7 +8172,7 @@
         },
         {
           "id": "cartoon-voltron-4c21b4f4c098bed50ff0",
-          "title": "Vehicle Force · Voltron Vehicle Force - 17 - No Who's On Second",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 17 - No Who's On Second",
           "season": 0,
           "number": 89,
           "durationSeconds": 1390.4,
@@ -8189,7 +8189,7 @@
         },
         {
           "id": "cartoon-voltron-4072b472f9a6ab9999fd",
-          "title": "Vehicle Force · Voltron Vehicle Force - 18 - What's On First",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 18 - What's On First",
           "season": 0,
           "number": 90,
           "durationSeconds": 1387.84,
@@ -8206,7 +8206,7 @@
         },
         {
           "id": "cartoon-voltron-77431549ff7a19d76419",
-          "title": "Vehicle Force · Voltron Vehicle Force - 19 - Great Stone Space Faces",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 19 - Great Stone Space Faces",
           "season": 0,
           "number": 91,
           "durationSeconds": 1392.32,
@@ -8223,7 +8223,7 @@
         },
         {
           "id": "cartoon-voltron-8edf216c448bf46c1066",
-          "title": "Vehicle Force · Voltron Vehicle Force - 20 - Defend The New World",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 20 - Defend The New World",
           "season": 0,
           "number": 92,
           "durationSeconds": 1390.08,
@@ -8240,7 +8240,7 @@
         },
         {
           "id": "cartoon-voltron-e284fa02a6f9c883a68b",
-          "title": "Vehicle Force · Voltron Vehicle Force - 21 - Meanwhile Back At Galaxy Garrison",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 21 - Meanwhile Back At Galaxy Garrison",
           "season": 0,
           "number": 93,
           "durationSeconds": 1389.8,
@@ -8257,7 +8257,7 @@
         },
         {
           "id": "cartoon-voltron-d66a030357001d5c2d97",
-          "title": "Vehicle Force · Voltron Vehicle Force - 22 - Nerok Scores Big",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 22 - Nerok Scores Big",
           "season": 0,
           "number": 94,
           "durationSeconds": 1392.04,
@@ -8274,7 +8274,7 @@
         },
         {
           "id": "cartoon-voltron-3bad0e96fab9cf54a241",
-          "title": "Vehicle Force · Voltron Vehicle Force - 23 - Hazar On The Carpet",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 23 - Hazar On The Carpet",
           "season": 0,
           "number": 95,
           "durationSeconds": 1385.75,
@@ -8291,7 +8291,7 @@
         },
         {
           "id": "cartoon-voltron-5610f2738ac8dead12c0",
-          "title": "Vehicle Force · Voltron Vehicle Force - 24 - Hazar Is Demoted",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 24 - Hazar Is Demoted",
           "season": 0,
           "number": 96,
           "durationSeconds": 1390.36,
@@ -8308,7 +8308,7 @@
         },
         {
           "id": "cartoon-voltron-df2ebb64a288fd765fac",
-          "title": "Vehicle Force · Voltron Vehicle Force - 25 - Just Like Earth",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 25 - Just Like Earth",
           "season": 0,
           "number": 97,
           "durationSeconds": 1393.24,
@@ -8325,7 +8325,7 @@
         },
         {
           "id": "cartoon-voltron-2506a116a71ea4aaeefe",
-          "title": "Vehicle Force · Voltron Vehicle Force - 26 - The Planet Trap",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 26 - The Planet Trap",
           "season": 0,
           "number": 98,
           "durationSeconds": 1391,
@@ -8342,7 +8342,7 @@
         },
         {
           "id": "cartoon-voltron-4a72439e337ff8ba1d7e",
-          "title": "Vehicle Force · Voltron Vehicle Force - 27 - Save The Space Station",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 27 - Save The Space Station",
           "season": 0,
           "number": 99,
           "durationSeconds": 1390.19,
@@ -8359,7 +8359,7 @@
         },
         {
           "id": "cartoon-voltron-dd31c9cccfc56c0bebdf",
-          "title": "Vehicle Force · Voltron Vehicle Force - 28 - Planet Of The Amazons",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 28 - Planet Of The Amazons",
           "season": 0,
           "number": 100,
           "durationSeconds": 1390.68,
@@ -8376,7 +8376,7 @@
         },
         {
           "id": "cartoon-voltron-ef00d4869343324599b0",
-          "title": "Vehicle Force · Voltron Vehicle Force - 29 - Revolt Of The Slaves",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 29 - Revolt Of The Slaves",
           "season": 0,
           "number": 101,
           "durationSeconds": 1390,
@@ -8393,7 +8393,7 @@
         },
         {
           "id": "cartoon-voltron-e20db6219fc457432080",
-          "title": "Vehicle Force · Voltron Vehicle Force - 30 - Raid On Galaxy Garrison",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 30 - Raid On Galaxy Garrison",
           "season": 0,
           "number": 102,
           "durationSeconds": 1397.72,
@@ -8410,7 +8410,7 @@
         },
         {
           "id": "cartoon-voltron-a488435dacc7592d79c3",
-          "title": "Vehicle Force · Voltron Vehicle Force - 31 - Smashing The Meteor Barrier",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 31 - Smashing The Meteor Barrier",
           "season": 0,
           "number": 103,
           "durationSeconds": 1389.91,
@@ -8427,7 +8427,7 @@
         },
         {
           "id": "cartoon-voltron-1444783e556a064c375e",
-          "title": "Vehicle Force · Voltron Vehicle Force - 32 - A Man Made Sun",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 32 - A Man Made Sun",
           "season": 0,
           "number": 104,
           "durationSeconds": 1389.95,
@@ -8444,7 +8444,7 @@
         },
         {
           "id": "cartoon-voltron-19581570596c1f3a35e4",
-          "title": "Vehicle Force · Voltron Vehicle Force - 33 - Captain Newly Returns",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 33 - Captain Newly Returns",
           "season": 0,
           "number": 105,
           "durationSeconds": 1390.49,
@@ -8461,7 +8461,7 @@
         },
         {
           "id": "cartoon-voltron-a8c28372635bfb98d344",
-          "title": "Vehicle Force · Voltron Vehicle Force - 34 - Hazar Bucks The Empire",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 34 - Hazar Bucks The Empire",
           "season": 0,
           "number": 106,
           "durationSeconds": 1391.36,
@@ -8478,7 +8478,7 @@
         },
         {
           "id": "cartoon-voltron-ae71a5f5f93dd0cd050f",
-          "title": "Vehicle Force · Voltron Vehicle Force - 35 - Letters From Home",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 35 - Letters From Home",
           "season": 0,
           "number": 107,
           "durationSeconds": 1390.23,
@@ -8495,7 +8495,7 @@
         },
         {
           "id": "cartoon-voltron-f7dcc5e33b7b9d56ea70",
-          "title": "Vehicle Force · Voltron Vehicle Force - 36 - Peace.a Fish Story",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 36 - Peace.a Fish Story",
           "season": 0,
           "number": 108,
           "durationSeconds": 1390.49,
@@ -8512,7 +8512,7 @@
         },
         {
           "id": "cartoon-voltron-18fbb50ca3b017336834",
-          "title": "Vehicle Force · Voltron Vehicle Force - 37 - The Red Moon People",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 37 - The Red Moon People",
           "season": 0,
           "number": 109,
           "durationSeconds": 1391.28,
@@ -8529,7 +8529,7 @@
         },
         {
           "id": "cartoon-voltron-87bb9f19114d5152128c",
-          "title": "Vehicle Force · Voltron Vehicle Force - 38 - This Worlds For The Birds",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 38 - This Worlds For The Birds",
           "season": 0,
           "number": 110,
           "durationSeconds": 1390.49,
@@ -8546,7 +8546,7 @@
         },
         {
           "id": "cartoon-voltron-0e2d46327983ad319fe0",
-          "title": "Vehicle Force · Voltron Vehicle Force - 39 - Thats The Old Ball Game",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 39 - Thats The Old Ball Game",
           "season": 0,
           "number": 111,
           "durationSeconds": 1391.32,
@@ -8563,7 +8563,7 @@
         },
         {
           "id": "cartoon-voltron-778f1015d12af7d7f0af",
-          "title": "Vehicle Force · Voltron Vehicle Force - 40 - Red Moon Rises Again",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 40 - Red Moon Rises Again",
           "season": 0,
           "number": 112,
           "durationSeconds": 1390.81,
@@ -8580,7 +8580,7 @@
         },
         {
           "id": "cartoon-voltron-a48ea8abcf0e82121e6e",
-          "title": "Vehicle Force · Voltron Vehicle Force - 41 - Another Solar System",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 41 - Another Solar System",
           "season": 0,
           "number": 113,
           "durationSeconds": 1391.15,
@@ -8597,7 +8597,7 @@
         },
         {
           "id": "cartoon-voltron-e81d567e7a3706941a67",
-          "title": "Vehicle Force · Voltron Vehicle Force - 42 - Whose World Is It",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 42 - Whose World Is It",
           "season": 0,
           "number": 114,
           "durationSeconds": 1389.87,
@@ -8614,7 +8614,7 @@
         },
         {
           "id": "cartoon-voltron-6e1fb9b312a770249c52",
-          "title": "Vehicle Force · Voltron Vehicle Force - 43 - It's Anybodys World",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 43 - It's Anybodys World",
           "season": 0,
           "number": 115,
           "durationSeconds": 1390.59,
@@ -8631,7 +8631,7 @@
         },
         {
           "id": "cartoon-voltron-d8ca7a91ea29545fdb27",
-          "title": "Vehicle Force · Voltron Vehicle Force - 44 - Frozen Assets",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 44 - Frozen Assets",
           "season": 0,
           "number": 116,
           "durationSeconds": 1390.04,
@@ -8648,7 +8648,7 @@
         },
         {
           "id": "cartoon-voltron-77aa422a39b02257d424",
-          "title": "Vehicle Force · Voltron Vehicle Force - 45 - Coconuts",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 45 - Coconuts",
           "season": 0,
           "number": 117,
           "durationSeconds": 1390.96,
@@ -8665,7 +8665,7 @@
         },
         {
           "id": "cartoon-voltron-e6b0cabf0dc21bdb4bcc",
-          "title": "Vehicle Force · Voltron Vehicle Force - 46 - It Could Be A Long War",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 46 - It Could Be A Long War",
           "season": 0,
           "number": 118,
           "durationSeconds": 1389.21,
@@ -8682,7 +8682,7 @@
         },
         {
           "id": "cartoon-voltron-8a1973a43f29a627204c",
-          "title": "Vehicle Force · Voltron Vehicle Force - 47 - Colour Me Invisible",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 47 - Colour Me Invisible",
           "season": 0,
           "number": 119,
           "durationSeconds": 1388.99,
@@ -8699,7 +8699,7 @@
         },
         {
           "id": "cartoon-voltron-7d01fd9efdf6e78c0438",
-          "title": "Vehicle Force · Voltron Vehicle Force - 48 - Time Running Out",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 48 - Time Running Out",
           "season": 0,
           "number": 120,
           "durationSeconds": 1390.19,
@@ -8716,7 +8716,7 @@
         },
         {
           "id": "cartoon-voltron-3d084275e37a4700da89",
-          "title": "Vehicle Force · Voltron Vehicle Force - 49 - Zero Hour Approaches",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 49 - Zero Hour Approaches",
           "season": 0,
           "number": 121,
           "durationSeconds": 1389.55,
@@ -8733,7 +8733,7 @@
         },
         {
           "id": "cartoon-voltron-aaa3e320d9a88213281d",
-          "title": "Vehicle Force · Voltron Vehicle Force - 50 - The Drules World Cracks Up",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 50 - The Drules World Cracks Up",
           "season": 0,
           "number": 122,
           "durationSeconds": 1389.44,
@@ -8750,7 +8750,7 @@
         },
         {
           "id": "cartoon-voltron-d81988abbcb6788e3a7e",
-          "title": "Vehicle Force · Voltron Vehicle Force - 51 - The Drules Surrender",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 51 - The Drules Surrender",
           "season": 0,
           "number": 123,
           "durationSeconds": 1395.63,
@@ -8767,7 +8767,7 @@
         },
         {
           "id": "cartoon-voltron-d81a7353419dc7d45b70",
-          "title": "Vehicle Force · Voltron Vehicle Force - 52 - The End Of Hazar's World",
+          "title": "Vehicle Force \u00b7 Voltron Vehicle Force - 52 - The End Of Hazar's World",
           "season": 0,
           "number": 124,
           "durationSeconds": 1407.72,
@@ -11731,7 +11731,7 @@
       "episodes": [
         {
           "id": "cartoon-centurions-b1c3c265d6ad155734ee",
-          "title": "The Sky Is Burning · original airing with commercials",
+          "title": "The Sky Is Burning \u00b7 original airing with commercials",
           "season": 0,
           "number": 1,
           "durationSeconds": 1710.34,
@@ -12881,7 +12881,7 @@
           ]
         }
       ],
-      "notes": "Files 5–65 from the main collection and episode 1 from a separate original airing with commercials. Gap episodes 2–4 resolved with clean, explicitly numbered Centurions MP4 files in mixed collection Centurions08DenverIsDown; unrelated Blackstar/Herculoids files excluded. Source typo Allien retained. Season 0 denotes the flat source sequence.",
+      "notes": "Files 5\u201365 from the main collection and episode 1 from a separate original airing with commercials. Gap episodes 2\u20134 resolved with clean, explicitly numbered Centurions MP4 files in mixed collection Centurions08DenverIsDown; unrelated Blackstar/Herculoids files excluded. Source typo Allien retained. Season 0 denotes the flat source sequence.",
       "sampleCheck": {
         "url": "https://archive.org/download/centurions-premiere-4-7-1986/Centurions%20Premiere%20-%20April%207%2C%201986%20(WOC)%20%5Bbd%5D%20deinterlaced.mp4",
         "status": 206,
@@ -13261,7 +13261,7 @@
           "retained": 21
         }
       ],
-      "notes": "Original-series collection contains source-numbered seasons 1–2.",
+      "notes": "Original-series collection contains source-numbered seasons 1\u20132.",
       "sampleCheck": {
         "url": "https://archive.org/download/thundarr-the-barbarian_202605/Thundarr%20the%20Barbarian%20-%20S01E01%20(Secret%20of%20the%20Black%20Pearl).ia.mp4",
         "status": 206,
@@ -14753,6 +14753,718 @@
         "contentType": "video/mp4",
         "checkedAt": "2026-11-13T18:35:14.514Z"
       }
+    },
+    {
+      "showId": "spider-friends",
+      "title": "Spider-Man and His Amazing Friends",
+      "episodes": [
+        {
+          "id": "cartoon-spider-friends-f63fda524db0c9d36c8a",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 01 Triumph of the Green Goblin",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1431.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-f63fda524db0c9d36c8a",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2001%20Triumph%20of%20the%20Green%20Goblin.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-53806159ce6d0569bfc5",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 02 The Crime of All Centuries",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1431.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-53806159ce6d0569bfc5",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2002%20The%20Crime%20of%20All%20Centuries.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-5ae0aadd21882080ba1a",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 03 The Fantastic Mr. Frump!",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1430.74,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-5ae0aadd21882080ba1a",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2003%20The%20Fantastic%20Mr.%20Frump!.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-02c690b9a2b1de33fc29",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 04 Sunfire",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1432.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-02c690b9a2b1de33fc29",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2004%20Sunfire.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-aa4287f4351485025a31",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 05 Swarm",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1429.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-aa4287f4351485025a31",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2005%20Swarm.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-76efa55793dfff2cc85b",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 06 7 Little Superheroes",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1431.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-76efa55793dfff2cc85b",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2006%207%20Little%20Superheroes.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-e5c7a894590c6e58f2f8",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 07 Video-Man",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1433.41,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-e5c7a894590c6e58f2f8",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2007%20Video-Man.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-b8a6d48c2bd5af488388",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 08 The Prison Plot",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1440.66,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-b8a6d48c2bd5af488388",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2008%20The%20Prison%20Plot.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-a5fded697720387f987c",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 09 Spidey Goes Hollywood",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1432.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-a5fded697720387f987c",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2009%20Spidey%20Goes%20Hollywood.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-f71aea6aad263cd60e6b",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 10 The Vengeance of Loki! ",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1431.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-f71aea6aad263cd60e6b",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2010%20The%20Vengeance%20of%20Loki!%20.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-3ea3c791aeeffb551f52",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 11 Knights and Demons",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1435.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-3ea3c791aeeffb551f52",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2011%20Knights%20and%20Demons.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-f652dd03f1ffea59a7de",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 12 Pawns of the Kingpin ",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1433.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-f652dd03f1ffea59a7de",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2012%20Pawns%20of%20the%20Kingpin%20.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-bf38b566c6f9090700cc",
+          "title": "Spider-Man and His Amazing Friends Season 1 Episode 13 The Quest of the Red Skull",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1430.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-bf38b566c6f9090700cc",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2013%20The%20Quest%20of%20the%20Red%20Skull.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-fdaa6b264669632342cf",
+          "title": "Spider-Man and His Amazing Friends Season 2 Episode 01 The Origin of the Iceman",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1435.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-fdaa6b264669632342cf",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%202%20Episode%2001%20The%20Origin%20of%20the%20Iceman.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-69492299dcd6d6525ad8",
+          "title": "Spider-Man and His Amazing Friends Season 2 Episode 02 A Fire-Star Is Born",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1432.92,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-69492299dcd6d6525ad8",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%202%20Episode%2002%20A%20Fire-Star%20Is%20Born.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-b8f6b17368d6c46e032f",
+          "title": "Spider-Man and His Amazing Friends Season 2 Episode 03 Along Came Spidey",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 1433.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-b8f6b17368d6c46e032f",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%202%20Episode%2003%20Along%20Came%20Spidey.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-fe0f6953a064740ec564",
+          "title": "Spider-Man and His Amazing Friends Season 3 Episode 01 Spider-Man Unmasked!",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 1414.44,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-fe0f6953a064740ec564",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%203%20Episode%2001%20Spider-Man%20Unmasked!.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-c07f1865e63aa1e931a6",
+          "title": "Spider-Man and His Amazing Friends Season 3 Episode 02 The Bride of Dracula!",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 1415.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-c07f1865e63aa1e931a6",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%203%20Episode%2002%20The%20Bride%20of%20Dracula!.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-568a6270d71d5c8730de",
+          "title": "Spider-Man and His Amazing Friends Season 3 Episode 03 The Education of a Superhero",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 1416.58,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-568a6270d71d5c8730de",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%203%20Episode%2003%20The%20Education%20of%20a%20Superhero.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-0803c06ba3d12134be50",
+          "title": "Spider-Man and His Amazing Friends Season 3 Episode 04 Attack of the Arachnoid",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 1414.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-0803c06ba3d12134be50",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%203%20Episode%2004%20Attack%20of%20the%20Arachnoid.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-abd4c6d80596be05ba48",
+          "title": "Spider-Man and His Amazing Friends Season 3 Episode 05 The Origin of the Spider-Friends",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 1412.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-abd4c6d80596be05ba48",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%203%20Episode%2005%20The%20Origin%20of%20the%20Spider-Friends.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-723476a9c7f1ccb8cae9",
+          "title": "Spider-Man and His Amazing Friends Season 3 Episode 06 Spidey Meets the Girl from Tomorrow",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 1413.74,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-723476a9c7f1ccb8cae9",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%203%20Episode%2006%20Spidey%20Meets%20the%20Girl%20from%20Tomorrow.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-8ea3355fbbef40331238",
+          "title": "Spider-Man and His Amazing Friends Season 3 Episode 07 The X-Men Adventure",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 1407.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-8ea3355fbbef40331238",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%203%20Episode%2007%20The%20X-Men%20Adventure.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-spider-friends-ced0742b2c435adbce76",
+          "title": "Spider-Man and His Amazing Friends Season 3 Episode 08 Mission- Save the GuardStar",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 1418.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-ced0742b2c435adbce76",
+              "provider": "archive",
+              "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%203%20Episode%2008%20Mission-%20Save%20the%20GuardStar.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "provider": "archive",
+          "itemId": "spider-man-and-his-amazing-friends_202403",
+          "url": "https://archive.org/details/spider-man-and-his-amazing-friends_202403",
+          "title": "Spider Man And His Amazing Friends",
+          "language": null,
+          "retained": 44
+        }
+      ],
+      "notes": "Original cartoon collection contains 24 distinct season/episode-numbered stories (13/3/8). Zero-padded and unpadded duplicate filename encodes collapse by season/episode. The other item titled Full Series lacks several stories and was not needed.",
+      "endpointChecks": {
+        "checkedAt": "2026-11-13T20:01:42.662Z",
+        "method": "First and last retained episode: request bytes 0\u201331, read at most 32 bytes; no browser decoding test.",
+        "samples": [
+          {
+            "episode": "1:1",
+            "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%201%20Episode%2001%20Triumph%20of%20the%20Green%20Goblin.mp4",
+            "status": 206,
+            "contentType": "video/mp4",
+            "contentRange": "bytes 0-31/158869488",
+            "mp4Header": true
+          },
+          {
+            "episode": "3:8",
+            "url": "https://archive.org/download/spider-man-and-his-amazing-friends_202403/1982%20Spider-Man%20and%20His%20Amazing%20Friends%20/Spider-Man%20and%20His%20Amazing%20Friends%20Season%203%20Episode%2008%20Mission-%20Save%20the%20GuardStar.mp4",
+            "status": 206,
+            "contentType": "video/mp4",
+            "contentRange": "bytes 0-31/143611394",
+            "mp4Header": true
+          }
+        ]
+      }
+    },
+    {
+      "showId": "hulk-1982",
+      "title": "The Incredible Hulk (1982 animated)",
+      "episodes": [
+        {
+          "id": "cartoon-hulk-1982-bbf03b37c60adb972c57",
+          "title": "Hulk 1982 Episode 01 Tomb of the Unknown Hulk",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 1415.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-bbf03b37c60adb972c57",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2001%20Tomb%20of%20the%20Unknown%20Hulk.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-hulk-1982-dbfa76fd82c5a7b15c85",
+          "title": "Hulk 1982 Episode 02 Prisoner of the Monster",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 1417.48,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-dbfa76fd82c5a7b15c85",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2002%20Prisoner%20of%20the%20Monster.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-hulk-1982-aeb3963a48f00e22faeb",
+          "title": "Hulk 1982 Episode 03 Origin of the Hulk",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 1417.48,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-aeb3963a48f00e22faeb",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2003%20Origin%20of%20the%20Hulk.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-hulk-1982-d5753aba08fbddc10cb7",
+          "title": "Hulk 1982 Episode 04 When Monsters Meet",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 1409.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-d5753aba08fbddc10cb7",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2004%20When%20Monsters%20Meet.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-hulk-1982-681aec1423f840ad4176",
+          "title": "Hulk 1982 Episode 05 The Cyclops Project",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 1412.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-681aec1423f840ad4176",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2005%20The%20Cyclops%20Project.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-hulk-1982-3ec0031fa64761e22116",
+          "title": "Hulk 1982 Episode 06 Bruce Banner Unmasked",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 1416.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-3ec0031fa64761e22116",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2006%20Bruce%20Banner%20Unmasked.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-hulk-1982-200f8a15a00c72fa5945",
+          "title": "Hulk 1982 Episode 07 The Creature and the Cavegirl",
+          "season": 0,
+          "number": 7,
+          "durationSeconds": 1415.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-200f8a15a00c72fa5945",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2007%20The%20Creature%20and%20the%20Cavegirl.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-hulk-1982-2702281dd2ae810cbd89",
+          "title": "Hulk 1982 Episode 08 It Lives! It Grows! It Destroys!",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 1405.48,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-2702281dd2ae810cbd89",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2008%20It%20Lives!%20It%20Grows!%20It%20Destroys!.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-hulk-1982-ab882ed23b67f97741fd",
+          "title": "Hulk 1982 Episode 09 The Incredible Shrinking Hulk",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 1417.48,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-ab882ed23b67f97741fd",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2009%20The%20Incredible%20Shrinking%20Hulk.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-hulk-1982-08176fcc80efdcf7bf51",
+          "title": "Hulk 1982 Episode 10 Punks on Wheels",
+          "season": 0,
+          "number": 10,
+          "durationSeconds": 1406.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-08176fcc80efdcf7bf51",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2010%20Punks%20on%20Wheels.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-hulk-1982-a923dcc859b6f66b1d8b",
+          "title": "Hulk 1982 Episode 11 Enter She-Hulk",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 1416.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-a923dcc859b6f66b1d8b",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2011%20Enter%20She-Hulk.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-hulk-1982-22cb804675c20ce81ad2",
+          "title": "Hulk 1982 Episode 12 The Boy Who Saw Tomorrow",
+          "season": 0,
+          "number": 12,
+          "durationSeconds": 1409.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-22cb804675c20ce81ad2",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2012%20The%20Boy%20Who%20Saw%20Tomorrow.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-hulk-1982-7b04bbd5a473816cab67",
+          "title": "Hulk 1982 Episode 13 The Hulk Destroys Bruce Banner",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 1423.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-7b04bbd5a473816cab67",
+              "provider": "archive",
+              "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2013%20The%20Hulk%20Destroys%20Bruce%20Banner.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "provider": "archive",
+          "itemId": "incredible-hulk-1982-cartoon-series",
+          "url": "https://archive.org/details/incredible-hulk-1982-cartoon-series",
+          "title": "The Incredible Hulk 1982 Cartoon Series",
+          "language": "eng",
+          "retained": 13
+        }
+      ],
+      "notes": "English 1982 animated collection contains 13 filename-numbered stories. The five-second Episode 00 title card is excluded by the runtime filter. Season remains zero because these filenames provide no season.",
+      "endpointChecks": {
+        "checkedAt": "2026-11-13T20:01:42.662Z",
+        "method": "First and last retained episode: request bytes 0\u201331, read at most 32 bytes; no browser decoding test.",
+        "samples": [
+          {
+            "episode": "0:1",
+            "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2001%20Tomb%20of%20the%20Unknown%20Hulk.mp4",
+            "status": 206,
+            "contentType": "video/mp4",
+            "contentRange": "bytes 0-31/654343023",
+            "mp4Header": true
+          },
+          {
+            "episode": "0:13",
+            "url": "https://archive.org/download/incredible-hulk-1982-cartoon-series/Hulk%201982%20Episode%2013%20The%20Hulk%20Destroys%20Bruce%20Banner.mp4",
+            "status": 206,
+            "contentType": "video/mp4",
+            "contentRange": "bytes 0-31/655908867",
+            "mp4Header": true
+          }
+        ]
+      }
     }
+  ],
+  "previousCheckedAt": "2026-11-13T18:35:03.817Z",
+  "updatedShows": [
+    "spider-friends",
+    "hulk-1982"
   ]
 }
