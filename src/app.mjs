@@ -1,0 +1,360 @@
+import { CHANNELS, createSeed } from './catalog.mjs';
+import { parseSourceUrl, parseDuration, importArchive, validateCatalog, parseCatalogJson,
+  readCatalog, saveCatalog, buildSchedule, schedulePosition, stationSource, timeLabel, MAX_IMPORT_BYTES } from './domain.mjs';
+import { createVideoSession, createYouTubeSession } from './players.mjs';
+
+const $ = id => document.getElementById(id);
+const storage = { getItem: k => localStorage.getItem(k), setItem: (k, v) => localStorage.setItem(k, v) };
+const loaded = readCatalog(storage, createSeed());
+let catalog = loaded.catalog;
+let selectedShowId = catalog.shows[0].id, editingEpisodeId = null;
+let session = null, active = null, playerGeneration = 0, importBusy = false;
+const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'Tubi' };
+const tiles = ['#435a53', '#5c4257', '#3f526a', '#67513d', '#514a70', '#4f5e40', '#674849', '#3c6262'];
+const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
+
+function element(tag, content, className) {
+  const node = document.createElement(tag);
+  if (content != null) node.textContent = content;
+  if (className) node.className = className;
+  return node;
+}
+function button(label, action, className = 'button small') {
+  const node = element('button', label, className); node.type = 'button'; node.addEventListener('click', action); return node;
+}
+function link(label, href, className = '') {
+  const node = element('a', label, className); node.href = href; node.target = '_blank'; node.rel = 'noopener noreferrer'; return node;
+}
+function notify(message) { $('notice').textContent = message; $('notice').hidden = !message; }
+function copyCatalog() { return structuredClone(catalog); }
+function commit(next) {
+  try { catalog = saveCatalog(storage, next); return true; }
+  catch (error) { notify(`Could not save this change: ${error.message}. Your previous catalog is unchanged.`); return false; }
+}
+function selectedChannel() { return CHANNELS.find(c => c.id === catalog.settings.channel); }
+function channelShows() { return catalog.shows.filter(s => catalog.settings.channel === 'mixed' || s.channel === catalog.settings.channel); }
+function currentGuide() { return schedulePosition(buildSchedule(catalog), catalog.epoch); }
+function episodeDetail(e) {
+  const order = e.season ? `S${String(e.season).padStart(2, '0')} · E${String(e.number).padStart(2, '0')}` : `Item ${e.number}`;
+  return `${e.kind === 'bumper' ? 'Station bumper' : order} · ${timeLabel(e.durationSeconds)}${e.group ? ` · ${e.group}` : ''}`;
+}
+
+function renderChannels() {
+  $('channels').replaceChildren(...CHANNELS.map(c => {
+    const node = button('', () => {
+      const next = copyCatalog(); next.settings.channel = c.id;
+      if (commit(next)) { selectedShowId = channelShows()[0]?.id || catalog.shows[0].id; stopPlayer(); render(); }
+    }, 'channel');
+    node.setAttribute('aria-pressed', String(c.id === catalog.settings.channel));
+    node.setAttribute('aria-label', `Channel ${c.number}: ${c.name}`);
+    const number = element('span', null, 'channel-number'); number.append(element('small', 'CH'), document.createTextNode(c.number));
+    const label = element('span'); label.append(element('span', c.name, 'channel-name'), element('span', c.subtitle, 'channel-subtitle'));
+    node.append(number, label, element('span', null, 'dot')); return node;
+  }));
+  const channel = selectedChannel();
+  $('channel-label').textContent = `CH ${channel.number} · ${channel.name.toUpperCase()}`;
+  $('bumpers').checked = catalog.settings.bumpers;
+}
+
+function renderGuide() {
+  $('clock').textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
+  const schedule = buildSchedule(catalog), position = schedulePosition(schedule, catalog.epoch);
+  const list = $('guide-list'); list.replaceChildren();
+  $('tune-live').disabled = $('standby-play').disabled = !position;
+  if (!position) {
+    list.append(element('p', 'This channel is waiting for its first checked episode. Add an Archive item or play a YouTube video to check its source and runtime.', 'empty'));
+    $('rotation-note').textContent = 'Tubi links and YouTube playlists are available in the library, outside the live rotation.';
+    if (!active) { $('playing-show').textContent = 'YOUR CHANNEL, YOUR COLLECTION'; $('playing-title').textContent = 'The next good thing starts with you.'; $('playing-detail').textContent = 'Add an episode source to begin.'; }
+    $('start-over').disabled = !active;
+    $('skip').disabled = !active;
+    return;
+  }
+  let startsAt = Date.now() / 1000 - position.offset;
+  for (let i = 0; i < Math.min(4, schedule.length); i++) {
+    const entry = schedule[(position.index + i) % schedule.length];
+    const row = element('div', null, 'guide-row');
+    const clock = i === 0 ? 'NOW' : new Date(startsAt * 1000).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+    row.append(element('span', clock, 'guide-time'));
+    const body = element('div', null, 'guide-copy');
+    body.append(element('h3', entry.show.title), element('p', entry.episode.title), element('p', episodeDetail(entry.episode)));
+    if (i === 0) {
+      const track = element('div', null, 'guide-track'); const fill = element('span');
+      fill.style.width = `${Math.min(100, position.offset / entry.duration * 100)}%`; track.append(fill); body.append(track);
+    }
+    row.append(body); list.append(row); startsAt += entry.duration;
+  }
+  $('rotation-note').textContent = `${schedule.length} checked ${schedule.length === 1 ? 'episode' : 'items'} in rotation. ${schedule.length === 1 ? 'This episode loops until you add more sources.' : 'Episode order stays intact within each show.'}`;
+  if (!active) {
+    $('playing-show').textContent = position.current.show.title.toUpperCase();
+    $('playing-title').textContent = position.current.episode.title;
+    $('playing-detail').textContent = `${episodeDetail(position.current.episode)} · ${providerName[position.current.source.provider]}`;
+  }
+  $('start-over').disabled = false;
+  $('skip').disabled = schedule.length < 2 && !active;
+}
+
+function renderLibrary() {
+  const query = $('search').value.trim().toLocaleLowerCase();
+  const shows = channelShows().filter(s => s.title.toLocaleLowerCase().includes(query));
+  $('library-count').textContent = `${channelShows().length} shows & collections · Add sources to bring them to life.`;
+  $('library-empty').hidden = shows.length > 0;
+  $('library-grid').replaceChildren(...shows.map(s => {
+    const card = element('article', null, 'show-card');
+    const art = button('', () => openShow(s.id), 'show-art');
+    art.style.setProperty('--tile', tiles[catalog.shows.indexOf(s) % tiles.length]);
+    art.setAttribute('aria-label', `View episodes and sources for ${s.title}`);
+    art.append(element('small', s.channel === 'action' ? 'ACTION / ADVENTURE' : 'SATURDAY / MORNING'), element('strong', s.title));
+    const count = s.episodes.length, live = s.episodes.filter(e => e.kind === 'episode' && stationSource(e) && e.durationSeconds > 0).length;
+    let status = 'No episode sources yet · add yours';
+    if (count) status = live ? `${live} in live rotation · ${count} catalog ${count === 1 ? 'item' : 'items'}` : `${count} ${count === 1 ? 'source item' : 'source items'} · watch from the library`;
+    card.append(art, element('h3', s.title, 'show-title'), element('p', status, `show-status${live ? ' available' : ''}`));
+    return card;
+  }));
+}
+
+function render() { renderChannels(); renderGuide(); renderLibrary(); }
+
+function openShow(showId) {
+  selectedShowId = showId;
+  const show = catalog.shows.find(s => s.id === showId);
+  if (!show) return;
+  $('show-title').textContent = show.title;
+  const imdb = $('show-imdb'); imdb.hidden = !show.imdbUrl;
+  if (show.imdbUrl) imdb.href = show.imdbUrl;
+  const rows = show.episodes.slice().sort((a, b) => a.season - b.season || a.number - b.number).map(e => {
+    const row = element('article', null, 'episode-row');
+    row.append(element('h3', e.title), element('p', episodeDetail(e), 'episode-meta'));
+    const sources = element('div', null, 'sources');
+    for (const source of e.sources) {
+      const parsed = parseSourceUrl(source.url);
+      if (source.provider === 'tubi') sources.append(link('Watch on Tubi ↗', source.url, 'button small'));
+      else sources.append(button(`▶ ${providerName[source.provider]}${parsed.kind === 'playlist' ? ' playlist' : ''}`, () => {
+        $('show-dialog').close(); playEpisode(show, e, source, 0, 'start'); $('watch').scrollIntoView();
+      }));
+      if (source.provider !== 'tubi') sources.append(link('Original ↗', source.url, 'button small'));
+    }
+    row.append(sources);
+    const statuses = e.sources.map(s => `${providerName[s.provider]}: ${s.provider === 'tubi' ? 'opens on Tubi' : s.availability === 'verified' ? 'source checked; availability may change' : 'playback not checked'}`);
+    row.append(element('p', statuses.join(' · ') || 'No sources attached', 'episode-meta'));
+    const tools = element('div', null, 'episode-tools');
+    tools.append(button('Edit details / add another source', () => openSource(show.id, e.id), 'text-button'));
+    tools.append(button('Remove item', () => {
+      const next = copyCatalog(); next.shows.find(s => s.id === show.id).episodes = show.episodes.filter(item => item.id !== e.id);
+      if (commit(next)) { if (active?.episodeId === e.id) stopPlayer(); render(); openShow(show.id); notify('Item removed. Import a saved catalog to restore an exported copy.'); }
+    }, 'text-button'));
+    row.append(tools); return row;
+  });
+  $('show-episodes').replaceChildren(...(rows.length ? rows : [element('p', 'This show is on your wish list. Add an episode source to start watching. No availability is assumed.', 'empty')]));
+  if (!$('show-dialog').open) $('show-dialog').showModal();
+}
+
+function openSource(showId = selectedShowId, episodeId = null) {
+  $('show-dialog').close(); editingEpisodeId = episodeId;
+  const show = catalog.shows.find(s => s.id === showId) || channelShows()[0] || catalog.shows[0];
+  selectedShowId = show.id;
+  $('source-form').reset();
+  $('source-show').replaceChildren(...catalog.shows.map(s => { const option = element('option', s.title); option.value = s.id; return option; }));
+  $('source-show').value = show.id;
+  $('source-show').disabled = Boolean(episodeId);
+  $('source-imdb').value = show.imdbUrl || '';
+  const e = show.episodes.find(e => e.id === episodeId);
+  if (e) {
+    $('source-title').value = e.title;
+    $('source-season').value = e.season;
+    $('source-number').value = e.number;
+    $('source-duration').value = e.durationSeconds ? e.durationSeconds / 60 : '';
+    $('source-group').value = e.group;
+    $('source-bumper').checked = e.kind === 'bumper';
+    $('source-url').required = false;
+    $('source-url').placeholder = 'Optional: add an alternative source';
+  } else {
+    $('source-number').value = show.episodes.length + 1;
+    $('source-url').required = true;
+    $('source-url').placeholder = 'https://archive.org/details/…';
+  }
+  $('source-error').hidden = true;
+  $('source-heading').textContent = e ? 'Fine-tune this episode.' : 'Bring your favorites.';
+  $('save-source').textContent = e ? 'Save details' : 'Add source';
+  $('source-dialog').showModal();
+}
+
+function stopPlayer() {
+  playerGeneration++; session?.dispose(); session = null; active = null;
+  $('player-host').replaceChildren(); $('standby').hidden = false;
+  $('player-error').hidden = true; $('original-link').hidden = true;
+  $('playback-state').textContent = 'READY TO TUNE';
+}
+
+function playerError(message, generation) {
+  if (generation !== playerGeneration) return;
+  $('player-error-text').textContent = message;
+  $('player-error').hidden = false;
+  $('playback-state').textContent = 'PLAYBACK NEEDS ATTENTION';
+}
+
+function playEpisode(show, episode, source, offset = 0, mode = 'start') {
+  stopPlayer();
+  const generation = playerGeneration;
+  active = { showId: show.id, episodeId: episode.id, sourceId: source.id, offset, mode };
+  $('standby').hidden = true;
+  $('playing-show').textContent = show.title.toUpperCase();
+  $('playing-title').textContent = episode.title;
+  $('playing-detail').textContent = `${episodeDetail(episode)} · ${mode === 'live' ? 'Station clock · best-effort sync' : 'From the beginning'} · ${providerName[source.provider]}`;
+  $('original-link').href = $('error-original').href = source.url;
+  $('original-link').hidden = false;
+  $('playback-state').textContent = 'LOADING SOURCE';
+  const verified = duration => {
+    if (generation !== playerGeneration || !Number.isFinite(duration) || duration <= 0 || duration > 86400) return;
+    if (source.provider === 'youtube') $('playback-state').textContent = 'PLAYING · YOUTUBE';
+    const isPlaylist = parseSourceUrl(source.url).kind === 'playlist';
+    const next = copyCatalog(); const e = next.shows.find(s => s.id === show.id)?.episodes.find(e => e.id === episode.id);
+    const src = e?.sources.find(s => s.id === source.id);
+    if (!e || !src || ((isPlaylist || Math.abs((e.durationSeconds || 0) - duration) < 1) && src.availability === 'verified')) return;
+    if (!isPlaylist) e.durationSeconds = duration;
+    src.availability = 'verified';
+    if (commit(next)) {
+      $('playing-detail').textContent = `${episodeDetail(e)} · ${active.mode === 'live' ? 'Station clock · best-effort sync' : 'From the beginning'} · ${providerName[source.provider]}`;
+      renderGuide(); renderLibrary();
+    }
+  };
+  const ended = () => { if (generation === playerGeneration) advance(false); };
+  const error = message => playerError(message, generation);
+  if (source.provider === 'archive') {
+    const video = element('video'); video.controls = true; video.playsInline = true; video.preload = 'metadata';
+    video.setAttribute('aria-label', `${show.title}: ${episode.title}`);
+    $('player-host').append(video);
+    session = createVideoSession(video, { url: source.url, offset, onVerified: verified, onEnd: ended, onError: error });
+    video.addEventListener('playing', () => { if (generation === playerGeneration) { $('playback-state').textContent = 'PLAYING · ARCHIVE'; $('player-error').hidden = true; } });
+    video.addEventListener('pause', () => { if (generation === playerGeneration) $('playback-state').textContent = 'PAUSED'; });
+    session.play();
+  } else if (source.provider === 'youtube') {
+    const holder = element('div'); $('player-host').append(holder);
+    session = createYouTubeSession(holder, { source, offset, origin: location.origin, onVerified: verified, onEnd: ended, onError: error,
+      onState: state => {
+        if (generation !== playerGeneration) return;
+        if (state === 1) { $('playback-state').textContent = 'PLAYING · YOUTUBE'; $('player-error').hidden = true; }
+        if (state === 2) $('playback-state').textContent = 'PAUSED';
+        if (state === 3) $('playback-state').textContent = 'BUFFERING';
+      } });
+  } else {
+    const box = element('div', null, 'external-player');
+    box.append(element('h3', 'This one’s on Tubi.'), element('p', 'Watch this episode on its original Tubi page. It stays outside your station’s continuous playback.'), link('Watch on Tubi ↗', source.url, 'button primary'));
+    $('player-host').append(box); $('playback-state').textContent = 'OPENS ON TUBI';
+  }
+  renderGuide();
+}
+
+function tuneLive() {
+  const p = currentGuide();
+  if (p) playEpisode(p.current.show, p.current.episode, p.current.source, p.offset, 'live');
+  else openSource();
+}
+function startOver() {
+  if (active) {
+    const show = catalog.shows.find(s => s.id === active.showId), episode = show?.episodes.find(e => e.id === active.episodeId);
+    const source = episode?.sources.find(s => s.id === active.sourceId);
+    if (source) { playEpisode(show, episode, source); return; }
+  }
+  const p = currentGuide(); if (p) playEpisode(p.current.show, p.current.episode, p.current.source);
+}
+function advance(manual) {
+  const schedule = buildSchedule(catalog);
+  if (!schedule.length || (manual && schedule.length === 1 && schedule[0].episode.id === active?.episodeId)) {
+    notify('There isn’t another checked episode in this channel yet. Add a source from the library.'); return;
+  }
+  const index = schedule.findIndex(e => e.episode.id === active?.episodeId);
+  const entry = schedule[(index + 1) % schedule.length];
+  if (entry) playEpisode(entry.show, entry.episode, entry.source, 0, active?.mode || 'start');
+}
+
+$('source-form').addEventListener('submit', async event => {
+  event.preventDefault(); if (importBusy) return;
+  $('source-error').hidden = true;
+  const showId = $('source-show').value, episodeId = editingEpisodeId;
+  const raw = $('source-url').value.trim(), title = $('source-title').value.trim();
+  const season = Number($('source-season').value), number = Number($('source-number').value);
+  const minutes = $('source-duration').value.trim();
+  const runtime = minutes ? parseDuration(Number(minutes) * 60) : null;
+  const group = $('source-group').value.trim(), kind = $('source-bumper').checked ? 'bumper' : 'episode';
+  const imdbUrl = $('source-imdb').value.trim() || null;
+  importBusy = true; $('save-source').disabled = true; $('save-source').textContent = 'Checking source…';
+  try {
+    if (minutes && !runtime) throw Error('Enter a runtime between 0 and 1,440 minutes, or leave it unknown.');
+    const parsed = raw ? parseSourceUrl(raw) : null;
+    let imported;
+    if (parsed?.provider === 'archive' && parsed.kind === 'item') imported = await importArchive(raw);
+    // Read the latest catalog after an asynchronous source fetch, so other edits are not discarded.
+    const next = copyCatalog(), show = next.shows.find(s => s.id === showId);
+    if (!show) throw Error('That show is no longer in the catalog.');
+    show.imdbUrl = imdbUrl;
+    if (episodeId) {
+      const e = show.episodes.find(e => e.id === episodeId);
+      if (!e) throw Error('That episode is no longer in the catalog.');
+      if (imported) throw Error('Import Archive collections as new items; use a direct MP4 URL for an alternative source.');
+      e.title = title; e.season = season; e.number = number; e.durationSeconds = runtime; e.group = group; e.kind = kind;
+      if (parsed && !e.sources.some(s => s.url === parsed.url)) e.sources.push({ id: uid('source'), provider: parsed.provider, url: parsed.url, availability: 'unverified' });
+    } else {
+      const incoming = imported || [{ id: uid('episode'), title: title || (parsed.provider === 'youtube' ? `YouTube ${parsed.kind} · ${parsed.videoId || parsed.playlistId}` : 'Source title not checked'),
+        season, number, durationSeconds: runtime, group, kind,
+        sources: [{ id: uid('source'), provider: parsed.provider, url: parsed.url, availability: 'unverified' }] }];
+      const knownUrls = new Set(show.episodes.flatMap(e => e.sources.map(s => s.url)));
+      let added = 0;
+      for (const e of incoming) {
+        if (e.sources.some(s => knownUrls.has(s.url))) continue;
+        e.id = uid('episode');
+        if (imported) { e.group = group; e.kind = kind; if (incoming.length === 1 && title) e.title = title; }
+        show.episodes.push(e); e.sources.forEach(s => knownUrls.add(s.url)); added++;
+      }
+      if (!added) throw Error('Those sources are already in this show. No duplicate items were added.');
+    }
+    validateCatalog(next);
+    if (!commit(next)) throw Error('The source was not saved. Check the storage message above.');
+    $('source-dialog').close(); notify(episodeId ? 'Episode details saved.' : 'Source added. Open the show to watch or check playback.'); render(); openShow(showId);
+  } catch (error) { $('source-error').textContent = error.message; $('source-error').hidden = false; }
+  finally { importBusy = false; $('save-source').disabled = false; $('save-source').textContent = editingEpisodeId ? 'Save details' : 'Add source'; }
+});
+
+$('source-show').addEventListener('change', () => {
+  const show = catalog.shows.find(s => s.id === $('source-show').value);
+  if (show) { $('source-imdb').value = show.imdbUrl || ''; $('source-number').value = show.episodes.length + 1; }
+});
+for (const id of ['manage-sources', 'guide-add']) $(id).addEventListener('click', () => openSource());
+$('show-add').addEventListener('click', () => openSource(selectedShowId));
+$('close-show').addEventListener('click', () => $('show-dialog').close());
+for (const id of ['close-source', 'cancel-source']) $(id).addEventListener('click', () => { if (!importBusy) $('source-dialog').close(); });
+$('source-dialog').addEventListener('cancel', event => { if (importBusy) event.preventDefault(); });
+$('search').addEventListener('input', renderLibrary);
+for (const id of ['tune-live', 'standby-play']) $(id).addEventListener('click', tuneLive);
+$('start-over').addEventListener('click', startOver);
+for (const id of ['skip', 'skip-error']) $(id).addEventListener('click', () => advance(true));
+$('retry').addEventListener('click', () => {
+  if (!active) return;
+  const show = catalog.shows.find(s => s.id === active.showId), episode = show?.episodes.find(e => e.id === active.episodeId);
+  const source = episode?.sources.find(s => s.id === active.sourceId);
+  if (source) playEpisode(show, episode, source, active.offset, active.mode);
+});
+$('bumpers').addEventListener('change', () => {
+  const next = copyCatalog(); next.settings.bumpers = $('bumpers').checked;
+  if (commit(next)) { renderGuide(); notify(next.settings.bumpers ? 'Bumpers enabled. Only your supplied, checked bumper sources are used.' : 'Bumpers are off.'); }
+  else $('bumpers').checked = catalog.settings.bumpers;
+});
+$('export-catalog').addEventListener('click', () => {
+  const url = URL.createObjectURL(new Blob([JSON.stringify(catalog, null, 2)], { type: 'application/json' }));
+  const a = element('a'); a.href = url; a.download = 'drew-tv-catalog.json'; a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+$('import-catalog').addEventListener('change', async event => {
+  const file = event.target.files[0]; if (!file) return;
+  try {
+    if (file.size > MAX_IMPORT_BYTES) throw Error('Import exceeds the 2 MB catalog limit.');
+    const next = parseCatalogJson(await file.text());
+    if (!commit(next)) return;
+    stopPlayer(); selectedShowId = catalog.shows[0].id; render(); notify('Catalog imported and saved.');
+  } catch (error) { notify(`${error.message} Your previous catalog is unchanged.`); }
+  finally { event.target.value = ''; }
+});
+
+render();
+if (loaded.error) notify(loaded.error);
+setInterval(renderGuide, 15000);
+window.addEventListener('pagehide', () => session?.dispose());

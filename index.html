@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#111218">
+  <title>Drew TV · Your own little cable network</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="src/app.mjs"></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#watch" aria-label="Drew TV home"><span class="brand-icon" aria-hidden="true">d.</span><span>DREW<span class="brand-tv">TV</span><small>THE GOOD OLD CHANNELS</small></span></a>
+    <nav aria-label="Main navigation"><a href="#watch">Watch</a><a href="#library">The library</a><button id="manage-sources" class="nav-button">Manage sources <span aria-hidden="true">↗</span></button></nav>
+    <span class="header-note">PERSONAL TELEVISION<br><span id="clock">LOCAL TIME</span></span>
+  </header>
+  <main>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <section id="watch" aria-labelledby="station-heading">
+      <div class="intro"><div><p class="eyebrow">WELCOME BACK TO YOUR LIVING ROOM</p><h1 id="station-heading">Nothing to scroll.<br><em>Something good on.</em></h1></div><p class="intro-note">The heroes. The theme songs.<br>The Saturday mornings that lasted forever.<br><strong>Your own little cable network.</strong></p></div>
+      <div id="channels" class="channels" role="group" aria-label="Choose a channel"></div>
+      <div class="watch-layout">
+        <div class="screen-column">
+          <div class="screen-top"><span id="channel-label">CH 01 · DREW TV</span><span id="playback-state">READY TO TUNE</span></div>
+          <div id="player-shell" class="player-shell">
+            <div id="player-host" class="player-host"></div>
+            <div id="standby" class="standby"><span class="test-pattern" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="standby-logo">DREW<span>TV</span></span><p>YOUR REGULARLY SCHEDULED ESCAPE</p><button id="standby-play" class="button primary">▶ Tune in</button><small>Press play. Settle in. Stay a while.</small></div>
+          </div>
+          <div id="player-error" class="player-error" role="alert" hidden><p id="player-error-text"></p><div><button id="retry" class="button small">Retry</button><button id="skip-error" class="button small">Skip episode</button><a id="error-original" class="button small" target="_blank" rel="noopener noreferrer">Open original ↗</a></div></div>
+          <div class="watch-info"><div><p id="playing-show" class="eyebrow">ON THE STATION CLOCK</p><h2 id="playing-title">A familiar favorite is waiting.</h2><p id="playing-detail" class="muted"></p></div><a id="original-link" target="_blank" rel="noopener noreferrer" class="source-link" hidden>Original source ↗</a></div>
+          <div class="playback-actions"><button id="tune-live" class="button primary">▶ Tune in live</button><button id="start-over" class="button">↶ Start from beginning</button><button id="skip" class="button quiet">Next episode →</button></div>
+          <p class="playback-note">Live follows your station clock. Start from beginning watches on your time. YouTube ads and browser autoplay can affect timing.</p>
+        </div>
+        <aside class="guide" aria-labelledby="guide-heading"><div class="guide-heading"><h2 id="guide-heading">On the guide</h2><span>LOCAL TIME</span></div><div id="guide-list"></div><p id="rotation-note" class="guide-foot"></p><button id="guide-add" class="guide-add">Build out this channel <span>+</span></button></aside>
+      </div>
+    </section>
+    <section id="library" class="library" aria-labelledby="library-heading">
+      <div class="section-heading"><div><p class="eyebrow">YOUR PERSONAL TIME MACHINE</p><h2 id="library-heading">The familiar faces.</h2><p id="library-count" class="muted"></p></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a show…" aria-label="Search shows"></label></div>
+      <div id="library-grid" class="library-grid"></div><p id="library-empty" class="empty" hidden>No shows match that search.</p>
+    </section>
+    <section class="collection-tools" aria-labelledby="collection-heading"><div><h2 id="collection-heading">Make yourself at home.</h2><p>Your catalog stays in this browser. Export a copy to keep it or move it to another device.</p></div><div class="tool-actions"><button id="export-catalog" class="button small">Export catalog ↓</button><label class="button small import-button" for="import-catalog">Import catalog ↑<input id="import-catalog" type="file" accept="application/json,.json"></label><label class="bumper-setting"><input id="bumpers" type="checkbox"> Include my bumpers</label></div></section>
+  </main>
+  <footer><a class="footer-brand" href="#watch">DREW TV</a><span>A little less now. A little more then.</span><a href="README.md" target="_blank" rel="noopener">About &amp; source guide ↗</a></footer>
+  <dialog id="show-dialog" aria-labelledby="show-title"><div class="dialog-top"><p class="eyebrow">IN YOUR COLLECTION</p><button class="icon-button" id="close-show" aria-label="Close show details">×</button></div><h2 id="show-title"></h2><div id="show-episodes"></div><div class="dialog-actions"><button id="show-add" class="button primary">+ Add an episode source</button><a id="show-imdb" target="_blank" rel="noopener noreferrer" hidden>IMDb reference ↗</a></div></dialog>
+  <dialog id="source-dialog" aria-labelledby="source-heading"><div class="dialog-top"><p class="eyebrow">BUILD YOUR CHANNEL</p><button class="icon-button" id="close-source" aria-label="Close source editor">×</button></div><h2 id="source-heading">Bring your favorites.</h2><p class="muted">Add an Archive item, a YouTube video or playlist, or a Tubi watch link. Unchecked sources stay out of the live rotation.</p>
+    <form id="source-form">
+      <label>Show<select id="source-show" required></select></label>
+      <label>Source URL<input id="source-url" type="url" placeholder="https://archive.org/details/…" required></label>
+      <label>Episode title <span class="optional">optional for Archive imports</span><input id="source-title" maxlength="500" placeholder="Leave blank to use available source metadata"></label>
+      <div class="form-row"><label>Season<input id="source-season" type="number" value="1" min="0" step="1" required></label><label>Episode<input id="source-number" type="number" value="1" min="0" step="1" required></label><label>Runtime (minutes)<input id="source-duration" type="number" min="0.001" max="1440" step="any" placeholder="Unknown"></label></div>
+      <label>Multipart group <span class="optional">optional</span><input id="source-group" maxlength="200" placeholder="Use the same group for adjacent parts of a story"></label>
+      <label>IMDb title reference <span class="optional">optional, user supplied</span><input id="source-imdb" type="url" placeholder="Paste a verified IMDb title link"></label>
+      <label class="checkbox-label"><input id="source-bumper" type="checkbox"> This is a station bumper or vintage commercial</label>
+      <p id="source-error" class="form-error" role="alert" hidden></p>
+      <div class="dialog-actions"><button type="submit" id="save-source" class="button primary">Add source</button><button type="button" id="cancel-source" class="button">Cancel</button></div>
+    </form>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "drew-tv",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "verify:archive": "node test/live-archive.mjs",
+    "check": "node --check src/domain.mjs && node --check src/catalog.mjs && node --check src/players.mjs && node --check src/app.mjs && node --check server.mjs"
+  }
+}
