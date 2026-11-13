@@ -1,13 +1,13 @@
 {
-  "revision": "expanded-0663df382e0473de",
+  "revision": "expanded-6ab50845114c14de",
   "checkedAt": [
-    "2026-11-13T18:42:19.392Z",
-    "2026-11-13T20:15:22.975Z",
+    "2026-11-13T20:21:28.634Z",
+    "2026-11-13T20:21:28.575Z",
     "2026-11-13T18:34:49.891Z"
   ],
-  "episodes": 2596,
-  "ready": 2502,
-  "streamSlots": 8626,
+  "episodes": 2755,
+  "ready": 2661,
+  "streamSlots": 10232,
   "shows": [
     {
       "id": "dukes",
@@ -155,6 +155,41 @@
       "episodes": 12,
       "ready": 12,
       "sources": 12
+    },
+    {
+      "id": "wizards-warriors",
+      "title": "Wizards and Warriors (1983)",
+      "episodes": 8,
+      "ready": 8,
+      "sources": 8
+    },
+    {
+      "id": "matthew-star",
+      "title": "The Powers of Matthew Star",
+      "episodes": 22,
+      "ready": 22,
+      "sources": 22
+    },
+    {
+      "id": "misfits-science",
+      "title": "Misfits of Science (1985)",
+      "episodes": 16,
+      "ready": 16,
+      "sources": 16
+    },
+    {
+      "id": "otherworld",
+      "title": "Otherworld (1985)",
+      "episodes": 8,
+      "ready": 8,
+      "sources": 8
+    },
+    {
+      "id": "whiz-kids",
+      "title": "Whiz Kids",
+      "episodes": 18,
+      "ready": 18,
+      "sources": 18
     },
     {
       "id": "he-man",
@@ -423,6 +458,48 @@
       "sources": 17
     },
     {
+      "id": "butch-cassidy",
+      "title": "Butch Cassidy and the Sundance Kids",
+      "episodes": 13,
+      "ready": 13,
+      "sources": 13
+    },
+    {
+      "id": "clue-club",
+      "title": "Clue Club",
+      "episodes": 16,
+      "ready": 16,
+      "sources": 16
+    },
+    {
+      "id": "goober",
+      "title": "Goober and the Ghost Chasers",
+      "episodes": 15,
+      "ready": 15,
+      "sources": 15
+    },
+    {
+      "id": "wheelie",
+      "title": "Wheelie and the Chopper Bunch",
+      "episodes": 13,
+      "ready": 13,
+      "sources": 13
+    },
+    {
+      "id": "funky-phantom",
+      "title": "The Funky Phantom",
+      "episodes": 17,
+      "ready": 17,
+      "sources": 17
+    },
+    {
+      "id": "inch-high",
+      "title": "Inch High, Private Eye",
+      "episodes": 13,
+      "ready": 13,
+      "sources": 13
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -430,6 +507,6 @@
       "sources": 1
     }
   ],
-  "bytes": 981617,
+  "bytes": 1044775,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

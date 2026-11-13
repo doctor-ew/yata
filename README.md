@@ -138,3 +138,7 @@ The reviewed catalog adds Bionic Six, Jayce and the Wheeled Warriors, Pole Posit
 ## Hanna-Barbera and adventure cartoons
 
 The next reviewed expansion adds 402 items across 16 shows, including original Yogi Bear shorts, Space Ghost and Dino Boy bundles, The Herculoids, Jonny Quest, Birdman, Super Friends, The Jetsons, Wacky Races, Speed Buggy, Hong Kong Phooey, Dynomutt, Captain Caveman, a season-six Flintstones subset, Galaxy Rangers, Visionaries, and Galtar. Short segments and longer programs retain their source runtimes. This is a partial Hanna-Barbera collection; see [coverage, source language limits and validation](../docs/10/HANNA-BARBERA.md).
+
+## Cartoon Express deep cuts
+
+The latest batch adds Butch Cassidy and the Sundance Kids, Clue Club, Goober and the Ghost Chasers, Wheelie and the Chopper Bunch, The Funky Phantom, and Inch High, Private Eye. Live-action additions are Wizards and Warriors, The Powers of Matthew Star, Whiz Kids, Misfits of Science, and Otherworld. Goober lacks episode 7; Wheelie files each contain three stories. See [source coverage and editorial direction](../docs/11/DEEP-CUTS.md).

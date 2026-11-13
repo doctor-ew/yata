@@ -14,6 +14,11 @@ const action = [
   ['phoenix', 'The Phoenix'], ['voyagers', 'Voyagers!'],
   ['buck-rogers', 'Buck Rogers in the 25th Century'],
   ['battlestar', 'Battlestar Galactica'], ['v', 'V'], ['hulk', 'The Incredible Hulk'],
+  ["wizards-warriors", "Wizards and Warriors (1983)"],
+  ["matthew-star", "The Powers of Matthew Star"],
+  ["misfits-science", "Misfits of Science (1985)"],
+  ["otherworld", "Otherworld (1985)"],
+  ["whiz-kids", "Whiz Kids"],
 ];
 const cartoons = [
   ['he-man', 'He-Man and the Masters of the Universe'], ['gi-joe', 'G.I. Joe: A Real American Hero'],
@@ -48,6 +53,12 @@ const cartoons = [
   ["flintstones", "The Flintstones"],
   ["jetsons", "The Jetsons"],
   ["wacky-races", "Wacky Races (1968)"],
+  ["butch-cassidy", "Butch Cassidy and the Sundance Kids"],
+  ["clue-club", "Clue Club"],
+  ["goober", "Goober and the Ghost Chasers"],
+  ["wheelie", "Wheelie and the Chopper Bunch"],
+  ["funky-phantom", "The Funky Phantom"],
+  ["inch-high", "Inch High, Private Eye"],
 ];
 
 export function createSeed() {

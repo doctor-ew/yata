@@ -98,3 +98,29 @@ test('Hanna-Barbera expansion preserves shorts, long programs and intact story b
  assert.equal(mergeLibraryBatch(installed,rows).added,0);
  assert.equal(installed.settings.channel,'cartoons');
 });
+
+test('Cartoon Express deep cuts and fantasy adventure additions migrate with source limits intact', async () => {
+ const packs = await Promise.all(['action','cartoon','youtube'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data),'utf8'))));
+ const cartoons = {'butch-cassidy':13,'clue-club':16,goober:15,wheelie:13,'funky-phantom':17,'inch-high':13};
+ const action = {'wizards-warriors':8,'matthew-star':22,'misfits-science':16,otherworld:8,'whiz-kids':18};
+ const counts = {...cartoons,...action}, seed=createSeed(), old=structuredClone(seed);
+ old.shows=old.shows.filter(show => !(show.id in counts)); old.settings.channel='mixed';
+ for(const show of seed.shows)if(!old.shows.some(existing => existing.id===show.id))old.shows.push({...show,episodes:[]});
+ const rows=discoveryRows(old,packs), installed=mergeLibraryBatch(old,rows).catalog;
+ const get=id=>installed.shows.find(show=>show.id===id);
+ for(const [id,count] of Object.entries(counts)){
+  const show=get(id);assert.equal(show.episodes.length,count,id);
+  assert.equal(show.channel,id in cartoons?'cartoons':'action');
+  assert.equal(new Set(show.episodes.map(e=>`${e.season}:${e.number}`)).size,count,id);
+  const scheduled=new Set(buildSchedule(installed,show.channel).map(slot=>slot.episode.id));
+  assert.ok(show.episodes.every(e=>scheduled.has(e.id)),id);
+ }
+ assert.deepEqual(get('goober').episodes.map(e=>e.number),[1,2,3,4,5,6,8,9,10,11,12,13,14,15,16]);
+ assert.ok(get('wheelie').episodes.every(e=>/three-story bundle/.test(e.title)));
+ assert.equal(get('misfits-science').episodes.filter(e=>e.durationSeconds>5000).length,1);
+ assert.deepEqual(get('otherworld').episodes.map(e=>e.number),[1,2,3,4,5,6,7,8]);
+ assert.ok(get('whiz-kids').episodes.every(e=>e.sources.every(s=>decodeURIComponent(new URL(s.url).pathname).includes('/EN - VHS - Whiz Kids (1 - 18)/Syndicated (1-18)/272p/'))));
+ assert.deepEqual(get('whiz-kids').episodes.map(e=>e.number),Array.from({length:18},(_,i)=>i+1));
+ assert.equal(mergeLibraryBatch(installed,rows).added,0);
+ assert.equal(installed.settings.channel,'mixed');
+});

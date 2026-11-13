@@ -42,6 +42,12 @@ const sources = {
   flintstones: ['the-flintstones-s-06-e-01-no-biz-like-show-biz'],
   jetsons: ['the.-jetsons'],
   'wacky-races': ['WackyR'],
+  'butch-cassidy': ['butch-cassidy-the-sundance-kids'],
+  'clue-club': ['clue.club'],
+  goober: ['goober-ghost-chasers'],
+  wheelie: ['ep-01-double-cross-country-the-infiltrator-the-stunt-show'],
+  'funky-phantom': ['funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced'],
+  'inch-high': ['inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend'],
 };
 const notes = {
   'he-man': 'Two English original-series season collections; 65 filename-numbered episodes each. Alternate encodes collapsed.',
@@ -90,6 +96,14 @@ Object.assign(notes, {
   flintstones: 'Reviewed subset: 26 season 6 episodes only. Earlier seasons are not included in this release. Language metadata is absent.',
   jetsons: 'Original series season 1: 24 explicitly numbered stories. Derivative MP4 duplicates collapse. Language metadata is absent.',
   'wacky-races': 'Original 1968 collection contains 17 explicitly numbered season 1 paired-story programs. Preserve complete source paths. Language metadata is absent.',
+});
+Object.assign(notes, {
+  'butch-cassidy': 'Collection contains 13 E-numbered stories. Derivative and filename aliases collapse by source number. Language metadata is absent; season zero denotes source sequence.',
+  'clue-club': 'Collection contains 16 explicitly numbered season 1 stories. Language metadata is absent.',
+  goober: 'Collection contains 15 E-numbered stories: 1–6 and 8–16. Episode 7 is missing. Language metadata is absent; the Italian collection was not merged.',
+  wheelie: 'English collection contains 13 EP-numbered three-story programs. Keep each bundle intact; season zero denotes source program sequence.',
+  'funky-phantom': 'English collection contains 17 E-numbered stories, labeled by the uploader as AI-enhanced video. Season zero denotes source sequence.',
+  'inch-high': 'English collection contains 13 explicitly Episode-numbered stories. Season zero denotes source sequence.',
 });
 const runtimeBounds = {
   'captain-caveman': [600, 900],
@@ -148,7 +162,7 @@ async function worker() {
             if (!order) continue;
             episode.season = Number(order[1]); episode.number = Number(order[2]);
           }
-          if (show.id === 'space-ghost') episode.title += ' · three-story bundle';
+          if (['space-ghost', 'wheelie'].includes(show.id)) episode.title += ' · three-story bundle';
           if (show.id === 'herculoids') episode.title += ' · two-story bundle';
           if (show.id === 'turbo-teen' && [1, 2, 3, 4, 5, 11].includes(episode.number)) {
             episode.title += ' · non-English audio / English subtitles';

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-13T20:15:22.975Z",
+  "checkedAt": "2026-11-13T20:21:28.575Z",
   "provider": "archive",
   "scope": "Reviewed original-series public MP4 metadata collections. Partial refreshes preserve earlier records; updatedShows identifies the refreshed records. Search initially inspected up to 100 download-ranked title matches per show; not exhaustive internet availability or rights verification. Public source metadata does not establish browser decoding or future availability.",
   "shows": [
@@ -27658,15 +27658,1692 @@
           "checkedAt": "2026-11-13T20:15:55.301301+00:00"
         }
       ]
+    },
+    {
+      "showId": "butch-cassidy",
+      "title": "Butch Cassidy and the Sundance Kids",
+      "episodes": [
+        {
+          "id": "cartoon-butch-cassidy-2b82cc58c1fc7538d3ba",
+          "title": "Butch Cassidy & The Sundance Kids E01 - The Scientist",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 1432.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-2b82cc58c1fc7538d3ba",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20%26%20The%20Sundance%20Kids%20E01%20-%20The%20Scientist.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-butch-cassidy-1ab65597eadb4a5131b6",
+          "title": "Butch Cassidy & The Sundance Kids E02 - The Counterfeiters",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 1431.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-1ab65597eadb4a5131b6",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20%26%20The%20Sundance%20Kids%20E02%20-%20The%20Counterfeiters.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-butch-cassidy-4b4c5661d8840b5e4658",
+          "title": "Butch Cassidy & The Sundance Kids E03 - One of Our Ships Is Missing Online",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 1430.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-4b4c5661d8840b5e4658",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20%26%20The%20Sundance%20Kids%20E03%20-%20One%20of%20Our%20Ships%20Is%20Missing%20Online.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-butch-cassidy-7f4635787f2c43162bc1",
+          "title": "Butch Cassidy & The Sundance Kids E04 - Double Trouble Online - Butch Cass",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 1431.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-7f4635787f2c43162bc1",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20%26%20The%20Sundance%20Kids%20E04%20-%20Double%20Trouble%20Online%20-%20Butch%20Cass.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-butch-cassidy-73b7ce9738fda1a5fd7f",
+          "title": "Butch Cassidy & The Sundance Kids E05 - The Pearl Caper Online - Butch Cas",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 1431.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-73b7ce9738fda1a5fd7f",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20%26%20The%20Sundance%20Kids%20E05%20-%20The%20Pearl%20Caper%20Online%20-%20Butch%20Cas.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-butch-cassidy-093f798d5275c885089a",
+          "title": "Butch Cassidy & The Sundance Kids E06 - The Gold Caper Online - Butch Cass",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 1432.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-093f798d5275c885089a",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20%26%20The%20Sundance%20Kids%20E06%20-%20The%20Gold%20Caper%20Online%20-%20Butch%20Cass.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-butch-cassidy-ca31b26e3e8bed620900",
+          "title": "Butch Cassidy & The Sundance Kids E07 = Road Racers Online - Butch Cassidy",
+          "season": 0,
+          "number": 7,
+          "durationSeconds": 1415.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-ca31b26e3e8bed620900",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20%26%20The%20Sundance%20Kids%20E07%20%3D%20Road%20Racers%20Online%20-%20Butch%20Cassidy.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-butch-cassidy-dfa5888590e991c4027a",
+          "title": "Butch Cassidy The Sundance Kids E08 - Hong Kong Story",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 1432.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-dfa5888590e991c4027a",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20The%20Sundance%20Kids%20E08%20-%20Hong%20Kong%20Story.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-butch-cassidy-745484dca34eb7a881be",
+          "title": "Butch Cassidy The Sundance Kids E09 - Operation G-Minus",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 1426.61,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-745484dca34eb7a881be",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20The%20Sundance%20Kids%20E09%20-%20Operation%20G-Minus.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-butch-cassidy-5cd19d732f0495379696",
+          "title": "Butch Cassidy The Sundance Kids E10 - Orient Express",
+          "season": 0,
+          "number": 10,
+          "durationSeconds": 1431.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-5cd19d732f0495379696",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20The%20Sundance%20Kids%20E10%20-%20Orient%20Express.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-butch-cassidy-2bea328a07a1bea8a104",
+          "title": "Butch Cassidy The Sundance Kids E11 - The Parrot Caper",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 1430.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-2bea328a07a1bea8a104",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20The%20Sundance%20Kids%20E11%20-%20The%20Parrot%20Caper.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-butch-cassidy-82f3c2e4c9a6ee755772",
+          "title": "Butch Cassidy The Sundance Kids E12 - The Super Sub",
+          "season": 0,
+          "number": 12,
+          "durationSeconds": 1424.15,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-82f3c2e4c9a6ee755772",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20The%20Sundance%20Kids%20E12%20-%20The%20Super%20Sub.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-butch-cassidy-66f24750232b57368af0",
+          "title": "Butch Cassidy The Sundance Kids E13 - The Haunted Castle",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 1425,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-66f24750232b57368af0",
+              "provider": "archive",
+              "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20The%20Sundance%20Kids%20E13%20-%20The%20Haunted%20Castle.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "provider": "archive",
+          "itemId": "butch-cassidy-the-sundance-kids",
+          "url": "https://archive.org/details/butch-cassidy-the-sundance-kids",
+          "title": "Butch Cassidy & The Sundance Kids (1973) Complete Series",
+          "language": null,
+          "retained": 13
+        }
+      ],
+      "notes": "Collection contains 13 E-numbered stories. Derivative and filename aliases collapse by source number. Language metadata is absent; season zero denotes source sequence.",
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20%26%20The%20Sundance%20Kids%20E01%20-%20The%20Scientist.ia.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:57.588134+00:00"
+        },
+        {
+          "url": "https://archive.org/download/butch-cassidy-the-sundance-kids/Butch%20Cassidy%20The%20Sundance%20Kids%20E13%20-%20The%20Haunted%20Castle.ia.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:57.615740+00:00"
+        }
+      ]
+    },
+    {
+      "showId": "clue-club",
+      "title": "Clue Club",
+      "episodes": [
+        {
+          "id": "cartoon-clue-club-56dd7fb7ca71c3c8e534",
+          "title": "Clue.Club.S01E01.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1357.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-56dd7fb7ca71c3c8e534",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E01.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-c09dcf0aded989f2fc62",
+          "title": "Clue.Club.S01E02.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1356.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-c09dcf0aded989f2fc62",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E02.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-2c8ae63ac5442c6fc36e",
+          "title": "Clue.Club.S01E03.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1350.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-2c8ae63ac5442c6fc36e",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E03.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-f9d4f8ad674dbe0a66be",
+          "title": "Clue.Club.S01E04.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1346.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-f9d4f8ad674dbe0a66be",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E04.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-027823a994390abc4b5d",
+          "title": "Clue.Club.S01E05.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1348.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-027823a994390abc4b5d",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E05.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-3cf5102a71bf74dfcd6f",
+          "title": "Clue.Club.S01E06.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1348.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-3cf5102a71bf74dfcd6f",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E06.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-12559ef23740a6b40aca",
+          "title": "Clue.Club.S01E07.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1349.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-12559ef23740a6b40aca",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E07.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-8fee60e6cc6943151adc",
+          "title": "Clue.Club.S01E08.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1348.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-8fee60e6cc6943151adc",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E08.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-e69351110cdd146cf9c3",
+          "title": "Clue.Club.S01E09.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1347.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-e69351110cdd146cf9c3",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E09.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-de93fb5a6145a806300e",
+          "title": "Clue.Club.S01E10.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1348.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-de93fb5a6145a806300e",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E10.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-191f94069b6d5588c415",
+          "title": "Clue.Club.S01E11.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1343.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-191f94069b6d5588c415",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E11.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-1af28d2296115f0008d2",
+          "title": "Clue.Club.S01E12.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1352.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-1af28d2296115f0008d2",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E12.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-3e7d63f6160d2df3b4b9",
+          "title": "Clue.Club.S01E13.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1349.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-3e7d63f6160d2df3b4b9",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E13.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-78887834925519202d59",
+          "title": "Clue.Club.S01E14.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 1344.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-78887834925519202d59",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E14.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-394afc9b7967cecb04aa",
+          "title": "Clue.Club.S01E15.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 1350.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-394afc9b7967cecb04aa",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E15.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-clue-club-8bd14633301c14a58788",
+          "title": "Clue.Club.S01E16.DVDRip.x264-TdR",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 1348.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-8bd14633301c14a58788",
+              "provider": "archive",
+              "url": "https://archive.org/download/clue.club/Clue.Club.S01E16.DVDRip.x264-TdR.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "provider": "archive",
+          "itemId": "clue.club",
+          "url": "https://archive.org/details/clue.club",
+          "title": "Clue Club",
+          "language": null,
+          "retained": 16
+        }
+      ],
+      "notes": "Collection contains 16 explicitly numbered season 1 stories. Language metadata is absent.",
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/clue.club/Clue.Club.S01E01.DVDRip.x264-TdR.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:57.636478+00:00"
+        },
+        {
+          "url": "https://archive.org/download/clue.club/Clue.Club.S01E16.DVDRip.x264-TdR.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:57.636647+00:00"
+        }
+      ]
+    },
+    {
+      "showId": "goober",
+      "title": "Goober and the Ghost Chasers",
+      "episodes": [
+        {
+          "id": "cartoon-goober-17af377309f1f9660e27",
+          "title": "Goober and the Ghost Chasers E01 - Assignment The Ahab Apparitionf",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 1304.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-17af377309f1f9660e27",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E01%20-%20Assignment%20The%20Ahab%20Apparitionf.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-5ea2fccaf28751cdcedb",
+          "title": "Goober and the Ghost Chasers E02 -Brush Up Your Shakespeare",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 1305.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-5ea2fccaf28751cdcedb",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E02%20-Brush%20Up%20Your%20Shakespeare.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-60034c62a0029729e518",
+          "title": "Goober and the Ghost Chasers E03 - The Galloping Ghost",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 1303.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-60034c62a0029729e518",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E03%20-%20The%20Galloping%20Ghost.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-6b4e0c3049e7c4377381",
+          "title": "Goober and the Ghost Chasers E04 - The Singing Ghost",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 1299.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-6b4e0c3049e7c4377381",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E04%20-%20The%20Singing%20Ghost.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-13fe05e48c4565c456db",
+          "title": "Goober and the Ghost Chasers E05 - The Ghost Ship",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 1296.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-13fe05e48c4565c456db",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E05%20-%20The%20Ghost%20Ship.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-f3a16ff26377a015ce30",
+          "title": "Goober and the Ghost Chasers E06 - Mummy Knows Best",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 1301.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-f3a16ff26377a015ce30",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E06%20-%20Mummy%20Knows%20Best.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-a9262147309fdf44282d",
+          "title": "Goober and the Ghost Chasers E08 - Aloha Ghost",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 1306.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-a9262147309fdf44282d",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E08%20-%20Aloha%20Ghost.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-27ecf84a89e2e1095601",
+          "title": "Goober and the Ghost Chasers E09 - The Wicked Witch Dog",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 1304.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-27ecf84a89e2e1095601",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E09%20-%20The%20Wicked%20Witch%20Dog.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-6312fbc9c4b49e197324",
+          "title": "Goober and the Ghost Chasers E10 - Venice Anyone",
+          "season": 0,
+          "number": 10,
+          "durationSeconds": 1302.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-6312fbc9c4b49e197324",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E10%20-%20Venice%20Anyone.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-49fa3e13592edf4c3daf",
+          "title": "Goober and the Ghost Chasers E11 - Go West Young Ghost Go West",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 1304.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-49fa3e13592edf4c3daf",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E11%20-%20Go%20West%20Young%20Ghost%20Go%20West.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-9f0e599cd2a76e2e4ad5",
+          "title": "Goober and the Ghost Chasers E12 - A Hard Days Knight",
+          "season": 0,
+          "number": 12,
+          "durationSeconds": 1304.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-9f0e599cd2a76e2e4ad5",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E12%20-%20A%20Hard%20Days%20Knight.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-7f0cf52dc6e8321a5eb0",
+          "title": "Goober and the Ghost Chasers E13 - Is Sherlock Holme",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 1303.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-7f0cf52dc6e8321a5eb0",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E13%20-%20Is%20Sherlock%20Holme.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-838a19006f7304a1dd32",
+          "title": "Goober and the Ghost Chasers E14 -That Snow Ghost",
+          "season": 0,
+          "number": 14,
+          "durationSeconds": 1302.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-838a19006f7304a1dd32",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E14%20-That%20Snow%20Ghost.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-d2690855c1ac3f42e148",
+          "title": "Goober and the Ghost Chasers E15 - Inca Dinka Doo",
+          "season": 0,
+          "number": 15,
+          "durationSeconds": 1304.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-d2690855c1ac3f42e148",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E15%20-%20Inca%20Dinka%20Doo.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-goober-1c2eba3800af989f8a7d",
+          "title": "Goober and the Ghost Chasers E16 - Old McDonald Had a Ghost EI EI EEYOW",
+          "season": 0,
+          "number": 16,
+          "durationSeconds": 1306.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-1c2eba3800af989f8a7d",
+              "provider": "archive",
+              "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E16%20-%20Old%20McDonald%20Had%20a%20Ghost%20EI%20EI%20EEYOW.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "provider": "archive",
+          "itemId": "goober-ghost-chasers",
+          "url": "https://archive.org/details/goober-ghost-chasers",
+          "title": "Goober And The Ghost Chasers (1073) Complete",
+          "language": null,
+          "retained": 15
+        }
+      ],
+      "notes": "Collection contains 15 E-numbered stories: 1–6 and 8–16. Episode 7 is missing. Language metadata is absent; the Italian collection was not merged.",
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E01%20-%20Assignment%20The%20Ahab%20Apparitionf.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:57.636611+00:00"
+        },
+        {
+          "url": "https://archive.org/download/goober-ghost-chasers/Goober%20and%20the%20Ghost%20Chasers%20E16%20-%20Old%20McDonald%20Had%20a%20Ghost%20EI%20EI%20EEYOW.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:57.627299+00:00"
+        }
+      ]
+    },
+    {
+      "showId": "wheelie",
+      "title": "Wheelie and the Chopper Bunch",
+      "episodes": [
+        {
+          "id": "cartoon-wheelie-bda3b901321d666fe7e9",
+          "title": "EP01 - Double Cross Country, The Infiltrator, The Stunt Show · three-story bundle",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 1316.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-bda3b901321d666fe7e9",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP01%20-%20Double%20Cross%20Country%2C%20The%20Infiltrator%2C%20The%20Stunt%20Show.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wheelie-0e4ca655c87ac001f2ef",
+          "title": "EP02 - Get a Doctor, A Day at the Beach, Ghost Riders · three-story bundle",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 1321.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-0e4ca655c87ac001f2ef",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP02%20-%20Get%20a%20Doctor%2C%20A%20Day%20at%20the%20Beach%2C%20Ghost%20Riders.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wheelie-73693583cd531ef70d93",
+          "title": "EP03 - Razzle Dazzle Paint Job, The Autolympics, The Delivery Service · three-story bundle",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 1320.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-73693583cd531ef70d93",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP03%20-%20Razzle%20Dazzle%20Paint%20Job%2C%20The%20Autolympics%2C%20The%20Delivery%20Service.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wheelie-b91b747786201e911ec7",
+          "title": "EP04 - The Big Bumper, Surprise Party, On the Town · three-story bundle",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 1319.75,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-b91b747786201e911ec7",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP04%20-%20The%20Big%20Bumper%2C%20Surprise%20Party%2C%20On%20the%20Town.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wheelie-82fdfd59b169fe09e71b",
+          "title": "EP05 - Black Belt Fuji, Our Hero,  Wheelie Goes Hawaiian · three-story bundle",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 1317.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-82fdfd59b169fe09e71b",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP05%20-%20Black%20Belt%20Fuji%2C%20Our%20Hero%2C%20%20Wheelie%20Goes%20Hawaiian.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wheelie-3500df1865d446ae1960",
+          "title": "EP06 - The Inspection, The Old Timer, The Copter Caper · three-story bundle",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 1316.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-3500df1865d446ae1960",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP06%20-%20The%20Inspection%2C%20The%20Old%20Timer%2C%20The%20Copter%20Caper.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wheelie-e56ee495fde3fc4f8311",
+          "title": "EP07 - Dr. Crankenstein,  Bulldozer Buddy,  Happy Birthday, Wheelie · three-story bundle",
+          "season": 0,
+          "number": 7,
+          "durationSeconds": 1317.59,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-e56ee495fde3fc4f8311",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP07%20-%20Dr.%20Crankenstein%2C%20%20Bulldozer%20Buddy%2C%20%20Happy%20Birthday%2C%20Wheelie.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wheelie-b8ef15b15554319c0d3b",
+          "title": "EP08 - Wheelie, the Super Star,  Down on the Farm, Roadeo · three-story bundle",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 1319.63,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-b8ef15b15554319c0d3b",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP08%20-%20Wheelie%2C%20the%20Super%20Star%2C%20%20Down%20on%20the%20Farm%2C%20Roadeo.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wheelie-b7dd75187acddb07752a",
+          "title": "EP09 - Carfucious Says, Mighty Wheelie,  Camping with a Go Go · three-story bundle",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 1342.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-b7dd75187acddb07752a",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP09%20-%20Carfucious%20Says%2C%20Mighty%20Wheelie%2C%20%20Camping%20with%20a%20Go%20Go.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wheelie-0bef9eded07b0fe65a99",
+          "title": "EP10 - Lenny Van Limousine, Snow Foolin, Wheelie in Paris · three-story bundle",
+          "season": 0,
+          "number": 10,
+          "durationSeconds": 1263.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-0bef9eded07b0fe65a99",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP10%20-%20Lenny%20Van%20Limousine%2C%20Snow%20Foolin%2C%20Wheelie%20in%20Paris.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wheelie-8e8bc4a788523ed883c7",
+          "title": "EP11 - Dragster Net, Dragula,  Boot Camp · three-story bundle",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 1332.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-8e8bc4a788523ed883c7",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP11%20-%20Dragster%20Net%2C%20Dragula%2C%20%20Boot%20Camp.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wheelie-cef42a022370d3844917",
+          "title": "EP12 - Dr. Cykll and Mr. Ryde,  Johnny Crash, Wheelie and the Smoke Eater · three-story bundle",
+          "season": 0,
+          "number": 12,
+          "durationSeconds": 1337.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-cef42a022370d3844917",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP12%20-%20Dr.%20Cykll%20and%20Mr.%20Ryde%2C%20%20Johnny%20Crash%2C%20Wheelie%20and%20the%20Smoke%20Eater.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wheelie-29ac053c6b13ed7557ae",
+          "title": "EP13 - Friday the Thirteenth, Wings of Wheelie,  Wheelie's Clean Sweep · three-story bundle",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 1330.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-29ac053c6b13ed7557ae",
+              "provider": "archive",
+              "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP13%20-%20Friday%20the%20Thirteenth%2C%20Wings%20of%20Wheelie%2C%20%20Wheelie's%20Clean%20Sweep.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "provider": "archive",
+          "itemId": "ep-01-double-cross-country-the-infiltrator-the-stunt-show",
+          "url": "https://archive.org/details/ep-01-double-cross-country-the-infiltrator-the-stunt-show",
+          "title": "Wheelie and the Chopper Bunch - The Complete Series [DVD Rip]",
+          "language": "eng",
+          "retained": 13
+        }
+      ],
+      "notes": "English collection contains 13 EP-numbered three-story programs. Keep each bundle intact; season zero denotes source program sequence.",
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP01%20-%20Double%20Cross%20Country%2C%20The%20Infiltrator%2C%20The%20Stunt%20Show.ia.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:57.647791+00:00"
+        },
+        {
+          "url": "https://archive.org/download/ep-01-double-cross-country-the-infiltrator-the-stunt-show/EP13%20-%20Friday%20the%20Thirteenth%2C%20Wings%20of%20Wheelie%2C%20%20Wheelie's%20Clean%20Sweep.ia.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:57.600476+00:00"
+        }
+      ]
+    },
+    {
+      "showId": "funky-phantom",
+      "title": "The Funky Phantom",
+      "episodes": [
+        {
+          "id": "cartoon-funky-phantom-0bd84ce18678814abbbf",
+          "title": "Funky Phantom E01 (Don't Fool With A Phantom)_AI Enhanced",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 1338.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-0bd84ce18678814abbbf",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E01%20(Don't%20Fool%20With%20A%20Phantom)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-bf617044b5847d32a057",
+          "title": "Funky Phantom E02 (Heir Scare)_AI Enhanced",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 1339.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-bf617044b5847d32a057",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E02%20(Heir%20Scare)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-988da7202ede493a9ad9",
+          "title": "Funky Phantom E03 (I'll Haunt You Later)_AI Enhanced",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 1336.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-988da7202ede493a9ad9",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E03%20(I'll%20Haunt%20You%20Later)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-55a75068df943d83e481",
+          "title": "Funky Phantom E04 (Who's Chicken)_AI Enhanced",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 1339.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-55a75068df943d83e481",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E04%20(Who's%20Chicken)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-a14a199cb4a6671db5f5",
+          "title": "Funky Phantom E05 (The Headless Horseman)_AI Enhanced",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 1331.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-a14a199cb4a6671db5f5",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E05%20(The%20Headless%20Horseman)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-5a921a90036b36c8d548",
+          "title": "Funky Phantom E06 (Spirit Spooked)_AI Enhanced",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 1333.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-5a921a90036b36c8d548",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E06%20(Spirit%20Spooked)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-1dc57c3c21a9be619c5d",
+          "title": "Funky Phantom E07 (Ghost Town Ghost)_AI Enhanced",
+          "season": 0,
+          "number": 7,
+          "durationSeconds": 1333.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-1dc57c3c21a9be619c5d",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E07%20(Ghost%20Town%20Ghost)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-5b0ba07826964780034a",
+          "title": "Funky Phantom E08 (We Saw A Sea Serpent)_AI Enhanced",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 1336.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-5b0ba07826964780034a",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E08%20(We%20Saw%20A%20Sea%20Serpent)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-182a0a70893ef178b670",
+          "title": "Funky Phantom E09 (Haunt In Inn)_AI Enhanced",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 1336,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-182a0a70893ef178b670",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E09%20(Haunt%20In%20Inn)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-ca6a8e3d43700547d1dd",
+          "title": "Funky Phantom E10 (Mudsy Joins The Circus)_AI Enhanced",
+          "season": 0,
+          "number": 10,
+          "durationSeconds": 1338.54,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-ca6a8e3d43700547d1dd",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E10%20(Mudsy%20Joins%20The%20Circus)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-37bc4191e5075937784d",
+          "title": "Funky Phantom E11 (Pigskin Predicament)_AI Enhanced",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 1337,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-37bc4191e5075937784d",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E11%20(Pigskin%20Predicament)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-ff2a51874030c3c01acc",
+          "title": "Funky Phantom E12 (The Liberty Bell Caper)_AI Enhanced",
+          "season": 0,
+          "number": 12,
+          "durationSeconds": 1337,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-ff2a51874030c3c01acc",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E12%20(The%20Liberty%20Bell%20Caper)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-c868b68bb140491073ac",
+          "title": "Funky Phantom E13 (April's Foolish Day)_AI Enhanced",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 1345.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-c868b68bb140491073ac",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E13%20(April's%20Foolish%20Day)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-579d6cefaecce4c1f704",
+          "title": "Funky Phantom E14 (The Forest's Prime-Evil)_AI Enhanced",
+          "season": 0,
+          "number": 14,
+          "durationSeconds": 1334.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-579d6cefaecce4c1f704",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E14%20(The%20Forest's%20Prime-Evil)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-354eb92a79224b58d0b8",
+          "title": "Funky Phantom E15 (The Hairy Scary Houndman)_AI Enhanced",
+          "season": 0,
+          "number": 15,
+          "durationSeconds": 1335.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-354eb92a79224b58d0b8",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E15%20(The%20Hairy%20Scary%20Houndman)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-7c65f8b1dd3a92fb5211",
+          "title": "Funky Phantom E16 (Mudsy And Muddlemore Manor)_AI Enhanced",
+          "season": 0,
+          "number": 16,
+          "durationSeconds": 1334.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-7c65f8b1dd3a92fb5211",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E16%20(Mudsy%20And%20Muddlemore%20Manor)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-funky-phantom-d85eb2a8299ad1a38513",
+          "title": "Funky Phantom E17 (Ghost Grabbers)_AI Enhanced",
+          "season": 0,
+          "number": 17,
+          "durationSeconds": 1335.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-d85eb2a8299ad1a38513",
+              "provider": "archive",
+              "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E17%20(Ghost%20Grabbers)_AI%20Enhanced.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "provider": "archive",
+          "itemId": "funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced",
+          "url": "https://archive.org/details/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced",
+          "title": "The Funky Phantom - Season One - Ai Upscale 960p",
+          "language": "eng",
+          "retained": 17
+        }
+      ],
+      "notes": "English collection contains 17 E-numbered stories, labeled by the uploader as AI-enhanced video. Season zero denotes source sequence.",
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E01%20(Don't%20Fool%20With%20A%20Phantom)_AI%20Enhanced.ia.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:58.097873+00:00"
+        },
+        {
+          "url": "https://archive.org/download/funky-phantom-e-01-dont-fool-with-a-phantom-ai-enhanced/Funky%20Phantom%20E17%20(Ghost%20Grabbers)_AI%20Enhanced.ia.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:58.457493+00:00"
+        }
+      ]
+    },
+    {
+      "showId": "inch-high",
+      "title": "Inch High, Private Eye",
+      "episodes": [
+        {
+          "id": "cartoon-inch-high-2fe8f93ae86f962d4309",
+          "title": "Inch High Private Eye Episode 1 Diamonds Are a Crooks Best Friend",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 1430.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-2fe8f93ae86f962d4309",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%201%20Diamonds%20Are%20a%20Crooks%20Best%20Friend.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-inch-high-92e293506574686dda15",
+          "title": "Inch High Private Eye Episode 2 You Oughta Be in Pictures",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 1429.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-92e293506574686dda15",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%202%20You%20Oughta%20Be%20in%20Pictures.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-inch-high-0409540f7bc3b3bfefd6",
+          "title": "Inch High Private Eye Episode 3 The Smugglers",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 1431.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-0409540f7bc3b3bfefd6",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%203%20The%20Smugglers.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-inch-high-46c4d91d1848a8519011",
+          "title": "Inch High Private Eye Episode 4 Counterfeit Story",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 1428.54,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-46c4d91d1848a8519011",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%204%20Counterfeit%20Story.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-inch-high-99c7836a82c13ff58bd0",
+          "title": "Inch High Private Eye Episode 5 The Mummys Curse",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 1427.61,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-99c7836a82c13ff58bd0",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%205%20The%20Mummys%20Curse.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-inch-high-22cbbd3ced7281037744",
+          "title": "Inch High Private Eye Episode 6 The Doll Maker",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 1426.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-22cbbd3ced7281037744",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%206%20The%20Doll%20Maker.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-inch-high-b16c61e382f78503e5b4",
+          "title": "Inch High Private Eye Episode 7 Music Maestro",
+          "season": 0,
+          "number": 7,
+          "durationSeconds": 1429.27,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-b16c61e382f78503e5b4",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%207%20Music%20Maestro.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-inch-high-50d375ba69addd837947",
+          "title": "Inch High Private Eye Episode 8 Dude City",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 1431.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-50d375ba69addd837947",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%208%20Dude%20City.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-inch-high-4b936b68b6f6ddb2f0a4",
+          "title": "Inch High Private Eye Episode 9 High Fashion",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 1427.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-4b936b68b6f6ddb2f0a4",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%209%20High%20Fashion.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-inch-high-30a5fb339052e72ad088",
+          "title": "Inch High Private Eye Episode 10 The Cat Burglars",
+          "season": 0,
+          "number": 10,
+          "durationSeconds": 1427.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-30a5fb339052e72ad088",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%2010%20The%20Cat%20Burglars.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-inch-high-481160b2049594c82955",
+          "title": "Inch High Private Eye Episode 11 The Worlds Greatest Animals",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 1429.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-481160b2049594c82955",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%2011%20The%20Worlds%20Greatest%20Animals.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-inch-high-2a14758db0ca75fa5208",
+          "title": "Inch High Private Eye Episode 12 Super Flea",
+          "season": 0,
+          "number": 12,
+          "durationSeconds": 1428.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-2a14758db0ca75fa5208",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%2012%20Super%20Flea.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-inch-high-15ccbdaaa461ecd4d30b",
+          "title": "Inch High Private Eye Episode 13 The Return of Spumoni",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 1427.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-15ccbdaaa461ecd4d30b",
+              "provider": "archive",
+              "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%2013%20The%20Return%20of%20Spumoni.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "provider": "archive",
+          "itemId": "inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend",
+          "url": "https://archive.org/details/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend",
+          "title": "Inch High Private Eye (TV Series 1973)",
+          "language": "eng",
+          "retained": 13
+        }
+      ],
+      "notes": "English collection contains 13 explicitly Episode-numbered stories. Season zero denotes source sequence.",
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%201%20Diamonds%20Are%20a%20Crooks%20Best%20Friend.ia.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:58.096770+00:00"
+        },
+        {
+          "url": "https://archive.org/download/inch-high-private-eye-episode-1-diamonds-are-a-crooks-best-friend/Inch%20High%20Private%20Eye%20Episode%2013%20The%20Return%20of%20Spumoni.ia.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:58.244091+00:00"
+        }
+      ]
     }
   ],
-  "previousCheckedAt": "2026-11-13T20:14:56.762Z",
+  "previousCheckedAt": "2026-11-13T20:15:22.975Z",
   "updatedShows": [
-    "birdman",
-    "jonny-quest",
-    "super-friends",
-    "flintstones",
-    "jetsons",
-    "wacky-races"
+    "butch-cassidy",
+    "clue-club",
+    "goober",
+    "wheelie",
+    "funky-phantom",
+    "inch-high"
   ]
 }

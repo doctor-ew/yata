@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-13T18:42:19.392Z",
+  "checkedAt": "2026-11-13T20:21:28.634Z",
   "provider": "archive",
   "bounds": {
     "searchRows": 100,
@@ -11,7 +11,8 @@
     "Curated public MP4 metadata only; not a claim of full-series completeness, English audio verification, playback decoding or rights status.",
     "Series items reviewed against metadata titles and filenames; unrelated adaptations, clips, disc dumps, audio fan-fiction and crossovers from other shows excluded.",
     "Combined episodes remain one media entry; no invented split points.",
-    "Unavailable and non-MP4 files are excluded. Metadata language can be unknown."
+    "Unavailable and non-MP4 files are excluded. Metadata language can be unknown.",
+    "Partial refresh preserves earlier show records; updatedShows identifies refreshed collections."
   ],
   "shows": [
     {
@@ -16939,6 +16940,1438 @@
         "Counts are media entries found, not verified episode inventory totals.",
         "No full-series completeness claim. Missing runtime remains unknown."
       ]
+    },
+    {
+      "showId": "wizards-warriors",
+      "title": "Wizards and Warriors (1983)",
+      "episodes": [
+        {
+          "id": "action-wizards-warriors-0",
+          "title": "Wizards and Warriors - S01E01 - The Unicorn of Death",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 2907.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/wizards-and-warriors-s-01-e-08-vulkars-revenge/Wizards%20and%20Warriors%20-%20S01E01%20-%20The%20Unicorn%20of%20Death.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-wizards-warriors-1",
+          "title": "Wizards and Warriors - S01E02 - The Kidnap",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 2850.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/wizards-and-warriors-s-01-e-08-vulkars-revenge/Wizards%20and%20Warriors%20-%20S01E02%20-%20The%20Kidnap.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-wizards-warriors-2",
+          "title": "Wizards and Warriors - S01E03 - The Rescue",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 2913.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/wizards-and-warriors-s-01-e-08-vulkars-revenge/Wizards%20and%20Warriors%20-%20S01E03%20-%20The%20Rescue.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-wizards-warriors-3",
+          "title": "Wizards and Warriors - S01E04 - Night of Terror",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 2907.92,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/wizards-and-warriors-s-01-e-08-vulkars-revenge/Wizards%20and%20Warriors%20-%20S01E04%20-%20Night%20of%20Terror.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-wizards-warriors-4",
+          "title": "Wizards and Warriors - S01E05 - Skies of Death",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 2879.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/wizards-and-warriors-s-01-e-08-vulkars-revenge/Wizards%20and%20Warriors%20-%20S01E05%20-%20Skies%20of%20Death.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-wizards-warriors-5",
+          "title": "Wizards and Warriors - S01E06 - The Caverns of Chaos",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 2911.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/wizards-and-warriors-s-01-e-08-vulkars-revenge/Wizards%20and%20Warriors%20-%20S01E06%20-%20The%20Caverns%20of%20Chaos.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-wizards-warriors-6",
+          "title": "Wizards and Warriors - S01E07 - The Dungeon of Death",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 2914.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/wizards-and-warriors-s-01-e-08-vulkars-revenge/Wizards%20and%20Warriors%20-%20S01E07%20-%20The%20Dungeon%20of%20Death.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-wizards-warriors-7",
+          "title": "Wizards and Warriors - S01E08 - Vulkars Revenge",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 2942.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/wizards-and-warriors-s-01-e-08-vulkars-revenge/Wizards%20and%20Warriors%20-%20S01E08%20-%20Vulkars%20Revenge.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "reviewedItemCount": 1
+        }
+      ],
+      "items": [
+        {
+          "itemId": "wizards-and-warriors-s-01-e-08-vulkars-revenge",
+          "title": "Wizards And Warriors Season 1",
+          "language": "eng",
+          "accepted": 8
+        }
+      ],
+      "notes": [
+        "English eight-episode collection with explicit season/episode numbering.",
+        "Counts are media entries found, not verified episode inventory totals.",
+        "No full-series completeness claim. Missing runtime remains unknown."
+      ],
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/wizards-and-warriors-s-01-e-08-vulkars-revenge/Wizards%20and%20Warriors%20-%20S01E01%20-%20The%20Unicorn%20of%20Death.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:56.398606+00:00"
+        },
+        {
+          "url": "https://archive.org/download/wizards-and-warriors-s-01-e-08-vulkars-revenge/Wizards%20and%20Warriors%20-%20S01E08%20-%20Vulkars%20Revenge.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:56.423642+00:00"
+        }
+      ]
+    },
+    {
+      "showId": "matthew-star",
+      "title": "The Powers of Matthew Star",
+      "episodes": [
+        {
+          "id": "action-matthew-star-0",
+          "title": "The Powers of Matthew Star S01E01 Jackal",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 2910.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E01%20Jackal.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-1",
+          "title": "The Powers of Matthew Star S01E02 Accused",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 2871.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E02%20Accused.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-2",
+          "title": "The Powers of Matthew Star S01E03 Daredevil",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 2876.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E03%20Daredevil.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-3",
+          "title": "The Powers of Matthew Star S01E04 Genius",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 2875.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E04%20Genius.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-4",
+          "title": "The Powers of Matthew Star S01E05 Prediction",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 2874.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E05%20Prediction.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-5",
+          "title": "The Powers of Matthew Star S01E06 The Italian Caper",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 2875.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E06%20The%20Italian%20Caper.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-6",
+          "title": "The Powers of Matthew Star S01E07 Winning",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 2883.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E07%20Winning.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-7",
+          "title": "The Powers of Matthew Star S01E08 Endurance a k a Survival",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 2873.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E08%20Endurance%20a%20k%20a%20Survival.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-8",
+          "title": "The Powers of Matthew Star S01E09 The Triangle",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 2866.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E09%20The%20Triangle.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-9",
+          "title": "The Powers of Matthew Star S01E10 Mother",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 2869.69,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E10%20Mother.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-10",
+          "title": "The Powers of Matthew Star S01E11 Experiment",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 2877.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E11%20Experiment.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-11",
+          "title": "The Powers of Matthew Star S01E12 Fugitives",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 2876.35,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E12%20Fugitives.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-12",
+          "title": "The Powers of Matthew Star S01E13 Matthew Star; D O A",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 2878.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E13%20Matthew%20Star%3B%20D%20O%20A.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-13",
+          "title": "The Powers of Matthew Star S01E14 The Racer's Edge",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 2877.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E14%20The%20Racer's%20Edge.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-14",
+          "title": "The Powers of Matthew Star S01E15 Dead Man's Hand",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 2874.51,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E15%20Dead%20Man's%20Hand.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-15",
+          "title": "The Powers of Matthew Star S01E16 36 hours",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 2878.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E16%2036%20hours.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-16",
+          "title": "The Powers of Matthew Star S01E17 The Quadrian Caper",
+          "season": 1,
+          "number": 17,
+          "durationSeconds": 2877.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E17%20The%20Quadrian%20Caper.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-17",
+          "title": "The Powers of Matthew Star S01E18 Brain Drain",
+          "season": 1,
+          "number": 18,
+          "durationSeconds": 2881.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E18%20Brain%20Drain.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-18",
+          "title": "The Powers of Matthew Star S01E19 The Great Waldo Shepard",
+          "season": 1,
+          "number": 19,
+          "durationSeconds": 2878.69,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E19%20The%20Great%20Waldo%20Shepard.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-19",
+          "title": "The Powers of Matthew Star S01E20 Road Rebels",
+          "season": 1,
+          "number": 20,
+          "durationSeconds": 2875.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E20%20Road%20Rebels.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-20",
+          "title": "The Powers of Matthew Star S01E21 Swords and Quests",
+          "season": 1,
+          "number": 21,
+          "durationSeconds": 2879.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E21%20Swords%20and%20Quests.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-matthew-star-21",
+          "title": "The Powers of Matthew Star S01E22 Starr Knight pilot",
+          "season": 1,
+          "number": 22,
+          "durationSeconds": 2838.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E22%20Starr%20Knight%20pilot.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "reviewedItemCount": 1
+        }
+      ],
+      "items": [
+        {
+          "itemId": "the-powers-of-matthew-star-s-01-e-01-jackal",
+          "title": "The Powers of Matthew Star - Complete Series",
+          "language": "eng",
+          "accepted": 22
+        }
+      ],
+      "notes": [
+        "English 22-entry source sequence; source episode 22 is labeled Starr Knight pilot. Source numbering is preserved, not independently reconstructed broadcast order.",
+        "Counts are media entries found, not verified episode inventory totals.",
+        "No full-series completeness claim. Missing runtime remains unknown."
+      ],
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E01%20Jackal.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:56.699646+00:00"
+        },
+        {
+          "url": "https://archive.org/download/the-powers-of-matthew-star-s-01-e-01-jackal/The%20Powers%20of%20Matthew%20Star%20S01E22%20Starr%20Knight%20pilot.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:56.734114+00:00"
+        }
+      ]
+    },
+    {
+      "showId": "misfits-science",
+      "title": "Misfits of Science (1985)",
+      "episodes": [
+        {
+          "id": "action-misfits-science-0",
+          "title": "Misfits of Science - S01E01 - Deep Freeze (Pilot)",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 5505.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E01%20-%20Deep%20Freeze%20(Pilot).mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-1",
+          "title": "Misfits of Science - S01E02 - Your Place or Mayan",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 2901.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E02%20-%20Your%20Place%20or%20Mayan.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-2",
+          "title": "Misfits of Science - S01E03 - Guess Whats Coming to Dinner",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 2910.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E03%20-%20Guess%20Whats%20Coming%20to%20Dinner.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-3",
+          "title": "Misfits of Science - S01E04 - Lost Link",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 2898.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E04%20-%20Lost%20Link.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-4",
+          "title": "Misfits of Science - S01E05 - Sort of Looking For Gina",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 2905.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E05%20-%20Sort%20of%20Looking%20For%20Gina.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-5",
+          "title": "Misfits of Science - S01E06 - Sonar and Yet so Far",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 2898.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E06%20-%20Sonar%20and%20Yet%20so%20Far.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-6",
+          "title": "Misfits of Science - S01E07 - Steer Crazy",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 2893.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E07%20-%20Steer%20Crazy.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-7",
+          "title": "Misfits of Science - S01E08 - Fumble on the One",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 2899.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E08%20-%20Fumble%20on%20the%20One.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-8",
+          "title": "Misfits of Science - S01E09 - Twin Engines",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 2905.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E09%20-%20Twin%20Engines.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-9",
+          "title": "Misfits of Science - S01E10 - Grand Theft Bunny",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 2896.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E10%20-%20Grand%20Theft%20Bunny.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-10",
+          "title": "Misfits of Science - S01E11 - Grand Elusion",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 2894.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E11%20-%20Grand%20Elusion.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-11",
+          "title": "Misfits of Science - S01E12 - Once Upon a Night",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 2896.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E12%20-%20Once%20Upon%20a%20Night.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-12",
+          "title": "Misfits of Science - S01E13 - Center of Attention",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 2902.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E13%20-%20Center%20of%20Attention.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-13",
+          "title": "Misfits of Science - S01E14 - Against All Oz",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 2897.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E14%20-%20Against%20All%20Oz.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-14",
+          "title": "Misfits of Science - S01E15 - The Avenging Angel",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 2899.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E15%20-%20The%20Avenging%20Angel.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-misfits-science-15",
+          "title": "Misfits of Science - S01E16 - Three Days of the Blender",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 2888.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E16%20-%20Three%20Days%20of%20the%20Blender.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "reviewedItemCount": 1
+        }
+      ],
+      "items": [
+        {
+          "itemId": "misfits-of-science-complete-series-1985",
+          "title": "Misfits of Science - Complete Series 1985",
+          "language": "eng",
+          "accepted": 16
+        }
+      ],
+      "notes": [
+        "English 16-entry collection; the approximately 92-minute pilot is one intact media entry. This show dates from 1985.",
+        "Counts are media entries found, not verified episode inventory totals.",
+        "No full-series completeness claim. Missing runtime remains unknown."
+      ],
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E01%20-%20Deep%20Freeze%20(Pilot).mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:56.367717+00:00"
+        },
+        {
+          "url": "https://archive.org/download/misfits-of-science-complete-series-1985/Misfits%20of%20Science%20-%20S01E16%20-%20Three%20Days%20of%20the%20Blender.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:56.517965+00:00"
+        }
+      ]
+    },
+    {
+      "showId": "otherworld",
+      "title": "Otherworld (1985)",
+      "episodes": [
+        {
+          "id": "action-otherworld-0",
+          "title": "Otherworld Episode 1 - Rules Of Attraction",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 2701.37,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/otherworld-episode-2-the-zone-troopers-build-men/Otherworld%20Episode%201%20-%20Rules%20Of%20Attraction.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-otherworld-1",
+          "title": "Otherworld Episode 2 - The Zone Troopers Build Men",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 2845.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/otherworld-episode-2-the-zone-troopers-build-men/Otherworld%20Episode%202%20-%20The%20Zone%20Troopers%20Build%20Men.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-otherworld-2",
+          "title": "Otherworld Episode 3 - Paradise Lost",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 2813.41,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/otherworld-episode-2-the-zone-troopers-build-men/Otherworld%20Episode%203%20-%20Paradise%20Lost.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-otherworld-3",
+          "title": "Otherworld Episode 4 - Rock And Roll Suicide",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 2844.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/otherworld-episode-2-the-zone-troopers-build-men/Otherworld%20Episode%204%20-%20Rock%20And%20Roll%20Suicide.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-otherworld-4",
+          "title": "Otherworld Episode 5 - Village Of The Motorpigs",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 2698.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/otherworld-episode-2-the-zone-troopers-build-men/Otherworld%20Episode%205%20-%20Village%20Of%20The%20Motorpigs.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-otherworld-5",
+          "title": "Otherworld Episode 6 - I Am Woman Hear Me Roar",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 2703.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/otherworld-episode-2-the-zone-troopers-build-men/Otherworld%20Episode%206%20-%20I%20Am%20Woman%20Hear%20Me%20Roar.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-otherworld-6",
+          "title": "Otherworld Episode 7 - Mansion Of The Beast",
+          "season": 0,
+          "number": 7,
+          "durationSeconds": 2690.89,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/otherworld-episode-2-the-zone-troopers-build-men/Otherworld%20Episode%207%20-%20Mansion%20Of%20The%20Beast.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-otherworld-7",
+          "title": "Otherworld Episode 8 - Princess Metra",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 2693.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/otherworld-episode-2-the-zone-troopers-build-men/Otherworld%20Episode%208%20-%20Princess%20Metra.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "reviewedItemCount": 1
+        }
+      ],
+      "items": [
+        {
+          "itemId": "otherworld-episode-2-the-zone-troopers-build-men",
+          "title": "Otherworld 1985",
+          "language": "eng",
+          "accepted": 8
+        }
+      ],
+      "notes": [
+        "English eight-entry collection; explicit Episode numbers are retained with season zero. This show dates from 1985.",
+        "Counts are media entries found, not verified episode inventory totals.",
+        "No full-series completeness claim. Missing runtime remains unknown."
+      ],
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/otherworld-episode-2-the-zone-troopers-build-men/Otherworld%20Episode%201%20-%20Rules%20Of%20Attraction.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:56.393902+00:00"
+        },
+        {
+          "url": "https://archive.org/download/otherworld-episode-2-the-zone-troopers-build-men/Otherworld%20Episode%208%20-%20Princess%20Metra.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:56.390231+00:00"
+        }
+      ]
+    },
+    {
+      "showId": "whiz-kids",
+      "title": "Whiz Kids",
+      "episodes": [
+        {
+          "id": "action-whiz-kids-0",
+          "title": "Whiz Kids - 1x01 - Programmed for Murder",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 2683.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x01%20-%20Programmed%20for%20Murder.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-1",
+          "title": "Whiz Kids - 1x02 - Fatal Error",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 3430.54,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x02%20-%20Fatal%20Error.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-2",
+          "title": "Whiz Kids - 1x03 - Deadly Access",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 2639.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x03%20-%20Deadly%20Access.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-3",
+          "title": "Whiz Kids - 1x04 - Candidate for murder",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 2688.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x04%20-%20Candidate%20for%20murder.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-4",
+          "title": "Whiz Kids - 1x05 - A Chip Off the Old Block",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 2672.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x05%20-%20A%20Chip%20Off%20the%20Old%20Block.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-5",
+          "title": "Whiz Kids - 1x06 - Airwave Anarchy",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 2670.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x06%20-%20Airwave%20Anarchy.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-6",
+          "title": "Whiz Kids - 1x07 - Return of the Big Rocker",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 2775.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x07%20-%20Return%20of%20the%20Big%20Rocker.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-7",
+          "title": "Whiz Kids - 1X08 - The Wrong Mr Wright",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 2678.75,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201X08%20-%20The%20Wrong%20Mr.%20Wright.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-8",
+          "title": "Whiz Kids - 1x09 - Red Star Rising",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 2664.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x09%20-%20Red%20Star%20Rising.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-9",
+          "title": "Whiz Kids - 1x10 - The Network",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 2689.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x10%20-%20The%20Network.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-10",
+          "title": "Whiz Kids - 1x11 - Watch Out",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 2669.27,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x11%20-%20Watch%20Out.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-11",
+          "title": "Whiz KIds - 1x12 - Amen to Amen-Re",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 2644.78,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20KIds%20-%201x12%20-%20Amen%20to%20Amen-Re.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-12",
+          "title": "Whiz Kids - 1x13 - Maid in the USA",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 2642.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x13%20-%20Maid%20in%20the%20USA.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-13",
+          "title": "Whiz Kids - 1x14 - The Lollypop Gang Strikes Back",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 2663.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x14%20-%20The%20Lollypop%20Gang%20Strikes%20Back.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-14",
+          "title": "Whiz Kids - 1x15 - The Sufi Project",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 2611.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x15%20-%20The%20Sufi%20Project.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-15",
+          "title": "Whiz Kids - 1x16 - Father's Day",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 2671.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x16%20-%20Father's%20Day.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-16",
+          "title": "Whiz Kids - 1x17 - Altaira",
+          "season": 1,
+          "number": 17,
+          "durationSeconds": 2699.81,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x17%20-%20Altaira.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-whiz-kids-17",
+          "title": "Whiz Kids - 1x18 - May I Take Your Order Please",
+          "season": 1,
+          "number": 18,
+          "durationSeconds": 2663.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x18%20-%20May%20I%20Take%20Your%20Order%20Please.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "reviewedItemCount": 1
+        }
+      ],
+      "items": [
+        {
+          "itemId": "whiz-kids",
+          "title": "Whiz Kids / Les Petits Génies (1983-84) EN / FR",
+          "language": "eng,French",
+          "accepted": 18
+        }
+      ],
+      "notes": [
+        "Mixed-language collection: retain only the EN - VHS - Whiz Kids (1 - 18)/Syndicated (1-18)/272p/ directory and explicit Whiz Kids season/episode filenames. Exclude French material, alternate encodes, crossovers and cut scenes. Language is indicated by the chosen directory rather than independently verified audio.",
+        "Counts are media entries found, not verified episode inventory totals.",
+        "No full-series completeness claim. Missing runtime remains unknown."
+      ],
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x01%20-%20Programmed%20for%20Murder.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:57.107245+00:00"
+        },
+        {
+          "url": "https://archive.org/download/whiz-kids/EN%20-%20VHS%20-%20Whiz%20Kids%20(1%20-%2018)/Syndicated%20(1-18)/272p/Whiz%20Kids%20-%201x18%20-%20May%20I%20Take%20Your%20Order%20Please.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:21:57.065446+00:00"
+        }
+      ]
     }
+  ],
+  "previousCheckedAt": "2026-11-13T18:42:19.392Z",
+  "updatedShows": [
+    "wizards-warriors",
+    "matthew-star",
+    "misfits-science",
+    "otherworld",
+    "whiz-kids"
   ]
 }
