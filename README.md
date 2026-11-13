@@ -146,3 +146,7 @@ The latest batch adds Butch Cassidy and the Sundance Kids, Clue Club, Goober and
 ## Gadget heroes
 
 Added Blue Thunder (11 videos), The Master (13), Tales of the Gold Monkey (21 including its combined pilot), and a one-episode Matt Houston subset. Stingray (1985) has an external Tubi series link and is excluded from automatic station playback. See [reviewed sources and limits](../docs/12/GADGET-HEROES.md).
+
+## Vintage commercial breaks
+
+Enable **Vintage commercial breaks + my bumpers** in Stream settings for one short break between complete stories. The starter pack contains 14 standalone, approximately 30-second vintage toy, cereal and game commercials. Breaks work across channels and show-only streams; Next skips a clip. New catalogs default to off and existing preferences are preserved. Browse Vintage commercial breaks in the library to preview or remove sources. See [source credits, scheduling and validation](../docs/13/COMMERCIAL-BREAKS.md). Inspired by [retro-tv-webos](https://github.com/Nikolay1243/retro-tv-webos) and Joey Cato’s [MyRetroTVs](https://www.myretrotvs.com/); independently implemented.

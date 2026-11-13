@@ -4,7 +4,7 @@ import { STARTER_PACK } from './starter-pack.mjs';
 import { youtubeEpisodes, mergeBatch, mergeLibraryBatch, discoveryRows } from './bulk.mjs';
 import { CHANNELS, createSeed } from './catalog.mjs';
 import { parseSourceUrl, parseDuration, importArchive, validateCatalog, parseCatalogJson,
-  readCatalog, saveCatalog, buildSchedule, schedulePosition, stationSource, timeLabel, MAX_IMPORT_BYTES } from './domain.mjs';
+  readCatalog, saveCatalog, buildSchedule, schedulePosition, stationSource, timeLabel, MAX_IMPORT_BYTES, COMMERCIAL_SHOW_ID } from './domain.mjs';
 import { createVideoSession, createYouTubeSession } from './players.mjs';
 
 const $ = id => document.getElementById(id);
@@ -39,11 +39,11 @@ function commit(next) {
   catch (error) { notify(`Could not save this change: ${error.message}. Your previous catalog is unchanged.`); return false; }
 }
 function selectedChannel() { return CHANNELS.find(c => c.id === catalog.settings.channel); }
-function channelShows() { return catalog.shows.filter(s => catalog.settings.channel === 'mixed' || s.channel === catalog.settings.channel); }
+function channelShows() { return catalog.shows.filter(s => s.id === COMMERCIAL_SHOW_ID || catalog.settings.channel === 'mixed' || s.channel === catalog.settings.channel); }
 function currentGuide() { return schedulePosition(buildSchedule(catalog), catalog.epoch); }
 function episodeDetail(e) {
   const order = e.season ? `S${String(e.season).padStart(2, '0')} · E${String(e.number).padStart(2, '0')}` : `Item ${e.number}`;
-  return `${e.kind === 'bumper' ? 'Station bumper' : order} · ${timeLabel(e.durationSeconds)}${e.group ? ` · ${e.group}` : ''}`;
+  return `${e.kind === 'bumper' ? 'Commercial / bumper' : order} · ${timeLabel(e.durationSeconds)}${e.group ? ` · ${e.group}` : ''}`;
 }
 
 function renderChannels() {
@@ -110,10 +110,10 @@ function renderLibrary() {
     const art = button('', () => openShow(s.id), 'show-art');
     art.style.setProperty('--tile', tiles[catalog.shows.indexOf(s) % tiles.length]);
     art.setAttribute('aria-label', `View episodes and sources for ${s.title}`);
-    art.append(element('small', s.channel === 'action' ? 'ACTION / ADVENTURE' : 'SATURDAY / MORNING'), element('strong', s.title));
+    art.append(element('small', s.id === COMMERCIAL_SHOW_ID ? 'VINTAGE / COMMERCIALS' : s.channel === 'action' ? 'ACTION / ADVENTURE' : 'SATURDAY / MORNING'), element('strong', s.title));
     const count = s.episodes.length, live = s.episodes.filter(e => e.kind === 'episode' && stationSource(e) && e.durationSeconds > 0).length;
     let status = 'No episode sources yet · add yours';
-    if (count) status = live ? `${live} in live rotation · ${count} catalog ${count === 1 ? 'item' : 'items'}` : `${count} ${count === 1 ? 'source item' : 'source items'} · watch from the library`;
+    if (count) status = s.id === COMMERCIAL_SHOW_ID ? `${count} optional break clips · ${catalog.settings.bumpers ? 'enabled between stories' : 'off until enabled'}` : live ? `${live} in live rotation · ${count} catalog ${count === 1 ? 'item' : 'items'}` : `${count} ${count === 1 ? 'source item' : 'source items'} · watch from the library`;
     card.append(art, element('h3', s.title, 'show-title'), element('p', status, `show-status${live ? ' available' : ''}`));
     return card;
   }));
@@ -176,6 +176,7 @@ function openSource(showId = selectedShowId, episodeId = null) {
     $('source-url').required = false;
     $('source-url').placeholder = 'Optional: add an alternative source';
   } else {
+    $('source-bumper').checked = show.id === COMMERCIAL_SHOW_ID;
     $('source-number').value = show.episodes.length + 1;
     $('source-url').required = true;
     $('source-url').placeholder = 'https://archive.org/details/…';
@@ -394,7 +395,7 @@ $('source-form').addEventListener('submit', async event => {
 
 $('source-show').addEventListener('change', () => {
   const show = catalog.shows.find(s => s.id === $('source-show').value);
-  if (show) { $('source-imdb').value = show.imdbUrl || ''; $('source-number').value = show.episodes.length + 1; }
+  if (show) { $('source-imdb').value = show.imdbUrl || ''; $('source-number').value = show.episodes.length + 1; $('source-bumper').checked = show.id === COMMERCIAL_SHOW_ID; }
 });
 for (const id of ['manage-sources', 'guide-add']) $(id).addEventListener('click', () => openSource());
 $('show-add').addEventListener('click', () => openSource(selectedShowId));
@@ -413,8 +414,11 @@ $('retry').addEventListener('click', () => {
 });
 $('bumpers').addEventListener('change', () => {
   const enabled = $('bumpers').checked;
-  if (configureStream({ bumpers: enabled })) notify(enabled ? 'Bumpers enabled. Only your supplied, checked bumper sources are used.' : 'Bumpers are off.');
-  else $('bumpers').checked = catalog.settings.bumpers;
+  const next = copyCatalog(); next.settings.bumpers = enabled;
+  if (commit(next)) {
+    render(); renderTransport();
+    notify(enabled ? 'Vintage commercials and checked bumpers enabled between complete stories. Use Next to skip a break.' : 'Upcoming commercial breaks and bumpers are off. Current playback is unchanged.');
+  } else $('bumpers').checked = catalog.settings.bumpers;
 });
 $('export-catalog').addEventListener('click', () => {
   const url = URL.createObjectURL(new Blob([JSON.stringify(catalog, null, 2)], { type: 'application/json' }));
@@ -572,7 +576,7 @@ async function fetchLibrary() {
   if (!response.ok) throw Error('The expanded episode library is not ready yet.');
   const manifest = await response.json();
   if (typeof manifest.revision !== 'string' || !/^[a-z0-9.-]{1,100}$/.test(manifest.revision)) throw Error('Invalid library revision.');
-  const packs = await Promise.all(['action', 'cartoon', 'youtube'].map(async provider => {
+  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials'].map(async provider => {
     const response = await fetch(`data/${provider}-discovery.json`);
     if (!response.ok) throw Error('A library source file could not be loaded. Your catalog is unchanged.');
     return response.json();

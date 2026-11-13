@@ -14,7 +14,9 @@ test('static release supports a subpath and excludes server and development file
   assert.match(html, /<base href="\/tv\/">/); assert.match(html, /name="drew-tv-hosting" content="static"/);
   const manifest = JSON.parse(await readFile(path.join(output, 'release-manifest.json'), 'utf8'));
   assert.ok(manifest.files.some(file => file.name === 'data/expanded-catalog.json'));
+  assert.ok(manifest.files.some(file => file.name === 'data/commercials-discovery.json'));
   assert.ok(manifest.files.some(file => file.name === 'LICENSE.txt'));
+  assert.ok(manifest.files.some(file => file.name === 'ATTRIBUTION.md'));
   assert.ok(manifest.files.every(file => path.basename(file.name).includes('.')));
   assert.ok(manifest.files.filter(file => file.name.endsWith('.mjs')).every(file => file.contentType.startsWith('text/javascript')));
   assert.ok(manifest.files.every(file => !/server|scripts\/|test\/|youtube-metadata/.test(file.name)));

@@ -1,3 +1,4 @@
+import { COMMERCIAL_SHOW_ID } from './domain.mjs';
 export const CHANNELS = [
   { id: 'mixed', number: '01', name: 'YATA', subtitle: 'Everything, shuffled', accent: '#ffc66e' },
   { id: 'action', number: '02', name: 'Action Adventure', subtitle: 'Random heroes. Impossible missions.', accent: '#ff927b' },
@@ -71,6 +72,7 @@ export function createSeed() {
     ...action.map(([id, title]) => ({ id, title, channel: 'action', imdbUrl: null, episodes: [] })),
     ...cartoons.map(([id, title]) => ({ id, title, channel: 'cartoons', imdbUrl: null, episodes: [] })),
   ];
+  shows.push({id: COMMERCIAL_SHOW_ID, title: 'Vintage commercial breaks', channel: 'cartoons', imdbUrl: null, episodes: []});
   shows.find(s => s.id === 'dukes').episodes.push({
     id: 'dukes-high-octane', title: 'High Octane', season: 1, number: 5,
     durationSeconds: 2954.67, group: '', kind: 'episode',

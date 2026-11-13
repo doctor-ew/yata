@@ -1,4 +1,5 @@
 import { randomRotation } from './shuffle.mjs';
+export const COMMERCIAL_SHOW_ID = 'vintage-commercials';
 export const STORAGE_KEY = 'drew-tv.catalog.v1';
 export const MAX_IMPORT_BYTES = 2_000_000;
 const ID = /^[\w.-]{1,160}$/;
@@ -140,6 +141,7 @@ export function validateCatalog(raw) {
       if (!Number.isInteger(e.season) || e.season < 0 || !Number.isInteger(e.number) || e.number < 0) fail('Episode order must contain nonnegative whole numbers.');
       if (e.durationSeconds !== null && (typeof e.durationSeconds !== 'number' || parseDuration(e.durationSeconds) === null)) fail('Runtime must be positive seconds, or null when unknown.');
       if (!['episode', 'bumper'].includes(e.kind) || typeof e.group !== 'string' || e.group.length > 200 || !Array.isArray(e.sources) || e.sources.length > 20) fail('Invalid episode kind, group, or sources.');
+      if (sid === COMMERCIAL_SHOW_ID && e.kind !== 'bumper') fail('The vintage commercial collection accepts bumper clips only.');
       const sourceIds = new Set();
       const sources = e.sources.map(source => {
         const sourceId = id(source.id);
@@ -154,6 +156,7 @@ export function validateCatalog(raw) {
     });
     return { id: sid, title: text(s.title, 'show title'), channel: s.channel, imdbUrl, episodes };
   });
+  if (streamShow === COMMERCIAL_SHOW_ID) fail('Choose a program show for the stream.');
   if (streamShow !== null && !shows.some(show => show.id === streamShow && (raw.settings.channel === 'mixed' || show.channel === raw.settings.channel))) fail('The selected stream show is not in this channel.');
   return { version: 1, epoch: raw.epoch, shows, settings: { channel: raw.settings.channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, streamShow } };
 }
@@ -181,13 +184,23 @@ export function stationSource(episode) {
   return episode.sources.find(s => s.availability === 'verified' && s.provider !== 'tubi' && parseSourceUrl(s.url).kind === 'video') ?? null;
 }
 
+// The reserved commercial collection supplies breaks across every station scope.
+// User bumpers remain scoped to the selected program shows.
+export function bumperPool(catalog, shows) {
+  const ids = new Set(shows.map(show => show.id)); ids.add(COMMERCIAL_SHOW_ID);
+  return catalog.shows.filter(show => ids.has(show.id)).flatMap(show => show.episodes
+    .filter(episode => episode.kind === 'bumper' && parseDuration(episode.durationSeconds) !== null && stationSource(episode))
+    .slice().sort((a, b) => a.season - b.season || a.number - b.number)
+    .map(episode => ({ show, episode, source: stationSource(episode), duration: episode.durationSeconds })));
+}
+
 export function buildSchedule(catalog, channel = catalog.settings.channel) {
-  const shows = catalog.shows.filter(s => (channel === 'mixed' || s.channel === channel) && (!catalog.settings.streamShow || s.id === catalog.settings.streamShow));
+  const shows = catalog.shows.filter(s => s.id !== COMMERCIAL_SHOW_ID && (channel === 'mixed' || s.channel === channel) && (!catalog.settings.streamShow || s.id === catalog.settings.streamShow));
   const eligible = e => parseDuration(e.durationSeconds) !== null && stationSource(e);
   const entries = s => s.episodes.filter(eligible).sort((a, b) => a.season - b.season || a.number - b.number)
     .map(episode => ({ show: s, episode, source: stationSource(episode), duration: episode.durationSeconds }));
   const queues = shows.map(s => entries(s).filter(e => e.episode.kind === 'episode'));
-  const bumpers = shows.flatMap(s => entries(s).filter(e => e.episode.kind === 'bumper'));
+  const bumpers = bumperPool(catalog, shows);
   if ((catalog.settings.rotation ?? 'random') === 'random') return randomRotation(queues, bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShow || 'all'}`, storiesPerTurn: catalog.settings.storiesPerTurn ?? 1, includeBumpers: catalog.settings.bumpers });
   const result = [];
   let bumperIndex = 0;

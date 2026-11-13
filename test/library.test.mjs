@@ -6,7 +6,7 @@ import { discoveryRows, mergeLibraryBatch } from '../src/bulk.mjs';
 import { parseCatalogJson, buildSchedule, saveCatalog, readCatalog } from '../src/domain.mjs';
 const data = new URL('../data/', import.meta.url);
 test('shipped library covers every requested show, fits storage and repeats without adding duplicates', async () => {
- const packs = await Promise.all(['action', 'cartoon', 'youtube'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
+ const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
  assert.equal(packs[2].curated, true);
  const seed = createSeed(), rows = discoveryRows(seed, packs);
  const result = mergeLibraryBatch(seed, rows);
@@ -27,7 +27,7 @@ test('shipped library covers every requested show, fits storage and repeats with
 
 
 test('Marvel cartoon additions have distinct stories, exclude title cards and merge into older saved catalogs', async () => {
- const packs = await Promise.all(['action', 'cartoon', 'youtube'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
+ const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
  const seed = createSeed();
  const oldCatalog = structuredClone(seed);
  oldCatalog.shows = oldCatalog.shows.filter(show => !['spider-friends', 'hulk-1982'].includes(show.id));
@@ -49,7 +49,7 @@ test('Marvel cartoon additions have distinct stories, exclude title cards and me
 });
 
 test('Saturday Morning expansion preserves known gaps, source order and older libraries', async () => {
- const packs = await Promise.all(['action', 'cartoon', 'youtube'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
+ const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
  const counts = {'bionic-six':65, jayce:65, 'pole-position':13, 'turbo-teen':12, bravestarr:19, 'defenders-earth':65, 'drak-pack':16, 'dragons-lair':13};
  const seed = createSeed();
  const old = structuredClone(seed); old.shows = old.shows.filter(show => !(show.id in counts)); old.settings.channel = 'cartoons';
@@ -74,7 +74,7 @@ test('Saturday Morning expansion preserves known gaps, source order and older li
 });
 
 test('Hanna-Barbera expansion preserves shorts, long programs and intact story bundles', async () => {
- const packs = await Promise.all(['action', 'cartoon', 'youtube'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
+ const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
  const counts = {'galaxy-rangers':65, visionaries:13, 'space-ghost':20, herculoids:18, galtar:21, 'speed-buggy':16, 'captain-caveman':16, 'hong-kong-phooey':16, dynomutt:20, 'yogi-bear':68, birdman:20, 'jonny-quest':26, 'super-friends':16, flintstones:26, jetsons:24, 'wacky-races':17};
  const seed = createSeed(), old = structuredClone(seed);
  old.shows = old.shows.filter(show => !(show.id in counts)); old.settings.channel = 'cartoons';
@@ -100,7 +100,7 @@ test('Hanna-Barbera expansion preserves shorts, long programs and intact story b
 });
 
 test('Cartoon Express deep cuts and fantasy adventure additions migrate with source limits intact', async () => {
- const packs = await Promise.all(['action','cartoon','youtube'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data),'utf8'))));
+ const packs = await Promise.all(['action','cartoon','youtube','commercials'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data),'utf8'))));
  const cartoons = {'butch-cassidy':13,'clue-club':16,goober:15,wheelie:13,'funky-phantom':17,'inch-high':13};
  const action = {'wizards-warriors':8,'matthew-star':22,'misfits-science':16,otherworld:8,'whiz-kids':18};
  const counts = {...cartoons,...action}, seed=createSeed(), old=structuredClone(seed);
@@ -126,7 +126,7 @@ test('Cartoon Express deep cuts and fantasy adventure additions migrate with sou
 });
 
 test('gadget heroes keep combined pilots and external listings distinct from station episodes',async()=>{
- const packs=await Promise.all(['action','cartoon','youtube'].map(async name=>JSON.parse(await readFile(new URL(`${name}-discovery.json`,data),'utf8'))));
+ const packs=await Promise.all(['action','cartoon','youtube','commercials'].map(async name=>JSON.parse(await readFile(new URL(`${name}-discovery.json`,data),'utf8'))));
  const counts={'blue-thunder':11,'the-master':13,'gold-monkey':21,stingray:1,'matt-houston':1};
  const seed=createSeed(),old=structuredClone(seed);old.shows=old.shows.filter(s=>!(s.id in counts));old.settings.channel='action';
  for(const show of seed.shows)if(!old.shows.some(s=>s.id===show.id))old.shows.push({...show,episodes:[]});
@@ -146,4 +146,18 @@ test('gadget heroes keep combined pilots and external listings distinct from sta
  assert.equal(get('stingray')[0].sources[0].url,'https://tubitv.com/series/300013655/stingray');
  assert.equal(mergeLibraryBatch(installed,rows).added,0);
  assert.equal(installed.settings.channel,'action');
+});
+
+test('commercial starter pack installs additively while preserving the breaks preference',async()=>{
+ const packs=await Promise.all(['action','cartoon','youtube','commercials'].map(async name=>JSON.parse(await readFile(new URL(`${name}-discovery.json`,data),'utf8'))));
+ for(const enabled of [false,true]){
+  const seed=createSeed(),old=structuredClone(seed);old.shows=old.shows.filter(show=>show.id!=='vintage-commercials');old.settings.bumpers=enabled;
+  for(const show of seed.shows)if(!old.shows.some(existing=>existing.id===show.id))old.shows.push({...show,episodes:[]});
+  const rows=discoveryRows(old,packs),installed=mergeLibraryBatch(old,rows).catalog;
+  const clips=installed.shows.find(show=>show.id==='vintage-commercials').episodes;
+  assert.equal(clips.length,14);assert.ok(clips.every(e=>e.kind==='bumper'&&e.durationSeconds>=15&&e.durationSeconds<=90));
+  assert.equal(installed.settings.bumpers,enabled);
+  assert.equal(mergeLibraryBatch(installed,rows).added,0);
+  for(const channel of ['action','cartoons','mixed'])assert.equal(buildSchedule(installed,channel).some(slot=>slot.show.id==='vintage-commercials'),enabled);
+ }
 });

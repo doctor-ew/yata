@@ -1,0 +1,508 @@
+{
+  "checkedAt": "2026-11-13T20:53:25.232940+00:00",
+  "provider": "archive",
+  "scope": "Fourteen standalone vintage commercial clips whose Archive titles identify 1982–1984. Metadata and tiny MP4 range checks only; no full decoding or rights verification. Source dates may be upload dates.",
+  "shows": [
+    {
+      "showId": "vintage-commercials",
+      "title": "Vintage commercial breaks",
+      "episodes": [
+        {
+          "id": "commercial-511970828fb6edbf4773",
+          "title": "Mattel - He-Man & The Masters Of The Universe - Trap Jaw (Commercial, 1983)",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 30.29,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-511970828fb6edbf4773",
+              "provider": "archive",
+              "url": "https://archive.org/download/youtube-yo9cFl4MNXs/yo9cFl4MNXs.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-3b699013664a520eba05",
+          "title": "Kellogg's Apple Jacks - \"Pinball\" (Commercial, 1982)",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 30.72,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-3b699013664a520eba05",
+              "provider": "archive",
+              "url": "https://archive.org/download/youtube-Jovnn95ne24/Jovnn95ne24.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-411158b576b89150db5a",
+          "title": "Powdered Donutz Cereal (Commercial, 1982)",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 30.72,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-411158b576b89150db5a",
+              "provider": "archive",
+              "url": "https://archive.org/download/youtube-vAVc0ushE_k/vAVc0ushE_k.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-a610d2c8f943e1716388",
+          "title": "Halfsies Cereal - \"Magic Motion Poster / Arcade Game Contest\" (Commercial, 1983)",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 29.79,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-a610d2c8f943e1716388",
+              "provider": "archive",
+              "url": "https://archive.org/download/youtube-CGliODdPFbc/CGliODdPFbc.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-c702a42e06f27d50cda4",
+          "title": "Stomper SSC Super Cycle By Schaper (Commercial, 1982)",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 30.63,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-c702a42e06f27d50cda4",
+              "provider": "archive",
+              "url": "https://archive.org/download/youtube-QGBw60pO14A/QGBw60pO14A.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-d9eb914bf5595ffc4905",
+          "title": "Activision - Pitfall! with Jack Black (Commercial, 1983)",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 30.23,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-d9eb914bf5595ffc4905",
+              "provider": "archive",
+              "url": "https://archive.org/download/youtube-wfLgSdAAHMA/wfLgSdAAHMA.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-7dea41c5ab335226e0e4",
+          "title": "Parker Brothers - Spider-Man (Commercial, 1982)",
+          "season": 0,
+          "number": 7,
+          "durationSeconds": 30.3,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-7dea41c5ab335226e0e4",
+              "provider": "archive",
+              "url": "https://archive.org/download/youtube-vSxszeqiGyg/vSxszeqiGyg.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-e243ca0d2b2a1e347939",
+          "title": "Kellogg's Frosted Flakes - \"Hot Air Balloon Chase\" (Commercial, 1983)",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 30.09,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-e243ca0d2b2a1e347939",
+              "provider": "archive",
+              "url": "https://archive.org/download/youtube-IYfeIatbJIw/IYfeIatbJIw.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-75b1bf1fbc252bcf540d",
+          "title": "ColecoVision & Adam - \"Sorry, Atari\" (Commercial, 1983)",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 30.3,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-75b1bf1fbc252bcf540d",
+              "provider": "archive",
+              "url": "https://archive.org/download/youtube-JSxiQRaRvQs/JSxiQRaRvQs.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-c5728cf280e99ae04fcd",
+          "title": "Atari - Super Breakout commercial (USA, 1982)",
+          "season": 0,
+          "number": 10,
+          "durationSeconds": 30.56,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-c5728cf280e99ae04fcd",
+              "provider": "archive",
+              "url": "https://archive.org/download/AtariSuperBreakout_Feb7_1982/AtariSuperBreakout_Feb7_1982.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-a3989fae99e7d6b464b5",
+          "title": "Post Super Sugar Crisp Cereal Commercial 1982",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 30.42,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-a3989fae99e7d6b464b5",
+              "provider": "archive",
+              "url": "https://archive.org/download/post-super-sugar-crisp-cereal-commercial-1982/Post%20Super%20Sugar%20Crisp%20Cereal%20Commercial%20-%201982.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-b2a61173ae156b3353f5",
+          "title": "Donkey Kong Jr. Help Save Papa! ( Commercial, 1983)",
+          "season": 0,
+          "number": 12,
+          "durationSeconds": 30.12,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-b2a61173ae156b3353f5",
+              "provider": "archive",
+              "url": "https://archive.org/download/donkey-kong-jr.-help-save-papa-commercial-1983/Donkey%20Kong%20Jr.%20-%20_Help%20Save%20Papa%21_%20%28Commercial%2C%201983%29.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-8fc522d39ade190cb395",
+          "title": "Nintendo Game And Watch (Commercial, 1983)",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 30.28,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-8fc522d39ade190cb395",
+              "provider": "archive",
+              "url": "https://archive.org/download/nintendo-game-and-watch-commercial-1983/Nintendo%20Game%20And%20Watch%20%28Commercial%2C%201983%29.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "commercial-6ba3fc9de113559504ef",
+          "title": "1984 Life Cereal Commercial",
+          "season": 0,
+          "number": 14,
+          "durationSeconds": 30.74,
+          "group": "",
+          "kind": "bumper",
+          "sources": [
+            {
+              "id": "archive-6ba3fc9de113559504ef",
+              "provider": "archive",
+              "url": "https://archive.org/download/1984-life-cereal-commercial/1984%20Life%20Cereal%20commercial.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "itemId": "youtube-yo9cFl4MNXs",
+          "itemUrl": "https://archive.org/details/youtube-yo9cFl4MNXs",
+          "title": "Mattel - He-Man & The Masters Of The Universe - Trap Jaw (Commercial, 1983)",
+          "commercialYear": 1983,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "2017-12-28",
+          "metadataYear": "2017",
+          "language": null
+        },
+        {
+          "itemId": "youtube-Jovnn95ne24",
+          "itemUrl": "https://archive.org/details/youtube-Jovnn95ne24",
+          "title": "Kellogg's Apple Jacks - \"Pinball\" (Commercial, 1982)",
+          "commercialYear": 1982,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "2018-01-04",
+          "metadataYear": "2018",
+          "language": null
+        },
+        {
+          "itemId": "youtube-vAVc0ushE_k",
+          "itemUrl": "https://archive.org/details/youtube-vAVc0ushE_k",
+          "title": "Powdered Donutz Cereal (Commercial, 1982)",
+          "commercialYear": 1982,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "2009-07-04",
+          "metadataYear": "2009",
+          "language": null
+        },
+        {
+          "itemId": "youtube-CGliODdPFbc",
+          "itemUrl": "https://archive.org/details/youtube-CGliODdPFbc",
+          "title": "Halfsies Cereal - \"Magic Motion Poster / Arcade Game Contest\" (Commercial, 1983)",
+          "commercialYear": 1983,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "2018-01-05",
+          "metadataYear": "2018",
+          "language": null
+        },
+        {
+          "itemId": "youtube-QGBw60pO14A",
+          "itemUrl": "https://archive.org/details/youtube-QGBw60pO14A",
+          "title": "Stomper SSC Super Cycle By Schaper (Commercial, 1982)",
+          "commercialYear": 1982,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "2018-06-10",
+          "metadataYear": "2018",
+          "language": null
+        },
+        {
+          "itemId": "youtube-wfLgSdAAHMA",
+          "itemUrl": "https://archive.org/details/youtube-wfLgSdAAHMA",
+          "title": "Activision - Pitfall! with Jack Black (Commercial, 1983)",
+          "commercialYear": 1983,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "2017-11-28",
+          "metadataYear": "2017",
+          "language": null
+        },
+        {
+          "itemId": "youtube-vSxszeqiGyg",
+          "itemUrl": "https://archive.org/details/youtube-vSxszeqiGyg",
+          "title": "Parker Brothers - Spider-Man (Commercial, 1982)",
+          "commercialYear": 1982,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "2018-01-05",
+          "metadataYear": "2018",
+          "language": null
+        },
+        {
+          "itemId": "youtube-IYfeIatbJIw",
+          "itemUrl": "https://archive.org/details/youtube-IYfeIatbJIw",
+          "title": "Kellogg's Frosted Flakes - \"Hot Air Balloon Chase\" (Commercial, 1983)",
+          "commercialYear": 1983,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "2017-08-28",
+          "metadataYear": "2017",
+          "language": null
+        },
+        {
+          "itemId": "youtube-JSxiQRaRvQs",
+          "itemUrl": "https://archive.org/details/youtube-JSxiQRaRvQs",
+          "title": "ColecoVision & Adam - \"Sorry, Atari\" (Commercial, 1983)",
+          "commercialYear": 1983,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "2009-03-12",
+          "metadataYear": "2009",
+          "language": null
+        },
+        {
+          "itemId": "AtariSuperBreakout_Feb7_1982",
+          "itemUrl": "https://archive.org/details/AtariSuperBreakout_Feb7_1982",
+          "title": "Atari - Super Breakout commercial (USA, 1982)",
+          "commercialYear": 1982,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "1982-02-07",
+          "metadataYear": "1982",
+          "language": null
+        },
+        {
+          "itemId": "post-super-sugar-crisp-cereal-commercial-1982",
+          "itemUrl": "https://archive.org/details/post-super-sugar-crisp-cereal-commercial-1982",
+          "title": "Post Super Sugar Crisp Cereal Commercial 1982",
+          "commercialYear": 1982,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "1982-01-01",
+          "metadataYear": null,
+          "language": null
+        },
+        {
+          "itemId": "donkey-kong-jr.-help-save-papa-commercial-1983",
+          "itemUrl": "https://archive.org/details/donkey-kong-jr.-help-save-papa-commercial-1983",
+          "title": "Donkey Kong Jr. Help Save Papa! ( Commercial, 1983)",
+          "commercialYear": 1983,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "1983",
+          "metadataYear": null,
+          "language": "eng"
+        },
+        {
+          "itemId": "nintendo-game-and-watch-commercial-1983",
+          "itemUrl": "https://archive.org/details/nintendo-game-and-watch-commercial-1983",
+          "title": "Nintendo Game And Watch (Commercial, 1983)",
+          "commercialYear": 1983,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "1983",
+          "metadataYear": null,
+          "language": "eng"
+        },
+        {
+          "itemId": "1984-life-cereal-commercial",
+          "itemUrl": "https://archive.org/details/1984-life-cereal-commercial",
+          "title": "1984 Life Cereal Commercial",
+          "commercialYear": 1984,
+          "yearEvidence": "Archive item title; not independently verified broadcast date.",
+          "metadataDate": "1984",
+          "metadataYear": null,
+          "language": null
+        }
+      ],
+      "endpointChecks": [
+        {
+          "itemId": "youtube-yo9cFl4MNXs",
+          "url": "https://archive.org/download/youtube-yo9cFl4MNXs/yo9cFl4MNXs.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/2781460",
+          "ftyp": true
+        },
+        {
+          "itemId": "youtube-Jovnn95ne24",
+          "url": "https://archive.org/download/youtube-Jovnn95ne24/Jovnn95ne24.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/3196190",
+          "ftyp": true
+        },
+        {
+          "itemId": "youtube-vAVc0ushE_k",
+          "url": "https://archive.org/download/youtube-vAVc0ushE_k/vAVc0ushE_k.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/2365217",
+          "ftyp": true
+        },
+        {
+          "itemId": "youtube-CGliODdPFbc",
+          "url": "https://archive.org/download/youtube-CGliODdPFbc/CGliODdPFbc.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/3372649",
+          "ftyp": true
+        },
+        {
+          "itemId": "youtube-QGBw60pO14A",
+          "url": "https://archive.org/download/youtube-QGBw60pO14A/QGBw60pO14A.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/1657727",
+          "ftyp": true
+        },
+        {
+          "itemId": "youtube-wfLgSdAAHMA",
+          "url": "https://archive.org/download/youtube-wfLgSdAAHMA/wfLgSdAAHMA.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/1330584",
+          "ftyp": true
+        },
+        {
+          "itemId": "youtube-vSxszeqiGyg",
+          "url": "https://archive.org/download/youtube-vSxszeqiGyg/vSxszeqiGyg.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/3768301",
+          "ftyp": true
+        },
+        {
+          "itemId": "youtube-IYfeIatbJIw",
+          "url": "https://archive.org/download/youtube-IYfeIatbJIw/IYfeIatbJIw.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/6875785",
+          "ftyp": true
+        },
+        {
+          "itemId": "youtube-JSxiQRaRvQs",
+          "url": "https://archive.org/download/youtube-JSxiQRaRvQs/JSxiQRaRvQs.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/1521278",
+          "ftyp": true
+        },
+        {
+          "itemId": "AtariSuperBreakout_Feb7_1982",
+          "url": "https://archive.org/download/AtariSuperBreakout_Feb7_1982/AtariSuperBreakout_Feb7_1982.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/3140248",
+          "ftyp": true
+        },
+        {
+          "itemId": "post-super-sugar-crisp-cereal-commercial-1982",
+          "url": "https://archive.org/download/post-super-sugar-crisp-cereal-commercial-1982/Post%20Super%20Sugar%20Crisp%20Cereal%20Commercial%20-%201982.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/2296264",
+          "ftyp": true
+        },
+        {
+          "itemId": "donkey-kong-jr.-help-save-papa-commercial-1983",
+          "url": "https://archive.org/download/donkey-kong-jr.-help-save-papa-commercial-1983/Donkey%20Kong%20Jr.%20-%20_Help%20Save%20Papa%21_%20%28Commercial%2C%201983%29.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/1908401",
+          "ftyp": true
+        },
+        {
+          "itemId": "nintendo-game-and-watch-commercial-1983",
+          "url": "https://archive.org/download/nintendo-game-and-watch-commercial-1983/Nintendo%20Game%20And%20Watch%20%28Commercial%2C%201983%29.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/2855046",
+          "ftyp": true
+        },
+        {
+          "itemId": "1984-life-cereal-commercial",
+          "url": "https://archive.org/download/1984-life-cereal-commercial/1984%20Life%20Cereal%20commercial.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "contentRange": "bytes 0-31/3545454",
+          "ftyp": true
+        }
+      ],
+      "notes": "Opt-in standalone vintage commercial clips; title-supplied dates are separate from upload dates. Source endpoint checks do not establish full decoding or redistribution rights."
+    }
+  ]
+}
