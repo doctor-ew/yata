@@ -149,4 +149,8 @@ Added Blue Thunder (11 videos), The Master (13), Tales of the Gold Monkey (21 in
 
 ## Vintage commercial breaks
 
-Enable **Vintage commercial breaks + my bumpers** in Stream settings for one short break between complete stories. The starter pack contains 14 standalone, approximately 30-second vintage toy, cereal and game commercials. Breaks work across channels and show-only streams; Next skips a clip. New catalogs default to off and existing preferences are preserved. Browse Vintage commercial breaks in the library to preview or remove sources. See [source credits, scheduling and validation](../docs/13/COMMERCIAL-BREAKS.md). Inspired by [retro-tv-webos](https://github.com/Nikolay1243/retro-tv-webos) and Joey Cato’s [MyRetroTVs](https://www.myretrotvs.com/); independently implemented.
+Enable **Vintage commercial breaks + my bumpers** in Stream settings for one short break between complete stories. The starter pack contains 14 standalone, approximately 30-second vintage toy, cereal and game commercials. Breaks work across channels and show-only streams; Next skips a clip. New catalogs default to on and existing saved On/Off preferences are preserved. Browse Vintage commercial breaks in the library to preview or remove sources. See [source credits, scheduling and validation](../docs/13/COMMERCIAL-BREAKS.md). Inspired by [retro-tv-webos](https://github.com/Nikolay1243/retro-tv-webos) and Joey Cato’s [MyRetroTVs](https://www.myretrotvs.com/); independently implemented.
+
+## Optional CRT picture
+
+Stream settings now offers **CRT surround & scanlines** and **Tuning static**. These independently drawn effects preserve provider-player placement, save your preference, and can be switched off. Tuning static is a brief silent fade and respects reduced-motion settings. Commercials start on for new catalogs; existing saved choices are preserved. See [defaults and effect validation](../docs/14/CRT-AND-DEFAULTS.md).

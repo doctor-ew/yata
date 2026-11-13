@@ -14,7 +14,7 @@ test('shipped library covers every requested show, fits storage and repeats with
  assert.ok(parsed.shows.filter(show => show.id !== 'saturday-simulator').every(show => show.episodes.length > 0));
  const manifest = JSON.parse(await readFile(new URL('library-manifest.json', data), 'utf8'));
  assert.equal(parsed.shows.reduce((n, show) => n + show.episodes.length, 0), manifest.episodes);
- assert.equal(new Set(buildSchedule(parsed).map(entry => entry.episode.id)).size, manifest.ready);
+ assert.equal(new Set(buildSchedule(parsed).filter(entry => entry.episode.kind === 'episode').map(entry => entry.episode.id)).size, manifest.ready);
  assert.ok(Buffer.byteLength(json) < 2_000_000);
  const again = mergeLibraryBatch(parsed, rows);
  assert.equal(again.added, 0); assert.equal(again.alternatives, 0);
@@ -160,4 +160,12 @@ test('commercial starter pack installs additively while preserving the breaks pr
   assert.equal(mergeLibraryBatch(installed,rows).added,0);
   for(const channel of ['action','cartoons','mixed'])assert.equal(buildSchedule(installed,channel).some(slot=>slot.show.id==='vintage-commercials'),enabled);
  }
+});
+
+test('commercials default on for new catalogs while saved off remains off',()=>{
+ const seed=createSeed();assert.equal(seed.settings.bumpers,true);
+ const prior=structuredClone(seed);prior.settings.bumpers=false;
+ const saved=new Map();const storage={getItem:key=>saved.get(key),setItem:(key,value)=>saved.set(key,value)};
+ saveCatalog(storage,prior);assert.equal(readCatalog(storage,createSeed()).catalog.settings.bumpers,false);
+ const empty={getItem:()=>null};assert.equal(readCatalog(empty,createSeed()).catalog.settings.bumpers,true);
 });

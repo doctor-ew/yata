@@ -1,3 +1,4 @@
+import { mountRetroEffects } from './retro-effects.mjs';
 import { mountWindowMode } from './window-mode.mjs';
 import { playbackTime, adjacentPlayback } from './transport.mjs';
 import { STARTER_PACK } from './starter-pack.mjs';
@@ -10,6 +11,7 @@ import { createVideoSession, createYouTubeSession } from './players.mjs';
 const $ = id => document.getElementById(id);
 const staticHosting = document.querySelector('meta[name="drew-tv-hosting"]')?.content === 'static';
 const storage = { getItem: k => localStorage.getItem(k), setItem: (k, v) => localStorage.setItem(k, v) };
+const retroEffects = mountRetroEffects({ body: document.body, shell: $('player-shell'), screenToggle: $('crt-look'), staticToggle: $('tuning-static'), storage });
 const loaded = readCatalog(storage, createSeed());
 let catalog = loaded.catalog;
 let selectedShowId = catalog.shows[0].id, editingEpisodeId = null;
@@ -50,7 +52,7 @@ function renderChannels() {
   $('channels').replaceChildren(...CHANNELS.map(c => {
     const node = button('', () => {
       const next = copyCatalog(); next.settings.channel = c.id; next.settings.streamShow = null;
-      if (commit(next)) { selectedShowId = channelShows()[0]?.id || catalog.shows[0].id; stopPlayer(); render(); }
+      if (commit(next)) { selectedShowId = channelShows()[0]?.id || catalog.shows[0].id; stopPlayer(); render(); retroEffects.pulse(); }
     }, 'channel');
     node.setAttribute('aria-pressed', String(c.id === catalog.settings.channel));
     node.setAttribute('aria-label', `Channel ${c.number}: ${c.name}`);
@@ -205,6 +207,7 @@ function playerError(message, generation) {
 function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMode = mode === 'live' ? 'station' : 'show', queuePosition = null) {
   stopPlayer();
   const generation = playerGeneration;
+  retroEffects.pulse();
   active = { showId: show.id, episodeId: episode.id, sourceId: source.id, offset, mode, queueMode, queuePosition };
   $('standby').hidden = true;
   $('playing-show').textContent = show.title.toUpperCase();

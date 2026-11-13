@@ -17,6 +17,7 @@ test('static release supports a subpath and excludes server and development file
   assert.ok(manifest.files.some(file => file.name === 'data/commercials-discovery.json'));
   assert.ok(manifest.files.some(file => file.name === 'LICENSE.txt'));
   assert.ok(manifest.files.some(file => file.name === 'ATTRIBUTION.md'));
+  assert.ok(manifest.files.some(file => file.name === 'src/retro-effects.mjs'));
   assert.ok(manifest.files.every(file => path.basename(file.name).includes('.')));
   assert.ok(manifest.files.filter(file => file.name.endsWith('.mjs')).every(file => file.contentType.startsWith('text/javascript')));
   assert.ok(manifest.files.every(file => !/server|scripts\/|test\/|youtube-metadata/.test(file.name)));
