@@ -64,8 +64,8 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
   listen(levelInput, 'input', () => update('staticLevel', bounded(Number(levelInput.value), 0, 30, DEFAULTS.staticLevel)));
   listen(durationInput, 'input', () => update('staticDuration', bounded(Number(durationInput.value), 80, 800, DEFAULTS.staticDuration)));
   listen(modeSelect, 'change', () => update('staticMode', modeSelect.value === 'continuous' ? 'continuous' : 'tuning'));
-  function pulse() {
-    if (disposed || !enabled()) return false;
+  function pulse({ force = false } = {}) {
+    if (disposed || suppressed() || preferences.staticLevel <= 0 || (!force && !preferences.static)) return false;
     stopPulse(); overlay.hidden = false; shell.classList.toggle('retro-static-active', true);
     // One bounded, low-contrast fade; no sound or full-screen white/black flash.
     animation = overlay.animate?.([

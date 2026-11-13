@@ -1,3 +1,5 @@
+import { mountDialFeedback } from './dial-feedback.mjs';
+import { availableDialShows, nextDialShow, randomDialPatch } from './dials.mjs';
 import { createEpisodeLink, parseEpisodeLink, findSharedEpisode } from './share.mjs';
 import { applyCommercialDefaults, markCommercialPreference } from './preferences.mjs';
 import { mountRetroEffects } from './retro-effects.mjs';
@@ -14,6 +16,9 @@ const $ = id => document.getElementById(id);
 const staticHosting = document.querySelector('meta[name="drew-tv-hosting"]')?.content === 'static';
 const storage = { getItem: k => localStorage.getItem(k), setItem: (k, v) => localStorage.setItem(k, v) };
 const retroEffects = mountRetroEffects({ body: document.body, shell: $('player-shell'), cabinet: $('tv-cabinet'), screenToggle: $('crt-look'), staticToggle: $('tuning-static'), themeSelect: $('tv-theme'), levelInput: $('static-level'), durationInput: $('static-duration'), modeSelect: $('static-mode'), previewButton: $('static-preview'), levelOutput: $('static-level-value'), durationOutput: $('static-duration-value'), storage });
+const DIAL_MODE_STORAGE_KEY = 'yata.dial-mode.v1';
+let dialMode = 'channel';
+try { const saved = storage.getItem(DIAL_MODE_STORAGE_KEY); if (['channel', 'show', 'all'].includes(saved)) dialMode = saved; } catch { /* Tuning still works without preference storage. */ }
 const loaded = readCatalog(storage, createSeed());
 const migrated = loaded.error ? { catalog: loaded.catalog, changed: false } : applyCommercialDefaults(loaded.catalog, storage, next => { try { saveCatalog(storage, next); return true; } catch { return false; } });
 let catalog = migrated.catalog;
@@ -25,6 +30,7 @@ let sharedTarget = null;
 const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'Tubi' };
 const tiles = ['#435a53', '#5c4257', '#3f526a', '#67513d', '#514a70', '#4f5e40', '#674849', '#3c6262'];
 const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
+const dialFeedback = mountDialFeedback({ windowRef: window, storage, toggle: $('dial-feedback'), getVolume: () => transportState()?.volume ?? preferredAudio?.volume ?? 1, getMuted: () => transportState()?.muted ?? preferredAudio?.muted ?? false, pulse: () => retroEffects.pulse({ force: true }) });
 
 function element(tag, content, className) {
   const node = document.createElement(tag);
@@ -149,7 +155,7 @@ function renderLibrary() {
   }));
 }
 
-function render() { renderChannels(); renderGuide(); renderLibrary(); }
+function render() { renderChannels(); renderGuide(); renderLibrary(); renderDials(); }
 
 function openShow(showId) {
   selectedShowId = showId;
@@ -663,6 +669,43 @@ if (staticHosting) {
   $('bulk-links').parentElement.before(note);
 }
 
+function currentDialShowId() {
+  if (catalog.settings.streamShow) return catalog.settings.streamShow;
+  if (active) {
+    if (active.showId !== COMMERCIAL_SHOW_ID && active.queuePosition?.isBumper !== true) return active.showId;
+    if (active.queuePosition?.ownerShowId) return active.queuePosition.ownerShowId;
+    const programId = active.queuePosition?.previousProgramId || active.queuePosition?.nextProgramId;
+    const owner = catalog.shows.find(show => show.episodes.some(episode => episode.id === programId));
+    if (owner) return owner.id;
+  }
+  return currentGuide()?.current.show.id || null;
+}
+function renderDials() {
+  const names = { channel: 'Random mix in this channel', show: 'One random show', all: 'Random mix of everything' };
+  $('dial-mode').value = dialMode;
+  $('dial-next-show').disabled = !availableDialShows(catalog).length;
+  $('dial-next-show').title = `Next playable show in ${selectedChannel().name}`;
+  $('dial-next-show').setAttribute('aria-label', $('dial-next-show').title);
+  $('dial-random').disabled = !availableDialShows(catalog, dialMode === 'all' ? 'mixed' : catalog.settings.channel).length;
+  $('dial-random').title = names[dialMode]; $('dial-random').setAttribute('aria-label', names[dialMode]);
+}
+$('dial-mode').addEventListener('change', () => {
+  dialMode = ['channel', 'show', 'all'].includes($('dial-mode').value) ? $('dial-mode').value : 'channel';
+  try { storage.setItem(DIAL_MODE_STORAGE_KEY, dialMode); } catch { /* Optional preference persistence. */ }
+  renderDials();
+});
+$('dial-next-show').addEventListener('click', () => {
+  const show = nextDialShow(catalog, currentDialShowId());
+  if (!show) { notify('No checked shows are available in this channel yet.'); return; }
+  dialFeedback.play(); selectedShowId = show.id;
+  if (configureStream({ streamShow: show.id, rotation: 'random', shuffleSeed: newMix() }, true)) notify(`Tuned to ${show.title}.`);
+});
+$('dial-random').addEventListener('click', () => {
+  const patch = randomDialPatch(catalog, { mode: dialMode, seed: newMix(), currentShowId: currentDialShowId() });
+  if (!patch) { notify('No checked shows are available for this mix yet.'); return; }
+  dialFeedback.play();
+  if (configureStream(patch, true)) notify(patch.streamShow ? `Random show: ${catalog.shows.find(show => show.id === patch.streamShow).title}.` : `New random mix: ${selectedChannel().name}.`);
+});
 function renderStreamSettings() {
   $('stream-rotation').value = catalog.settings.rotation;
   const all = element('option', catalog.settings.channel === 'mixed' ? 'Any show · everything' : `Any show · ${selectedChannel().name}`); all.value = '';

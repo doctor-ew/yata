@@ -1264,3 +1264,15 @@ footer { flex-wrap: wrap; align-items: flex-start; }
 #share-url { display: block; width: 100%; box-sizing: border-box; margin: 18px 0; }
 #shared-episode { margin-bottom: 18px; }
 #shared-episode p { margin: 8px 0 12px; }
+/* Real tuning buttons keep the cabinet's decorative dial appearance. */
+.tv-cabinet-controls .tv-dial { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.tv-cabinet .tv-cabinet-controls button.tv-knob { position: relative; width: 48px; height: 48px; min-height: 48px; padding: 0; border: 0; background: none; box-shadow: none; transform: none; }
+.tv-cabinet .tv-cabinet-controls button.tv-knob::before { content: ''; position: absolute; inset: 3px; border: 3px solid #1c2220; border-radius: 50%; background: linear-gradient(85deg, transparent 43%, #b9bbab 44% 53%, transparent 54%), radial-gradient(circle at 35% 30%, #606b65, #161d1a 75%); box-shadow: 2px 3px 0 #0008, inset 0 0 0 3px #8a93836b; }
+.tv-cabinet-controls #dial-random::before { inset: 7px; transform: rotate(35deg); }
+.tv-cabinet .tv-cabinet-controls button.tv-knob:hover:not(:disabled)::before { filter: brightness(1.25); }
+.tv-cabinet .tv-cabinet-controls button.tv-knob:active:not(:disabled)::before { box-shadow: 1px 1px 0 #0008, inset 0 0 0 3px #8a93836b; }
+.dial-caption { font-size: 7px; font-weight: 700; letter-spacing: .12em; white-space: nowrap; }
+.tv-cabinet[data-theme="90s"] button.tv-knob::before { border-color: #111621; background: radial-gradient(circle at 35% 30%, #525b70, #121724 80%); box-shadow: 0 2px 2px #000; }
+@media (max-width: 600px) { .tv-cabinet { grid-template-columns: minmax(0, 1fr) 48px; } .tv-cabinet-controls { padding-inline: 0; gap: 7px; } .tv-cabinet .tv-cabinet-controls button.tv-knob { width: 44px; height: 44px; min-height: 44px; } .tv-cabinet .tv-cabinet-controls button.tv-knob::before { inset: 7px; } .tv-cabinet-controls #dial-random::before { inset: 9px; } .dial-caption { font-size: 6px; } }
+
+button.tv-knob:focus-visible { outline-offset: -2px; }

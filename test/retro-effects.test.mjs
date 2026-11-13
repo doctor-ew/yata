@@ -137,3 +137,16 @@ test('the original mounting API works without the optional cabinet controls', ()
   f.change(f.staticToggle, true); assert.equal(controls.pulse(), true); assert.equal(f.player.parentElement, f.shell);
   controls.dispose(); assert.deepEqual(f.shell.children, [f.player]);
 });
+
+test('dial pulses bypass the tuning toggle while respecting motion and zero strength', () => {
+  const f = fixture();
+  assert.equal(f.controls.pulse(), false);
+  assert.equal(f.controls.pulse({force:true}), true);
+  assert.equal(f.staticToggle.checked, false);
+  f.input(f.levelInput, 0);
+  assert.equal(f.controls.pulse({force:true}), false);
+  f.controls.dispose();
+  const reduced = fixture(null, {reduced:true});
+  assert.equal(reduced.controls.pulse({force:true}), false);
+  reduced.controls.dispose();
+});
