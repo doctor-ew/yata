@@ -2,6 +2,12 @@
 
 A personal nostalgia TV station with a retro channel guide, a curated show library, and media that plays from its original provider.
 
+## Hosted station
+
+Open **https://doctorew.com/tv/**. This static deployment uses the existing S3 bucket and CloudFront distribution. Catalog installation and provider playback run in your browser; no media is rehosted. Browser storage is separate from localhost and other devices. Use catalog export/import to transfer personal edits.
+
+The hosted importer supports the curated library, Archive metadata discovery and direct YouTube video/playlist playback. Expanding arbitrary YouTube playlists into individual entries requires the local importer. Deployment details and update commands are in [the AWS deployment guide](../docs/4/DEPLOYMENT.md).
+
 ## Run locally
 
 Requirements: a current Node.js installation and a modern browser. No package installation, account, or API key is required.

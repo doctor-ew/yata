@@ -6,6 +6,7 @@ import { parseSourceUrl, parseDuration, importArchive, validateCatalog, parseCat
 import { createVideoSession, createYouTubeSession } from './players.mjs';
 
 const $ = id => document.getElementById(id);
+const staticHosting = document.querySelector('meta[name="drew-tv-hosting"]')?.content === 'static';
 const storage = { getItem: k => localStorage.getItem(k), setItem: (k, v) => localStorage.setItem(k, v) };
 const loaded = readCatalog(storage, createSeed());
 let catalog = loaded.catalog;
@@ -385,7 +386,8 @@ $('bulk-discover').addEventListener('click', async () => {
         let episodes;
         if (parsed.provider === 'archive' && parsed.kind === 'item') episodes = await importArchive(raw);
         else if (parsed.provider === 'youtube') {
-          const response = await fetch(`/api/youtube?url=${encodeURIComponent(parsed.url)}`);
+          if (staticHosting) throw Error('This hosted station has no YouTube discovery server. Use Add an episode source for an official YouTube video/playlist, or expand a playlist locally and import its exported catalog. The complete seeded library is available through Load all discovered shows.');
+          const response = await fetch(new URL(`api/youtube?url=${encodeURIComponent(parsed.url)}`, document.baseURI));
           const data = await response.json();
           if (!response.ok) throw Error(data.error || 'YouTube discovery failed.');
           episodes = data.episodes;
@@ -520,3 +522,9 @@ async function installExpandedLibrary() {
   } catch (error) { notify(`Expanded library could not be added: ${error.message}`); }
 }
 installExpandedLibrary();
+
+if (staticHosting) {
+  $('bulk-transformers').hidden = true;
+  const note = element('p', 'This hosted station supports the curated library and Archive bulk discovery. Add YouTube videos or playlists through Manage sources; expanding a new YouTube playlist into individual episodes requires the local importer.', 'muted');
+  $('bulk-links').parentElement.before(note);
+}
