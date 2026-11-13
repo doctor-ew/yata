@@ -108,7 +108,7 @@ export async function importArchive(raw, fetcher = globalThis.fetch, timeoutMs =
 }
 
 export function validateCatalog(raw) {
-  if (!raw || raw.version !== 1 || !Array.isArray(raw.shows) || raw.shows.length > 100 || !raw.shows.length) fail('Expected a version-1 Drew TV catalog with 1–100 shows.');
+  if (!raw || raw.version !== 1 || !Array.isArray(raw.shows) || raw.shows.length > 100 || !raw.shows.length) fail('Expected a version-1 YATA catalog with 1–100 shows.');
   if (!Number.isFinite(raw.epoch) || raw.epoch < 0) fail('Invalid station start time.');
   if (!raw.settings || !['mixed', 'action', 'cartoons'].includes(raw.settings.channel) || typeof raw.settings.bumpers !== 'boolean') fail('Invalid station settings.');
   const rotation = raw.settings.rotation ?? 'random';

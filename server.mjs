@@ -33,5 +33,5 @@ const server = http.createServer(async (req, res) => {
     res.end(req.method === 'HEAD' ? undefined : content);
   } catch { res.writeHead(404, { 'Content-Type': 'text/plain' }).end('Not found'); }
 });
-server.listen(port, '127.0.0.1', () => console.log(`Drew TV → http://127.0.0.1:${server.address().port}`));
+server.listen(port, '127.0.0.1', () => console.log(`YATA → http://127.0.0.1:${server.address().port}`));
 server.on('error', error => { console.error(error.message); process.exitCode = 1; });

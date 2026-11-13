@@ -1,4 +1,4 @@
-# Drew TV
+# YATA — Yet Another TV App
 
 A personal nostalgia TV station with a retro channel guide, a curated show library, and media that plays from its original provider.
 
@@ -25,7 +25,7 @@ The preview started during this session runs independently of the chat terminal 
 
 ## Random continuous streams
 
-The three channel buttons are random streams by default: **Saturday Morning** mixes the checked cartoon shows, **Action Adventure** mixes action shows, and **Drew TV** mixes everything. Choose a channel and **Tune in live**, or use **New mix & play** for a fresh shuffle starting now.
+The three channel buttons are random streams by default: **Saturday Morning** mixes the checked cartoon shows, **Action Adventure** mixes action shows, and **YATA** mixes everything. Choose a channel and **Tune in live**, or use **New mix & play** for a fresh shuffle starting now.
 
 For random episodes of one show, choose it in the **Stream** selector or open its library card and select **Shuffle this show**. Clear that selector back to **Any show** to mix the genre again. **Stories per show turn** chooses 1–3 before switching shows. Multipart stories stay together; smaller libraries keep receiving a turn instead of disappearing after their episode pool is exhausted.
 
@@ -35,7 +35,7 @@ Each show draws from shuffled story pools during the generated station cycle. Th
 
 ## Watch
 
-- Select Drew TV, Action Adventure, or Saturday Morning.
+- Select YATA, Action Adventure, or Saturday Morning.
 - **Tune in live** joins a checked episode at the position calculated from your station clock. **Start from beginning** starts the selected episode at zero.
 - The playback bar provides play/pause, scrubbing, ±10 seconds, restart, previous/next, volume/mute, and elapsed/total time in `HH:MM:SS`. Controls activate when the source is ready; unknown duration stays explicit. Restart seeks within the current player. Manual browsing follows the selected show; station playback follows the channel queue. YouTube playlists keep their own previous/next navigation.
 - **Next episode** advances to another playable item in that queue, if available. Playback failure offers a deliberate Retry, Skip, or Original source action; it never retries indefinitely.

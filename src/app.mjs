@@ -417,7 +417,7 @@ $('bumpers').addEventListener('change', () => {
 });
 $('export-catalog').addEventListener('click', () => {
   const url = URL.createObjectURL(new Blob([JSON.stringify(catalog, null, 2)], { type: 'application/json' }));
-  const a = element('a'); a.href = url; a.download = 'drew-tv-catalog.json'; a.click();
+  const a = element('a'); a.href = url; a.download = 'yata-catalog.json'; a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 });
 $('import-catalog').addEventListener('change', async event => {
