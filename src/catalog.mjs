@@ -19,6 +19,11 @@ const action = [
   ["misfits-science", "Misfits of Science (1985)"],
   ["otherworld", "Otherworld (1985)"],
   ["whiz-kids", "Whiz Kids"],
+  ["blue-thunder", "Blue Thunder (1984)"],
+  ["the-master", "The Master (1984)"],
+  ["gold-monkey", "Tales of the Gold Monkey"],
+  ["stingray", "Stingray (1985)"],
+  ["matt-houston", "Matt Houston"],
 ];
 const cartoons = [
   ['he-man', 'He-Man and the Masters of the Universe'], ['gi-joe', 'G.I. Joe: A Real American Hero'],

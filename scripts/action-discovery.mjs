@@ -36,6 +36,11 @@ const selected = {
  'misfits-science':['misfits-of-science-complete-series-1985'],
  'otherworld':['otherworld-episode-2-the-zone-troopers-build-men'],
  'whiz-kids':['whiz-kids'],
+ "blue-thunder":["blue-thunder-complete-series-1984"],
+ "the-master":["the-master-complete-series-1984"],
+ "gold-monkey":["tales-of-the-gold-monkey-e-13-ape-boy", "tales-of-the-gold-monkey-e-8-once-a-tiger", "tales-of-the-gold-monkey-e-18-last-chance-louie", "tales-of-the-gold-monkey-e-1-2-pilot", "tales-of-the-gold-monkey-e-4-black-pearl", "tales-of-the-gold-monkey-e-5-legends-are-forever", "tales-of-the-gold-monkey-e-15-high-stakes-lady", "tales-of-the-gold-monkey-e-16-force-of-habit", "tales-of-the-gold-monkey-e-11-the-late-sarah-white", "tales-of-the-gold-monkey-e-6-escape-from-death-island", "tales-of-the-gold-monkey-e-14-god-save-the-queen", "tales-of-the-gold-monkey-e-9-honor-thy-brother", "tales-of-the-gold-monkey-e-12-the-sultan-of-swat", "tales-of-the-gold-monkey-e-17-cooked-goose", "tales-of-the-gold-monkey-e-19-naka-jima-kill", "tales-of-the-gold-monkey-e-10-the-lady-and-the-tiger", "tales-of-the-gold-monkey-e-21-a-distant-shout-of-thunder", "tales-of-the-gold-monkey-e-22-mourning-becomes-matuka", "tales-of-the-gold-monkey-e-20-boragora-or-bust", "tales-of-the-gold-monkey-e-3-shanghaied"],
+ "stingray":[],
+ "matt-houston":["matt-houston-2x-5-needle-in-a-haystack"],
 };
 async function get(url) {
  const response=await fetch(url,{signal:AbortSignal.timeout(25000)});
@@ -84,7 +89,7 @@ for(const show of createSeed().shows.filter(s=>s.channel==='action' && (!request
    if(show.id==='whiz-kids')e.title=e.title.split('/').pop();
    const order=e.title.match(/\bs[ ._-]*(\d{1,2})[ ._-]*e[ ._-]*(\d{1,3})/i)||e.title.match(/\b(\d{1,2})[ ._-]*x[ ._-]*(\d{1,3})/i)||e.title.match(/season[ ._-]*(\d+)[ ._-]*episode[ ._-]*(\d+)/i);
    if(order){e.season=Number(order[1]);e.number=Number(order[2]);}
-   if(['v','otherworld'].includes(show.id) && !order) { const number=e.title.match(/Episode[ ._-]*(\d+)/i); if(number)e.number=Number(number[1]); }
+   if(['v','otherworld','gold-monkey'].includes(show.id) && !order) { const number=e.title.match(/Episode[ ._-]*(\d+)/i) || (show.id==='gold-monkey' ? e.title.match(/\bE(\d+)/i) : null); if(number)e.number=Number(number[1]); }
    e.title=e.title.replace(/\.ia$/i,'').replace(/[._]+/g,' ').replace(/\s+/g,' ').trim();
   }
   items.push({itemId,title:data.metadata?.title||itemId,language:lang||null,episodes});
@@ -97,9 +102,24 @@ for(const show of createSeed().shows.filter(s=>s.channel==='action' && (!request
   else if(show.id==='v' && !known.get(key).season && e.season)known.get(key).season=e.season;
  }
  const episodes=[...known.values()].sort((a,b)=>a.season-b.season||a.number-b.number);
+ if(show.id==='stingray') episodes.push({
+  id:'stingray-tubi-series', title:'Browse episodes on Tubi · opens external site', season:0, number:0,
+  durationSeconds:null, group:'', kind:'episode', sources:[{
+   id:'stingray-tubi', provider:'tubi', url:'https://tubitv.com/series/300013655/stingray', availability:'unverified',
+  }],
+ });
  const extraNotes = { 'wizards-warriors':['English eight-episode collection with explicit season/episode numbering.'], 'matthew-star':['English 22-entry source sequence; source episode 22 is labeled Starr Knight pilot. Source numbering is preserved, not independently reconstructed broadcast order.'], 'misfits-science':['English 16-entry collection; the approximately 92-minute pilot is one intact media entry. This show dates from 1985.'], otherworld:['English eight-entry collection; explicit Episode numbers are retained with season zero. This show dates from 1985.'], 'whiz-kids':['Mixed-language collection: retain only the EN - VHS - Whiz Kids (1 - 18)/Syndicated (1-18)/272p/ directory and explicit Whiz Kids season/episode filenames. Exclude French material, alternate encodes, crossovers and cut scenes. Language is indicated by the chosen directory rather than independently verified audio.'] };
+
+ Object.assign(extraNotes, {
+  'blue-thunder':['English 1984 television-series collection: 11 explicit season 1 episodes; the similarly named feature film is not included.'],
+  'the-master':['English 1984 collection: 13 individual season 1 episodes. Master Ninja re-edited paired movies are not used.'],
+  'gold-monkey':['Twenty reviewed English-metadata Archive items supply 21 media files. E1 & 2 remains one combined pilot; individual files E3–E22 retain source numbering with season zero. The E6 collection also supplies E7. No invented pilot split points or broadcast season assignment.'],
+  stingray:['Nick Mancuso live-action series. Tubi listing and cast checked; playback was not verified. This is one external series link, not an in-station playable episode. Correct Archive collection has MKVs but no supported MP4 derivatives; the unrelated 1964 puppet series was excluded.'],
+  'matt-houston':['Partial coverage: one MP4 explicitly labeled season 2 episode 5, Needle in a Haystack. Language metadata is absent. French pilot and uncertain fragments were excluded.'],
+ });
  episodes.forEach((e,index)=>e.id=`action-${show.id}-${index}`);
  result.shows.push({showId:show.id,title:show.title,episodes,searched:[...(searches[show.id]?[Object.fromEntries(Object.entries(searches[show.id]).filter(([k])=>k!=='docs'))]:[]),{reviewedItemCount:itemIds.length}],items:items.map(({episodes,...item})=>({...item,accepted:episodes.length})),notes:[...(extraNotes[show.id]||[]),...(show.id==='hulk'?['Season-1 collection has no audio-language metadata; English audio has not been verified. Older Death in the Family filename used conflicting episode numbering and was omitted.']:[]),...(show.id==='simon'?['Trapdoors MP4 is an Archive h.264 derivative of an HEVC-named MKV; filename alone does not identify the actual derivative codec.']:[]),...(show.id==='magnum'?['Memories Are Forever I & II is retained as one combined broadcast file with unknown season and episode ordering.']:[]),...(show.id==='chips'?['Selected matching television filenames; audio language is absent from source metadata and has not been verified.']:[]),...(show.id==='macgyver'?['Includes two explicitly labeled 1994 TV movies in addition to numbered series files.']:[]),'Counts are media entries found, not verified episode inventory totals.','No full-series completeness claim. Missing runtime remains unknown.']});
+ if(show.id==='stingray')result.shows[result.shows.length-1].searched.push({provider:'tubi',url:'https://tubitv.com/series/300013655/stingray',checkedAt:result.checkedAt,note:'Listing and Nick Mancuso cast checked; playback not verified.'});
  console.log(show.id,episodes.length,items.filter(x=>x.error).map(x=>[x.itemId,x.error]));
  if (!requested) await writeFile(output,JSON.stringify(result,null,2));
 }

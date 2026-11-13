@@ -1,13 +1,13 @@
 {
-  "revision": "expanded-6ab50845114c14de",
+  "revision": "expanded-41450704ab0b0bbb",
   "checkedAt": [
-    "2026-11-13T20:21:28.634Z",
+    "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
     "2026-11-13T18:34:49.891Z"
   ],
-  "episodes": 2755,
-  "ready": 2661,
-  "streamSlots": 10232,
+  "episodes": 2802,
+  "ready": 2707,
+  "streamSlots": 10816,
   "shows": [
     {
       "id": "dukes",
@@ -190,6 +190,41 @@
       "episodes": 18,
       "ready": 18,
       "sources": 18
+    },
+    {
+      "id": "blue-thunder",
+      "title": "Blue Thunder (1984)",
+      "episodes": 11,
+      "ready": 11,
+      "sources": 11
+    },
+    {
+      "id": "the-master",
+      "title": "The Master (1984)",
+      "episodes": 13,
+      "ready": 13,
+      "sources": 13
+    },
+    {
+      "id": "gold-monkey",
+      "title": "Tales of the Gold Monkey",
+      "episodes": 21,
+      "ready": 21,
+      "sources": 21
+    },
+    {
+      "id": "stingray",
+      "title": "Stingray (1985)",
+      "episodes": 1,
+      "ready": 0,
+      "sources": 1
+    },
+    {
+      "id": "matt-houston",
+      "title": "Matt Houston",
+      "episodes": 1,
+      "ready": 1,
+      "sources": 1
     },
     {
       "id": "he-man",
@@ -507,6 +542,6 @@
       "sources": 1
     }
   ],
-  "bytes": 1044775,
+  "bytes": 1062485,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

@@ -124,3 +124,26 @@ test('Cartoon Express deep cuts and fantasy adventure additions migrate with sou
  assert.equal(mergeLibraryBatch(installed,rows).added,0);
  assert.equal(installed.settings.channel,'mixed');
 });
+
+test('gadget heroes keep combined pilots and external listings distinct from station episodes',async()=>{
+ const packs=await Promise.all(['action','cartoon','youtube'].map(async name=>JSON.parse(await readFile(new URL(`${name}-discovery.json`,data),'utf8'))));
+ const counts={'blue-thunder':11,'the-master':13,'gold-monkey':21,stingray:1,'matt-houston':1};
+ const seed=createSeed(),old=structuredClone(seed);old.shows=old.shows.filter(s=>!(s.id in counts));old.settings.channel='action';
+ for(const show of seed.shows)if(!old.shows.some(s=>s.id===show.id))old.shows.push({...show,episodes:[]});
+ const rows=discoveryRows(old,packs),installed=mergeLibraryBatch(old,rows).catalog;
+ const get=id=>installed.shows.find(s=>s.id===id).episodes;
+ const scheduled=new Set(buildSchedule(installed,'action').map(slot=>slot.episode.id));
+ for(const [id,count] of Object.entries(counts)){
+  assert.equal(get(id).length,count,id);
+  if(id!=='stingray')assert.ok(get(id).every(e=>scheduled.has(e.id)),id);
+ }
+ assert.deepEqual(get('gold-monkey').map(e=>e.number),[1,...Array.from({length:20},(_,i)=>i+3)]);
+ assert.equal(get('gold-monkey').filter(e=>e.durationSeconds>5000).length,1);
+ assert.deepEqual(get('matt-houston').map(e=>[e.season,e.number]),[[2,5]]);
+ assert.equal(get('stingray')[0].sources[0].provider,'tubi');
+ assert.equal(get('stingray')[0].durationSeconds,null);
+ assert.equal(scheduled.has(get('stingray')[0].id),false);
+ assert.equal(get('stingray')[0].sources[0].url,'https://tubitv.com/series/300013655/stingray');
+ assert.equal(mergeLibraryBatch(installed,rows).added,0);
+ assert.equal(installed.settings.channel,'action');
+});

@@ -142,3 +142,7 @@ The next reviewed expansion adds 402 items across 16 shows, including original Y
 ## Cartoon Express deep cuts
 
 The latest batch adds Butch Cassidy and the Sundance Kids, Clue Club, Goober and the Ghost Chasers, Wheelie and the Chopper Bunch, The Funky Phantom, and Inch High, Private Eye. Live-action additions are Wizards and Warriors, The Powers of Matthew Star, Whiz Kids, Misfits of Science, and Otherworld. Goober lacks episode 7; Wheelie files each contain three stories. See [source coverage and editorial direction](../docs/11/DEEP-CUTS.md).
+
+## Gadget heroes
+
+Added Blue Thunder (11 videos), The Master (13), Tales of the Gold Monkey (21 including its combined pilot), and a one-episode Matt Houston subset. Stingray (1985) has an external Tubi series link and is excluded from automatic station playback. See [reviewed sources and limits](../docs/12/GADGET-HEROES.md).

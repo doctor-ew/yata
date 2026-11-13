@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-13T20:21:28.634Z",
+  "checkedAt": "2026-11-13T20:32:06.539Z",
   "provider": "archive",
   "bounds": {
     "searchRows": 100,
@@ -18364,14 +18364,1110 @@
           "checkedAt": "2026-11-13T20:21:57.065446+00:00"
         }
       ]
+    },
+    {
+      "showId": "blue-thunder",
+      "title": "Blue Thunder (1984)",
+      "episodes": [
+        {
+          "id": "action-blue-thunder-0",
+          "title": "Blue Thunder S01E01 - Second Thunder",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 2869.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E01%20-%20Second%20Thunder.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-blue-thunder-1",
+          "title": "Blue Thunder S01E02 - A Clear and Present Danger",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 2882.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E02%20-%20A%20Clear%20and%20Present%20Danger.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-blue-thunder-2",
+          "title": "Blue Thunder S01E03 - Arms Race",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 2909.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E03%20-%20Arms%20Race.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-blue-thunder-3",
+          "title": "Blue Thunder S01E04 - Revenge in the Sky",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 2910.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E04%20-%20Revenge%20in%20the%20Sky.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-blue-thunder-4",
+          "title": "Blue Thunder S01E05 Trojan Horse",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 2903.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E05%20%20Trojan%20Horse.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-blue-thunder-5",
+          "title": "Blue Thunder S01E06 - Skydiver",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 2845.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E06%20-%20Skydiver.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-blue-thunder-6",
+          "title": "Blue Thunder S01E07 - Clipped Wings",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 2902.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E07%20-%20Clipped%20Wings.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-blue-thunder-7",
+          "title": "Blue Thunder S01E08 - Payload",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 2907.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E08%20-%20Payload.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-blue-thunder-8",
+          "title": "Blue Thunder S01E09 - The Long Flight",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 2865.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E09%20-%20The%20Long%20Flight.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-blue-thunder-9",
+          "title": "Blue Thunder S01E10 - The Godchild",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 2906.78,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E10%20-%20The%20Godchild.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-blue-thunder-10",
+          "title": "Blue Thunder S01E11 - The Island",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 2907.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E11%20-%20The%20Island.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "reviewedItemCount": 1
+        }
+      ],
+      "items": [
+        {
+          "itemId": "blue-thunder-complete-series-1984",
+          "title": "Blue Thunder - Complete Series 1984",
+          "language": "eng",
+          "accepted": 11
+        }
+      ],
+      "notes": [
+        "English 1984 television-series collection: 11 explicit season 1 episodes; the similarly named feature film is not included.",
+        "Counts are media entries found, not verified episode inventory totals.",
+        "No full-series completeness claim. Missing runtime remains unknown."
+      ],
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E01%20-%20Second%20Thunder.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:32:33.310738+00:00"
+        },
+        {
+          "url": "https://archive.org/download/blue-thunder-complete-series-1984/Blue%20Thunder%20S01E11%20-%20The%20Island.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:32:33.262479+00:00"
+        }
+      ]
+    },
+    {
+      "showId": "the-master",
+      "title": "The Master (1984)",
+      "episodes": [
+        {
+          "id": "action-the-master-0",
+          "title": "The Master S01E01 - Max",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 3056.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E01%20-%20Max.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-the-master-1",
+          "title": "The Master S01E02 - Out of Time Step",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 2993.43,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E02%20-%20Out%20of%20Time%20Step.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-the-master-2",
+          "title": "The Master S01E03 - State of the Union",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 2990.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E03%20-%20State%20of%20the%20Union.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-the-master-3",
+          "title": "The Master S01E04 - Hostages",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 3034.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E04%20-%20Hostages.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-the-master-4",
+          "title": "The Master S01E05 - High Rollers",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 2951.78,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E05%20-%20High%20Rollers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-the-master-5",
+          "title": "The Master S01E06 - Fat Tuesday",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 3033.61,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E06%20-%20Fat%20Tuesday.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-the-master-6",
+          "title": "The Master S01E07 - Juggernaut",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 3059.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E07%20-%20Juggernaut.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-the-master-7",
+          "title": "The Master S01E08 - The Good the Bad and the Priceless",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 3034.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E08%20-%20The%20Good%20the%20Bad%20and%20the%20Priceless.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-the-master-8",
+          "title": "The Master S01E09 - Kunoichi",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 3027.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E09%20-%20Kunoichi.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-the-master-9",
+          "title": "The Master S01E10 - The Java Tiger",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 3008.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E10%20-%20The%20Java%20Tiger.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-the-master-10",
+          "title": "The Master S01E11 - Failure to Communicate",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 3029.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E11%20-%20Failure%20to%20Communicate.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-the-master-11",
+          "title": "The Master S01E12 - Rogues",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 3039.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E12%20-%20Rogues.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-the-master-12",
+          "title": "The Master S01E13 - A Place to Call Home",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 2962.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E13%20-%20A%20Place%20to%20Call%20Home.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "reviewedItemCount": 1
+        }
+      ],
+      "items": [
+        {
+          "itemId": "the-master-complete-series-1984",
+          "title": "The Master - Complete Series 1984",
+          "language": "eng",
+          "accepted": 13
+        }
+      ],
+      "notes": [
+        "English 1984 collection: 13 individual season 1 episodes. Master Ninja re-edited paired movies are not used.",
+        "Counts are media entries found, not verified episode inventory totals.",
+        "No full-series completeness claim. Missing runtime remains unknown."
+      ],
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E01%20-%20Max.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:32:33.808088+00:00"
+        },
+        {
+          "url": "https://archive.org/download/the-master-complete-series-1984/The%20Master%20S01E13%20-%20A%20Place%20to%20Call%20Home.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:32:33.530748+00:00"
+        }
+      ]
+    },
+    {
+      "showId": "gold-monkey",
+      "title": "Tales of the Gold Monkey",
+      "episodes": [
+        {
+          "id": "action-gold-monkey-0",
+          "title": "Tales of the Gold Monkey E1 & 2 - Pilot",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 5347.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-1-2-pilot/Tales%20of%20the%20Gold%20Monkey%20%20E1%20%26%202%20-%20Pilot.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-1",
+          "title": "Tales of the Gold Monkey E3 - Shanghaied",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 2846.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-3-shanghaied/Tales%20of%20the%20Gold%20Monkey%20%20E3%20-%20Shanghaied.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-2",
+          "title": "Tales of the Gold Monkey E4 - Black Pearl",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 2824.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-4-black-pearl/Tales%20of%20the%20Gold%20Monkey%20%20E4%20-%20Black%20Pearl.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-3",
+          "title": "Tales of the Gold Monkey E5 - Legends Are Forever",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 2848,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-5-legends-are-forever/Tales%20of%20the%20Gold%20Monkey%20%20E5%20-%20Legends%20Are%20Forever.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-4",
+          "title": "Tales of the Gold Monkey E6 - Escape From Death Island",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 2851.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-6-escape-from-death-island/Tales%20of%20the%20Gold%20Monkey%20%20E6%20-%20Escape%20From%20Death%20Island.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-5",
+          "title": "Tales of the Gold Monkey E7 - Trunk From the Past",
+          "season": 0,
+          "number": 7,
+          "durationSeconds": 2844,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-6-escape-from-death-island/Tales%20of%20the%20Gold%20Monkey%20%20E7%20-%20Trunk%20From%20the%20Past.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-6",
+          "title": "Tales of the Gold Monkey E8 - Once a Tiger",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 2843.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-8-once-a-tiger/Tales%20of%20the%20Gold%20Monkey%20%20E8%20-%20Once%20a%20Tiger.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-7",
+          "title": "Tales of the Gold Monkey E9 - Honor Thy Brother",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 2792.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-9-honor-thy-brother/Tales%20of%20the%20Gold%20Monkey%20%20E9%20-%20Honor%20Thy%20Brother.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-8",
+          "title": "Tales of the Gold Monkey E10 - The Lady and the Tiger",
+          "season": 0,
+          "number": 10,
+          "durationSeconds": 2845.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-10-the-lady-and-the-tiger/Tales%20of%20the%20Gold%20Monkey%20%20E10%20-%20The%20Lady%20and%20the%20Tiger.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-9",
+          "title": "Tales of the Gold Monkey E11 - The Late Sarah White",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 2847.58,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-11-the-late-sarah-white/Tales%20of%20the%20Gold%20Monkey%20%20E11%20-%20The%20Late%20Sarah%20White.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-10",
+          "title": "Tales of the Gold Monkey E12 - The Sultan of Swat",
+          "season": 0,
+          "number": 12,
+          "durationSeconds": 2832.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-12-the-sultan-of-swat/Tales%20of%20the%20Gold%20Monkey%20%20E12%20-%20The%20Sultan%20of%20Swat.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-11",
+          "title": "Tales of the Gold Monkey E13 - Ape Boy",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 2801.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-13-ape-boy/Tales%20of%20the%20Gold%20Monkey%20%20E13%20-%20Ape%20Boy.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-12",
+          "title": "Tales of the Gold Monkey E14 - God Save the Queen",
+          "season": 0,
+          "number": 14,
+          "durationSeconds": 2848.37,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-14-god-save-the-queen/Tales%20of%20the%20Gold%20Monkey%20%20E14%20-%20God%20Save%20the%20Queen.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-13",
+          "title": "Tales of the Gold Monkey E15 - High Stakes Lady",
+          "season": 0,
+          "number": 15,
+          "durationSeconds": 2817.51,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-15-high-stakes-lady/Tales%20of%20the%20Gold%20Monkey%20%20E15%20-%20High%20Stakes%20Lady.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-14",
+          "title": "Tales of the Gold Monkey E16 - Force of Habit",
+          "season": 0,
+          "number": 16,
+          "durationSeconds": 2849.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-16-force-of-habit/Tales%20of%20the%20Gold%20Monkey%20%20E16%20-%20Force%20of%20Habit.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-15",
+          "title": "Tales of the Gold Monkey E17 - Cooked Goose",
+          "season": 0,
+          "number": 17,
+          "durationSeconds": 2840.27,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-17-cooked-goose/Tales%20of%20the%20Gold%20Monkey%20%20E17%20-%20Cooked%20Goose.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-16",
+          "title": "Tales of the Gold Monkey E18 - Last Chance Louie",
+          "season": 0,
+          "number": 18,
+          "durationSeconds": 2838.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-18-last-chance-louie/Tales%20of%20the%20Gold%20Monkey%20%20E18%20-%20Last%20Chance%20Louie.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-17",
+          "title": "Tales of the Gold Monkey E19 - Naka Jima Kill",
+          "season": 0,
+          "number": 19,
+          "durationSeconds": 2809.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-19-naka-jima-kill/Tales%20of%20the%20Gold%20Monkey%20%20E19%20-%20Naka%20Jima%20Kill.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-18",
+          "title": "Tales of the Gold Monkey E20 - Boragora or Bust",
+          "season": 0,
+          "number": 20,
+          "durationSeconds": 2808.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-20-boragora-or-bust/Tales%20of%20the%20Gold%20Monkey%20%20E20%20-%20Boragora%20or%20Bust.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-19",
+          "title": "Tales of the Gold Monkey E21 - A Distant Shout of Thunder",
+          "season": 0,
+          "number": 21,
+          "durationSeconds": 2835.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-21-a-distant-shout-of-thunder/Tales%20of%20the%20Gold%20Monkey%20%20E21%20-%20A%20Distant%20Shout%20of%20Thunder.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "action-gold-monkey-20",
+          "title": "Tales of the Gold Monkey E22 - Mourning Becomes Matuka",
+          "season": 0,
+          "number": 22,
+          "durationSeconds": 2835.46,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/tales-of-the-gold-monkey-e-22-mourning-becomes-matuka/Tales%20of%20the%20Gold%20Monkey%20%20E22%20-%20Mourning%20Becomes%20Matuka.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "reviewedItemCount": 20
+        }
+      ],
+      "items": [
+        {
+          "itemId": "tales-of-the-gold-monkey-e-13-ape-boy",
+          "title": "Tales Of The Gold Monkey E 13 Ape Boy",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-8-once-a-tiger",
+          "title": "Tales Of The Gold Monkey E 8 Once A Tiger",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-18-last-chance-louie",
+          "title": "Tales Of The Gold Monkey E 18 Last Chance Louie",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-1-2-pilot",
+          "title": "Tales Of The Gold Monkey E 1 & 2 Pilot",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-4-black-pearl",
+          "title": "Tales Of The Gold Monkey E 4 Black Pearl",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-5-legends-are-forever",
+          "title": "Tales Of The Gold Monkey E 5 Legends Are Forever",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-15-high-stakes-lady",
+          "title": "Tales Of The Gold Monkey E 15 High Stakes Lady",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-16-force-of-habit",
+          "title": "Tales Of The Gold Monkey E 16 Force Of Habit",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-11-the-late-sarah-white",
+          "title": "Tales Of The Gold Monkey E 11 The Late Sarah White",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-6-escape-from-death-island",
+          "title": "Tales Of The Gold Monkey E 6 Escape From Death Island",
+          "language": "eng",
+          "accepted": 2
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-14-god-save-the-queen",
+          "title": "Tales Of The Gold Monkey E 14 God Save The Queen",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-9-honor-thy-brother",
+          "title": "Tales Of The Gold Monkey E 9 Honor Thy Brother",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-12-the-sultan-of-swat",
+          "title": "Tales Of The Gold Monkey E 12 The Sultan Of Swat",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-17-cooked-goose",
+          "title": "Tales Of The Gold Monkey E 17 Cooked Goose",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-19-naka-jima-kill",
+          "title": "Tales Of The Gold Monkey E 19 Naka Jima Kill",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-10-the-lady-and-the-tiger",
+          "title": "Tales Of The Gold Monkey E 10 The Lady And The Tiger",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-21-a-distant-shout-of-thunder",
+          "title": "Tales Of The Gold Monkey E 21 A Distant Shout Of Thunder",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-22-mourning-becomes-matuka",
+          "title": "Tales Of The Gold Monkey E 22 Mourning Becomes Matuka",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-20-boragora-or-bust",
+          "title": "Tales Of The Gold Monkey E 20 Boragora Or Bust",
+          "language": "eng",
+          "accepted": 1
+        },
+        {
+          "itemId": "tales-of-the-gold-monkey-e-3-shanghaied",
+          "title": "Tales Of The Gold Monkey E 3 Shanghaied",
+          "language": "eng",
+          "accepted": 1
+        }
+      ],
+      "notes": [
+        "Twenty reviewed English-metadata Archive items supply 21 media files. E1 & 2 remains one combined pilot; individual files E3–E22 retain source numbering with season zero. The E6 collection also supplies E7. No invented pilot split points or broadcast season assignment.",
+        "Counts are media entries found, not verified episode inventory totals.",
+        "No full-series completeness claim. Missing runtime remains unknown."
+      ],
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/tales-of-the-gold-monkey-e-1-2-pilot/Tales%20of%20the%20Gold%20Monkey%20%20E1%20%26%202%20-%20Pilot.ia.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:32:33.304189+00:00"
+        },
+        {
+          "url": "https://archive.org/download/tales-of-the-gold-monkey-e-22-mourning-becomes-matuka/Tales%20of%20the%20Gold%20Monkey%20%20E22%20-%20Mourning%20Becomes%20Matuka.ia.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:32:33.310575+00:00"
+        }
+      ]
+    },
+    {
+      "showId": "stingray",
+      "title": "Stingray (1985)",
+      "episodes": [
+        {
+          "id": "action-stingray-0",
+          "title": "Browse episodes on Tubi · opens external site",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": null,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "stingray-tubi",
+              "provider": "tubi",
+              "url": "https://tubitv.com/series/300013655/stingray",
+              "availability": "unverified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "reviewedItemCount": 0
+        },
+        {
+          "provider": "tubi",
+          "url": "https://tubitv.com/series/300013655/stingray",
+          "checkedAt": "2026-11-13T20:32:06.539Z",
+          "note": "Listing and Nick Mancuso cast checked; playback not verified."
+        }
+      ],
+      "items": [],
+      "notes": [
+        "Nick Mancuso live-action series. Tubi listing and cast checked; playback was not verified. This is one external series link, not an in-station playable episode. Correct Archive collection has MKVs but no supported MP4 derivatives; the unrelated 1964 puppet series was excluded.",
+        "Counts are media entries found, not verified episode inventory totals.",
+        "No full-series completeness claim. Missing runtime remains unknown."
+      ]
+    },
+    {
+      "showId": "matt-houston",
+      "title": "Matt Houston",
+      "episodes": [
+        {
+          "id": "action-matt-houston-0",
+          "title": "Matt Houston 2x5 Needle In A Haystack",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 2641.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/matt-houston-2x-5-needle-in-a-haystack/Matt%20Houston%202x5%20Needle%20In%20A%20Haystack.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        {
+          "reviewedItemCount": 1
+        }
+      ],
+      "items": [
+        {
+          "itemId": "matt-houston-2x-5-needle-in-a-haystack",
+          "title": "Matt Houston 2x 5 Needle In A Haystack",
+          "language": null,
+          "accepted": 1
+        }
+      ],
+      "notes": [
+        "Partial coverage: one MP4 explicitly labeled season 2 episode 5, Needle in a Haystack. Language metadata is absent. French pilot and uncertain fragments were excluded.",
+        "Counts are media entries found, not verified episode inventory totals.",
+        "No full-series completeness claim. Missing runtime remains unknown."
+      ],
+      "endpointChecks": [
+        {
+          "url": "https://archive.org/download/matt-houston-2x-5-needle-in-a-haystack/Matt%20Houston%202x5%20Needle%20In%20A%20Haystack.ia.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:32:33.520345+00:00"
+        },
+        {
+          "url": "https://archive.org/download/matt-houston-2x-5-needle-in-a-haystack/Matt%20Houston%202x5%20Needle%20In%20A%20Haystack.ia.mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "mp4Signature": true,
+          "checkedAt": "2026-11-13T20:32:33.520402+00:00"
+        }
+      ]
     }
   ],
-  "previousCheckedAt": "2026-11-13T18:42:19.392Z",
+  "previousCheckedAt": "2026-11-13T20:21:28.634Z",
   "updatedShows": [
-    "wizards-warriors",
-    "matthew-star",
-    "misfits-science",
-    "otherworld",
-    "whiz-kids"
+    "blue-thunder",
+    "the-master",
+    "gold-monkey",
+    "stingray",
+    "matt-houston"
   ]
 }
