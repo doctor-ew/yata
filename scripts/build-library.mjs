@@ -1,0 +1,37 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { createSeed } from '../src/catalog.mjs';
+import { discoveryRows, mergeLibraryBatch } from '../src/bulk.mjs';
+import { buildSchedule, parseCatalogJson, stationSource } from '../src/domain.mjs';
+const data = new URL('../data/', import.meta.url);
+const names = ['action', 'cartoon', 'youtube'];
+const texts = await Promise.all(names.map(name => readFile(new URL(`${name}-discovery.json`, data), 'utf8')));
+const packs = texts.map(JSON.parse);
+const seed = createSeed(); let sequence = 0;
+for (const [index, name] of names.entries()) {
+  const expected = seed.shows.filter(show => name === 'youtube' ? show.id !== 'saturday-simulator' : show.id !== 'saturday-simulator' && show.channel === (name === 'action' ? 'action' : 'cartoons')).map(show => show.id).sort();
+  const actual = packs[index].shows.map(show => show.showId).sort();
+  if (JSON.stringify(expected) !== JSON.stringify(actual)) throw Error(`${name} discovery is incomplete or contains unexpected shows.`);
+}
+if (packs[2].curated !== true) throw Error('YouTube discovery must finish canonical title curation before building.');
+const result = mergeLibraryBatch(seed, discoveryRows(seed, packs), () => String(++sequence));
+const serialized = JSON.stringify(result.catalog);
+parseCatalogJson(serialized);
+const shows = result.catalog.shows.map(show => ({
+  id: show.id, title: show.title, episodes: show.episodes.length,
+  ready: show.episodes.filter(episode => episode.durationSeconds && stationSource(episode)).length,
+  sources: show.episodes.reduce((count, episode) => count + episode.sources.length, 0),
+}));
+const manifest = {
+  revision: `expanded-${createHash('sha256').update(texts.join('\n')).digest('hex').slice(0, 16)}`,
+  checkedAt: packs.map(pack => pack.checkedAt).filter(Boolean),
+  episodes: shows.reduce((count, show) => count + show.episodes, 0),
+  ready: buildSchedule(result.catalog).length,
+  shows, bytes: Buffer.byteLength(serialized),
+  note: 'A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played.',
+};
+await writeFile(new URL('expanded-catalog.json', data), serialized + '\n');
+await writeFile(new URL('library-manifest.json', data), JSON.stringify(manifest, null, 2) + '\n');
+const report = `# Expanded library coverage\n\nRevision: ${manifest.revision}. Sources: public Archive metadata and official YouTube metadata. Counts include the original seed items.\n\n${manifest.episodes} catalog episodes/items; ${manifest.ready} eligible for the station by existing metadata rules. A schedulable source is not a guarantee of future playback.\n\n| Show | Catalog items | Metadata-ready | Source links |\n| --- | ---: | ---: | ---: |\n` + shows.map(show => `| ${show.title} | ${show.episodes} | ${show.ready} | ${show.sources} |`).join('\n') + '\n\nSearch bounds, source collection URLs, exclusions and known gaps are recorded in each discovery JSON file. Unknown ordering remains season zero; matching titles and explicit season/episode pairs combine source alternatives.\n';
+await writeFile(new URL('../../docs/3/COVERAGE.md', import.meta.url), report);
+console.log(JSON.stringify({ revision: manifest.revision, episodes: manifest.episodes, ready: manifest.ready, bytes: manifest.bytes, showsWithSources: shows.filter(show => show.episodes).length, gaps: shows.filter(show => !show.episodes).map(show => show.title) }));

@@ -1131,3 +1131,9 @@ form label {
 #bulk-dialog { width: min(900px, 94vw); }
 #bulk-links { width: 100%; background: #17131f; color: inherit; border: 1px solid #51465e; border-radius: 8px; padding: 12px; }
 .bulk-row { border: 1px solid #51465e; border-radius: 12px; padding: 16px; margin: 16px 0; display: grid; gap: 10px; }
+
+.coverage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 18px 0; }
+.coverage-show { display: block; border: 1px solid #51465e; padding: 12px; border-radius: 8px; }
+.coverage-show input { width: auto; margin-right: 10px; }
+.coverage-show details { font-size: 12px; font-weight: 400; margin-top: 8px; }
+#bulk-pages { position: sticky; top: 0; background: #191923; padding: 12px 0; z-index: 1; justify-content: space-between; }

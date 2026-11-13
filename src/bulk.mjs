@@ -31,3 +31,67 @@ export function mergeBatch(catalog, rows, makeId = () => crypto.randomUUID()) {
   if (!added) throw Error('No new episodes selected. Existing source URLs are skipped automatically.');
   return { catalog: validateCatalog(next), added, skipped };
 }
+
+function episodeTitleKey(title, showTitle) {
+  const normalize = value => value.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim().replace(/\s+/g, ' ');
+  let value = String(title).split(/[|·]/)[0].replace(/\.(mp4|mkv|avi)$/i, '').replace(/\bS\s*\d+\s*E\s*\d+\b/ig, ' ').replace(/\b\d+\s*x\s*\d+\b/ig, ' ');
+  value = normalize(value).replace(/^\d+\s+/, '');
+  const prefix = normalize(showTitle);
+  if (value.startsWith(prefix + ' ')) value = value.slice(prefix.length + 1);
+  return value;
+}
+
+// Numbering differs between providers: require matching title AND explicit order.
+export function mergeLibraryBatch(catalog, rows, makeId = () => crypto.randomUUID()) {
+  const next = structuredClone(catalog);
+  const known = new Set(next.shows.flatMap(s => s.episodes.flatMap(e => e.sources.map(s => s.url))));
+  let added = 0, skipped = 0, alternatives = 0;
+  for (const row of rows) {
+    if (!row.selected) continue;
+    const show = next.shows.find(s => s.id === row.showId);
+    if (!show) throw Error('Choose an existing show for every selected episode.');
+    const incoming = structuredClone(row.episode);
+    const unique = new Map();
+    for (const source of incoming.sources) {
+      const url = parseSourceUrl(source.url).url;
+      if (!known.has(url) && !unique.has(url)) unique.set(url, source);
+    }
+    const fresh = [...unique.values()];
+    if (!fresh.length) { skipped++; continue; }
+    const titleKey = episodeTitleKey(incoming.title, show.title);
+    const match = titleKey.length > 3 && incoming.season > 0 && incoming.number > 0 && incoming.kind === 'episode'
+      ? show.episodes.find(e => e.kind === 'episode' && e.season === incoming.season && e.number === incoming.number && episodeTitleKey(e.title, show.title) === titleKey) : null;
+    if (match) {
+      const slots = 20 - match.sources.length;
+      if (fresh.length > slots) throw Error('An episode has more than 20 alternative sources. Deselect excess alternatives before adding.');
+      for (const source of fresh) {
+        source.url = parseSourceUrl(source.url).url;
+        match.sources.push({ ...source, id: `source-${makeId()}` }); known.add(source.url); alternatives++;
+      }
+      if (!match.durationSeconds && incoming.durationSeconds) match.durationSeconds = incoming.durationSeconds;
+    } else {
+      incoming.id = `episode-${makeId()}`;
+      incoming.sources = fresh.map(source => {
+        const url = parseSourceUrl(source.url).url; known.add(url);
+        return { ...source, url, id: `source-${makeId()}` };
+      });
+      show.episodes.push(incoming); added++;
+    }
+  }
+  return { catalog: validateCatalog(next), added, skipped, alternatives };
+}
+
+export function discoveryRows(catalog, packs) {
+  const shows = new Set(catalog.shows.map(show => show.id));
+  const rows = [];
+  for (const pack of packs) {
+    if (!Array.isArray(pack?.shows)) throw Error('Discovery file is incomplete.');
+    for (const show of pack.shows) {
+      if (!shows.has(show.showId) || !Array.isArray(show.episodes)) throw Error('Discovery file contains an unknown show or missing episodes.');
+      for (const episode of show.episodes) rows.push({ selected: true, showId: show.showId, episode: structuredClone(episode) });
+    }
+  }
+  // Validate candidate metadata and source URLs before presenting it as importable.
+  mergeLibraryBatch(catalog, rows);
+  return rows;
+}

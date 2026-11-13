@@ -1,0 +1,252 @@
+{
+  "revision": "expanded-323e929cf602667a",
+  "checkedAt": [
+    "2026-11-13T18:42:19.392Z",
+    "2026-11-13T18:35:03.817Z",
+    "2026-11-13T18:34:49.891Z"
+  ],
+  "episodes": 1889,
+  "ready": 1795,
+  "shows": [
+    {
+      "id": "dukes",
+      "title": "The Dukes of Hazzard",
+      "episodes": 146,
+      "ready": 146,
+      "sources": 147
+    },
+    {
+      "id": "knight-rider",
+      "title": "Knight Rider",
+      "episodes": 85,
+      "ready": 85,
+      "sources": 85
+    },
+    {
+      "id": "greatest-american-hero",
+      "title": "The Greatest American Hero",
+      "episodes": 45,
+      "ready": 45,
+      "sources": 45
+    },
+    {
+      "id": "airwolf",
+      "title": "Airwolf",
+      "episodes": 51,
+      "ready": 51,
+      "sources": 51
+    },
+    {
+      "id": "a-team",
+      "title": "The A-Team",
+      "episodes": 95,
+      "ready": 95,
+      "sources": 95
+    },
+    {
+      "id": "fall-guy",
+      "title": "The Fall Guy",
+      "episodes": 110,
+      "ready": 110,
+      "sources": 110
+    },
+    {
+      "id": "macgyver",
+      "title": "MacGyver",
+      "episodes": 141,
+      "ready": 141,
+      "sources": 141
+    },
+    {
+      "id": "magnum",
+      "title": "Magnum, P.I.",
+      "episodes": 5,
+      "ready": 5,
+      "sources": 5
+    },
+    {
+      "id": "chips",
+      "title": "CHiPs",
+      "episodes": 18,
+      "ready": 18,
+      "sources": 18
+    },
+    {
+      "id": "simon",
+      "title": "Simon & Simon",
+      "episodes": 3,
+      "ready": 3,
+      "sources": 3
+    },
+    {
+      "id": "riptide",
+      "title": "Riptide",
+      "episodes": 39,
+      "ready": 39,
+      "sources": 39
+    },
+    {
+      "id": "hardcastle",
+      "title": "Hardcastle and McCormick",
+      "episodes": 66,
+      "ready": 66,
+      "sources": 66
+    },
+    {
+      "id": "automan",
+      "title": "Automan",
+      "episodes": 13,
+      "ready": 13,
+      "sources": 13
+    },
+    {
+      "id": "street-hawk",
+      "title": "Street Hawk",
+      "episodes": 14,
+      "ready": 14,
+      "sources": 14
+    },
+    {
+      "id": "manimal",
+      "title": "Manimal",
+      "episodes": 8,
+      "ready": 8,
+      "sources": 8
+    },
+    {
+      "id": "phoenix",
+      "title": "The Phoenix",
+      "episodes": 5,
+      "ready": 5,
+      "sources": 5
+    },
+    {
+      "id": "voyagers",
+      "title": "Voyagers!",
+      "episodes": 20,
+      "ready": 20,
+      "sources": 20
+    },
+    {
+      "id": "buck-rogers",
+      "title": "Buck Rogers in the 25th Century",
+      "episodes": 33,
+      "ready": 33,
+      "sources": 33
+    },
+    {
+      "id": "battlestar",
+      "title": "Battlestar Galactica",
+      "episodes": 21,
+      "ready": 21,
+      "sources": 21
+    },
+    {
+      "id": "v",
+      "title": "V",
+      "episodes": 18,
+      "ready": 18,
+      "sources": 18
+    },
+    {
+      "id": "hulk",
+      "title": "The Incredible Hulk",
+      "episodes": 12,
+      "ready": 12,
+      "sources": 12
+    },
+    {
+      "id": "he-man",
+      "title": "He-Man and the Masters of the Universe",
+      "episodes": 130,
+      "ready": 130,
+      "sources": 418
+    },
+    {
+      "id": "gi-joe",
+      "title": "G.I. Joe: A Real American Hero",
+      "episodes": 104,
+      "ready": 95,
+      "sources": 116
+    },
+    {
+      "id": "transformers",
+      "title": "The Transformers",
+      "episodes": 100,
+      "ready": 16,
+      "sources": 111
+    },
+    {
+      "id": "mighty-orbots",
+      "title": "Mighty Orbots",
+      "episodes": 13,
+      "ready": 13,
+      "sources": 13
+    },
+    {
+      "id": "thundercats",
+      "title": "ThunderCats",
+      "episodes": 130,
+      "ready": 130,
+      "sources": 130
+    },
+    {
+      "id": "voltron",
+      "title": "Voltron",
+      "episodes": 124,
+      "ready": 124,
+      "sources": 124
+    },
+    {
+      "id": "mask",
+      "title": "M.A.S.K.",
+      "episodes": 75,
+      "ready": 75,
+      "sources": 75
+    },
+    {
+      "id": "silverhawks",
+      "title": "SilverHawks",
+      "episodes": 65,
+      "ready": 65,
+      "sources": 65
+    },
+    {
+      "id": "dungeons-dragons",
+      "title": "Dungeons & Dragons",
+      "episodes": 27,
+      "ready": 27,
+      "sources": 27
+    },
+    {
+      "id": "centurions",
+      "title": "The Centurions",
+      "episodes": 65,
+      "ready": 65,
+      "sources": 65
+    },
+    {
+      "id": "thundarr",
+      "title": "Thundarr the Barbarian",
+      "episodes": 21,
+      "ready": 21,
+      "sources": 21
+    },
+    {
+      "id": "inspector-gadget",
+      "title": "Inspector Gadget",
+      "episodes": 86,
+      "ready": 86,
+      "sources": 86
+    },
+    {
+      "id": "saturday-simulator",
+      "title": "Saturday Morning Simulator",
+      "episodes": 1,
+      "ready": 0,
+      "sources": 1
+    }
+  ],
+  "bytes": 711773,
+  "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
+}

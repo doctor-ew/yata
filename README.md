@@ -15,13 +15,15 @@ npm start
 
 Open the printed address: <http://127.0.0.1:4173>. Keep the terminal running. Press Ctrl+C in that terminal to stop the station. If the port is occupied, run `PORT=4174 npm start` and use the new printed address. This command does not operate the native Floating Browser app.
 
+The preview started during this session runs independently of the chat terminal through the per-user macOS job `com.drew-tv.local-preview`. To stop that preview before starting a manual server on the same port, run `launchctl remove com.drew-tv.local-preview`.
+
 ## Watch
 
 - Select Drew TV, Action Adventure, or Saturday Morning.
 - **Tune in live** joins a checked episode at the position calculated from your station clock. **Start from beginning** starts the selected episode at zero.
 - **Next episode** advances to another checked item, if available. Playback failure offers a deliberate Retry, Skip, or Original source action; it never retries indefinitely.
 - The Library includes all requested shows, including those with no added episode sources. A show card opens its episode/source list.
-- The initial live rotation contains the supplied Dukes of Hazzard episode. It loops until more checked sources are added. The supplied Saturday Morning Simulator link is retained as a compilation with unchecked YouTube playback. The G.I. Joe miniseries episode opens on Tubi.
+- The curated expanded library is added automatically on load, including to an existing saved catalog. Public Archive episodes with metadata runtimes enter the station rotation; official YouTube candidates need a playback check. Coverage and gaps are recorded in [the generated coverage report](../docs/3/COVERAGE.md). The supplied Saturday Morning Simulator link is retained as a compilation with unchecked YouTube playback. The G.I. Joe miniseries episode opens on Tubi.
 - An empty channel does not imply that its shows are unavailable everywhere. It means your local catalog does not yet contain a checked, schedulable episode for that channel.
 
 ## Add and edit sources
@@ -39,6 +41,23 @@ Choose **Manage sources**, select a show, and enter an Archive item, YouTube vid
 Inside a show's episode list, **Edit details / add another source** changes its title, runtime, season/episode order, multipart group, or adds an alternative source. Leave the URL empty to edit metadata only. An optional IMDb title reference can be supplied for the show; no IMDb lookup or availability claim is inferred from it.
 
 Adjacent episodes with the same multipart group stay together. Mark a supplied item as a bumper/commercial and enable **Include my bumpers** to interleave it. No commercial clips are included by default.
+
+## Expanded library
+
+Refresh the page to install the expanded curated library automatically. It preserves your sources and channel settings and installs once per content revision. The same revision does not continually restore items you remove. **Fill all shows** opens a review of the discovered library, with show selection, search notes, per-show filtering and 50-row pages. Review counts are source candidates; matching episode titles and explicit season/episode pairs combine alternative sources.
+
+The catalog includes the public-source episodes found during the recorded searches. It does not assert complete worldwide availability. Known gaps, source numbering differences and search limits are recorded in the discovery files and [coverage report](../docs/3/COVERAGE.md). Unknown ordering remains season zero.
+
+A portable baseline catalog is available at [expanded-catalog.json](data/expanded-catalog.json). Importing it replaces the current catalog through the normal import tool; automatic installation and whole-library review instead merge additively. Export your personal catalog for a backup of your own edits.
+
+To rebuild the metadata packs, run the three scripts below from this directory, then build the library manifest. These commands contact public providers, read metadata only and may take several minutes. The YouTube refresh requires the installed `yt-dlp`. The reviewed Archive source lists are intentional; these refreshes do not promise an exhaustive search for newly uploaded collections.
+
+```sh
+node scripts/action-discovery.mjs
+node scripts/cartoon-discovery.mjs
+node scripts/youtube-discovery.mjs
+node scripts/build-library.mjs
+```
 
 ## Seed playlists in bulk
 

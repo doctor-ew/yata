@@ -1,0 +1,5277 @@
+{
+  "checkedAt": "2026-11-13T18:34:49.891Z",
+  "provider": "youtube",
+  "limits": "Public season playlists up to 1,000 entries; top 40 search results per show; approved brand channels. Embedded playback not checked. Unknown season zero. He-Man exact canonical title matching against Archive filenames; unmatched retitles excluded.",
+  "shows": [
+    {
+      "showId": "dukes",
+      "title": "The Dukes of Hazzard",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=The%20Dukes%20of%20Hazzard%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "knight-rider",
+      "title": "Knight Rider",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Knight%20Rider%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "greatest-american-hero",
+      "title": "The Greatest American Hero",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=The%20Greatest%20American%20Hero%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "airwolf",
+      "title": "Airwolf",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Airwolf%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "a-team",
+      "title": "The A-Team",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=The%20A-Team%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "fall-guy",
+      "title": "The Fall Guy",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=The%20Fall%20Guy%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "macgyver",
+      "title": "MacGyver",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=MacGyver%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "magnum",
+      "title": "Magnum, P.I.",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Magnum%2C%20P.I.%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "chips",
+      "title": "CHiPs",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=CHiPs%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "simon",
+      "title": "Simon & Simon",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Simon%20%26%20Simon%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "riptide",
+      "title": "Riptide",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Riptide%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "hardcastle",
+      "title": "Hardcastle and McCormick",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Hardcastle%20and%20McCormick%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "automan",
+      "title": "Automan",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Automan%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "street-hawk",
+      "title": "Street Hawk",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Street%20Hawk%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "manimal",
+      "title": "Manimal",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Manimal%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "phoenix",
+      "title": "The Phoenix",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=The%20Phoenix%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "voyagers",
+      "title": "Voyagers!",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Voyagers!%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "buck-rogers",
+      "title": "Buck Rogers in the 25th Century",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Buck%20Rogers%20in%20the%2025th%20Century%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "battlestar",
+      "title": "Battlestar Galactica",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Battlestar%20Galactica%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "v",
+      "title": "V",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=V%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "hulk",
+      "title": "The Incredible Hulk",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=The%20Incredible%20Hulk%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "he-man",
+      "title": "He-Man and the Masters of the Universe",
+      "episodes": [
+        {
+          "id": "youtube-he-man-SrboGvpOWEQ",
+          "title": "S02E18 - He-Man and the Masters of the Universe - Revenge is Never Sweet",
+          "season": 2,
+          "number": 18,
+          "durationSeconds": 1282,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-SrboGvpOWEQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=SrboGvpOWEQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-0JHOCKUQwCA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=0JHOCKUQwCA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-MFj77LBQjG8",
+          "title": "S02E12 - He-Man and the Masters of the Universe - Origin of the Sorceress",
+          "season": 2,
+          "number": 12,
+          "durationSeconds": 1296,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-MFj77LBQjG8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=MFj77LBQjG8",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-Guh7zUvKNVA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Guh7zUvKNVA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man--aulef0EthE",
+          "title": "S02E15 - He-Man and the Masters of the Universe - The Arena",
+          "season": 2,
+          "number": 15,
+          "durationSeconds": 1295,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source--aulef0EthE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=-aulef0EthE",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-d0U8m3f8twQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=d0U8m3f8twQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-F2SxW2_2RFc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=F2SxW2_2RFc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-OHlOmPShezQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=OHlOmPShezQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-9Wg_IiLiN5s",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=9Wg_IiLiN5s",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-kgtxJzkUXCw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=kgtxJzkUXCw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source--It09tzDnIg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=-It09tzDnIg",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-NhNZnR4mrBQ",
+          "title": "S01E48 - He-Man and the Masters of the Universe - Castle of Heroes",
+          "season": 1,
+          "number": 48,
+          "durationSeconds": 1293,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-NhNZnR4mrBQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=NhNZnR4mrBQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-lr8mFBH0FTQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=lr8mFBH0FTQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-6xBIaiGUNas",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=6xBIaiGUNas",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-tqEDeCsHUEU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=tqEDeCsHUEU",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-QNTEkMz8DpY",
+          "title": "S01E01 - He-Man and the Masters of the Universe - Diamond Ray of Disappearance",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1235,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-QNTEkMz8DpY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=QNTEkMz8DpY",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-pyBKPRdtw5w",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=pyBKPRdtw5w",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-LqLF6jqKsek",
+          "title": "S01E25 - He-Man and the Masters of the Universe - Quest for the Sword",
+          "season": 1,
+          "number": 25,
+          "durationSeconds": 1279,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-LqLF6jqKsek",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=LqLF6jqKsek",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-e_-tWK4Fi-o",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=e_-tWK4Fi-o",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-0R7RJwIfQnM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=0R7RJwIfQnM",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-8lk4Dm0qOX4",
+          "title": "S02E45 - He-Man and the Masters of the Universe - The Problem with Power",
+          "season": 2,
+          "number": 45,
+          "durationSeconds": 1294,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-8lk4Dm0qOX4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=8lk4Dm0qOX4",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-ii3ofxZeF8Y",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=ii3ofxZeF8Y",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-xgU0S_HRFVE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=xgU0S_HRFVE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-RGYL3X5kK_0",
+          "title": "S02E23 - He-Man and the Masters of the Universe - The Rainbow Warrior",
+          "season": 2,
+          "number": 23,
+          "durationSeconds": 1294,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-RGYL3X5kK_0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=RGYL3X5kK_0",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-7E5ec1pKAEM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=7E5ec1pKAEM",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-NUXWFQ0UxAo",
+          "title": "S01E19 - He-Man and the Masters of the Universe - The Shaping Staff",
+          "season": 1,
+          "number": 19,
+          "durationSeconds": 1293,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-NUXWFQ0UxAo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=NUXWFQ0UxAo",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-JW0hSCYAQSg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=JW0hSCYAQSg",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-58prwW4AUYo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=58prwW4AUYo",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-h8gf94otfW8",
+          "title": "S02E01 - He-Man and the Masters of the Universe - The Shadow of Skeletor",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1296,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-h8gf94otfW8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=h8gf94otfW8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-SQs0G8MgkhQ",
+          "title": "S01E18 - He-Man and the Masters of the Universe - The Dragon's Gift",
+          "season": 1,
+          "number": 18,
+          "durationSeconds": 1297,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-SQs0G8MgkhQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=SQs0G8MgkhQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-wCtr6mtB_4M",
+          "title": "S02E43 - He-Man and the Masters of the Universe - Teela's Triumph",
+          "season": 2,
+          "number": 43,
+          "durationSeconds": 1296,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-wCtr6mtB_4M",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=wCtr6mtB_4M",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-MiowZKnqE1Y",
+          "title": "S01E02 - He-Man and the Masters of the Universe - Teela's Quest",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-MiowZKnqE1Y",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=MiowZKnqE1Y",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-YuJKhaTXFfY",
+          "title": "S01E03 - He-Man and the Masters of the Universe - Colossor Awakes",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1281,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-YuJKhaTXFfY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=YuJKhaTXFfY",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-yQrbyMMghZw",
+          "title": "S02E21 - He-Man and the Masters of the Universe - Into the Abyss",
+          "season": 2,
+          "number": 21,
+          "durationSeconds": 1294,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-yQrbyMMghZw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=yQrbyMMghZw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-1_dUpU0kFrg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=1_dUpU0kFrg",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-v14o8WOYVj0",
+          "title": "S02E19 - He-Man and the Masters of the Universe - The Littlest Giant",
+          "season": 2,
+          "number": 19,
+          "durationSeconds": 1281,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-v14o8WOYVj0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=v14o8WOYVj0",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-45Rdtls98XM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=45Rdtls98XM",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-Ix61sRU6inA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Ix61sRU6inA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-VPrCxBXFyUc",
+          "title": "S02E06 - He-Man and the Masters of the Universe - To Save Skeletor",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 1285,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-VPrCxBXFyUc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=VPrCxBXFyUc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-5XZlS8TtIKs",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=5XZlS8TtIKs",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-k1Cx2SpqU10",
+          "title": "S02E58 - He-Man and the Masters of the Universe - Mistaken Identity",
+          "season": 2,
+          "number": 58,
+          "durationSeconds": 1296,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-k1Cx2SpqU10",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=k1Cx2SpqU10",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-a5BWaBQmfPE",
+          "title": "S01E33 - He-Man and the Masters of the Universe - The Region of Ice",
+          "season": 1,
+          "number": 33,
+          "durationSeconds": 1294,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-a5BWaBQmfPE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=a5BWaBQmfPE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-heO2grlSDvU",
+          "title": "S01E04 - He-Man and the Masters of the Universe - The Dragon Invasion",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-heO2grlSDvU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=heO2grlSDvU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-JH8Nv8zdzGA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=JH8Nv8zdzGA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-RbeGmarqW7Y",
+          "title": "S02E26 - He-Man and the Masters of the Universe - Three on a Dare",
+          "season": 2,
+          "number": 26,
+          "durationSeconds": 1294,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-RbeGmarqW7Y",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=RbeGmarqW7Y",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-wYl6gmxy6d8",
+          "title": "S01E17 - He-Man and the Masters of the Universe - Daimar the Demon",
+          "season": 1,
+          "number": 17,
+          "durationSeconds": 1284,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-wYl6gmxy6d8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=wYl6gmxy6d8",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-UeRhfNsNR0w",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=UeRhfNsNR0w",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-Khnu3m5AUQo",
+          "title": "S01E05 - He-Man and the Masters of the Universe - The Curse of the Spellstone",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1285,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Khnu3m5AUQo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Khnu3m5AUQo",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-uGollEk8NYw",
+          "title": "S01E31 - He-Man and the Masters of the Universe - The Mystery of Man-E-Faces",
+          "season": 1,
+          "number": 31,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-uGollEk8NYw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=uGollEk8NYw",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-0fJhucKf4a0",
+          "title": "S02E48 - He-Man and the Masters of the Universe - Happy Birthday Roboto",
+          "season": 2,
+          "number": 48,
+          "durationSeconds": 1281,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-0fJhucKf4a0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=0fJhucKf4a0",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-eP78G9mbaEQ",
+          "title": "S02E57 - He-Man and the Masters of the Universe - Search for a Son",
+          "season": 2,
+          "number": 57,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-eP78G9mbaEQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=eP78G9mbaEQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-yrQlYoOD7HA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=yrQlYoOD7HA",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-GNV_RrSgGc8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=GNV_RrSgGc8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-0ZjbO450Z8w",
+          "title": "S01E23 - He-Man and the Masters of the Universe - Quest for He-Man",
+          "season": 1,
+          "number": 23,
+          "durationSeconds": 1279,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-0ZjbO450Z8w",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=0ZjbO450Z8w",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-WXAwU84FFyg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=WXAwU84FFyg",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-UEALbFMar7k",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=UEALbFMar7k",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-d5s_7i_pWb0",
+          "title": "S01E06 - He-Man and the Masters of the Universe - The Time Corridor",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-d5s_7i_pWb0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=d5s_7i_pWb0",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-X8cpZrvcYhU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=X8cpZrvcYhU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-FBpPYaI9RmA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=FBpPYaI9RmA",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-MlKnwUH6qDA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=MlKnwUH6qDA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-35aBi_Bbaoc",
+          "title": "S01E55 - He-Man and the Masters of the Universe - Pawns of the Game Master",
+          "season": 1,
+          "number": 55,
+          "durationSeconds": 1296,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-35aBi_Bbaoc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=35aBi_Bbaoc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-6ucfXQYszkY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=6ucfXQYszkY",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-eqO6YXUUwZw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=eqO6YXUUwZw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-RGs7ko-7jBE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=RGs7ko-7jBE",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-pRM7EJMmQUA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=pRM7EJMmQUA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-bN2ViuWk-Ck",
+          "title": "S02E29 - He-Man and the Masters of the Universe - Jacob and the Widgets",
+          "season": 2,
+          "number": 29,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-bN2ViuWk-Ck",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=bN2ViuWk-Ck",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-kWHyAot-Txs",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=kWHyAot-Txs",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-A2CbwdOOCAM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=A2CbwdOOCAM",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-YVkTx4o2IJI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=YVkTx4o2IJI",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-nn-fcUN9jvw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=nn-fcUN9jvw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-MHXGvkJeHVQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=MHXGvkJeHVQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-7tM8RS45_2s",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=7tM8RS45_2s",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-OlimVqqHekI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=OlimVqqHekI",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-_XBCMclb8nQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=_XBCMclb8nQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-1Fpcevqfcpc",
+          "title": "S01E09 - He-Man and the Masters of the Universe - She-Demon of Phantos",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1287,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-1Fpcevqfcpc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=1Fpcevqfcpc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-ZORltvrEC1k",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=ZORltvrEC1k",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-U_b0Clb2ICY",
+          "title": "S02E17 - He-Man and the Masters of the Universe - Island of Fear",
+          "season": 2,
+          "number": 17,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-U_b0Clb2ICY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=U_b0Clb2ICY",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-rNop76-4fCc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=rNop76-4fCc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-LXfbpPAOZKw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=LXfbpPAOZKw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-i1Ys0wiqeqU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=i1Ys0wiqeqU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-hot1NmosX8A",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=hot1NmosX8A",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-liaIItdtLdU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=liaIItdtLdU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-rTVqRKr7XSY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=rTVqRKr7XSY",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-KOjyAHP15Nc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=KOjyAHP15Nc",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-VEnrvPvpAlg",
+          "title": "S01E08 - He-Man and the Masters of the Universe - Song of Celice",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1284,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-VEnrvPvpAlg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=VEnrvPvpAlg",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-kAdyzW2b2_U",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=kAdyzW2b2_U",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-x-3S8D2G18M",
+          "title": "S01E54 - He-Man and the Masters of the Universe - The Return of Granamyr",
+          "season": 1,
+          "number": 54,
+          "durationSeconds": 1285,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-x-3S8D2G18M",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=x-3S8D2G18M",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man--dFMY3dD7JU",
+          "title": "S02E51 - He-Man and the Masters of the Universe - Here, There, Skeletors Everywhere",
+          "season": 2,
+          "number": 51,
+          "durationSeconds": 1285,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source--dFMY3dD7JU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=-dFMY3dD7JU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-ga-nOYQHIi4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=ga-nOYQHIi4",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-RsEKA6qb47Y",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=RsEKA6qb47Y",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-manCZ46FZPU",
+          "title": "S01E07 - He-Man and the Masters of the Universe - Creatures from the Tar Swamp",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-manCZ46FZPU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=manCZ46FZPU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-ZKU3oe7ZLJM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=ZKU3oe7ZLJM",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-gA44HfuNXWw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=gA44HfuNXWw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-BerwljZlyh4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=BerwljZlyh4",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-7r9u5MZb10g",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=7r9u5MZb10g",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-NKz1eH5DNm0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=NKz1eH5DNm0",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-6raCW3cENUs",
+          "title": "S01E13 - He-Man and the Masters of the Universe - Evil-Lyn's Plot",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1280,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-6raCW3cENUs",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=6raCW3cENUs",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-LPobbS2K3rU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=LPobbS2K3rU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-gvZBCcwJPfQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=gvZBCcwJPfQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-IQs9t8XUm34",
+          "title": "S01E58 - He-Man and the Masters of the Universe - The Witch and The Warrior",
+          "season": 1,
+          "number": 58,
+          "durationSeconds": 1284,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-IQs9t8XUm34",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=IQs9t8XUm34",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-RXUtbaNTB5g",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=RXUtbaNTB5g",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-h6PPtMOk0l8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=h6PPtMOk0l8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-WswFhDuD5IU",
+          "title": "S01E44 - He-Man and the Masters of the Universe - Return of Evil",
+          "season": 1,
+          "number": 44,
+          "durationSeconds": 1313,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-WswFhDuD5IU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=WswFhDuD5IU",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-0GFloFNf8hU",
+          "title": "S01E34 - He-Man and the Masters of the Universe - Masks of Power",
+          "season": 1,
+          "number": 34,
+          "durationSeconds": 1278,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-0GFloFNf8hU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=0GFloFNf8hU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-fgfuq5anhRA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=fgfuq5anhRA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-iL7Qt9ZORhk",
+          "title": "S01E11 - He-Man and the Masters of the Universe - Like Father, Like Daughter",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-iL7Qt9ZORhk",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=iL7Qt9ZORhk",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-fRM8KlZ3DQA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=fRM8KlZ3DQA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-RROMhSfYUi8",
+          "title": "S01E57 - He-Man and the Masters of the Universe - The Remedy",
+          "season": 1,
+          "number": 57,
+          "durationSeconds": 3835,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-RROMhSfYUi8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=RROMhSfYUi8",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-kafp_0VgW6A",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=kafp_0VgW6A",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-1Zn_2vu5Spk",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=1Zn_2vu5Spk",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-b4l6bWCVPec",
+          "title": "S01E35 - He-Man and the Masters of the Universe - Ordeal in the Darklands",
+          "season": 1,
+          "number": 35,
+          "durationSeconds": 1281,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-b4l6bWCVPec",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=b4l6bWCVPec",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-JdNZtXJAXOo",
+          "title": "S02E50 - He-Man and the Masters of the Universe - Time Doesn't Fly",
+          "season": 2,
+          "number": 50,
+          "durationSeconds": 1282,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-JdNZtXJAXOo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=JdNZtXJAXOo",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-aOs1pjHnXMA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=aOs1pjHnXMA",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-aR8uKtTXTBM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=aR8uKtTXTBM",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-b1YZDwd25pM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=b1YZDwd25pM",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-ml_4j0hpcu8",
+          "title": "S01E27 - He-Man and the Masters of the Universe - A Tale of Two Cities",
+          "season": 1,
+          "number": 27,
+          "durationSeconds": 1282,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-ml_4j0hpcu8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=ml_4j0hpcu8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-m1bZCnmfUAY",
+          "title": "S02E22 - He-Man and the Masters of the Universe - Fraidy Cat",
+          "season": 2,
+          "number": 22,
+          "durationSeconds": 1287,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-m1bZCnmfUAY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=m1bZCnmfUAY",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-pfLa-v2kVj8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=pfLa-v2kVj8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-2P0-8a34NlU",
+          "title": "S01E12 - He-Man and the Masters of the Universe - Disappearing Act",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1285,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-2P0-8a34NlU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=2P0-8a34NlU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-kBGqivXypFs",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=kBGqivXypFs",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-MUnI6wbsODU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=MUnI6wbsODU",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-c-hdDDkKSVc",
+          "title": "S01E26 - He-Man and the Masters of the Universe - A Beastly Sideshow",
+          "season": 1,
+          "number": 26,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-c-hdDDkKSVc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=c-hdDDkKSVc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-5qdVHdD3kog",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=5qdVHdD3kog",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-9SydQMFixLA",
+          "title": "S02E52 - He-Man and the Masters of the Universe - Beauty and the Beast",
+          "season": 2,
+          "number": 52,
+          "durationSeconds": 1214,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-9SydQMFixLA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=9SydQMFixLA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-hl_0ZbTsinA",
+          "title": "S02E65 - He-Man and the Masters of the Universe - The Cold Zone",
+          "season": 2,
+          "number": 65,
+          "durationSeconds": 1282,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-hl_0ZbTsinA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=hl_0ZbTsinA",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-2EQZ8nr8hMI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=2EQZ8nr8hMI",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-WtaDo0_RQUc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=WtaDo0_RQUc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-a9sI7Zf-fjc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=a9sI7Zf-fjc",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-c8Ve7U3-xgw",
+          "title": "S01E43 - He-Man and the Masters of the Universe - The Royal Cousin",
+          "season": 1,
+          "number": 43,
+          "durationSeconds": 1284,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-c8Ve7U3-xgw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=c8Ve7U3-xgw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-D_9GpiHJWp4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=D_9GpiHJWp4",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-FKKBd9w9xCM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=FKKBd9w9xCM",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-04jAfMfrp8c",
+          "title": "S01E20 - He-Man and the Masters of the Universe - The Cosmic Comet",
+          "season": 1,
+          "number": 20,
+          "durationSeconds": 1284,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-04jAfMfrp8c",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=04jAfMfrp8c",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-Ya7xhDJ6Zik",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Ya7xhDJ6Zik",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-5oENPl29OgQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=5oENPl29OgQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-DYTUfzrKRLw",
+          "title": "S01E16 - He-Man and the Masters of the Universe - A Friend in Need",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-DYTUfzrKRLw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=DYTUfzrKRLw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-Mi6IuRWLt_Q",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Mi6IuRWLt_Q",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-nqp03qXmLxc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=nqp03qXmLxc",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-SB81mdjmRqU",
+          "title": "S01E30 - He-Man and the Masters of the Universe - The Return of Orko's Uncle",
+          "season": 1,
+          "number": 30,
+          "durationSeconds": 1282,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-SB81mdjmRqU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=SB81mdjmRqU",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-lo9Y5kscMMI",
+          "title": "S01E36 - He-Man and the Masters of the Universe - City Beneath the Sea",
+          "season": 1,
+          "number": 36,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-lo9Y5kscMMI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=lo9Y5kscMMI",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-qnCQjdOgtT0",
+          "title": "S02E60 - He-Man and the Masters of the Universe - Bargain With Evil",
+          "season": 2,
+          "number": 60,
+          "durationSeconds": 1282,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-qnCQjdOgtT0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=qnCQjdOgtT0",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-N3TnCMGCq7o",
+          "title": "S01E64 - He-Man and the Masters of the Universe - Golden Disks of Knowledge",
+          "season": 1,
+          "number": 64,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-N3TnCMGCq7o",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=N3TnCMGCq7o",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-HOCzmdoHWgk",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=HOCzmdoHWgk",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-tk3mTnx70D4",
+          "title": "S02E13 - He-Man and the Masters of the Universe - Betrayal of Stratos",
+          "season": 2,
+          "number": 13,
+          "durationSeconds": 1282,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-tk3mTnx70D4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=tk3mTnx70D4",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-hEe3hqFKYJk",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=hEe3hqFKYJk",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-70mT1x6aS5c",
+          "title": "S01E37 - He-Man and the Masters of the Universe - The Defection",
+          "season": 1,
+          "number": 37,
+          "durationSeconds": 1289,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-70mT1x6aS5c",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=70mT1x6aS5c",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-MhOlGHgHLug",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=MhOlGHgHLug",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-d2NNMF3-w9g",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=d2NNMF3-w9g",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-XuZEc1dHzqk",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=XuZEc1dHzqk",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-kjMkcOnZIOQ",
+          "title": "S02E25 - He-Man and the Masters of the Universe - Things That Go Bump in the Night",
+          "season": 2,
+          "number": 25,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-kjMkcOnZIOQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=kjMkcOnZIOQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-m2V4UD9zesE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=m2V4UD9zesE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-C2oipFRfuSM",
+          "title": "S02E05 - He-Man and the Masters of the Universe - The Rarest Gift of All",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-C2oipFRfuSM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=C2oipFRfuSM",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-BLxL_jqSk1I",
+          "title": "S01E24 - He-Man and the Masters of the Universe - Orko's Favorite Uncle",
+          "season": 1,
+          "number": 24,
+          "durationSeconds": 1284,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-BLxL_jqSk1I",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=BLxL_jqSk1I",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-7I0bdvIEWq4",
+          "title": "S02E56 - He-Man and the Masters of the Universe - The Magic Falls",
+          "season": 2,
+          "number": 56,
+          "durationSeconds": 1282,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-7I0bdvIEWq4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=7I0bdvIEWq4",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-FI_kBNk0W4E",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=FI_kBNk0W4E",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-jfvQkBrf2xM",
+          "title": "S02E49 - He-Man and the Masters of the Universe - Battle of the Dragons",
+          "season": 2,
+          "number": 49,
+          "durationSeconds": 1282,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-jfvQkBrf2xM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=jfvQkBrf2xM",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-aifb_PmkTqQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=aifb_PmkTqQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-nYYlz2wUNJw",
+          "title": "S01E32 - He-Man and the Masters of the Universe - Keeper of the Ancient Ruins",
+          "season": 1,
+          "number": 32,
+          "durationSeconds": 1287,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-nYYlz2wUNJw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=nYYlz2wUNJw",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-3Q_h_DI-9PM",
+          "title": "S02E08 - He-Man and the Masters of the Universe - Day of the Machines",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 1287,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-3Q_h_DI-9PM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=3Q_h_DI-9PM",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-KQWTx39VfEM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=KQWTx39VfEM",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-zw8RbswT2Zw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=zw8RbswT2Zw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-xucgKQi1Sb0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=xucgKQi1Sb0",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-lTbSQ4OH4aE",
+          "title": "S01E42 - He-Man and the Masters of the Universe - Eternal Darkness",
+          "season": 1,
+          "number": 42,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-lTbSQ4OH4aE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=lTbSQ4OH4aE",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-85M7N77SMLo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=85M7N77SMLo",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-P1eP-mY96Xo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=P1eP-mY96Xo",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-6mTROgsEF-A",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=6mTROgsEF-A",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-MS2koKyCAzw",
+          "title": "S02E11 - He-Man and the Masters of the Universe - The Great Books Mystery",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 1285,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-MS2koKyCAzw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=MS2koKyCAzw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source--E2D1j4ivOo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=-E2D1j4ivOo",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-V869-0h4ouQ",
+          "title": "S02E10 - He-Man and the Masters of the Universe - Trouble in Trolla",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 1284,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-V869-0h4ouQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=V869-0h4ouQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-43vb1-20nDc",
+          "title": "S01E51 - He-Man and the Masters of the Universe - Dree Elle's Return",
+          "season": 1,
+          "number": 51,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-43vb1-20nDc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=43vb1-20nDc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-8EHPILiLpDY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=8EHPILiLpDY",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-VSNUDfV7WSg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=VSNUDfV7WSg",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-QWJUrC5iwWw",
+          "title": "S01E38 - He-Man and the Masters of the Universe - Teela's Trial",
+          "season": 1,
+          "number": 38,
+          "durationSeconds": 1284,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-QWJUrC5iwWw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=QWJUrC5iwWw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-VVbMqDzwvtc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=VVbMqDzwvtc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-9_zYEg9eZZo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=9_zYEg9eZZo",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-8FbNe8Dj1l8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=8FbNe8Dj1l8",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-YO9Y06kmehY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=YO9Y06kmehY",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-rNzSdA630r0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=rNzSdA630r0",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-F6Oan4VM4rc",
+          "title": "S01E50 - He-Man and the Masters of the Universe - Wizard of Stone Mountain",
+          "season": 1,
+          "number": 50,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-F6Oan4VM4rc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=F6Oan4VM4rc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-YprdwcSmlYQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=YprdwcSmlYQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-eyf6RLzFpdQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=eyf6RLzFpdQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-R9NLEQpFVdA",
+          "title": "S01E28 - He-Man and the Masters of the Universe - Valley of Power",
+          "season": 1,
+          "number": 28,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-R9NLEQpFVdA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=R9NLEQpFVdA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-iczKmJrs4Jc",
+          "title": "S02E36 - He-Man and the Masters of the Universe - Hunt for He Man",
+          "season": 2,
+          "number": 36,
+          "durationSeconds": 1252,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-iczKmJrs4Jc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=iczKmJrs4Jc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-dvigWxAlL5M",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=dvigWxAlL5M",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-t_lhs-bKLBM",
+          "title": "S02E02 - He-Man and the Masters of the Universe - The Energy Beast",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-t_lhs-bKLBM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=t_lhs-bKLBM",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-j2jSt8KPBwk",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=j2jSt8KPBwk",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-8PJkIE4QBMg",
+          "title": "S02E41 - He-Man and the Masters of the Universe - The Bitter Rose",
+          "season": 2,
+          "number": 41,
+          "durationSeconds": 1288,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-8PJkIE4QBMg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=8PJkIE4QBMg",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-zBMaV9WpUEU",
+          "title": "S02E04 - He-Man and the Masters of the Universe - The Gamesman",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 1285,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-zBMaV9WpUEU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=zBMaV9WpUEU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-H6wFKXbAkI8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=H6wFKXbAkI8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-Lz9frgyo9cw",
+          "title": "S02E28 - He-Man and the Masters of the Universe - One for All",
+          "season": 2,
+          "number": 28,
+          "durationSeconds": 1288,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Lz9frgyo9cw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Lz9frgyo9cw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-4ashT497hsw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=4ashT497hsw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-TT6w_ghx4Ik",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=TT6w_ghx4Ik",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-fcZjbPrQl-U",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=fcZjbPrQl-U",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-GR8bZp94meA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=GR8bZp94meA",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-7ImPzU1jMkI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=7ImPzU1jMkI",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-JbdqdrcXzWA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=JbdqdrcXzWA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-Zo_VGubfjTQ",
+          "title": "S02E24 - He-Man and the Masters of the Universe - A Trip to Morainia",
+          "season": 2,
+          "number": 24,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Zo_VGubfjTQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Zo_VGubfjTQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-wkWsEBRSlWo",
+          "title": "S02E07 - He-Man and the Masters of the Universe - The Good Shall Survive",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 1281,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-wkWsEBRSlWo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=wkWsEBRSlWo",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-Y2rDrPydNEU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Y2rDrPydNEU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-VyYD_ff_i4c",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=VyYD_ff_i4c",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-HXgz_9tZLDE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=HXgz_9tZLDE",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-cwbbvKFVv2g",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=cwbbvKFVv2g",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-vf6MX_48mBs",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=vf6MX_48mBs",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-i7JH7U2AOao",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=i7JH7U2AOao",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-eVdUVUhG-TU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=eVdUVUhG-TU",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-kwUaxfWxw-I",
+          "title": "S02E64 - He-Man and the Masters of the Universe - To Save the Creatures",
+          "season": 2,
+          "number": 64,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-kwUaxfWxw-I",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=kwUaxfWxw-I",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-ez9Py2gNR0o",
+          "title": "S02E44 - He-Man and the Masters of the Universe - Orko's New Friend",
+          "season": 2,
+          "number": 44,
+          "durationSeconds": 1285,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-ez9Py2gNR0o",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=ez9Py2gNR0o",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-OK72jFor0RI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=OK72jFor0RI",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-NYG2qLDVozg",
+          "title": "S02E34 - He-Man and the Masters of the Universe - The Time Wheel",
+          "season": 2,
+          "number": 34,
+          "durationSeconds": 1258,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-NYG2qLDVozg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=NYG2qLDVozg",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-WZrvJUFJ5cE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=WZrvJUFJ5cE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-xuLHy_EKaQU",
+          "title": "S02E37 - He-Man and the Masters of the Universe - The Greatest Show on Eternia",
+          "season": 2,
+          "number": 37,
+          "durationSeconds": 1282,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-xuLHy_EKaQU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=xuLHy_EKaQU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-nn4Yka1tUNU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=nn4Yka1tUNU",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-fSgbp8FzLmk",
+          "title": "S02E31 - He-Man and the Masters of the Universe - Journey to Stone City",
+          "season": 2,
+          "number": 31,
+          "durationSeconds": 1287,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-fSgbp8FzLmk",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=fSgbp8FzLmk",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-hzdE3NodXP4",
+          "title": "S02E53 - He-Man and the Masters of the Universe - Orko's Return",
+          "season": 2,
+          "number": 53,
+          "durationSeconds": 1282,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-hzdE3NodXP4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=hzdE3NodXP4",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-vRbNUNIc8-I",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=vRbNUNIc8-I",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-vKAzLlyb5Ig",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=vKAzLlyb5Ig",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-k9lyPrv8SYU",
+          "title": "S02E20 - He-Man and the Masters of the Universe - Attack From Below",
+          "season": 2,
+          "number": 20,
+          "durationSeconds": 1288,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-k9lyPrv8SYU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=k9lyPrv8SYU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source--r34tGXfPP4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=-r34tGXfPP4",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-Rtf3cEv-LqE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Rtf3cEv-LqE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-UB2-7QMBIQc",
+          "title": "S01E49 - He-Man and the Masters of the Universe - Temple of the Sun",
+          "season": 1,
+          "number": 49,
+          "durationSeconds": 1284,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-UB2-7QMBIQc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=UB2-7QMBIQc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-3-TnsOwKLwQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=3-TnsOwKLwQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-3hsHx_DM5DM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=3hsHx_DM5DM",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-8QAPyZMygEU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=8QAPyZMygEU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-0-xK7hpqw2s",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=0-xK7hpqw2s",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-iR2xSXPRkhY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=iR2xSXPRkhY",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-3lxJmtGWks0",
+          "title": "S02E62 - He-Man and the Masters of the Universe - The Ancient Mirror of Avathar",
+          "season": 2,
+          "number": 62,
+          "durationSeconds": 1280,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-3lxJmtGWks0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=3lxJmtGWks0",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-om_X27lJ5QA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=om_X27lJ5QA",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-nCNvrYEOqYg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=nCNvrYEOqYg",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-WpEdCaZ__rA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=WpEdCaZ__rA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-pO2Y9Ln7U7E",
+          "title": "S02E61 - He-Man and the Masters of the Universe - Capture the Comet Keeper",
+          "season": 2,
+          "number": 61,
+          "durationSeconds": 1280,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-pO2Y9Ln7U7E",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=pO2Y9Ln7U7E",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-t7LV5dNp-Mw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=t7LV5dNp-Mw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-lEWt_gPlNag",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=lEWt_gPlNag",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-rANXaS765gE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=rANXaS765gE",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-9qBXu5VAn5Y",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=9qBXu5VAn5Y",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-XIloMkXmxgw",
+          "title": "S01E52 - He-Man and the Masters of the Universe - The Sleepers Awaken",
+          "season": 1,
+          "number": 52,
+          "durationSeconds": 1285,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-XIloMkXmxgw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=XIloMkXmxgw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-CE4TBLH9qWI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=CE4TBLH9qWI",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-bVwEscRQpHA",
+          "title": "S02E35 - He-Man and the Masters of the Universe - Search for the Past",
+          "season": 2,
+          "number": 35,
+          "durationSeconds": 1285,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-bVwEscRQpHA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=bVwEscRQpHA",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-4ktVCAOza18",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=4ktVCAOza18",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-1SJBsmeukLQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=1SJBsmeukLQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-eXyvlSczH4M",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=eXyvlSczH4M",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-zk7YsNWSa2c",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=zk7YsNWSa2c",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-fop1GhLKBhA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=fop1GhLKBhA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-_nRvWwmnRO0",
+          "title": "S01E47 - He-Man and the Masters of the Universe - Trouble in Arcadia",
+          "season": 1,
+          "number": 47,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-_nRvWwmnRO0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=_nRvWwmnRO0",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-YKm3bwNhh20",
+          "title": "S02E42 - He-Man and the Masters of the Universe - The Gambler",
+          "season": 2,
+          "number": 42,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-YKm3bwNhh20",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=YKm3bwNhh20",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-6-fkWKYfCpY",
+          "title": "S02E30 - He-Man and the Masters of the Universe - Trouble's Middle Name",
+          "season": 2,
+          "number": 30,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-6-fkWKYfCpY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=6-fkWKYfCpY",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-clFvD4K6YiQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=clFvD4K6YiQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-gEIkRwVct6s",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=gEIkRwVct6s",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-bYS0wo_pEh8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=bYS0wo_pEh8",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-NUhACtgNxi4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=NUhACtgNxi4",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-T1y6bsaW8ho",
+          "title": "S01E29 - He-Man and the Masters of the Universe - Game Plan",
+          "season": 1,
+          "number": 29,
+          "durationSeconds": 1288,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-T1y6bsaW8ho",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=T1y6bsaW8ho",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-d81z9Vh6xvQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=d81z9Vh6xvQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-Z02i8lRZkeQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Z02i8lRZkeQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-tYT5Xm4Nwho",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=tYT5Xm4Nwho",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-y-a_uroBzb0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=y-a_uroBzb0",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-cG4KsjCMyzM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=cG4KsjCMyzM",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-yUDhPhY-GjE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=yUDhPhY-GjE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-5Igl4soOn0c",
+          "title": "S01E65 - He-Man and the Masters of the Universe - The Heart of a Giant",
+          "season": 1,
+          "number": 65,
+          "durationSeconds": 1314,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-5Igl4soOn0c",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=5Igl4soOn0c",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-lP3-fFD6anU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=lP3-fFD6anU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-7_LnMqU46KA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=7_LnMqU46KA",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-OzwzzNzdU7U",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=OzwzzNzdU7U",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-kflpQaK-tYE",
+          "title": "S02E14 - He-Man and the Masters of the Universe - The Ice Age Cometh",
+          "season": 2,
+          "number": 14,
+          "durationSeconds": 1285,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-kflpQaK-tYE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=kflpQaK-tYE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-DpCzkHfLJRc",
+          "title": "S02E47 - He-Man and the Masters of the Universe - The Eternia Flower",
+          "season": 2,
+          "number": 47,
+          "durationSeconds": 1283,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-DpCzkHfLJRc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=DpCzkHfLJRc",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-ZrjwtAkcGms",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=ZrjwtAkcGms",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-2f85CearM1E",
+          "title": "S02E03 - He-Man and the Masters of the Universe - Fisto's Forest",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 1288,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-2f85CearM1E",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=2f85CearM1E",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-khJDnYmhS_A",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=khJDnYmhS_A",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-za6wnaJ1gmg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=za6wnaJ1gmg",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-17RpMlnY8NE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=17RpMlnY8NE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-aZXa_PhGjkU",
+          "title": "S02E27 - He-Man and the Masters of the Universe - Just a Little Lie",
+          "season": 2,
+          "number": 27,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-aZXa_PhGjkU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=aZXa_PhGjkU",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-tc1fgOyvoPY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=tc1fgOyvoPY",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-nsmWl-epqbE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=nsmWl-epqbE",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-FKLHg2RkGLQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=FKLHg2RkGLQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-dbvOWJ1NZZs",
+          "title": "S01E56 - He-Man and the Masters of the Universe - The Huntsman",
+          "season": 1,
+          "number": 56,
+          "durationSeconds": 1286,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-dbvOWJ1NZZs",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=dbvOWJ1NZZs",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-zF1ci99FobY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=zF1ci99FobY",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-krhZrkqUAgI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=krhZrkqUAgI",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-ISYmRJ8XPD8",
+          "title": "S02E33 - He-Man and the Masters of the Universe - Battlecat",
+          "season": 2,
+          "number": 33,
+          "durationSeconds": 1287,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-ISYmRJ8XPD8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=ISYmRJ8XPD8",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-0fpNuV5qbsk",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=0fpNuV5qbsk",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-Fz_ZHKz7Djo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Fz_ZHKz7Djo",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-TQCp0fldYxU",
+          "title": "S01E39 - He-Man and the Masters of the Universe - The Starchild",
+          "season": 1,
+          "number": 39,
+          "durationSeconds": 1284,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-TQCp0fldYxU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=TQCp0fldYxU",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-onXrZcu9w1Q",
+          "title": "S01E45 - He-Man and the Masters of the Universe - Eye of the Beholder",
+          "season": 1,
+          "number": 45,
+          "durationSeconds": 1285,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-onXrZcu9w1Q",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=onXrZcu9w1Q",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-38O_xc4Ubs0",
+          "title": "S02E63 - He-Man and the Masters of the Universe - The Games",
+          "season": 2,
+          "number": 63,
+          "durationSeconds": 1287,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-38O_xc4Ubs0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=38O_xc4Ubs0",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-d6sQRRU0acQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=d6sQRRU0acQ",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-BxIPZOkpYas",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=BxIPZOkpYas",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-puHfTBegFKs",
+          "title": "S02E59 - He-Man and the Masters of the Universe - The Toy Maker",
+          "season": 2,
+          "number": 59,
+          "durationSeconds": 1280,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-puHfTBegFKs",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=puHfTBegFKs",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-vFQRdu4_oM4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=vFQRdu4_oM4",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-K__S3mFhvX4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=K__S3mFhvX4",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-kMKtVaIMsyg",
+          "title": "S02E09 - He-Man and the Masters of the Universe - The Cat and the Spider",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 3815,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-kMKtVaIMsyg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=kMKtVaIMsyg",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-x93d0Wj7gao",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=x93d0Wj7gao",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-GLWxJ8d1wu8",
+          "title": "S01E59 - He-Man and the Masters of the Universe - Evilseed",
+          "season": 1,
+          "number": 59,
+          "durationSeconds": 1292,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-GLWxJ8d1wu8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=GLWxJ8d1wu8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-he-man-gmfzKotk2hE",
+          "title": "S02E54 - He-Man and the Masters of the Universe - Visitors From Earth",
+          "season": 2,
+          "number": 54,
+          "durationSeconds": 1295,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-gmfzKotk2hE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=gmfzKotk2hE",
+              "availability": "unverified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        "https://www.youtube.com/playlist?list=PLLCcmBcBRcT8MwyYwiydNddtZPSSV_iQs",
+        "https://www.youtube.com/playlist?list=PLLCcmBcBRcT_UJXI8UW_wLM2xthxoCkYj",
+        "https://www.youtube.com/results?search_query=He-Man%20and%20the%20Masters%20of%20the%20Universe%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Playlist returned 748 entries; individual 18\u201365 minute candidates retained. Playlist labels are not used to infer episode numbering; entries without explicit numbering remain season 0.",
+        "Playlist returned 215 entries; individual 18\u201365 minute candidates retained. Playlist labels are not used to infer episode numbering; entries without explicit numbering remain season 0.",
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded.",
+        "Exact canonical episode-title matches against Archive original-series filenames: 110. Excluded 85 ambiguous retitles/commentaries/specials. S/E only copied after exact title match."
+      ]
+    },
+    {
+      "showId": "gi-joe",
+      "title": "G.I. Joe: A Real American Hero",
+      "episodes": [
+        {
+          "id": "youtube-gi-joe-MBaZHONIWOM",
+          "title": "The Cobra Strikes",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-MBaZHONIWOM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=MBaZHONIWOM",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-6ca6XHgFdrQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=6ca6XHgFdrQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-qzZJWnoWF9M",
+          "title": "The Great Alaskan Land Rush",
+          "season": 1,
+          "number": 52,
+          "durationSeconds": 1341,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-qzZJWnoWF9M",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=qzZJWnoWF9M",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-_B8_J6ldl0Q",
+          "title": "Excalibur",
+          "season": 1,
+          "number": 35,
+          "durationSeconds": 1339,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-_B8_J6ldl0Q",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=_B8_J6ldl0Q",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-TiQYSjN-3b8",
+          "title": "Sink the Montana!",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 1340,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-TiQYSjN-3b8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=TiQYSjN-3b8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-GwJHisidDJ8",
+          "title": "Hearts and Cannons",
+          "season": 1,
+          "number": 44,
+          "durationSeconds": 1342,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-GwJHisidDJ8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=GwJHisidDJ8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-JUM5ulKcqPY",
+          "title": "The Phantom Brigade",
+          "season": 1,
+          "number": 18,
+          "durationSeconds": 1340,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-JUM5ulKcqPY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=JUM5ulKcqPY",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-YS7Jr9dALAc",
+          "title": "Battle on the Roof of the World",
+          "season": 0,
+          "number": 7,
+          "durationSeconds": 1370,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-YS7Jr9dALAc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=YS7Jr9dALAc",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-VEvuQnUoE50",
+          "title": "The Invaders",
+          "season": 1,
+          "number": 50,
+          "durationSeconds": 1339,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-VEvuQnUoE50",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=VEvuQnUoE50",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-JnLpGdxQibw",
+          "title": "Duel in the Devil's Cauldron",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 1372,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-JnLpGdxQibw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=JnLpGdxQibw",
+              "availability": "unverified"
+            },
+            {
+              "id": "source--CWow-MR688",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=-CWow-MR688",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-eY2gsiJcM6U",
+          "title": "G.I. Joe and the Golden Fleece",
+          "season": 2,
+          "number": 22,
+          "durationSeconds": 1342,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-eY2gsiJcM6U",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=eY2gsiJcM6U",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-Jo6RH1HG9oI",
+          "title": "A Stake in the Serpent's Heart",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 1368,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Jo6RH1HG9oI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Jo6RH1HG9oI",
+              "availability": "unverified"
+            },
+            {
+              "id": "source-XsflXEyjQMs",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=XsflXEyjQMs",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-0RNwlNZ9bsg",
+          "title": "Money to Burn",
+          "season": 1,
+          "number": 21,
+          "durationSeconds": 1335,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-0RNwlNZ9bsg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=0RNwlNZ9bsg",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-TWi42gQKDGY",
+          "title": "Arise, Serpentor, Arise: Pt 1",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-TWi42gQKDGY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=TWi42gQKDGY",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-kXbOdJhDPFE",
+          "title": "Operation: Mind Menace",
+          "season": 1,
+          "number": 22,
+          "durationSeconds": 1336,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-kXbOdJhDPFE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=kXbOdJhDPFE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-S0Xw3Jv5xUU",
+          "title": "The Synthoid Conspiracy: Pt 1",
+          "season": 0,
+          "number": 15,
+          "durationSeconds": 1334,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-S0Xw3Jv5xUU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=S0Xw3Jv5xUU",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-m4DrF2x6Jxc",
+          "title": "Rendezvous in the City of the Dead",
+          "season": 0,
+          "number": 16,
+          "durationSeconds": 1341,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-m4DrF2x6Jxc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=m4DrF2x6Jxc",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-gi-joe-z1f-_s6EqXc",
+          "title": "The Worms of Death",
+          "season": 0,
+          "number": 17,
+          "durationSeconds": 1370,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-z1f-_s6EqXc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=z1f-_s6EqXc",
+              "availability": "unverified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        "https://www.youtube.com/playlist?list=PLD3dCMp2WHiybR7JHPrZjLN21YZLTmM3T",
+        "https://www.youtube.com/results?search_query=G.I.%20Joe%3A%20A%20Real%20American%20Hero%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Playlist returned 42 entries; individual 18\u201365 minute candidates retained. Playlist labels are not used to infer episode numbering; entries without explicit numbering remain season 0.",
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded.",
+        "Removed non-episode fanstream/interview videos. G.I. Joe positive S/E retained only where number and title agree with Archive; conflicting miniseries numbering stays season zero."
+      ]
+    },
+    {
+      "showId": "transformers",
+      "title": "The Transformers",
+      "episodes": [
+        {
+          "id": "youtube-transformers-Y1ujpoDlgRU",
+          "title": "More Than Meets the Eye, Part 1",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1375,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Y1ujpoDlgRU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Y1ujpoDlgRU",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-07yYfhX69Ac",
+          "title": "Transport to Oblivion",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1372,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-07yYfhX69Ac",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=07yYfhX69Ac",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-W3eHpAV5gVA",
+          "title": "The Ultimate Doom: Brainwash, Part 1",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1374,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-W3eHpAV5gVA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=W3eHpAV5gVA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-SX36bwRNqoo",
+          "title": "The Ultimate Doom: Search, Part 2",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1374,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-SX36bwRNqoo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=SX36bwRNqoo",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-42tsk3EJLpo",
+          "title": "The Ultimate Doom: Revival, Part 3",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1373,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-42tsk3EJLpo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=42tsk3EJLpo",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-vxc1X6RRCDU",
+          "title": "Countdown to Extinction",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1373,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-vxc1X6RRCDU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=vxc1X6RRCDU",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-g4eqsJ72_7Q",
+          "title": "Heavy Metal War",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 1374,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-g4eqsJ72_7Q",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=g4eqsJ72_7Q",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-Fzq3C4hkfNE",
+          "title": "Fire on the Mountain",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 1374,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Fzq3C4hkfNE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Fzq3C4hkfNE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-xGRGcFYVWVs",
+          "title": "A Plague of Insecticons",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 1374,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-xGRGcFYVWVs",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=xGRGcFYVWVs",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-Q1C1W-jy0P4",
+          "title": "Autobot Spike",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1370,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Q1C1W-jy0P4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Q1C1W-jy0P4",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-xCjvxGsZSd8",
+          "title": "The Immobilizer",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1372,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-xCjvxGsZSd8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=xCjvxGsZSd8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-JhEihzYFJa4",
+          "title": "Dinobot Island, Part 1",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 1370,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-JhEihzYFJa4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=JhEihzYFJa4",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-aHIXhia5iks",
+          "title": "Dinobot Island, Part 2",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 1371,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-aHIXhia5iks",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=aHIXhia5iks",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-hL_RPkuFnhQ",
+          "title": "Traitor",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 1371,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-hL_RPkuFnhQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=hL_RPkuFnhQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-p2-lYBZE0pI",
+          "title": "Enter the Nightbird",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 1369,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-p2-lYBZE0pI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=p2-lYBZE0pI",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-pHFIS9SJrTs",
+          "title": "Changing Gears",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 1371,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-pHFIS9SJrTs",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=pHFIS9SJrTs",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-6qKD1M1m6sE",
+          "title": "A Prime Problem",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 1371,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-6qKD1M1m6sE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=6qKD1M1m6sE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-RWnwAYPMf2A",
+          "title": "Atlantis, Arise!",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 1372,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-RWnwAYPMf2A",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=RWnwAYPMf2A",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-9EkvcT7kffI",
+          "title": "Attack of the Autobots",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 1371,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-9EkvcT7kffI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=9EkvcT7kffI",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-2kDzSX7cqXM",
+          "title": "Microbots",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 1373,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-2kDzSX7cqXM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=2kDzSX7cqXM",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-KiI9D4OdF4s",
+          "title": "The Master Builders",
+          "season": 2,
+          "number": 12,
+          "durationSeconds": 1371,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-KiI9D4OdF4s",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=KiI9D4OdF4s",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-JirBBylyQuA",
+          "title": "The Insecticon Syndrome",
+          "season": 2,
+          "number": 13,
+          "durationSeconds": 1371,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-JirBBylyQuA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=JirBBylyQuA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-yG5GwNKW1RE",
+          "title": "Day of the Machines",
+          "season": 2,
+          "number": 14,
+          "durationSeconds": 1371,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-yG5GwNKW1RE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=yG5GwNKW1RE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-H-ORZc1G3MI",
+          "title": "Megatron's Master Plan, Part 1",
+          "season": 2,
+          "number": 15,
+          "durationSeconds": 1371,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-H-ORZc1G3MI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=H-ORZc1G3MI",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-6-MmB0ZkqJA",
+          "title": "Megatron's Master Plan, Part 2",
+          "season": 2,
+          "number": 16,
+          "durationSeconds": 1371,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-6-MmB0ZkqJA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=6-MmB0ZkqJA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-cqIcrdhYl0U",
+          "title": "Auto Berserk",
+          "season": 2,
+          "number": 17,
+          "durationSeconds": 1369,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-cqIcrdhYl0U",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=cqIcrdhYl0U",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-fe6sGQHFbW8",
+          "title": "Desertion of the Dinobots, Part 1",
+          "season": 2,
+          "number": 19,
+          "durationSeconds": 1369,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-fe6sGQHFbW8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=fe6sGQHFbW8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-Ic5hLhxDaZ8",
+          "title": "Desertion of the Dinobots, Part 2",
+          "season": 2,
+          "number": 20,
+          "durationSeconds": 1368,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Ic5hLhxDaZ8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Ic5hLhxDaZ8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-ssYDHaF0Ba4",
+          "title": "Blaster Blues",
+          "season": 2,
+          "number": 21,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-ssYDHaF0Ba4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=ssYDHaF0Ba4",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-ci98CseGP-g",
+          "title": "Decepticon Raider in King Arthur's Court",
+          "season": 2,
+          "number": 22,
+          "durationSeconds": 1368,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-ci98CseGP-g",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=ci98CseGP-g",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-esXU944Otqs",
+          "title": "The God Gambit",
+          "season": 2,
+          "number": 23,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-esXU944Otqs",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=esXU944Otqs",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-HEXja5bHm30",
+          "title": "The Core",
+          "season": 2,
+          "number": 24,
+          "durationSeconds": 1363,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-HEXja5bHm30",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=HEXja5bHm30",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers--4O0At12xIo",
+          "title": "Make Tracks",
+          "season": 2,
+          "number": 25,
+          "durationSeconds": 1369,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source--4O0At12xIo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=-4O0At12xIo",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-8c2Hk7F2QHA",
+          "title": "The Autobot Run",
+          "season": 2,
+          "number": 26,
+          "durationSeconds": 1370,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-8c2Hk7F2QHA",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=8c2Hk7F2QHA",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-MiFxHUHY83Q",
+          "title": "The Golden Lagoon",
+          "season": 2,
+          "number": 27,
+          "durationSeconds": 1370,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-MiFxHUHY83Q",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=MiFxHUHY83Q",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-UxgpOOj0lno",
+          "title": "Quest for Survival",
+          "season": 2,
+          "number": 28,
+          "durationSeconds": 1369,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-UxgpOOj0lno",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=UxgpOOj0lno",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-gxSuO3yb4C4",
+          "title": "The Secret of Omega Supreme",
+          "season": 2,
+          "number": 29,
+          "durationSeconds": 1371,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-gxSuO3yb4C4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=gxSuO3yb4C4",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-sylClO7EMcc",
+          "title": "Child's Play",
+          "season": 2,
+          "number": 30,
+          "durationSeconds": 1368,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-sylClO7EMcc",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=sylClO7EMcc",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-aTNQz3vJ9WY",
+          "title": "The Gambler",
+          "season": 2,
+          "number": 31,
+          "durationSeconds": 1362,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-aTNQz3vJ9WY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=aTNQz3vJ9WY",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-OvK_aAyizUk",
+          "title": "The Search for Alpha Trion",
+          "season": 2,
+          "number": 32,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-OvK_aAyizUk",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=OvK_aAyizUk",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-3Lzwjpg5rbg",
+          "title": "Auto-Bop",
+          "season": 2,
+          "number": 33,
+          "durationSeconds": 1366,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-3Lzwjpg5rbg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=3Lzwjpg5rbg",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-SBcYNLUkYro",
+          "title": "Prime Target",
+          "season": 2,
+          "number": 34,
+          "durationSeconds": 1365,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-SBcYNLUkYro",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=SBcYNLUkYro",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-8nRZRrP3meY",
+          "title": "The Girl Who Loved Powerglide",
+          "season": 2,
+          "number": 35,
+          "durationSeconds": 1370,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-8nRZRrP3meY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=8nRZRrP3meY",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-hMPu4Adi7JQ",
+          "title": "Triple Takeover",
+          "season": 2,
+          "number": 36,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-hMPu4Adi7JQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=hMPu4Adi7JQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-LcQuQ_lhsKE",
+          "title": "Sea Change",
+          "season": 2,
+          "number": 37,
+          "durationSeconds": 1374,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-LcQuQ_lhsKE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=LcQuQ_lhsKE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers--bP3_ADBgdI",
+          "title": "Hoist Goes Hollywood",
+          "season": 2,
+          "number": 38,
+          "durationSeconds": 1370,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source--bP3_ADBgdI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=-bP3_ADBgdI",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-SAn3Z1Q6lZY",
+          "title": "The Key to Vector Sigma, Part 1",
+          "season": 2,
+          "number": 39,
+          "durationSeconds": 1369,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-SAn3Z1Q6lZY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=SAn3Z1Q6lZY",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-QLTSas9_j18",
+          "title": "The Key to Vector Sigma, Part 2",
+          "season": 2,
+          "number": 40,
+          "durationSeconds": 1372,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-QLTSas9_j18",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=QLTSas9_j18",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-PcgFqw6VSz4",
+          "title": "Masquerade",
+          "season": 2,
+          "number": 41,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-PcgFqw6VSz4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=PcgFqw6VSz4",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-_0YtvwNsHFE",
+          "title": "Trans-Europe Express",
+          "season": 2,
+          "number": 42,
+          "durationSeconds": 1366,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-_0YtvwNsHFE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=_0YtvwNsHFE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-Y91ub4HPH7M",
+          "title": "War Dawn",
+          "season": 2,
+          "number": 43,
+          "durationSeconds": 1350,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Y91ub4HPH7M",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Y91ub4HPH7M",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-qHtBgU2JDK8",
+          "title": "Cosmic Rust",
+          "season": 2,
+          "number": 44,
+          "durationSeconds": 1372,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-qHtBgU2JDK8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=qHtBgU2JDK8",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-sPpRqoQ-iTs",
+          "title": "Kremzeek!",
+          "season": 2,
+          "number": 45,
+          "durationSeconds": 1365,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-sPpRqoQ-iTs",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=sPpRqoQ-iTs",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-CdeazdZCDfg",
+          "title": "Starscream's Brigade",
+          "season": 2,
+          "number": 46,
+          "durationSeconds": 1364,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-CdeazdZCDfg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=CdeazdZCDfg",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-dMJTJW7_b2Q",
+          "title": "The Revenge of Bruticus",
+          "season": 2,
+          "number": 47,
+          "durationSeconds": 1365,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-dMJTJW7_b2Q",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=dMJTJW7_b2Q",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-cw39DfL2h9E",
+          "title": "Aerial Assault",
+          "season": 2,
+          "number": 48,
+          "durationSeconds": 1366,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-cw39DfL2h9E",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=cw39DfL2h9E",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-Rp7qxd3c31s",
+          "title": "Five Faces of Darkness, Part 1",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 1365,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Rp7qxd3c31s",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Rp7qxd3c31s",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-p3lMYnL28nw",
+          "title": "Five Faces of Darkness, Part 2",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-p3lMYnL28nw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=p3lMYnL28nw",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-Ll4Ep9norOU",
+          "title": "Five Faces of Darkness, Part 3",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Ll4Ep9norOU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Ll4Ep9norOU",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-JE49Ym3jhVE",
+          "title": "Five Faces of Darkness, Part 4",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-JE49Ym3jhVE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=JE49Ym3jhVE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-iBNvcUWzlpg",
+          "title": "Five Faces of Darkness, Part 5",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-iBNvcUWzlpg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=iBNvcUWzlpg",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-Yj8fFw958NI",
+          "title": "The Killing Jar",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Yj8fFw958NI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Yj8fFw958NI",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-XbATwtlvPzI",
+          "title": "Chaos",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-XbATwtlvPzI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=XbATwtlvPzI",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-fOFKJPQUKRw",
+          "title": "Dark Awakening",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-fOFKJPQUKRw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=fOFKJPQUKRw",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-sHP5krp4uec",
+          "title": "Starscream's Ghost",
+          "season": 3,
+          "number": 9,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-sHP5krp4uec",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=sHP5krp4uec",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-wJRbObSEAIY",
+          "title": "Thief in the Night",
+          "season": 3,
+          "number": 10,
+          "durationSeconds": 1366,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-wJRbObSEAIY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=wJRbObSEAIY",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-I8FkCvWUhUY",
+          "title": "Forever is a Long Time Coming",
+          "season": 3,
+          "number": 11,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-I8FkCvWUhUY",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=I8FkCvWUhUY",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-twnTerxqlUI",
+          "title": "Surprise Party",
+          "season": 3,
+          "number": 12,
+          "durationSeconds": 1268,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-twnTerxqlUI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=twnTerxqlUI",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-th21FtuiSZI",
+          "title": "Madman's Paradise",
+          "season": 3,
+          "number": 13,
+          "durationSeconds": 1366,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-th21FtuiSZI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=th21FtuiSZI",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-Mm4ZFBIV4gM",
+          "title": "Carnage in C-Minor",
+          "season": 3,
+          "number": 14,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Mm4ZFBIV4gM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Mm4ZFBIV4gM",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-y-8bI8joNCQ",
+          "title": "Fight or Flee",
+          "season": 3,
+          "number": 15,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-y-8bI8joNCQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=y-8bI8joNCQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-WBOS7GgcSp0",
+          "title": "Webworld",
+          "season": 3,
+          "number": 16,
+          "durationSeconds": 1365,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-WBOS7GgcSp0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=WBOS7GgcSp0",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-xgCa2IVYnqg",
+          "title": "Ghost in the Machine",
+          "season": 3,
+          "number": 17,
+          "durationSeconds": 1365,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-xgCa2IVYnqg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=xgCa2IVYnqg",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-YTiB-r1o_Ns",
+          "title": "The Dweller in the Depths",
+          "season": 3,
+          "number": 18,
+          "durationSeconds": 1364,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-YTiB-r1o_Ns",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=YTiB-r1o_Ns",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-5CV_gB4p6dE",
+          "title": "Nightmare Planet",
+          "season": 3,
+          "number": 19,
+          "durationSeconds": 1359,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-5CV_gB4p6dE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=5CV_gB4p6dE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-88jH4R7dp2k",
+          "title": "The Ultimate Weapon",
+          "season": 3,
+          "number": 20,
+          "durationSeconds": 1367,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-88jH4R7dp2k",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=88jH4R7dp2k",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-baQmh5f34h0",
+          "title": "The Quintesson Journal",
+          "season": 3,
+          "number": 21,
+          "durationSeconds": 1365,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-baQmh5f34h0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=baQmh5f34h0",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-z1lmRZ1RnWg",
+          "title": "The Big Broadcast of 2006",
+          "season": 3,
+          "number": 22,
+          "durationSeconds": 1364,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-z1lmRZ1RnWg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=z1lmRZ1RnWg",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-yUth1weMps0",
+          "title": "Only Human",
+          "season": 3,
+          "number": 23,
+          "durationSeconds": 1365,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-yUth1weMps0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=yUth1weMps0",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-Y32IZVXBU9s",
+          "title": "Grimlock's New Brain",
+          "season": 3,
+          "number": 24,
+          "durationSeconds": 1365,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Y32IZVXBU9s",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Y32IZVXBU9s",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-Z3r-Xtuha8s",
+          "title": "Money is Everything",
+          "season": 3,
+          "number": 25,
+          "durationSeconds": 1364,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Z3r-Xtuha8s",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Z3r-Xtuha8s",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-mwSfiiZsQrU",
+          "title": "Call of the Primitives",
+          "season": 3,
+          "number": 26,
+          "durationSeconds": 1364,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-mwSfiiZsQrU",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=mwSfiiZsQrU",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-tN3QiWn-MOM",
+          "title": "The Burden Hardest to Bear",
+          "season": 3,
+          "number": 27,
+          "durationSeconds": 1244,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-tN3QiWn-MOM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=tN3QiWn-MOM",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-rVrI8N20gpE",
+          "title": "The Face of the Nijika",
+          "season": 3,
+          "number": 28,
+          "durationSeconds": 1364,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-rVrI8N20gpE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=rVrI8N20gpE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-wslJ-Dn9L_g",
+          "title": "Return of Optimus Prime, Part 1",
+          "season": 3,
+          "number": 29,
+          "durationSeconds": 1292,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-wslJ-Dn9L_g",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=wslJ-Dn9L_g",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-NEr_OK8xD1c",
+          "title": "Return of Optimus Prime, Part 2",
+          "season": 3,
+          "number": 30,
+          "durationSeconds": 1364,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-NEr_OK8xD1c",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=NEr_OK8xD1c",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-8oNbcGdO6Og",
+          "title": "The Rebirth, Part 1",
+          "season": 4,
+          "number": 1,
+          "durationSeconds": 1365,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-8oNbcGdO6Og",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=8oNbcGdO6Og",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-mGsJZtfMtrg",
+          "title": "The Rebirth, Part 2",
+          "season": 4,
+          "number": 2,
+          "durationSeconds": 1365,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-mGsJZtfMtrg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=mGsJZtfMtrg",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-MIWeATujz9I",
+          "title": "The Rebirth, Part 3",
+          "season": 4,
+          "number": 3,
+          "durationSeconds": 1366,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-MIWeATujz9I",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=MIWeATujz9I",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-5xOg3uBAL6s",
+          "title": "S.O.S. Dinobots",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1374,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-5xOg3uBAL6s",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=5xOg3uBAL6s",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers--025jnUVxUE",
+          "title": "City of Steel",
+          "season": 2,
+          "number": 18,
+          "durationSeconds": 1368,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source--025jnUVxUE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=-025jnUVxUE",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-UraEBfVEDKQ",
+          "title": "Fire in the Sky",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1374,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-UraEBfVEDKQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=UraEBfVEDKQ",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-NdskAJwHdLw",
+          "title": "More Than Meets the Eye, Part 2",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1374,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-NdskAJwHdLw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=NdskAJwHdLw",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-V6XpDmtizL0",
+          "title": "More Than Meets the Eye, Part 3",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1375,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-V6XpDmtizL0",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=V6XpDmtizL0",
+              "availability": "unverified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-transformers-Cd6-paDJlwo",
+          "title": "Divide and Conquer",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1374,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-Cd6-paDJlwo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Cd6-paDJlwo",
+              "availability": "unverified"
+            }
+          ]
+        }
+      ],
+      "searched": [
+        "https://www.youtube.com/playlist?list=PLD3dCMp2WHixUHTv2TETDETzoB148KoPy",
+        "https://www.youtube.com/results?search_query=The%20Transformers%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Playlist returned 90 entries; individual 18\u201365 minute candidates retained. Playlist labels are not used to infer episode numbering; entries without explicit numbering remain season 0.",
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "mighty-orbots",
+      "title": "Mighty Orbots",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Mighty%20Orbots%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "thundercats",
+      "title": "ThunderCats",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=ThunderCats%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "voltron",
+      "title": "Voltron",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Voltron%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "mask",
+      "title": "M.A.S.K.",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=M.A.S.K.%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "silverhawks",
+      "title": "SilverHawks",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=SilverHawks%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "dungeons-dragons",
+      "title": "Dungeons & Dragons",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Dungeons%20%26%20Dragons%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "centurions",
+      "title": "The Centurions",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=The%20Centurions%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "thundarr",
+      "title": "Thundarr the Barbarian",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Thundarr%20the%20Barbarian%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    },
+    {
+      "showId": "inspector-gadget",
+      "title": "Inspector Gadget",
+      "episodes": [],
+      "searched": [
+        "https://www.youtube.com/results?search_query=Inspector%20Gadget%20original%20full%20episodes"
+      ],
+      "notes": [
+        "Search inspected 40 results; only individually titled episodes from explicitly approved brand channels retained. Search is not exhaustive.",
+        "Exact normalized episode-title recuts grouped as alternative sources. Unknown season remains zero. Known failed G.I. Joe embed excluded."
+      ]
+    }
+  ],
+  "curated": true
+}

@@ -1,5 +1,5 @@
 import { STARTER_PACK } from './starter-pack.mjs';
-import { youtubeEpisodes, mergeBatch } from './bulk.mjs';
+import { youtubeEpisodes, mergeBatch, mergeLibraryBatch, discoveryRows } from './bulk.mjs';
 import { CHANNELS, createSeed } from './catalog.mjs';
 import { parseSourceUrl, parseDuration, importArchive, validateCatalog, parseCatalogJson,
   readCatalog, saveCatalog, buildSchedule, schedulePosition, stationSource, timeLabel, MAX_IMPORT_BYTES } from './domain.mjs';
@@ -98,7 +98,8 @@ function renderGuide() {
 function renderLibrary() {
   const query = $('search').value.trim().toLocaleLowerCase();
   const shows = channelShows().filter(s => s.title.toLocaleLowerCase().includes(query));
-  $('library-count').textContent = `${channelShows().length} shows & collections · Add sources to bring them to life.`;
+  const itemCount = channelShows().reduce((n, show) => n + show.episodes.length, 0);
+  $('library-count').textContent = `${channelShows().length} shows & collections · ${itemCount} catalog episodes and items`;
   $('library-empty').hidden = shows.length > 0;
   $('library-grid').replaceChildren(...shows.map(s => {
     const card = element('article', null, 'show-card');
@@ -146,7 +147,7 @@ function openShow(showId) {
     }, 'text-button'));
     row.append(tools); return row;
   });
-  $('show-episodes').replaceChildren(...(rows.length ? rows : [element('p', 'This show is on your wish list. Add an episode source to start watching. No availability is assumed.', 'empty')]));
+  $('show-episodes').replaceChildren(...(rows.length ? rows : [element('p', 'No matched episodes were found in the current public-source search. Add a source if you find another collection.', 'empty')]));
   if (!$('show-dialog').open) $('show-dialog').showModal();
 }
 
@@ -361,7 +362,7 @@ if (loaded.error) notify(loaded.error);
 setInterval(renderGuide, 15000);
 window.addEventListener('pagehide', () => session?.dispose());
 
-let batchRows = [];
+let batchRows = [], batchPage = 0, batchFilter = '', wholeLibrary = false;
 $('bulk-open').addEventListener('click', () => {
   $('bulk-show').replaceChildren(...catalog.shows.map(show => { const option = element('option', show.title); option.value = show.id; return option; }));
   $('bulk-show').value = selectedShowId;
@@ -372,7 +373,8 @@ $('bulk-discover').addEventListener('click', async () => {
   const links = $('bulk-links').value.split(/\n/).map(s => s.trim()).filter(Boolean);
   if (!links.length || links.length > 10) { $('bulk-status').textContent = 'Enter 1–10 source links.'; return; }
   const showId = $('bulk-show').value;
-  $('bulk-discover').disabled = true; $('bulk-starter').disabled = true; $('bulk-transformers').disabled = true; $('bulk-close').disabled = true; $('bulk-approve').hidden = true;
+  wholeLibrary = false; batchPage = 0; batchFilter = ''; $('bulk-coverage').replaceChildren();
+  $('bulk-discover').disabled = true; $('bulk-all').disabled = true; $('bulk-starter').disabled = true; $('bulk-transformers').disabled = true; $('bulk-close').disabled = true; $('bulk-approve').hidden = true;
   $('bulk-preview').replaceChildren(); batchRows = [];
   const errors = [];
   try {
@@ -395,21 +397,31 @@ $('bulk-discover').addEventListener('click', async () => {
     renderBatch();
     $('bulk-status').textContent = `${batchRows.length} episodes ready to review. Duplicate URLs are skipped on approval. ${errors.join(' ')}`;
     $('bulk-approve').hidden = !batchRows.length;
-  } finally { $('bulk-discover').disabled = false; $('bulk-starter').disabled = false; $('bulk-transformers').disabled = false; $('bulk-close').disabled = false; }
+  } finally { $('bulk-discover').disabled = false; $('bulk-all').disabled = false; $('bulk-starter').disabled = false; $('bulk-transformers').disabled = false; $('bulk-close').disabled = false; }
 });
 $('bulk-approve').addEventListener('click', () => {
   try {
-    const result = mergeBatch(catalog, batchRows);
+    const result = wholeLibrary ? mergeLibraryBatch(libraryBase(), batchRows) : mergeBatch(catalog, batchRows);
     if (!commit(result.catalog)) return;
-    batchRows = []; $('bulk-preview').replaceChildren(); $('bulk-approve').hidden = true;
-    $('bulk-status').textContent = `Added ${result.added} ${result.added === 1 ? 'episode' : 'episodes'}; skipped ${result.skipped} duplicates.`;
+    batchRows = []; $('bulk-pages').replaceChildren(); $('bulk-preview').replaceChildren(); $('bulk-approve').hidden = true;
+    $('bulk-status').textContent = `Added ${result.added} ${result.added === 1 ? 'episode' : 'episodes'}; skipped ${result.skipped} duplicates.${result.alternatives ? ` Added ${result.alternatives} alternative sources to existing episodes.` : ''}`;
     render();
   } catch (error) { $('bulk-status').textContent = error.message; }
 });
 
 function renderBatch() {
   $('bulk-preview').replaceChildren();
-    for (const row of batchRows) {
+  const filtered = batchRows.filter(row => !batchFilter || row.showId === batchFilter);
+  const pages = Math.max(1, Math.ceil(filtered.length / 50));
+  batchPage = Math.max(0, Math.min(batchPage, pages - 1));
+  $('bulk-pages').replaceChildren(
+    button('← Previous 50', () => { batchPage--; renderBatch(); }),
+    element('span', `${filtered.length} candidates · page ${batchPage + 1} of ${pages}`),
+    button('Next 50 →', () => { batchPage++; renderBatch(); })
+  );
+  $('bulk-pages').firstChild.disabled = batchPage === 0;
+  $('bulk-pages').lastChild.disabled = batchPage === pages - 1;
+  for (const row of filtered.slice(batchPage * 50, (batchPage + 1) * 50)) {
       const box = element('fieldset', null, 'bulk-row');
       const include = element('input'); include.type = 'checkbox'; include.checked = row.selected;
       const label = element('label', 'Include episode'); label.prepend(include); box.append(label);
@@ -429,6 +441,7 @@ function renderBatch() {
 
 }
 $('bulk-starter').addEventListener('click', () => {
+  wholeLibrary = false; batchPage = 0; batchFilter = ''; $('bulk-coverage').replaceChildren();
   batchRows = STARTER_PACK.map(item => {
     const episode = youtubeEpisodes(item)[0];
     return { selected: true, showId: item.showId, episode };
@@ -441,3 +454,69 @@ $('bulk-transformers').addEventListener('click', () => {
   $('bulk-links').value = 'https://www.youtube.com/playlist?list=PLD3dCMp2WHixUHTv2TETDETzoB148KoPy';
   $('bulk-status').textContent = 'Official Hasbro Pulse collection selected. Choose Discover episodes, then review episode order before adding.';
 });
+
+async function loadWholeLibrary() {
+  $('bulk-status').textContent = 'Loading discovered episodes for every show…';
+  $('bulk-all').disabled = true; $('bulk-discover').disabled = true; $('bulk-starter').disabled = true; $('bulk-approve').hidden = true;
+  try {
+    const { packs } = await fetchLibrary();
+    batchRows = discoveryRows(libraryBase(), packs); wholeLibrary = true; batchPage = 0; batchFilter = '';
+    const filterLabel = element('label', 'Review a show');
+    const filter = element('select'); const all = element('option', 'All shows'); all.value = ''; filter.append(all);
+    const coverage = element('div', null, 'coverage-grid');
+    for (const show of catalog.shows) {
+      const rows = batchRows.filter(row => row.showId === show.id);
+      const option = element('option', `${show.title} · ${rows.length} candidates`); option.value = show.id; filter.append(option);
+      const box = element('div', null, 'coverage-show'); const include = element('input'); include.setAttribute('aria-label', `Include ${show.title}`); include.type = 'checkbox'; include.checked = !!rows.length; include.disabled = !rows.length;
+      include.addEventListener('change', () => { rows.forEach(row => { row.selected = include.checked; }); renderBatch(); });
+      box.append(include, element('span', `${show.title} · ${rows.length ? `${rows.length} candidates` : 'No matched public MP4/official YouTube episodes found'}`));
+      const notes = packs.flatMap(pack => pack.shows.filter(s => s.showId === show.id).flatMap(s => s.notes || []));
+      if (notes.length) { const details = element('details'); details.append(element('summary', 'Search notes'), element('p', notes.join(' '), 'muted')); box.append(details); }
+      coverage.append(box);
+    }
+    filter.addEventListener('change', () => { batchFilter = filter.value; batchPage = 0; renderBatch(); }); filterLabel.append(filter);
+    $('bulk-coverage').replaceChildren(element('p', 'Select shows to include, then review episode details below. Counts are source candidates; matching titles and explicit season/episode pairs will combine alternative sources. Unknown ordering stays separate.', 'muted'), filterLabel, coverage);
+    renderBatch(); $('bulk-approve').hidden = !batchRows.length;
+    const found = new Set(batchRows.map(row => row.showId)).size;
+    $('bulk-status').textContent = `${batchRows.length} source candidates across ${found} shows. Review and add selected episodes. Archive metadata is checked; YouTube playback still needs checking. Search limits and gaps are recorded below.`;
+  } catch (error) { $('bulk-status').textContent = error.message; }
+  finally { $('bulk-all').disabled = false; $('bulk-discover').disabled = false; $('bulk-starter').disabled = false; }
+}
+$('bulk-all').addEventListener('click', loadWholeLibrary);
+$('seed-all').addEventListener('click', () => { $('bulk-open').click(); loadWholeLibrary(); });
+
+function libraryBase() {
+  const base = copyCatalog();
+  for (const show of createSeed().shows) if (!base.shows.some(existing => existing.id === show.id)) base.shows.push({ ...show, episodes: [] });
+  return base;
+}
+const LIBRARY_REVISION_KEY = 'drew-tv.library-revision.v1';
+async function fetchLibrary() {
+  const response = await fetch('data/library-manifest.json');
+  if (!response.ok) throw Error('The expanded episode library is not ready yet.');
+  const manifest = await response.json();
+  if (typeof manifest.revision !== 'string' || !/^[a-z0-9.-]{1,100}$/.test(manifest.revision)) throw Error('Invalid library revision.');
+  const packs = await Promise.all(['action', 'cartoon', 'youtube'].map(async provider => {
+    const response = await fetch(`data/${provider}-discovery.json`);
+    if (!response.ok) throw Error('A library source file could not be loaded. Your catalog is unchanged.');
+    return response.json();
+  }));
+  return { manifest, packs };
+}
+async function installExpandedLibrary() {
+  // A damaged saved catalog must remain recoverable instead of being overwritten.
+  if (loaded.error) return;
+  try {
+    const { manifest, packs } = await fetchLibrary();
+    if (storage.getItem(LIBRARY_REVISION_KEY) === manifest.revision) return;
+    const base = libraryBase();
+    const rows = discoveryRows(base, packs);
+    const result = mergeLibraryBatch(base, rows);
+    if (!commit(result.catalog)) return;
+    try { storage.setItem(LIBRARY_REVISION_KEY, manifest.revision); } catch { /* Repeat imports remain additive and URL-deduplicated. */ }
+    render();
+    if ($('show-dialog').open) openShow(selectedShowId);
+    notify(`Expanded library added: ${result.added} episodes and ${result.alternatives} alternative sources. Existing sources and settings were preserved. YouTube entries still need a playback check.`);
+  } catch (error) { notify(`Expanded library could not be added: ${error.message}`); }
+}
+installExpandedLibrary();
