@@ -92,5 +92,5 @@ export function createSeed() {
         url: 'https://www.youtube.com/watch?v=RmycafPZFl8' }] }],
   });
   return { version: 1, epoch: Date.UTC(2026, 0, 1) / 1000, shows,
-    settings: { channel: 'mixed', bumpers: true, rotation: 'random', shuffleSeed: 1984, storiesPerTurn: 1, streamShow: null } };
+    settings: { channel: 'mixed', bumpers: true, commercialCount: 'random', rotation: 'random', shuffleSeed: 1984, storiesPerTurn: 1, streamShow: null } };
 }

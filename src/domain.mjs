@@ -1,4 +1,4 @@
-import { randomRotation } from './shuffle.mjs';
+import { randomRotation, createCommercialBreak } from './shuffle.mjs';
 export const COMMERCIAL_SHOW_ID = 'vintage-commercials';
 export const STORAGE_KEY = 'drew-tv.catalog.v1';
 export const MAX_IMPORT_BYTES = 2_000_000;
@@ -115,9 +115,11 @@ export function validateCatalog(raw) {
   const rotation = raw.settings.rotation ?? 'random';
   const shuffleSeed = raw.settings.shuffleSeed ?? 1984;
   const storiesPerTurn = raw.settings.storiesPerTurn ?? 1;
+  const commercialCount = raw.settings.commercialCount ?? 1;
   const streamShow = raw.settings.streamShow ?? null;
   if (!['random', 'ordered'].includes(rotation)) fail('Choose random or ordered rotation.');
   if (!Number.isInteger(shuffleSeed) || shuffleSeed < 0 || shuffleSeed > 4294967295) fail('Invalid shuffle seed.');
+  if (![1, 2, 3, 'random'].includes(commercialCount)) fail('Choose 1, 2, 3 or random commercials per break.');
   if (![1, 2, 3].includes(storiesPerTurn)) fail('Choose 1, 2 or 3 stories per show turn.');
   if (streamShow !== null) id(streamShow);
   const showIds = new Set(), episodeIds = new Set();
@@ -158,7 +160,7 @@ export function validateCatalog(raw) {
   });
   if (streamShow === COMMERCIAL_SHOW_ID) fail('Choose a program show for the stream.');
   if (streamShow !== null && !shows.some(show => show.id === streamShow && (raw.settings.channel === 'mixed' || show.channel === raw.settings.channel))) fail('The selected stream show is not in this channel.');
-  return { version: 1, epoch: raw.epoch, shows, settings: { channel: raw.settings.channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, streamShow } };
+  return { version: 1, epoch: raw.epoch, shows, settings: { channel: raw.settings.channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow } };
 }
 
 export function parseCatalogJson(input) {
@@ -201,15 +203,15 @@ export function buildSchedule(catalog, channel = catalog.settings.channel) {
     .map(episode => ({ show: s, episode, source: stationSource(episode), duration: episode.durationSeconds }));
   const queues = shows.map(s => entries(s).filter(e => e.episode.kind === 'episode'));
   const bumpers = bumperPool(catalog, shows);
-  if ((catalog.settings.rotation ?? 'random') === 'random') return randomRotation(queues, bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShow || 'all'}`, storiesPerTurn: catalog.settings.storiesPerTurn ?? 1, includeBumpers: catalog.settings.bumpers });
+  if ((catalog.settings.rotation ?? 'random') === 'random') return randomRotation(queues, bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShow || 'all'}`, storiesPerTurn: catalog.settings.storiesPerTurn ?? 1, includeBumpers: catalog.settings.bumpers, commercialCount: catalog.settings.commercialCount ?? 1 });
   const result = [];
-  let bumperIndex = 0;
+  const nextBreak = createCommercialBreak(bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShow || 'all'}:ordered`, commercialCount: catalog.settings.commercialCount ?? 1, randomize: false });
   while (queues.some(q => q.length)) {
     for (const queue of queues) {
       if (!queue.length) continue;
       const first = queue.shift(); result.push(first);
       while (first.episode.group && queue[0]?.episode.group === first.episode.group) result.push(queue.shift());
-      if (catalog.settings.bumpers && bumpers.length) result.push(bumpers[bumperIndex++ % bumpers.length]);
+      if (catalog.settings.bumpers) result.push(...nextBreak());
     }
   }
   return result;

@@ -1,6 +1,8 @@
+import { createEpisodeLink, parseEpisodeLink, findSharedEpisode } from './share.mjs';
+import { applyCommercialDefaults, markCommercialPreference } from './preferences.mjs';
 import { mountRetroEffects } from './retro-effects.mjs';
 import { mountWindowMode } from './window-mode.mjs';
-import { playbackTime, adjacentPlayback } from './transport.mjs';
+import { playbackTime, adjacentPlayback, playbackPosition } from './transport.mjs';
 import { STARTER_PACK } from './starter-pack.mjs';
 import { youtubeEpisodes, mergeBatch, mergeLibraryBatch, discoveryRows } from './bulk.mjs';
 import { CHANNELS, createSeed } from './catalog.mjs';
@@ -11,13 +13,15 @@ import { createVideoSession, createYouTubeSession } from './players.mjs';
 const $ = id => document.getElementById(id);
 const staticHosting = document.querySelector('meta[name="drew-tv-hosting"]')?.content === 'static';
 const storage = { getItem: k => localStorage.getItem(k), setItem: (k, v) => localStorage.setItem(k, v) };
-const retroEffects = mountRetroEffects({ body: document.body, shell: $('player-shell'), screenToggle: $('crt-look'), staticToggle: $('tuning-static'), storage });
+const retroEffects = mountRetroEffects({ body: document.body, shell: $('player-shell'), cabinet: $('tv-cabinet'), screenToggle: $('crt-look'), staticToggle: $('tuning-static'), themeSelect: $('tv-theme'), levelInput: $('static-level'), durationInput: $('static-duration'), modeSelect: $('static-mode'), previewButton: $('static-preview'), levelOutput: $('static-level-value'), durationOutput: $('static-duration-value'), storage });
 const loaded = readCatalog(storage, createSeed());
-let catalog = loaded.catalog;
+const migrated = loaded.error ? { catalog: loaded.catalog, changed: false } : applyCommercialDefaults(loaded.catalog, storage, next => { try { saveCatalog(storage, next); return true; } catch { return false; } });
+let catalog = migrated.catalog;
 let selectedShowId = catalog.shows[0].id, editingEpisodeId = null;
 let session = null, active = null, playerGeneration = 0, importBusy = false;
 let scrubbing = false, scrubSession = null, audioSession = null, preferredAudio = null, audioLockUntil = 0;
 let navCatalog = null, navActive = null, previousEntry = null, nextEntry = null;
+let sharedTarget = null;
 const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'Tubi' };
 const tiles = ['#435a53', '#5c4257', '#3f526a', '#67513d', '#514a70', '#4f5e40', '#674849', '#3c6262'];
 const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
@@ -35,6 +39,30 @@ function link(label, href, className = '') {
   const node = element('a', label, className); node.href = href; node.target = '_blank'; node.rel = 'noopener noreferrer'; return node;
 }
 function notify(message) { $('notice').textContent = message; $('notice').hidden = !message; }
+async function copyEpisodeLink(show, source, seconds = 0) {
+  const baseUrl = new URL(location.pathname, location.origin).href;
+  let url;
+  try { url = createEpisodeLink({ baseUrl, showId: show.id, sourceUrl: source.url, seconds }); }
+  catch (error) { notify(`Could not share this source: ${error.message}`); return; }
+  $('share-url').value = url;
+  try { await navigator.clipboard.writeText(url); notify(seconds > 0 ? 'Episode link and position copied.' : 'Episode link copied.'); }
+  catch {
+    $('share-copy-status').textContent = 'Select and copy the link below.';
+    if (!$('share-dialog').open) $('share-dialog').showModal();
+    $('share-url').focus(); $('share-url').select();
+  }
+}
+function resolveSharedEpisode() {
+  const descriptor = parseEpisodeLink(location.href);
+  if (!descriptor) { sharedTarget = null; $('shared-episode').hidden = true; return; }
+  const found = findSharedEpisode(catalog, descriptor);
+  sharedTarget = found ? { ...found, seconds: descriptor.seconds } : null;
+  $('shared-episode').hidden = false;
+  $('shared-original').href = descriptor.sourceUrl;
+  $('shared-title').textContent = found ? `${found.show.title} · ${found.episode.title}` : 'Shared video';
+  $('shared-detail').textContent = found ? descriptor.seconds > 0 ? `Start at ${playbackTime(descriptor.seconds)}, or open the original source.` : 'Start this episode from the beginning.' : 'This source is not in this browser’s catalog. Open the original source to watch it.';
+  $('play-shared').hidden = !found;
+}
 function copyCatalog() { return structuredClone(catalog); }
 function commit(next) {
   try { catalog = saveCatalog(storage, next); return true; }
@@ -147,6 +175,8 @@ function openShow(showId) {
     const statuses = e.sources.map(s => `${providerName[s.provider]}: ${s.provider === 'tubi' ? 'opens on Tubi' : s.availability === 'verified' ? 'source checked; availability may change' : 'playback not checked'}`);
     row.append(element('p', statuses.join(' · ') || 'No sources attached', 'episode-meta'));
     const tools = element('div', null, 'episode-tools');
+    const shareSource = stationSource(e) || e.sources[0];
+    if (shareSource) tools.append(button('Share episode ↗', () => { void copyEpisodeLink(show, shareSource); }, 'text-button'));
     tools.append(button('Edit details / add another source', () => openSource(show.id, e.id), 'text-button'));
     tools.append(button('Remove item', () => {
       const next = copyCatalog(); next.shows.find(s => s.id === show.id).episodes = show.episodes.filter(item => item.id !== e.id);
@@ -212,7 +242,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
   $('standby').hidden = true;
   $('playing-show').textContent = show.title.toUpperCase();
   $('playing-title').textContent = episode.title;
-  $('playing-detail').textContent = `${episodeDetail(episode)} · ${mode === 'live' ? 'Station clock · best-effort sync' : 'From the beginning'} · ${providerName[source.provider]}`;
+  $('playing-detail').textContent = `${episodeDetail(episode)} · ${mode === 'live' ? 'Station clock · best-effort sync' : offset > 0 ? `From ${playbackTime(offset)}` : 'From the beginning'} · ${providerName[source.provider]}`;
   $('original-link').href = $('error-original').href = source.url;
   $('original-link').hidden = false;
   $('playback-state').textContent = 'LOADING SOURCE';
@@ -226,7 +256,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
     if (!isPlaylist) e.durationSeconds = duration;
     src.availability = 'verified';
     if (commit(next)) {
-      $('playing-detail').textContent = `${episodeDetail(e)} · ${active.mode === 'live' ? 'Station clock · best-effort sync' : 'From the beginning'} · ${providerName[source.provider]}`;
+      $('playing-detail').textContent = `${episodeDetail(e)} · ${active.mode === 'live' ? 'Station clock · best-effort sync' : offset > 0 ? `From ${playbackTime(offset)}` : 'From the beginning'} · ${providerName[source.provider]}`;
       renderGuide(); renderLibrary();
     }
   };
@@ -259,7 +289,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
 
 function tuneLive() {
   const queue = buildSchedule(catalog), p = schedulePosition(queue, catalog.epoch);
-  if (p) playEpisode(p.current.show, p.current.episode, p.current.source, p.offset, 'live', 'station', { index: p.index, previousId: queue[(p.index - 1 + queue.length) % queue.length].episode.id });
+  if (p) playEpisode(p.current.show, p.current.episode, p.current.source, p.offset, 'live', 'station', playbackPosition(queue, p.index));
   else openSource();
 }
 function markTimeShift() {
@@ -296,6 +326,8 @@ function showPosition(seconds, duration) {
 function renderTransport() {
   let state = transportState();
   const ready = !!state?.ready;
+  $('share-episode').disabled = !active;
+  $('share-time').disabled = !ready;
   if (ready && audioSession !== session) {
     audioSession = session;
     if (preferredAudio) { session.setVolume(preferredAudio.volume); session.setMuted(preferredAudio.muted); audioLockUntil = Date.now() + 750; }
@@ -330,6 +362,26 @@ function renderTransport() {
 $('toggle-play').addEventListener('click', () => { const state = transportState(); if (state?.ready) { if (state.paused) session.play(); else session.pause(); } renderTransport(); });
 $('rewind-ten').addEventListener('click', () => seekVideo((transportState()?.currentTime || 0) - 10));
 $('forward-ten').addEventListener('click', () => seekVideo((transportState()?.currentTime || 0) + 10));
+$('share-episode').addEventListener('click', () => {
+  if (!active) return;
+  const show = catalog.shows.find(show => show.id === active.showId), episode = show?.episodes.find(episode => episode.id === active.episodeId);
+  const source = episode?.sources.find(source => source.id === active.sourceId);
+  if (!source) return;
+  const seconds = $('share-time').checked && !$('share-time').disabled && parseSourceUrl(source.url).kind === 'video' ? Math.floor(transportState()?.currentTime ?? active.offset ?? 0) : 0;
+  void copyEpisodeLink(show, source, seconds);
+});
+$('play-shared').addEventListener('click', () => {
+  if (!sharedTarget) return;
+  const {show,episode,source,seconds} = sharedTarget;
+  playEpisode(show,episode,source,seconds,'start','show'); $('watch').scrollIntoView();
+});
+$('copy-share').addEventListener('click', async () => {
+  try { await navigator.clipboard.writeText($('share-url').value); $('share-copy-status').textContent = 'Link copied.'; }
+  catch { $('share-url').focus(); $('share-url').select(); $('share-copy-status').textContent = 'Select and copy the link manually.'; }
+});
+$('close-share').addEventListener('click', () => $('share-dialog').close());
+$('share-dialog').addEventListener('keydown', event => { if (event.key === 'Escape' || event.key === 'Tab') event.stopPropagation(); });
+window.addEventListener('hashchange', resolveSharedEpisode);
 $('previous-episode').addEventListener('click', () => advance(true, -1));
 $('video-seek').addEventListener('input', () => { scrubbing = true; scrubSession = session; showPosition(Number($('video-seek').value), transportState()?.duration ?? null); });
 $('video-seek').addEventListener('change', () => { const value = Number($('video-seek').value); const same = scrubSession === session; scrubbing = false; scrubSession = null; if (same) seekVideo(value); renderTransport(); });
@@ -419,6 +471,7 @@ $('bumpers').addEventListener('change', () => {
   const enabled = $('bumpers').checked;
   const next = copyCatalog(); next.settings.bumpers = enabled;
   if (commit(next)) {
+    markCommercialPreference(storage);
     render(); renderTransport();
     notify(enabled ? 'Vintage commercials and checked bumpers enabled between complete stories. Use Next to skip a break.' : 'Upcoming commercial breaks and bumpers are off. Current playback is unchanged.');
   } else $('bumpers').checked = catalog.settings.bumpers;
@@ -602,7 +655,7 @@ async function installExpandedLibrary() {
     notify(`Expanded library added: ${result.added} episodes and ${result.alternatives} alternative sources. Existing sources and settings were preserved. YouTube entries still need a playback check.`);
   } catch (error) { notify(`Expanded library could not be added: ${error.message}`); }
 }
-installExpandedLibrary();
+installExpandedLibrary().finally(resolveSharedEpisode);
 
 if (staticHosting) {
   $('bulk-transformers').hidden = true;
@@ -619,6 +672,8 @@ function renderStreamSettings() {
   }));
   $('stream-show').value = catalog.settings.streamShow || '';
   $('stream-run').value = String(catalog.settings.storiesPerTurn);
+  $('commercial-count').value = String(catalog.settings.commercialCount);
+  $('commercial-count').disabled = !catalog.settings.bumpers;
   $('stream-run').disabled = catalog.settings.rotation !== 'random' || !!catalog.settings.streamShow;
   $('stream-reshuffle').disabled = catalog.settings.rotation !== 'random';
   const title = catalog.shows.find(show => show.id === catalog.settings.streamShow)?.title;
@@ -636,6 +691,12 @@ function configureStream(patch, play = false) {
   return true;
 }
 function newMix() { return Number.parseInt(crypto.randomUUID().slice(0, 8), 16); }
+$('commercial-count').addEventListener('change', () => {
+  const value = $('commercial-count').value;
+  const next = copyCatalog(); next.settings.commercialCount = value === 'random' ? 'random' : Number(value);
+  if (commit(next)) { render(); renderTransport(); notify('Commercial break length saved for upcoming breaks.'); }
+  else renderStreamSettings();
+});
 $('stream-rotation').addEventListener('change', () => configureStream({ rotation: $('stream-rotation').value }));
 $('stream-show').addEventListener('change', () => configureStream({ streamShow: $('stream-show').value || null }));
 $('stream-run').addEventListener('change', () => configureStream({ storiesPerTurn: Number($('stream-run').value) }));

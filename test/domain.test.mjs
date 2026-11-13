@@ -124,7 +124,7 @@ test('catalog persistence round-trips and storage errors are not reported as sav
   const storage = { getItem: k => values.get(k), setItem: (k, v) => values.set(k, v) };
   saveCatalog(storage, fixture());
   assert(values.has(STORAGE_KEY));
-  assert.deepEqual(readCatalog(storage, createSeed()).catalog, fixture());
+  assert.deepEqual(readCatalog(storage, createSeed()).catalog, validateCatalog(fixture()));
   assert.throws(() => saveCatalog({ setItem() { throw Error('quota'); } }, fixture()), /quota/);
   assert(readCatalog({ getItem() { throw Error('denied'); } }, createSeed()).error);
 });

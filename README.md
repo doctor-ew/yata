@@ -149,8 +149,14 @@ Added Blue Thunder (11 videos), The Master (13), Tales of the Gold Monkey (21 in
 
 ## Vintage commercial breaks
 
-Enable **Vintage commercial breaks + my bumpers** in Stream settings for one short break between complete stories. The starter pack contains 14 standalone, approximately 30-second vintage toy, cereal and game commercials. Breaks work across channels and show-only streams; Next skips a clip. New catalogs default to on and existing saved On/Off preferences are preserved. Browse Vintage commercial breaks in the library to preview or remove sources. See [source credits, scheduling and validation](../docs/13/COMMERCIAL-BREAKS.md). Inspired by [retro-tv-webos](https://github.com/Nikolay1243/retro-tv-webos) and Joey Cato’s [MyRetroTVs](https://www.myretrotvs.com/); independently implemented.
+Enable **Vintage commercial breaks + my bumpers** in Stream settings for one short break between complete stories. The starter pack contains 14 standalone, approximately 30-second vintage toy, cereal and game commercials. Breaks work across channels and show-only streams; Next skips a clip. Commercial breaks default to on; the cabinet update also enables them once for older saved catalogs. Choices made after that upgrade are remembered. Browse Vintage commercial breaks in the library to preview or remove sources. See [source credits, scheduling and validation](../docs/13/COMMERCIAL-BREAKS.md). Inspired by [retro-tv-webos](https://github.com/Nikolay1243/retro-tv-webos) and Joey Cato’s [MyRetroTVs](https://www.myretrotvs.com/); independently implemented.
 
 ## Optional CRT picture
 
-Stream settings now offers **CRT surround & scanlines** and **Tuning static**. These independently drawn effects preserve provider-player placement, save your preference, and can be switched off. Tuning static is a brief silent fade and respects reduced-motion settings. Commercials start on for new catalogs; existing saved choices are preserved. See [defaults and effect validation](../docs/14/CRT-AND-DEFAULTS.md).
+Stream settings now offers **CRT surround & scanlines** and **Tuning static**. These independently drawn effects preserve provider-player placement, save your preference, and can be switched off. Tuning static is a brief silent fade and respects reduced-motion settings. Commercials start on, with a one-time upgrade for older Off defaults; later choices are preserved. See [defaults and effect validation](../docs/14/CRT-AND-DEFAULTS.md).
+
+## TV cabinets, static and episode sharing
+
+Choose a 1970s woodgrain, 1980s color-TV, 1990s charcoal cabinet, or None in Stream settings. The video player stays in place and Fill window still works. Adjust static strength, tuning length, tuning/continuous mode, and preview it. The effect settings are remembered independently. Commercials per break can be 1, 2, 3, or Random 1–3, capped to the available distinct clips.
+
+Use **Share episode** beside the player; check **Include position** for a timestamp. Each library item also has a Share action. Recipients see the matching episode with a Play button. Links match provider source URLs rather than browser-local IDs; custom sources absent from the recipient’s catalog offer an original-source link. See [cabinet and migration details](../docs/15/TV-CABINETS.md) and [episode sharing](../docs/16/SHARING.md).

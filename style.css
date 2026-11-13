@@ -1199,3 +1199,68 @@ footer { flex-wrap: wrap; align-items: flex-start; }
 .stream-controls .tv-effects-settings { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 16px; }
 .stream-controls .tv-effects-settings label { display: flex; align-items: center; gap: 9px; padding: 0; font-size: 12px; }
 .stream-controls .tv-effects-settings input { width: auto; flex: 0 0 auto; }
+
+/* Original CSS television cabinetry; the provider shell remains in place. */
+.tv-cabinet {
+  --cabinet-face: #747a78; --cabinet-edge: #272e2d; --cabinet-highlight: #b4b6a7;
+  display: grid; grid-template-columns: minmax(0, 1fr) 74px; gap: 20px;
+  width: 100%; min-width: 0; padding: 24px; border: 7px solid var(--cabinet-edge);
+  border-radius: 13px; background: linear-gradient(115deg, #ffffff16, transparent 45%), var(--cabinet-face);
+  box-shadow: inset 0 0 0 2px var(--cabinet-highlight), 0 12px 28px #0005;
+}
+.tv-cabinet > #player-shell { min-width: 0; width: 100%; align-self: stretch; border: 5px solid #191d1d; border-radius: 15px; box-shadow: 0 0 0 3px #3e4643, inset 0 0 18px #0009; }
+.tv-cabinet-controls { display: flex; flex-direction: column; align-items: center; gap: 19px; min-width: 0; min-height: 0; overflow: hidden; padding: 12px 7px; border-left: 1px solid #0005; color: #e4e6d8; }
+.tv-cabinet-controls .tv-knob { display: block; flex: 0 0 auto; width: 45px; height: 45px; border: 3px solid #1c2220; border-radius: 50%; background: linear-gradient(85deg, transparent 43%, #b9bbab 44% 53%, transparent 54%), radial-gradient(circle at 35% 30%, #606b65, #161d1a 75%); box-shadow: 2px 3px 0 #0008, inset 0 0 0 3px #8a93836b; }
+.tv-cabinet-controls .tv-knob + .tv-knob { transform: rotate(35deg); width: 35px; height: 35px; }
+.tv-speaker { flex: 1 1 50px; min-height: 24px; width: 100%; background: repeating-linear-gradient(to bottom, #111a17 0 2px, transparent 2px 5px); border-block: 2px solid #222b24; opacity: .9; }
+.tv-cabinet-controls .tv-cabinet-label { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-shadow: 0 1px 1px #000; }
+.tv-cabinet[data-theme="70s"] { --cabinet-edge: #402616; --cabinet-highlight: #a27349; --cabinet-face: #785032; border-width: 10px; border-radius: 5px; background: repeating-linear-gradient(3deg, #0000 0 5px, #321a0c24 6px 7px, #ba8b4e1a 8px 11px), linear-gradient(90deg, #674328, #a27347 50%, #694126); }
+.tv-cabinet[data-theme="70s"] > #player-shell { border-color: #302a20; border-radius: 23px; box-shadow: 0 0 0 3px #b49364, 0 0 0 5px #44351f; }
+.tv-cabinet[data-theme="70s"] .tv-cabinet-controls { background: #382c1a40; color: #f0d6a2; }
+.tv-cabinet[data-theme="70s"] .tv-speaker { background: repeating-linear-gradient(to bottom, #2a2116 0 2px, #b0905e 2px 4px); }
+.tv-cabinet[data-theme="90s"] { --cabinet-face: #252833; --cabinet-edge: #171922; --cabinet-highlight: #414654; padding: 29px 22px 33px; border-radius: 35px 35px 21px 21px; gap: 19px; background: linear-gradient(140deg, #535967, #282c37 32%, #1c202a); box-shadow: inset 0 2px 4px #aeb6d54d, inset 0 -9px 0 #10131b, 0 12px 28px #0005; }
+.tv-cabinet[data-theme="90s"] > #player-shell { border: 7px solid #10151c; border-radius: 26px; box-shadow: 0 0 0 2px #4c5260; }
+.tv-cabinet[data-theme="90s"] .tv-cabinet-controls { gap: 15px; border: 0; color: #afb5c4; }
+.tv-cabinet[data-theme="90s"] .tv-knob { width: 31px; height: 31px; border-color: #111621; background: radial-gradient(circle at 35% 30%, #525b70, #121724 80%); box-shadow: 0 2px 2px #000; }
+.tv-cabinet[data-theme="90s"] .tv-knob + .tv-knob { width: 24px; height: 24px; }
+.tv-cabinet[data-theme="90s"] .tv-speaker { background: radial-gradient(#070b13 1px, transparent 1.5px); background-size: 5px 5px; border: 0; }
+.tv-cabinet[data-theme="none"] { display: block; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
+.tv-cabinet[data-theme="none"] > #player-shell { border: 1px solid var(--line); border-radius: 8px; box-shadow: none; }
+.tv-cabinet[data-theme="none"] > .tv-cabinet-controls { display: none; }
+.retro-static { opacity: var(--static-opacity, .12); }
+.retro-static-continuous { animation: retro-grain .9s steps(1, end) infinite; }
+@keyframes retro-grain { 0%, 100% { background-position: 0 0, 0 0; } 33% { background-position: 7px 3px, -5px 2px; } 66% { background-position: -4px 7px, 3px -5px; } }
+.window-mode #tv-cabinet { flex: 1 1 0; min-height: 0; width: 100%; display: grid; }
+.window-mode #tv-cabinet > #player-shell { flex: 1 1 0; min-height: 0; width: 100%; aspect-ratio: auto; }
+.window-mode #tv-cabinet[data-theme="none"] { grid-template-columns: minmax(0, 1fr); }
+.stream-controls .tv-effects-settings select { width: auto; min-width: 100px; }
+.stream-controls .tv-effects-settings input[type="range"] { width: 100px; min-height: 32px; padding: 0; accent-color: var(--accent); }
+.stream-controls .tv-effects-settings output { min-width: 42px; font-variant-numeric: tabular-nums; }
+@media (max-width: 600px) {
+  .tv-cabinet { grid-template-columns: minmax(0, 1fr) 36px; padding: 12px; gap: 10px; border-width: 4px; }
+  .tv-cabinet[data-theme="70s"] { border-width: 6px; }
+  .tv-cabinet[data-theme="90s"] { padding: 15px 11px 20px; border-radius: 23px 23px 16px 16px; gap: 10px; }
+  .tv-cabinet > #player-shell, .tv-cabinet[data-theme="90s"] > #player-shell { border-width: 3px; border-radius: 13px; }
+  .tv-cabinet-controls { gap: 10px; padding: 4px 2px; }
+  .tv-cabinet-controls .tv-knob { width: 25px; height: 25px; border-width: 2px; }
+  .tv-cabinet-controls .tv-knob + .tv-knob, .tv-cabinet[data-theme="90s"] .tv-knob { width: 22px; height: 22px; }
+  .tv-cabinet[data-theme="90s"] .tv-knob + .tv-knob { width: 19px; height: 19px; }
+  .tv-cabinet-controls .tv-cabinet-label { font-size: 7px; letter-spacing: .1em; }
+}
+@media (prefers-reduced-motion: reduce), (forced-colors: active) { .retro-static, .retro-static-continuous { display: none; animation: none; } }
+@media (forced-colors: active) { .tv-cabinet { background: Canvas; border-color: CanvasText; box-shadow: none; } .tv-cabinet-controls { color: CanvasText; } }
+.stream-controls .tv-effects-settings .static-options { flex: 1 0 100%; border-top: 1px solid var(--line); padding-top: 12px; }
+.static-options summary { cursor: pointer; color: var(--muted); font-size: 12px; min-height: 32px; padding: 6px 0; }
+.static-settings { display: grid; grid-template-columns: minmax(120px, 1fr) minmax(170px, 1fr) minmax(190px, 1fr) auto; align-items: end; gap: 16px; padding-top: 8px; }
+.stream-controls .tv-effects-settings .static-settings label { display: grid; align-items: center; gap: 6px; }
+.stream-controls .tv-effects-settings .static-settings .static-range { grid-template-columns: 1fr auto; }
+.static-settings .static-range input[type="range"] { grid-column: 1 / -1; width: 100%; }
+.static-settings .button { min-height: 42px; }
+@media (max-width: 900px) { .static-settings { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 500px) { .static-settings { grid-template-columns: minmax(0, 1fr); gap: 12px; } .static-settings select { width: 100%; } }
+@media (forced-colors: active) { .tv-cabinet[data-theme] { background: Canvas; border-color: CanvasText; box-shadow: none; } }
+.share-time-setting { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; color: var(--muted); white-space: nowrap; }
+.share-time-setting input { width: auto; margin: 0; accent-color: var(--accent); }
+#share-url { display: block; width: 100%; box-sizing: border-box; margin: 18px 0; }
+#shared-episode { margin-bottom: 18px; }
+#shared-episode p { margin: 8px 0 12px; }

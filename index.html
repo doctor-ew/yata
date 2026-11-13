@@ -18,6 +18,7 @@
   <main>
     <div id="notice" class="notice" role="status" hidden></div>
     <section id="watch" aria-labelledby="station-heading">
+      <section id="shared-episode" class="notice" hidden aria-label="Shared episode"><strong id="shared-title"></strong><p id="shared-detail"></p><button id="play-shared" class="button primary" type="button">▶ Play shared episode</button> <a id="shared-original" class="button small" target="_blank" rel="noopener noreferrer">Open original ↗</a></section>
       <div class="intro"><div><p class="eyebrow">WELCOME BACK TO YOUR LIVING ROOM</p><h1 id="station-heading">Nothing to scroll.<br><em>Something good on.</em></h1></div><p class="intro-note">The heroes. The theme songs.<br>The Saturday mornings that lasted forever.<br><strong>Your own little cable network.</strong></p></div>
       <div id="channels" class="channels" role="group" aria-label="Choose a channel"></div>
       <section class="stream-controls" aria-label="Stream settings">
@@ -26,16 +27,30 @@
         <label>Stories per show turn<select id="stream-run"><option value="1">1 story</option><option value="2">2 stories</option><option value="3">3 stories</option></select></label>
         <button id="stream-reshuffle" class="button">↻ New mix &amp; play</button>
         <label class="bumper-setting"><input id="bumpers" type="checkbox" aria-describedby="commercial-description"> Vintage commercial breaks + my bumpers</label>
-        <div class="tv-effects-settings" role="group" aria-label="Retro television effects"><label class="bumper-setting"><input id="crt-look" type="checkbox"> CRT surround &amp; scanlines</label><label class="bumper-setting"><input id="tuning-static" type="checkbox"> Tuning static</label></div>
-        <p id="commercial-description">One short break between complete stories. Optional, always skippable.</p>
+        <div class="tv-effects-settings" role="group" aria-label="Retro television effects">
+          <label>TV cabinet<select id="tv-theme"><option value="none">None · clean player</option><option value="70s">1970s · woodgrain</option><option value="80s" selected>1980s · color TV</option><option value="90s">1990s · charcoal</option></select></label>
+          <label class="bumper-setting"><input id="crt-look" type="checkbox"> Glass &amp; scanlines</label>
+          <label class="bumper-setting"><input id="tuning-static" type="checkbox"> Static</label>
+          <details class="static-options"><summary>Adjust static</summary><div class="static-settings">
+            <label>When<select id="static-mode"><option value="tuning">When tuning</option><option value="continuous">Continuous grain</option></select></label>
+            <label class="static-range">Strength <output id="static-level-value" for="static-level">12%</output><input id="static-level" type="range" min="0" max="30" step="1" value="12"></label>
+            <label class="static-range">Tuning length <output id="static-duration-value" for="static-duration">180 ms</output><input id="static-duration" type="range" min="80" max="800" step="20" value="180"></label>
+            <button id="static-preview" class="button small" type="button">Preview static</button>
+          </div></details>
+        </div>
+        <label>Commercials per break<select id="commercial-count"><option value="1">1 commercial</option><option value="2">2 commercials</option><option value="3">3 commercials</option><option value="random" selected>Random · 1–3 commercials</option></select></label>
+        <p id="commercial-description">Breaks follow complete stories. Choose a fixed count or a random 1–3. Always skippable.</p>
         <p id="stream-description">Random episodes from random shows. Multipart stories stay together.</p>
       </section>
       <div class="watch-layout">
         <div class="screen-column" id="screen-column"><button id="exit-window" class="button window-exit" hidden aria-label="Exit window mode">✕ Exit window <small>Esc</small></button>
           <div class="screen-top"><span id="channel-label">CH 01 · YATA</span><span id="playback-state">READY TO TUNE</span></div>
+          <div id="tv-cabinet" class="tv-cabinet" data-theme="80s">
           <div id="player-shell" class="player-shell">
             <div id="player-host" class="player-host"></div>
             <div id="standby" class="standby"><span class="test-pattern" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="standby-logo">YA<span>TA</span></span><p>YOUR REGULARLY SCHEDULED ESCAPE</p><button id="standby-play" class="button primary">▶ Tune in</button><small>Press play. Settle in. Stay a while.</small></div>
+          </div>
+          <aside class="tv-cabinet-controls" aria-hidden="true"><span class="tv-cabinet-label">YATA · COLOR</span><span class="tv-knob"></span><span class="tv-knob"></span><div class="tv-speaker"></div></aside>
           </div>
           <div id="player-error" class="player-error" role="alert" hidden><p id="player-error-text"></p><div><button id="retry" class="button small">Retry</button><button id="skip-error" class="button small">Skip episode</button><a id="error-original" class="button small" target="_blank" rel="noopener noreferrer">Open original ↗</a></div></div>
           <section class="transport" aria-label="Video playback controls">
@@ -48,12 +63,14 @@
               <button id="forward-ten" class="button small" aria-label="Forward 10 seconds" disabled>10s ↷</button>
               <button id="start-over" class="button small" aria-label="Restart video" disabled>↺ Restart</button>
               <button id="skip" class="button small" aria-label="Next episode" disabled>Next ⏭</button>
+              <button id="share-episode" class="button small" disabled>Share episode ↗</button><label class="share-time-setting"><input id="share-time" type="checkbox" disabled> Include position</label>
               <button id="fill-window" class="button small" aria-pressed="false" aria-label="Fill browser window">⛶ Fill window</button><div class="transport-volume"><button id="video-mute" class="button small" aria-label="Mute video" aria-pressed="false" disabled>Mute</button><input id="video-volume" type="range" min="0" max="100" step="1" value="100" aria-label="Volume" disabled><output id="video-volume-value">100%</output></div>
             </div>
           </section>
           <div class="watch-info"><div><p id="playing-show" class="eyebrow">ON THE STATION CLOCK</p><h2 id="playing-title">A familiar favorite is waiting.</h2><p id="playing-detail" class="muted"></p></div><a id="original-link" target="_blank" rel="noopener noreferrer" class="source-link" hidden>Original source ↗</a></div>
           <div class="playback-actions"><button id="tune-live" class="button primary">▶ Tune in live</button></div>
           <p class="playback-note">Live follows your station clock. Scrub, skip 10 seconds, or restart to watch on your time. YouTube ads and browser autoplay can affect timing.</p>
+  <dialog id="share-dialog" aria-labelledby="share-heading"><h2 id="share-heading">Share this episode</h2><p>Copy this link and send it to a friend.</p><input id="share-url" type="url" readonly aria-label="Episode link"><div><button id="copy-share" class="button primary" type="button">Copy link</button> <button id="close-share" class="button" type="button">Close</button></div><p id="share-copy-status" role="status"></p></dialog>
         </div>
         <aside class="guide" aria-labelledby="guide-heading"><div class="guide-heading"><h2 id="guide-heading">On the guide</h2><span>LOCAL TIME</span></div><div id="guide-list"></div><p id="rotation-note" class="guide-foot"></p><button id="guide-add" class="guide-add">Build out this channel <span>+</span></button></aside>
       </div>
@@ -64,6 +81,7 @@
     </section>
     <section class="collection-tools" aria-labelledby="collection-heading"><div><h2 id="collection-heading">Make yourself at home.</h2><p>Your catalog stays in this browser. Export a copy to keep it or move it to another device.</p></div><div class="tool-actions"><button id="seed-all" class="button primary">Fill all shows</button><button id="bulk-open" class="button small">Seed playlists +</button><button id="export-catalog" class="button small">Export catalog ↓</button><label class="button small import-button" for="import-catalog">Import catalog ↑<input id="import-catalog" type="file" accept="application/json,.json"></label></div></section>
   </main>
+
   <footer><a class="footer-brand" href="#watch">YATA</a><div class="creator-credit"><span>Created by <strong>Drew Schillinger</strong></span><nav aria-label="Creator links"><a href="https://github.com/doctor-ew" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://cto2go.co" target="_blank" rel="noopener noreferrer">CTO2GO ↗</a><a href="https://doctorew.com" target="_blank" rel="noopener noreferrer">doctorew.com ↗</a></nav><small>Based on Floating Browser by Chris Hansen.</small><small>Retro-TV inspiration: <a href="https://www.myretrotvs.com/" target="_blank" rel="noopener noreferrer">MyRetroTVs by Joey Cato</a> · <a href="https://github.com/Nikolay1243/retro-tv-webos" target="_blank" rel="noopener noreferrer">Nikolay1243’s launcher</a>.</small><a href="ATTRIBUTION.md" target="_blank" rel="noopener noreferrer">Credits &amp; attribution ↗</a></div><a href="README.md" target="_blank" rel="noopener">About &amp; source guide ↗</a></footer>
   <dialog id="show-dialog" aria-labelledby="show-title"><div class="dialog-top"><p class="eyebrow">IN YOUR COLLECTION</p><button class="icon-button" id="close-show" aria-label="Close show details">×</button></div><h2 id="show-title"></h2><div id="show-episodes"></div><div class="dialog-actions"><button id="show-shuffle" class="button primary">▶ Shuffle this show</button><button id="show-add" class="button primary">+ Add an episode source</button><a id="show-imdb" target="_blank" rel="noopener noreferrer" hidden>IMDb reference ↗</a></div></dialog>
   <dialog id="source-dialog" aria-labelledby="source-heading"><div class="dialog-top"><p class="eyebrow">BUILD YOUR CHANNEL</p><button class="icon-button" id="close-source" aria-label="Close source editor">×</button></div><h2 id="source-heading">Bring your favorites.</h2><p class="muted">Add an Archive item, a YouTube video or playlist, or a Tubi watch link. Unchecked sources stay out of the live rotation.</p>

@@ -9,7 +9,7 @@
   "episodes": 2816,
   "ready": 2707,
   "breaks": 14,
-  "streamSlots": 21620,
+  "streamSlots": 32557,
   "shows": [
     {
       "id": "dukes",
@@ -628,6 +628,6 @@
       "sources": 1
     }
   ],
-  "bytes": 1067256,
+  "bytes": 1067283,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

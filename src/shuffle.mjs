@@ -11,6 +11,28 @@ export function shuffled(items, random, avoidFirst = null) {
   if (copy.length > 1 && copy[0] === avoidFirst) [copy[0], copy[1]] = [copy[1], copy[0]];
   return copy;
 }
+// Breaks use unique available clips; a short pool caps the requested length.
+export function createCommercialBreak(bumpers, { seed = 1984, scope = '', commercialCount = 1, randomize = true } = {}) {
+  const clips = [...new Map(bumpers.map(entry => [entry.episode.id, entry])).values()];
+  const clipRandom = seededRandom(seed, `${scope}:bumpers`), countRandom = seededRandom(seed, `${scope}:break-count`);
+  let order = randomize ? shuffled(clips, clipRandom) : clips.slice(), cursor = 0, last = null;
+  return () => {
+    const requested = commercialCount === 'random' ? 1 + Math.floor(countRandom() * 3) : [1, 2, 3].includes(commercialCount) ? commercialCount : 1;
+    const count = Math.min(requested, clips.length), used = new Set(), result = [];
+    for (let index = 0; index < count; index++) {
+      const available = entry => !used.has(entry) && (clips.length < 2 || entry !== last);
+      let candidate = order.findIndex((entry, index) => index >= cursor && available(entry));
+      if (candidate < 0) {
+        order = randomize ? shuffled(clips, clipRandom, last) : clips.slice(); cursor = 0;
+        candidate = order.findIndex(available);
+      }
+      const entry = order[candidate];
+      [order[cursor], order[candidate]] = [order[candidate], order[cursor]]; cursor++;
+      result.push(entry); used.add(entry); last = entry;
+    }
+    return result;
+  };
+}
 function storyBlocks(queue) {
   const blocks = [];
   for (const entry of queue) {
@@ -20,7 +42,7 @@ function storyBlocks(queue) {
   }
   return blocks;
 }
-export function randomRotation(queues, bumpers, { seed = 1984, scope = '', storiesPerTurn = 1, includeBumpers = false } = {}) {
+export function randomRotation(queues, bumpers, { seed = 1984, scope = '', storiesPerTurn = 1, includeBumpers = false, commercialCount = 1 } = {}) {
   const states = queues.filter(queue => queue.length).map(queue => {
     const blocks = storyBlocks(queue), random = seededRandom(seed, `${scope}:${queue[0].show.id}`);
     return { blocks, random, order: shuffled(blocks, random), cursor: 0, last: null };
@@ -28,8 +50,9 @@ export function randomRotation(queues, bumpers, { seed = 1984, scope = '', stori
   if (!states.length) return [];
   const count = [1, 2, 3].includes(storiesPerTurn) ? storiesPerTurn : 1;
   const rounds = Math.max(...states.map(state => Math.ceil(state.blocks.length / Math.min(count, state.blocks.length))));
-  const showRandom = seededRandom(seed, `${scope}:show-order`), bumperRandom = seededRandom(seed, `${scope}:bumpers`);
-  let firstShow = null, lastShow = null, bumperOrder = shuffled(bumpers, bumperRandom), bumperCursor = 0, lastBumper = null;
+  const showRandom = seededRandom(seed, `${scope}:show-order`);
+  const nextBreak = createCommercialBreak(bumpers, { seed, scope, commercialCount });
+  let firstShow = null, lastShow = null;
   const result = [];
   for (let round = 0; round < rounds; round++) {
     const order = shuffled(states, showRandom, lastShow);
@@ -47,10 +70,7 @@ export function randomRotation(queues, bumpers, { seed = 1984, scope = '', stori
           state.cursor = 0;
         }
         const block = state.order[state.cursor++]; result.push(...block); state.last = block; usedThisTurn.add(block);
-        if (includeBumpers && bumpers.length) {
-          if (bumperCursor === bumperOrder.length) { bumperOrder = shuffled(bumpers, bumperRandom, lastBumper); bumperCursor = 0; }
-          lastBumper = bumperOrder[bumperCursor++]; result.push(lastBumper);
-        }
+        if (includeBumpers) result.push(...nextBreak());
       }
       lastShow = state;
     }
