@@ -165,6 +165,7 @@ export function validateCatalog(raw) {
   const channel = migratedStream ? 'scifi' : raw.settings.channel;
   if (streamShow === COMMERCIAL_SHOW_ID) fail('Choose a program show for the stream.');
   if (streamShow !== null && !shows.some(show => show.id === streamShow && (channel === 'mixed' || show.channel === channel))) fail('The selected stream show is not in this channel.');
+  if (raw.publishedRevision !== undefined && !/^[a-f0-9]{64}$/.test(raw.publishedRevision)) fail('Invalid published catalog revision.');
   let exclusions;
   if (raw.exclusions !== undefined) {
     const input = raw.exclusions;
@@ -176,7 +177,7 @@ export function validateCatalog(raw) {
     const sources = input.sources.map(entry=>({showId:id(entry.showId),url:parseSourceUrl(entry.url).url}));
     if (episodes.length || sources.length) exclusions = {episodes,sources};
   }
-  return { version: 1, epoch: raw.epoch, shows, ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow } };
+  return { version: 1, epoch: raw.epoch, shows, ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow } };
 }
 
 export function parseCatalogJson(input) {

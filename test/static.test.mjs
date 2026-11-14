@@ -11,7 +11,7 @@ test('static release supports a subpath and excludes server and development file
  try {
   await run(process.execPath, ['scripts/build-static.mjs', '--out', output, '--base', '/tv/'], { cwd: new URL('..', import.meta.url) });
   const html = await readFile(path.join(output, 'index.html'), 'utf8');
-  assert.match(html, /<body class="public-view">/);
+  assert.match(html, /<body class="public-view public-catalog-pending">/);
   assert.match(html, /<base href="\/tv\/">/); assert.match(html, /name="drew-tv-hosting" content="static"/);
   const manifest = JSON.parse(await readFile(path.join(output, 'release-manifest.json'), 'utf8'));
   assert.ok(manifest.files.some(file => file.name === 'data/expanded-catalog.json'));

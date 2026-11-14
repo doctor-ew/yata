@@ -1,3 +1,4 @@
+import { createOwnerPublicationHandler } from './owner-publisher.mjs';
 import http from 'node:http';
 import { discoverYouTube } from './youtube-metadata.mjs';
 import { readFile, realpath } from 'node:fs/promises';
@@ -7,7 +8,9 @@ import path from 'node:path';
 const root = fileURLToPath(new URL('.', import.meta.url));
 const port = Number(process.env.PORT || 4173);
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.md': 'text/plain; charset=utf-8' };
+const publisher = createOwnerPublicationHandler({ getOrigin: () => `http://127.0.0.1:${server.address()?.port || port}` });
 const server = http.createServer(async (req, res) => {
+  if (await publisher.handle(req, res)) return;
   if (req.url?.startsWith('/api/youtube?') && req.method === 'GET') {
     const expected = `http://${req.headers.host}`;
     if (!/^127\.0\.0\.1:\d+$/.test(req.headers.host || '') || (req.headers.origin && req.headers.origin !== expected) || (req.headers['sec-fetch-site'] && !['same-origin', 'none'].includes(req.headers['sec-fetch-site']))) {
@@ -29,9 +32,11 @@ const server = http.createServer(async (req, res) => {
     if (!target.startsWith(root) || !types[path.extname(target)]) throw Error('Not found');
     const content = await readFile(target);
     res.writeHead(200, { 'Content-Type': types[path.extname(target)], 'Cache-Control': 'no-store',
-      'Referrer-Policy': 'strict-origin-when-cross-origin', 'X-Content-Type-Options': 'nosniff' });
+      'Referrer-Policy': 'strict-origin-when-cross-origin', 'X-Content-Type-Options': 'nosniff',
+      ...(path.extname(target) === '.html' ? { 'X-Frame-Options': 'DENY', 'Content-Security-Policy': "frame-ancestors 'none'" } : {}) });
     res.end(req.method === 'HEAD' ? undefined : content);
   } catch { res.writeHead(404, { 'Content-Type': 'text/plain' }).end('Not found'); }
 });
 server.listen(port, '127.0.0.1', () => console.log(`YATA → http://127.0.0.1:${server.address().port}`));
+server.on('close', () => { void publisher.dispose(); });
 server.on('error', error => { console.error(error.message); process.exitCode = 1; });

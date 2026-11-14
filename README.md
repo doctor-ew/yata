@@ -6,7 +6,7 @@ A personal nostalgia TV station with a retro channel guide, a curated show libra
 
 Open **https://doctorew.com/tv/**. This static deployment uses the existing S3 bucket and CloudFront distribution. Catalog installation and provider playback run in your browser; no media is rehosted. Browser storage is separate from localhost and other devices. The public site is a viewer; catalog editing and import/export management are available in the loopback owner app.
 
-The hosted viewer installs curated library updates and retains watching, dials, stream settings and sharing. Seeding, source editing, removal, discovery and catalog import/export are loopback owner tools. The static-view marker controls presentation, not authentication; visitors who tamper with their browser copy cannot change the shared deployed catalog. Deployment details and update commands are in [the AWS deployment guide](../docs/4/DEPLOYMENT.md).
+The hosted viewer verifies and installs published catalog updates and retains watching, dials, stream settings and sharing. Seeding, source editing, removal, discovery and catalog import/export are loopback owner tools. The static-view marker controls presentation, not authentication; visitors who tamper with their browser copy cannot change the shared deployed catalog. Deployment details and update commands are in [the AWS deployment guide](../docs/4/DEPLOYMENT.md).
 
 ## Run locally
 
@@ -21,11 +21,11 @@ npm start
 
 Open the printed address: <http://127.0.0.1:4173>. Keep the terminal running. Press Ctrl+C in that terminal to stop the station. If the port is occupied, run `PORT=4174 npm start` and use the new printed address. This command does not operate the native Floating Browser app.
 
-The preview started during this session runs independently of the chat terminal through the per-user macOS job `com.drew-tv.local-preview`. To stop that preview before starting a manual server on the same port, run `launchctl remove com.drew-tv.local-preview`.
+The owner server runs while its terminal remains open. The launcher does not create a background service.
 
 ## Random continuous streams
 
-The three channel buttons are random streams by default: **Saturday Morning** mixes the checked cartoon shows, **Action Adventure** mixes action shows, and **YATA** mixes everything. Choose a channel and **Tune in live**, or use **New mix & play** for a fresh shuffle starting now.
+The four channel buttons are random streams by default: **Sci-Fi** mixes science-fiction television, **Saturday Morning** mixes the checked cartoon shows, **Action Adventure** mixes action shows, and **YATA** mixes everything. Choose a channel and **Tune in live**, or use **New mix & play** for a fresh shuffle starting now.
 
 For random episodes of one show, choose it in the **Stream** selector or open its library card and select **Shuffle this show**. Clear that selector back to **Any show** to mix the genre again. **Stories per show turn** chooses 1–3 before switching shows. Multipart stories stay together; smaller libraries keep receiving a turn instead of disappearing after their episode pool is exhausted.
 
@@ -92,7 +92,7 @@ If a playlist fails, its error is shown beside the successful discovery count. R
 
 ## Catalog storage
 
-The catalog and channel settings are saved in this browser's local storage under `drew-tv.catalog.v1`. Guest/private browsing or clearing site data can discard them. **Export catalog** downloads a JSON copy; **Import catalog** validates the complete file before replacing the current catalog. Imports are limited to 2 MB, 100 shows, 5,000 episode items, and 20 sources per episode. Export before removing items or replacing a catalog if you want a restore point.
+The public master is stored as versioned S3 JSON snapshots. Owner drafts use IndexedDB; public viewing preferences use separate browser storage. The legacy `drew-tv.catalog.v1` value remains untouched for recovery. See **Shared catalog and owner publishing** below. Clearing browser data can discard unpublished owner drafts and preferences. **Export catalog** downloads a JSON copy; **Import catalog** validates the complete file before replacing the current catalog. Imports are limited to 2 MB, 100 shows, 5,000 episode items, and 20 sources per episode. Export before removing items or replacing a catalog if you want a restore point.
 
 A version-1 catalog contains:
 
@@ -102,7 +102,7 @@ A version-1 catalog contains:
 - Episodes: unique `id`, `title`, `season`, `number`, `durationSeconds` (positive number or null), `group`, `kind` (`episode` or `bumper`), and `sources`.
 - Sources: `id`, `provider` (`archive`, `youtube`, or `tubi`), HTTPS `url`, and `availability` (`verified` or `unverified`). A checked source can still become unavailable later.
 
-Changes made in one browser profile are not automatically synchronized to another browser, device, or simultaneously open tab. Use export/import to move a catalog. Media remains at its original host; this app does not proxy, download for offline use, extract streams, or rehost it.
+Unpublished owner edits stay in the owner browser. Confirm publication to distribute a reviewed catalog to public viewers. Concurrent owner edits are revision-checked transactionally; conflicting drafts remain recoverable. Media remains at its original host; this app does not proxy, download for offline use, extract streams, or rehost it.
 
 ## Playback limitations
 
@@ -180,12 +180,25 @@ Sci-Fi adds Space: 1999, UFO, The Fantastic Journey, Logan’s Run (TV series), 
 
 ## Catalog integrity
 
-Catalog writes use an exclusive Web Lock followed by a comparison with the exact saved snapshot from which the draft was made. Updated tabs cannot silently overwrite each other. A conflicting change remains available in its form and as an exportable catalog draft. A storage-change warning never reloads the page automatically; explicit reload warns that open forms and drafts will be discarded. Close older tabs running the previous unlocked application before editing: Web Locks coordinate cooperating application versions and cannot stop arbitrary browser-console or legacy-code writes.
+Owner catalog writes use one authoritative IndexedDB record containing the catalog and its revision. Each readwrite transaction compares the draft revision with the fresh saved record before replacing it. Updated tabs cannot silently overwrite each other. A conflicting change remains available in its form and as an exportable catalog draft. A storage-change warning never reloads the page automatically; explicit reload warns that open forms and drafts will be discarded. The first owner record imports the legacy browser catalog only if no IndexedDB record exists, inside the same record-creation transaction. Legacy localStorage remains untouched. Older app tabs may still edit their separate legacy copy; those edits are not imported again automatically. BroadcastChannel and focus checks provide warnings; correctness comes from the transaction, not notification timing.
 
-If Web Locks are unavailable or denied, the saved catalog is read-only. Playback, export, and tuning remain available; tuning changes are temporary for that tab. There is no unlocked compare-and-set fallback. Catalog and migration-marker writes are not a multi-key transaction. Existing migration rollback remains best effort.
+If IndexedDB is unavailable or denied, the saved owner catalog is read-only. Playback, export, and tuning remain available; tuning changes are temporary for that tab. There is no localStorage compare-and-set fallback. The owner catalog record is transactional. Separate preference markers are not part of that transaction; no cross-store transaction with legacy localStorage is claimed.
 
 Owner removal records episode/source exclusions inside the same catalog value. Automatic discovery-pack updates respect them, including matching titled, explicitly numbered episodes whose source URL changes. Unknown-order episodes match by source URL. Explicitly adding the removed source through the owner editor or a custom batch restores it; other exclusions remain. Old version-1 catalogs without exclusions continue to import/export. Exclusions cannot reconstruct deletions made before this release.
 
 Library revisions cover discovery files, complete seed data and an explicit migration version. Migration changes require increasing `LIBRARY_MIGRATION_VERSION` in `scripts/library-revision.mjs` and rebuilding the library. Additive updates preserve existing sources and settings; they do not remove retired provider URLs automatically.
 
-`npm test` includes catalog-integrity regressions. The optional real-browser regression is `test/browser-catalog-integrity.mjs`; pass an installed Playwright module path as its first argument and, optionally, a Chromium executable path as its second argument. It starts its own loopback server, mocks discovery responses, queues two form saves behind a held Web Lock, and verifies conflict recovery, public-view restrictions and the read-only fallback. No provider media or production services are called.
+`npm test` includes catalog-integrity regressions. The optional real-browser regression is `test/browser-catalog-integrity.mjs`; pass an installed Playwright module path as its first argument and, optionally, a Chromium executable path as its second argument. It starts its own loopback server, mocks discovery responses, queues two form saves behind a held IndexedDB readwrite transaction, and verifies conflict recovery, public-view restrictions and the read-only fallback. No provider media or production services are called.
+
+
+## Shared catalog and owner publishing
+
+The shared master is a JSON catalog in S3, separate from the web page. Immutable snapshot files use `data/catalogs/<sha256>.json`; `data/published-catalog-manifest.json` selects the current published snapshot. The public viewer reads that manifest first and verifies snapshot bytes against its digest. The HTML contains the player and controls, not the master show definitions. A SQL database is not required for this single-curator workflow.
+
+Start the local owner application with **Start YATA Owner.command** in the repository root, or run `npm start` from `nostalgia-tv`. Open `http://127.0.0.1:4173` yourself; the launcher does not open a browser. Existing local drafts are preserved. Use **Add a show**, source editing, or seeding to prepare a draft. **Review publication** displays the frozen catalog changes; **Confirm publication** publishes them. Saving local edits invalidates an earlier review. Publication requires configured local AWS CLI credentials and deployment configuration; no public password or query flag grants owner access.
+
+**Load shared catalog** reads through the protected loopback publisher endpoint. It warns before replacing an owner draft. Export local edits first to retain them. Visitor pages expose watching, tuning and sharing, plus a read-only backup export for a pre-existing browser catalog; they cannot author or publish shared content.
+
+Public pages never overwrite `drew-tv.catalog.v1`. That legacy draft remains recoverable even if it contains unpublished personal shows. Visitor preferences use `yata.viewer-settings.v1`; open tabs retain independent tuning state without owner-catalog conflicts. Published content is held in memory and the browser’s immutable HTTP cache; a new page verifies the snapshot before using it. New editions replace source definitions while preserving valid tuning preferences and current playback. Visible pages check for updates every 60 seconds and on returning to the tab; **Refresh shared catalog** checks immediately. A fresh public load requires a verified published master; read failures show retry without exposing factory source playback. Refresh failures retain the already verified in-memory edition and current playback. Shipped-pack fallback is limited to the local owner workflow. Legacy private sources never become the public master.
+
+The optional `test/browser-published-catalog.mjs` accepts the same Playwright-module and Chromium-executable arguments as the integrity browser regression. Mocked cases cover legacy recovery, authoritative startup despite a matching legacy revision flag, independent public tabs, snapshot updates/failures, owner show creation, frozen review/confirmation, and protected same-origin shared loading.

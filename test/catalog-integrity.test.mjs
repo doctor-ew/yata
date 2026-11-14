@@ -10,24 +10,25 @@ function fixture() {
  const data=new Map();let queue=Promise.resolve();
  const locks={request(_name,_options,callback){const run=queue.then(callback);queue=run.catch(()=>{});return run;}};
  const storage={getItem:key=>data.get(key)??null,setItem:(key,value)=>data.set(key,value)};
- saveCatalog(storage,createSeed());return{data,storage,locks};
+ let record=null;const database={initialize:async catalog=>{if(!record&&catalog)record={revision:1,catalog:structuredClone(catalog)};return structuredClone(record);},compareAndSave:(revision,catalog)=>locks.request('',{},()=>{if((record?.revision??null)!==revision)throw Object.assign(Error('conflict'),{code:'CATALOG_CONFLICT'});record={revision:(revision??0)+1,catalog:structuredClone(catalog)};return structuredClone(record);}),read:()=>structuredClone(record)};
+ saveCatalog(storage,createSeed());return{data,storage,locks,database};
 }
 test('exclusive concurrent writers accept one snapshot and reject the other without overwriting it',async()=>{
  const f=fixture(),a=await openCatalogStore({...f,seed:createSeed()}),b=await openCatalogStore({...f,seed:createSeed()});
  const first=structuredClone(a.catalog),second=structuredClone(b.catalog);first.shows[0].title='A edit';second.shows[0].title='B edit';
  const results=await Promise.allSettled([a.save(first),b.save(second)]);
  assert.equal(results[0].status,'fulfilled');assert.equal(results[1].status,'rejected');assert(results[1].reason instanceof CatalogConflict);
- assert.equal(JSON.parse(f.storage.getItem(STORAGE_KEY)).shows[0].title,'A edit');assert.equal(b.catalog.shows[0].title,createSeed().shows[0].title);assert.equal(second.shows[0].title,'B edit');assert(b.isStale());
+ assert.equal(f.database.read().catalog.shows[0].title,'A edit');assert.equal(b.catalog.shows[0].title,createSeed().shows[0].title);assert.equal(second.shows[0].title,'B edit');
 });
 test('queued drafts from one tab also conflict instead of dropping an earlier change',async()=>{
  const f=fixture(),store=await openCatalogStore({...f,seed:createSeed()});const a=structuredClone(store.catalog),b=structuredClone(store.catalog);a.settings.bumpers=false;b.shows[0].title='Second draft';
  const results=await Promise.allSettled([store.save(a),store.save(b)]);assert.equal(results.filter(r=>r.status==='fulfilled').length,1);assert.equal(store.catalog.settings.bumpers,false);
 });
-test('storage failure and unsupported or denied locks preserve stored catalog and keep export data readable',async()=>{
+test('transaction failure and unavailable transactional storage preserve stored catalog and keep export data readable',async()=>{
  const f=fixture();const original=f.storage.getItem(STORAGE_KEY);const store=await openCatalogStore({...f,seed:createSeed()});
- f.storage.setItem=()=>{throw Error('storage full');};const draft=structuredClone(store.catalog);draft.shows[0].title='Draft';
- await assert.rejects(store.save(draft),/storage full/);assert.equal(f.storage.getItem(STORAGE_KEY),original);assert.notEqual(store.catalog.shows[0].title,'Draft');assert.equal(draft.shows[0].title,'Draft');
- for(const locks of[undefined,{request:async()=>{throw Error('denied');}}]){const readonly=await openCatalogStore({storage:f.storage,locks,seed:createSeed()});assert.equal(readonly.writable,false);await assert.rejects(readonly.save(draft),/read-only/);assert.equal(f.storage.getItem(STORAGE_KEY),original);}
+ f.database.compareAndSave=async()=>{throw Error('storage full');};const draft=structuredClone(store.catalog);draft.shows[0].title='Draft';
+ await assert.rejects(store.save(draft),/storage full/);assert.equal(f.storage.getItem(STORAGE_KEY),original);assert.notEqual(store.catalog.shows[0].title,'Draft');assert.notEqual(f.database.read().catalog.shows[0].title,'Draft');assert.equal(draft.shows[0].title,'Draft');
+ for(const database of[{initialize:async()=>{throw Error('unavailable');}},{initialize:async()=>{throw Error('denied');}}]){const readonly=await openCatalogStore({storage:f.storage,database,seed:createSeed()});assert.equal(readonly.writable,false);await assert.rejects(readonly.save(draft),/read-only/);assert.equal(f.storage.getItem(STORAGE_KEY),original);}
 });
 test('legacy catalogs round-trip without exclusions and malformed exclusions fail closed',()=>{
  const seed=createSeed();assert.equal(validateCatalog(seed).exclusions,undefined);assert.deepEqual(parseCatalogJson(JSON.stringify(seed)),seed);
@@ -58,4 +59,19 @@ test('revision changes for seed-only source, wishlist, or migration changes and 
  const source=structuredClone(seed);source.shows[0].episodes[0].sources[0].url+='?updated=1';assert.notEqual(libraryRevision(texts,source),revision);
  const wishlist=structuredClone(seed);wishlist.shows.find(s=>s.id==='midnight-matinee').episodes[0].title+=' revised';assert.notEqual(libraryRevision(texts,wishlist),revision);
  assert.notEqual(libraryRevision(texts,seed,LIBRARY_MIGRATION_VERSION+1),revision);
+});
+
+test('owner migration imports legacy once and never mirrors canonical writes over recovery data',async()=>{
+ const f=fixture(),legacy=f.storage.getItem(STORAGE_KEY),first=await openCatalogStore({...f,seed:createSeed()});
+ const next=structuredClone(first.catalog);next.shows[0].title='Canonical owner draft';await first.save(next);
+ assert.equal(f.storage.getItem(STORAGE_KEY),legacy);
+ const olderClient=JSON.parse(legacy);olderClient.shows[0].title='Later legacy-only edit';f.storage.setItem(STORAGE_KEY,JSON.stringify(olderClient));
+ const second=await openCatalogStore({...f,seed:createSeed()});assert.equal(second.catalog.shows[0].title,'Canonical owner draft');assert.equal(JSON.parse(f.storage.getItem(STORAGE_KEY)).shows[0].title,'Later legacy-only edit');
+});
+
+test('notification API denial does not disable transactional owner storage',async()=>{
+ const previousWindow=globalThis.window,previousChannel=globalThis.BroadcastChannel;
+ globalThis.window={};globalThis.BroadcastChannel=class{constructor(){throw Error('denied');}};
+ try{const f=fixture(),store=await openCatalogStore({...f,seed:createSeed()});const next=structuredClone(store.catalog);next.shows[0].title='Saved without notifications';await store.save(next);assert.equal(store.catalog.shows[0].title,'Saved without notifications');}
+ finally{if(previousWindow===undefined)delete globalThis.window;else globalThis.window=previousWindow;globalThis.BroadcastChannel=previousChannel;}
 });
