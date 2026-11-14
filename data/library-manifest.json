@@ -1,18 +1,19 @@
 {
-  "revision": "expanded-c19d8afbf2e4e769",
+  "revision": "expanded-6982824d5b94b9e6",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
     "2026-11-13T18:34:49.891Z",
     "2026-11-13T20:53:25.232940+00:00",
     "2026-11-14T03:27:55.664677+00:00",
-    "2026-11-14T03:28:28.539Z"
+    "2026-11-14T03:28:28.539Z",
+    "2026-11-14T13:23:15.444Z"
   ],
-  "episodes": 2956,
-  "ready": 2837,
+  "episodes": 2985,
+  "ready": 2866,
   "movieReady": 5,
   "breaks": 14,
-  "streamSlots": 35234,
+  "streamSlots": 36532,
   "shows": [
     {
       "id": "dukes",
@@ -679,6 +680,30 @@
       "sources": 14
     },
     {
+      "id": "barney-miller",
+      "title": "Barney Miller",
+      "episodes": 1,
+      "ready": 1,
+      "breaks": 0,
+      "sources": 1
+    },
+    {
+      "id": "mork-mindy",
+      "title": "Mork & Mindy",
+      "episodes": 24,
+      "ready": 24,
+      "breaks": 0,
+      "sources": 24
+    },
+    {
+      "id": "love-boat",
+      "title": "The Love Boat",
+      "episodes": 4,
+      "ready": 4,
+      "breaks": 0,
+      "sources": 4
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -687,6 +712,6 @@
       "sources": 1
     }
   ],
-  "bytes": 1114567,
+  "bytes": 1123867,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

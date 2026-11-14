@@ -211,7 +211,7 @@ function renderLibrary() {
     const art = button('', () => openShow(s.id), 'show-art');
     art.style.setProperty('--tile', tiles[catalog.shows.indexOf(s) % tiles.length]);
     art.setAttribute('aria-label', `View episodes and sources for ${s.title}`);
-    art.append(element('small', s.id === COMMERCIAL_SHOW_ID ? 'VINTAGE / COMMERCIALS' : s.channel === 'action' ? 'ACTION / ADVENTURE' : s.channel === 'scifi' ? 'SCI-FI / RETRO FUTURES' : 'SATURDAY / MORNING'), element('strong', s.title));
+    art.append(element('small', s.id === COMMERCIAL_SHOW_ID ? 'VINTAGE / COMMERCIALS' : s.channel === 'comedy' ? 'COMEDY / CLASSIC LAUGHS' : s.channel === 'action' ? 'ACTION / ADVENTURE' : s.channel === 'scifi' ? 'SCI-FI / RETRO FUTURES' : 'SATURDAY / MORNING'), element('strong', s.title));
     const count = s.episodes.length, live = s.episodes.filter(e => e.kind === 'episode' && stationSource(e) && e.durationSeconds > 0).length;
     let status = 'No episode sources yet · add yours';
     if (count) status = s.id === COMMERCIAL_SHOW_ID ? `${count} optional break clips · ${catalog.settings.bumpers ? 'enabled between stories' : 'off until enabled'}` : live ? `${live} in live rotation · ${count} catalog ${count === 1 ? 'item' : 'items'}` : `${count} ${count === 1 ? 'source item' : 'source items'} · watch from the library`;
@@ -746,7 +746,7 @@ async function fetchLibrary() {
   if (!response.ok) throw Error('The expanded episode library is not ready yet.');
   const manifest = await response.json();
   if (typeof manifest.revision !== 'string' || !/^[a-z0-9.-]{1,100}$/.test(manifest.revision)) throw Error('Invalid library revision.');
-  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies'].map(async provider => {
+  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy'].map(async provider => {
     const response = await fetch(`data/${provider}-discovery.json`);
     if (!response.ok) throw Error('A library source file could not be loaded. Your catalog is unchanged.');
     return response.json();
@@ -909,7 +909,7 @@ function createPublisherUi() {
   const add=button('Add a show',()=>{
     if(!ownerMode||!catalogStore.writable)return;
     const name=prompt('New show name');if(!name?.trim())return;
-    const choice=prompt('Channel: action, scifi, or cartoons','scifi');if(!['action','scifi','cartoons'].includes(choice))return;
+    const choice=prompt('Channel: action, scifi, cartoons, or comedy','scifi');if(!['action','scifi','cartoons','comedy'].includes(choice))return;
     const next=copyCatalog(), show={id:uid('show'),title:name.trim(),channel:choice,imdbUrl:null,episodes:[]};next.shows.push(show);
     void commit(next).then(saved=>{if(saved){selectedShowId=show.id;render();openShow(show.id);status.textContent='New show saved locally. Add sources, then review publication to share it.';}});
   });add.disabled=!catalogStore.writable;

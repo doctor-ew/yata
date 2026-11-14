@@ -85,6 +85,7 @@ export function createSeed() {
     sources: [{ id: 'joe-tubi', provider: 'tubi', availability: 'verified',
       url: 'https://tubitv.com/tv-shows/301812/s01-e01-the-cobra-strikes' }],
   });
+  for(const [id,title] of [['barney-miller','Barney Miller'],['mork-mindy','Mork & Mindy'],['love-boat','The Love Boat']]) shows.push({id,title,channel:'comedy',imdbUrl:null,episodes:[]});
   shows.push({ id: 'saturday-simulator', title: 'Saturday Morning Simulator', channel: 'cartoons', imdbUrl: null,
     episodes: [{ id: 'simulator-107', title: 'Saturday Morning Cartoons · compilation #107',
       season: 0, number: 107, durationSeconds: 33116, group: '', kind: 'episode',

@@ -5,17 +5,18 @@ import { createSeed } from '../src/catalog.mjs';
 import { discoveryRows, mergeLibraryBatch } from '../src/bulk.mjs';
 import { buildSchedule, parseCatalogJson, stationSource, COMMERCIAL_SHOW_ID } from '../src/domain.mjs';
 const data = new URL('../data/', import.meta.url);
-const names = ['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies'];
+const names = ['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy'];
 const extraIds = new Set(ADDITIONAL_SCIFI_SERIES.map(([id]) => id));
 const texts = await Promise.all(names.map(name => readFile(new URL(`${name}-discovery.json`, data), 'utf8')));
 const packs = texts.map(JSON.parse);
 const seed = createSeed(); let sequence = 0;
 for (const [index, name] of names.entries()) {
   const expected = seed.shows.filter(show => {
+    if (name === 'comedy') return show.channel === 'comedy';
     if (name === 'movies') return show.id === MOVIE_SHOW_ID;
     if (name === 'scifi') return extraIds.has(show.id);
     if (name === 'commercials') return show.id === COMMERCIAL_SHOW_ID;
-    return show.id !== COMMERCIAL_SHOW_ID && show.id !== MOVIE_SHOW_ID && !extraIds.has(show.id) && show.id !== 'saturday-simulator' && (name === 'youtube' || (name === 'action' ? ['action', 'scifi'].includes(show.channel) : show.channel === 'cartoons'));
+    return show.channel !== 'comedy' && show.id !== COMMERCIAL_SHOW_ID && show.id !== MOVIE_SHOW_ID && !extraIds.has(show.id) && show.id !== 'saturday-simulator' && (name === 'youtube' || (name === 'action' ? ['action', 'scifi'].includes(show.channel) : show.channel === 'cartoons'));
   }).map(show => show.id).sort();
   const actual = packs[index].shows.map(show => show.showId).sort();
   if (JSON.stringify(expected) !== JSON.stringify(actual)) throw Error(`${name} discovery is incomplete or contains unexpected shows.`);

@@ -1,0 +1,567 @@
+{
+  "checkedAt": "2026-11-14T13:23:15.444Z",
+  "provider": "archive",
+  "notes": [
+    "Bounded reviewed source selection, not complete-series availability. Metadata and successful small HTTP video ranges do not establish decoding, spoken language, or rights status.",
+    "Exclude standalone Love Boat story excerpts; keep only complete named episode files. Mork pilot remains its combined file; no invented split points.",
+    "Barney Miller series item currently exposes only one eligible MP4."
+  ],
+  "shows": [
+    {
+      "showId": "barney-miller",
+      "title": "Barney Miller",
+      "channel": "comedy",
+      "items": [
+        {
+          "itemId": "barney-miller",
+          "title": "Barney Miller Series",
+          "metadataUrl": "https://archive.org/metadata/barney-miller",
+          "episodes": 1
+        }
+      ],
+      "episodes": [
+        {
+          "id": "archive-barney-miller-0",
+          "title": "Barney Miller S01E01 (Ramon)",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1343.79,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/barney-miller/Barney%20Miller%201975-1982%20(Complete%20TV%20series%20in%20MP4%20format)/Barney%20Miller%20S01E01%20(Ramon).mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "mork-mindy",
+      "title": "Mork & Mindy",
+      "channel": "comedy",
+      "items": [
+        {
+          "itemId": "1x-1-2-pilot",
+          "title": "MORK & MINDY",
+          "metadataUrl": "https://archive.org/metadata/1x-1-2-pilot",
+          "episodes": 24
+        }
+      ],
+      "episodes": [
+        {
+          "id": "archive-1x-1-2-pilot-0",
+          "title": "1x1(2)Pilot",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 2972.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x1(2)Pilot%20%20.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-1",
+          "title": "1x10 A Mommy for Mork",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1506.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x10%20A%20Mommy%20for%20Mork.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-2",
+          "title": "1x11 Mork's Greatest Hit",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1509.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x11%20Mork's%20Greatest%20Hit.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-3",
+          "title": "1x12 Old Fears",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1506.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x12%20Old%20Fears.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-4",
+          "title": "1x13 Mork's First Christmas",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1506.69,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x13%20Mork's%20First%20Christmas.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-5",
+          "title": "1x14 Mork and the ImmigrantMork & Mindy T01E11",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 1508.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x14%20Mork%20and%20the%20ImmigrantMork%20%26%20Mindy%20T01E11.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-6",
+          "title": "1x15 Mork the Tolerant",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 1510.41,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x15%20Mork%20the%20Tolerant.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-7",
+          "title": "1x16 Young Love",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 1505.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x16%20Young%20Love.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-8",
+          "title": "1x17 Skyflakes Keep Falling on My Head",
+          "season": 1,
+          "number": 17,
+          "durationSeconds": 1509.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x17%20Skyflakes%20Keep%20Falling%20on%20My%20Head.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-9",
+          "title": "1x18 Mork Goes Erk",
+          "season": 1,
+          "number": 18,
+          "durationSeconds": 1510.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x18%20Mork%20Goes%20Erk.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-10",
+          "title": "1x19 Yes Sir, That's My Baby",
+          "season": 1,
+          "number": 19,
+          "durationSeconds": 1513.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x19%20Yes%20Sir%2C%20That's%20My%20Baby.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-11",
+          "title": "1x20 Mork's Mixed Emotions",
+          "season": 1,
+          "number": 20,
+          "durationSeconds": 1509.15,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x20%20Mork's%20Mixed%20Emotions.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-12",
+          "title": "1x21 Mork's Night Out",
+          "season": 1,
+          "number": 21,
+          "durationSeconds": 1511.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x21%20Mork's%20Night%20Out.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-13",
+          "title": "1x22 It's a Wonderful Mork",
+          "season": 1,
+          "number": 22,
+          "durationSeconds": 1509.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x22%20It's%20a%20Wonderful%20Mork.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-14",
+          "title": "1x23 Mork Runs Down",
+          "season": 1,
+          "number": 23,
+          "durationSeconds": 1507.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x23%20Mork%20Runs%20Down.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-15",
+          "title": "1x24 It's a Wonderful Mork",
+          "season": 1,
+          "number": 24,
+          "durationSeconds": 1509.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x24%20It's%20a%20Wonderful%20Mork.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-16",
+          "title": "1x25 mork's Best Friend",
+          "season": 1,
+          "number": 25,
+          "durationSeconds": 1510.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x25%20mork's%20Best%20Friend.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-17",
+          "title": "1x3 Mork Moves In",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1518.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x3%20Mork%20Moves%20In.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-18",
+          "title": "1x4 Mork Tuns Away",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1507.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x4%20Mork%20Tuns%20Away.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-19",
+          "title": "1x5 Mork in Love",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1505.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x5%20Mork%20in%20Love.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-20",
+          "title": "1x6 Mork's Seduction",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1508.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x6%20Mork's%20Seduction.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-21",
+          "title": "1x7 Mork Goes Public",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1509.18,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x7%20Mork%20Goes%20Public.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-22",
+          "title": "1x8 To Tell the Truth",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1508.18,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-22",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x8%20To%20Tell%20the%20Truth.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-1x-1-2-pilot-23",
+          "title": "1x9 Mork the Gullible",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1503.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-23",
+              "provider": "archive",
+              "url": "https://archive.org/download/1x-1-2-pilot/1x9%20Mork%20the%20Gullible.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "love-boat",
+      "title": "The Love Boat",
+      "channel": "comedy",
+      "items": [
+        {
+          "itemId": "the-love-boat-s-1-e-10",
+          "title": "The Love Boat S1E10 Dear Beverly/The Strike/Special Delivery",
+          "metadataUrl": "https://archive.org/metadata/the-love-boat-s-1-e-10",
+          "episodes": 1
+        },
+        {
+          "itemId": "the-love-boat-s-5-e-29",
+          "title": "The Love Boat S5E29 Mothers Don’t Do That/Marrying for Money/Substitute Lover",
+          "metadataUrl": "https://archive.org/metadata/the-love-boat-s-5-e-29",
+          "episodes": 1
+        },
+        {
+          "itemId": "the-love-boat-9x-7-good-time-girls-iron-man-soap-war",
+          "title": "The Love Boat 9x 7 Good Time Girls Iron Man Soap War",
+          "metadataUrl": "https://archive.org/metadata/the-love-boat-9x-7-good-time-girls-iron-man-soap-war",
+          "episodes": 1
+        },
+        {
+          "itemId": "the-love-boat-9x-8-trouble-in-paradise-no-more-mister-nice-guy-the-mermaid-and-the-cop",
+          "title": "The Love Boat 9x 8 Trouble In Paradise No More Mister Nice Guy The Mermaid And The Cop",
+          "metadataUrl": "https://archive.org/metadata/the-love-boat-9x-8-trouble-in-paradise-no-more-mister-nice-guy-the-mermaid-and-the-cop",
+          "episodes": 1
+        }
+      ],
+      "episodes": [
+        {
+          "id": "archive-the-love-boat-s-1-e-10-1",
+          "title": "The Love Boat S1E10",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 3002.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-love-boat-s-1-e-10/The%20Love%20Boat%20S1E10.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-love-boat-s-5-e-29-1",
+          "title": "The Love Boat S5E29",
+          "season": 5,
+          "number": 29,
+          "durationSeconds": 2942.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-love-boat-s-5-e-29/The%20Love%20Boat%20S5E29.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-love-boat-9x-7-good-time-girls-iron-man-soap-war-0",
+          "title": "The Love Boat 9x7 Good Time Girls Iron Man Soap War",
+          "season": 9,
+          "number": 7,
+          "durationSeconds": 2922.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-love-boat-9x-7-good-time-girls-iron-man-soap-war/The%20Love%20Boat%209x7%20Good%20Time%20Girls%20Iron%20Man%20Soap%20War.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-love-boat-9x-8-trouble-in-paradise-no-more-mister-nice-guy-the-mer-0",
+          "title": "The Love Boat 9x8 Trouble in Paradise No More Mister Nice Guy The Mermaid and the Cop",
+          "season": 9,
+          "number": 8,
+          "durationSeconds": 2947.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-love-boat-9x-8-trouble-in-paradise-no-more-mister-nice-guy-the-mermaid-and-the-cop/The%20Love%20Boat%209x8%20Trouble%20in%20Paradise%20No%20More%20Mister%20Nice%20Guy%20The%20Mermaid%20and%20the%20Cop.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
