@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {spawn} from 'node:child_process';
 import {once} from 'node:events';
 import {createHash} from 'node:crypto';
-import {createSeed} from '../src/catalog.mjs';
+import {createSeed, CHANNELS} from '../src/catalog.mjs';
 import {STORAGE_KEY} from '../src/domain.mjs';
 import {OWNER_DATABASE_NAME} from '../src/catalog-database.mjs';
 const {chromium}=await import(process.argv[2] || 'playwright');
@@ -69,7 +69,7 @@ try {
  const unchanged=await failureTab.evaluate(async()=>{const {openBrowserCatalogDatabase}=await import('/src/catalog-database.mjs');const db=await openBrowserCatalogDatabase();const record=await db.read();db.close();return record.catalog.shows[0].episodes[0].title;});assert.equal(unchanged,state.shows[0].episodes[0].title);
  assert.deepEqual(errors,[]);await owner.close();
  const viewer=await context({publicView:true}),publicPage=await viewer.newPage();await publicPage.goto(origin);
- await publicPage.waitForFunction(()=>document.querySelectorAll('#channels button').length===4);
+ await publicPage.waitForFunction(count=>document.querySelectorAll('#channels button').length===count,CHANNELS.length);
  assert.equal(await publicPage.locator('.collection-tools').isVisible(),false);assert.equal(await publicPage.locator('#manage-sources').isVisible(),false);
  await publicPage.evaluate(()=>{for(const id of['bulk-open','seed-all','manage-sources','show-add'])document.getElementById(id).dispatchEvent(new Event('click'));document.getElementById('source-form').dispatchEvent(new Event('submit',{cancelable:true}));});
  assert.equal(await publicPage.locator('#source-dialog').evaluate(node=>node.open),false);assert.equal(await publicPage.locator('#bulk-dialog').evaluate(node=>node.open),false);

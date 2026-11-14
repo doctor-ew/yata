@@ -12,7 +12,7 @@
 <body>
   <header class="masthead">
     <a class="brand" href="#watch" aria-label="YATA home"><span class="brand-icon" aria-hidden="true">y.</span><span>YA<span class="brand-tv">TA</span><small>YET ANOTHER TV APP</small></span></a>
-    <nav aria-label="Main navigation"><a href="#watch">Watch</a><a href="#library">The library</a><button id="manage-sources" class="nav-button">Manage sources <span aria-hidden="true">↗</span></button></nav>
+    <nav aria-label="Main navigation"><a href="#watch">Watch</a><a href="#guide">Guide</a><a href="#library">The library</a><button id="manage-sources" class="nav-button">Manage sources <span aria-hidden="true">↗</span></button></nav>
     <span class="header-note">PERSONAL TELEVISION<br><span id="clock">LOCAL TIME</span></span>
   </header>
   <main>
@@ -77,7 +77,23 @@
         <aside class="guide" aria-labelledby="guide-heading"><div class="guide-heading"><h2 id="guide-heading">On the guide</h2><span>LOCAL TIME</span></div><div id="guide-list"></div><p id="rotation-note" class="guide-foot"></p><button id="guide-add" class="guide-add">Build out this channel <span>+</span></button></aside>
       </div>
     </section>
-    <section id="library" class="library" aria-labelledby="library-heading">
+    <div class="browse-tabs" role="tablist" aria-label="Browse television">
+      <button id="guide-tab" type="button" role="tab" aria-controls="guide" aria-selected="false" tabindex="-1">TV Guide</button>
+      <button id="library-tab" type="button" role="tab" aria-controls="library" aria-selected="true">Library</button>
+    </div>
+    <section id="guide" class="tv-guide" role="tabpanel" aria-labelledby="guide-tab" hidden>
+      <div class="tv-guide-heading"><div><p class="eyebrow">YOUR REGULARLY SCHEDULED ESCAPE</p><h2>Your TV guide.</h2><p class="muted">Your personal station schedule · local time · checked sources only.</p></div><div class="tv-guide-navigation"><span data-guide-clock></span><span data-guide-date></span><div><button type="button" class="button small" data-guide-earlier aria-label="Earlier guide window">← Earlier</button><button type="button" class="button small" data-guide-reset>Now</button><button type="button" class="button small" data-guide-later aria-label="Later guide window">Later →</button></div></div></div>
+      <section class="tv-guide-details" data-guide-details aria-label="Selected guide program" hidden>
+        <div><p class="eyebrow" data-guide-channel></p><h3 data-guide-show></h3><p data-guide-episode></p><p class="muted" data-guide-time></p></div>
+        <div class="tv-guide-actions"><button type="button" class="button primary" data-guide-tune disabled>▶ Join channel live</button><button type="button" class="button" data-guide-play disabled>Start episode from beginning</button></div>
+      </section>
+      <p data-guide-status class="tv-guide-status" role="status"></p>
+      <div class="tv-guide-scroll" role="region" aria-label="Two-hour program grid; scroll horizontally for later times" tabindex="0">
+        <div class="tv-guide-inner"><div class="tv-guide-time"><span>CHANNEL</span><div data-guide-ticks></div></div><div data-guide-rows></div><div class="tv-guide-now-track" aria-hidden="true"><span data-guide-now class="tv-guide-now" hidden></span></div></div>
+      </div>
+      <p class="muted tv-guide-foot">Select a program for its full title and episode details. Commercial blocks follow your break settings. Movies stay in Midnight Matinee; unchecked and external-only sources stay in Library. Guide rows show full-channel mixes, even when you are watching a single-show stream.</p>
+    </section>
+    <section id="library" class="library" role="tabpanel" aria-labelledby="library-tab">
       <div class="section-heading"><div><p class="eyebrow">YOUR PERSONAL TIME MACHINE</p><h2 id="library-heading">The familiar faces.</h2><p id="library-count" class="muted"></p></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a show…" aria-label="Search shows"></label></div>
       <section id="movie-section" class="movie-section" aria-labelledby="movie-heading" hidden>
         <div><p class="eyebrow">SCI-FI FEATURE FILMS</p><h3 id="movie-heading">Midnight Matinee</h3><p id="movie-count" class="muted"></p><p class="muted">A separate movie-night stream. Features stay out of your regular TV rotation.</p></div>

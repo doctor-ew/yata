@@ -1,3 +1,5 @@
+import {mountTvGuide} from './tv-guide-ui.mjs';
+import {guidePlayback} from './tv-guide.mjs';
 import { fetchPublishedCatalog, mergePublishedCatalog } from './published-catalog.mjs';
 import { openCatalogStore, CatalogConflict } from './catalog-store.mjs';
 import { excludeEpisode, excludeSource, restoreExcluded } from './exclusions.mjs';
@@ -45,6 +47,29 @@ const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'T
 const tiles = ['#435a53', '#5c4257', '#3f526a', '#67513d', '#514a70', '#4f5e40', '#674849', '#3c6262'];
 const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
 const dialFeedback = mountDialFeedback({ windowRef: window, storage, toggle: $('dial-feedback'), getVolume: () => transportState()?.volume ?? preferredAudio?.volume ?? 1, getMuted: () => transportState()?.muted ?? preferredAudio?.muted ?? false, pulse: () => retroEffects.pulse({ force: true }) });
+
+const stationGuide=mountTvGuide({root:$('guide'),getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:selection=>playFromGuide(selection,true),onPlay:selection=>playFromGuide(selection,false)});
+function showBrowseView(view,{scroll=false}={}) {
+  const guide=view==='guide';$('guide').hidden=!guide;$('library').hidden=guide;
+  for(const name of ['guide','library']){const tab=$(name+'-tab'),selected=(name==='guide')===guide;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;}
+  stationGuide.render();if(scroll)$(guide?'guide':'library').scrollIntoView({block:'start'});
+}
+for(const name of ['guide','library'])$(name+'-tab').addEventListener('click',()=>{showBrowseView(name);location.hash=name;});
+document.querySelector('.browse-tabs').addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();const view=event.key==='Home'?'guide':event.key==='End'?'library':$('guide').hidden?'guide':'library';showBrowseView(view);$(view+'-tab').focus();});
+window.addEventListener('hashchange',()=>{if(['#guide','#library'].includes(location.hash))showBrowseView(location.hash.slice(1));});
+showBrowseView(location.hash==='#guide'?'guide':'library');
+
+async function playFromGuide(selection,live) {
+  if(!ownerMode&&!publicCatalogReady)return false;
+  const next=copyCatalog();next.settings.channel=selection.channel.id;next.settings.streamShow=null;
+  if(!await commitSettings(next))return false;
+  if(live&&!buildSchedule(catalog).length){notify('This channel no longer has a checked schedule. Select another channel.');render();return false;}
+  const chosen=live?null:guidePlayback(catalog,selection);
+  if(!live&&!chosen){notify('This guide item is no longer in the station. Select another program.');render();return false;}
+  stopPlayer();render();
+  if(live)tuneLive();else playEpisode(chosen.show,chosen.episode,chosen.source,0,'start','station',playbackPosition(chosen.schedule,chosen.index));
+  $('player-shell').scrollIntoView({block:'center',behavior:'smooth'});return true;
+}
 
 function element(tag, content, className) {
   const node = document.createElement(tag);
@@ -220,7 +245,7 @@ function renderLibrary() {
   }));
 }
 
-function render() { renderChannels(); renderGuide(); renderLibrary(); renderDials(); }
+function render() { renderChannels(); renderGuide(); renderLibrary(); renderDials(); stationGuide.render(); }
 
 function openShow(showId) {
   if(!ownerMode&&!publicCatalogReady)return;
@@ -606,7 +631,7 @@ if(!ownerMode&&hadSavedCatalog){
 render();
 if (ownerMode && !catalogStore.writable) { notify('Catalog changes are read-only: safe tab coordination is unavailable. Playback and export remain available.'); showCatalogRecovery(); }
 if (loaded.error && ownerMode) notify(loaded.error);
-setInterval(renderGuide, 15000);
+setInterval(()=>{renderGuide();stationGuide.render();}, 15000);
 window.addEventListener('pagehide', () => session?.dispose());
 
 let batchRows = [], batchPage = 0, batchFilter = '', wholeLibrary = false;

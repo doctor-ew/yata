@@ -210,3 +210,11 @@ Channel 05 mixes Barney Miller, Mork & Mindy, and The Love Boat. These series al
 ## 70s Prime Time
 
 Channel 06 mixes checked Baretta and B.J. and the Bear entries and includes Barnaby Jones as a wishlist show. The initial set contains 58 Baretta and 12 B.J. entries. The bounded search found no eligible English Barnaby file; its external provider listing is recorded in the discovery artifact. Missing episodes remain unknown. Recheck source availability with `node scripts/verify-seventies.mjs`, then rebuild the library. HTTP success does not establish browser decoding or rights status.
+
+## TV Guide
+
+Open **Guide** in the header or **TV Guide** beside Library. The two-hour grid uses your actual station clock, episode runtimes, shuffle settings and commercial breaks. Select a program for full details, then **Join channel live** or **Start episode from beginning**. Starting an episode retains its position in the station queue. Browsing tabs leaves current playback running.
+
+On a phone, swipe the grid horizontally; channel names remain visible. Earlier/Later browse other windows and Now returns to the current time. This is your personal station schedule, not a provider broadcast listing. Films remain in Midnight Matinee. Wishlist and unchecked sources stay in Library. Full-channel guide rows do not inherit a selected single-show stream.
+
+The optional `test/browser-tv-guide.mjs` takes an installed Playwright module path and optional Chromium executable. It uses provider stand-ins for repeatable playback wiring checks. See [TV Guide specification](../docs/22/SPEC.md).
