@@ -44,7 +44,7 @@ let scrubbing = false, scrubSession = null, audioSession = null, preferredAudio 
 let navCatalog = null, navActive = null, previousEntry = null, nextEntry = null;
 let sharedTarget = null;
 const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'Tubi' };
-const tiles = ['#435a53', '#5c4257', '#3f526a', '#67513d', '#514a70', '#4f5e40', '#674849', '#3c6262'];
+const tiles = ['#5c6242', '#76513b', '#4d6152', '#755d36', '#665841', '#526044', '#704d3d', '#4f635a'];
 const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
 const dialFeedback = mountDialFeedback({ windowRef: window, storage, toggle: $('dial-feedback'), getVolume: () => transportState()?.volume ?? preferredAudio?.volume ?? 1, getMuted: () => transportState()?.muted ?? preferredAudio?.muted ?? false, pulse: () => retroEffects.pulse({ force: true }) });
 

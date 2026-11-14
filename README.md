@@ -220,3 +220,5 @@ On a phone, swipe the grid horizontally; channel names remain visible. Earlier/L
 The optional `test/browser-tv-guide.mjs` takes an installed Playwright module path and optional Chromium executable. It uses provider stand-ins for repeatable playback wiring checks. See [TV Guide specification](../docs/22/SPEC.md).
 
 The compact remote beneath the TV provides channel keys and **SET UP**, which opens stream, commercial and TV-effect options in an overlay. Escape, Close or Done returns to watching. Old browser catalog backup export is tucked into **Previous browser backup** in the footer. In desktop Guide mode, the TV stays beside the schedule while scrolling. Use **Fill window** to expand it and Escape to restore it. On narrow screens, the TV sits above the guide.
+
+The visual palette uses walnut surfaces, warm ivory listings, burnt-orange actions and muted olive controls. Amber is reserved for remote channel numerals and hardware selection indicators.
