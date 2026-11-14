@@ -21,18 +21,18 @@ export class PublicationError extends Error {
   }
 }
 export function frozenCatalog(input) {
-  const defaults = createSeed();
-  // Shared content never inherits the owner's current playback selection or
-  // deletion-history URLs. Those remain in the untouched local draft.
-  const draft = { ...input, epoch: defaults.epoch, settings: defaults.settings };
+  const draft = { ...input };
   delete draft.publishedRevision;
-  delete draft.exclusions;
   let catalog;
   try {
     catalog = validateCatalog(draft);
   } catch (error) {
     throw new PublicationError(error.message, "INVALID_CATALOG", 400);
   }
+  // The shared clock remains stable. Playback preferences and deletion history
+  // stay local to the owner; validation has already cloned all catalog data.
+  catalog.settings = { ...createSeed().settings };
+  delete catalog.exclusions;
   const text = JSON.stringify(catalog) + "\n";
   if (Buffer.byteLength(text) > MAX_IMPORT_BYTES)
     throw new PublicationError(

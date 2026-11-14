@@ -427,16 +427,26 @@ test("publication uses station defaults and excludes owner playback choices and 
   };
   owner.epoch = 12345;
   owner.publishedRevision = "a".repeat(64);
-  const removedUrl = "https://archive.org/download/owner-deleted-fixture/removed.mp4";
+  const removedUrl =
+    "https://archive.org/download/owner-deleted-fixture/removed.mp4";
   owner.exclusions = {
-    episodes: [{showId: "buck-rogers", title: "Deleted owner episode", season: 1, number: 99, kind: "episode", urls: [removedUrl]}],
-    sources: [{showId: "buck-rogers", url: removedUrl}],
+    episodes: [
+      {
+        showId: "buck-rogers",
+        title: "Deleted owner episode",
+        season: 1,
+        number: 99,
+        kind: "episode",
+        urls: [removedUrl],
+      },
+    ],
+    sources: [{ showId: "buck-rogers", url: removedUrl }],
   };
   const original = JSON.stringify(owner);
   const snapshot = frozenCatalog(owner);
   const defaults = createSeed();
   assert.deepEqual(snapshot.catalog.settings, defaults.settings);
-  assert.equal(snapshot.catalog.epoch, defaults.epoch);
+  assert.equal(snapshot.catalog.epoch, owner.epoch);
   assert.equal(snapshot.catalog.settings.channel, "mixed");
   assert.equal(snapshot.catalog.settings.rotation, "random");
   assert.equal(snapshot.catalog.settings.streamShow, null);
@@ -446,7 +456,12 @@ test("publication uses station defaults and excludes owner playback choices and 
   assert.deepEqual(snapshot.catalog.shows, owner.shows);
   assert.equal(JSON.stringify(owner), original);
   const otherTuning = structuredClone(owner);
-  otherTuning.settings = {...defaults.settings,channel:"action",streamShow:"dukes"};
-  otherTuning.epoch = 999;
+  otherTuning.settings = {
+    ...defaults.settings,
+    channel: "action",
+    streamShow: "dukes",
+  };
   assert.equal(frozenCatalog(otherTuning).revision, snapshot.revision);
+  otherTuning.epoch = 999;
+  assert.notEqual(frozenCatalog(otherTuning).revision, snapshot.revision);
 });
