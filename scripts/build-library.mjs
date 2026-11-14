@@ -9,7 +9,7 @@ const texts = await Promise.all(names.map(name => readFile(new URL(`${name}-disc
 const packs = texts.map(JSON.parse);
 const seed = createSeed(); let sequence = 0;
 for (const [index, name] of names.entries()) {
-  const expected = seed.shows.filter(show => name === 'commercials' ? show.id === COMMERCIAL_SHOW_ID : show.id !== COMMERCIAL_SHOW_ID && show.id !== 'saturday-simulator' && (name === 'youtube' || show.channel === (name === 'action' ? 'action' : 'cartoons'))).map(show => show.id).sort();
+  const expected = seed.shows.filter(show => name === 'commercials' ? show.id === COMMERCIAL_SHOW_ID : show.id !== COMMERCIAL_SHOW_ID && show.id !== 'saturday-simulator' && (name === 'youtube' || (name === 'action' ? ['action', 'scifi'].includes(show.channel) : show.channel === 'cartoons'))).map(show => show.id).sort();
   const actual = packs[index].shows.map(show => show.showId).sort();
   if (JSON.stringify(expected) !== JSON.stringify(actual)) throw Error(`${name} discovery is incomplete or contains unexpected shows.`);
 }
@@ -24,7 +24,7 @@ const shows = result.catalog.shows.map(show => ({
   sources: show.episodes.reduce((count, episode) => count + episode.sources.length, 0),
 }));
 const manifest = {
-  revision: `expanded-${createHash('sha256').update(texts.join('\n')).digest('hex').slice(0, 16)}`,
+  revision: `expanded-${createHash('sha256').update(texts.join('\n') + JSON.stringify(seed.shows.map(show => [show.id, show.channel]))).digest('hex').slice(0, 16)}`,
   checkedAt: packs.map(pack => pack.checkedAt).filter(Boolean),
   episodes: shows.reduce((count, show) => count + show.episodes, 0),
   ready: shows.reduce((count, show) => count + show.ready, 0),

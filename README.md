@@ -164,3 +164,9 @@ Use **Share episode** beside the player; check **Include position** for a timest
 The cabinet’s top dial advances to the next playable show in the selected channel. The bottom dial starts a new random mix; Stream settings selects this channel, one random show, or everything. **Dial click & static burst** defaults on, remembers your choice, and follows player mute and volume. The sound is synthesized locally without audio downloads. Static strength and duration apply to dial bursts; reduced-motion preferences suppress the visual effect. Automatic episode transitions do not play the click.
 
 Fill window expands the player to the entire browser viewport, with playback controls and tuning dials overlaid on the video. The cabinet frame returns when you exit. Video keeps its original proportions, so letterboxing can remain.
+
+## Sci-Fi channel
+
+Channel 03 is **Sci-Fi**, between Action Adventure and Saturday Morning (now channel 04). It contains nine live-action series already present in the curated library: Automan, The Phoenix, Voyagers!, Buck Rogers in the 25th Century, Battlestar Galactica, V, The Powers of Matthew Star, Misfits of Science, and Otherworld. Existing source metadata makes 156 entries eligible for the station, including 33 Buck Rogers and 21 Battlestar entries. Eligibility does not guarantee future source availability or successful decoding of every file.
+
+Saved catalogs automatically move these curated shows out of Action Adventure. A selected show-only stream follows its show to Sci-Fi. Episode sources, ordering, custom shows, and commercial preferences remain intact. All-shows YATA still includes every channel; animated science fiction stays on Saturday Morning. Dials, random streams, and optional commercial breaks use the same scheduling rules as other channels. See [migration and validation](../docs/18/SCI-FI-CHANNEL.md).

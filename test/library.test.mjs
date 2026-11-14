@@ -110,7 +110,7 @@ test('Cartoon Express deep cuts and fantasy adventure additions migrate with sou
  const get=id=>installed.shows.find(show=>show.id===id);
  for(const [id,count] of Object.entries(counts)){
   const show=get(id);assert.equal(show.episodes.length,count,id);
-  assert.equal(show.channel,id in cartoons?'cartoons':'action');
+  assert.equal(show.channel,id in cartoons?'cartoons':['matthew-star','misfits-science','otherworld'].includes(id)?'scifi':'action');
   assert.equal(new Set(show.episodes.map(e=>`${e.season}:${e.number}`)).size,count,id);
   const scheduled=new Set(buildSchedule(installed,show.channel).map(slot=>slot.episode.id));
   assert.ok(show.episodes.every(e=>scheduled.has(e.id)),id);

@@ -1,9 +1,6 @@
 import { COMMERCIAL_SHOW_ID } from './domain.mjs';
-export const CHANNELS = [
-  { id: 'mixed', number: '01', name: 'YATA', subtitle: 'Everything, shuffled', accent: '#ffc66e' },
-  { id: 'action', number: '02', name: 'Action Adventure', subtitle: 'Random heroes. Impossible missions.', accent: '#ff927b' },
-  { id: 'cartoons', number: '03', name: 'Saturday Morning', subtitle: 'Random cartoons. Add cereal.', accent: '#ac9aff' },
-];
+import { migratedShowChannel } from './channels.mjs';
+export { CHANNELS } from './channels.mjs';
 
 const action = [
   ['dukes', 'The Dukes of Hazzard'], ['knight-rider', 'Knight Rider'],
@@ -69,7 +66,7 @@ const cartoons = [
 
 export function createSeed() {
   const shows = [
-    ...action.map(([id, title]) => ({ id, title, channel: 'action', imdbUrl: null, episodes: [] })),
+    ...action.map(([id, title]) => ({ id, title, channel: migratedShowChannel(id, 'action'), imdbUrl: null, episodes: [] })),
     ...cartoons.map(([id, title]) => ({ id, title, channel: 'cartoons', imdbUrl: null, episodes: [] })),
   ];
   shows.push({id: COMMERCIAL_SHOW_ID, title: 'Vintage commercial breaks', channel: 'cartoons', imdbUrl: null, episodes: []});

@@ -146,7 +146,7 @@ function renderLibrary() {
     const art = button('', () => openShow(s.id), 'show-art');
     art.style.setProperty('--tile', tiles[catalog.shows.indexOf(s) % tiles.length]);
     art.setAttribute('aria-label', `View episodes and sources for ${s.title}`);
-    art.append(element('small', s.id === COMMERCIAL_SHOW_ID ? 'VINTAGE / COMMERCIALS' : s.channel === 'action' ? 'ACTION / ADVENTURE' : 'SATURDAY / MORNING'), element('strong', s.title));
+    art.append(element('small', s.id === COMMERCIAL_SHOW_ID ? 'VINTAGE / COMMERCIALS' : s.channel === 'action' ? 'ACTION / ADVENTURE' : s.channel === 'scifi' ? 'SCI-FI / RETRO FUTURES' : 'SATURDAY / MORNING'), element('strong', s.title));
     const count = s.episodes.length, live = s.episodes.filter(e => e.kind === 'episode' && stationSource(e) && e.durationSeconds > 0).length;
     let status = 'No episode sources yet · add yours';
     if (count) status = s.id === COMMERCIAL_SHOW_ID ? `${count} optional break clips · ${catalog.settings.bumpers ? 'enabled between stories' : 'off until enabled'}` : live ? `${live} in live rotation · ${count} catalog ${count === 1 ? 'item' : 'items'}` : `${count} ${count === 1 ? 'source item' : 'source items'} · watch from the library`;

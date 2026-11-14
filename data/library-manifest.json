@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-2863364dc93cf7c3",
+  "revision": "expanded-998920f7350401b8",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -628,6 +628,6 @@
       "sources": 1
     }
   ],
-  "bytes": 1067283,
+  "bytes": 1067274,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

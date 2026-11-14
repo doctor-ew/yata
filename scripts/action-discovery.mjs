@@ -69,7 +69,7 @@ async function metadata(itemId){
  const data=await get(`https://archive.org/metadata/${itemId}`);await writeFile(file,JSON.stringify(data));return data;
 }
 const result={checkedAt:new Date().toISOString(),provider:'archive',bounds:{searchRows:100,searchPages:1,metadataConcurrency:3,requestTimeoutMs:25000},notes:['Curated public MP4 metadata only; not a claim of full-series completeness, English audio verification, playback decoding or rights status.','Series items reviewed against metadata titles and filenames; unrelated adaptations, clips, disc dumps, audio fan-fiction and crossovers from other shows excluded.','Combined episodes remain one media entry; no invented split points.','Unavailable and non-MP4 files are excluded. Metadata language can be unknown.'],shows:[]};
-for(const show of createSeed().shows.filter(s=>s.channel==='action' && (!requested || requested.includes(s.id)))){
+for(const show of createSeed().shows.filter(s=>['action','scifi'].includes(s.channel) && (!requested || requested.includes(s.id)))){
  const itemIds=selected[show.id]||[];const items=[];let cursor=0;
  await Promise.all(Array.from({length:3},async()=>{while(cursor<itemIds.length){const itemId=itemIds[cursor++];try{
   const data=await metadata(itemId); const lang=String(data.metadata?.language||'');

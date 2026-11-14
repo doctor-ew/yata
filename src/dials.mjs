@@ -1,7 +1,8 @@
+import { CHANNELS } from './channels.mjs';
 import { COMMERCIAL_SHOW_ID, parseDuration, stationSource } from './domain.mjs';
 
 export function availableDialShows(catalog, channel = catalog.settings.channel) {
-  if (!['action', 'cartoons', 'mixed'].includes(channel)) throw new RangeError('Choose an action, cartoon or mixed channel.');
+  if (!CHANNELS.some(item => item.id === channel)) throw new RangeError('Choose an available station channel.');
   return catalog.shows.filter(show => show.id !== COMMERCIAL_SHOW_ID && (channel === 'mixed' || show.channel === channel) && show.episodes.some(episode => episode.kind === 'episode' && parseDuration(episode.durationSeconds) !== null && stationSource(episode)));
 }
 

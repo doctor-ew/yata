@@ -1,3 +1,4 @@
+import { CHANNELS, SHOW_CHANNEL_IDS, migratedShowChannel } from './channels.mjs';
 import { randomRotation, createCommercialBreak } from './shuffle.mjs';
 export const COMMERCIAL_SHOW_ID = 'vintage-commercials';
 export const STORAGE_KEY = 'drew-tv.catalog.v1';
@@ -111,7 +112,7 @@ export async function importArchive(raw, fetcher = globalThis.fetch, timeoutMs =
 export function validateCatalog(raw) {
   if (!raw || raw.version !== 1 || !Array.isArray(raw.shows) || raw.shows.length > 100 || !raw.shows.length) fail('Expected a version-1 YATA catalog with 1–100 shows.');
   if (!Number.isFinite(raw.epoch) || raw.epoch < 0) fail('Invalid station start time.');
-  if (!raw.settings || !['mixed', 'action', 'cartoons'].includes(raw.settings.channel) || typeof raw.settings.bumpers !== 'boolean') fail('Invalid station settings.');
+  if (!raw.settings || !CHANNELS.some(channel => channel.id === raw.settings.channel) || typeof raw.settings.bumpers !== 'boolean') fail('Invalid station settings.');
   const rotation = raw.settings.rotation ?? 'random';
   const shuffleSeed = raw.settings.shuffleSeed ?? 1984;
   const storiesPerTurn = raw.settings.storiesPerTurn ?? 1;
@@ -128,7 +129,7 @@ export function validateCatalog(raw) {
     const sid = id(s.id);
     if (showIds.has(sid)) fail('Duplicate show ID.');
     showIds.add(sid);
-    if (!['action', 'cartoons'].includes(s.channel) || !Array.isArray(s.episodes)) fail('Invalid show channel or episode list.');
+    if (!SHOW_CHANNEL_IDS.includes(s.channel) || !Array.isArray(s.episodes)) fail('Invalid show channel or episode list.');
     let imdbUrl = null;
     if (s.imdbUrl != null && s.imdbUrl !== '') {
       const u = httpsUrl(s.imdbUrl);
@@ -156,11 +157,14 @@ export function validateCatalog(raw) {
       return { id: eid, title: text(e.title, 'episode title'), season: e.season, number: e.number,
         durationSeconds: e.durationSeconds, group: e.group.trim(), kind: e.kind, sources };
     });
-    return { id: sid, title: text(s.title, 'show title'), channel: s.channel, imdbUrl, episodes };
+    return { id: sid, title: text(s.title, 'show title'), channel: migratedShowChannel(sid, s.channel), imdbUrl, episodes };
   });
+  // Preserve a legacy show-only stream when its curated show moves channels.
+  const migratedStream = streamShow !== null && raw.settings.channel === 'action' && raw.shows.find(show => show.id === streamShow)?.channel === 'action' && shows.find(show => show.id === streamShow)?.channel === 'scifi';
+  const channel = migratedStream ? 'scifi' : raw.settings.channel;
   if (streamShow === COMMERCIAL_SHOW_ID) fail('Choose a program show for the stream.');
-  if (streamShow !== null && !shows.some(show => show.id === streamShow && (raw.settings.channel === 'mixed' || show.channel === raw.settings.channel))) fail('The selected stream show is not in this channel.');
-  return { version: 1, epoch: raw.epoch, shows, settings: { channel: raw.settings.channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow } };
+  if (streamShow !== null && !shows.some(show => show.id === streamShow && (channel === 'mixed' || show.channel === channel))) fail('The selected stream show is not in this channel.');
+  return { version: 1, epoch: raw.epoch, shows, settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow } };
 }
 
 export function parseCatalogJson(input) {
@@ -171,7 +175,17 @@ export function parseCatalogJson(input) {
 }
 
 export function readCatalog(storage, seed) {
-  try { const raw = storage.getItem(STORAGE_KEY); return { catalog: raw ? parseCatalogJson(raw) : validateCatalog(seed), error: null }; }
+  try {
+    const raw = storage.getItem(STORAGE_KEY);
+    const catalog = raw ? parseCatalogJson(raw) : validateCatalog(seed);
+    if (raw) {
+      const previous = JSON.parse(raw);
+      if (catalog.shows.some((show, index) => show.channel !== previous.shows[index].channel) || catalog.settings.channel !== previous.settings.channel) {
+        try { saveCatalog(storage, catalog); } catch { /* The migrated catalog remains usable when storage is blocked. */ }
+      }
+    }
+    return { catalog, error: null };
+  }
   catch { return { catalog: validateCatalog(seed), error: 'Saved catalog could not be read. The starter catalog is shown. Import a backup to recover; saving a change replaces the unreadable copy.' }; }
 }
 export function saveCatalog(storage, catalog) {
