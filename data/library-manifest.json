@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-6982824d5b94b9e6",
+  "revision": "expanded-852c3df432aca13e",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -7,13 +7,14 @@
     "2026-11-13T20:53:25.232940+00:00",
     "2026-11-14T03:27:55.664677+00:00",
     "2026-11-14T03:28:28.539Z",
-    "2026-11-14T13:23:15.444Z"
+    "2026-11-14T13:23:15.444Z",
+    "2026-11-14T13:50:40.627Z"
   ],
-  "episodes": 2985,
-  "ready": 2866,
+  "episodes": 3055,
+  "ready": 2936,
   "movieReady": 5,
   "breaks": 14,
-  "streamSlots": 36532,
+  "streamSlots": 37411,
   "shows": [
     {
       "id": "dukes",
@@ -704,6 +705,30 @@
       "sources": 4
     },
     {
+      "id": "barnaby-jones",
+      "title": "Barnaby Jones",
+      "episodes": 0,
+      "ready": 0,
+      "breaks": 0,
+      "sources": 0
+    },
+    {
+      "id": "baretta",
+      "title": "Baretta",
+      "episodes": 58,
+      "ready": 58,
+      "breaks": 0,
+      "sources": 58
+    },
+    {
+      "id": "bj-bear",
+      "title": "B.J. and the Bear",
+      "episodes": 12,
+      "ready": 12,
+      "breaks": 0,
+      "sources": 12
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -712,6 +737,6 @@
       "sources": 1
     }
   ],
-  "bytes": 1123867,
+  "bytes": 1148263,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

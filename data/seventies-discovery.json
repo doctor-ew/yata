@@ -1,0 +1,3762 @@
+{
+  "checkedAt": "2026-11-14T13:50:40.627Z",
+  "provider": "archive",
+  "bounds": {
+    "searchRows": 100,
+    "searchPages": 1,
+    "metadataConcurrency": 4,
+    "httpConcurrency": 6,
+    "httpTimeoutSeconds": 20
+  },
+  "notes": [
+    "Reviewed source set for the 70s Prime Time collection.",
+    "Full-length episode files only. Source runtimes are file metadata, not assumed broadcast lengths. Per-URL HTTP checks are recorded separately; successful HEAD/file responses do not establish decoding, English audio, or legal rights.",
+    "No worldwide availability, public-domain, or complete-series claims. Missing seasons or episodes remain unknown.",
+    "Provider metadata language is retained; language null is unknown, not English verification."
+  ],
+  "searches": {
+    "barnaby-jones": {
+      "query": "title:(\"Barnaby Jones\") AND mediatype:movies",
+      "url": "https://archive.org/advancedsearch.php?q=title%3A%28%22Barnaby+Jones%22%29+AND+mediatype%3Amovies&output=json&rows=100&page=1&fl%5B%5D=identifier&fl%5B%5D=title",
+      "numFound": 7,
+      "docs": [
+        {
+          "identifier": "barnaby-jones-1973-t-01-e-08-cante-uma-cancao-de-assassinato-victor-diniz-360p-h-264-youtube",
+          "title": "Barnaby Jones Dublado PT-BR"
+        },
+        {
+          "identifier": "bitchute_-_barnaby-jones_2022",
+          "title": "BitChute - barnaby-jones (2022)"
+        },
+        {
+          "identifier": "kill-the-president-song",
+          "title": "Barnaby Jones- Kill The President (Official Music Video)"
+        },
+        {
+          "identifier": "barnaby-jones",
+          "title": "Barnaby Jones"
+        },
+        {
+          "identifier": "ytdown.com-you-tube-barnaby-jones-kill-the-president-officia-media-o-8jdzf-hv-ci-8-002-720p",
+          "title": "YTDown.com You Tube Barnaby Jones Kill The President Officia Media O 8jdzf Hv CI 8 002 720p"
+        },
+        {
+          "identifier": "youtube-DpGNqCb1ASc",
+          "title": "Actor Buddy Ebsen of Barnaby Jones and Beverly Hillbillies"
+        },
+        {
+          "identifier": "youtube-u9cgpdrd4mU",
+          "title": "WBBM Channel 2 - Barnaby Jones (Promo, 1983)"
+        }
+      ]
+    },
+    "baretta": {
+      "query": "title:(Baretta) AND mediatype:movies",
+      "url": "https://archive.org/advancedsearch.php?q=title%3A%28Baretta%29+AND+mediatype%3Amovies&output=json&rows=100&page=1&fl%5B%5D=identifier&fl%5B%5D=title",
+      "numFound": 27,
+      "docs": [
+        {
+          "identifier": "baretta_dvd2_1975",
+          "title": "Baretta dvd2 1975"
+        },
+        {
+          "identifier": "baretta_dvd3_1975",
+          "title": "Baretta dvd3 1975"
+        },
+        {
+          "identifier": "baretta-t-1-e-3-mujer-en-el-puerto",
+          "title": "Baretta T1 E3 Mujer En El Puerto"
+        },
+        {
+          "identifier": "baretta-t-1-e-7-el-juramento-copelli",
+          "title": "Baretta T1 E7 El Juramento Copelli"
+        },
+        {
+          "identifier": "baretta-t-1-e-1-el-nunca-vera-la-luz-del-dia",
+          "title": "Baretta T1 E1 Él Nunca Vera La Luz Del Dia"
+        },
+        {
+          "identifier": "Pupia-BarettaPDLaCriticaPrincipaleAlDef280411986-3",
+          "title": "Baretta (PD) - La critica principale al Def (28.04.11)"
+        },
+        {
+          "identifier": "baretta_dvd1_1975",
+          "title": "Baretta dvd1 1975"
+        },
+        {
+          "identifier": "sc21wa-Art_Zone_-_Lushy_perform_Bella_Baretta",
+          "title": "Art Zone: Lushy perform \"Bella Baretta\""
+        },
+        {
+          "identifier": "Pupia-BarettaPDLaFiduciaSuDLOmnibus386-2",
+          "title": "Baretta (PD) - La Fiducia su DL Omnibus"
+        },
+        {
+          "identifier": "baretta-t-1-e-4-si-no-puede-pagar-el-precio",
+          "title": "Baretta T1 E4 Si No Puede Pagar El Precio"
+        },
+        {
+          "identifier": "baretta-t-1-e-6-ragtime-para-billy-melocotones",
+          "title": "Baretta T1 E6 Ragtime Para Billy Melocotones"
+        },
+        {
+          "identifier": "baretta-s-02-e-11-the-big-hands-on-trouble",
+          "title": "Baretta season 2"
+        },
+        {
+          "identifier": "chip-s-meets-baretta",
+          "title": "Chip S Meets Baretta"
+        },
+        {
+          "identifier": "baretta-t-1-e-9-la-mansion",
+          "title": "Baretta T1 E9 La Mansion"
+        },
+        {
+          "identifier": "baretta_202608",
+          "title": "Desuhl ¦ Bärettá (official audio)"
+        },
+        {
+          "identifier": "baretta-t-1-e-12-esta-no-es-mi-carga",
+          "title": "Baretta T1 E12 Esta No Es Mi Carga"
+        },
+        {
+          "identifier": "baretta-t-1-e-5-la-chica-del-medio-millon-de-dolares",
+          "title": "Baretta T1 E5 La Chica Del Medio Millon De Dolares"
+        },
+        {
+          "identifier": "baretta-t-1-e-8-practica-lo-que-pregonas",
+          "title": "Baretta T1 E8 Practica Lo Que Pregonas"
+        },
+        {
+          "identifier": "el-gordo-porcel-baretta-1984-1",
+          "title": "EL GORDO PORCEL BARETTA 1984 ( 1)"
+        },
+        {
+          "identifier": "baretta-t-1-e-2-el-adicto-a-las-cinco-libras-y-media",
+          "title": "Baretta T1 E2 El Adicto A Las Cinco Libras Y Media"
+        },
+        {
+          "identifier": "baretta-t-1-e-11-el-secreto-de-terry-lake",
+          "title": "Baretta T1 E11 El Secreto De Terry Lake"
+        },
+        {
+          "identifier": "baretta-t-1-e-10-vigila-al-gorrion",
+          "title": "Baretta T1 E10 Vigila Al Gorrion"
+        },
+        {
+          "identifier": "whhisc-TALK_OF_THE_TOWN_Holly_Mlodzinski_Kim_Baretta_-_Third_Annual_Brain_Health_Summit_WHHITV",
+          "title": "TALK OF THE TOWN - Holly Mlodzinski & Kim Baretta: Third Annual Brain Health Summit - WHHITV"
+        },
+        {
+          "identifier": "baretta-s-01-e-03-woman-in-the-harbor_202411",
+          "title": "Baretta season 1"
+        },
+        {
+          "identifier": "0_20251020",
+          "title": "Baretta"
+        },
+        {
+          "identifier": "s-03e-13-dont-kill-the-sparrows",
+          "title": "Baretta season 3"
+        },
+        {
+          "identifier": "BarettaS3",
+          "title": "Baretta Season 3; Episodes 5-8"
+        }
+      ]
+    },
+    "bj-bear": {
+      "query": "title:(\"Bear\") AND (title:(\"B.J.\") OR title:(\"BJ\") OR title:(\"B. J.\")) AND mediatype:movies",
+      "url": "https://archive.org/advancedsearch.php?q=title%3A%28%22Bear%22%29+AND+%28title%3A%28%22B.J.%22%29+OR+title%3A%28%22BJ%22%29+OR+title%3A%28%22B.+J.%22%29%29+AND+mediatype%3Amovies&output=json&rows=100&page=1&fl%5B%5D=identifier&fl%5B%5D=title",
+      "numFound": 9,
+      "docs": [
+        {
+          "identifier": "bj-and-the-bear-intro",
+          "title": "BJ and The Bear Intro (Season 1-2 1978-1980)"
+        },
+        {
+          "identifier": "Popcornarchive-bjAndTheBearMusicVideov2",
+          "title": "BJ and The Bear Music Video (V2)"
+        },
+        {
+          "identifier": "b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3",
+          "title": "B. J. And The Bear S 00 E 04 Run For The Money ( 3)"
+        },
+        {
+          "identifier": "tweenies-live-on-tour-the-crossover-doodles-and-bj-appear-the-dino-dance-bear-cha-cha",
+          "title": "Tweenies LIVE ON TOUR The Crossover Doodles And BJ Appear The Dino Dance Bear Cha Cha"
+        },
+        {
+          "identifier": "b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth",
+          "title": "B. J. And The Bear S 01 E 01 Odyssey Of The Shady Truth"
+        },
+        {
+          "identifier": "bj-and-the-bear-season-3-intro-1980-1981",
+          "title": "BJ and the Bear Intro (Season 3, 1980-1981)"
+        },
+        {
+          "identifier": "Nine_Ident_B_J_and_the_Bear_promo_QTQ-9_27_6_80",
+          "title": "Nine Ident & B. J. and the Bear promo (QTQ-9, 27/6/80)"
+        },
+        {
+          "identifier": "nbc-saturday-night-april-7-1979-bj-the-bear-supertrain",
+          "title": "NBC Saturday Night April 7, 1979 BJ & The Bear, Supertrain"
+        },
+        {
+          "identifier": "youtube-kDriNFLVQZ4",
+          "title": "NBC Network - BJ And The Bear & Pink Lady (Promo, 1980)"
+        }
+      ]
+    }
+  },
+  "shows": [
+    {
+      "showId": "barnaby-jones",
+      "title": "Barnaby Jones",
+      "channel": "seventies",
+      "items": [],
+      "episodes": [],
+      "sourceChecks": [],
+      "coverage": {
+        "candidateEntries": 0,
+        "seasonEpisodePairs": [],
+        "completenessClaim": false,
+        "httpVerifiedEntries": 0
+      },
+      "providerRestrictions": [
+        "No full-length English Archive episode source found within this bounded search.",
+        "Official Pluto provider listing is external-only for current YATA, whose source parser supports Archive, YouTube and Tubi. Listing presence does not establish playback in every region or authorize stream extraction."
+      ],
+      "externalSources": [
+        {
+          "provider": "pluto",
+          "url": "https://www-prod.pluto.tv/us/shows/barnaby-jones/",
+          "evidenceUrl": "https://www-prod.pluto.tv/us/shows/barnaby-jones/",
+          "checkedAt": "2026-11-14T03:29:57.921Z",
+          "status": "provider listing observed; playback unverified",
+          "listedSeasons": [
+            4,
+            5,
+            6
+          ],
+          "observedSeason": 4,
+          "observedEpisodeCount": 23,
+          "episodes": [
+            {
+              "season": 4,
+              "number": 2,
+              "title": "Theater of Fear",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 3,
+              "title": "The Orchid Killer",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 4,
+              "title": "Price of Terror",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 5,
+              "title": "Honeymoon with Death",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 6,
+              "title": "Alpha-Bravo",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 7,
+              "title": "Flight to Danger",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 8,
+              "title": "Double Vengeance",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 9,
+              "title": "Fatal Witness",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 10,
+              "title": "Beware the Dog",
+              "durationMinutes": 48,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 11,
+              "title": "Blood Relations",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 12,
+              "title": "A Taste for Murder",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 13,
+              "title": "Final Burial",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 14,
+              "title": "Portrait of Evil",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 15,
+              "title": "Dead Heat",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 16,
+              "title": "The Lonely Victims",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 17,
+              "title": "Hostage",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 18,
+              "title": "Silent Vendetta",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 19,
+              "title": "Shadow of Guilt",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 20,
+              "title": "Deadly Reunion",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 21,
+              "title": "Dangerous Gambit",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 22,
+              "title": "Wipeout",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 23,
+              "title": "The Eyes of Terror",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            },
+            {
+              "season": 4,
+              "number": 24,
+              "title": "The Stalking Horse",
+              "durationMinutes": 46,
+              "durationPrecision": "rounded provider listing"
+            }
+          ],
+          "note": "Only season-four listing was enumerated. No claims about total count of seasons five or six. Do not treat this as an importable MP4 URL."
+        }
+      ],
+      "exclusions": [
+        {
+          "itemId": "barnaby-jones",
+          "metadataUrl": "https://archive.org/metadata/barnaby-jones",
+          "reason": "Only an approximately 498-second clip; excluded as not a full episode."
+        },
+        {
+          "itemId": "barnaby-jones-1973-t-01-e-08-cante-uma-cancao-de-assassinato-victor-diniz-360p-h-264-youtube",
+          "reason": "Search metadata identifies Portuguese dubbing; not selected for an English-language station."
+        }
+      ]
+    },
+    {
+      "showId": "baretta",
+      "title": "Baretta",
+      "channel": "seventies",
+      "items": [
+        {
+          "itemId": "baretta-s-01-e-03-woman-in-the-harbor_202411",
+          "title": "Baretta season 1",
+          "language": "eng",
+          "metadataUrl": "https://archive.org/metadata/baretta-s-01-e-03-woman-in-the-harbor_202411",
+          "itemUrl": "https://archive.org/details/baretta-s-01-e-03-woman-in-the-harbor_202411",
+          "rightsStatus": "not established",
+          "metadataCheckedAt": "2026-11-14T03:29:57.921Z",
+          "episodes": [
+            {
+              "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-0",
+              "title": "Baretta S01E01 He'll Never See Daylight",
+              "season": 1,
+              "number": 1,
+              "durationSeconds": 3068.53,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-0",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E01%20He'll%20Never%20See%20Daylight.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-1",
+              "title": "Baretta S01E02 The 5½ Pound Junkie",
+              "season": 1,
+              "number": 2,
+              "durationSeconds": 3072.85,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-1",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E02%20The%205%C2%BD%20Pound%20Junkie.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-2",
+              "title": "Baretta S01E03 Woman in the Harbor",
+              "season": 1,
+              "number": 3,
+              "durationSeconds": 3078.15,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-2",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E03%20Woman%20in%20the%20Harbor.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-3",
+              "title": "Baretta S01E04 If You Can't Pay the Price",
+              "season": 1,
+              "number": 4,
+              "durationSeconds": 3050.5,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-3",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E04%20If%20You%20Can't%20Pay%20the%20Price.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-4",
+              "title": "Baretta S01E05 The Half-Million Dollar Baby",
+              "season": 1,
+              "number": 5,
+              "durationSeconds": 3055.46,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-4",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E05%20The%20Half-Million%20Dollar%20Baby.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-5",
+              "title": "Baretta S01E06 Ragtime Billy Peaches",
+              "season": 1,
+              "number": 6,
+              "durationSeconds": 3053.46,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-5",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E06%20Ragtime%20Billy%20Peaches.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-6",
+              "title": "Baretta S01E07 The Coppelli Oath",
+              "season": 1,
+              "number": 7,
+              "durationSeconds": 3064.85,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-6",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E07%20The%20Coppelli%20Oath.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-7",
+              "title": "Baretta S01E08 Walk Like You Talk",
+              "season": 1,
+              "number": 8,
+              "durationSeconds": 3056.17,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-7",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E08%20Walk%20Like%20You%20Talk.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-8",
+              "title": "Baretta S01E09 The Mansion",
+              "season": 1,
+              "number": 9,
+              "durationSeconds": 3047.96,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-8",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E09%20The%20Mansion.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-9",
+              "title": "Baretta S01E10 Keep Your Eye on the Sparrow",
+              "season": 1,
+              "number": 10,
+              "durationSeconds": 3056.86,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-9",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E10%20Keep%20Your%20Eye%20on%20the%20Sparrow.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-10",
+              "title": "Baretta S01E11 The Secret of Terry Lake",
+              "season": 1,
+              "number": 11,
+              "durationSeconds": 3001.25,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-10",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E11%20The%20Secret%20of%20Terry%20Lake.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-11",
+              "title": "Baretta S01E12 This Ain't My Bag",
+              "season": 1,
+              "number": 12,
+              "durationSeconds": 3057.13,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-11",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E12%20This%20Ain't%20My%20Bag.mp4",
+                  "availability": "verified"
+                }
+              ]
+            }
+          ],
+          "excluded": []
+        },
+        {
+          "itemId": "baretta-s-02-e-11-the-big-hands-on-trouble",
+          "title": "Baretta season 2",
+          "language": null,
+          "metadataUrl": "https://archive.org/metadata/baretta-s-02-e-11-the-big-hands-on-trouble",
+          "itemUrl": "https://archive.org/details/baretta-s-02-e-11-the-big-hands-on-trouble",
+          "rightsStatus": "not established",
+          "metadataCheckedAt": "2026-11-14T03:29:57.921Z",
+          "episodes": [
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-0",
+              "title": "Baretta S02E01 The Goodbye Orphan Annie Blues",
+              "season": 2,
+              "number": 1,
+              "durationSeconds": 2724.29,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-0",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E01%20The%20Goodbye%20Orphan%20Annie%20Blues.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-1",
+              "title": "Baretta S02E02 The Glory Game",
+              "season": 2,
+              "number": 2,
+              "durationSeconds": 2726.69,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-1",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E02%20The%20Glory%20Game.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-2",
+              "title": "Baretta S02E03 On the Road",
+              "season": 2,
+              "number": 3,
+              "durationSeconds": 2725.29,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-2",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E03%20On%20the%20Road.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-3",
+              "title": "Baretta S02E04 Nobody in a Nothing Place",
+              "season": 2,
+              "number": 4,
+              "durationSeconds": 2725.56,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-3",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E04%20Nobody%20in%20a%20Nothing%20Place.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-4",
+              "title": "Baretta S02E05 The Fire Man",
+              "season": 2,
+              "number": 5,
+              "durationSeconds": 2723.79,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-4",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E05%20The%20Fire%20Man.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-5",
+              "title": "Baretta S02E06 Double Image",
+              "season": 2,
+              "number": 6,
+              "durationSeconds": 2724.67,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-5",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E06%20Double%20Image.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-6",
+              "title": "Baretta S02E07 Photography by John Doe",
+              "season": 2,
+              "number": 7,
+              "durationSeconds": 2727.23,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-6",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E07%20Photography%20by%20John%20Doe.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-7",
+              "title": "Baretta S02E08 Set-Up City",
+              "season": 2,
+              "number": 8,
+              "durationSeconds": 2727.19,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-7",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E08%20Set-Up%20City.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-8",
+              "title": "Baretta S02E09 A Bite of the Apple",
+              "season": 2,
+              "number": 9,
+              "durationSeconds": 2678.66,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-8",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E09%20A%20Bite%20of%20the%20Apple.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-9",
+              "title": "Baretta S02E10 When Dues Come Down",
+              "season": 2,
+              "number": 10,
+              "durationSeconds": 2716.37,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-9",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E10%20When%20Dues%20Come%20Down.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-10",
+              "title": "Baretta S02E11 The Big Hand's on Trouble",
+              "season": 2,
+              "number": 11,
+              "durationSeconds": 2718.27,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-10",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E11%20The%20Big%20Hand's%20on%20Trouble.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-11",
+              "title": "Baretta S02E12 Count the Days I'm Gone",
+              "season": 2,
+              "number": 12,
+              "durationSeconds": 2726.93,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-11",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E12%20Count%20the%20Days%20I'm%20Gone.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-12",
+              "title": "Baretta S02E13 Sharper Than a Serpent's Tooth",
+              "season": 2,
+              "number": 13,
+              "durationSeconds": 2725.23,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-12",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E13%20Sharper%20Than%20a%20Serpent's%20Tooth.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-13",
+              "title": "Baretta S02E14 The Left Hand of the Devil",
+              "season": 2,
+              "number": 14,
+              "durationSeconds": 2727.7,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-13",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E14%20The%20Left%20Hand%20of%20the%20Devil.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-14",
+              "title": "Baretta S02E15 Murder for Me",
+              "season": 2,
+              "number": 15,
+              "durationSeconds": 2724.93,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-14",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E15%20Murder%20for%20Me.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-15",
+              "title": "Baretta S02E16 Pay or Die",
+              "season": 2,
+              "number": 16,
+              "durationSeconds": 2725.38,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-15",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E16%20Pay%20or%20Die.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-16",
+              "title": "Baretta S02E17 The Blood Bond",
+              "season": 2,
+              "number": 17,
+              "durationSeconds": 2726.09,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-16",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E17%20The%20Blood%20Bond.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-17",
+              "title": "Baretta S02E18 The Dippers",
+              "season": 2,
+              "number": 18,
+              "durationSeconds": 2725.78,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-17",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E18%20The%20Dippers.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-18",
+              "title": "Baretta S02E19 Dead Man Out",
+              "season": 2,
+              "number": 19,
+              "durationSeconds": 2725.89,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-18",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E19%20Dead%20Man%20Out.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-19",
+              "title": "Baretta S02E20 Death on the Run",
+              "season": 2,
+              "number": 20,
+              "durationSeconds": 2726.36,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-19",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E20%20Death%20on%20the%20Run.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-20",
+              "title": "Baretta S02E21 Aggie",
+              "season": 2,
+              "number": 21,
+              "durationSeconds": 2726.87,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-20",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E21%20Aggie.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-21",
+              "title": "Baretta S02E22 And Down Will Come Baby",
+              "season": 2,
+              "number": 22,
+              "durationSeconds": 2718.46,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-21",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E22%20And%20Down%20Will%20Come%20Baby.mp4",
+                  "availability": "verified"
+                }
+              ]
+            }
+          ],
+          "excluded": []
+        },
+        {
+          "itemId": "s-03e-13-dont-kill-the-sparrows",
+          "title": "Baretta season 3",
+          "language": null,
+          "metadataUrl": "https://archive.org/metadata/s-03e-13-dont-kill-the-sparrows",
+          "itemUrl": "https://archive.org/details/s-03e-13-dont-kill-the-sparrows",
+          "rightsStatus": "not established",
+          "metadataCheckedAt": "2026-11-14T03:29:57.921Z",
+          "episodes": [
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-0",
+              "title": "s03e01 The Ninja",
+              "season": 3,
+              "number": 1,
+              "durationSeconds": 2717.79,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-0",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e01%20The%20Ninja.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-1",
+              "title": "s03e02 Soldier in the Jungle",
+              "season": 3,
+              "number": 2,
+              "durationSeconds": 2718.32,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-1",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e02%20Soldier%20in%20the%20Jungle.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-2",
+              "title": "s03e03 Runaway Cowboy",
+              "season": 3,
+              "number": 3,
+              "durationSeconds": 2717.82,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-2",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e03%20Runaway%20Cowboy.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-3",
+              "title": "s03e04 Street Edition",
+              "season": 3,
+              "number": 4,
+              "durationSeconds": 2720.24,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-3",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e04%20Street%20Edition.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-4",
+              "title": "s03e05 They Dont Make Em Like They Used To",
+              "season": 3,
+              "number": 5,
+              "durationSeconds": 2717.28,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-4",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e05%20They%20Dont%20Make%20Em%20Like%20They%20Used%20To.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-5",
+              "title": "s03e06 Shoes",
+              "season": 3,
+              "number": 6,
+              "durationSeconds": 2713.38,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-5",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e06%20Shoes.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-6",
+              "title": "s03e07 Under the City",
+              "season": 3,
+              "number": 7,
+              "durationSeconds": 2721.36,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-6",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e07%20Under%20the%20City.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-7",
+              "title": "s03e08 Dear Tony",
+              "season": 3,
+              "number": 8,
+              "durationSeconds": 2718.29,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-7",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e08%20Dear%20Tony.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-8",
+              "title": "s03e09 Crazy Annie",
+              "season": 3,
+              "number": 9,
+              "durationSeconds": 2717.82,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-8",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e09%20Crazy%20Annie.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-9",
+              "title": "s03e10 Nothin for Nothin",
+              "season": 3,
+              "number": 10,
+              "durationSeconds": 2647.45,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-9",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e10%20Nothin%20for%20Nothin.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-10",
+              "title": "s03e11 Cant Win for Losin",
+              "season": 3,
+              "number": 11,
+              "durationSeconds": 2717.75,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-10",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e11%20Cant%20Win%20for%20Losin.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-11",
+              "title": "s03e12 Look Back In Terror",
+              "season": 3,
+              "number": 12,
+              "durationSeconds": 2718.29,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-11",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e12%20Look%20Back%20In%20Terror.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-12",
+              "title": "s03e13 Dont Kill the Sparrows",
+              "season": 3,
+              "number": 13,
+              "durationSeconds": 2722.8,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-12",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e13%20Dont%20Kill%20the%20Sparrows.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-13",
+              "title": "s03e14 That Sister Aint No Cousin",
+              "season": 3,
+              "number": 14,
+              "durationSeconds": 2720.79,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-13",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e14%20That%20Sister%20Aint%20No%20Cousin.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-14",
+              "title": "s03e15 Open Season",
+              "season": 3,
+              "number": 15,
+              "durationSeconds": 2718.22,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-14",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e15%20Open%20Season.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-15",
+              "title": "s03e16 The Reunion",
+              "season": 3,
+              "number": 16,
+              "durationSeconds": 2717.82,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-15",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e16%20The%20Reunion.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-16",
+              "title": "s03e17 Not on Our Block",
+              "season": 3,
+              "number": 17,
+              "durationSeconds": 2719.81,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-16",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e17%20Not%20on%20Our%20Block.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-17",
+              "title": "s03e18 The Runaways",
+              "season": 3,
+              "number": 18,
+              "durationSeconds": 2715.75,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-17",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e18%20The%20Runaways.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-18",
+              "title": "s03e19 Everybody Pays the Fare",
+              "season": 3,
+              "number": 19,
+              "durationSeconds": 2717.75,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-18",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e19%20Everybody%20Pays%20the%20Fare.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-19",
+              "title": "s03e20 Think Mink",
+              "season": 3,
+              "number": 20,
+              "durationSeconds": 2717.42,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-19",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e20%20Think%20Mink.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-20",
+              "title": "s03e21 Carla",
+              "season": 3,
+              "number": 21,
+              "durationSeconds": 2719.79,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-20",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e21%20Carla.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-21",
+              "title": "s03e22 Big Bad Charlie",
+              "season": 3,
+              "number": 22,
+              "durationSeconds": 2717.25,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-21",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e22%20Big%20Bad%20Charlie.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-22",
+              "title": "s03e23 Guns and Brothers",
+              "season": 3,
+              "number": 23,
+              "durationSeconds": 2717.69,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-22",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e23%20Guns%20and%20Brothers.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-s-03e-13-dont-kill-the-sparrows-23",
+              "title": "s03e24 Playin Police",
+              "season": 3,
+              "number": 24,
+              "durationSeconds": 2719.29,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-23",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e24%20Playin%20Police.mp4",
+                  "availability": "verified"
+                }
+              ]
+            }
+          ],
+          "excluded": []
+        }
+      ],
+      "episodes": [
+        {
+          "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-0",
+          "title": "Baretta S01E01 He'll Never See Daylight",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 3068.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E01%20He'll%20Never%20See%20Daylight.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-1",
+          "title": "Baretta S01E02 The 5½ Pound Junkie",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 3072.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E02%20The%205%C2%BD%20Pound%20Junkie.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-2",
+          "title": "Baretta S01E03 Woman in the Harbor",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 3078.15,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E03%20Woman%20in%20the%20Harbor.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-3",
+          "title": "Baretta S01E04 If You Can't Pay the Price",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 3050.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E04%20If%20You%20Can't%20Pay%20the%20Price.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-4",
+          "title": "Baretta S01E05 The Half-Million Dollar Baby",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 3055.46,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E05%20The%20Half-Million%20Dollar%20Baby.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-5",
+          "title": "Baretta S01E06 Ragtime Billy Peaches",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 3053.46,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E06%20Ragtime%20Billy%20Peaches.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-6",
+          "title": "Baretta S01E07 The Coppelli Oath",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 3064.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E07%20The%20Coppelli%20Oath.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-7",
+          "title": "Baretta S01E08 Walk Like You Talk",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 3056.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E08%20Walk%20Like%20You%20Talk.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-8",
+          "title": "Baretta S01E09 The Mansion",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 3047.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E09%20The%20Mansion.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-9",
+          "title": "Baretta S01E10 Keep Your Eye on the Sparrow",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 3056.86,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E10%20Keep%20Your%20Eye%20on%20the%20Sparrow.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-10",
+          "title": "Baretta S01E11 The Secret of Terry Lake",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 3001.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E11%20The%20Secret%20of%20Terry%20Lake.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-01-e-03-woman-in-the-harbor_202411-11",
+          "title": "Baretta S01E12 This Ain't My Bag",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 3057.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E12%20This%20Ain't%20My%20Bag.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-0",
+          "title": "Baretta S02E01 The Goodbye Orphan Annie Blues",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 2724.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E01%20The%20Goodbye%20Orphan%20Annie%20Blues.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-1",
+          "title": "Baretta S02E02 The Glory Game",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 2726.69,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E02%20The%20Glory%20Game.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-2",
+          "title": "Baretta S02E03 On the Road",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 2725.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E03%20On%20the%20Road.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-3",
+          "title": "Baretta S02E04 Nobody in a Nothing Place",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 2725.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E04%20Nobody%20in%20a%20Nothing%20Place.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-4",
+          "title": "Baretta S02E05 The Fire Man",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 2723.79,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E05%20The%20Fire%20Man.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-5",
+          "title": "Baretta S02E06 Double Image",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 2724.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E06%20Double%20Image.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-6",
+          "title": "Baretta S02E07 Photography by John Doe",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 2727.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E07%20Photography%20by%20John%20Doe.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-7",
+          "title": "Baretta S02E08 Set-Up City",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 2727.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E08%20Set-Up%20City.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-8",
+          "title": "Baretta S02E09 A Bite of the Apple",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 2678.66,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E09%20A%20Bite%20of%20the%20Apple.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-9",
+          "title": "Baretta S02E10 When Dues Come Down",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 2716.37,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E10%20When%20Dues%20Come%20Down.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-10",
+          "title": "Baretta S02E11 The Big Hand's on Trouble",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 2718.27,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E11%20The%20Big%20Hand's%20on%20Trouble.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-11",
+          "title": "Baretta S02E12 Count the Days I'm Gone",
+          "season": 2,
+          "number": 12,
+          "durationSeconds": 2726.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E12%20Count%20the%20Days%20I'm%20Gone.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-12",
+          "title": "Baretta S02E13 Sharper Than a Serpent's Tooth",
+          "season": 2,
+          "number": 13,
+          "durationSeconds": 2725.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E13%20Sharper%20Than%20a%20Serpent's%20Tooth.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-13",
+          "title": "Baretta S02E14 The Left Hand of the Devil",
+          "season": 2,
+          "number": 14,
+          "durationSeconds": 2727.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E14%20The%20Left%20Hand%20of%20the%20Devil.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-14",
+          "title": "Baretta S02E15 Murder for Me",
+          "season": 2,
+          "number": 15,
+          "durationSeconds": 2724.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E15%20Murder%20for%20Me.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-15",
+          "title": "Baretta S02E16 Pay or Die",
+          "season": 2,
+          "number": 16,
+          "durationSeconds": 2725.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E16%20Pay%20or%20Die.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-16",
+          "title": "Baretta S02E17 The Blood Bond",
+          "season": 2,
+          "number": 17,
+          "durationSeconds": 2726.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E17%20The%20Blood%20Bond.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-17",
+          "title": "Baretta S02E18 The Dippers",
+          "season": 2,
+          "number": 18,
+          "durationSeconds": 2725.78,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E18%20The%20Dippers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-18",
+          "title": "Baretta S02E19 Dead Man Out",
+          "season": 2,
+          "number": 19,
+          "durationSeconds": 2725.89,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E19%20Dead%20Man%20Out.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-19",
+          "title": "Baretta S02E20 Death on the Run",
+          "season": 2,
+          "number": 20,
+          "durationSeconds": 2726.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E20%20Death%20on%20the%20Run.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-20",
+          "title": "Baretta S02E21 Aggie",
+          "season": 2,
+          "number": 21,
+          "durationSeconds": 2726.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E21%20Aggie.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-baretta-s-02-e-11-the-big-hands-on-trouble-21",
+          "title": "Baretta S02E22 And Down Will Come Baby",
+          "season": 2,
+          "number": 22,
+          "durationSeconds": 2718.46,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E22%20And%20Down%20Will%20Come%20Baby.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-0",
+          "title": "s03e01 The Ninja",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 2717.79,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e01%20The%20Ninja.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-1",
+          "title": "s03e02 Soldier in the Jungle",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 2718.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e02%20Soldier%20in%20the%20Jungle.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-2",
+          "title": "s03e03 Runaway Cowboy",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 2717.82,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e03%20Runaway%20Cowboy.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-3",
+          "title": "s03e04 Street Edition",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 2720.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e04%20Street%20Edition.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-4",
+          "title": "s03e05 They Dont Make Em Like They Used To",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 2717.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e05%20They%20Dont%20Make%20Em%20Like%20They%20Used%20To.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-5",
+          "title": "s03e06 Shoes",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 2713.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e06%20Shoes.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-6",
+          "title": "s03e07 Under the City",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 2721.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e07%20Under%20the%20City.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-7",
+          "title": "s03e08 Dear Tony",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 2718.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e08%20Dear%20Tony.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-8",
+          "title": "s03e09 Crazy Annie",
+          "season": 3,
+          "number": 9,
+          "durationSeconds": 2717.82,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e09%20Crazy%20Annie.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-9",
+          "title": "s03e10 Nothin for Nothin",
+          "season": 3,
+          "number": 10,
+          "durationSeconds": 2647.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e10%20Nothin%20for%20Nothin.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-10",
+          "title": "s03e11 Cant Win for Losin",
+          "season": 3,
+          "number": 11,
+          "durationSeconds": 2717.75,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e11%20Cant%20Win%20for%20Losin.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-11",
+          "title": "s03e12 Look Back In Terror",
+          "season": 3,
+          "number": 12,
+          "durationSeconds": 2718.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e12%20Look%20Back%20In%20Terror.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-12",
+          "title": "s03e13 Dont Kill the Sparrows",
+          "season": 3,
+          "number": 13,
+          "durationSeconds": 2722.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e13%20Dont%20Kill%20the%20Sparrows.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-13",
+          "title": "s03e14 That Sister Aint No Cousin",
+          "season": 3,
+          "number": 14,
+          "durationSeconds": 2720.79,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e14%20That%20Sister%20Aint%20No%20Cousin.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-14",
+          "title": "s03e15 Open Season",
+          "season": 3,
+          "number": 15,
+          "durationSeconds": 2718.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e15%20Open%20Season.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-15",
+          "title": "s03e16 The Reunion",
+          "season": 3,
+          "number": 16,
+          "durationSeconds": 2717.82,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e16%20The%20Reunion.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-16",
+          "title": "s03e17 Not on Our Block",
+          "season": 3,
+          "number": 17,
+          "durationSeconds": 2719.81,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e17%20Not%20on%20Our%20Block.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-17",
+          "title": "s03e18 The Runaways",
+          "season": 3,
+          "number": 18,
+          "durationSeconds": 2715.75,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e18%20The%20Runaways.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-18",
+          "title": "s03e19 Everybody Pays the Fare",
+          "season": 3,
+          "number": 19,
+          "durationSeconds": 2717.75,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e19%20Everybody%20Pays%20the%20Fare.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-19",
+          "title": "s03e20 Think Mink",
+          "season": 3,
+          "number": 20,
+          "durationSeconds": 2717.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e20%20Think%20Mink.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-20",
+          "title": "s03e21 Carla",
+          "season": 3,
+          "number": 21,
+          "durationSeconds": 2719.79,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e21%20Carla.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-21",
+          "title": "s03e22 Big Bad Charlie",
+          "season": 3,
+          "number": 22,
+          "durationSeconds": 2717.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e22%20Big%20Bad%20Charlie.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-22",
+          "title": "s03e23 Guns and Brothers",
+          "season": 3,
+          "number": 23,
+          "durationSeconds": 2717.69,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-22",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e23%20Guns%20and%20Brothers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s-03e-13-dont-kill-the-sparrows-23",
+          "title": "s03e24 Playin Police",
+          "season": 3,
+          "number": 24,
+          "durationSeconds": 2719.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-23",
+              "provider": "archive",
+              "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e24%20Playin%20Police.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E01%20He'll%20Never%20See%20Daylight.mp4",
+          "checkedAt": "2026-11-14T13:50:32.034Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E03%20Woman%20in%20the%20Harbor.mp4",
+          "checkedAt": "2026-11-14T13:50:32.554Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E06%20Ragtime%20Billy%20Peaches.mp4",
+          "checkedAt": "2026-11-14T13:50:32.588Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E05%20The%20Half-Million%20Dollar%20Baby.mp4",
+          "checkedAt": "2026-11-14T13:50:32.594Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E02%20The%205%C2%BD%20Pound%20Junkie.mp4",
+          "checkedAt": "2026-11-14T13:50:32.633Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E04%20If%20You%20Can't%20Pay%20the%20Price.mp4",
+          "checkedAt": "2026-11-14T13:50:32.660Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E07%20The%20Coppelli%20Oath.mp4",
+          "checkedAt": "2026-11-14T13:50:32.828Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E09%20The%20Mansion.mp4",
+          "checkedAt": "2026-11-14T13:50:32.875Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E08%20Walk%20Like%20You%20Talk.mp4",
+          "checkedAt": "2026-11-14T13:50:32.938Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E10%20Keep%20Your%20Eye%20on%20the%20Sparrow.mp4",
+          "checkedAt": "2026-11-14T13:50:32.958Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E12%20This%20Ain't%20My%20Bag.mp4",
+          "checkedAt": "2026-11-14T13:50:33.044Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-01-e-03-woman-in-the-harbor_202411/Baretta%20S01E11%20The%20Secret%20of%20Terry%20Lake.mp4",
+          "checkedAt": "2026-11-14T13:50:33.136Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E01%20The%20Goodbye%20Orphan%20Annie%20Blues.mp4",
+          "checkedAt": "2026-11-14T13:50:36.881Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E03%20On%20the%20Road.mp4",
+          "checkedAt": "2026-11-14T13:50:36.882Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E06%20Double%20Image.mp4",
+          "checkedAt": "2026-11-14T13:50:36.922Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E04%20Nobody%20in%20a%20Nothing%20Place.mp4",
+          "checkedAt": "2026-11-14T13:50:36.944Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E02%20The%20Glory%20Game.mp4",
+          "checkedAt": "2026-11-14T13:50:37.060Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E05%20The%20Fire%20Man.mp4",
+          "checkedAt": "2026-11-14T13:50:37.062Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E07%20Photography%20by%20John%20Doe.mp4",
+          "checkedAt": "2026-11-14T13:50:37.156Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E09%20A%20Bite%20of%20the%20Apple.mp4",
+          "checkedAt": "2026-11-14T13:50:37.215Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E08%20Set-Up%20City.mp4",
+          "checkedAt": "2026-11-14T13:50:37.228Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E10%20When%20Dues%20Come%20Down.mp4",
+          "checkedAt": "2026-11-14T13:50:37.329Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E12%20Count%20the%20Days%20I'm%20Gone.mp4",
+          "checkedAt": "2026-11-14T13:50:37.359Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E11%20The%20Big%20Hand's%20on%20Trouble.mp4",
+          "checkedAt": "2026-11-14T13:50:37.416Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E13%20Sharper%20Than%20a%20Serpent's%20Tooth.mp4",
+          "checkedAt": "2026-11-14T13:50:37.437Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E15%20Murder%20for%20Me.mp4",
+          "checkedAt": "2026-11-14T13:50:37.453Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E14%20The%20Left%20Hand%20of%20the%20Devil.mp4",
+          "checkedAt": "2026-11-14T13:50:37.547Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E16%20Pay%20or%20Die.mp4",
+          "checkedAt": "2026-11-14T13:50:37.606Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E18%20The%20Dippers.mp4",
+          "checkedAt": "2026-11-14T13:50:37.745Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E20%20Death%20on%20the%20Run.mp4",
+          "checkedAt": "2026-11-14T13:50:37.753Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E19%20Dead%20Man%20Out.mp4",
+          "checkedAt": "2026-11-14T13:50:37.755Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E17%20The%20Blood%20Bond.mp4",
+          "checkedAt": "2026-11-14T13:50:37.767Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E22%20And%20Down%20Will%20Come%20Baby.mp4",
+          "checkedAt": "2026-11-14T13:50:37.847Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/baretta-s-02-e-11-the-big-hands-on-trouble/Baretta%20S02E21%20Aggie.mp4",
+          "checkedAt": "2026-11-14T13:50:37.915Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e03%20Runaway%20Cowboy.mp4",
+          "checkedAt": "2026-11-14T13:50:38.383Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e01%20The%20Ninja.mp4",
+          "checkedAt": "2026-11-14T13:50:38.612Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e06%20Shoes.mp4",
+          "checkedAt": "2026-11-14T13:50:38.613Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e05%20They%20Dont%20Make%20Em%20Like%20They%20Used%20To.mp4",
+          "checkedAt": "2026-11-14T13:50:38.713Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e04%20Street%20Edition.mp4",
+          "checkedAt": "2026-11-14T13:50:38.714Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e02%20Soldier%20in%20the%20Jungle.mp4",
+          "checkedAt": "2026-11-14T13:50:38.737Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e07%20Under%20the%20City.mp4",
+          "checkedAt": "2026-11-14T13:50:38.751Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e08%20Dear%20Tony.mp4",
+          "checkedAt": "2026-11-14T13:50:38.854Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e10%20Nothin%20for%20Nothin.mp4",
+          "checkedAt": "2026-11-14T13:50:38.986Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e09%20Crazy%20Annie.mp4",
+          "checkedAt": "2026-11-14T13:50:39.077Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e14%20That%20Sister%20Aint%20No%20Cousin.mp4",
+          "checkedAt": "2026-11-14T13:50:39.119Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e13%20Dont%20Kill%20the%20Sparrows.mp4",
+          "checkedAt": "2026-11-14T13:50:39.153Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e11%20Cant%20Win%20for%20Losin.mp4",
+          "checkedAt": "2026-11-14T13:50:39.160Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e12%20Look%20Back%20In%20Terror.mp4",
+          "checkedAt": "2026-11-14T13:50:39.176Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e16%20The%20Reunion.mp4",
+          "checkedAt": "2026-11-14T13:50:39.343Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e15%20Open%20Season.mp4",
+          "checkedAt": "2026-11-14T13:50:39.348Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e18%20The%20Runaways.mp4",
+          "checkedAt": "2026-11-14T13:50:39.392Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e17%20Not%20on%20Our%20Block.mp4",
+          "checkedAt": "2026-11-14T13:50:39.397Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e19%20Everybody%20Pays%20the%20Fare.mp4",
+          "checkedAt": "2026-11-14T13:50:39.404Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e20%20Think%20Mink.mp4",
+          "checkedAt": "2026-11-14T13:50:39.461Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e22%20Big%20Bad%20Charlie.mp4",
+          "checkedAt": "2026-11-14T13:50:39.576Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e21%20Carla.mp4",
+          "checkedAt": "2026-11-14T13:50:39.579Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e24%20Playin%20Police.mp4",
+          "checkedAt": "2026-11-14T13:50:39.621Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/s-03e-13-dont-kill-the-sparrows/s03e23%20Guns%20and%20Brothers.mp4",
+          "checkedAt": "2026-11-14T13:50:39.621Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        }
+      ],
+      "coverage": {
+        "candidateEntries": 58,
+        "seasonEpisodePairs": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            2,
+            14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            2,
+            16
+          ],
+          [
+            2,
+            17
+          ],
+          [
+            2,
+            18
+          ],
+          [
+            2,
+            19
+          ],
+          [
+            2,
+            20
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            3,
+            17
+          ],
+          [
+            3,
+            18
+          ],
+          [
+            3,
+            19
+          ],
+          [
+            3,
+            20
+          ],
+          [
+            3,
+            21
+          ],
+          [
+            3,
+            22
+          ],
+          [
+            3,
+            23
+          ],
+          [
+            3,
+            24
+          ]
+        ],
+        "completenessClaim": false,
+        "httpVerifiedEntries": 58
+      },
+      "providerRestrictions": [
+        "Selected Archive collections provide 12 season-one,22 season-two and 24 season-three episode files. No season-four source located.",
+        "Season-two and season-three metadata omit language; no audio-language verification performed.",
+        "Alternative DVD file dumps were excluded because titled episode files already exist; no duplicate entries added."
+      ],
+      "externalSources": []
+    },
+    {
+      "showId": "bj-bear",
+      "title": "B. J. and the Bear",
+      "channel": "seventies",
+      "items": [
+        {
+          "itemId": "b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth",
+          "title": "B. J. And The Bear S 01 E 01 Odyssey Of The Shady Truth",
+          "language": null,
+          "metadataUrl": "https://archive.org/metadata/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth",
+          "itemUrl": "https://archive.org/details/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth",
+          "rightsStatus": "not established",
+          "metadataCheckedAt": "2026-11-14T03:29:57.921Z",
+          "episodes": [
+            {
+              "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-0",
+              "title": "B.J. and the Bear S01E01 Odyssey of the Shady Truth",
+              "season": 1,
+              "number": 1,
+              "durationSeconds": 2882.9,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-0",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E01%20Odyssey%20of%20the%20Shady%20Truth.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-1",
+              "title": "B.J. and the Bear S01E02 Shine On",
+              "season": 1,
+              "number": 2,
+              "durationSeconds": 2914.39,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-1",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E02%20Shine%20On.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-2",
+              "title": "B.J. and the Bear S01E03 A Coffin with a View",
+              "season": 1,
+              "number": 3,
+              "durationSeconds": 2893.87,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-2",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E03%20A%20Coffin%20with%20a%20View.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-3",
+              "title": "B.J. and the Bear S01E04 Deadly Cargo",
+              "season": 1,
+              "number": 4,
+              "durationSeconds": 2878.88,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-3",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E04%20Deadly%20Cargo.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-4",
+              "title": "B.J. and the Bear S01E05 Never Give a Trucker an Even Break",
+              "season": 1,
+              "number": 5,
+              "durationSeconds": 2878.41,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-4",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E05%20Never%20Give%20a%20Trucker%20an%20Even%20Break.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-5",
+              "title": "B.J. and the Bear S01E06 Lobo's Revenge",
+              "season": 1,
+              "number": 6,
+              "durationSeconds": 2900.88,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-5",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E06%20Lobo's%20Revenge.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-6",
+              "title": "B.J. and the Bear S01E07 The Murphy Contingent",
+              "season": 1,
+              "number": 7,
+              "durationSeconds": 2897.42,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-6",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E07%20The%20Murphy%20Contingent.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-7",
+              "title": "B.J. and the Bear S01E08 Wheels of Fortune",
+              "season": 1,
+              "number": 8,
+              "durationSeconds": 2868.85,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-7",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E08%20Wheels%20of%20Fortune.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-8",
+              "title": "B.J. and the Bear S01E09 Crackers",
+              "season": 1,
+              "number": 9,
+              "durationSeconds": 2905.42,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-8",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E09%20Crackers.mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-9",
+              "title": "B.J. and the Bear S01E10 Lobo",
+              "season": 1,
+              "number": 10,
+              "durationSeconds": 2911.93,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-9",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E10%20Lobo.mp4",
+                  "availability": "verified"
+                }
+              ]
+            }
+          ],
+          "excluded": []
+        },
+        {
+          "itemId": "b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3",
+          "title": "B. J. And The Bear S 00 E 04 Run For The Money ( 3)",
+          "language": null,
+          "metadataUrl": "https://archive.org/metadata/b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3",
+          "itemUrl": "https://archive.org/details/b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3",
+          "rightsStatus": "not established",
+          "metadataCheckedAt": "2026-11-14T03:29:57.921Z",
+          "episodes": [
+            {
+              "id": "archive-b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3-0",
+              "title": "B.J. and the Bear S00E01 The Foundlings (1)",
+              "season": 0,
+              "number": 1,
+              "durationSeconds": 2850.89,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-0",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3/B.J.%20and%20the%20Bear%20S00E01%20The%20Foundlings%20(1).mp4",
+                  "availability": "verified"
+                }
+              ]
+            },
+            {
+              "id": "archive-b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3-1",
+              "title": "B.J. and the Bear S00E02 The Foundlings (2)",
+              "season": 0,
+              "number": 2,
+              "durationSeconds": 2878.41,
+              "group": "",
+              "kind": "episode",
+              "sources": [
+                {
+                  "id": "archive-file-1",
+                  "provider": "archive",
+                  "url": "https://archive.org/download/b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3/B.J.%20and%20the%20Bear%20S00E02%20The%20Foundlings%20(2).mp4",
+                  "availability": "verified"
+                }
+              ]
+            }
+          ],
+          "excluded": [
+            {
+              "title": "B.J. and the Bear S00E03 Run for the Money (2)",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3/B.J.%20and%20the%20Bear%20S00E03%20Run%20for%20the%20Money%20(2).mp4",
+              "reason": "Run for the Money parts 2 and 3 are crossover installments of Sheriff Lobo; not selected for this core-three task."
+            },
+            {
+              "title": "B.J. and the Bear S00E04 Run for the Money (3)",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3/B.J.%20and%20the%20Bear%20S00E04%20Run%20for%20the%20Money%20(3).mp4",
+              "reason": "Run for the Money parts 2 and 3 are crossover installments of Sheriff Lobo; not selected for this core-three task."
+            }
+          ]
+        }
+      ],
+      "episodes": [
+        {
+          "id": "archive-b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3-0",
+          "title": "B.J. and the Bear S00E01 The Foundlings (1)",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 2850.89,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3/B.J.%20and%20the%20Bear%20S00E01%20The%20Foundlings%20(1).mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3-1",
+          "title": "B.J. and the Bear S00E02 The Foundlings (2)",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 2878.41,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3/B.J.%20and%20the%20Bear%20S00E02%20The%20Foundlings%20(2).mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-0",
+          "title": "B.J. and the Bear S01E01 Odyssey of the Shady Truth",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 2882.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E01%20Odyssey%20of%20the%20Shady%20Truth.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-1",
+          "title": "B.J. and the Bear S01E02 Shine On",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 2914.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E02%20Shine%20On.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-2",
+          "title": "B.J. and the Bear S01E03 A Coffin with a View",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 2893.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E03%20A%20Coffin%20with%20a%20View.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-3",
+          "title": "B.J. and the Bear S01E04 Deadly Cargo",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 2878.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E04%20Deadly%20Cargo.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-4",
+          "title": "B.J. and the Bear S01E05 Never Give a Trucker an Even Break",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 2878.41,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E05%20Never%20Give%20a%20Trucker%20an%20Even%20Break.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-5",
+          "title": "B.J. and the Bear S01E06 Lobo's Revenge",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 2900.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E06%20Lobo's%20Revenge.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-6",
+          "title": "B.J. and the Bear S01E07 The Murphy Contingent",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 2897.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E07%20The%20Murphy%20Contingent.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-7",
+          "title": "B.J. and the Bear S01E08 Wheels of Fortune",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 2868.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E08%20Wheels%20of%20Fortune.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-8",
+          "title": "B.J. and the Bear S01E09 Crackers",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 2905.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E09%20Crackers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth-9",
+          "title": "B.J. and the Bear S01E10 Lobo",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 2911.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E10%20Lobo.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3/B.J.%20and%20the%20Bear%20S00E01%20The%20Foundlings%20(1).mp4",
+          "checkedAt": "2026-11-14T13:50:39.802Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/b.-j.-and-the-bear-s-00-e-04-run-for-the-money-3/B.J.%20and%20the%20Bear%20S00E02%20The%20Foundlings%20(2).mp4",
+          "checkedAt": "2026-11-14T13:50:39.874Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E01%20Odyssey%20of%20the%20Shady%20Truth.mp4",
+          "checkedAt": "2026-11-14T13:50:40.074Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E05%20Never%20Give%20a%20Trucker%20an%20Even%20Break.mp4",
+          "checkedAt": "2026-11-14T13:50:40.145Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E02%20Shine%20On.mp4",
+          "checkedAt": "2026-11-14T13:50:40.153Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E03%20A%20Coffin%20with%20a%20View.mp4",
+          "checkedAt": "2026-11-14T13:50:40.156Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E04%20Deadly%20Cargo.mp4",
+          "checkedAt": "2026-11-14T13:50:40.184Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E06%20Lobo's%20Revenge.mp4",
+          "checkedAt": "2026-11-14T13:50:40.227Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E07%20The%20Murphy%20Contingent.mp4",
+          "checkedAt": "2026-11-14T13:50:40.313Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E08%20Wheels%20of%20Fortune.mp4",
+          "checkedAt": "2026-11-14T13:50:40.540Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E09%20Crackers.mp4",
+          "checkedAt": "2026-11-14T13:50:40.619Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/b.-j.-and-the-bear-s-01-e-01-odyssey-of-the-shady-truth/B.J.%20and%20the%20Bear%20S01E10%20Lobo.mp4",
+          "checkedAt": "2026-11-14T13:50:40.627Z",
+          "method": "HEAD",
+          "verified": true,
+          "status": 200,
+          "contentType": "video/mp4"
+        }
+      ],
+      "coverage": {
+        "candidateEntries": 12,
+        "seasonEpisodePairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            10
+          ]
+        ],
+        "completenessClaim": false,
+        "httpVerifiedEntries": 12
+      },
+      "providerRestrictions": [
+        "Selected 10 season-one files and 2 separately named pilot parts. Seasons two and three not located in this bounded Archive search.",
+        "Run for the Money crossover parts 2 and 3 excluded as Sheriff Lobo installments.",
+        "Metadata language unknown; no audio-language verification performed."
+      ],
+      "externalSources": []
+    }
+  ]
+}

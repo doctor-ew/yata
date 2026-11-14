@@ -206,3 +206,7 @@ The optional `test/browser-published-catalog.mjs` accepts the same Playwright-mo
 ## Comedy
 
 Channel 05 mixes Barney Miller, Mork & Mindy, and The Love Boat. These series also participate in the all-show YATA mix. The reviewed initial source set contains 1, 24, and 4 full-episode candidates respectively; metadata and successful video HTTP range checks do not establish complete-series availability or browser decoding. Love Boat story excerpts are excluded. Refresh the selected source metadata with `node scripts/comedy-discovery.mjs`, then rebuild the library.
+
+## 70s Prime Time
+
+Channel 06 mixes checked Baretta and B.J. and the Bear entries and includes Barnaby Jones as a wishlist show. The initial set contains 58 Baretta and 12 B.J. entries. The bounded search found no eligible English Barnaby file; its external provider listing is recorded in the discovery artifact. Missing episodes remain unknown. Recheck source availability with `node scripts/verify-seventies.mjs`, then rebuild the library. HTTP success does not establish browser decoding or rights status.
