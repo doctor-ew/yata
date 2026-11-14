@@ -60,6 +60,8 @@ for(const name of ['guide','library'])$(name+'-tab').addEventListener('click',()
 document.querySelector('.browse-tabs').addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();const view=event.key==='Home'?'guide':event.key==='End'?'library':$('guide').hidden?'guide':'library';showBrowseView(view);$(view+'-tab').focus();});
 window.addEventListener('hashchange',()=>{if(['#guide','#library'].includes(location.hash))showBrowseView(location.hash.slice(1),{scroll:true});else if(location.hash==='#watch'){showBrowseView('library');$('watch').scrollIntoView({block:'start'});}});
 showBrowseView(location.hash==='#guide'?'guide':'library');
+$('open-stream-settings').addEventListener('click',()=>$('stream-settings').showModal());
+for(const id of ['close-stream-settings','done-stream-settings'])$(id).addEventListener('click',()=>$('stream-settings').close());
 
 async function playFromGuide(selection,live) {
   if(!ownerMode&&!publicCatalogReady)return false;
@@ -626,11 +628,12 @@ if(!ownerMode){
   const retry=button('Retry shared catalog',()=>refreshSharedCatalog(),'button small');retry.id='retry-shared-catalog';retry.hidden=true;state.append(text,retry);$('notice').after(state);
 }
 if(!ownerMode&&hadSavedCatalog){
-  const recovery=element('section',null,'transport legacy-recovery');
+  const recovery=element('details',null,'legacy-recovery');
+  recovery.append(element('summary','Previous browser backup'));
   recovery.append(element('p','Your previous browser catalog is preserved separately. Export it to recover unpublished personal sources.'),button('Export previous browser catalog',()=>{
     try {const raw=storage.getItem(STORAGE_KEY);if(raw){const url=URL.createObjectURL(new Blob([raw],{type:'application/json'}));const a=element('a');a.href=url;a.download='yata-legacy-catalog.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}}
     catch {notify('The previous browser catalog could not be read.');}
-  }));document.querySelector('.collection-tools').after(recovery);
+  }));document.querySelector('footer').append(recovery);
 }
 render();
 if (ownerMode && !catalogStore.writable) { notify('Catalog changes are read-only: safe tab coordination is unavailable. Playback and export remain available.'); showCatalogRecovery(); }
