@@ -1454,3 +1454,8 @@ button.tv-knob:focus-visible { outline-offset: -2px; }
 #open-channel-builder.remote-setup {order:-1;flex:1 0 100%;background:#a64c2b;color:#fff3dc;border:2px solid #e7a879;border-bottom:4px solid #65301c;padding:12px 16px;font:700 13px 'Courier New',monospace;letter-spacing:1px;min-height:46px;text-align:center;box-shadow:0 2px 0 #100e0b;}
 #open-channel-builder.remote-setup:hover {background:#bb5d36;}
 #open-channel-builder.remote-setup:focus-visible {outline:3px solid #fff4dc;outline-offset:3px;}
+
+.channel-builder-action {margin:12px 0;}
+.channel-builder-action #open-channel-builder {display:block;width:100%;}
+.window-mode .channel-builder-action {display:none;}
+.remote-label .remote-guide {margin-left:auto;}

@@ -7,7 +7,7 @@
   <meta name="yata-turnstile-sitekey" content="0x4AAAAAAGAVS3ojZLogR3TI">
   <meta name="theme-color" content="#211a15">
   <title>YATA · Yet Another TV App</title>
-  <link rel="stylesheet" href="style.css?v=host-ui-2">
+  <link rel="stylesheet" href="style.css?v=controls-order-3">
   <script type="module" src="src/app.mjs"></script>
 </head>
 <body>
@@ -32,11 +32,6 @@
           <aside class="tv-cabinet-controls" aria-label="Television tuning dials"><span class="tv-cabinet-label" aria-hidden="true">YATA · COLOR</span><div class="tv-dial"><button id="dial-next-show" type="button" class="tv-knob" aria-label="Next show" title="Next show"></button><span class="dial-caption" aria-hidden="true">SHOW +</span></div><div class="tv-dial"><button id="dial-random" type="button" class="tv-knob" aria-label="Random channel mix" title="Random channel mix"></button><span class="dial-caption" aria-hidden="true">RANDOM</span></div><div class="tv-speaker" aria-hidden="true"></div></aside>
           </div>
           <div id="player-error" class="player-error" role="alert" hidden><p id="player-error-text"></p><div><button id="retry" class="button small">Retry</button><button id="skip-error" class="button small">Skip episode</button><a id="error-original" class="button small" target="_blank" rel="noopener noreferrer">Open original ↗</a></div></div>
-          <section class="tv-remote" aria-label="Television remote control">
-            <div class="remote-label"><strong>YATA</strong><span>CHANNEL SELECT</span></div>
-            <div id="channels" class="channels" role="group" aria-label="Choose a channel"></div>
-            <div class="remote-settings"><button id="open-stream-settings" class="remote-setup" type="button" aria-haspopup="dialog">SET UP</button><button id="open-channel-builder" class="remote-setup" type="button" aria-haspopup="dialog">MAKE A CHANNEL</button><span id="settings-summary">Random mix · Commercials on</span><a href="#guide" class="remote-guide">TV GUIDE ↗</a></div>
-          </section>
           <section class="transport" aria-label="Video playback controls">
             <div class="transport-position"><label for="video-seek">POSITION</label><output id="video-time">00:00:00 out of --:--:--</output></div>
             <input id="video-seek" type="range" min="0" max="1" step="1" value="0" aria-label="Playback position" disabled>
@@ -50,6 +45,12 @@
               <button id="share-episode" class="button small" disabled>Share episode ↗</button><label class="share-time-setting"><input id="share-time" type="checkbox" disabled> Include position</label>
               <button id="fill-window" class="button small" aria-pressed="false" aria-label="Fill browser window">⛶ Fill window</button><div class="transport-volume"><button id="video-mute" class="button small" aria-label="Mute video" aria-pressed="false" disabled>Mute</button><input id="video-volume" type="range" min="0" max="100" step="1" value="100" aria-label="Volume" disabled><output id="video-volume-value">100%</output></div>
             </div>
+          </section>
+          <div class="channel-builder-action"><button id="open-channel-builder" class="remote-setup" type="button" aria-haspopup="dialog">MAKE A CHANNEL</button></div>
+          <section class="tv-remote" aria-label="Television remote control">
+            <div class="remote-label"><strong>YATA CHANNELS</strong><a href="#guide" class="remote-guide">TV GUIDE ↗</a></div>
+            <div id="channels" class="channels" role="group" aria-label="Choose a channel"></div>
+            <div class="remote-settings"><button id="open-stream-settings" class="remote-setup" type="button" aria-haspopup="dialog">SET UP</button><span id="settings-summary">Random mix · Commercials on</span></div>
           </section>
           <div class="watch-info"><div><p id="playing-show" class="eyebrow">ON THE STATION CLOCK</p><h2 id="playing-title">Select a channel.</h2><p id="playing-detail" class="muted"></p></div><a id="original-link" target="_blank" rel="noopener noreferrer" class="source-link" hidden>Original source ↗</a></div>
           <div class="playback-actions"><button id="tune-live" class="button primary">▶ Tune in live</button></div>

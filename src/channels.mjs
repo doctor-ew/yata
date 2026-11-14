@@ -1,5 +1,5 @@
 export const CHANNELS = [
-  { id: 'mixed', number: '01', name: 'YATA', subtitle: 'All TV channels.', accent: '#ffc66e' },
+  { id: 'mixed', number: '01', name: 'YATA Channels', subtitle: 'All TV channels.', accent: '#ffc66e' },
   { id: 'action', number: '02', name: 'Action Adventure', subtitle: 'Action and adventure.', accent: '#ff927b' },
   { id: 'scifi', number: '03', name: 'Sci-Fi', subtitle: 'Science-fiction series.', accent: '#79cde5' },
   { id: 'cartoons', number: '04', name: 'Saturday Morning', subtitle: 'Animated series.', accent: '#ac9aff' },
