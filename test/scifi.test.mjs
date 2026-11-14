@@ -2,12 +2,14 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { CHANNELS, createSeed } from '../src/catalog.mjs';
+import { MOVIE_SHOW_ID } from '../src/collections.mjs';
 import { SCI_FI_SHOW_IDS } from '../src/channels.mjs';
 import { validateCatalog, readCatalog, buildSchedule, STORAGE_KEY, COMMERCIAL_SHOW_ID } from '../src/domain.mjs';
 import { availableDialShows, nextDialShow, randomDialPatch } from '../src/dials.mjs';
 
 const legacy = () => {
   const catalog = createSeed();
+  catalog.shows = catalog.shows.filter(show => show.id !== MOVIE_SHOW_ID);
   for (const show of catalog.shows) if (show.channel === 'scifi') show.channel = 'action';
   catalog.settings = {...catalog.settings, channel:'action', streamShow:'buck-rogers', bumpers:false, commercialCount:3, shuffleSeed:87};
   catalog.shows.find(s=>s.id==='buck-rogers').episodes.push({id:'custom-buck',title:'My episode',season:1,number:1,durationSeconds:1200,kind:'episode',group:'My group',sources:[{id:'custom-source',provider:'archive',url:'https://archive.org/download/buck-fixture/episode.mp4',availability:'verified'}]});
@@ -18,7 +20,7 @@ const legacy = () => {
 test('four channels place Sci-Fi third and keep animated science fiction on Saturday Morning', () => {
   assert.deepEqual(CHANNELS.map(c=>[c.id,c.number]), [['mixed','01'],['action','02'],['scifi','03'],['cartoons','04']]);
   const seed=createSeed();
-  assert.deepEqual(new Set(seed.shows.filter(s=>s.channel==='scifi').map(s=>s.id)), SCI_FI_SHOW_IDS);
+  assert.deepEqual(new Set(seed.shows.filter(s=>s.channel==='scifi' && s.id!==MOVIE_SHOW_ID).map(s=>s.id)), SCI_FI_SHOW_IDS);
   for(const id of ['transformers','mighty-orbots','space-ghost']) assert.equal(seed.shows.find(s=>s.id===id).channel,'cartoons');
   for(const id of ['knight-rider','greatest-american-hero','manimal']) assert.equal(seed.shows.find(s=>s.id===id).channel,'action');
 });
@@ -51,9 +53,9 @@ test('Sci-Fi schedules and dials use only checked science-fiction programs with 
   const catalog=validateCatalog(JSON.parse(await readFile(new URL('../data/expanded-catalog.json',import.meta.url),'utf8')));
   catalog.settings.channel='scifi';catalog.settings.bumpers=false;
   const schedule=buildSchedule(catalog),programs=schedule.filter(e=>e.episode.kind==='episode');
-  assert.equal(new Set(programs.map(e=>e.episode.id)).size,156);
+  assert.equal(new Set(programs.map(e=>e.episode.id)).size,286);
   assert(programs.every(e=>e.show.channel==='scifi'));
-  assert.equal(availableDialShows(catalog).length,9);
+  assert.equal(availableDialShows(catalog).length,15);
   assert.equal(nextDialShow(catalog,'buck-rogers').id,'battlestar');
   const patch=randomDialPatch(catalog,{mode:'show',seed:42,random:()=>0,currentShowId:'buck-rogers'});
   assert.equal(catalog.shows.find(s=>s.id===patch.streamShow).channel,'scifi');

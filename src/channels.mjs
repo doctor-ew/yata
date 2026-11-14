@@ -8,6 +8,7 @@ export const SHOW_CHANNEL_IDS = ['action', 'scifi', 'cartoons'];
 export const SCI_FI_SHOW_IDS = new Set([
   'automan', 'phoenix', 'voyagers', 'buck-rogers', 'battlestar', 'v',
   'matthew-star', 'misfits-science', 'otherworld',
+  'space-1999', 'ufo', 'fantastic-journey', 'logans-run', 'space-academy', 'jason-star-command',
 ]);
 
 // Move only the existing curated action entries; custom shows and explicit

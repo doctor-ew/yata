@@ -95,3 +95,10 @@ export function discoveryRows(catalog, packs) {
   mergeLibraryBatch(catalog, rows);
   return rows;
 }
+
+// Extend an older library without replacing its shows, sources, or settings.
+export function extendLibraryCatalog(catalog, seed) {
+  const base = structuredClone(catalog);
+  for (const show of seed.shows) if (!base.shows.some(existing => existing.id === show.id)) base.shows.push(structuredClone(show));
+  return validateCatalog(base);
+}

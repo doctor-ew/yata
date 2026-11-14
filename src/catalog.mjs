@@ -1,4 +1,5 @@
 import { COMMERCIAL_SHOW_ID } from './domain.mjs';
+import { MOVIE_SHOW_ID, ADDITIONAL_SCIFI_SERIES, MOVIE_WISHLIST } from './collections.mjs';
 import { migratedShowChannel } from './channels.mjs';
 export { CHANNELS } from './channels.mjs';
 
@@ -67,8 +68,10 @@ const cartoons = [
 export function createSeed() {
   const shows = [
     ...action.map(([id, title]) => ({ id, title, channel: migratedShowChannel(id, 'action'), imdbUrl: null, episodes: [] })),
+    ...ADDITIONAL_SCIFI_SERIES.map(([id, title]) => ({id, title, channel: 'scifi', imdbUrl: null, episodes: []})),
     ...cartoons.map(([id, title]) => ({ id, title, channel: 'cartoons', imdbUrl: null, episodes: [] })),
   ];
+  shows.push({id: MOVIE_SHOW_ID, title: 'Midnight Matinee', channel: 'scifi', imdbUrl: null, episodes: MOVIE_WISHLIST.map((title, index) => ({id: `movie-wishlist-${index + 1}`, title, season: 0, number: index + 101, durationSeconds: null, group: '', kind: 'episode', sources: []}))});
   shows.push({id: COMMERCIAL_SHOW_ID, title: 'Vintage commercial breaks', channel: 'cartoons', imdbUrl: null, episodes: []});
   shows.find(s => s.id === 'dukes').episodes.push({
     id: 'dukes-high-octane', title: 'High Octane', season: 1, number: 5,

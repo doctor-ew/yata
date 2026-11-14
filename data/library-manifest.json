@@ -1,15 +1,18 @@
 {
-  "revision": "expanded-998920f7350401b8",
+  "revision": "expanded-ceda4341a064cc9e",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
     "2026-11-13T18:34:49.891Z",
-    "2026-11-13T20:53:25.232940+00:00"
+    "2026-11-13T20:53:25.232940+00:00",
+    "2026-11-14T03:27:55.664677+00:00",
+    "2026-11-14T03:28:28.539Z"
   ],
-  "episodes": 2816,
-  "ready": 2707,
+  "episodes": 2956,
+  "ready": 2837,
+  "movieReady": 5,
   "breaks": 14,
-  "streamSlots": 32557,
+  "streamSlots": 35234,
   "shows": [
     {
       "id": "dukes",
@@ -258,6 +261,54 @@
       "ready": 1,
       "breaks": 0,
       "sources": 1
+    },
+    {
+      "id": "space-1999",
+      "title": "Space: 1999",
+      "episodes": 48,
+      "ready": 48,
+      "breaks": 0,
+      "sources": 48
+    },
+    {
+      "id": "ufo",
+      "title": "UFO",
+      "episodes": 26,
+      "ready": 26,
+      "breaks": 0,
+      "sources": 26
+    },
+    {
+      "id": "fantastic-journey",
+      "title": "The Fantastic Journey",
+      "episodes": 10,
+      "ready": 10,
+      "breaks": 0,
+      "sources": 10
+    },
+    {
+      "id": "logans-run",
+      "title": "Logan’s Run (TV series)",
+      "episodes": 14,
+      "ready": 14,
+      "breaks": 0,
+      "sources": 14
+    },
+    {
+      "id": "space-academy",
+      "title": "Space Academy",
+      "episodes": 4,
+      "ready": 4,
+      "breaks": 0,
+      "sources": 4
+    },
+    {
+      "id": "jason-star-command",
+      "title": "Jason of Star Command",
+      "episodes": 28,
+      "ready": 28,
+      "breaks": 0,
+      "sources": 28
     },
     {
       "id": "he-man",
@@ -612,6 +663,14 @@
       "sources": 13
     },
     {
+      "id": "midnight-matinee",
+      "title": "Midnight Matinee",
+      "episodes": 10,
+      "ready": 5,
+      "breaks": 0,
+      "sources": 5
+    },
+    {
       "id": "vintage-commercials",
       "title": "Vintage commercial breaks",
       "episodes": 14,
@@ -628,6 +687,6 @@
       "sources": 1
     }
   ],
-  "bytes": 1067274,
+  "bytes": 1114567,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

@@ -1,3 +1,4 @@
+import { MOVIE_SHOW_ID } from './collections.mjs';
 import { CHANNELS, SHOW_CHANNEL_IDS, migratedShowChannel } from './channels.mjs';
 import { randomRotation, createCommercialBreak } from './shuffle.mjs';
 export const COMMERCIAL_SHOW_ID = 'vintage-commercials';
@@ -211,7 +212,7 @@ export function bumperPool(catalog, shows) {
 }
 
 export function buildSchedule(catalog, channel = catalog.settings.channel) {
-  const shows = catalog.shows.filter(s => s.id !== COMMERCIAL_SHOW_ID && (channel === 'mixed' || s.channel === channel) && (!catalog.settings.streamShow || s.id === catalog.settings.streamShow));
+  const shows = catalog.shows.filter(s => s.id !== COMMERCIAL_SHOW_ID && (s.id !== MOVIE_SHOW_ID || catalog.settings.streamShow === MOVIE_SHOW_ID) && (channel === 'mixed' || s.channel === channel) && (!catalog.settings.streamShow || s.id === catalog.settings.streamShow));
   const eligible = e => parseDuration(e.durationSeconds) !== null && stationSource(e);
   const entries = s => s.episodes.filter(eligible).sort((a, b) => a.season - b.season || a.number - b.number)
     .map(episode => ({ show: s, episode, source: stationSource(episode), duration: episode.durationSeconds }));

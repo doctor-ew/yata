@@ -1,3 +1,4 @@
+import { MOVIE_SHOW_ID } from './collections.mjs';
 import { mountDialFeedback } from './dial-feedback.mjs';
 import { availableDialShows, nextDialShow, randomDialPatch } from './dials.mjs';
 import { createEpisodeLink, parseEpisodeLink, findSharedEpisode } from './share.mjs';
@@ -6,7 +7,7 @@ import { mountRetroEffects } from './retro-effects.mjs';
 import { mountWindowMode } from './window-mode.mjs';
 import { playbackTime, adjacentPlayback, playbackPosition } from './transport.mjs';
 import { STARTER_PACK } from './starter-pack.mjs';
-import { youtubeEpisodes, mergeBatch, mergeLibraryBatch, discoveryRows } from './bulk.mjs';
+import { youtubeEpisodes, mergeBatch, mergeLibraryBatch, discoveryRows, extendLibraryCatalog } from './bulk.mjs';
 import { CHANNELS, createSeed } from './catalog.mjs';
 import { parseSourceUrl, parseDuration, importArchive, validateCatalog, parseCatalogJson,
   readCatalog, saveCatalog, buildSchedule, schedulePosition, stationSource, timeLabel, MAX_IMPORT_BYTES, COMMERCIAL_SHOW_ID } from './domain.mjs';
@@ -77,9 +78,9 @@ function commit(next) {
 function selectedChannel() { return CHANNELS.find(c => c.id === catalog.settings.channel); }
 function channelShows() { return catalog.shows.filter(s => s.id === COMMERCIAL_SHOW_ID || catalog.settings.channel === 'mixed' || s.channel === catalog.settings.channel); }
 function currentGuide() { return schedulePosition(buildSchedule(catalog), catalog.epoch); }
-function episodeDetail(e) {
+function episodeDetail(e, movie = false) {
   const order = e.season ? `S${String(e.season).padStart(2, '0')} · E${String(e.number).padStart(2, '0')}` : `Item ${e.number}`;
-  return `${e.kind === 'bumper' ? 'Commercial / bumper' : order} · ${timeLabel(e.durationSeconds)}${e.group ? ` · ${e.group}` : ''}`;
+  return `${e.kind === 'bumper' ? 'Commercial / bumper' : movie ? 'Feature film' : order} · ${timeLabel(e.durationSeconds)}${e.group ? ` · ${e.group}` : ''}`;
 }
 
 function renderChannels() {
@@ -119,7 +120,7 @@ function renderGuide() {
     const clock = i === 0 ? 'NOW' : new Date(startsAt * 1000).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
     row.append(element('span', clock, 'guide-time'));
     const body = element('div', null, 'guide-copy');
-    body.append(element('h3', entry.show.title), element('p', entry.episode.title), element('p', episodeDetail(entry.episode)));
+    body.append(element('h3', entry.show.title), element('p', entry.episode.title), element('p', episodeDetail(entry.episode, entry.show.id === MOVIE_SHOW_ID)));
     if (i === 0) {
       const track = element('div', null, 'guide-track'); const fill = element('span');
       fill.style.width = `${Math.min(100, position.offset / entry.duration * 100)}%`; track.append(fill); body.append(track);
@@ -131,16 +132,23 @@ function renderGuide() {
   if (!active) {
     $('playing-show').textContent = position.current.show.title.toUpperCase();
     $('playing-title').textContent = position.current.episode.title;
-    $('playing-detail').textContent = `${episodeDetail(position.current.episode)} · ${providerName[position.current.source.provider]}`;
+    $('playing-detail').textContent = `${episodeDetail(position.current.episode, position.current.show.id === MOVIE_SHOW_ID)} · ${providerName[position.current.source.provider]}`;
   }
 }
 
 function renderLibrary() {
   const query = $('search').value.trim().toLocaleLowerCase();
-  const shows = channelShows().filter(s => s.title.toLocaleLowerCase().includes(query));
+  const movies = catalog.shows.find(show => show.id === MOVIE_SHOW_ID);
+  const movieMatch = movies && (movies.title.toLocaleLowerCase().includes(query) || movies.episodes.some(episode => episode.title.toLocaleLowerCase().includes(query)));
+  const movieVisible = ['mixed', 'scifi'].includes(catalog.settings.channel) && movieMatch;
+  $('movie-section').hidden = !movieVisible;
+  const readyMovies = movies?.episodes.filter(episode => episode.kind === 'episode' && parseDuration(episode.durationSeconds) && stationSource(episode)).length || 0;
+  $('movie-count').textContent = `${readyMovies} checked films · ${(movies?.episodes.length || 0) - readyMovies} wishlist / unchecked items`;
+  $('movie-shuffle').disabled = !readyMovies;
+  const shows = channelShows().filter(s => s.id !== MOVIE_SHOW_ID && s.title.toLocaleLowerCase().includes(query));
   const itemCount = channelShows().reduce((n, show) => n + show.episodes.length, 0);
   $('library-count').textContent = `${channelShows().length} shows & collections · ${itemCount} catalog episodes and items`;
-  $('library-empty').hidden = shows.length > 0;
+  $('library-empty').hidden = shows.length > 0 || movieVisible;
   $('library-grid').replaceChildren(...shows.map(s => {
     const card = element('article', null, 'show-card');
     const art = button('', () => openShow(s.id), 'show-art');
@@ -162,12 +170,14 @@ function openShow(showId) {
   const show = catalog.shows.find(s => s.id === showId);
   if (!show) return;
   $('show-title').textContent = show.title;
+  $('show-shuffle').textContent = show.id === MOVIE_SHOW_ID ? '▶ Random movie stream' : '▶ Shuffle this show';
+  $('show-add').textContent = show.id === MOVIE_SHOW_ID ? '+ Add a film source' : '+ Add an episode source';
   $('show-shuffle').disabled = !show.episodes.some(episode => episode.kind === 'episode' && episode.durationSeconds > 0 && stationSource(episode));
   const imdb = $('show-imdb'); imdb.hidden = !show.imdbUrl;
   if (show.imdbUrl) imdb.href = show.imdbUrl;
   const rows = show.episodes.slice().sort((a, b) => a.season - b.season || a.number - b.number).map(e => {
     const row = element('article', null, 'episode-row');
-    row.append(element('h3', e.title), element('p', episodeDetail(e), 'episode-meta'));
+    row.append(element('h3', e.title), element('p', episodeDetail(e, show.id === MOVIE_SHOW_ID), 'episode-meta'));
     const sources = element('div', null, 'sources');
     for (const source of e.sources) {
       const parsed = parseSourceUrl(source.url);
@@ -248,7 +258,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
   $('standby').hidden = true;
   $('playing-show').textContent = show.title.toUpperCase();
   $('playing-title').textContent = episode.title;
-  $('playing-detail').textContent = `${episodeDetail(episode)} · ${mode === 'live' ? 'Station clock · best-effort sync' : offset > 0 ? `From ${playbackTime(offset)}` : 'From the beginning'} · ${providerName[source.provider]}`;
+  $('playing-detail').textContent = `${episodeDetail(episode, show.id === MOVIE_SHOW_ID)} · ${mode === 'live' ? 'Station clock · best-effort sync' : offset > 0 ? `From ${playbackTime(offset)}` : 'From the beginning'} · ${providerName[source.provider]}`;
   $('original-link').href = $('error-original').href = source.url;
   $('original-link').hidden = false;
   $('playback-state').textContent = 'LOADING SOURCE';
@@ -262,7 +272,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
     if (!isPlaylist) e.durationSeconds = duration;
     src.availability = 'verified';
     if (commit(next)) {
-      $('playing-detail').textContent = `${episodeDetail(e)} · ${active.mode === 'live' ? 'Station clock · best-effort sync' : offset > 0 ? `From ${playbackTime(offset)}` : 'From the beginning'} · ${providerName[source.provider]}`;
+      $('playing-detail').textContent = `${episodeDetail(e, show.id === MOVIE_SHOW_ID)} · ${active.mode === 'live' ? 'Station clock · best-effort sync' : offset > 0 ? `From ${playbackTime(offset)}` : 'From the beginning'} · ${providerName[source.provider]}`;
       renderGuide(); renderLibrary();
     }
   };
@@ -303,7 +313,7 @@ function markTimeShift() {
   active.mode = 'start';
   const show = catalog.shows.find(s => s.id === active.showId), episode = show?.episodes.find(e => e.id === active.episodeId);
   const source = episode?.sources.find(s => s.id === active.sourceId);
-  if (episode && source) $('playing-detail').textContent = `${episodeDetail(episode)} · Watching on your time · ${providerName[source.provider]}`;
+  if (episode && source) $('playing-detail').textContent = `${episodeDetail(episode, show.id === MOVIE_SHOW_ID)} · Watching on your time · ${providerName[source.provider]}`;
 }
 function seekVideo(seconds) {
   if (session?.seek(seconds)) { if (active) active.offset = Math.max(0, Math.min(seconds, transportState()?.duration ?? seconds)); markTimeShift(); renderTransport(); return true; }
@@ -627,18 +637,14 @@ async function loadWholeLibrary() {
 $('bulk-all').addEventListener('click', loadWholeLibrary);
 $('seed-all').addEventListener('click', () => { $('bulk-open').click(); loadWholeLibrary(); });
 
-function libraryBase() {
-  const base = copyCatalog();
-  for (const show of createSeed().shows) if (!base.shows.some(existing => existing.id === show.id)) base.shows.push({ ...show, episodes: [] });
-  return base;
-}
+function libraryBase() { return extendLibraryCatalog(catalog, createSeed()); }
 const LIBRARY_REVISION_KEY = 'drew-tv.library-revision.v1';
 async function fetchLibrary() {
   const response = await fetch('data/library-manifest.json');
   if (!response.ok) throw Error('The expanded episode library is not ready yet.');
   const manifest = await response.json();
   if (typeof manifest.revision !== 'string' || !/^[a-z0-9.-]{1,100}$/.test(manifest.revision)) throw Error('Invalid library revision.');
-  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials'].map(async provider => {
+  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies'].map(async provider => {
     const response = await fetch(`data/${provider}-discovery.json`);
     if (!response.ok) throw Error('A library source file could not be loaded. Your catalog is unchanged.');
     return response.json();
@@ -711,7 +717,7 @@ function renderStreamSettings() {
   const all = element('option', catalog.settings.channel === 'mixed' ? 'Any show · everything' : `Any show · ${selectedChannel().name}`); all.value = '';
   $('stream-show').replaceChildren(all, ...channelShows().map(show => {
     const count = show.episodes.filter(episode => episode.kind === 'episode' && episode.durationSeconds > 0 && stationSource(episode)).length;
-    const option = element('option', `${show.title} · ${count} checked`); option.value = show.id; option.disabled = !count; return option;
+    const option = element('option', `${show.title}${show.id === MOVIE_SHOW_ID ? ' · movies only' : ''} · ${count} checked`); option.value = show.id; option.disabled = !count; return option;
   }));
   $('stream-show').value = catalog.settings.streamShow || '';
   $('stream-run').value = String(catalog.settings.storiesPerTurn);
@@ -721,7 +727,7 @@ function renderStreamSettings() {
   $('stream-reshuffle').disabled = catalog.settings.rotation !== 'random';
   const title = catalog.shows.find(show => show.id === catalog.settings.streamShow)?.title;
   $('stream-description').textContent = catalog.settings.rotation === 'random'
-    ? title ? `Random ${title} episodes, continuously. Each story plays before its pool repeats.`
+    ? title ? catalog.settings.streamShow === MOVIE_SHOW_ID ? 'Random feature films only. Movies stay out of ordinary TV mixes; each film plays before the pool repeats.' : `Random ${title} episodes, continuously. Each story plays before its pool repeats.`
       : `Random episodes from random shows · ${catalog.settings.storiesPerTurn} ${catalog.settings.storiesPerTurn === 1 ? 'story' : 'stories'} per show turn. Smaller libraries keep their turn; multipart stories stay together.`
     : `${title || 'All shows in this channel'} in episode order. Switch to random for a shuffled stream.`;
 }
@@ -752,3 +758,6 @@ $('show-shuffle').addEventListener('click', () => {
 });
 
 mountWindowMode({ documentRef: document, screen: $('screen-column'), toggle: $('fill-window'), closeButton: $('exit-window') });
+
+$('movie-browse').addEventListener('click', () => openShow(MOVIE_SHOW_ID));
+$('movie-shuffle').addEventListener('click', () => { if (configureStream({channel: 'scifi', streamShow: MOVIE_SHOW_ID, rotation: 'random', shuffleSeed: newMix()}, true)) $('watch').scrollIntoView(); });

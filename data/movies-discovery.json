@@ -1,0 +1,165 @@
+{
+  "checkedAt": "2026-11-14T03:28:28.539Z",
+  "provider": "archive",
+  "bounds": "Five explicitly selected feature-length candidates; no claim of exhaustive availability.",
+  "notes": [
+    "Metadata/runtime and HTTP endpoints checked; decoding and audio language not independently tested.",
+    "Films play only in an explicitly selected Midnight Matinee stream; no media is copied to the app host.",
+    "Requested classics without a verified seeded source remain visible wishlist entries, not assumed available."
+  ],
+  "shows": [
+    {
+      "showId": "midnight-matinee",
+      "title": "Midnight Matinee",
+      "episodes": [
+        {
+          "id": "movie-plan--9--from--outer--space--1957",
+          "title": "Plan 9 from Outer Space",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 4696.73,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "movie-source-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/plan.-9.-from.-outer.-space.-1957/Plan%209%20From%20Outer%20Space%20(1957)/mp4/Plan.9.From.Outer.Space.1957.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "movie-Phantom-Planet",
+          "title": "The Phantom Planet (1961)",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 4924.59,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "movie-source-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/Phantom_Planet/The_Phantom_Planet.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "movie-TeenagersFromOuterSpace",
+          "title": "Teenagers from Outer Space (1959)",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 5128.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "movie-source-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/TeenagersFromOuterSpace/TeenagersFromOuterSpace.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "movie-lastmanonearth-1964",
+          "title": "The Last Man on Earth (1964)",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 5223.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "movie-source-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/lastmanonearth-1964/lastmanonearth-1964.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "movie-TheAtomicBrain",
+          "title": "The Atomic Brain",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 3892.58,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "movie-source-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheAtomicBrain/TheAtomicBrain.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "plan.-9.-from.-outer.-space.-1957",
+          "metadataUrl": "https://archive.org/metadata/plan.-9.-from.-outer.-space.-1957",
+          "itemUrl": "https://archive.org/details/plan.-9.-from.-outer.-space.-1957",
+          "archiveLicenseMetadata": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "sourceUrl": "https://archive.org/download/plan.-9.-from.-outer.-space.-1957/Plan%209%20From%20Outer%20Space%20(1957)/mp4/Plan.9.From.Outer.Space.1957.mp4",
+          "httpStatus": 200,
+          "contentType": "video/mp4",
+          "contentLength": 1400011829,
+          "runtimeSource": "Archive file length metadata",
+          "rightsStatus": "Not independently established. Archive uploader license metadata is recorded as provenance, not a rights determination."
+        },
+        {
+          "itemId": "Phantom_Planet",
+          "metadataUrl": "https://archive.org/metadata/Phantom_Planet",
+          "itemUrl": "https://archive.org/details/Phantom_Planet",
+          "archiveLicenseMetadata": "http://creativecommons.org/licenses/publicdomain/",
+          "sourceUrl": "https://archive.org/download/Phantom_Planet/The_Phantom_Planet.mp4",
+          "httpStatus": 200,
+          "contentType": "video/mp4",
+          "contentLength": 512855084,
+          "runtimeSource": "Archive file length metadata",
+          "rightsStatus": "Not independently established. Archive uploader license metadata is recorded as provenance, not a rights determination."
+        },
+        {
+          "itemId": "TeenagersFromOuterSpace",
+          "metadataUrl": "https://archive.org/metadata/TeenagersFromOuterSpace",
+          "itemUrl": "https://archive.org/details/TeenagersFromOuterSpace",
+          "archiveLicenseMetadata": "http://creativecommons.org/licenses/publicdomain/",
+          "sourceUrl": "https://archive.org/download/TeenagersFromOuterSpace/TeenagersFromOuterSpace.mp4",
+          "httpStatus": 200,
+          "contentType": "video/mp4",
+          "contentLength": 535019299,
+          "runtimeSource": "Archive file length metadata",
+          "rightsStatus": "Not independently established. Archive uploader license metadata is recorded as provenance, not a rights determination."
+        },
+        {
+          "itemId": "lastmanonearth-1964",
+          "metadataUrl": "https://archive.org/metadata/lastmanonearth-1964",
+          "itemUrl": "https://archive.org/details/lastmanonearth-1964",
+          "archiveLicenseMetadata": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://archive.org/download/lastmanonearth-1964/lastmanonearth-1964.mp4",
+          "httpStatus": 200,
+          "contentType": "video/mp4",
+          "contentLength": 542465386,
+          "runtimeSource": "Archive file length metadata",
+          "rightsStatus": "Not independently established. Archive uploader license metadata is recorded as provenance, not a rights determination."
+        },
+        {
+          "itemId": "TheAtomicBrain",
+          "metadataUrl": "https://archive.org/metadata/TheAtomicBrain",
+          "itemUrl": "https://archive.org/details/TheAtomicBrain",
+          "archiveLicenseMetadata": "http://creativecommons.org/licenses/publicdomain/",
+          "sourceUrl": "https://archive.org/download/TheAtomicBrain/TheAtomicBrain.mp4",
+          "httpStatus": 200,
+          "contentType": "video/mp4",
+          "contentLength": 406078519,
+          "runtimeSource": "Archive file length metadata",
+          "rightsStatus": "Not independently established. Archive uploader license metadata is recorded as provenance, not a rights determination."
+        }
+      ]
+    }
+  ]
+}
