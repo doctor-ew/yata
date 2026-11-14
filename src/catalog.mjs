@@ -87,6 +87,7 @@ export function createSeed() {
   });
   for(const [id,title] of [['barney-miller','Barney Miller'],['mork-mindy','Mork & Mindy'],['love-boat','The Love Boat'],['benson','Benson']]) shows.push({id,title,channel:'comedy',imdbUrl:null,episodes:[]});
   for(const [id,title] of [['barnaby-jones','Barnaby Jones'],['baretta','Baretta'],['bj-bear','B.J. and the Bear']]) shows.push({id,title,channel:'seventies',imdbUrl:null,episodes:[]});
+  for(const [id,title] of [['mister-t','Mister T'],['frankenstein-impossibles','Frankenstein Jr. and The Impossibles']]) shows.push({id,title,channel:'cartoons',imdbUrl:null,episodes:[]});
   shows.push({ id: 'saturday-simulator', title: 'Saturday Morning Simulator', channel: 'cartoons', imdbUrl: null,
     episodes: [{ id: 'simulator-107', title: 'Saturday Morning Cartoons · compilation #107',
       season: 0, number: 107, durationSeconds: 33116, group: '', kind: 'episode',

@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-bc4103d62386993c",
+  "revision": "expanded-c9a64be038035323",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -9,13 +9,14 @@
     "2026-11-14T03:28:28.539Z",
     "2026-11-14T13:23:15.444Z",
     "2026-11-14T13:50:40.627Z",
-    "2026-11-14T16:37:38.599Z"
+    "2026-11-14T16:37:38.599Z",
+    "2026-11-14T16:43:53.622Z"
   ],
-  "episodes": 3212,
-  "ready": 3093,
+  "episodes": 3239,
+  "ready": 3120,
   "movieReady": 5,
   "breaks": 14,
-  "streamSlots": 40679,
+  "streamSlots": 41608,
   "shows": [
     {
       "id": "dukes",
@@ -738,6 +739,22 @@
       "sources": 12
     },
     {
+      "id": "mister-t",
+      "title": "Mister T",
+      "episodes": 9,
+      "ready": 9,
+      "breaks": 0,
+      "sources": 9
+    },
+    {
+      "id": "frankenstein-impossibles",
+      "title": "Frankenstein Jr. and The Impossibles",
+      "episodes": 18,
+      "ready": 18,
+      "breaks": 0,
+      "sources": 18
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -746,6 +763,6 @@
       "sources": 1
     }
   ],
-  "bytes": 1201597,
+  "bytes": 1210765,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

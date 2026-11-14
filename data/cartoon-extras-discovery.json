@@ -1,0 +1,558 @@
+{
+  "checkedAt": "2026-11-14T16:43:53.622Z",
+  "provider": "archive",
+  "notes": [
+    "Reviewed additional original cartoon programs. Every retained source returned a successful small HTTP video range; this does not establish full decoding, complete-series availability, or rights status."
+  ],
+  "shows": [
+    {
+      "showId": "mister-t",
+      "title": "Mister T",
+      "channel": "cartoons",
+      "notes": "Nine reviewed named episode recordings from MeTV Toons, with embedded commercials retained and labeled. These commercials cannot be disabled by YATA break settings. The uploader uses continuous episode numbering across seasons; season zero preserves that source sequence without asserting season-relative numbering.",
+      "searched": [
+        {
+          "itemId": "toons-07272025-0430-am",
+          "metadataUrl": "https://archive.org/metadata/toons-07272025-0430-am",
+          "title": "Mister T S1 episode 6 The Crossword Mystery MeTV Toons airing + commercials",
+          "language": "eng",
+          "retained": 1
+        },
+        {
+          "itemId": "toons-08102025-0430-am",
+          "metadataUrl": "https://archive.org/metadata/toons-08102025-0430-am",
+          "title": "Mister T S1 episode 8 Dilemma of the Double-Edged Dagger MeTV Toons airing + commercials",
+          "language": "eng",
+          "retained": 1
+        },
+        {
+          "itemId": "toons-08172025-0429-am",
+          "metadataUrl": "https://archive.org/metadata/toons-08172025-0429-am",
+          "title": "Mister T S1 episode 9 Secret of the Spectral Sister MeTV Toons airing + commercials",
+          "language": "eng",
+          "retained": 1
+        },
+        {
+          "itemId": "toons-08242025-0430-am",
+          "metadataUrl": "https://archive.org/metadata/toons-08242025-0430-am",
+          "title": "Mister T S1 episode 10 Mystery of the Silver Swan MeTV Toons airing + Commercials",
+          "language": "eng",
+          "retained": 1
+        },
+        {
+          "itemId": "toons-09142025-0430-am",
+          "metadataUrl": "https://archive.org/metadata/toons-09142025-0430-am",
+          "title": "Mister T S1 episode 13  Riddle of the Runaway Wheels MeTV Toons airing + commercials",
+          "language": "eng",
+          "retained": 1
+        },
+        {
+          "itemId": "toons-09212025-0430-am",
+          "metadataUrl": "https://archive.org/metadata/toons-09212025-0430-am",
+          "title": "Mister T S2 episode 14 Mystery in Paradise MeTV Toons airing + Commercials",
+          "language": "eng",
+          "retained": 1
+        },
+        {
+          "itemId": "toons-10052025-0430-am",
+          "metadataUrl": "https://archive.org/metadata/toons-10052025-0430-am",
+          "title": "Mister T S2 episode 17 Mystery of the Ghost Fleet MeTV Toons airing + Commercials",
+          "language": "eng",
+          "retained": 1
+        },
+        {
+          "itemId": "toons-10122025-0430-am",
+          "metadataUrl": "https://archive.org/metadata/toons-10122025-0430-am",
+          "title": "Mister T S2 episode 18 Mystery of the Ancient Ancestor MeTV Toons airing + Commercials",
+          "language": "eng",
+          "retained": 1
+        },
+        {
+          "itemId": "toons-10192025-0430-am",
+          "metadataUrl": "https://archive.org/metadata/toons-10192025-0430-am",
+          "title": "Mister T S2 episode 19 Magical Mardi Gras Mystery MeTV Toons airing + Commercials",
+          "language": "eng",
+          "retained": 1
+        }
+      ],
+      "episodes": [
+        {
+          "id": "archive-toons-07272025-0430-am-0",
+          "title": "Mister T · The Crossword Mystery · recorded with commercials",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 1800.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/toons-07272025-0430-am/TOONS-07272025-0430AM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-toons-08102025-0430-am-0",
+          "title": "Mister T · Dilemma of the Double-Edged Dagger · recorded with commercials",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 1800.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/toons-08102025-0430-am/TOONS-08102025-0430AM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-toons-08172025-0429-am-0",
+          "title": "Mister T · Secret of the Spectral Sister · recorded with commercials",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 1800.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/toons-08172025-0429-am/TOONS-08172025-0429AM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-toons-08242025-0430-am-0",
+          "title": "Mister T · Mystery of the Silver Swan · recorded with commercials",
+          "season": 0,
+          "number": 10,
+          "durationSeconds": 1800.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/toons-08242025-0430-am/TOONS-08242025-0430AM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-toons-09142025-0430-am-0",
+          "title": "Mister T · Riddle of the Runaway Wheels · recorded with commercials",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 1800.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/toons-09142025-0430-am/TOONS-09142025-0430AM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-toons-09212025-0430-am-0",
+          "title": "Mister T · Mystery in Paradise · recorded with commercials",
+          "season": 0,
+          "number": 14,
+          "durationSeconds": 1800.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/toons-09212025-0430-am/TOONS-09212025-0430AM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-toons-10052025-0430-am-0",
+          "title": "Mister T · Mystery of the Ghost Fleet · recorded with commercials",
+          "season": 0,
+          "number": 17,
+          "durationSeconds": 1800.63,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/toons-10052025-0430-am/TOONS-10052025-0430AM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-toons-10122025-0430-am-0",
+          "title": "Mister T · Mystery of the Ancient Ancestor · recorded with commercials",
+          "season": 0,
+          "number": 18,
+          "durationSeconds": 1800.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/toons-10122025-0430-am/TOONS-10122025-0430AM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-toons-10192025-0430-am-0",
+          "title": "Mister T · Magical Mardi Gras Mystery · recorded with commercials",
+          "season": 0,
+          "number": 19,
+          "durationSeconds": 1800.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/toons-10192025-0430-am/TOONS-10192025-0430AM.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "frankenstein-impossibles",
+      "title": "Frankenstein Jr. and The Impossibles",
+      "channel": "cartoons",
+      "notes": "Eighteen full English bundled programs, approximately 22 minutes each. Keep Frankenstein Jr. and Impossibles stories together. Number-only filenames provide collection order, not verified broadcast episode order; season zero retains that order. Five-minute extra excluded.",
+      "searched": [
+        {
+          "itemId": "00003_20260809_0334",
+          "metadataUrl": "https://archive.org/metadata/00003_20260809_0334",
+          "title": "Frankenstein Jr. and the Impossibles Complete Series (HD Blu Ray Rip)",
+          "language": "eng",
+          "retained": 18
+        }
+      ],
+      "episodes": [
+        {
+          "id": "archive-00003_20260809_0334-0",
+          "title": "Frankenstein Jr. and The Impossibles · program 1 · collection order",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 1309.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/00002.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-1",
+          "title": "Frankenstein Jr. and The Impossibles · program 2 · collection order",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 1312.52,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/00003.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-2",
+          "title": "Frankenstein Jr. and The Impossibles · program 3 · collection order",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 1312.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/00004.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-3",
+          "title": "Frankenstein Jr. and The Impossibles · program 4 · collection order",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 1313.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/00005.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-4",
+          "title": "Frankenstein Jr. and The Impossibles · program 5 · collection order",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 1312.48,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/00006.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-5",
+          "title": "Frankenstein Jr. and The Impossibles · program 6 · collection order",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 1318.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/00007.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-6",
+          "title": "Frankenstein Jr. and The Impossibles · program 7 · collection order",
+          "season": 0,
+          "number": 7,
+          "durationSeconds": 1316.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/00008.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-7",
+          "title": "Frankenstein Jr. and The Impossibles · program 8 · collection order",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 1316.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/00009.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-8",
+          "title": "Frankenstein Jr. and The Impossibles · program 9 · collection order",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 1316.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/00010.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-9",
+          "title": "Frankenstein Jr. and The Impossibles · program 10 · collection order",
+          "season": 0,
+          "number": 10,
+          "durationSeconds": 1316.82,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/10002.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-10",
+          "title": "Frankenstein Jr. and The Impossibles · program 11 · collection order",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 1316.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/10003.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-11",
+          "title": "Frankenstein Jr. and The Impossibles · program 12 · collection order",
+          "season": 0,
+          "number": 12,
+          "durationSeconds": 1318.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/10004.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-12",
+          "title": "Frankenstein Jr. and The Impossibles · program 13 · collection order",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 1317.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/10005.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-13",
+          "title": "Frankenstein Jr. and The Impossibles · program 14 · collection order",
+          "season": 0,
+          "number": 14,
+          "durationSeconds": 1317.82,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/10006.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-14",
+          "title": "Frankenstein Jr. and The Impossibles · program 15 · collection order",
+          "season": 0,
+          "number": 15,
+          "durationSeconds": 1339.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/10007.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-15",
+          "title": "Frankenstein Jr. and The Impossibles · program 16 · collection order",
+          "season": 0,
+          "number": 16,
+          "durationSeconds": 1318.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/10008.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-16",
+          "title": "Frankenstein Jr. and The Impossibles · program 17 · collection order",
+          "season": 0,
+          "number": 17,
+          "durationSeconds": 1316.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/10009.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-00003_20260809_0334-17",
+          "title": "Frankenstein Jr. and The Impossibles · program 18 · collection order",
+          "season": 0,
+          "number": 18,
+          "durationSeconds": 1314.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/00003_20260809_0334/10010.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
