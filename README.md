@@ -4,9 +4,9 @@ A personal nostalgia TV station with a retro channel guide, a curated show libra
 
 ## Hosted station
 
-Open **https://doctorew.com/tv/**. This static deployment uses the existing S3 bucket and CloudFront distribution. Catalog installation and provider playback run in your browser; no media is rehosted. Browser storage is separate from localhost and other devices. Use catalog export/import to transfer personal edits.
+Open **https://doctorew.com/tv/**. This static deployment uses the existing S3 bucket and CloudFront distribution. Catalog installation and provider playback run in your browser; no media is rehosted. Browser storage is separate from localhost and other devices. The public site is a viewer; catalog editing and import/export management are available in the loopback owner app.
 
-The hosted importer supports the curated library, Archive metadata discovery and direct YouTube video/playlist playback. Expanding arbitrary YouTube playlists into individual entries requires the local importer. Deployment details and update commands are in [the AWS deployment guide](../docs/4/DEPLOYMENT.md).
+The hosted viewer installs curated library updates and retains watching, dials, stream settings and sharing. Seeding, source editing, removal, discovery and catalog import/export are loopback owner tools. The static-view marker controls presentation, not authentication; visitors who tamper with their browser copy cannot change the shared deployed catalog. Deployment details and update commands are in [the AWS deployment guide](../docs/4/DEPLOYMENT.md).
 
 ## Run locally
 
@@ -176,3 +176,16 @@ Saved catalogs automatically move these curated shows out of Action Adventure. A
 Sci-Fi adds Space: 1999, UFO, The Fantastic Journey, Logan’s Run (TV series), Space Academy, and Jason of Star Command. The bounded search adds 130 metadata/HTTP-checked entries; Space Academy currently has only entries 1, 2, 3, and 8, and Jason includes short chapters as well as longer episodes.
 
 **Midnight Matinee** is a separate library section under Sci-Fi and the mixed library. Choose **Random movie stream** for films only, or browse sources and the wishlist. Five checked feature-length sources are seeded; five requested classics without seeded sources remain visible wishlist entries. Films stay out of normal TV mixes and tuning-dial choices. The regular stream selector can explicitly select Midnight Matinee, and New mix reshuffles it. Commercials remain optional and play between films. See [coverage, provenance and rotation rules](../docs/20/MIDNIGHT-MATINEE.md).
+
+
+## Catalog integrity
+
+Catalog writes use an exclusive Web Lock followed by a comparison with the exact saved snapshot from which the draft was made. Updated tabs cannot silently overwrite each other. A conflicting change remains available in its form and as an exportable catalog draft. A storage-change warning never reloads the page automatically; explicit reload warns that open forms and drafts will be discarded. Close older tabs running the previous unlocked application before editing: Web Locks coordinate cooperating application versions and cannot stop arbitrary browser-console or legacy-code writes.
+
+If Web Locks are unavailable or denied, the saved catalog is read-only. Playback, export, and tuning remain available; tuning changes are temporary for that tab. There is no unlocked compare-and-set fallback. Catalog and migration-marker writes are not a multi-key transaction. Existing migration rollback remains best effort.
+
+Owner removal records episode/source exclusions inside the same catalog value. Automatic discovery-pack updates respect them, including matching titled, explicitly numbered episodes whose source URL changes. Unknown-order episodes match by source URL. Explicitly adding the removed source through the owner editor or a custom batch restores it; other exclusions remain. Old version-1 catalogs without exclusions continue to import/export. Exclusions cannot reconstruct deletions made before this release.
+
+Library revisions cover discovery files, complete seed data and an explicit migration version. Migration changes require increasing `LIBRARY_MIGRATION_VERSION` in `scripts/library-revision.mjs` and rebuilding the library. Additive updates preserve existing sources and settings; they do not remove retired provider URLs automatically.
+
+`npm test` includes catalog-integrity regressions. The optional real-browser regression is `test/browser-catalog-integrity.mjs`; pass an installed Playwright module path as its first argument and, optionally, a Chromium executable path as its second argument. It starts its own loopback server, mocks discovery responses, queues two form saves behind a held Web Lock, and verifies conflict recovery, public-view restrictions and the read-only fallback. No provider media or production services are called.

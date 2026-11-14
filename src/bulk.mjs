@@ -1,3 +1,4 @@
+import { episodeTitleKey, excludedEpisode, excludedSource, restoreExcluded } from './exclusions.mjs';
 import { parseSourceUrl, parseDuration, validateCatalog } from './domain.mjs';
 
 export function youtubeEpisodes(data) {
@@ -26,19 +27,10 @@ export function mergeBatch(catalog, rows, makeId = () => crypto.randomUUID()) {
     if (episode.sources.some(s => known.has(s.url))) { skipped++; continue; }
     episode.id = `episode-${makeId()}`;
     episode.sources.forEach(s => { s.id = `source-${makeId()}`; known.add(s.url); });
-    show.episodes.push(episode); added++;
+    restoreExcluded(next, show, episode); show.episodes.push(episode); added++;
   }
   if (!added) throw Error('No new episodes selected. Existing source URLs are skipped automatically.');
   return { catalog: validateCatalog(next), added, skipped };
-}
-
-function episodeTitleKey(title, showTitle) {
-  const normalize = value => value.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim().replace(/\s+/g, ' ');
-  let value = String(title).split(/[|·]/)[0].replace(/\.(mp4|mkv|avi)$/i, '').replace(/\bS\s*\d+\s*E\s*\d+\b/ig, ' ').replace(/\b\d+\s*x\s*\d+\b/ig, ' ');
-  value = normalize(value).replace(/^\d+\s+/, '');
-  const prefix = normalize(showTitle);
-  if (value.startsWith(prefix + ' ')) value = value.slice(prefix.length + 1);
-  return value;
 }
 
 // Numbering differs between providers: require matching title AND explicit order.
@@ -51,10 +43,11 @@ export function mergeLibraryBatch(catalog, rows, makeId = () => crypto.randomUUI
     const show = next.shows.find(s => s.id === row.showId);
     if (!show) throw Error('Choose an existing show for every selected episode.');
     const incoming = structuredClone(row.episode);
+    if (excludedEpisode(next, show, incoming)) { skipped++; continue; }
     const unique = new Map();
     for (const source of incoming.sources) {
       const url = parseSourceUrl(source.url).url;
-      if (!known.has(url) && !unique.has(url)) unique.set(url, source);
+      if (!known.has(url) && !unique.has(url) && !excludedSource(next, show.id, url)) unique.set(url, source);
     }
     const fresh = [...unique.values()];
     if (!fresh.length) { skipped++; continue; }

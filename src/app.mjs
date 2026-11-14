@@ -1,3 +1,5 @@
+import { openCatalogStore, CatalogConflict } from './catalog-store.mjs';
+import { excludeEpisode, excludeSource, restoreExcluded } from './exclusions.mjs';
 import { MOVIE_SHOW_ID } from './collections.mjs';
 import { mountDialFeedback } from './dial-feedback.mjs';
 import { availableDialShows, nextDialShow, randomDialPatch } from './dials.mjs';
@@ -10,19 +12,22 @@ import { STARTER_PACK } from './starter-pack.mjs';
 import { youtubeEpisodes, mergeBatch, mergeLibraryBatch, discoveryRows, extendLibraryCatalog } from './bulk.mjs';
 import { CHANNELS, createSeed } from './catalog.mjs';
 import { parseSourceUrl, parseDuration, importArchive, validateCatalog, parseCatalogJson,
-  readCatalog, saveCatalog, buildSchedule, schedulePosition, stationSource, timeLabel, MAX_IMPORT_BYTES, COMMERCIAL_SHOW_ID } from './domain.mjs';
+  readCatalog, saveCatalog, buildSchedule, schedulePosition, stationSource, timeLabel, MAX_IMPORT_BYTES, COMMERCIAL_SHOW_ID, STORAGE_KEY } from './domain.mjs';
 import { createVideoSession, createYouTubeSession } from './players.mjs';
 
 const $ = id => document.getElementById(id);
 const staticHosting = document.querySelector('meta[name="drew-tv-hosting"]')?.content === 'static';
+const ownerMode = !staticHosting && ['127.0.0.1','localhost','[::1]'].includes(location.hostname);
+document.body.classList.toggle('public-view', !ownerMode);
 const storage = { getItem: k => localStorage.getItem(k), setItem: (k, v) => localStorage.setItem(k, v) };
 const retroEffects = mountRetroEffects({ body: document.body, shell: $('player-shell'), cabinet: $('tv-cabinet'), screenToggle: $('crt-look'), staticToggle: $('tuning-static'), themeSelect: $('tv-theme'), levelInput: $('static-level'), durationInput: $('static-duration'), modeSelect: $('static-mode'), previewButton: $('static-preview'), levelOutput: $('static-level-value'), durationOutput: $('static-duration-value'), storage });
 const DIAL_MODE_STORAGE_KEY = 'yata.dial-mode.v1';
 let dialMode = 'channel';
 try { const saved = storage.getItem(DIAL_MODE_STORAGE_KEY); if (['channel', 'show', 'all'].includes(saved)) dialMode = saved; } catch { /* Tuning still works without preference storage. */ }
-const loaded = readCatalog(storage, createSeed());
-const migrated = loaded.error ? { catalog: loaded.catalog, changed: false } : applyCommercialDefaults(loaded.catalog, storage, next => { try { saveCatalog(storage, next); return true; } catch { return false; } });
-let catalog = migrated.catalog;
+const catalogStore = await openCatalogStore({storage, locks:navigator.locks, seed:createSeed(), prepare:current=>applyCommercialDefaults(current, storage, next=>{try { saveCatalog(storage,next); return true; } catch { return false; }}).catalog});
+const loaded = catalogStore.loaded;
+let catalog = catalogStore.catalog;
+let rejectedCatalog = null, lastSaveError = '', unsavedChanges = false, pendingWrites = 0;
 let selectedShowId = catalog.shows[0].id, editingEpisodeId = null;
 let session = null, active = null, playerGeneration = 0, importBusy = false;
 let scrubbing = false, scrubSession = null, audioSession = null, preferredAudio = null, audioLockUntil = 0;
@@ -71,9 +76,34 @@ function resolveSharedEpisode() {
   $('play-shared').hidden = !found;
 }
 function copyCatalog() { return structuredClone(catalog); }
-function commit(next) {
-  try { catalog = saveCatalog(storage, next); return true; }
-  catch (error) { notify(`Could not save this change: ${error.message}. Your previous catalog is unchanged.`); return false; }
+async function commit(next) {
+  const base = catalog; pendingWrites++;
+  try { catalog = await catalogStore.save(next,base); return true; }
+  catch (error) {
+    rejectedCatalog = next; lastSaveError=error.message; unsavedChanges = true;
+    notify(error instanceof CatalogConflict ? error.message : `Could not save this change: ${error.message}. The saved catalog and this tab’s draft are preserved.`);
+    showCatalogRecovery(); return false;
+  } finally { pendingWrites--; }
+}
+function downloadCatalog(value, filename = 'yata-catalog.json') {
+  const url = URL.createObjectURL(new Blob([JSON.stringify(value,null,2)], {type:'application/json'}));
+  const a = element('a'); a.href = url; a.download = filename; a.click(); setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function showCatalogRecovery() {
+  let panel = $('catalog-recovery');
+  if (!panel) { panel = element('div',null,'transport'); panel.id = 'catalog-recovery'; $('notice').after(panel); }
+  const dialog = [$('source-dialog'),$('bulk-dialog')].find(node=>node.open);
+  if (dialog) dialog.append(panel); else $('notice').after(panel);
+  panel.replaceChildren(element('p',catalogStore.writable ? 'Saved data changed in another tab or this change could not be saved. This tab has not been reloaded.' : 'Catalog changes are read-only in this browser because safe tab coordination is unavailable. Playback and export still work; tuning changes last for this tab only.'),
+    button('Export this tab’s catalog',()=>downloadCatalog(rejectedCatalog || catalog,'yata-unsaved-catalog.json')),
+    button('Reload saved catalog',()=>{ if (confirm('Reload the saved catalog? Unsaved forms and this tab’s pending catalog changes will be discarded. Export this tab’s catalog first to keep a copy.')) { unsavedChanges=false; location.reload(); } }));
+}
+window.addEventListener('storage',event=>{ if (event.key === STORAGE_KEY && catalogStore.isStale()) { notify('Another tab changed the saved catalog. Your open forms and playback are unchanged. Export your work before reloading.'); showCatalogRecovery(); } });
+for (const name of ['input','change']) document.addEventListener(name,event=>{ if (event.target.closest?.('#source-form, #bulk-dialog')) unsavedChanges=true; });
+window.addEventListener('beforeunload',event=>{ if (unsavedChanges || pendingWrites) { event.preventDefault(); event.returnValue=''; } });
+async function commitSettings(next) {
+  if (catalogStore.writable) return commit(next);
+  catalog=validateCatalog(next); return true; // Session-only tuning never writes an unlocked catalog.
 }
 function selectedChannel() { return CHANNELS.find(c => c.id === catalog.settings.channel); }
 function channelShows() { return catalog.shows.filter(s => s.id === COMMERCIAL_SHOW_ID || catalog.settings.channel === 'mixed' || s.channel === catalog.settings.channel); }
@@ -85,9 +115,9 @@ function episodeDetail(e, movie = false) {
 
 function renderChannels() {
   $('channels').replaceChildren(...CHANNELS.map(c => {
-    const node = button('', () => {
+    const node = button('', async () => {
       const next = copyCatalog(); next.settings.channel = c.id; next.settings.streamShow = null;
-      if (commit(next)) { selectedShowId = channelShows()[0]?.id || catalog.shows[0].id; stopPlayer(); render(); retroEffects.pulse(); }
+      if (await commitSettings(next)) { selectedShowId = channelShows()[0]?.id || catalog.shows[0].id; stopPlayer(); render(); retroEffects.pulse(); }
     }, 'channel');
     node.setAttribute('aria-pressed', String(c.id === catalog.settings.channel));
     node.setAttribute('aria-label', `Channel ${c.number}: ${c.name}`);
@@ -186,6 +216,12 @@ function openShow(showId) {
         $('show-dialog').close(); playEpisode(show, e, source, 0, 'start'); $('watch').scrollIntoView();
       }));
       if (source.provider !== 'tubi') sources.append(link('Original ↗', source.url, 'button small'));
+      if (ownerMode && catalogStore.writable) sources.append(button('Remove source',async()=>{
+        const next=copyCatalog(), current=next.shows.find(item=>item.id===show.id)?.episodes.find(item=>item.id===e.id);
+        if (!current) return;
+        excludeSource(next,show.id,source.url); current.sources=current.sources.filter(item=>item.id!==source.id);
+        if (await commit(next)) { if (active?.sourceId===source.id) stopPlayer(); render(); openShow(show.id); }
+      },'text-button'));
     }
     row.append(sources);
     const statuses = e.sources.map(s => `${providerName[s.provider]}: ${s.provider === 'tubi' ? 'opens on Tubi' : s.availability === 'verified' ? 'source checked; availability may change' : 'playback not checked'}`);
@@ -193,10 +229,12 @@ function openShow(showId) {
     const tools = element('div', null, 'episode-tools');
     const shareSource = stationSource(e) || e.sources[0];
     if (shareSource) tools.append(button('Share episode ↗', () => { void copyEpisodeLink(show, shareSource); }, 'text-button'));
-    tools.append(button('Edit details / add another source', () => openSource(show.id, e.id), 'text-button'));
-    tools.append(button('Remove item', () => {
-      const next = copyCatalog(); next.shows.find(s => s.id === show.id).episodes = show.episodes.filter(item => item.id !== e.id);
-      if (commit(next)) { if (active?.episodeId === e.id) stopPlayer(); render(); openShow(show.id); notify('Item removed. Import a saved catalog to restore an exported copy.'); }
+    if (ownerMode && catalogStore.writable) tools.append(button('Edit details / add another source', () => openSource(show.id, e.id), 'text-button'));
+    if (ownerMode && catalogStore.writable) tools.append(button('Remove item', async () => {
+      const next = copyCatalog(), target=next.shows.find(item=>item.id===show.id), current=target?.episodes.find(item=>item.id===e.id);
+      if (!current) return;
+      excludeEpisode(next,target,current); target.episodes=target.episodes.filter(item=>item.id!==e.id);
+      if (await commit(next)) { if (active?.episodeId === e.id) stopPlayer(); render(); openShow(show.id); notify('Item removed. Import a saved catalog to restore an exported copy.'); }
     }, 'text-button'));
     row.append(tools); return row;
   });
@@ -205,6 +243,7 @@ function openShow(showId) {
 }
 
 function openSource(showId = selectedShowId, episodeId = null) {
+  if (!ownerMode || !catalogStore.writable) return;
   $('show-dialog').close(); editingEpisodeId = episodeId;
   const show = catalog.shows.find(s => s.id === showId) || channelShows()[0] || catalog.shows[0];
   selectedShowId = show.id;
@@ -262,17 +301,18 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
   $('original-link').href = $('error-original').href = source.url;
   $('original-link').hidden = false;
   $('playback-state').textContent = 'LOADING SOURCE';
-  const verified = duration => {
+  const verified = async duration => {
     if (generation !== playerGeneration || !Number.isFinite(duration) || duration <= 0 || duration > 86400) return;
     if (source.provider === 'youtube') $('playback-state').textContent = 'PLAYING · YOUTUBE';
     const isPlaylist = parseSourceUrl(source.url).kind === 'playlist';
+    if (!catalogStore.writable) return;
     const next = copyCatalog(); const e = next.shows.find(s => s.id === show.id)?.episodes.find(e => e.id === episode.id);
     const src = e?.sources.find(s => s.id === source.id);
     if (!e || !src || ((isPlaylist || Math.abs((e.durationSeconds || 0) - duration) < 1) && src.availability === 'verified')) return;
     if (!isPlaylist) e.durationSeconds = duration;
     src.availability = 'verified';
-    if (commit(next)) {
-      $('playing-detail').textContent = `${episodeDetail(e, show.id === MOVIE_SHOW_ID)} · ${active.mode === 'live' ? 'Station clock · best-effort sync' : offset > 0 ? `From ${playbackTime(offset)}` : 'From the beginning'} · ${providerName[source.provider]}`;
+    if (await commit(next)) {
+      if (generation === playerGeneration && active) $('playing-detail').textContent = `${episodeDetail(e, show.id === MOVIE_SHOW_ID)} · ${active.mode === 'live' ? 'Station clock · best-effort sync' : offset > 0 ? `From ${playbackTime(offset)}` : 'From the beginning'} · ${providerName[source.provider]}`;
       renderGuide(); renderLibrary();
     }
   };
@@ -418,7 +458,7 @@ renderTransport();
 setInterval(renderTransport, 250);
 
 $('source-form').addEventListener('submit', async event => {
-  event.preventDefault(); if (importBusy) return;
+  event.preventDefault(); if (!ownerMode || !catalogStore.writable || importBusy) return;
   $('source-error').hidden = true;
   const showId = $('source-show').value, episodeId = editingEpisodeId;
   const raw = $('source-url').value.trim(), title = $('source-title').value.trim();
@@ -457,9 +497,10 @@ $('source-form').addEventListener('submit', async event => {
       }
       if (!added) throw Error('Those sources are already in this show. No duplicate items were added.');
     }
+    for (const episode of show.episodes) restoreExcluded(next,show,episode);
     validateCatalog(next);
-    if (!commit(next)) throw Error('The source was not saved. Check the storage message above.');
-    $('source-dialog').close(); notify(episodeId ? 'Episode details saved.' : 'Source added. Open the show to watch or check playback.'); render(); openShow(showId);
+    if (!await commit(next)) throw Error(lastSaveError || 'The source was not saved. Your draft is still here.');
+    unsavedChanges=false; $('source-dialog').close(); notify(episodeId ? 'Episode details saved.' : 'Source added. Open the show to watch or check playback.'); render(); openShow(showId);
   } catch (error) { $('source-error').textContent = error.message; $('source-error').hidden = false; }
   finally { importBusy = false; $('save-source').disabled = false; $('save-source').textContent = editingEpisodeId ? 'Save details' : 'Add source'; }
 });
@@ -483,44 +524,57 @@ $('retry').addEventListener('click', () => {
   const source = episode?.sources.find(s => s.id === active.sourceId);
   if (source) playEpisode(show, episode, source, active.offset, active.mode, active.queueMode, active.queuePosition);
 });
-$('bumpers').addEventListener('change', () => {
+$('bumpers').addEventListener('change', async () => {
   const enabled = $('bumpers').checked;
   const next = copyCatalog(); next.settings.bumpers = enabled;
-  if (commit(next)) {
-    markCommercialPreference(storage);
+  if (await commitSettings(next)) {
+    if (catalogStore.writable) markCommercialPreference(storage);
     render(); renderTransport();
     notify(enabled ? 'Vintage commercials and checked bumpers enabled between complete stories. Use Next to skip a break.' : 'Upcoming commercial breaks and bumpers are off. Current playback is unchanged.');
   } else $('bumpers').checked = catalog.settings.bumpers;
 });
-$('export-catalog').addEventListener('click', () => {
-  const url = URL.createObjectURL(new Blob([JSON.stringify(catalog, null, 2)], { type: 'application/json' }));
-  const a = element('a'); a.href = url; a.download = 'yata-catalog.json'; a.click();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-});
+$('export-catalog').addEventListener('click', () => { if (ownerMode) downloadCatalog(catalog); });
 $('import-catalog').addEventListener('change', async event => {
+  if (!ownerMode || !catalogStore.writable) return;
   const file = event.target.files[0]; if (!file) return;
   try {
     if (file.size > MAX_IMPORT_BYTES) throw Error('Import exceeds the 2 MB catalog limit.');
     const next = parseCatalogJson(await file.text());
-    if (!commit(next)) return;
+    if (!await commit(next)) return;
     stopPlayer(); selectedShowId = catalog.shows[0].id; render(); notify('Catalog imported and saved.');
   } catch (error) { notify(`${error.message} Your previous catalog is unchanged.`); }
   finally { event.target.value = ''; }
 });
 
+
+for (const id of ['manage-sources','guide-add','show-add','seed-all','bulk-open','import-catalog']) {
+  if (!ownerMode || !catalogStore.writable) { $(id).hidden=true; $(id).disabled=true; }
+}
+if (!catalogStore.writable) document.querySelector('.import-button').hidden=true;
+if (!ownerMode) {
+  document.querySelector('.collection-tools').hidden=true;
+  for (const id of ['source-dialog','bulk-dialog']) {
+    $(id).hidden=true;
+    for (const control of $(id).querySelectorAll('button,input,select,textarea')) control.disabled=true;
+  }
+}
+
 render();
+if (!catalogStore.writable) { notify('Catalog changes are read-only: safe tab coordination is unavailable. Playback and export remain available.'); showCatalogRecovery(); }
 if (loaded.error) notify(loaded.error);
 setInterval(renderGuide, 15000);
 window.addEventListener('pagehide', () => session?.dispose());
 
 let batchRows = [], batchPage = 0, batchFilter = '', wholeLibrary = false;
 $('bulk-open').addEventListener('click', () => {
+  if (!ownerMode || !catalogStore.writable) return;
   $('bulk-show').replaceChildren(...catalog.shows.map(show => { const option = element('option', show.title); option.value = show.id; return option; }));
   $('bulk-show').value = selectedShowId;
   $('bulk-dialog').showModal();
 });
 $('bulk-close').addEventListener('click', () => $('bulk-dialog').close());
 $('bulk-discover').addEventListener('click', async () => {
+  if (!ownerMode || !catalogStore.writable) return;
   const links = $('bulk-links').value.split(/\n/).map(s => s.trim()).filter(Boolean);
   if (!links.length || links.length > 10) { $('bulk-status').textContent = 'Enter 1–10 source links.'; return; }
   const showId = $('bulk-show').value;
@@ -551,11 +605,12 @@ $('bulk-discover').addEventListener('click', async () => {
     $('bulk-approve').hidden = !batchRows.length;
   } finally { $('bulk-discover').disabled = false; $('bulk-all').disabled = false; $('bulk-starter').disabled = false; $('bulk-transformers').disabled = false; $('bulk-close').disabled = false; }
 });
-$('bulk-approve').addEventListener('click', () => {
+$('bulk-approve').addEventListener('click', async () => {
+  if (!ownerMode || !catalogStore.writable) return;
   try {
     const result = wholeLibrary ? mergeLibraryBatch(libraryBase(), batchRows) : mergeBatch(catalog, batchRows);
-    if (!commit(result.catalog)) return;
-    batchRows = []; $('bulk-pages').replaceChildren(); $('bulk-preview').replaceChildren(); $('bulk-approve').hidden = true;
+    if (!await commit(result.catalog)) return;
+    unsavedChanges=false; batchRows = []; $('bulk-pages').replaceChildren(); $('bulk-preview').replaceChildren(); $('bulk-approve').hidden = true;
     $('bulk-status').textContent = `Added ${result.added} ${result.added === 1 ? 'episode' : 'episodes'}; skipped ${result.skipped} duplicates.${result.alternatives ? ` Added ${result.alternatives} alternative sources to existing episodes.` : ''}`;
     render();
   } catch (error) { $('bulk-status').textContent = error.message; }
@@ -593,6 +648,7 @@ function renderBatch() {
 
 }
 $('bulk-starter').addEventListener('click', () => {
+  if (!ownerMode || !catalogStore.writable) return;
   wholeLibrary = false; batchPage = 0; batchFilter = ''; $('bulk-coverage').replaceChildren();
   batchRows = STARTER_PACK.map(item => {
     const episode = youtubeEpisodes(item)[0];
@@ -602,12 +658,14 @@ $('bulk-starter').addEventListener('click', () => {
   $('bulk-status').textContent = 'Five official-channel episode candidates. Review titles and order before adding. YouTube playback still needs checking; season 0 means unknown.';
 });
 $('bulk-transformers').addEventListener('click', () => {
+  if (!ownerMode || !catalogStore.writable) return;
   $('bulk-show').value = 'transformers';
   $('bulk-links').value = 'https://www.youtube.com/playlist?list=PLD3dCMp2WHixUHTv2TETDETzoB148KoPy';
   $('bulk-status').textContent = 'Official Hasbro Pulse collection selected. Choose Discover episodes, then review episode order before adding.';
 });
 
 async function loadWholeLibrary() {
+  if (!ownerMode || !catalogStore.writable) return;
   $('bulk-status').textContent = 'Loading discovered episodes for every show…';
   $('bulk-all').disabled = true; $('bulk-discover').disabled = true; $('bulk-starter').disabled = true; $('bulk-approve').hidden = true;
   try {
@@ -635,7 +693,7 @@ async function loadWholeLibrary() {
   finally { $('bulk-all').disabled = false; $('bulk-discover').disabled = false; $('bulk-starter').disabled = false; }
 }
 $('bulk-all').addEventListener('click', loadWholeLibrary);
-$('seed-all').addEventListener('click', () => { $('bulk-open').click(); loadWholeLibrary(); });
+$('seed-all').addEventListener('click', () => { if (!ownerMode || !catalogStore.writable) return; $('bulk-open').click(); loadWholeLibrary(); });
 
 function libraryBase() { return extendLibraryCatalog(catalog, createSeed()); }
 const LIBRARY_REVISION_KEY = 'drew-tv.library-revision.v1';
@@ -655,12 +713,13 @@ async function installExpandedLibrary() {
   // A damaged saved catalog must remain recoverable instead of being overwritten.
   if (loaded.error) return;
   try {
+    if (!catalogStore.writable) return;
     const { manifest, packs } = await fetchLibrary();
     if (storage.getItem(LIBRARY_REVISION_KEY) === manifest.revision) return;
     const base = libraryBase();
     const rows = discoveryRows(base, packs);
     const result = mergeLibraryBatch(base, rows);
-    if (!commit(result.catalog)) return;
+    if (!await commit(result.catalog)) return;
     try { storage.setItem(LIBRARY_REVISION_KEY, manifest.revision); } catch { /* Repeat imports remain additive and URL-deduplicated. */ }
     render();
     if ($('show-dialog').open) openShow(selectedShowId);
@@ -700,17 +759,17 @@ $('dial-mode').addEventListener('change', () => {
   try { storage.setItem(DIAL_MODE_STORAGE_KEY, dialMode); } catch { /* Optional preference persistence. */ }
   renderDials();
 });
-$('dial-next-show').addEventListener('click', () => {
+$('dial-next-show').addEventListener('click', async () => {
   const show = nextDialShow(catalog, currentDialShowId());
   if (!show) { notify('No checked shows are available in this channel yet.'); return; }
   dialFeedback.play(); selectedShowId = show.id;
-  if (configureStream({ streamShow: show.id, rotation: 'random', shuffleSeed: newMix() }, true)) notify(`Tuned to ${show.title}.`);
+  if (await configureStream({ streamShow: show.id, rotation: 'random', shuffleSeed: newMix() }, true)) notify(`Tuned to ${show.title}.`);
 });
-$('dial-random').addEventListener('click', () => {
+$('dial-random').addEventListener('click', async () => {
   const patch = randomDialPatch(catalog, { mode: dialMode, seed: newMix(), currentShowId: currentDialShowId() });
   if (!patch) { notify('No checked shows are available for this mix yet.'); return; }
   dialFeedback.play();
-  if (configureStream(patch, true)) notify(patch.streamShow ? `Random show: ${catalog.shows.find(show => show.id === patch.streamShow).title}.` : `New random mix: ${selectedChannel().name}.`);
+  if (await configureStream(patch, true)) notify(patch.streamShow ? `Random show: ${catalog.shows.find(show => show.id === patch.streamShow).title}.` : `New random mix: ${selectedChannel().name}.`);
 });
 function renderStreamSettings() {
   $('stream-rotation').value = catalog.settings.rotation;
@@ -731,19 +790,19 @@ function renderStreamSettings() {
       : `Random episodes from random shows · ${catalog.settings.storiesPerTurn} ${catalog.settings.storiesPerTurn === 1 ? 'story' : 'stories'} per show turn. Smaller libraries keep their turn; multipart stories stay together.`
     : `${title || 'All shows in this channel'} in episode order. Switch to random for a shuffled stream.`;
 }
-function configureStream(patch, play = false) {
+async function configureStream(patch, play = false) {
   const wasPlaying = transportState()?.paused === false;
   const next = copyCatalog(); Object.assign(next.settings, patch); next.epoch = Date.now() / 1000;
-  if (!commit(next)) { renderStreamSettings(); return false; }
+  if (!await commitSettings(next)) { renderStreamSettings(); return false; }
   stopPlayer(); render();
   if (play || wasPlaying) tuneLive();
   return true;
 }
 function newMix() { return Number.parseInt(crypto.randomUUID().slice(0, 8), 16); }
-$('commercial-count').addEventListener('change', () => {
+$('commercial-count').addEventListener('change', async () => {
   const value = $('commercial-count').value;
   const next = copyCatalog(); next.settings.commercialCount = value === 'random' ? 'random' : Number(value);
-  if (commit(next)) { render(); renderTransport(); notify('Commercial break length saved for upcoming breaks.'); }
+  if (await commitSettings(next)) { render(); renderTransport(); notify('Commercial break length saved for upcoming breaks.'); }
   else renderStreamSettings();
 });
 $('stream-rotation').addEventListener('change', () => configureStream({ rotation: $('stream-rotation').value }));
@@ -760,4 +819,4 @@ $('show-shuffle').addEventListener('click', () => {
 mountWindowMode({ documentRef: document, screen: $('screen-column'), toggle: $('fill-window'), closeButton: $('exit-window') });
 
 $('movie-browse').addEventListener('click', () => openShow(MOVIE_SHOW_ID));
-$('movie-shuffle').addEventListener('click', () => { if (configureStream({channel: 'scifi', streamShow: MOVIE_SHOW_ID, rotation: 'random', shuffleSeed: newMix()}, true)) $('watch').scrollIntoView(); });
+$('movie-shuffle').addEventListener('click', async () => { if (await configureStream({channel: 'scifi', streamShow: MOVIE_SHOW_ID, rotation: 'random', shuffleSeed: newMix()}, true)) $('watch').scrollIntoView(); });

@@ -165,7 +165,18 @@ export function validateCatalog(raw) {
   const channel = migratedStream ? 'scifi' : raw.settings.channel;
   if (streamShow === COMMERCIAL_SHOW_ID) fail('Choose a program show for the stream.');
   if (streamShow !== null && !shows.some(show => show.id === streamShow && (channel === 'mixed' || show.channel === channel))) fail('The selected stream show is not in this channel.');
-  return { version: 1, epoch: raw.epoch, shows, settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow } };
+  let exclusions;
+  if (raw.exclusions !== undefined) {
+    const input = raw.exclusions;
+    if (!input || !Array.isArray(input.episodes) || !Array.isArray(input.sources) || input.episodes.length > 5000 || input.sources.length > 10000) fail('Invalid deletion exclusions.');
+    const episodes = input.episodes.map(entry => {
+      if (!entry || !Number.isInteger(entry.season) || entry.season < 0 || !Number.isInteger(entry.number) || entry.number < 0 || !['episode','bumper'].includes(entry.kind) || !Array.isArray(entry.urls) || entry.urls.length > 20) fail('Invalid episode exclusion.');
+      return {showId:id(entry.showId), title:text(entry.title, 'excluded episode title'), season:entry.season, number:entry.number, kind:entry.kind, urls:[...new Set(entry.urls.map(url=>parseSourceUrl(url).url))]};
+    });
+    const sources = input.sources.map(entry=>({showId:id(entry.showId),url:parseSourceUrl(entry.url).url}));
+    if (episodes.length || sources.length) exclusions = {episodes,sources};
+  }
+  return { version: 1, epoch: raw.epoch, shows, ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow } };
 }
 
 export function parseCatalogJson(input) {
@@ -175,11 +186,11 @@ export function parseCatalogJson(input) {
   return validateCatalog(raw);
 }
 
-export function readCatalog(storage, seed) {
+export function readCatalog(storage, seed, {persistMigration = true} = {}) {
   try {
     const raw = storage.getItem(STORAGE_KEY);
     const catalog = raw ? parseCatalogJson(raw) : validateCatalog(seed);
-    if (raw) {
+    if (raw && persistMigration) {
       const previous = JSON.parse(raw);
       if (catalog.shows.some((show, index) => show.channel !== previous.shows[index].channel) || catalog.settings.channel !== previous.settings.channel) {
         try { saveCatalog(storage, catalog); } catch { /* The migrated catalog remains usable when storage is blocked. */ }

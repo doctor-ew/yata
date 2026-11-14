@@ -1,5 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises';
-import { createHash } from 'node:crypto';
+import { libraryRevision } from './library-revision.mjs';
 import { MOVIE_SHOW_ID, ADDITIONAL_SCIFI_SERIES } from '../src/collections.mjs';
 import { createSeed } from '../src/catalog.mjs';
 import { discoveryRows, mergeLibraryBatch } from '../src/bulk.mjs';
@@ -31,7 +31,7 @@ const shows = result.catalog.shows.map(show => ({
   sources: show.episodes.reduce((count, episode) => count + episode.sources.length, 0),
 }));
 const manifest = {
-  revision: `expanded-${createHash('sha256').update(texts.join('\n') + JSON.stringify(seed.shows.map(show => [show.id, show.channel]))).digest('hex').slice(0, 16)}`,
+  revision: libraryRevision(texts, seed),
   checkedAt: packs.map(pack => pack.checkedAt).filter(Boolean),
   episodes: shows.reduce((count, show) => count + show.episodes, 0),
   ready: shows.filter(show => show.id !== MOVIE_SHOW_ID).reduce((count, show) => count + show.ready, 0),
