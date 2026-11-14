@@ -194,9 +194,9 @@ function renderGuide() {
   const list = $('guide-list'); list.replaceChildren();
   $('tune-live').disabled = $('standby-play').disabled = !position;
   if (!position) {
-    list.append(element('p', 'This channel is waiting for its first checked episode. Add an Archive item or play a YouTube video to check its source and runtime.', 'empty'));
+    list.append(element('p', ownerMode ? 'No checked episodes on this channel. Add a source or check an existing source in Library.' : 'No checked episodes on this channel. Browse Library for source links and wishlist shows.', 'empty'));
     $('rotation-note').textContent = 'Tubi links and YouTube playlists are available in the library, outside the live rotation.';
-    if (!active) { $('playing-show').textContent = 'YOUR CHANNEL, YOUR COLLECTION'; $('playing-title').textContent = 'The next good thing starts with you.'; $('playing-detail').textContent = 'Add an episode source to begin.'; }
+    if (!active) { $('playing-show').textContent = 'CHANNEL OFF AIR'; $('playing-title').textContent = 'No checked episodes.'; $('playing-detail').textContent = ownerMode ? 'Add an episode source.' : 'Try another channel or browse the Library.'; }
     return;
   }
   let startsAt = Date.now() / 1000 - position.offset;
@@ -328,7 +328,7 @@ function openSource(showId = selectedShowId, episodeId = null) {
     $('source-url').placeholder = 'https://archive.org/details/…';
   }
   $('source-error').hidden = true;
-  $('source-heading').textContent = e ? 'Fine-tune this episode.' : 'Bring your favorites.';
+  $('source-heading').textContent = e ? 'Edit episode.' : 'Add a source.';
   $('save-source').textContent = e ? 'Save details' : 'Add source';
   $('source-dialog').showModal();
 }

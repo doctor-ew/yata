@@ -1,10 +1,10 @@
 export const CHANNELS = [
-  { id: 'mixed', number: '01', name: 'YATA', subtitle: 'Everything, shuffled', accent: '#ffc66e' },
-  { id: 'action', number: '02', name: 'Action Adventure', subtitle: 'Random heroes. Impossible missions.', accent: '#ff927b' },
-  { id: 'scifi', number: '03', name: 'Sci-Fi', subtitle: 'Strange worlds. Retro futures.', accent: '#79cde5' },
-  { id: 'cartoons', number: '04', name: 'Saturday Morning', subtitle: 'Random cartoons. Add cereal.', accent: '#ac9aff' },
-  { id: 'comedy', number: '05', name: 'Comedy', subtitle: 'Familiar faces. Classic laughs.', accent: '#f4c36e' },
-  { id: 'seventies', number: '06', name: '70s Prime Time', subtitle: 'Detectives, open roads, and classic cases.', accent: '#d8b16d' },
+  { id: 'mixed', number: '01', name: 'YATA', subtitle: 'All TV channels.', accent: '#ffc66e' },
+  { id: 'action', number: '02', name: 'Action Adventure', subtitle: 'Action and adventure.', accent: '#ff927b' },
+  { id: 'scifi', number: '03', name: 'Sci-Fi', subtitle: 'Science-fiction series.', accent: '#79cde5' },
+  { id: 'cartoons', number: '04', name: 'Saturday Morning', subtitle: 'Animated series.', accent: '#ac9aff' },
+  { id: 'comedy', number: '05', name: 'Comedy', subtitle: 'Comedy series.', accent: '#f4c36e' },
+  { id: 'seventies', number: '06', name: '70s Prime Time', subtitle: 'Detectives and road shows.', accent: '#d8b16d' },
 ];
 export const SHOW_CHANNEL_IDS = ['action', 'scifi', 'cartoons', 'comedy', 'seventies'];
 export const SCI_FI_SHOW_IDS = new Set([
