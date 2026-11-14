@@ -48,15 +48,17 @@ const tiles = ['#435a53', '#5c4257', '#3f526a', '#67513d', '#514a70', '#4f5e40',
 const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
 const dialFeedback = mountDialFeedback({ windowRef: window, storage, toggle: $('dial-feedback'), getVolume: () => transportState()?.volume ?? preferredAudio?.volume ?? 1, getMuted: () => transportState()?.muted ?? preferredAudio?.muted ?? false, pulse: () => retroEffects.pulse({ force: true }) });
 
+let guideJumpPending=location.hash==='#guide';
 const stationGuide=mountTvGuide({root:$('guide'),getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:selection=>playFromGuide(selection,true),onPlay:selection=>playFromGuide(selection,false)});
 function showBrowseView(view,{scroll=false}={}) {
-  const guide=view==='guide';$('guide').hidden=!guide;$('library').hidden=guide;
+  const guide=view==='guide';document.body.classList.toggle('guide-view',guide);$('guide').hidden=!guide;$('library').hidden=guide;
+  if(!guide)guideJumpPending=false;
   for(const name of ['guide','library']){const tab=$(name+'-tab'),selected=(name==='guide')===guide;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;}
-  stationGuide.render();if(scroll)$(guide?'guide':'library').scrollIntoView({block:'start'});
+  stationGuide.render();if(scroll){guideJumpPending=false;requestAnimationFrame(()=>$(guide?(innerWidth<=1000?'screen-column':'guide'):'library').scrollIntoView({block:'start'}));}
 }
 for(const name of ['guide','library'])$(name+'-tab').addEventListener('click',()=>{showBrowseView(name);location.hash=name;});
 document.querySelector('.browse-tabs').addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();const view=event.key==='Home'?'guide':event.key==='End'?'library':$('guide').hidden?'guide':'library';showBrowseView(view);$(view+'-tab').focus();});
-window.addEventListener('hashchange',()=>{if(['#guide','#library'].includes(location.hash))showBrowseView(location.hash.slice(1));});
+window.addEventListener('hashchange',()=>{if(['#guide','#library'].includes(location.hash))showBrowseView(location.hash.slice(1),{scroll:true});else if(location.hash==='#watch'){showBrowseView('library');$('watch').scrollIntoView({block:'start'});}});
 showBrowseView(location.hash==='#guide'?'guide':'library');
 
 async function playFromGuide(selection,live) {
@@ -68,7 +70,7 @@ async function playFromGuide(selection,live) {
   if(!live&&!chosen){notify('This guide item is no longer in the station. Select another program.');render();return false;}
   stopPlayer();render();
   if(live)tuneLive();else playEpisode(chosen.show,chosen.episode,chosen.source,0,'start','station',playbackPosition(chosen.schedule,chosen.index));
-  $('player-shell').scrollIntoView({block:'center',behavior:'smooth'});return true;
+  if(!document.body.classList.contains('guide-view')||innerWidth<=1000)$('player-shell').scrollIntoView({block:'center',behavior:'smooth'});return true;
 }
 
 function element(tag, content, className) {
@@ -245,7 +247,9 @@ function renderLibrary() {
   }));
 }
 
-function render() { renderChannels(); renderGuide(); renderLibrary(); renderDials(); stationGuide.render(); }
+function render() { renderChannels(); renderGuide(); renderLibrary(); renderDials(); stationGuide.render();
+  if(guideJumpPending&&(ownerMode||publicCatalogReady)&&!$('guide').hidden){guideJumpPending=false;requestAnimationFrame(()=>{if(!$('guide').hidden)$(innerWidth<=1000?'screen-column':'guide').scrollIntoView({block:'start'});});}
+}
 
 function openShow(showId) {
   if(!ownerMode&&!publicCatalogReady)return;
@@ -845,6 +849,7 @@ $('dial-random').addEventListener('click', async () => {
   if (await configureStream(patch, true)) notify(patch.streamShow ? `Random show: ${catalog.shows.find(show => show.id === patch.streamShow).title}.` : `New random mix: ${selectedChannel().name}.`);
 });
 function renderStreamSettings() {
+  $('settings-summary').textContent=`${catalog.settings.rotation==='random'?'Random mix':'Episode order'} · Commercials ${catalog.settings.bumpers?'on':'off'}`;
   $('stream-rotation').value = catalog.settings.rotation;
   const all = element('option', catalog.settings.channel === 'mixed' ? 'Any show · everything' : `Any show · ${selectedChannel().name}`); all.value = '';
   $('stream-show').replaceChildren(all, ...channelShows().map(show => {

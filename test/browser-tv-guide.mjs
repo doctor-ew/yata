@@ -21,6 +21,11 @@ try{
  const page=await ctx.newPage(),errors=[];page.on('pageerror',e=>{errors.push(e.message);console.error('PAGE ERROR',e.message);});
  await page.goto(origin+'/#guide');await page.locator('.tv-guide-row').first().waitFor({timeout:10000}).catch(async error=>{console.error((await page.locator('body').innerText()).slice(0,2500));throw error;});assert.equal(await page.locator('.tv-guide-row').count(),6);
  assert.equal(await page.locator('#guide').isVisible(),true);assert.equal(await page.locator('#library').isVisible(),false);
+ assert.equal(await page.locator('#stream-settings').getAttribute('open'),null);
+ const playerBox=await page.locator('#player-shell').boundingBox(),guideBox=await page.locator('#guide').boundingBox();
+ assert.ok(playerBox.x<guideBox.x);assert.ok(playerBox.width<410);assert.ok(playerBox.y>=0&&playerBox.y<1000);
+ await page.locator('#stream-settings > summary').click();assert.equal(await page.locator('#stream-rotation').isVisible(),true);await page.locator('#stream-settings > summary').click();
+
  assert.equal(await page.locator('.tv-guide-program').filter({hasText:'Guide Film'}).count(),0);
  assert.ok(await page.getByText('No checked, schedulable episodes yet.',{exact:false}).count());
  const actionRow=page.locator('.tv-guide-row').filter({has:page.locator('strong',{hasText:'Action Adventure'})});
@@ -36,6 +41,10 @@ try{
  await page.locator('#library-tab').click();await page.locator('#guide-tab').click();
  assert.equal(await page.evaluate(()=>window.keptVideo===document.querySelector('#player-host video')),true);
  assert.equal(await page.evaluate(()=>window.__guideDisposes),before);
+ await page.locator('#fill-window').click();assert.equal(await page.locator('#screen-column').evaluate(e=>getComputedStyle(e).position),'fixed');
+ const expanded=await page.locator('#screen-column').boundingBox();assert.ok(expanded.width>=1439&&expanded.height>=999);
+ await page.keyboard.press('Escape');assert.equal(await page.evaluate(()=>window.keptVideo===document.querySelector('#player-host video')),true);
+
  await actionRow.locator('.tv-guide-program').filter({hasText:'Guide Knight'}).first().click();
  await page.locator('[data-guide-tune]').click();await page.waitForFunction(()=>window.__guidePlays.length===3);
  const live=await page.evaluate(()=>window.__guidePlays[2]);assert.ok(live.url.includes('Guide%20Dukes'));assert.equal(live.offset,900);
@@ -47,7 +56,9 @@ try{
  await page.locator('#library-tab').click();await page.getByRole('button',{name:'Refresh shared catalog',exact:true}).click();await page.locator('#guide-tab').click();
  await page.locator('.tv-guide-program').filter({hasText:'Guide Knight updated'}).first().waitFor();
  assert.equal(await page.evaluate(()=>window.keptVideo===document.querySelector('#player-host video')),true);
- await page.setViewportSize({width:390,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+ await page.setViewportSize({width:390,height:844});
+ await page.locator('#fill-window').click();const mobileExpanded=await page.locator('#screen-column').boundingBox();assert.ok(mobileExpanded.width>=389&&mobileExpanded.height>=843);await page.keyboard.press('Escape');
+ assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
  await page.locator('#guide-tab').focus();await page.keyboard.press('ArrowRight');assert.equal(await page.locator('#library-tab').getAttribute('aria-selected'),'true');
  assert.deepEqual(errors,[]);
  console.log('Passed guide schedules, selection, episode/queue playback, live offset, retained player, master refresh, keyboard tabs and mobile width.');

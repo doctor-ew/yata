@@ -21,6 +21,8 @@
       <section id="shared-episode" class="notice" hidden aria-label="Shared episode"><strong id="shared-title"></strong><p id="shared-detail"></p><button id="play-shared" class="button primary" type="button">▶ Play shared episode</button> <a id="shared-original" class="button small" target="_blank" rel="noopener noreferrer">Open original ↗</a></section>
       <div class="intro"><div><p class="eyebrow">WELCOME BACK TO YOUR LIVING ROOM</p><h1 id="station-heading">Nothing to scroll.<br><em>Something good on.</em></h1></div><p class="intro-note">The heroes. The theme songs.<br>The Saturday mornings that lasted forever.<br><strong>Your own little cable network.</strong></p></div>
       <div id="channels" class="channels" role="group" aria-label="Choose a channel"></div>
+      <details id="stream-settings" class="settings-drawer">
+        <summary><strong>Stream &amp; TV settings</strong><span id="settings-summary">Rotation · commercials · TV effects</span><span class="settings-hint">Adjust settings</span></summary>
       <section class="stream-controls" aria-label="Stream settings">
         <label>Rotation<select id="stream-rotation"><option value="random">Random shows &amp; episodes</option><option value="ordered">Episodes in order</option></select></label>
         <label>Stream<select id="stream-show"><option value="">Any show in this channel</option></select></label>
@@ -44,6 +46,7 @@
         <p id="commercial-description">Breaks follow complete stories. Choose a fixed count or a random 1–3. Always skippable.</p>
         <p id="stream-description">Random episodes from random shows. Multipart stories stay together.</p>
       </section>
+      </details>
       <div class="watch-layout">
         <div class="screen-column" id="screen-column"><button id="exit-window" class="button window-exit" hidden aria-label="Exit window mode">✕ Exit window <small>Esc</small></button>
           <div class="screen-top"><span id="channel-label">CH 01 · YATA</span><span id="playback-state">READY TO TUNE</span></div>

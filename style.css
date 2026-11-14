@@ -1367,3 +1367,36 @@ button.tv-knob:focus-visible { outline-offset: -2px; }
 .public-catalog-pending #guide,.public-catalog-pending .browse-tabs{display:none!important}
 @media(max-width:800px){.browse-tabs{padding:0 20px}.tv-guide{padding:24px 20px 32px}.tv-guide-heading{align-items:start;flex-direction:column}.tv-guide-navigation{justify-items:start}.tv-guide-details{align-items:start;flex-direction:column;padding:18px}.tv-guide-actions{justify-content:start}.tv-guide-heading h2{font-size:28px}.masthead nav{gap:14px;flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){.tv-guide *{scroll-behavior:auto}}
+
+/* Keep the television near the top; infrequent configuration lives in a drawer. */
+.intro{padding:22px 0 20px;gap:20px}.intro h1{font-size:clamp(28px,3.5vw,46px);letter-spacing:-1.5px}.intro .eyebrow{margin-bottom:10px}.intro-note{font-size:12px;line-height:1.6}
+.channels{margin-bottom:15px}.channel{padding:12px 14px;gap:10px}.channel-number{font-size:30px}.channel-subtitle{font-size:10px}
+.settings-drawer{margin:0 0 18px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.settings-drawer>summary{padding:12px 15px;display:flex;align-items:center;gap:14px;cursor:pointer;list-style:none;font-size:12px}
+.settings-drawer>summary::-webkit-details-marker{display:none}.settings-drawer>summary::before{content:'▸';color:var(--accent)}.settings-drawer[open]>summary::before{content:'▾'}
+.settings-drawer #settings-summary{color:var(--muted);flex:1}.settings-hint{color:var(--accent);font-size:11px}
+.settings-drawer .stream-controls{margin:0;border:0;border-top:1px solid var(--line);border-radius:0 0 8px 8px}
+.guide-view main{display:grid;grid-template-columns:minmax(280px,350px) minmax(0,1fr);grid-template-areas:'notice notice' 'shared shared' 'channels channels' 'settings settings' 'tabs tabs' 'player schedule' 'tools tools';gap:18px 24px;padding-top:18px;align-items:start}
+.guide-view #watch,.guide-view .watch-layout{display:contents}.guide-view .intro,.guide-view .watch-layout>.guide{display:none}
+.guide-view #notice{grid-area:notice}.guide-view #shared-episode{grid-area:shared}.guide-view #channels{grid-area:channels;margin:0}
+.guide-view .settings-drawer{grid-area:settings;margin:0}.guide-view .browse-tabs{grid-area:tabs;margin:0;padding:0;width:100%}
+.guide-view #screen-column{grid-area:player;min-width:0}.guide-view:not(.window-mode) #screen-column{position:sticky;top:16px}
+.guide-view #guide{grid-area:schedule;padding:0;width:100%;min-width:0;scroll-margin-top:16px}
+.guide-view .collection-tools{grid-area:tools}.guide-view main>.public-catalog-state,.guide-view main>.legacy-recovery,.guide-view main>#catalog-recovery{grid-column:1/-1}
+.guide-view .tv-guide-heading{align-items:start;gap:12px;margin-bottom:18px}.guide-view .tv-guide-heading h2{font-size:27px}.guide-view .tv-guide-navigation{flex-shrink:1}
+.guide-view .tv-guide-details{align-items:start;flex-direction:column;gap:14px;padding:16px}.guide-view .tv-guide-actions{justify-content:start}
+.guide-view #screen-column .transport{padding:10px}.guide-view #screen-column .transport-buttons{gap:5px}.guide-view #screen-column .transport-buttons .button{font-size:11px;padding:7px 9px;min-height:34px}
+.guide-view #screen-column .transport-volume{width:100%;margin:0}.guide-view #screen-column #video-volume{flex:1;min-width:0}
+.guide-view #screen-column .transport-position output{font-size:10px}.guide-view #screen-column .watch-info{padding-top:12px;gap:8px}
+.guide-view #screen-column .watch-info h2{font-size:18px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.guide-view #screen-column #playing-detail{font-size:11px;line-height:1.5}.guide-view #screen-column .playback-note{font-size:11px;line-height:1.5}
+.guide-view #screen-column .screen-top{font-size:9px;letter-spacing:.5px;gap:8px;flex-wrap:wrap}
+.guide-view .tv-cabinet[data-theme]:not([data-theme="none"]){grid-template-columns:minmax(0,1fr) 45px;padding:7px;gap:5px}
+.guide-view .tv-cabinet-controls{gap:8px;padding:5px 3px}.guide-view .tv-knob{width:26px;height:26px}.guide-view .tv-cabinet-label{font-size:6px}.guide-view .dial-caption{font-size:5px}.guide-view .tv-speaker{height:20px}
+.guide-view #standby .standby-logo{font-size:34px}.guide-view #standby p{font-size:7px}.guide-view #standby small{display:none}.guide-view #standby .button{padding:7px 12px;font-size:11px}
+@media(max-width:1000px){.guide-view main{grid-template-columns:minmax(0,1fr);grid-template-areas:'notice' 'shared' 'channels' 'settings' 'tabs' 'player' 'schedule' 'tools';gap:16px}.guide-view:not(.window-mode) #screen-column{position:static;max-width:600px;width:100%;justify-self:center}.guide-view .tv-guide-heading{flex-direction:column}.guide-view .tv-guide-navigation{justify-items:start}.settings-drawer>summary{flex-wrap:wrap;gap:8px}.settings-hint{display:none}}
+@media(max-width:600px){.intro{padding:16px 0}.intro h1{font-size:28px}.guide-view main{padding-top:12px}.guide-view .channel{padding:9px}.guide-view .channel-number{font-size:25px}.guide-view .channel-name{font-size:12px}.guide-view .channel-subtitle{display:none}.guide-view #screen-column .transport-position output{font-size:11px}}
+.guide-view .masthead nav a{color:var(--muted)}.guide-view .masthead nav a[href="#guide"]{color:var(--accent)}
+.guide-view #screen-column{scroll-margin-top:16px}
+@media(min-width:1001px){.guide-view .masthead{position:sticky;top:0;z-index:20;background:var(--bg);padding-top:16px;padding-bottom:16px}.guide-view:not(.window-mode) #screen-column{top:96px;scroll-margin-top:96px}.guide-view #guide{scroll-margin-top:96px}}
+.intro h1{font-size:clamp(26px,2.5vw,36px);letter-spacing:-1px}.intro h1 br{display:none}.intro h1 em::before{content:' '}

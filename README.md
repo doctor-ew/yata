@@ -218,3 +218,5 @@ Open **Guide** in the header or **TV Guide** beside Library. The two-hour grid u
 On a phone, swipe the grid horizontally; channel names remain visible. Earlier/Later browse other windows and Now returns to the current time. This is your personal station schedule, not a provider broadcast listing. Films remain in Midnight Matinee. Wishlist and unchecked sources stay in Library. Full-channel guide rows do not inherit a selected single-show stream.
 
 The optional `test/browser-tv-guide.mjs` takes an installed Playwright module path and optional Chromium executable. It uses provider stand-ins for repeatable playback wiring checks. See [TV Guide specification](../docs/22/SPEC.md).
+
+Stream, commercial and TV-effect options are tucked into **Stream & TV settings**. In desktop Guide mode, the TV stays beside the schedule while scrolling. Use **Fill window** to expand it and Escape to restore it. On narrow screens, the TV sits above the guide.
