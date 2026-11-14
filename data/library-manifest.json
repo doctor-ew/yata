@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-852c3df432aca13e",
+  "revision": "expanded-bc4103d62386993c",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -8,13 +8,14 @@
     "2026-11-14T03:27:55.664677+00:00",
     "2026-11-14T03:28:28.539Z",
     "2026-11-14T13:23:15.444Z",
-    "2026-11-14T13:50:40.627Z"
+    "2026-11-14T13:50:40.627Z",
+    "2026-11-14T16:37:38.599Z"
   ],
-  "episodes": 3055,
-  "ready": 2936,
+  "episodes": 3212,
+  "ready": 3093,
   "movieReady": 5,
   "breaks": 14,
-  "streamSlots": 37411,
+  "streamSlots": 40679,
   "shows": [
     {
       "id": "dukes",
@@ -705,6 +706,14 @@
       "sources": 4
     },
     {
+      "id": "benson",
+      "title": "Benson",
+      "episodes": 157,
+      "ready": 157,
+      "breaks": 0,
+      "sources": 157
+    },
+    {
       "id": "barnaby-jones",
       "title": "Barnaby Jones",
       "episodes": 0,
@@ -737,6 +746,6 @@
       "sources": 1
     }
   ],
-  "bytes": 1148263,
+  "bytes": 1201597,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

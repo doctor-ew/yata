@@ -7,7 +7,7 @@ export const GUIDE_TICK_SECONDS = 1800;
 // Each row is the actual full-channel station scope, independent of a tuned show.
 // Cache this compilation until the catalog/settings change, not on every clock tick.
 export function compileGuide(catalog) {
-  const fullChannels = {...catalog, settings:{...catalog.settings, streamShow:null}};
+  const fullChannels = {...catalog, settings:{...catalog.settings, streamShow:null,streamShows:null}};
   return CHANNELS.map(channel=>({channel, schedule:buildSchedule(fullChannels,channel.id)}));
 }
 
@@ -41,7 +41,7 @@ export function guideWindow(row, epoch, start, end, limit=512) {
 export function guidePlayback(catalog, selection) {
   const channel=CHANNELS.find(channel=>channel.id===selection.channel.id);
   if(!channel)return null;
-  const row={channel,schedule:buildSchedule({...catalog,settings:{...catalog.settings,streamShow:null}},channel.id)};
+  const row={channel,schedule:buildSchedule({...catalog,settings:{...catalog.settings,streamShow:null,streamShows:null}},channel.id)};
   const matches=entry=>entry?.show.id===selection.entry.show.id && entry.episode.id===selection.entry.episode.id && entry.source.url===selection.entry.source.url;
   const index=matches(row.schedule[selection.index])?selection.index:row.schedule.findIndex(matches);
   return index<0?null:{...row.schedule[index],index,schedule:row.schedule};

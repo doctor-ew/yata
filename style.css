@@ -1432,3 +1432,18 @@ button.tv-knob:focus-visible { outline-offset: -2px; }
 .tv-guide-programs>.tv-guide-empty{color:var(--paper-muted)}
 .tv-guide-truncated{background:#463a2d}
 .remote-setup{background:#e7dcc0;border-color:#f3e9ce;border-bottom-color:#9e9473}.remote-setup:hover{background:#f3ead4}
+
+/* Bespoke programming desk: uses the same remote and paper palette. */
+#channel-builder {max-width:760px;}
+.channel-host {display:flex;align-items:center;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);margin-bottom:1rem;}
+#channel-host-name {font-weight:700;}
+#channel-builder-form textarea {display:block;width:100%;box-sizing:border-box;margin:0.7rem 0 1rem;min-height:100px;font:inherit;background:var(--bg);color:var(--text);border:1px solid var(--line);padding:0.8rem;}
+#channel-plan {background:var(--paper);color:var(--paper-ink);padding:1rem;margin:1rem 0;}
+#channel-plan-intro {white-space:pre-wrap;}
+#channel-builder .muted {font-size:0.8rem;}
+#channel-builder button:disabled {opacity:0.55;}
+
+#channel-host-image {object-fit:cover;flex:none;border:2px solid var(--paper);}
+#channel-host-credit {font-size:0.7rem;color:var(--muted);}
+.channel-host>div {flex:1;}
+@media(max-width:500px){.channel-host{flex-wrap:wrap;}.channel-host>button{margin-bottom:0.6rem;}}

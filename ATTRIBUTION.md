@@ -25,3 +25,7 @@ The MyRetroTVs source investigation inspected public delivered scripts and catal
 ## Media
 
 Show names, commercials and video content belong to their respective creators and rights holders. Playback is supplied by the listed providers. Source metadata and endpoint checks do not establish copyright status, complete playback verification or future availability.
+
+## Character host portraits
+
+The channel builder uses self-hosted actor portraits from Wikimedia Commons, with author, license, and source details at https://doctorew.com/host-portraits/credits.html. Actor photographs are captioned as portraits; they are not represented as production stills of their fictional characters. Murdock reuses the existing doctorew.com portfolio artwork. Twiki and Jabberjaw currently have text labels only. Character names and underlying properties belong to their respective owners; the hosts are AI simulations.

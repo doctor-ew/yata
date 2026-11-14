@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="yata-turnstile-sitekey" content="0x4AAAAAAGAVS3ojZLogR3TI">
   <meta name="theme-color" content="#211a15">
   <title>YATA · Yet Another TV App</title>
   <link rel="stylesheet" href="style.css">
@@ -34,7 +35,7 @@
           <section class="tv-remote" aria-label="Television remote control">
             <div class="remote-label"><strong>YATA</strong><span>CHANNEL SELECT</span></div>
             <div id="channels" class="channels" role="group" aria-label="Choose a channel"></div>
-            <div class="remote-settings"><button id="open-stream-settings" class="remote-setup" type="button" aria-haspopup="dialog">SET UP</button><span id="settings-summary">Random mix · Commercials on</span><a href="#guide" class="remote-guide">TV GUIDE ↗</a></div>
+            <div class="remote-settings"><button id="open-stream-settings" class="remote-setup" type="button" aria-haspopup="dialog">SET UP</button><button id="open-channel-builder" class="remote-setup" type="button" aria-haspopup="dialog">MAKE A CHANNEL</button><span id="settings-summary">Random mix · Commercials on</span><a href="#guide" class="remote-guide">TV GUIDE ↗</a></div>
           </section>
           <section class="transport" aria-label="Video playback controls">
             <div class="transport-position"><label for="video-seek">POSITION</label><output id="video-time">00:00:00 out of --:--:--</output></div>
@@ -86,6 +87,13 @@
   </main>
 
   <footer><a class="footer-brand" href="#watch">YATA</a><div class="creator-credit"><span>Created by <strong>Drew Schillinger</strong></span><nav aria-label="Creator links"><a href="https://github.com/doctor-ew" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://cto2go.co" target="_blank" rel="noopener noreferrer">CTO2GO ↗</a><a href="https://doctorew.com" target="_blank" rel="noopener noreferrer">doctorew.com ↗</a></nav><small>Based on Floating Browser by Chris Hansen.</small><small>Retro-TV inspiration: <a href="https://www.myretrotvs.com/" target="_blank" rel="noopener noreferrer">MyRetroTVs by Joey Cato</a> · <a href="https://github.com/Nikolay1243/retro-tv-webos" target="_blank" rel="noopener noreferrer">Nikolay1243’s launcher</a>.</small><a href="ATTRIBUTION.md" target="_blank" rel="noopener noreferrer">Credits &amp; attribution ↗</a></div><a href="README.md" target="_blank" rel="noopener">About &amp; source guide ↗</a></footer>
+  <dialog id="channel-builder" class="settings-overlay" aria-labelledby="channel-builder-title">
+    <div class="dialog-top"><div><p class="eyebrow">YATA / PROGRAMMING DEPARTMENT</p><h2 id="channel-builder-title">You want what on television?</h2></div><button id="close-channel-builder" type="button" class="icon-button" aria-label="Close channel builder">×</button></div>
+    <div class="channel-host"><img id="channel-host-image" width="80" height="96" alt="" hidden><div><p id="channel-host-name"></p><a id="channel-host-credit" target="_blank" rel="noopener noreferrer" hidden></a></div><button id="change-channel-host" type="button" class="button small">Different host</button></div>
+    <form id="channel-builder-form"><label for="channel-request">A few shows, a theme, or a questionable combination.</label><textarea id="channel-request" maxlength="1000" rows="3" required placeholder="Knight Rider, space adventures, and something ridiculous with a talking animal."></textarea><div id="channel-verification"></div><button id="build-channel" class="button primary" type="submit">Assemble my channel</button></form>
+    <p id="channel-builder-status" role="status" aria-live="polite"></p><section id="channel-plan" hidden><h3 id="channel-plan-title"></h3><p id="channel-plan-intro"></p><ul id="channel-plan-shows"></ul><button id="tune-custom-channel" class="button primary" type="button">▶ Tune this channel</button></section>
+    <p class="muted">AI-assisted programming from checked TV sources in this catalog. Your mix is personal; it never adds or publishes shows.</p>
+  </dialog>
   <dialog id="stream-settings" class="settings-overlay" aria-labelledby="settings-title">
     <div class="dialog-top"><div><p class="eyebrow">YATA · TELEVISION SETUP</p><h2 id="settings-title">Fine tuning.</h2></div><button id="close-stream-settings" type="button" class="icon-button" aria-label="Close television setup">×</button></div>
       <section class="stream-controls" aria-label="Stream settings">

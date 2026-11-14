@@ -133,7 +133,12 @@ export function mergePublishedCatalog(master, previous) {
       /* Ignore only the invalid viewer preference. */
     }
   }
-  const selected = previous.settings.streamShow;
+  const custom = previous.settings.streamShows;
+  if (Array.isArray(custom) && custom.length && next.settings.channel === 'mixed') {
+    const surviving = custom.filter(sid => next.shows.some(show => show.id === sid));
+    try { if (surviving.length) next.settings = validateCatalog({...next, settings:{...next.settings, streamShow:null,streamShows:surviving}}).settings; } catch { /* Invalid personal selections cannot change the master. */ }
+  }
+  const selected = next.settings.streamShows ? null : previous.settings.streamShow;
   if (
     selected !== null &&
     typeof selected === "string" &&

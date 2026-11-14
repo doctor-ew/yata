@@ -1,3 +1,4 @@
+import {mountChannelBuilder} from './channel-builder-ui.mjs';
 import {mountTvGuide} from './tv-guide-ui.mjs';
 import {guidePlayback} from './tv-guide.mjs';
 import { fetchPublishedCatalog, mergePublishedCatalog } from './published-catalog.mjs';
@@ -60,12 +61,13 @@ for(const name of ['guide','library'])$(name+'-tab').addEventListener('click',()
 document.querySelector('.browse-tabs').addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();const view=event.key==='Home'?'guide':event.key==='End'?'library':$('guide').hidden?'guide':'library';showBrowseView(view);$(view+'-tab').focus();});
 window.addEventListener('hashchange',()=>{if(['#guide','#library'].includes(location.hash))showBrowseView(location.hash.slice(1),{scroll:true});else if(location.hash==='#watch'){showBrowseView('library');$('watch').scrollIntoView({block:'start'});}});
 showBrowseView(location.hash==='#guide'?'guide':'library');
+mountChannelBuilder({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:async showIds=>{const next=copyCatalog();Object.assign(next.settings,{channel:'mixed',streamShow:null,streamShows:showIds,rotation:'random',shuffleSeed:newMix()});next.epoch=Date.now()/1000;if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();$('player-shell').scrollIntoView({block:'center',behavior:'smooth'});return true;}});
 $('open-stream-settings').addEventListener('click',()=>$('stream-settings').showModal());
 for(const id of ['close-stream-settings','done-stream-settings'])$(id).addEventListener('click',()=>$('stream-settings').close());
 
 async function playFromGuide(selection,live) {
   if(!ownerMode&&!publicCatalogReady)return false;
-  const next=copyCatalog();next.settings.channel=selection.channel.id;next.settings.streamShow=null;
+  const next=copyCatalog();next.settings.channel=selection.channel.id;next.settings.streamShow=null;next.settings.streamShows=null;
   if(!await commitSettings(next))return false;
   if(live&&!buildSchedule(catalog).length){notify('This channel no longer has a checked schedule. Select another channel.');render();return false;}
   const chosen=live?null:guidePlayback(catalog,selection);
@@ -172,10 +174,10 @@ function episodeDetail(e, movie = false) {
 function renderChannels() {
   $('channels').replaceChildren(...CHANNELS.map(c => {
     const node = button('', async () => {
-      const next = copyCatalog(); next.settings.channel = c.id; next.settings.streamShow = null;
+      const next = copyCatalog(); next.settings.channel = c.id; next.settings.streamShow = null; next.settings.streamShows = null;
       if (await commitSettings(next)) { selectedShowId = channelShows()[0]?.id || catalog.shows[0].id; stopPlayer(); render(); retroEffects.pulse(); }
     }, 'channel');
-    node.setAttribute('aria-pressed', String(c.id === catalog.settings.channel));
+    node.setAttribute('aria-pressed', String(c.id === catalog.settings.channel && !catalog.settings.streamShows));
     node.setAttribute('aria-label', `Channel ${c.number}: ${c.name}`);
     const number = element('span', null, 'channel-number'); number.append(element('small', 'CH'), document.createTextNode(c.number));
     const label = element('span'); label.append(element('span', c.name, 'channel-name'), element('span', catalog.settings.rotation === 'ordered' ? 'Episodes in order' : c.subtitle, 'channel-subtitle'));
@@ -183,7 +185,7 @@ function renderChannels() {
   }));
   const channel = selectedChannel();
   const streamShow = catalog.shows.find(show => show.id === catalog.settings.streamShow);
-  $('channel-label').textContent = `CH ${channel.number} · ${(streamShow?.title || channel.name).toUpperCase()} · ${catalog.settings.rotation === 'random' ? 'RANDOM STREAM' : 'IN ORDER'}`;
+  $('channel-label').textContent = `CH ${channel.number} · ${(catalog.settings.streamShows ? 'YOUR CHANNEL' : streamShow?.title || channel.name).toUpperCase()} · ${catalog.settings.rotation === 'random' ? 'RANDOM STREAM' : 'IN ORDER'}`;
   renderStreamSettings();
   $('bumpers').checked = catalog.settings.bumpers;
 }
@@ -852,7 +854,7 @@ $('dial-random').addEventListener('click', async () => {
   if (await configureStream(patch, true)) notify(patch.streamShow ? `Random show: ${catalog.shows.find(show => show.id === patch.streamShow).title}.` : `New random mix: ${selectedChannel().name}.`);
 });
 function renderStreamSettings() {
-  $('settings-summary').textContent=`${catalog.settings.rotation==='random'?'Random mix':'Episode order'} · Commercials ${catalog.settings.bumpers?'on':'off'}`;
+  $('settings-summary').textContent=`${catalog.settings.streamShows?'Your channel':catalog.settings.rotation==='random'?'Random mix':'Episode order'} · Commercials ${catalog.settings.bumpers?'on':'off'}`;
   $('stream-rotation').value = catalog.settings.rotation;
   const all = element('option', catalog.settings.channel === 'mixed' ? 'Any show · everything' : `Any show · ${selectedChannel().name}`); all.value = '';
   $('stream-show').replaceChildren(all, ...channelShows().map(show => {
@@ -873,7 +875,7 @@ function renderStreamSettings() {
 }
 async function configureStream(patch, play = false) {
   const wasPlaying = transportState()?.paused === false;
-  const next = copyCatalog(); Object.assign(next.settings, patch); next.epoch = Date.now() / 1000;
+  const next = copyCatalog(); Object.assign(next.settings, patch); if ('channel' in patch || 'streamShow' in patch) next.settings.streamShows = null; next.epoch = Date.now() / 1000;
   if (!await commitSettings(next)) { renderStreamSettings(); return false; }
   stopPlayer(); render();
   if (play || wasPlaying) tuneLive();

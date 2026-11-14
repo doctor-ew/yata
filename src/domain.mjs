@@ -119,6 +119,9 @@ export function validateCatalog(raw) {
   const storiesPerTurn = raw.settings.storiesPerTurn ?? 1;
   const commercialCount = raw.settings.commercialCount ?? 1;
   const streamShow = raw.settings.streamShow ?? null;
+  const streamShows = raw.settings.streamShows ?? null;
+  if (streamShows !== null && (!Array.isArray(streamShows) || streamShows.length < 1 || streamShows.length > 12 || new Set(streamShows).size !== streamShows.length)) fail('Choose 1–12 distinct shows for a bespoke channel.');
+  if (streamShows !== null) streamShows.forEach(id);
   if (!['random', 'ordered'].includes(rotation)) fail('Choose random or ordered rotation.');
   if (!Number.isInteger(shuffleSeed) || shuffleSeed < 0 || shuffleSeed > 4294967295) fail('Invalid shuffle seed.');
   if (![1, 2, 3, 'random'].includes(commercialCount)) fail('Choose 1, 2, 3 or random commercials per break.');
@@ -163,6 +166,7 @@ export function validateCatalog(raw) {
   // Preserve a legacy show-only stream when its curated show moves channels.
   const migratedStream = streamShow !== null && raw.settings.channel === 'action' && raw.shows.find(show => show.id === streamShow)?.channel === 'action' && shows.find(show => show.id === streamShow)?.channel === 'scifi';
   const channel = migratedStream ? 'scifi' : raw.settings.channel;
+  if (streamShows !== null && (streamShow !== null || channel !== 'mixed' || streamShows.some(sid => sid === COMMERCIAL_SHOW_ID || sid === MOVIE_SHOW_ID || !shows.some(show => show.id === sid)))) fail('Invalid bespoke channel selection.');
   if (streamShow === COMMERCIAL_SHOW_ID) fail('Choose a program show for the stream.');
   if (streamShow !== null && !shows.some(show => show.id === streamShow && (channel === 'mixed' || show.channel === channel))) fail('The selected stream show is not in this channel.');
   if (raw.publishedRevision !== undefined && !/^[a-f0-9]{64}$/.test(raw.publishedRevision)) fail('Invalid published catalog revision.');
@@ -177,7 +181,7 @@ export function validateCatalog(raw) {
     const sources = input.sources.map(entry=>({showId:id(entry.showId),url:parseSourceUrl(entry.url).url}));
     if (episodes.length || sources.length) exclusions = {episodes,sources};
   }
-  return { version: 1, epoch: raw.epoch, shows, ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow } };
+  return { version: 1, epoch: raw.epoch, shows, ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}) } };
 }
 
 export function parseCatalogJson(input) {
@@ -224,15 +228,15 @@ export function bumperPool(catalog, shows) {
 }
 
 export function buildSchedule(catalog, channel = catalog.settings.channel) {
-  const shows = catalog.shows.filter(s => s.id !== COMMERCIAL_SHOW_ID && (s.id !== MOVIE_SHOW_ID || catalog.settings.streamShow === MOVIE_SHOW_ID) && (channel === 'mixed' || s.channel === channel) && (!catalog.settings.streamShow || s.id === catalog.settings.streamShow));
+  const shows = catalog.shows.filter(s => (!catalog.settings.streamShows || catalog.settings.streamShows.includes(s.id)) && s.id !== COMMERCIAL_SHOW_ID && (s.id !== MOVIE_SHOW_ID || catalog.settings.streamShow === MOVIE_SHOW_ID) && (channel === 'mixed' || s.channel === channel) && (!catalog.settings.streamShow || s.id === catalog.settings.streamShow));
   const eligible = e => parseDuration(e.durationSeconds) !== null && stationSource(e);
   const entries = s => s.episodes.filter(eligible).sort((a, b) => a.season - b.season || a.number - b.number)
     .map(episode => ({ show: s, episode, source: stationSource(episode), duration: episode.durationSeconds }));
   const queues = shows.map(s => entries(s).filter(e => e.episode.kind === 'episode'));
   const bumpers = bumperPool(catalog, shows);
-  if ((catalog.settings.rotation ?? 'random') === 'random') return randomRotation(queues, bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShow || 'all'}`, storiesPerTurn: catalog.settings.storiesPerTurn ?? 1, includeBumpers: catalog.settings.bumpers, commercialCount: catalog.settings.commercialCount ?? 1 });
+  if ((catalog.settings.rotation ?? 'random') === 'random') return randomRotation(queues, bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShows?.join(',') || catalog.settings.streamShow || 'all'}`, storiesPerTurn: catalog.settings.storiesPerTurn ?? 1, includeBumpers: catalog.settings.bumpers, commercialCount: catalog.settings.commercialCount ?? 1 });
   const result = [];
-  const nextBreak = createCommercialBreak(bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShow || 'all'}:ordered`, commercialCount: catalog.settings.commercialCount ?? 1, randomize: false });
+  const nextBreak = createCommercialBreak(bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShows?.join(',') || catalog.settings.streamShow || 'all'}:ordered`, commercialCount: catalog.settings.commercialCount ?? 1, randomize: false });
   while (queues.some(q => q.length)) {
     for (const queue of queues) {
       if (!queue.length) continue;

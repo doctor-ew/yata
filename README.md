@@ -222,3 +222,9 @@ The optional `test/browser-tv-guide.mjs` takes an installed Playwright module pa
 The compact remote beneath the TV provides channel keys and **SET UP**, which opens stream, commercial and TV-effect options in an overlay. Escape, Close or Done returns to watching. Old browser catalog backup export is tucked into **Previous browser backup** in the footer. In desktop Guide mode, the TV stays beside the schedule while scrolling. Use **Fill window** to expand it and Escape to restore it. On narrow screens, the TV sits above the guide.
 
 The visual palette uses walnut surfaces, warm ivory listings, burnt-orange actions and muted olive controls. Amber is reserved for remote channel numerals and hardware selection indicators.
+
+### Personal channels
+
+Use **MAKE A CHANNEL** on the remote to ask a randomly assigned television host for a lineup. Request shows, themes, or moods; review the suggested checked shows before tuning. **Different host** switches presenters. The personal mix uses existing playback, shuffle, and commercial controls, while TV Guide retains its full-channel schedules. Selecting an ordinary channel or a specific show leaves the personal mix. The AI cannot publish shows or add video sources.
+
+The planner uses the existing guarded AI backend and shared quotas. Browser verification may appear in the dialog. Verification grants remain in memory, and channel preferences stay separate from the owner-published catalog. Portrait credits are linked beside the host.

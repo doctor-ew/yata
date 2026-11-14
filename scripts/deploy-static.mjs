@@ -16,7 +16,9 @@ const output = await mkdtemp(path.join(tmpdir(), 'drew-tv-static-'));
 await run(process.execPath, ['scripts/build-static.mjs', '--out', output, '--base', config.base], { cwd: root });
 const manifest = JSON.parse(await readFile(path.join(output, 'release-manifest.json'), 'utf8'));
 const uploads = [];
-for (const file of manifest.files.sort((a, b) => Number(a.name === 'index.html') - Number(b.name === 'index.html'))) {
+// Upload imported modules before the coordinator, then expose the new HTML.
+const uploadOrder = name => name === 'index.html' ? 2 : name === 'src/app.mjs' ? 1 : 0;
+for (const file of manifest.files.sort((a, b) => uploadOrder(a.name) - uploadOrder(b.name))) {
  const key = config.base.slice(1) + file.name;
  const result = await aws(['s3api', 'put-object', '--bucket', config.bucket, '--key', key, '--body', path.join(output, file.name),
   '--content-type', file.contentType, '--cache-control', file.name === 'index.html' ? 'no-cache, max-age=0' : 'public, max-age=300', '--metadata', `sha256=${file.sha256}`]);
