@@ -23,6 +23,10 @@ Open the printed address: <http://127.0.0.1:4173>. Keep the terminal running. Pr
 
 The owner server runs while its terminal remains open. The launcher does not create a background service.
 
+## Local arcade
+
+The loopback server also serves `/arcade/`. Run `npm run arcade:setup` once to copy the recovered Dropbox Flash builds and download the pinned emulator runtimes. Game files remain in an ignored local directory. The arcade is excluded from the public TV build and is not deployed. See [the arcade manual](arcade/README.md) for scope and attribution.
+
 ## Random continuous streams
 
 The nine channel buttons select **YATA Channels**, **Action Adventure**, **Sci-Fi**, **Saturday Morning**, **Comedy**, **70s Prime Time**, **Late Night Toons**, **Nickelodeon**, and **Drama**. YATA Channels includes all eight genre streams by default. Open **YATA MIX** and use the television switches to include or exclude genres from that main mix. These private preferences survive catalog updates; direct genre streams and AI-assembled channels remain available. **All on** restores the default, including future channels. **All off** leaves the main mix empty. Choose a channel and **Tune in live**, or use **New mix & play** for a fresh shuffle starting now.

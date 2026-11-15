@@ -1,3 +1,4 @@
+import { handleArcade } from './arcade-server.mjs';
 import { createOwnerPublicationHandler } from './owner-publisher.mjs';
 import http from 'node:http';
 import { discoverYouTube } from './youtube-metadata.mjs';
@@ -10,6 +11,7 @@ const port = Number(process.env.PORT || 4173);
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.md': 'text/plain; charset=utf-8' };
 const publisher = createOwnerPublicationHandler({ getOrigin: () => `http://127.0.0.1:${server.address()?.port || port}` });
 const server = http.createServer(async (req, res) => {
+  if (await handleArcade(req, res)) return;
   if (await publisher.handle(req, res)) return;
   if (req.url?.startsWith('/api/youtube?') && req.method === 'GET') {
     const expected = `http://${req.headers.host}`;
