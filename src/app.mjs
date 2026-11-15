@@ -44,7 +44,7 @@ let session = null, active = null, playerGeneration = 0, importBusy = false;
 let scrubbing = false, scrubSession = null, audioSession = null, preferredAudio = null, audioLockUntil = 0;
 let navCatalog = null, navActive = null, previousEntry = null, nextEntry = null;
 let sharedTarget = null;
-const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'Tubi' };
+const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'Tubi', adultswim: 'Adult Swim' };
 const tiles = ['#5c6242', '#76513b', '#4d6152', '#755d36', '#665841', '#526044', '#704d3d', '#4f635a'];
 const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
 const dialFeedback = mountDialFeedback({ windowRef: window, storage, toggle: $('dial-feedback'), getVolume: () => transportState()?.volume ?? preferredAudio?.volume ?? 1, getMuted: () => transportState()?.muted ?? preferredAudio?.muted ?? false, pulse: () => retroEffects.pulse({ force: true }) });
@@ -242,7 +242,7 @@ function renderLibrary() {
     const art = button('', () => openShow(s.id), 'show-art');
     art.style.setProperty('--tile', tiles[catalog.shows.indexOf(s) % tiles.length]);
     art.setAttribute('aria-label', `View episodes and sources for ${s.title}`);
-    art.append(element('small', s.id === COMMERCIAL_SHOW_ID ? 'VINTAGE / COMMERCIALS' : s.channel === 'seventies' ? '70s / PRIME TIME' : s.channel === 'comedy' ? 'COMEDY / CLASSIC LAUGHS' : s.channel === 'action' ? 'ACTION / ADVENTURE' : s.channel === 'scifi' ? 'SCI-FI / RETRO FUTURES' : 'SATURDAY / MORNING'), element('strong', s.title));
+    art.append(element('small', s.id === COMMERCIAL_SHOW_ID ? 'VINTAGE / COMMERCIALS' : s.channel === 'late-night' ? 'LATE NIGHT / ADULT ANIMATION' : s.channel === 'seventies' ? '70s / PRIME TIME' : s.channel === 'comedy' ? 'COMEDY / CLASSIC LAUGHS' : s.channel === 'action' ? 'ACTION / ADVENTURE' : s.channel === 'scifi' ? 'SCI-FI / RETRO FUTURES' : 'SATURDAY / MORNING'), element('strong', s.title));
     const count = s.episodes.length, live = s.episodes.filter(e => e.kind === 'episode' && stationSource(e) && e.durationSeconds > 0).length;
     let status = 'No episode sources yet · add yours';
     if (count) status = s.id === COMMERCIAL_SHOW_ID ? `${count} optional break clips · ${catalog.settings.bumpers ? 'enabled between stories' : 'off until enabled'}` : live ? `${live} in live rotation · ${count} catalog ${count === 1 ? 'item' : 'items'}` : `${count} ${count === 1 ? 'source item' : 'source items'} · watch from the library`;
@@ -272,11 +272,11 @@ function openShow(showId) {
     const sources = element('div', null, 'sources');
     for (const source of e.sources) {
       const parsed = parseSourceUrl(source.url);
-      if (source.provider === 'tubi') sources.append(link('Watch on Tubi ↗', source.url, 'button small'));
+      if (parsed.kind === 'external') sources.append(link(`Watch on ${providerName[source.provider]} ↗`, source.url, 'button small'));
       else sources.append(button(`▶ ${providerName[source.provider]}${parsed.kind === 'playlist' ? ' playlist' : ''}`, () => {
         $('show-dialog').close(); playEpisode(show, e, source, 0, 'start'); $('watch').scrollIntoView();
       }));
-      if (source.provider !== 'tubi') sources.append(link('Original ↗', source.url, 'button small'));
+      if (parsed.kind !== 'external') sources.append(link('Original ↗', source.url, 'button small'));
       if (ownerMode && catalogStore.writable) sources.append(button('Remove source',async()=>{
         const next=copyCatalog(), current=next.shows.find(item=>item.id===show.id)?.episodes.find(item=>item.id===e.id);
         if (!current) return;
@@ -285,7 +285,7 @@ function openShow(showId) {
       },'text-button'));
     }
     row.append(sources);
-    const statuses = e.sources.map(s => `${providerName[s.provider]}: ${s.provider === 'tubi' ? 'opens on Tubi' : s.availability === 'verified' ? 'source checked; availability may change' : 'playback not checked'}`);
+    const statuses = e.sources.map(s => `${providerName[s.provider]}: ${parseSourceUrl(s.url).kind === 'external' ? `opens on ${providerName[s.provider]}` : s.availability === 'verified' ? 'source checked; availability may change' : 'playback not checked'}`);
     row.append(element('p', statuses.join(' · ') || 'No sources attached', 'episode-meta'));
     const tools = element('div', null, 'episode-tools');
     const shareSource = stationSource(e) || e.sources[0];
@@ -944,7 +944,7 @@ function createPublisherUi() {
   const add=button('Add a show',()=>{
     if(!ownerMode||!catalogStore.writable)return;
     const name=prompt('New show name');if(!name?.trim())return;
-    const choice=prompt('Channel: action, scifi, cartoons, comedy, or seventies','scifi');if(!['action','scifi','cartoons','comedy','seventies'].includes(choice))return;
+    const choice=prompt('Channel: action, scifi, cartoons, comedy, seventies, or late-night','scifi');if(!['action','scifi','cartoons','comedy','seventies','late-night'].includes(choice))return;
     const next=copyCatalog(), show={id:uid('show'),title:name.trim(),channel:choice,imdbUrl:null,episodes:[]};next.shows.push(show);
     void commit(next).then(saved=>{if(saved){selectedShowId=show.id;render();openShow(show.id);status.textContent='New show saved locally. Add sources, then review publication to share it.';}});
   });add.disabled=!catalogStore.writable;

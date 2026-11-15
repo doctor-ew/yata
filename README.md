@@ -228,3 +228,7 @@ The visual palette uses walnut surfaces, warm ivory listings, burnt-orange actio
 Use **MAKE A CHANNEL** on the remote to ask a randomly assigned television host for a lineup. Request shows, themes, or moods; review the suggested checked shows before tuning. **Different host** switches presenters. The personal mix uses existing playback, shuffle, and commercial controls, while TV Guide retains its full-channel schedules. Selecting an ordinary channel or a specific show leaves the personal mix. The AI cannot publish shows or add video sources.
 
 The planner uses the existing guarded AI backend and shared quotas. Browser verification may appear in the dialog. Verification grants remain in memory, and channel preferences stay separate from the owner-published catalog. Portrait credits are linked beside the host.
+
+## Late Night
+
+Channel 07 mixes original-era late-night animation and also participates in the main YATA shuffle. Cartoon Planet, early Aqua Teen Hunger Force (seasons 1–5), classic Beavis and Butt-Head, The Maxx, and the 1994 animated Tick have checked Archive video sources. Space Ghost Coast to Coast currently uses its shorter 2006–2008 GameTap interviews, labeled individually. Squidbillies and Robot Chicken have official Adult Swim episode links that open externally; those pages do not enter the live schedule. Region or provider restrictions may apply. Source checks are bounded availability samples, not a completeness or rights claim.

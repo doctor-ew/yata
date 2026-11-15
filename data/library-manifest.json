@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-733a683fb726f291",
+  "revision": "expanded-1e4748802620e2a9",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -11,13 +11,14 @@
     "2026-11-14T13:50:40.627Z",
     "2026-11-14T16:37:38.599Z",
     "2026-11-14T16:43:53.622Z",
-    "2026-11-15T14:12:12.066Z"
+    "2026-11-15T14:12:12.066Z",
+    "2026-11-15T14:18:44.205Z"
   ],
-  "episodes": 3670,
-  "ready": 3551,
+  "episodes": 4030,
+  "ready": 3909,
   "movieReady": 5,
   "breaks": 14,
-  "streamSlots": 46293,
+  "streamSlots": 61718,
   "shows": [
     {
       "id": "dukes",
@@ -844,6 +845,70 @@
       "sources": 13
     },
     {
+      "id": "cartoon-planet",
+      "title": "Cartoon Planet (1995)",
+      "episodes": 22,
+      "ready": 22,
+      "breaks": 0,
+      "sources": 22
+    },
+    {
+      "id": "space-ghost-c2c",
+      "title": "Space Ghost Coast to Coast",
+      "episodes": 14,
+      "ready": 14,
+      "breaks": 0,
+      "sources": 14
+    },
+    {
+      "id": "athf",
+      "title": "Aqua Teen Hunger Force (2000)",
+      "episodes": 76,
+      "ready": 76,
+      "breaks": 0,
+      "sources": 76
+    },
+    {
+      "id": "squidbillies",
+      "title": "Squidbillies",
+      "episodes": 1,
+      "ready": 0,
+      "breaks": 0,
+      "sources": 1
+    },
+    {
+      "id": "robot-chicken",
+      "title": "Robot Chicken",
+      "episodes": 1,
+      "ready": 0,
+      "breaks": 0,
+      "sources": 1
+    },
+    {
+      "id": "beavis-butthead",
+      "title": "Beavis and Butt-Head (1990s)",
+      "episodes": 197,
+      "ready": 197,
+      "breaks": 0,
+      "sources": 197
+    },
+    {
+      "id": "the-maxx",
+      "title": "The Maxx (1995)",
+      "episodes": 13,
+      "ready": 13,
+      "breaks": 0,
+      "sources": 13
+    },
+    {
+      "id": "the-tick",
+      "title": "The Tick (1994 animated)",
+      "episodes": 36,
+      "ready": 36,
+      "breaks": 0,
+      "sources": 36
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -852,6 +917,6 @@
       "sources": 1
     }
   ],
-  "bytes": 1387705,
+  "bytes": 1525277,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

@@ -54,7 +54,8 @@ export function parseSourceUrl(raw) {
   if (['tubitv.com', 'www.tubitv.com'].includes(u.hostname) && /^\/(tv-shows|movies|series)\/\d+(?:\/[^/]+)?\/?$/.test(u.pathname)) {
     return { provider: 'tubi', kind: 'external', url: `https://tubitv.com${u.pathname}` };
   }
-  fail('Supported sources are Internet Archive, YouTube, and Tubi.');
+  if (['adultswim.com','www.adultswim.com'].includes(u.hostname) && /^\/videos\/[a-z0-9-]+\/[a-z0-9-]+\/?$/.test(u.pathname)) return {provider:'adultswim',kind:'external',url:`https://www.adultswim.com${u.pathname}`};
+  fail('Supported sources are Internet Archive, YouTube, Tubi, and official Adult Swim episode pages.');
 }
 
 export function parseDuration(value) {
