@@ -1,0 +1,1022 @@
+{
+  "checkedAt": "2026-11-15T15:02:52.808Z",
+  "provider": "archive",
+  "notes": [
+    "Small range checks establish endpoint availability; sample decoding is separate. No full videos are copied or rehosted."
+  ],
+  "excluded": [],
+  "shows": [
+    {
+      "showId": "star-wars-droids",
+      "title": "Star Wars: Droids (1985)",
+      "channel": "cartoons",
+      "items": [
+        {
+          "itemId": "star-wars-droids_202602",
+          "title": "Star Wars: Droids (1985-1986)",
+          "metadataUrl": "https://archive.org/metadata/star-wars-droids_202602"
+        }
+      ],
+      "notes": "13 regular episodes plus The Great Heep special, classified separately as season zero.",
+      "episodes": [
+        {
+          "id": "archive-star-wars-droids_202602-0",
+          "title": "Star Wars Droids S01E01 The White Witch",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1418.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E01%20The%20White%20Witch.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-1",
+          "title": "Star Wars Droids S01E02 Escape Into Terror",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1389.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E02%20Escape%20Into%20Terror.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-2",
+          "title": "Star Wars Droids S01E03 The Trigon Unleashed",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1390.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E03%20The%20Trigon%20Unleashed.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-3",
+          "title": "Star Wars Droids S01E04 A Race to the Finish",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1386.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E04%20A%20Race%20to%20the%20Finish.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-4",
+          "title": "Star Wars Droids S01E05 The Lost Prince",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1411.43,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E05%20The%20Lost%20Prince.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-5",
+          "title": "Star Wars Droids S01E06 The New King",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1373.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E06%20The%20New%20King.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-6",
+          "title": "Star Wars Droids S01E07 The Pirates of Tarnoonga",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1382.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E07%20The%20Pirates%20of%20Tarnoonga.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-7",
+          "title": "Star Wars Droids S01E08 The Revenge of Kybo Ren",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1385.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E08%20The%20Revenge%20of%20Kybo%20Ren.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-8",
+          "title": "Star Wars Droids S01E09 Coby and the Starhunters",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1415.79,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E09%20Coby%20and%20the%20Starhunters.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-9",
+          "title": "Star Wars Droids S01E10 Tail of the Roon Comets",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1419.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E10%20Tail%20of%20the%20Roon%20Comets.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-10",
+          "title": "Star Wars Droids S01E11 The Roon Games",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1383.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E11%20The%20Roon%20Games.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-11",
+          "title": "Star Wars Droids S01E12 Across the Roon Sea",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1390.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E12%20Across%20the%20Roon%20Sea.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-12",
+          "title": "Star Wars Droids S01E13 The Frozen Citadel",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1386.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E13%20The%20Frozen%20Citadel.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-star-wars-droids_202602-13",
+          "title": "The Great Heep · special",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 2863.63,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/star-wars-droids_202602/Star%20Wars%20Droids%20S01E14%20The%20Great%20Heep.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "star-wars-holiday-special",
+      "title": "The Star Wars Holiday Special (1978)",
+      "channel": "scifi",
+      "items": [
+        {
+          "itemId": "the-star-wars-holiday-special",
+          "title": "The Star Wars Holiday Special (1978)",
+          "metadataUrl": "https://archive.org/metadata/the-star-wars-holiday-special"
+        }
+      ],
+      "notes": "1978 television special, approximately 97 minutes; not the later LEGO special.",
+      "episodes": [
+        {
+          "id": "archive-the-star-wars-holiday-special-0",
+          "title": "The Star Wars Holiday Special (1978)",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 5847.27,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-star-wars-holiday-special/Star%20Wars%20Holiday%20Special%2C%20The%20(1978)%20%5BNice%20Copy%5D_%20360p.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "sealab-2020",
+      "title": "Sealab 2020 (1972)",
+      "channel": "cartoons",
+      "items": [
+        {
+          "itemId": "s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2",
+          "title": "Sealab 2020",
+          "metadataUrl": "https://archive.org/metadata/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2"
+        }
+      ],
+      "notes": "13 source episodes of the original adventure series. Sealab 2021 remains a separate Late Night Toons show.",
+      "episodes": [
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--0",
+          "title": "S 2020 S01E01 Dp Threat",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1335.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E01.Dp.Threat.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--1",
+          "title": "S 2020 S01E02 Lost",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1331.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E02.Lost.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--2",
+          "title": "S 2020 S01E03 Green Fever",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1331.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E03.Green.Fever.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--3",
+          "title": "S 2020 S01E04 The Singing Whale",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1332,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E04.The.Singing.Whale.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--4",
+          "title": "S 2020 S01E05 The Shark Lover",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1319.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E05.The.Shark.Lover.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--5",
+          "title": "S 2020 S01E06 The Basking Shark",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1330.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E06.The.Basking.Shark.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--6",
+          "title": "S 2020 S01E07 Where Dangers Are Many",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1328.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E07.Where.Dangers.Are.Many.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--7",
+          "title": "S 2020 S01E08 Backfire",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1331.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E08.Backfire.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--8",
+          "title": "S 2020 S01E09 The Dpest Dive",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1332.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E09.The.Dpest.Dive.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--9",
+          "title": "S 2020 S01E10 The Challenge",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1331.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E10.The.Challenge.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--10",
+          "title": "S 2020 S01E11 Collision of the Aquarius",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1333.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E11.Collision.of.the.Aquarius.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--11",
+          "title": "S 2020 S01E12 The Capture",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1334,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E12.The.Capture.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod--12",
+          "title": "S 2020 S01E13 The Arctic Story",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1327.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/s.-2020.-s-01-e-11.-collision.of.the.-aquarius.-dvdrip.x-264-ti-megod-2/S.2020.S01E13.The.Arctic.Story.DVDRip.x264-TiMEGOD_2.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "venture-bros",
+      "title": "The Venture Bros.",
+      "channel": "late-night",
+      "items": [
+        {
+          "itemId": "venture.bros.s01.s02.1080p.upscale",
+          "title": "The Venture Bros [S1 & S2 1080p Waifu2x DVD Upscale]",
+          "metadataUrl": "https://archive.org/metadata/venture.bros.s01.s02.1080p.upscale"
+        }
+      ],
+      "notes": "Seasons 1–2 plus the pilot and Christmas special only. DVD extras and production featurettes excluded; source is labeled an upscale.",
+      "episodes": [
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-8",
+          "title": "The Venture Bros S00E01 The Terrible Secret of Turtle Bay",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 1506.51,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%200/The.Venture.Bros.S00E01.The.Terrible.Secret.of.Turtle.Bay.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-9",
+          "title": "The Venture Bros S00E02 A Very Venture Christmas",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 687.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%200/The.Venture.Bros.S00E02.A.Very.Venture.Christmas.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-12",
+          "title": "The Venture Bros S01E01",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1331.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E01.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-13",
+          "title": "The Venture Bros S01E02",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1296.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E02.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-14",
+          "title": "The Venture Bros S01E03",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1330.54,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E03.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-15",
+          "title": "The Venture Bros S01E04",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1356.75,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E04.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-16",
+          "title": "The Venture Bros S01E05",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1349.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E05.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-17",
+          "title": "The Venture Bros S01E06",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1351.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E06.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-18",
+          "title": "The Venture Bros S01E07",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1342.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E07.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-19",
+          "title": "The Venture Bros S01E08",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1382.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E08.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-20",
+          "title": "The Venture Bros S01E09",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1357.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E09.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-21",
+          "title": "The Venture Bros S01E10",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1354.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E10.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-22",
+          "title": "The Venture Bros S01E11",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1355.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-22",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E11.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-23",
+          "title": "The Venture Bros S01E12",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1350.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-23",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E12.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-24",
+          "title": "The Venture Bros S01E13",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1418.35,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-24",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%201/The.Venture.Bros.S01E13.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-25",
+          "title": "The Venture Bros S02E01",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1375.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-25",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E01.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-26",
+          "title": "The Venture Bros S02E02",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1366.43,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-26",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E02.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-27",
+          "title": "The Venture Bros S02E03",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 1360.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-27",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E03.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-28",
+          "title": "The Venture Bros S02E04",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 1360.55,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-28",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E04.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-29",
+          "title": "The Venture Bros S02E05",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 1363.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-29",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E05.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-30",
+          "title": "The Venture Bros S02E06",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 1363.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-30",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E06.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-31",
+          "title": "The Venture Bros S02E07",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 1359.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-31",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E07.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-32",
+          "title": "The Venture Bros S02E08",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 1363.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-32",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E08.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-33",
+          "title": "The Venture Bros S02E09",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 1369.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-33",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E09.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-34",
+          "title": "The Venture Bros S02E10",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 1360.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-34",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E10.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-35",
+          "title": "The Venture Bros S02E11",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 1363.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-35",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E11.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-36",
+          "title": "The Venture Bros S02E12",
+          "season": 2,
+          "number": 12,
+          "durationSeconds": 1363.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-36",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E12.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-venture.bros.s01.s02.1080p.upscale-37",
+          "title": "The Venture Bros S02E13",
+          "season": 2,
+          "number": 13,
+          "durationSeconds": 1388.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-37",
+              "provider": "archive",
+              "url": "https://archive.org/download/venture.bros.s01.s02.1080p.upscale/The%20Venture%20Bros%20%5BS1%20%26%20S2%201080p%20Waifu2x%20DVD%20Upscale%5D/Season%202/The.Venture.Bros.S02E13.1080p.DVDRip.Waifu2x.x265-SoF.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

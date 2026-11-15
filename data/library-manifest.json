@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-5410d70e4c9ed97a",
+  "revision": "expanded-a6b0faa693484945",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -16,13 +16,14 @@
     "2026-11-15T14:28:57.261Z",
     "2026-11-15T14:35:10.913Z",
     "2026-11-15T14:46:20.074Z",
-    "2026-11-15T14:51:43.969Z"
+    "2026-11-15T14:51:43.969Z",
+    "2026-11-15T15:02:52.808Z"
   ],
-  "episodes": 6046,
-  "ready": 5914,
+  "episodes": 6102,
+  "ready": 5970,
   "movieReady": 5,
   "breaks": 24,
-  "streamSlots": 95367,
+  "streamSlots": 98318,
   "shows": [
     {
       "id": "dukes",
@@ -1153,6 +1154,38 @@
       "sources": 16
     },
     {
+      "id": "star-wars-droids",
+      "title": "Star Wars: Droids (1985)",
+      "episodes": 14,
+      "ready": 14,
+      "breaks": 0,
+      "sources": 14
+    },
+    {
+      "id": "star-wars-holiday-special",
+      "title": "The Star Wars Holiday Special (1978)",
+      "episodes": 1,
+      "ready": 1,
+      "breaks": 0,
+      "sources": 1
+    },
+    {
+      "id": "sealab-2020",
+      "title": "Sealab 2020 (1972)",
+      "episodes": 13,
+      "ready": 13,
+      "breaks": 0,
+      "sources": 13
+    },
+    {
+      "id": "venture-bros",
+      "title": "The Venture Bros.",
+      "episodes": 28,
+      "ready": 28,
+      "breaks": 0,
+      "sources": 28
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -1161,6 +1194,6 @@
       "sources": 1
     }
   ],
-  "bytes": 2268563,
+  "bytes": 2291536,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

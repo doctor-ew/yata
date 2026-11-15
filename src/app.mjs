@@ -780,7 +780,7 @@ async function fetchLibrary() {
   if (!response.ok) throw Error('The expanded episode library is not ready yet.');
   const manifest = await response.json();
   if (typeof manifest.revision !== 'string' || !/^[a-z0-9.-]{1,100}$/.test(manifest.revision)) throw Error('Invalid library revision.');
-  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel', 'star-trek'].map(async provider => {
+  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel', 'star-trek', 'retro-requests'].map(async provider => {
     const response = await fetch(`data/${provider}-discovery.json`);
     if (!response.ok) throw Error('A library source file could not be loaded. Your catalog is unchanged.');
     return response.json();

@@ -246,3 +246,7 @@ Fat Albert and the Cosby Kids joins Saturday Morning. Good Times, The Jeffersons
 ## Star Trek
 
 The Original Series, The Next Generation, Deep Space Nine, Voyager and Enterprise are classified under Sci-Fi and also participate in the main mixed channel. There is no separate Star Trek channel. The original 1973 animated series is in Saturday Morning. DS9 coverage is partial: an extended-cut source of Emissary and Rejoined. The animated collection covers its first season. Combined double-length programs remain intact, so program counts differ from split broadcast episode totals. Source provenance and exclusions are recorded in `data/star-trek-discovery.json`.
+
+## Droids, Sealab and Venture Bros.
+
+The requested expansion is recorded in `data/retro-requests-discovery.json`. Star Wars: Droids has 13 regular episodes and The Great Heep special; the special is classified as season zero. Droids and the original Sealab 2020 adventure series (13 episodes) join Saturday Morning. The original 1978 Star Wars Holiday Special joins Sci-Fi. The Venture Bros. joins Late Night Toons with 26 episodes from seasons 1–2, the pilot and the Christmas special. Production featurettes and deleted scenes are excluded. The Venture Bros. source is labeled an upscale. Existing Sealab 2021 placement is preserved. All four collections also participate in the main mixed stream; no additional channel is created.
