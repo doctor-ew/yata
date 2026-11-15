@@ -6,11 +6,13 @@ export const CHANNEL_HOSTS = [
   {id:'twiki',name:'Twiki'}, {id:'starbuck',name:'Starbuck'},
 ];
 export const HOST_PORTRAITS = {
-  stubing:{src:'https://doctorew.com/host-portraits/stubing.jpg',caption:'Gavin MacLeod · publicity portrait'},
-  arnold:{src:'https://doctorew.com/host-portraits/arnold.png',caption:'Gary Coleman · actor portrait'},
+  jabberjaw:{src:'https://doctorew.com/host-portraits/jabberjaw-character-v1.jpg',caption:"Jabberjaw \u00b7 original Hanna-Barbera series"},
+  twiki:{src:'https://doctorew.com/host-portraits/twiki-character-v1.jpg',caption:"Twiki with Dr. Theopolis \u00b7 Buck Rogers"},
+  stubing:{src:'https://doctorew.com/host-portraits/stubing-character-v1.jpg',caption:"Gavin MacLeod as Captain Stubing"},
+  arnold:{src:'https://doctorew.com/host-portraits/arnold-character-v1.jpg',caption:"Gary Coleman as Arnold Jackson"},
   benson:{src:'https://doctorew.com/host-portraits/benson.jpg',caption:'Robert Guillaume as Benson'},
-  mrt:{src:'https://doctorew.com/host-portraits/mrt.jpg',caption:'Mr. T · portrait'},
-  starbuck:{src:'https://doctorew.com/host-portraits/starbuck.jpg',caption:'Dirk Benedict · actor portrait'},
+  mrt:{src:'https://doctorew.com/host-portraits/mrt-character-v1.png',caption:"Mr. T as B. A. Baracus \u00b7 existing portfolio artwork"},
+  starbuck:{src:'https://doctorew.com/host-portraits/starbuck-character-v1.jpg',caption:"Dirk Benedict as Starbuck, 1978"},
   murdock:{src:'https://www.doctorew.com/assets/gpt_personalities/murdock.png',caption:'Murdock · existing portfolio artwork'},
 };
 export function chooseHost(previous=null, random=Math.random) {
