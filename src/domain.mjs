@@ -3,7 +3,8 @@ import { CHANNELS, SHOW_CHANNEL_IDS, migratedShowChannel } from './channels.mjs'
 import { randomRotation, createCommercialBreak } from './shuffle.mjs';
 export const COMMERCIAL_SHOW_ID = 'vintage-commercials';
 export const STORAGE_KEY = 'drew-tv.catalog.v1';
-export const MAX_CATALOG_SHOWS = 128;
+export const MAX_CATALOG_SHOWS = 256;
+export const MAX_CATALOG_EPISODES = 10_000;
 export const MAX_IMPORT_BYTES = 4_000_000;
 const ID = /^[\w.-]{1,160}$/;
 const VIDEO = /^[\w-]{11}$/;
@@ -143,7 +144,7 @@ export function validateCatalog(raw) {
       imdbUrl = `https://www.imdb.com${u.pathname}`;
     }
     const episodes = s.episodes.map(e => {
-      if (++count > 5000) fail('Catalog is limited to 5,000 episodes.');
+      if (++count > MAX_CATALOG_EPISODES) fail('Catalog is limited to 10,000 episodes.');
       const eid = id(e.id);
       if (episodeIds.has(eid)) fail('Duplicate episode ID.');
       episodeIds.add(eid);
