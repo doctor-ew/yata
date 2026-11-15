@@ -242,10 +242,10 @@ function renderLibrary() {
     const art = button('', () => openShow(s.id), 'show-art');
     art.style.setProperty('--tile', tiles[catalog.shows.indexOf(s) % tiles.length]);
     art.setAttribute('aria-label', `View episodes and sources for ${s.title}`);
-    art.append(element('small', s.id === COMMERCIAL_SHOW_ID ? 'VINTAGE / COMMERCIALS' : s.channel === 'late-night' ? 'LATE NIGHT / ADULT ANIMATION' : s.channel === 'seventies' ? '70s / PRIME TIME' : s.channel === 'comedy' ? 'COMEDY / CLASSIC LAUGHS' : s.channel === 'action' ? 'ACTION / ADVENTURE' : s.channel === 'scifi' ? 'SCI-FI / RETRO FUTURES' : 'SATURDAY / MORNING'), element('strong', s.title));
+    art.append(element('small', s.id.endsWith('-bumps') ? 'NETWORK / BUMPS & INTERSTITIALS' : s.id === COMMERCIAL_SHOW_ID ? 'VINTAGE / COMMERCIALS' : s.channel === 'late-night' ? 'LATE NIGHT / ADULT ANIMATION' : s.channel === 'seventies' ? '70s / PRIME TIME' : s.channel === 'comedy' ? 'COMEDY / CLASSIC LAUGHS' : s.channel === 'action' ? 'ACTION / ADVENTURE' : s.channel === 'scifi' ? 'SCI-FI / RETRO FUTURES' : 'SATURDAY / MORNING'), element('strong', s.title));
     const count = s.episodes.length, live = s.episodes.filter(e => e.kind === 'episode' && stationSource(e) && e.durationSeconds > 0).length;
     let status = 'No episode sources yet · add yours';
-    if (count) status = s.id === COMMERCIAL_SHOW_ID ? `${count} optional break clips · ${catalog.settings.bumpers ? 'enabled between stories' : 'off until enabled'}` : live ? `${live} in live rotation · ${count} catalog ${count === 1 ? 'item' : 'items'}` : `${count} ${count === 1 ? 'source item' : 'source items'} · watch from the library`;
+    if (count) status = (s.id === COMMERCIAL_SHOW_ID || s.id.endsWith('-bumps')) ? `${count} optional break clips · ${catalog.settings.bumpers ? 'enabled between stories' : 'off until enabled'}` : live ? `${live} in live rotation · ${count} catalog ${count === 1 ? 'item' : 'items'}` : `${count} ${count === 1 ? 'source item' : 'source items'} · watch from the library`;
     card.append(art, element('h3', s.title, 'show-title'), element('p', status, `show-status${live ? ' available' : ''}`));
     return card;
   }));
@@ -601,7 +601,7 @@ $('import-catalog').addEventListener('change', async event => {
   if (!ownerMode || !catalogStore.writable) return;
   const file = event.target.files[0]; if (!file) return;
   try {
-    if (file.size > MAX_IMPORT_BYTES) throw Error('Import exceeds the 2 MB catalog limit.');
+    if (file.size > MAX_IMPORT_BYTES) throw Error('Import exceeds the 4 MB catalog limit.');
     const next = parseCatalogJson(await file.text());
     if (!await commit(next)) return;
     stopPlayer(); selectedShowId = catalog.shows[0].id; render(); notify('Catalog imported and saved.');
@@ -780,7 +780,7 @@ async function fetchLibrary() {
   if (!response.ok) throw Error('The expanded episode library is not ready yet.');
   const manifest = await response.json();
   if (typeof manifest.revision !== 'string' || !/^[a-z0-9.-]{1,100}$/.test(manifest.revision)) throw Error('Invalid library revision.');
-  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies'].map(async provider => {
+  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion'].map(async provider => {
     const response = await fetch(`data/${provider}-discovery.json`);
     if (!response.ok) throw Error('A library source file could not be loaded. Your catalog is unchanged.');
     return response.json();

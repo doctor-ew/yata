@@ -232,3 +232,9 @@ The planner uses the existing guarded AI backend and shared quotas. Browser veri
 ## Late Night
 
 Channel 07 mixes original-era late-night animation and also participates in the main YATA shuffle. Cartoon Planet, early Aqua Teen Hunger Force (seasons 1–5), classic Beavis and Butt-Head, The Maxx, and the 1994 animated Tick have checked Archive video sources. Space Ghost Coast to Coast currently uses its shorter 2006–2008 GameTap interviews, labeled individually. Squidbillies and Robot Chicken have official Adult Swim episode links that open externally; those pages do not enter the live schedule. Region or provider restrictions may apply. Source checks are bounded availability samples, not a completeness or rights claim.
+
+## Network expansion and vintage bumps
+
+You Can’t Do That on Television and Turkey Television are in Comedy, with source recordings left intact. Their embedded commercials cannot be disabled by the optional-break setting. The first recommendation batch adds Harvey Birdman, Sealab 2021, Home Movies and The Brak Show to Late Night; Taxi and WKRP to Comedy; The Rockford Files to 70s Prime Time; The Bionic Woman to Action Adventure; and Josie and the Pussycats to Saturday Morning. Daria remains a wishlist entry because the bounded search did not produce an accessible full-program MP4.
+
+Adult Swim and Nickelodeon bumps are separately labeled collections of short break clips. With breaks enabled, Adult Swim bumps join Late Night breaks; Nickelodeon bumps join Saturday Morning and the two Nickelodeon comedy shows. Both pools participate in the main mixed channel. The existing optional-break toggle disables inserted bumps and commercials together. Whole bumper montages are excluded. Source and exclusion details are recorded in `data/network-expansion-discovery.json`.

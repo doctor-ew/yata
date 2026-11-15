@@ -6,10 +6,10 @@ import {availableDialShows} from '../src/dials.mjs';
 test('Comedy tunes the requested series and participates in all-show mixes',async()=>{
  const c=parseCatalogJson(await readFile(new URL('../data/expanded-catalog.json',import.meta.url),'utf8'));
  c.settings={...c.settings,channel:'comedy',streamShow:null,bumpers:false};
- assert.deepEqual(c.shows.filter(s=>s.channel==='comedy').map(s=>s.id),['barney-miller','mork-mindy','love-boat','benson']);
+ assert.deepEqual(c.shows.filter(s=>s.channel==='comedy').map(s=>s.id),['barney-miller','mork-mindy','love-boat','benson','ycdtotv','turkey-tv','taxi','wkrp']);
  const schedule=buildSchedule(c);assert.ok(schedule.length>0);
  assert.ok(schedule.every(e=>e.show.channel==='comedy'));
- assert.deepEqual(availableDialShows(c).map(s=>s.id),['barney-miller','mork-mindy','love-boat','benson']);
+ assert.deepEqual(availableDialShows(c).map(s=>s.id),['barney-miller','mork-mindy','love-boat','benson','ycdtotv','turkey-tv','taxi','wkrp']);
  c.settings.channel='mixed';assert.ok(buildSchedule(c).some(e=>e.show.channel==='comedy'));
  const pack=JSON.parse(await readFile(new URL('../data/comedy-discovery.json',import.meta.url),'utf8'));
  assert.deepEqual(pack.shows.map(s=>s.episodes.length),[1,24,4]);

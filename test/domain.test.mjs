@@ -17,7 +17,7 @@ function fixture() {
 
 test('starter catalog includes the original list, all extras and a separately labeled compilation', () => {
   const c = validateCatalog(createSeed());
-  assert.equal(c.shows.length, 112);
+  assert.equal(c.shows.length, 126);
   assert.equal(c.settings.bumpers, true);
   for (const title of ['Mighty Orbots', 'Street Hawk', 'The Phoenix', 'SilverHawks', 'V']) assert(c.shows.some(s => s.title === title));
   assert.equal(c.shows.find(s => s.id === 'saturday-simulator').episodes[0].sources[0].availability, 'unverified');
@@ -117,7 +117,7 @@ test('JSON import validates the complete catalog before callers replace persiste
     assert.equal(storage.getItem(), previous);
   }
   assert.throws(() => parseCatalogJson('{'), /not valid JSON/);
-  assert.throws(() => parseCatalogJson(' '.repeat(2_000_001)), /2 MB/);
+  assert.throws(() => parseCatalogJson(' '.repeat(4_000_001)), /4 MB/);
 });
 test('catalog persistence round-trips and storage errors are not reported as saved', () => {
   const values = new Map();

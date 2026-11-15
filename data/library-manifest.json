@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-1e4748802620e2a9",
+  "revision": "expanded-cdb97b0a6e056e11",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -12,13 +12,14 @@
     "2026-11-14T16:37:38.599Z",
     "2026-11-14T16:43:53.622Z",
     "2026-11-15T14:12:12.066Z",
-    "2026-11-15T14:18:44.205Z"
+    "2026-11-15T14:18:44.205Z",
+    "2026-11-15T14:28:57.261Z"
   ],
-  "episodes": 4030,
-  "ready": 3909,
+  "episodes": 4698,
+  "ready": 4567,
   "movieReady": 5,
-  "breaks": 14,
-  "streamSlots": 61718,
+  "breaks": 24,
+  "streamSlots": 68219,
   "shows": [
     {
       "id": "dukes",
@@ -909,6 +910,118 @@
       "sources": 36
     },
     {
+      "id": "ycdtotv",
+      "title": "You Can’t Do That on Television",
+      "episodes": 158,
+      "ready": 158,
+      "breaks": 0,
+      "sources": 158
+    },
+    {
+      "id": "turkey-tv",
+      "title": "Turkey Television",
+      "episodes": 7,
+      "ready": 7,
+      "breaks": 0,
+      "sources": 7
+    },
+    {
+      "id": "harvey-birdman",
+      "title": "Harvey Birdman, Attorney at Law",
+      "episodes": 39,
+      "ready": 39,
+      "breaks": 0,
+      "sources": 39
+    },
+    {
+      "id": "sealab-2021",
+      "title": "Sealab 2021",
+      "episodes": 52,
+      "ready": 52,
+      "breaks": 0,
+      "sources": 52
+    },
+    {
+      "id": "home-movies",
+      "title": "Home Movies",
+      "episodes": 52,
+      "ready": 52,
+      "breaks": 0,
+      "sources": 52
+    },
+    {
+      "id": "brak-show",
+      "title": "The Brak Show",
+      "episodes": 28,
+      "ready": 28,
+      "breaks": 0,
+      "sources": 28
+    },
+    {
+      "id": "daria",
+      "title": "Daria",
+      "episodes": 0,
+      "ready": 0,
+      "breaks": 0,
+      "sources": 0
+    },
+    {
+      "id": "taxi",
+      "title": "Taxi (1978)",
+      "episodes": 114,
+      "ready": 114,
+      "breaks": 0,
+      "sources": 114
+    },
+    {
+      "id": "wkrp",
+      "title": "WKRP in Cincinnati",
+      "episodes": 12,
+      "ready": 12,
+      "breaks": 0,
+      "sources": 12
+    },
+    {
+      "id": "rockford-files",
+      "title": "The Rockford Files",
+      "episodes": 120,
+      "ready": 120,
+      "breaks": 0,
+      "sources": 120
+    },
+    {
+      "id": "bionic-woman",
+      "title": "The Bionic Woman (1976)",
+      "episodes": 60,
+      "ready": 60,
+      "breaks": 0,
+      "sources": 61
+    },
+    {
+      "id": "josie-pussycats",
+      "title": "Josie and the Pussycats (1970)",
+      "episodes": 16,
+      "ready": 16,
+      "breaks": 0,
+      "sources": 16
+    },
+    {
+      "id": "adult-swim-bumps",
+      "title": "Adult Swim · vintage bumps",
+      "episodes": 2,
+      "ready": 0,
+      "breaks": 2,
+      "sources": 2
+    },
+    {
+      "id": "nickelodeon-bumps",
+      "title": "Nickelodeon · vintage bumps",
+      "episodes": 8,
+      "ready": 0,
+      "breaks": 8,
+      "sources": 8
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -917,6 +1030,6 @@
       "sources": 1
     }
   ],
-  "bytes": 1525277,
+  "bytes": 1765857,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

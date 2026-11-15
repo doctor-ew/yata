@@ -24,7 +24,7 @@ export async function openCatalogStore({storage,seed,database}) {
       if(!writable)throw Error('Catalog changes are read-only because transactional storage is unavailable. Playback and export remain available.');
       const expected=revision;if(base!==current)throw new CatalogConflict();
       const valid=validateCatalog(next);
-      if(new TextEncoder().encode(JSON.stringify(valid)).length>MAX_IMPORT_BYTES)throw Error('Catalog exceeds the 2 MB storage limit.');
+      if(new TextEncoder().encode(JSON.stringify(valid)).length>MAX_IMPORT_BYTES)throw Error('Catalog exceeds the 4 MB storage limit.');
       let record;
       try{record=await db.compareAndSave(expected,valid);}catch(error){if(error.code==='CATALOG_CONFLICT')throw new CatalogConflict();throw error;}
       current=record.catalog;revision=record.revision;stale=false;channel?.postMessage({revision});return current;
