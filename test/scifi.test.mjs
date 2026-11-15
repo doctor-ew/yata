@@ -18,7 +18,7 @@ const legacy = () => {
 };
 
 test('nine channels place Sci-Fi third and keep animated science fiction on Saturday Morning', () => {
-  assert.deepEqual(CHANNELS.map(c=>[c.id,c.number]), [['mixed','01'],['action','02'],['scifi','03'],['cartoons','04'],['comedy','05'],['seventies','06'],['late-night','07'],['nick','08'],['drama','09']]);
+  assert.deepEqual(CHANNELS.map(c=>[c.id,c.number]), [['mixed','01'],['action','02'],['scifi','03'],['cartoons','04'],['nick','08'],['comedy','05'],['drama','09'],['seventies','06'],['late-night','07']]);
   const seed=createSeed();
   assert.deepEqual(new Set(seed.shows.filter(s=>s.channel==='scifi' && s.id!==MOVIE_SHOW_ID).map(s=>s.id)), SCI_FI_SHOW_IDS);
   for(const id of ['transformers','mighty-orbots','space-ghost']) assert.equal(seed.shows.find(s=>s.id===id).channel,'cartoons');
