@@ -1,4 +1,4 @@
-# Local arcade
+# Doctor Ew’s Arcade
 
 ## Run
 
@@ -12,9 +12,9 @@ Bible Fight and Viva Caligula use the recovered, modified browser builds, includ
 
 `npm run arcade:classics` restores the eight recorded cartridge/arcade copies after a size and SHA-256 check. The cartridge slot accepts a browser-selected game and optional firmware. It passes browser File objects to a local EmulatorJS frame, retaining the original filenames for disk and cartridge detection. Closing the game destroys the frame and releases its file references. There is no file-upload endpoint. Emulator save data and settings may persist in browser storage. Supported machines are Atari 2600, Commodore 64, NES, SNES, Genesis and Game Boy/Color. Per-title compatibility still requires gameplay checks.
 
-## Local boundary
+## Hosting boundary
 
-The server listens on loopback and the arcade rejects non-loopback Host headers. Its content policy restricts network connections to this origin. The existing static TV release uses an explicit file list and excludes the arcade directory and game assets. No arcade deployment or public navigation link is added. Public distribution permissions remain unresolved.
+The owner preview listens on loopback and rejects non-loopback Host headers. The public arcade is a separate static release at https://doctorew.com/arcade/. Both use same-origin game resources. The TV release remains separate and does not bundle arcade binaries. The arcade release builder includes an explicit set of browser assets; it excludes APK backups, package archives and preservation manifests. No visible public navigation link is added.
 
 ## Attribution
 
@@ -35,4 +35,8 @@ Six modified Flight Deck packages were copied with authorization from the connec
 
 ## Secret entrance
 
-On the local YATA TV page, enter Up, Up, Down, Down, Left, Right, Left, Right, B, A outside text fields. This opens `/arcade/`. The entry is enabled on loopback only pending a separate public-release decision. The Konami code is an Easter egg, not authentication. The arcade UI and assets remain excluded from the TV static build; the small keyboard-entry helper is included but inactive on public hosts.
+On the YATA TV page, enter Up, Up, Down, Down, Left, Right, Left, Right, B, A outside text fields. This opens `/arcade/`. The entry is enabled on loopback and the doctorew.com hosts. The Konami code is an Easter egg, not authentication. The arcade UI and assets remain excluded from the TV static build and ship separately.
+
+## Static release
+
+Run `node scripts/build-arcade.mjs --out <empty-directory>` from `nostalgia-tv`. The builder stages browser game assets with MIME types, SHA-256 hashes and an HTML content security policy. Upload the manifest files under the `arcade/` prefix in the configured S3 bucket, with dependency files before the root HTML. Use the existing CloudFront distribution; keep S3 public-access blocking enabled. The viewer-request function in `deploy/arcade-index-rewrite.js` preserves existing TV/SPA routes, redirects `/arcade` to `/arcade/`, and passes extensionless game companion files through unchanged. Invalidate `/arcade*` after upload. Publish the entry helper before the TV coordinator module.

@@ -25,7 +25,7 @@ The owner server runs while its terminal remains open. The launcher does not cre
 
 ## Local arcade
 
-The loopback server also serves `/arcade/`. Run `npm run arcade:setup` once to copy the recovered Dropbox Flash builds and download the pinned emulator runtimes. Game files remain in an ignored local directory. The arcade is excluded from the public TV build and is not deployed. See [the arcade manual](arcade/README.md) for scope and attribution.
+The loopback server also serves `/arcade/`. Run `npm run arcade:setup` once to copy the recovered Dropbox Flash builds and download the pinned emulator runtimes. Game files remain in an ignored local directory. The arcade is published separately at https://doctorew.com/arcade/ and stays excluded from the TV build. The YATA page opens it with the Konami code; no visible link is added. See [the arcade manual](arcade/README.md) for scope and attribution.
 
 ## Random continuous streams
 
