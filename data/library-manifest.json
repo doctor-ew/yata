@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-129eae546d69471f",
+  "revision": "expanded-ff2ecb2ab35413df",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -19,13 +19,15 @@
     "2026-11-15T14:51:43.969Z",
     "2026-11-15T15:02:52.808Z",
     "2026-11-15T15:06:54.717Z",
-    "2026-11-15T15:53:42.678Z"
+    "2026-11-15T15:53:42.678Z",
+    "2026-11-15T19:40:16.848Z",
+    "2026-11-15T19:46:26.579Z"
   ],
-  "episodes": 9214,
-  "ready": 9082,
+  "episodes": 10174,
+  "ready": 10042,
   "movieReady": 5,
   "breaks": 24,
-  "streamSlots": 153027,
+  "streamSlots": 170050,
   "shows": [
     {
       "id": "dukes",
@@ -1770,8 +1772,80 @@
       "ready": 0,
       "breaks": 0,
       "sources": 1
+    },
+    {
+      "id": "x-men-tas",
+      "title": "X-Men: The Animated Series (1992)",
+      "episodes": 76,
+      "ready": 76,
+      "breaks": 0,
+      "sources": 76
+    },
+    {
+      "id": "batman-tas",
+      "title": "Batman: The Animated Series (1992)",
+      "episodes": 85,
+      "ready": 85,
+      "breaks": 0,
+      "sources": 85
+    },
+    {
+      "id": "nypd-blue",
+      "title": "NYPD Blue (1993)",
+      "episodes": 260,
+      "ready": 260,
+      "breaks": 0,
+      "sources": 260
+    },
+    {
+      "id": "cagney-lacey",
+      "title": "Cagney & Lacey (1981)",
+      "episodes": 57,
+      "ready": 57,
+      "breaks": 0,
+      "sources": 57
+    },
+    {
+      "id": "china-beach",
+      "title": "China Beach (1988)",
+      "episodes": 1,
+      "ready": 1,
+      "breaks": 0,
+      "sources": 1
+    },
+    {
+      "id": "northern-exposure",
+      "title": "Northern Exposure (1990)",
+      "episodes": 110,
+      "ready": 110,
+      "breaks": 0,
+      "sources": 110
+    },
+    {
+      "id": "picket-fences",
+      "title": "Picket Fences (1992)",
+      "episodes": 88,
+      "ready": 88,
+      "breaks": 0,
+      "sources": 88
+    },
+    {
+      "id": "st-elsewhere",
+      "title": "St. Elsewhere (1982)",
+      "episodes": 137,
+      "ready": 137,
+      "breaks": 0,
+      "sources": 137
+    },
+    {
+      "id": "hill-street-blues",
+      "title": "Hill Street Blues (1981)",
+      "episodes": 146,
+      "ready": 146,
+      "breaks": 0,
+      "sources": 146
     }
   ],
-  "bytes": 3429579,
+  "bytes": 3767214,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

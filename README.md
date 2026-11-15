@@ -25,15 +25,17 @@ The owner server runs while its terminal remains open. The launcher does not cre
 
 ## Random continuous streams
 
-The four channel buttons are random streams by default: **Sci-Fi** mixes science-fiction television, **Saturday Morning** mixes the checked cartoon shows, **Action Adventure** mixes action shows, and **YATA** mixes everything. Choose a channel and **Tune in live**, or use **New mix & play** for a fresh shuffle starting now.
+The nine channel buttons select **YATA Channels**, **Action Adventure**, **Sci-Fi**, **Saturday Morning**, **Comedy**, **70s Prime Time**, **Late Night Toons**, **Nickelodeon**, and **Drama**. YATA Channels includes all eight genre streams by default. Open **YATA MIX** and use the television switches to include or exclude genres from that main mix. These private preferences survive catalog updates; direct genre streams and AI-assembled channels remain available. **All on** restores the default, including future channels. **All off** leaves the main mix empty. Choose a channel and **Tune in live**, or use **New mix & play** for a fresh shuffle starting now.
 
 For random episodes of one show, choose it in the **Stream** selector or open its library card and select **Shuffle this show**. Clear that selector back to **Any show** to mix the genre again. **Stories per show turn** chooses 1–3 before switching shows. Multipart stories stay together; smaller libraries keep receiving a turn instead of disappearing after their episode pool is exhausted.
 
 Rotation, selected show, shuffle seed and story count are saved with the catalog. The same catalog/settings produce the same schedule, so refreshing preserves the station clock and lineup. Press Play to rejoin after a refresh. **New mix & play** deliberately changes the seed and resets the clock. Choose **Episodes in order** to retain sequential rotation.
 
-Each show draws from shuffled story pools during the generated station cycle. The finite station schedule eventually loops, so repeats can occur at that overall loop boundary. This is browser-local scheduling, not a server-synchronized broadcast; differing catalogs/settings can have different lineups. Only checked sources with known runtimes enter continuous streams.
+St. Elsewhere, Hill Street Blues, NYPD Blue, Cagney & Lacey, China Beach, Northern Exposure, and Picket Fences retain catalog episode order during random rotation; which show receives the next turn still varies. Other shows draw from shuffled story pools during the generated station cycle. The finite station schedule eventually loops, so repeats can occur at that overall loop boundary. This is browser-local scheduling, not a server-synchronized broadcast; differing catalogs/settings can have different lineups. Only checked sources with known runtimes enter continuous streams.
 
 ## Watch
+
+In **SET UP**, **Progress bar** offers **On hover or click** (default), **Always visible**, or **Off**. The default reveals position and seeking on transport hover or keyboard focus; the **Position** button pins it open for touch use. The preference is saved on this browser and changing it keeps the current player intact. Provider-native controls are separate.
 
 **Fill window** expands the video and transport controls to the browser viewport. Use **Exit window** or Escape while the page has focus to return. It keeps the current player in place, so the presentation change does not recreate the video or YouTube iframe. Native/provider fullscreen remains available in the original player controls.
 

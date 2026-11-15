@@ -1,10 +1,10 @@
 import { MOVIE_SHOW_ID } from './collections.mjs';
-import { CHANNELS, SHOW_CHANNEL_IDS, migratedShowChannel } from './channels.mjs';
+import { CHANNELS, SHOW_CHANNEL_IDS, migratedShowChannel, mixIncludes, SERIAL_SHOW_IDS } from './channels.mjs';
 import { randomRotation, createCommercialBreak } from './shuffle.mjs';
 export const COMMERCIAL_SHOW_ID = 'vintage-commercials';
 export const STORAGE_KEY = 'drew-tv.catalog.v1';
 export const MAX_CATALOG_SHOWS = 256;
-export const MAX_CATALOG_EPISODES = 10_000;
+export const MAX_CATALOG_EPISODES = 20_000;
 export const MAX_IMPORT_BYTES = 8_000_000;
 const ID = /^[\w.-]{1,160}$/;
 const VIDEO = /^[\w-]{11}$/;
@@ -123,6 +123,8 @@ export function validateCatalog(raw) {
   const commercialCount = raw.settings.commercialCount ?? 1;
   const streamShow = raw.settings.streamShow ?? null;
   const streamShows = raw.settings.streamShows ?? null;
+  const mixChannels = raw.settings.mixChannels ?? null;
+  if(mixChannels!==null&&(!Array.isArray(mixChannels)||mixChannels.length>SHOW_CHANNEL_IDS.length||new Set(mixChannels).size!==mixChannels.length||mixChannels.some(id=>!SHOW_CHANNEL_IDS.includes(id))))fail('Choose valid distinct channels for the YATA mix.');
   if (streamShows !== null && (!Array.isArray(streamShows) || streamShows.length < 1 || streamShows.length > 12 || new Set(streamShows).size !== streamShows.length)) fail('Choose 1–12 distinct shows for a bespoke channel.');
   if (streamShows !== null) streamShows.forEach(id);
   if (!['random', 'ordered'].includes(rotation)) fail('Choose random or ordered rotation.');
@@ -144,7 +146,7 @@ export function validateCatalog(raw) {
       imdbUrl = `https://www.imdb.com${u.pathname}`;
     }
     const episodes = s.episodes.map(e => {
-      if (++count > MAX_CATALOG_EPISODES) fail('Catalog is limited to 10,000 episodes.');
+      if (++count > MAX_CATALOG_EPISODES) fail('Catalog is limited to 20,000 episodes.');
       const eid = id(e.id);
       if (episodeIds.has(eid)) fail('Duplicate episode ID.');
       episodeIds.add(eid);
@@ -167,8 +169,8 @@ export function validateCatalog(raw) {
     return { id: sid, title: text(s.title, 'show title'), channel: migratedShowChannel(sid, s.channel), imdbUrl, episodes };
   });
   // Preserve a legacy show-only stream when its curated show moves channels.
-  const migratedStream = streamShow !== null && raw.settings.channel === 'action' && raw.shows.find(show => show.id === streamShow)?.channel === 'action' && shows.find(show => show.id === streamShow)?.channel === 'scifi';
-  const channel = migratedStream ? 'scifi' : raw.settings.channel;
+  const migratedStream = streamShow !== null && raw.shows.find(show=>show.id===streamShow)?.channel===raw.settings.channel && shows.find(show=>show.id===streamShow)?.channel!==raw.settings.channel;
+  const channel = migratedStream ? shows.find(show=>show.id===streamShow).channel : raw.settings.channel;
   if (streamShows !== null && (streamShow !== null || channel !== 'mixed' || streamShows.some(sid => sid === COMMERCIAL_SHOW_ID || sid === MOVIE_SHOW_ID || !shows.some(show => show.id === sid)))) fail('Invalid bespoke channel selection.');
   if (streamShow === COMMERCIAL_SHOW_ID) fail('Choose a program show for the stream.');
   if (streamShow !== null && !shows.some(show => show.id === streamShow && (channel === 'mixed' || show.channel === channel))) fail('The selected stream show is not in this channel.');
@@ -184,7 +186,7 @@ export function validateCatalog(raw) {
     const sources = input.sources.map(entry=>({showId:id(entry.showId),url:parseSourceUrl(entry.url).url}));
     if (episodes.length || sources.length) exclusions = {episodes,sources};
   }
-  return { version: 1, epoch: raw.epoch, shows, ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}) } };
+  return { version: 1, epoch: raw.epoch, shows, ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}), ...(mixChannels!==null?{mixChannels:[...mixChannels]}:{}) } };
 }
 
 export function parseCatalogJson(input) {
@@ -225,7 +227,7 @@ export function stationSource(episode) {
 export function bumperPool(catalog, shows) {
   const ids = new Set(shows.map(show => show.id)); ids.add(COMMERCIAL_SHOW_ID);
   if(shows.some(show=>show.channel==='late-night'))ids.add('adult-swim-bumps');
-  if(shows.some(show=>show.channel==='cartoons'||['ycdtotv','turkey-tv','double-dare','out-control','salute-shorts','hey-dude','pete-pete'].includes(show.id)))ids.add('nickelodeon-bumps');
+  if(shows.some(show=>show.channel==='cartoons'||show.channel==='nick'||['ycdtotv','turkey-tv','double-dare','out-control','salute-shorts','hey-dude','pete-pete'].includes(show.id)))ids.add('nickelodeon-bumps');
   return catalog.shows.filter(show => ids.has(show.id)).flatMap(show => show.episodes
     .filter(episode => episode.kind === 'bumper' && parseDuration(episode.durationSeconds) !== null && stationSource(episode))
     .slice().sort((a, b) => a.season - b.season || a.number - b.number)
@@ -233,13 +235,13 @@ export function bumperPool(catalog, shows) {
 }
 
 export function buildSchedule(catalog, channel = catalog.settings.channel) {
-  const shows = catalog.shows.filter(s => (!catalog.settings.streamShows || catalog.settings.streamShows.includes(s.id)) && s.id !== COMMERCIAL_SHOW_ID && (s.id !== MOVIE_SHOW_ID || catalog.settings.streamShow === MOVIE_SHOW_ID) && (channel === 'mixed' || s.channel === channel) && (!catalog.settings.streamShow || s.id === catalog.settings.streamShow));
+  const shows = catalog.shows.filter(s => (!catalog.settings.streamShows || catalog.settings.streamShows.includes(s.id)) && s.id !== COMMERCIAL_SHOW_ID && (s.id !== MOVIE_SHOW_ID || catalog.settings.streamShow === MOVIE_SHOW_ID) && (channel === 'mixed' || s.channel === channel) && (channel!=='mixed'||catalog.settings.streamShow||catalog.settings.streamShows||mixIncludes(catalog.settings,s.channel)) && (!catalog.settings.streamShow || s.id === catalog.settings.streamShow));
   const eligible = e => parseDuration(e.durationSeconds) !== null && stationSource(e);
   const entries = s => s.episodes.filter(eligible).sort((a, b) => a.season - b.season || a.number - b.number)
     .map(episode => ({ show: s, episode, source: stationSource(episode), duration: episode.durationSeconds }));
   const queues = shows.map(s => entries(s).filter(e => e.episode.kind === 'episode'));
   const bumpers = bumperPool(catalog, shows);
-  if ((catalog.settings.rotation ?? 'random') === 'random') return randomRotation(queues, bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShows?.join(',') || catalog.settings.streamShow || 'all'}`, storiesPerTurn: catalog.settings.storiesPerTurn ?? 1, includeBumpers: catalog.settings.bumpers, commercialCount: catalog.settings.commercialCount ?? 1 });
+  if ((catalog.settings.rotation ?? 'random') === 'random') return randomRotation(queues, bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShows?.join(',') || catalog.settings.streamShow || 'all'}`, storiesPerTurn: catalog.settings.storiesPerTurn ?? 1, orderedShowIds: SERIAL_SHOW_IDS, includeBumpers: catalog.settings.bumpers, commercialCount: catalog.settings.commercialCount ?? 1 });
   const result = [];
   const nextBreak = createCommercialBreak(bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShows?.join(',') || catalog.settings.streamShow || 'all'}:ordered`, commercialCount: catalog.settings.commercialCount ?? 1, randomize: false });
   while (queues.some(q => q.length)) {

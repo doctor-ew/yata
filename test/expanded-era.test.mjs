@@ -7,7 +7,7 @@ import {buildSchedule,bumperPool} from '../src/domain.mjs';
 import {discoveryRows,extendLibraryCatalog,mergeLibraryBatch} from '../src/bulk.mjs';
 const load=async()=>JSON.parse(await readFile(new URL('../data/expanded-catalog.json',import.meta.url),'utf8'));
 test('expanded original-era programs use existing channels and retain source boundaries',async()=>{
- const c=await load();c.settings.bumpers=false;assert.equal(CHANNELS.length,7);
+ const c=await load();c.settings.bumpers=false;assert.equal(CHANNELS.length,9);
  for(const channel of new Set(EXPANDED_ERA_SHOWS.map(s=>s.channel))){const ids=new Set(buildSchedule(c,channel).map(e=>e.show.id));for(const s of EXPANDED_ERA_SHOWS.filter(s=>s.channel===channel)){assert.equal(c.shows.find(x=>x.id===s.id).channel,channel);assert.ok(ids.has(s.id),s.id);}}
  const get=id=>c.shows.find(s=>s.id===id).episodes;
  assert.equal(get('classic-doctor-who').length,70);assert.deepEqual([...new Set(get('classic-doctor-who').map(e=>e.season))],[7,8,12]);assert.ok(get('classic-doctor-who').every(e=>e.group));

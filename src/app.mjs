@@ -1,3 +1,5 @@
+import {mountMixControls} from './mix-controls.mjs';
+import {mountSeekVisibility} from './seek-visibility.mjs';
 import {mountChannelBuilder} from './channel-builder-ui.mjs';
 import {mountTvGuide} from './tv-guide-ui.mjs';
 import {guidePlayback} from './tv-guide.mjs';
@@ -48,6 +50,9 @@ const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'T
 const tiles = ['#5c6242', '#76513b', '#4d6152', '#755d36', '#665841', '#526044', '#704d3d', '#4f635a'];
 const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
 const dialFeedback = mountDialFeedback({ windowRef: window, storage, toggle: $('dial-feedback'), getVolume: () => transportState()?.volume ?? preferredAudio?.volume ?? 1, getMuted: () => transportState()?.muted ?? preferredAudio?.muted ?? false, pulse: () => retroEffects.pulse({ force: true }) });
+
+const mixControls=mountMixControls({root:$('mix-panel'),channels:CHANNELS,getSettings:()=>catalog.settings,onChange:async ids=>{const next=copyCatalog(),main=next.settings.channel==='mixed'&&!next.settings.streamShow&&!next.settings.streamShows,playing=transportState()?.paused===false;if(ids.length===CHANNELS.length-1)delete next.settings.mixChannels;else next.settings.mixChannels=ids;if(main)next.epoch=Date.now()/1000;if(await commitSettings(next)){if(main)stopPlayer();render();if(main&&playing)tuneLive();return true;}return false;}});
+mountSeekVisibility({transport:document.querySelector('.transport[aria-label="Video playback controls"]'),panel:$('seek-panel'),toggle:$('toggle-seek-panel'),select:$('seek-visibility'),storage});
 
 let guideJumpPending=location.hash==='#guide';
 const stationGuide=mountTvGuide({root:$('guide'),getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:selection=>playFromGuide(selection,true),onPlay:selection=>playFromGuide(selection,false)});
@@ -172,6 +177,7 @@ function episodeDetail(e, movie = false) {
 }
 
 function renderChannels() {
+  mixControls.sync();
   $('channels').replaceChildren(...CHANNELS.map(c => {
     const node = button('', async () => {
       const next = copyCatalog(); next.settings.channel = c.id; next.settings.streamShow = null; next.settings.streamShows = null;
@@ -196,7 +202,7 @@ function renderGuide() {
   const list = $('guide-list'); list.replaceChildren();
   $('tune-live').disabled = $('standby-play').disabled = !position;
   if (!position) {
-    list.append(element('p', ownerMode ? 'No checked episodes on this channel. Add a source or check an existing source in Library.' : 'No checked episodes on this channel. Browse Library for source links and wishlist shows.', 'empty'));
+    list.append(element('p', catalog.settings.channel==='mixed'&&!catalog.settings.streamShow&&!catalog.settings.streamShows&&catalog.settings.mixChannels?.length===0?'All channels in your YATA mix are off. Turn a switch on below.':ownerMode ? 'No checked episodes on this channel. Add a source or check an existing source in Library.' : 'No checked episodes on this channel. Browse Library for source links and wishlist shows.', 'empty'));
     $('rotation-note').textContent = 'Tubi links and YouTube playlists are available in the library, outside the live rotation.';
     if (!active) { $('playing-show').textContent = 'CHANNEL OFF AIR'; $('playing-title').textContent = 'No checked episodes.'; $('playing-detail').textContent = ownerMode ? 'Add an episode source.' : 'Try another channel or browse the Library.'; }
     return;
@@ -780,7 +786,7 @@ async function fetchLibrary() {
   if (!response.ok) throw Error('The expanded episode library is not ready yet.');
   const manifest = await response.json();
   if (typeof manifest.revision !== 'string' || !/^[a-z0-9.-]{1,100}$/.test(manifest.revision)) throw Error('Invalid library revision.');
-  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel', 'star-trek', 'retro-requests', 'saturday-adventure', 'expanded-era'].map(async provider => {
+  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel', 'star-trek', 'retro-requests', 'saturday-adventure', 'expanded-era', 'drama', 'channel-additions'].map(async provider => {
     const response = await fetch(`data/${provider}-discovery.json`);
     if (!response.ok) throw Error('A library source file could not be loaded. Your catalog is unchanged.');
     return response.json();
@@ -870,7 +876,7 @@ function renderStreamSettings() {
   const title = catalog.shows.find(show => show.id === catalog.settings.streamShow)?.title;
   $('stream-description').textContent = catalog.settings.rotation === 'random'
     ? title ? catalog.settings.streamShow === MOVIE_SHOW_ID ? 'Random feature films only. Movies stay out of ordinary TV mixes; each film plays before the pool repeats.' : `Random ${title} episodes, continuously. Each story plays before its pool repeats.`
-      : `Random episodes from random shows · ${catalog.settings.storiesPerTurn} ${catalog.settings.storiesPerTurn === 1 ? 'story' : 'stories'} per show turn. Smaller libraries keep their turn; multipart stories stay together.`
+      : `Random episodes from random shows · ${catalog.settings.storiesPerTurn} ${catalog.settings.storiesPerTurn === 1 ? 'story' : 'stories'} per show turn. Smaller libraries keep their turn; multipart stories stay together. Serialized dramas stay in episode order.`
     : `${title || 'All shows in this channel'} in episode order. Switch to random for a shuffled stream.`;
 }
 async function configureStream(patch, play = false) {

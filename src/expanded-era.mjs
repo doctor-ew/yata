@@ -93,7 +93,7 @@ export const EXPANDED_ERA_SHOWS = [
   {
     "id": "cities-gold",
     "title": "The Mysterious Cities of Gold",
-    "channel": "cartoons"
+    "channel": "nick"
   },
   {
     "id": "sapphire-steel",
@@ -198,7 +198,7 @@ export const EXPANDED_ERA_SHOWS = [
   {
     "id": "miami-vice",
     "title": "Miami Vice",
-    "channel": "action"
+    "channel": "drama"
   },
   {
     "id": "beans-baxter",
@@ -283,37 +283,37 @@ export const EXPANDED_ERA_SHOWS = [
   {
     "id": "danger-mouse",
     "title": "Danger Mouse",
-    "channel": "cartoons"
+    "channel": "nick"
   },
   {
     "id": "count-duckula",
     "title": "Count Duckula",
-    "channel": "cartoons"
+    "channel": "nick"
   },
   {
     "id": "double-dare",
     "title": "Double Dare",
-    "channel": "comedy"
+    "channel": "nick"
   },
   {
     "id": "out-control",
     "title": "Out of Control",
-    "channel": "comedy"
+    "channel": "nick"
   },
   {
     "id": "salute-shorts",
     "title": "Salute Your Shorts",
-    "channel": "comedy"
+    "channel": "nick"
   },
   {
     "id": "hey-dude",
     "title": "Hey Dude",
-    "channel": "comedy"
+    "channel": "nick"
   },
   {
     "id": "pete-pete",
     "title": "The Adventures of Pete and Pete",
-    "channel": "comedy"
+    "channel": "nick"
   },
   {
     "id": "space-sentinels",

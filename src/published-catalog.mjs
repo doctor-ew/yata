@@ -1,4 +1,5 @@
 import { validateCatalog, MAX_IMPORT_BYTES, MAX_CATALOG_SHOWS, MAX_CATALOG_EPISODES } from "./domain.mjs";
+import { migratedShowChannel } from "./channels.mjs";
 export const PUBLISHED_MANIFEST_PATH = "data/published-catalog-manifest.json";
 const REVISION = /^[a-f0-9]{64}$/;
 export function catalogCounts(catalog) {
@@ -122,6 +123,7 @@ export function mergePublishedCatalog(master, previous) {
     "shuffleSeed",
     "storiesPerTurn",
     "commercialCount",
+    "mixChannels",
   ]) {
     if (!Object.hasOwn(previous.settings, key)) continue;
     try {
@@ -139,6 +141,8 @@ export function mergePublishedCatalog(master, previous) {
     try { if (surviving.length) next.settings = validateCatalog({...next, settings:{...next.settings, streamShow:null,streamShows:surviving}}).settings; } catch { /* Invalid personal selections cannot change the master. */ }
   }
   const selected = next.settings.streamShows ? null : previous.settings.streamShow;
+  const moved=next.shows.find(show=>show.id===selected);
+  if (moved && previous.settings.channel !== 'mixed' && migratedShowChannel(selected, previous.settings.channel) === moved.channel) next.settings.channel = moved.channel;
   if (
     selected !== null &&
     typeof selected === "string" &&

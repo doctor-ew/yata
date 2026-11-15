@@ -1,0 +1,4881 @@
+{
+  "checkedAt": "2026-11-15T19:40:16.848Z",
+  "provider": "archive",
+  "notes": [
+    "Small HTTP range checks establish endpoint availability, not complete-file playback."
+  ],
+  "excluded": [],
+  "shows": [
+    {
+      "showId": "st-elsewhere",
+      "title": "St. Elsewhere (1982)",
+      "channel": "drama",
+      "items": [
+        {
+          "itemId": "st.-elsewhere",
+          "title": "St. Elsewhere (1982–88) medical drama -185 eps",
+          "metadataUrl": "https://archive.org/metadata/st.-elsewhere"
+        }
+      ],
+      "notes": "Original source collection across six season folders. Source season and episode labels are retained; counts do not establish completeness.",
+      "episodes": [
+        {
+          "id": "archive-st.-elsewhere-4",
+          "title": "St  Elsewhere S1E001 Pilot",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 2955.75,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E001%20Pilot.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-5",
+          "title": "St  Elsewhere S1E002 Bypass",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 2959.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E002%20Bypass.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-6",
+          "title": "St  Elsewhere S1E003 Downs Syndrome",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 2958.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E003%20Downs%20Syndrome.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-7",
+          "title": "St  Elsewhere S1E004 Cora and Arnie",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 2963.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E004%20Cora%20and%20Arnie.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-8",
+          "title": "St  Elsewhere S1E005 Samuels and the Kid",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 2924.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E005%20Samuels%20and%20the%20Kid.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-9",
+          "title": "St  Elsewhere S1E006 Legionnaires Part 1",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 2956.08,
+          "group": "st-elsewhere:1:St Elsewhere Legionnaires",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E006%20Legionnaires%20Part%201.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-10",
+          "title": "St  Elsewhere S1E007 Legionnaires Part 2",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 2958.88,
+          "group": "st-elsewhere:1:St Elsewhere Legionnaires",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E007%20Legionnaires%20Part%202.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-11",
+          "title": "St  Elsewhere S1E008 Tweety and Ralph",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 2944.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E008%20Tweety%20and%20Ralph.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-12",
+          "title": "St  Elsewhere S1E009 Rain",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 2928.43,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E009%20Rain.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-13",
+          "title": "St  Elsewhere S1E010 Hearts",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 2944.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E010%20Hearts.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-14",
+          "title": "St  Elsewhere S1E011 Graveyard",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 2958.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E011%20Graveyard.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-15",
+          "title": "St  Elsewhere S1E012 Release",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 2957.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E012%20Release.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-16",
+          "title": "St  Elsewhere S1E013 Family History",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 2945.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E013%20Family%20History.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-17",
+          "title": "St  Elsewhere S1E014 Remission",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 2956.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E014%20Remission.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-18",
+          "title": "St  Elsewhere S1E015 Monday, Tuesday, Svens day",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 2935.63,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E015%20Monday%2C%20Tuesday%2C%20Svens%20day.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-19",
+          "title": "St  Elsewhere S1E016 The Count",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 2954.62,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E016%20The%20Count.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-20",
+          "title": "St  Elsewhere S1E017 Brothers",
+          "season": 1,
+          "number": 17,
+          "durationSeconds": 2954.62,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E017%20Brothers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-21",
+          "title": "St  Elsewhere S1E018 Dog Day Hospital",
+          "season": 1,
+          "number": 18,
+          "durationSeconds": 2925.62,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E018%20Dog%20Day%20Hospital.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-22",
+          "title": "St  Elsewhere S1E019 Working",
+          "season": 1,
+          "number": 19,
+          "durationSeconds": 2955.61,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-22",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E019%20Working.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-23",
+          "title": "St  Elsewhere S1E020 Craig in Love",
+          "season": 1,
+          "number": 20,
+          "durationSeconds": 2954.62,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-23",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E020%20Craig%20in%20Love.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-24",
+          "title": "St  Elsewhere S1E021 Baron von Munchausen",
+          "season": 1,
+          "number": 21,
+          "durationSeconds": 2954.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-24",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E021%20Baron%20von%20Munchausen.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-25",
+          "title": "St  Elsewhere S1E022 Addiction",
+          "season": 1,
+          "number": 22,
+          "durationSeconds": 2955.61,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-25",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%201%20-%2022%20eps/St.%20Elsewhere%20S1E022%20Addiction.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-26",
+          "title": "St  Elsewhere S2E001 Ties That Bind",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 2858.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-26",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E001%20Ties%20That%20Bind.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-27",
+          "title": "St  Elsewhere S2E002 Lust Et Veritas",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 2867.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-27",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E002%20Lust%20Et%20Veritas.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-28",
+          "title": "St  Elsewhere S2E003 Newheart",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 2865.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-28",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E003%20Newheart.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-29",
+          "title": "St  Elsewhere S2E004 Qui Transtulit Sustinet",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 2746.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-29",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E004%20Qui%20Transtulit%20Sustinet.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-30",
+          "title": "St  Elsewhere S2E005 A Wing and a Prayer",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 2876.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-30",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E005%20A%20Wing%20and%20a%20Prayer.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-31",
+          "title": "St  Elsewhere S2E006 Under Pressure",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 2898.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-31",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E006%20Under%20Pressure.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-32",
+          "title": "St  Elsewhere S2E007 Entrapment",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 2868.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-32",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E007%20Entrapment.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-33",
+          "title": "St  Elsewhere S2E008 All About Eve mp4",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 2867.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-33",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E008%20All%20About%20Eve.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-34",
+          "title": "St  Elsewhere S2E009 AIDS and Comfort mp4",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 2753.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-34",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E009%20AIDS%20and%20Comfort.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-35",
+          "title": "St  Elsewhere S2E010 A Pig Too Far mp4",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 2885.92,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-35",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E010%20A%20Pig%20Too%20Far.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-36",
+          "title": "St  Elsewhere S2E011 Blizzard  438659945_mp4_h264_aac_ld",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 2871.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-36",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E011%20Blizzard%20%20438659945_mp4_h264_aac_ld.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-37",
+          "title": "St  Elsewhere S2E012 Hearing mp4",
+          "season": 2,
+          "number": 12,
+          "durationSeconds": 2869.92,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-37",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E012%20Hearing.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-38",
+          "title": "St  Elsewhere S2E013 In Sickness and Health mp4",
+          "season": 2,
+          "number": 13,
+          "durationSeconds": 2901.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-38",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E013%20In%20Sickness%20and%20Health.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-39",
+          "title": "St  Elsewhere S2E014 Drama Centre",
+          "season": 2,
+          "number": 14,
+          "durationSeconds": 2680.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-39",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E014%20Drama%20Centre.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-40",
+          "title": "St  Elsewhere S2E015 Attack",
+          "season": 2,
+          "number": 15,
+          "durationSeconds": 2857.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-40",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E015%20Attack.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-41",
+          "title": "St  Elsewhere S2E016 After Dark",
+          "season": 2,
+          "number": 16,
+          "durationSeconds": 2835.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-41",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E016%20After%20Dark.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-42",
+          "title": "St  Elsewhere S2E017 Vanity",
+          "season": 2,
+          "number": 17,
+          "durationSeconds": 2872.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-42",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E017%20Vanity.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-43",
+          "title": "St  Elsewhere S2E018 Equinox",
+          "season": 2,
+          "number": 18,
+          "durationSeconds": 2868.81,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-43",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E018%20Equinox.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-44",
+          "title": "St  Elsewhere S2E019 The Women",
+          "season": 2,
+          "number": 19,
+          "durationSeconds": 2897.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-44",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E019%20The%20Women.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-45",
+          "title": "St  Elsewhere S2E020 Cramming",
+          "season": 2,
+          "number": 20,
+          "durationSeconds": 2849.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-45",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E020%20Cramming.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-46",
+          "title": "St  Elsewhere S2E021 Rough Cut",
+          "season": 2,
+          "number": 21,
+          "durationSeconds": 2862.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-46",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E021%20Rough%20Cut.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-47",
+          "title": "St  Elsewhere S2E022 Hello, Goodbye",
+          "season": 2,
+          "number": 22,
+          "durationSeconds": 2900.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-47",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%202%20-%2022%20eps/St.%20Elsewhere%20S2E022%20Hello%2C%20Goodbye.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-48",
+          "title": "St  Elsewhere S3E001 Playing God Part 1",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 2730.1,
+          "group": "st-elsewhere:3:St Elsewhere Playing God",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-48",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E001%20Playing%20God%20Part%201.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-49",
+          "title": "St  Elsewhere S3E002 Playing God Part 2",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 2794.1,
+          "group": "st-elsewhere:3:St Elsewhere Playing God",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-49",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E002%20Playing%20God%20Part%202.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-50",
+          "title": "St  Elsewhere S3E003 Two Balls and a Strike",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 2714.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-50",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E003%20Two%20Balls%20and%20a%20Strike.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-51",
+          "title": "St  Elsewhere S3E004 Strike Out",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 2712.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-51",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E004%20Strike%20Out.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-52",
+          "title": "St  Elsewhere S3E005 Breathless",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 2735.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-52",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E005%20Breathless.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-53",
+          "title": "St  Elsewhere S3E006 My Aim Is True",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 2779.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-53",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E006%20My%20Aim%20Is%20True.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-54",
+          "title": "St  Elsewhere S3E007 Fade to White",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 2720.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-54",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E007%20Fade%20to%20White.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-55",
+          "title": "St  Elsewhere S3E008 Sweet Dreams",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 2767.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-55",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E008%20Sweet%20Dreams.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-56",
+          "title": "St  Elsewhere S3E009 Up on the Roof",
+          "season": 3,
+          "number": 9,
+          "durationSeconds": 2794.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-56",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E009%20Up%20on%20the%20Roof.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-57",
+          "title": "St  Elsewhere S3E010 Girls Just Want to Have Fun",
+          "season": 3,
+          "number": 10,
+          "durationSeconds": 2794.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-57",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E010%20Girls%20Just%20Want%20to%20Have%20Fun.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-58",
+          "title": "St  Elsewhere S3E011 Homecoming",
+          "season": 3,
+          "number": 11,
+          "durationSeconds": 2738.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-58",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E011%20Homecoming.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-59",
+          "title": "St  Elsewhere S3E012 The Children's Hour",
+          "season": 3,
+          "number": 12,
+          "durationSeconds": 2681.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-59",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E012%20The%20Children's%20Hour.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-60",
+          "title": "St  Elsewhere S3E013 Dr  Wyler I Presume",
+          "season": 3,
+          "number": 13,
+          "durationSeconds": 2673.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-60",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E013%20Dr.%20Wyler%20I%20Presume.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-61",
+          "title": "St  Elsewhere S3E014 Whistle Wylie Works",
+          "season": 3,
+          "number": 14,
+          "durationSeconds": 2672.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-61",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E014%20Whistle%20Wylie%20Works.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-62",
+          "title": "St  Elsewhere S3E015 Bye George",
+          "season": 3,
+          "number": 15,
+          "durationSeconds": 2726.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-62",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E015%20Bye%20George.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-63",
+          "title": "St  Elsewhere S3E016 Saving Face",
+          "season": 3,
+          "number": 16,
+          "durationSeconds": 2713.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-63",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E016%20Saving%20Face.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-64",
+          "title": "St  Elsewhere S3E017 Give the Boy a Hand",
+          "season": 3,
+          "number": 17,
+          "durationSeconds": 2654.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-64",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E017%20Give%20the%20Boy%20a%20Hand.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-65",
+          "title": "St  Elsewhere S3E018 Any Portrait in a Storm",
+          "season": 3,
+          "number": 18,
+          "durationSeconds": 2702.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-65",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E018%20Any%20Portrait%20in%20a%20Storm.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-66",
+          "title": "St  Elsewhere S3E019 Red White Black and Blue",
+          "season": 3,
+          "number": 19,
+          "durationSeconds": 2712.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-66",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E019%20Red%20White%20Black%20and%20Blue.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-67",
+          "title": "St  Elsewhere S3E020 Amazing Face",
+          "season": 3,
+          "number": 20,
+          "durationSeconds": 2721.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-67",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E020%20Amazing%20Face.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-68",
+          "title": "St  Elsewhere S3E021 Murder She Rote",
+          "season": 3,
+          "number": 21,
+          "durationSeconds": 2781.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-68",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E021%20Murder%20She%20Rote.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-69",
+          "title": "St  Elsewhere S3E022 Tears of a Clown",
+          "season": 3,
+          "number": 22,
+          "durationSeconds": 2739.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-69",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E022%20Tears%20of%20a%20Clown.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-70",
+          "title": "St  Elsewhere S3E023 Beat the Eardrum Slowly",
+          "season": 3,
+          "number": 23,
+          "durationSeconds": 2739.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-70",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3E023%20Beat%20the%20Eardrum%20Slowly.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-71",
+          "title": "St  Elsewhere S3e024 Cheers",
+          "season": 3,
+          "number": 24,
+          "durationSeconds": 2723.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-71",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%203%20-%2024%20eps/St.%20Elsewhere%20S3e024%20Cheers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-72",
+          "title": "St  Elsewhere  S4e001 Remembrance Of Things Past",
+          "season": 4,
+          "number": 1,
+          "durationSeconds": 2791.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-72",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e001%20Remembrance%20Of%20Things%20Past.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-73",
+          "title": "St  Elsewhere  S4e002 Fathers And Sons",
+          "season": 4,
+          "number": 2,
+          "durationSeconds": 2794.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-73",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e002%20Fathers%20And%20Sons.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-74",
+          "title": "St  Elsewhere  S4e003 Haunted",
+          "season": 4,
+          "number": 3,
+          "durationSeconds": 2795.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-74",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e003%20Haunted.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-75",
+          "title": "St  Elsewhere  S4e004 The Naked And The Dead",
+          "season": 4,
+          "number": 4,
+          "durationSeconds": 2640.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-75",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e004%20The%20Naked%20And%20The%20Dead.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-76",
+          "title": "St  Elsewhere  S4e005 Slice O  Life - youtube",
+          "season": 4,
+          "number": 5,
+          "durationSeconds": 3142.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-76",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e005%20Slice%20O%20%20Life%20-%20youtube.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-77",
+          "title": "St  Elsewhere  S4e006 Lost And Found In Space",
+          "season": 4,
+          "number": 6,
+          "durationSeconds": 2717.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-77",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e006%20Lost.And%20Found%20In%20Space.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-78",
+          "title": "St  Elsewhere  S4e007 Close Encounters",
+          "season": 4,
+          "number": 7,
+          "durationSeconds": 2759.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-78",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e007%20Close%20Encounters.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-79",
+          "title": "St  Elsewhere  S4e008 Watch The Skies",
+          "season": 4,
+          "number": 8,
+          "durationSeconds": 2763.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-79",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e008%20Watch%20The%20Skies.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-80",
+          "title": "St  Elsewhere  S4e009 Sanctuary",
+          "season": 4,
+          "number": 9,
+          "durationSeconds": 2799.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-80",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e009%20Sanctuary.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-81",
+          "title": "St  Elsewhere  S4e010 Loss Of Power",
+          "season": 4,
+          "number": 10,
+          "durationSeconds": 2800.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-81",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e010%20Loss%20Of%20Power.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-82",
+          "title": "St  Elsewhere  S4e011 Santa Claus Is Dead",
+          "season": 4,
+          "number": 11,
+          "durationSeconds": 2791.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-82",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e011%20Santa%20Claus%20Is%20Dead.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-83",
+          "title": "St  Elsewhere  S4e012 The Boom Boom Womb",
+          "season": 4,
+          "number": 12,
+          "durationSeconds": 2714.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-83",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e012%20The%20Boom%20Boom%20Womb.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-84",
+          "title": "St  Elsewhere  S4e013 To Tell The Truth",
+          "season": 4,
+          "number": 13,
+          "durationSeconds": 2789.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-84",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e013%20To%20Tell%20The%20Truth.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-85",
+          "title": "St  Elsewhere  S4e014 Family Ties",
+          "season": 4,
+          "number": 14,
+          "durationSeconds": 2782.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-85",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e014%20Family%20Ties.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-86",
+          "title": "St  Elsewhere  S4e015 Family Feud",
+          "season": 4,
+          "number": 15,
+          "durationSeconds": 2696.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-86",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e015%20Family%20Feud.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-87",
+          "title": "St  Elsewhere  S4e016 Family Affairs",
+          "season": 4,
+          "number": 16,
+          "durationSeconds": 2622.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-87",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e016%20Family%20Affairs.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-88",
+          "title": "St  Elsewhere  S4e017 Time Heals Part 1",
+          "season": 4,
+          "number": 17,
+          "durationSeconds": 2745.12,
+          "group": "st-elsewhere:4:St Elsewhere Time Heals",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-88",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e017%20Time%20Heals%20Part%201.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-89",
+          "title": "St  Elsewhere  S4e018 Time Heals Part 2",
+          "season": 4,
+          "number": 18,
+          "durationSeconds": 2735.13,
+          "group": "st-elsewhere:4:St Elsewhere Time Heals",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-89",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e018%20Time%20Heals%20Part%202.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-90",
+          "title": "St  Elsewhere  S4e019 Out On A Limb",
+          "season": 4,
+          "number": 19,
+          "durationSeconds": 2762.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-90",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e019%20Out%20On%20A%20Limb.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-91",
+          "title": "St  Elsewhere  S4e020 Come Home Oh Sapien",
+          "season": 4,
+          "number": 20,
+          "durationSeconds": 2751.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-91",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e020%20Come%20Home%20Oh%20Sapien.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-92",
+          "title": "St  Elsewhere  S4e021 Cheek To Cheek -youtube bad copy",
+          "season": 4,
+          "number": 21,
+          "durationSeconds": 3161.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-92",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e021%20Cheek%20To%20Cheek%20-youtube%20bad%20copy.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-93",
+          "title": "St  Elsewhere  S4e022 Black's Magic",
+          "season": 4,
+          "number": 22,
+          "durationSeconds": 2738.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-93",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e022%20Black's%20Magic.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-94",
+          "title": "St  Elsewhere  S4e023 The Equalizer",
+          "season": 4,
+          "number": 23,
+          "durationSeconds": 2787.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-94",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e023%20The%20Equalizer.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-95",
+          "title": "St  Elsewhere  S4e024 Er",
+          "season": 4,
+          "number": 24,
+          "durationSeconds": 2740.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-95",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%204%20-%2024%20eps%20ft%20Mark%20Harmon/St.%20Elsewhere%20%20S4e024.Er.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-96",
+          "title": "St  Elsewhere  S5e001 Where There's Hope There's Crosby",
+          "season": 5,
+          "number": 1,
+          "durationSeconds": 2765.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-96",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e001%20Where%20There's%20Hope%20There's%20Crosby.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-97",
+          "title": "St  Elsewhere  S5e002 When You Wish Upon A Scar",
+          "season": 5,
+          "number": 2,
+          "durationSeconds": 2787.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-97",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e002%20When%20You%20Wish%20Upon%20A%20Scar.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-98",
+          "title": "St  Elsewhere  S5e003 A Room With A View",
+          "season": 5,
+          "number": 3,
+          "durationSeconds": 2761.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-98",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e003%20A%20Room%20With%20A%20View.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-99",
+          "title": "St  Elsewhere  S5e004 Brand New Bag",
+          "season": 5,
+          "number": 4,
+          "durationSeconds": 2791.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-99",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e004%20Brand%20New%20Bag.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-100",
+          "title": "St  Elsewhere  S5e005 You Beta Your Life",
+          "season": 5,
+          "number": 5,
+          "durationSeconds": 2757.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-100",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e005%20You%20Beta%20Your%20Life.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-101",
+          "title": "St  Elsewhere  S5e006 Not My Type",
+          "season": 5,
+          "number": 6,
+          "durationSeconds": 2739.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-101",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e006%20Not%20My%20Type.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-102",
+          "title": "St  Elsewhere  S5e007 Up And Down",
+          "season": 5,
+          "number": 7,
+          "durationSeconds": 2799.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-102",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e007%20Up%20And%20Down.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-103",
+          "title": "St  Elsewhere  S5e008 Nothing Up My Sleeve",
+          "season": 5,
+          "number": 8,
+          "durationSeconds": 2741.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-103",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e008%20Nothing%20Up%20My%20Sleeve.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-104",
+          "title": "St  Elsewhere  S5e009 Afterlife",
+          "season": 5,
+          "number": 9,
+          "durationSeconds": 2779.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-104",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e009%20Afterlife.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-105",
+          "title": "St  Elsewhere  S5e010 Once Upon A Mattress",
+          "season": 5,
+          "number": 10,
+          "durationSeconds": 2773.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-105",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e010%20Once%20Upon%20A%20Mattress.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-106",
+          "title": "St  Elsewhere  S5e011 Lost Weekend",
+          "season": 5,
+          "number": 11,
+          "durationSeconds": 2727.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-106",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e011%20Lost.Weekend.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-107",
+          "title": "St  Elsewhere  S5e012 Cold War",
+          "season": 5,
+          "number": 12,
+          "durationSeconds": 2794.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-107",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e012%20Cold%20War.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-108",
+          "title": "St  Elsewhere  S5e013 Russian Roulette",
+          "season": 5,
+          "number": 13,
+          "durationSeconds": 2788.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-108",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e013%20Russian%20Roulette.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-109",
+          "title": "St  Elsewhere  S5e014 Visiting Daze",
+          "season": 5,
+          "number": 14,
+          "durationSeconds": 2792.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-109",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e014%20Visiting%20Daze.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-110",
+          "title": "St  Elsewhere  S5e015 Getting Ahead",
+          "season": 5,
+          "number": 15,
+          "durationSeconds": 2794.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-110",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e015%20Getting%20Ahead.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-111",
+          "title": "St  Elsewhere  S5e016 Jose Can You See",
+          "season": 5,
+          "number": 16,
+          "durationSeconds": 2752.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-111",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e016%20Jose%20Can%20You%20See.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-112",
+          "title": "St  Elsewhere  S5e017 Schwarzwald",
+          "season": 5,
+          "number": 17,
+          "durationSeconds": 2780.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-112",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e017%20Schwarzwald.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-113",
+          "title": "St  Elsewhere  S5e018 You Again",
+          "season": 5,
+          "number": 18,
+          "durationSeconds": 2634.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-113",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e018%20You%20Again.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-114",
+          "title": "St  Elsewhere  S5e019 Rites Of Passage",
+          "season": 5,
+          "number": 19,
+          "durationSeconds": 2784.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-114",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e019%20Rites%20Of%20Passage.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-115",
+          "title": "St  Elsewhere  S5e020 Woman Unchained",
+          "season": 5,
+          "number": 20,
+          "durationSeconds": 2790.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-115",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e020%20Woman%20Unchained.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-116",
+          "title": "St  Elsewhere  S5e021 Good Vibrations - i think",
+          "season": 5,
+          "number": 21,
+          "durationSeconds": 2705.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-116",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e021%20Good%20Vibrations%20-%20i%20think.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-117",
+          "title": "St  Elsewhere  S5e022 Slip Sliding Away",
+          "season": 5,
+          "number": 22,
+          "durationSeconds": 2753.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-117",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e022%20Slip%20Sliding%20Away.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-118",
+          "title": "St  Elsewhere  S5e023 Last Dance At The Wrecker's Ball",
+          "season": 5,
+          "number": 23,
+          "durationSeconds": 2739.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-118",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%205%20-%2023%20eps/St.%20Elsewhere%20%20S5e023%20Last%20Dance%20At%20The%20Wrecker's%20Ball.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-119",
+          "title": "St  Elsewhere  S6e001 Resurrection",
+          "season": 6,
+          "number": 1,
+          "durationSeconds": 2923.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-119",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e001%20Resurrection.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-120",
+          "title": "St  Elsewhere  S6e002 The Idiot And The Odyssey",
+          "season": 6,
+          "number": 2,
+          "durationSeconds": 2920.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-120",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e002%20The%20Idiot%20And%20The%20Odyssey.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-121",
+          "title": "St  Elsewhere  S6e003 A Moon For The Misbegotten",
+          "season": 6,
+          "number": 3,
+          "durationSeconds": 2916.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-121",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e003%20A%20Moon%20For%20The%20Misbegotten.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-122",
+          "title": "St  Elsewhere  S6e004 Ewe Can't Go Home Again",
+          "season": 6,
+          "number": 4,
+          "durationSeconds": 2877.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-122",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e004%20Ewe%20Can't%20Go%20Home%20Again.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-123",
+          "title": "St  Elsewhere  S6e005 Night Of The Living Bed (halloween",
+          "season": 6,
+          "number": 5,
+          "durationSeconds": 2908.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-123",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e005%20Night%20Of%20The%20Living%20Bed%20(halloween.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-124",
+          "title": "St  Elsewhere  S6e006 The He-Man Woman-Haters Club",
+          "season": 6,
+          "number": 6,
+          "durationSeconds": 2903.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-124",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e006%20The%20He-Man%20Woman-Haters%20Club.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-125",
+          "title": "St  Elsewhere  S6e007 Handoff",
+          "season": 6,
+          "number": 7,
+          "durationSeconds": 2898.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-125",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e007%20Handoff.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-126",
+          "title": "St  Elsewhere  S6e008 Heart On",
+          "season": 6,
+          "number": 8,
+          "durationSeconds": 2901.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-126",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e008%20Heart%20On.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-127",
+          "title": "St  Elsewhere  S6e009 Weigh In Way Out",
+          "season": 6,
+          "number": 9,
+          "durationSeconds": 2907.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-127",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e009%20Weigh%20In%20Way%20Out.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-128",
+          "title": "St  Elsewhere  S6e010 No Chemo Sabe",
+          "season": 6,
+          "number": 10,
+          "durationSeconds": 2908.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-128",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e010%20No%20Chemo%20Sabe.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-129",
+          "title": "St  Elsewhere  S6e011 A Coupla White Dummies Sitting Around Talking (santa christmas)",
+          "season": 6,
+          "number": 11,
+          "durationSeconds": 2906.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-129",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e011%20A%20Coupla%20White%20Dummies%20Sitting%20Around%20Talking%20(santa%20christmas).mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-130",
+          "title": "St  Elsewhere  S6e012 Final Cut",
+          "season": 6,
+          "number": 12,
+          "durationSeconds": 2903.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-130",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e012%20Final%20Cut.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-131",
+          "title": "St  Elsewhere  S6e013 Heaven's Skate",
+          "season": 6,
+          "number": 13,
+          "durationSeconds": 2913.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-131",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e013%20Heaven's%20Skate.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-132",
+          "title": "St  Elsewhere  S6e014 Curtains",
+          "season": 6,
+          "number": 14,
+          "durationSeconds": 2891.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-132",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e014%20Curtains.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-133",
+          "title": "St  Elsewhere  S6e015 Fairytale Theatre",
+          "season": 6,
+          "number": 15,
+          "durationSeconds": 2910.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-133",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e015%20Fairytale%20Theatre.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-134",
+          "title": "St  Elsewhere  S6e016 Down And Out On Beacon Hill",
+          "season": 6,
+          "number": 16,
+          "durationSeconds": 2903.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-134",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e016%20Down%20And%20Out%20On%20Beacon%20Hill.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-135",
+          "title": "St  Elsewhere  S6e017 Their Town",
+          "season": 6,
+          "number": 17,
+          "durationSeconds": 2907.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-135",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e017%20Their%20Town.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-136",
+          "title": "St  Elsewhere  S6e018 The Naked Civil Surgeon",
+          "season": 6,
+          "number": 18,
+          "durationSeconds": 2910.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-136",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e018%20The%20Naked%20Civil%20Surgeon.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-137",
+          "title": "St  Elsewhere  S6e019 Requiem For A Heavyweight",
+          "season": 6,
+          "number": 19,
+          "durationSeconds": 2907.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-137",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e019%20Requiem%20For%20A%20Heavyweight.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-138",
+          "title": "St  Elsewhere  S6e020 Split Decision",
+          "season": 6,
+          "number": 20,
+          "durationSeconds": 2911.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-138",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e020%20Split%20Decision.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-139",
+          "title": "St  Elsewhere  S6e021 The Abby Singer Show",
+          "season": 6,
+          "number": 21,
+          "durationSeconds": 2912.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-139",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e021%20The%20Abby%20Singer%20Show.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-st.-elsewhere-140",
+          "title": "St  Elsewhere  S6e022 The Last One",
+          "season": 6,
+          "number": 22,
+          "durationSeconds": 2911.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-140",
+              "provider": "archive",
+              "url": "https://archive.org/download/st.-elsewhere/Season%206%20-%2022%20eps/St.%20Elsewhere%20%20S6e022%20The%20Last.One.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "hill-street-blues",
+      "title": "Hill Street Blues (1981)",
+      "channel": "drama",
+      "items": [
+        {
+          "itemId": "hill.-street.-blues.-s-01",
+          "title": "Hill Street Blues Season 1",
+          "metadataUrl": "https://archive.org/metadata/hill.-street.-blues.-s-01"
+        },
+        {
+          "itemId": "hill.-street.-blues.-season-2",
+          "title": "Hill Street Blues Season 2",
+          "metadataUrl": "https://archive.org/metadata/hill.-street.-blues.-season-2"
+        },
+        {
+          "itemId": "hill.street.blues.s-03",
+          "title": "Hill street blues Season 3",
+          "metadataUrl": "https://archive.org/metadata/hill.street.blues.s-03"
+        },
+        {
+          "itemId": "hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264",
+          "title": "Hill street blues season 4",
+          "metadataUrl": "https://archive.org/metadata/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264"
+        },
+        {
+          "itemId": "hill.street.blues.s-05",
+          "title": "Hill street blues Season 5",
+          "metadataUrl": "https://archive.org/metadata/hill.street.blues.s-05"
+        },
+        {
+          "itemId": "hill.street.blues.s-06",
+          "title": "Hill street blues Season 6",
+          "metadataUrl": "https://archive.org/metadata/hill.street.blues.s-06"
+        },
+        {
+          "itemId": "hill.street.blues.s-07",
+          "title": "Hill Street Blues Season 7",
+          "metadataUrl": "https://archive.org/metadata/hill.street.blues.s-07"
+        }
+      ],
+      "notes": "Original series across seven source season collections. Counts are available source programs, not a completeness guarantee.",
+      "episodes": [
+        {
+          "id": "archive-hill.-street.-blues.-s-01-0",
+          "title": "Hill Street Blues S01E01 Hill Street Station Pilot",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 2949.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E01.Hill.Street.Station.Pilot.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-1",
+          "title": "Hill Street Blues S01E02 Presidential Fever",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 2956.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E02.Presidential.Fever.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-2",
+          "title": "Hill Street Blues S01E03 Politics As Usual",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 2946.73,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E03.Politics.As.Usual.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-3",
+          "title": "Hill Street Blues S01E04 Can World War III Be An Attitude",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 2934.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E04.Can.World.War.III.Be.An.Attitude.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-4",
+          "title": "Hill Street Blues S01E05 Double Jeopardy",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 2948.59,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E05.Double.Jeopardy.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-5",
+          "title": "Hill Street Blues S01E06 Film At Eleven",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 2936.51,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E06.Film.At.Eleven.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-6",
+          "title": "Hill Street Blues S01E07 Choice Cut",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 2948.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E07.Choice.Cut.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-7",
+          "title": "Hill Street Blues S01E08 Up In Arms",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 2901.55,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E08.Up.In.Arms.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-8",
+          "title": "Hill Street Blues S01E09 Your Kind My Kind Humankind",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 2915.44,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E09.Your.Kind.My.Kind.Humankind.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-9",
+          "title": "Hill Street Blues S01E10 Gatorbait",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 2918.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E10.Gatorbait.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-10",
+          "title": "Hill Street Blues S01E11 Life Death Eternity",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 2919.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E11.Life.Death.Eternity.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-11",
+          "title": "Hill Street Blues S01E12 I Never Promised You A Rose Marvin",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 2891,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E12.I.Never.Promised.You.A.Rose.Marvin.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-12",
+          "title": "Hill Street Blues S01E13 Fecund Hand Rose",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 2887.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E13.Fecund.Hand.Rose.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-13",
+          "title": "Hill Street Blues S01E14 Rites Of Spring Part 1",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 2866.48,
+          "group": "hill-street-blues:1:Hill Street Blues Rites Of Spring",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E14.Rites.Of.Spring.Part.1.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-14",
+          "title": "Hill Street Blues S01E15 Rites Of Spring Part 2",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 2808.67,
+          "group": "hill-street-blues:1:Hill Street Blues Rites Of Spring",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E15.Rites.Of.Spring.Part.2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-15",
+          "title": "Hill Street Blues S01E16 Jungle Madness Part 1",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 2821.1,
+          "group": "hill-street-blues:1:Hill Street Blues Jungle Madness",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E16.Jungle.Madness.Part.1.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-s-01-16",
+          "title": "Hill Street Blues S01E17 Jungle Madness Part 2",
+          "season": 1,
+          "number": 17,
+          "durationSeconds": 2810.86,
+          "group": "hill-street-blues:1:Hill Street Blues Jungle Madness",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-s-01/Hill.Street.Blues.S01E17.Jungle.Madness.Part.2.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-0",
+          "title": "Hill Street Blues S02E01 Hearts And Minds",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 2913.54,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E01.Hearts.And.Minds.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-1",
+          "title": "Hill Street Blues S02E02 Blood Money",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 2864,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E02.Blood.Money.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-2",
+          "title": "Hill Street Blues S02E03 The Last White Man On East Ferry Avenue",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 2871.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E03.The.Last.White.Man.On.East.Ferry.Avenue.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-3",
+          "title": "Hill Street Blues S02E04 The Second Oldest Profession",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 2866.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E04.The.Second.Oldest.Profession.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-4",
+          "title": "Hill Street Blues S02E05 Fruits Of The Poisonous Tree",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 2924.35,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E05.Fruits.Of.The.Poisonous.Tree.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-5",
+          "title": "Hill Street Blues S02E06 Cranky Streets",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 2927.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E06.Cranky.Streets.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-6",
+          "title": "Hill Street Blues S02E07 Chipped Beef",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 2882.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E07.Chipped.Beef.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-7",
+          "title": "Hill Street Blues S02E08 The World According To Freedom",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 2879.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E08.The.World.According.To.Freedom.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-8",
+          "title": "Hill Street Blues S02E09 Pestolozzi's Revenge",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 2867.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E09.Pestolozzi's.Revenge.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-9",
+          "title": "Hill Street Blues S02E10 The Spy Who Came In From Delgado",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 2888.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E10.The.Spy.Who.Came.In.From.Delgado.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-17",
+          "title": "Hill street blues S02E11 Freedom's Last Stand",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 2895.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.street.blues.S02E11.Freedom's.Last.Stand.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-10",
+          "title": "Hill Street Blues S02E12 Of Mouse And Men",
+          "season": 2,
+          "number": 12,
+          "durationSeconds": 2925.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E12.Of.Mouse.And.Men.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-11",
+          "title": "Hill Street Blues S02E13 Zen And The Art Of Law Enforcement",
+          "season": 2,
+          "number": 13,
+          "durationSeconds": 2854.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E13.Zen.And.The.Art.Of.Law.Enforcement.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-12",
+          "title": "Hill Street Blues S02E14 The Young The Beautiful And The Degraded",
+          "season": 2,
+          "number": 14,
+          "durationSeconds": 2878.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E14.The.Young.The.Beautiful.And.The.Degraded.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-13",
+          "title": "Hill Street Blues S02E15 Some Like It Hot",
+          "season": 2,
+          "number": 15,
+          "durationSeconds": 2844.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E15.Some.Like.It.Hot.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-14",
+          "title": "Hill Street Blues S02E16 Personal Foul",
+          "season": 2,
+          "number": 16,
+          "durationSeconds": 2878.66,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E16.Personal.Foul.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-15",
+          "title": "Hill Street Blues S02E17 Shooter",
+          "season": 2,
+          "number": 17,
+          "durationSeconds": 2883.46,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E17.Shooter.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.-street.-blues.-season-2-16",
+          "title": "Hill Street Blues S02E18 Invasion Of The Third World Body Snatchers",
+          "season": 2,
+          "number": 18,
+          "durationSeconds": 2899.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.-street.-blues.-season-2/Hill.Street.Blues.S02E18.Invasion.Of.The.Third.World.Body.Snatchers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-0",
+          "title": "Hill street blues s03e01 trial by fury",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 2951.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e01.trial.by.fury.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-1",
+          "title": "Hill street blues s03e02 domestic beef",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 2817.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e02.domestic.beef.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-2",
+          "title": "Hill street blues s03e03 heat rash",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 2946.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e03.heat.rash.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-3",
+          "title": "Hill street blues s03e04 rain of terror",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 2953.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e04.rain.of.terror.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-4",
+          "title": "Hill street blues s03e05 officer of the year",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 2924.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e05.officer.of.the.year.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-5",
+          "title": "Hill street blues s03e06 stan the man",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 2953.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e06.stan.the.man.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-6",
+          "title": "Hill street blues s03e07 little boil blue",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 2944.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e07.little.boil.blue.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-7",
+          "title": "Hill street blues s03e08 requim for a hairbag",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 2939.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e08.requim.for.a.hairbag.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-8",
+          "title": "Hill street blues s03e09 a hair of the dog",
+          "season": 3,
+          "number": 9,
+          "durationSeconds": 2943.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e09.a.hair.of.the.dog.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-9",
+          "title": "Hill street blues s03e10 phantom of the hill",
+          "season": 3,
+          "number": 10,
+          "durationSeconds": 2943.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e10.phantom.of.the.hill.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-10",
+          "title": "Hill street blues s03e11 nobody's perfect",
+          "season": 3,
+          "number": 11,
+          "durationSeconds": 2943.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e11.nobody's.perfect.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-11",
+          "title": "Hill street blues s03e12 santaclaustrophobia",
+          "season": 3,
+          "number": 12,
+          "durationSeconds": 2943.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e12.santaclaustrophobia.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-12",
+          "title": "Hill street blues s03e13 gung ho!",
+          "season": 3,
+          "number": 13,
+          "durationSeconds": 2944.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e13.gung.ho!.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-13",
+          "title": "Hill street blues s03e14 moon over uranus",
+          "season": 3,
+          "number": 14,
+          "durationSeconds": 2945.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e14.moon.over.uranus.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-14",
+          "title": "Hill street blues s03e15 moon over uranus  the sequel",
+          "season": 3,
+          "number": 15,
+          "durationSeconds": 2935.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e15.moon.over.uranus%20.the.sequel.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-15",
+          "title": "Hill street blues s03e16 moon over uranus  the final legacy",
+          "season": 3,
+          "number": 16,
+          "durationSeconds": 2943.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e16.moon.over.uranus%20.the.final.legacy.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-16",
+          "title": "Hill street blues s03e17 the belles of st mary's",
+          "season": 3,
+          "number": 17,
+          "durationSeconds": 2944.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e17.the.belles.of.st.mary's.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-17",
+          "title": "Hill street blues s03e18 life in the minors",
+          "season": 3,
+          "number": 18,
+          "durationSeconds": 2944.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e18.life.in.the.minors.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-18",
+          "title": "Hill street blues s03e19 eugene's comedy empire strikes back",
+          "season": 3,
+          "number": 19,
+          "durationSeconds": 2943.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e19.eugene's.comedy.empire.strikes.back.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-19",
+          "title": "Hill street blues s03e20 spotlight on rico",
+          "season": 3,
+          "number": 20,
+          "durationSeconds": 2944.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e20.spotlight.on.rico.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-20",
+          "title": "Hill street blues s03e21 buddy, can you spare a heart",
+          "season": 3,
+          "number": 21,
+          "durationSeconds": 2942.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e21.buddy%2C.can.you.spare.a.heart.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-03-21",
+          "title": "Hill street blues s03e22 a hill of beans",
+          "season": 3,
+          "number": 22,
+          "durationSeconds": 2946.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-03/Hill.street.blues.s03e22.a.hill.of.beans.webrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-0",
+          "title": "Hill street blues s04e01 here's adventure, here's romance",
+          "season": 4,
+          "number": 1,
+          "durationSeconds": 2800.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e01.here's.adventure%2C.here's.romance.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-1",
+          "title": "Hill street blues s04e02 ba-bing, ba-bing",
+          "season": 4,
+          "number": 2,
+          "durationSeconds": 2684.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e02.ba-bing%2C.ba-bing.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-2",
+          "title": "Hill street blues s04e03 the long arm of the law",
+          "season": 4,
+          "number": 3,
+          "durationSeconds": 2640.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e03.the.long.arm.of.the.law.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-3",
+          "title": "Hill street blues s04e04 death by kiki",
+          "season": 4,
+          "number": 4,
+          "durationSeconds": 2722.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e04.death.by.kiki.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-4",
+          "title": "Hill street blues s04e05 doris in wonderland",
+          "season": 4,
+          "number": 5,
+          "durationSeconds": 2740.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e05.doris.in.wonderland.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-5",
+          "title": "Hill street blues s04e06 praise dilaudid",
+          "season": 4,
+          "number": 6,
+          "durationSeconds": 2693.46,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e06.praise.dilaudid.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-6",
+          "title": "Hill street blues s04e07 goodbye, mr scripps",
+          "season": 4,
+          "number": 7,
+          "durationSeconds": 2728,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e07.goodbye%2C.mr.scripps.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-7",
+          "title": "Hill street blues s04e08 midway to what",
+          "season": 4,
+          "number": 8,
+          "durationSeconds": 2729.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e08.midway.to.what.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-8",
+          "title": "Hill street blues s04e09 honk if you're a goose",
+          "season": 4,
+          "number": 9,
+          "durationSeconds": 2745.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e09.honk.if.you're.a.goose.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-9",
+          "title": "Hill street blues s04e10 the russians are coming dvdrip",
+          "season": 4,
+          "number": 10,
+          "durationSeconds": 2709.27,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e10.the.russians.are.coming.dvdrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-10",
+          "title": "Hill street blues s04e11 ratman and bobbin",
+          "season": 4,
+          "number": 11,
+          "durationSeconds": 2734,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e11.ratman.and.bobbin.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-11",
+          "title": "Hill street blues s04e12 nichols from heaven",
+          "season": 4,
+          "number": 12,
+          "durationSeconds": 2664.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e12.nichols.from.heaven.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-12",
+          "title": "Hill street blues s04e13 fuchs me~ fuchs you!",
+          "season": 4,
+          "number": 13,
+          "durationSeconds": 2705.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e13.fuchs.me~.fuchs.you!.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-13",
+          "title": "Hill street blues s04e14 grace under pressure",
+          "season": 4,
+          "number": 14,
+          "durationSeconds": 2700.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e14.grace.under.pressure.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-14",
+          "title": "Hill street blues s04e15 the other side of oneness",
+          "season": 4,
+          "number": 15,
+          "durationSeconds": 2704.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e15.the.other.side.of.oneness.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-15",
+          "title": "Hill street blues s04e16 parting is such sweep sorrow",
+          "season": 4,
+          "number": 16,
+          "durationSeconds": 2724.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e16.parting.is.such.sweep.sorrow.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-16",
+          "title": "Hill street blues s04e17 the end of logan's run",
+          "season": 4,
+          "number": 17,
+          "durationSeconds": 2733.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e17.the.end.of.logan's.run.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-17",
+          "title": "Hill street blues s04e18 the count of monte tasco",
+          "season": 4,
+          "number": 18,
+          "durationSeconds": 2729.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e18.the.count.of.monte.tasco.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-18",
+          "title": "Hill street blues s04e19 nutcracker suite",
+          "season": 4,
+          "number": 19,
+          "durationSeconds": 2697.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e19.nutcracker.suite.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-19",
+          "title": "Hill street blues s04e20 hair apparent",
+          "season": 4,
+          "number": 20,
+          "durationSeconds": 2772.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e20.hair.apparent.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-20",
+          "title": "Hill street blues s04e21 lucky ducks",
+          "season": 4,
+          "number": 21,
+          "durationSeconds": 2733.31,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e21.lucky.ducks.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264-21",
+          "title": "Hill street blues s04e22 eva's brawn",
+          "season": 4,
+          "number": 22,
+          "durationSeconds": 2729.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-04e-01.heres.adventure.heres.romance.sdtv.x-264/Hill.street.blues.s04e22.eva's.brawn.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-0",
+          "title": "Hill street blues s05e01 mayo, hold the pickle",
+          "season": 5,
+          "number": 1,
+          "durationSeconds": 2770.92,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e01.mayo%2C.hold.the.pickle.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-1",
+          "title": "Hill street blues s05e02 watt a way to go",
+          "season": 5,
+          "number": 2,
+          "durationSeconds": 2608.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e02.watt.a.way.to.go.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-2",
+          "title": "Hill street blues s05e03 rookie nookie",
+          "season": 5,
+          "number": 3,
+          "durationSeconds": 2692.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e03.rookie.nookie.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-3",
+          "title": "Hill street blues s05e04 fowl play",
+          "season": 5,
+          "number": 4,
+          "durationSeconds": 2755.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e04.fowl.play.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-4",
+          "title": "Hill street blues s05e05 bangladesh slowly",
+          "season": 5,
+          "number": 5,
+          "durationSeconds": 2748.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e05.bangladesh.slowly.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-5",
+          "title": "Hill street blues s05e06 ewe and me, babe",
+          "season": 5,
+          "number": 6,
+          "durationSeconds": 2757.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e06.ewe.and.me%2C.babe.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-6",
+          "title": "Hill street blues s05e07 blues for mr green",
+          "season": 5,
+          "number": 7,
+          "durationSeconds": 2738.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e07.blues.for.mr.green.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-7",
+          "title": "Hill street blues s05e08 fuched again",
+          "season": 5,
+          "number": 8,
+          "durationSeconds": 2727.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e08.fuched.again.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-8",
+          "title": "Hill street blues s05e09 low blow",
+          "season": 5,
+          "number": 9,
+          "durationSeconds": 2734.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e09.low.blow.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-9",
+          "title": "Hill street blues s05e10 the rise and fall of paul the wall",
+          "season": 5,
+          "number": 10,
+          "durationSeconds": 2595.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e10.the.rise.and.fall.of.paul.the.wall.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-10",
+          "title": "Hill street blues s05e11 last chance salon",
+          "season": 5,
+          "number": 11,
+          "durationSeconds": 2740.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e11.last.chance.salon.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-11",
+          "title": "Hill street blues s05e12 intestinal fortitude",
+          "season": 5,
+          "number": 12,
+          "durationSeconds": 2729,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e12.intestinal.fortitude.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-12",
+          "title": "Hill street blues s05e13 of human garbage",
+          "season": 5,
+          "number": 13,
+          "durationSeconds": 2647.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e13.of.human.garbage.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-13",
+          "title": "Hill street blues s05e14 dr hoof and mouth",
+          "season": 5,
+          "number": 14,
+          "durationSeconds": 2659.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e14.dr.hoof.and.mouth.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-14",
+          "title": "Hill street blues s05e15 davenport in a storm",
+          "season": 5,
+          "number": 15,
+          "durationSeconds": 2578.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e15.davenport.in.a.storm.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-15",
+          "title": "Hill street blues s05e16 washington deceased",
+          "season": 5,
+          "number": 16,
+          "durationSeconds": 2675.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e16.washington.deceased.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-16",
+          "title": "Hill street blues s05e17 passage to libya",
+          "season": 5,
+          "number": 17,
+          "durationSeconds": 2762.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e17.passage.to.libya.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-17",
+          "title": "Hill street blues s05e18 el capitan",
+          "season": 5,
+          "number": 18,
+          "durationSeconds": 2746.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e18.el.capitan.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-18",
+          "title": "Hill street blues s05e19 the life and times of dominic florio jr",
+          "season": 5,
+          "number": 19,
+          "durationSeconds": 2768.81,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e19.the.life.and.times.of.dominic.florio.jr.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-19",
+          "title": "Hill street blues s05e20 g q dvdrip",
+          "season": 5,
+          "number": 20,
+          "durationSeconds": 2689.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e20.g.q.dvdrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-20",
+          "title": "Hill street blues s05e21 queen for a day dvdrip",
+          "season": 5,
+          "number": 21,
+          "durationSeconds": 2780.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e21.queen.for.a.day.dvdrip.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-21",
+          "title": "Hill street blues s05e22 you're in alice's",
+          "season": 5,
+          "number": 22,
+          "durationSeconds": 2839.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e22.you're.in.alice's.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-05-22",
+          "title": "Hill street blues s05e23 grin and bear it",
+          "season": 5,
+          "number": 23,
+          "durationSeconds": 2852.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-22",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-05/Hill.street.blues.s05e23.grin.and.bear.it.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-0",
+          "title": "Hill street blues s06e01 blues in the night",
+          "season": 6,
+          "number": 1,
+          "durationSeconds": 2626.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e01.blues.in.the.night.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-1",
+          "title": "Hill street blues s06e02 hacked to pieces",
+          "season": 6,
+          "number": 2,
+          "durationSeconds": 2756.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e02.hacked.to.pieces.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-2",
+          "title": "Hill street blues s06e03 seoul on ice",
+          "season": 6,
+          "number": 3,
+          "durationSeconds": 2753.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e03.seoul.on.ice.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-3",
+          "title": "Hill street blues s06e04 in the belly of the bus",
+          "season": 6,
+          "number": 4,
+          "durationSeconds": 2772.82,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e04.in.the.belly.of.the.bus.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-4",
+          "title": "Hill street blues s06e05 somewhere over the rambo",
+          "season": 6,
+          "number": 5,
+          "durationSeconds": 2782.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e05.somewhere.over.the.rambo.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-5",
+          "title": "Hill street blues s06e06 oh, you kid",
+          "season": 6,
+          "number": 6,
+          "durationSeconds": 2725.55,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e06.oh%2C.you.kid.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-6",
+          "title": "Hill street blues s06e07 an Oy Foq An Oy",
+          "season": 6,
+          "number": 7,
+          "durationSeconds": 2785.81,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e07.an%20Oy%20Foq%20An%20Oy.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-7",
+          "title": "Hill street blues s06e08 fathers and huns",
+          "season": 6,
+          "number": 8,
+          "durationSeconds": 2779.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e08.fathers.and.huns.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-8",
+          "title": "Hill street blues s06e09 what are friends for",
+          "season": 6,
+          "number": 9,
+          "durationSeconds": 2732.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e09.what.are.friends.for.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-9",
+          "title": "Hill street blues s06e10 the virgin and the turkey",
+          "season": 6,
+          "number": 10,
+          "durationSeconds": 2787.18,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e10.the.virgin.and.the.turkey.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-10",
+          "title": "Hill street blues s06e11 two east pieces",
+          "season": 6,
+          "number": 11,
+          "durationSeconds": 2786.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e11.two.east.pieces.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-11",
+          "title": "Hill street blues s06e12 say it as it plays",
+          "season": 6,
+          "number": 12,
+          "durationSeconds": 2787.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e12.say.it.as.it.plays.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-12",
+          "title": "Hill street blues s06e13 das blues",
+          "season": 6,
+          "number": 13,
+          "durationSeconds": 2790.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e13.das.blues.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-13",
+          "title": "Hill street blues s06e14 scales of justice",
+          "season": 6,
+          "number": 14,
+          "durationSeconds": 2763.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e14.scales.of.justice.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-14",
+          "title": "Hill street blues s06e15 i want my hill street blues",
+          "season": 6,
+          "number": 15,
+          "durationSeconds": 2789.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e15.i.want.my.hill.street.blues.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-15",
+          "title": "Hill street blues s06e16 remembrance of hits past",
+          "season": 6,
+          "number": 16,
+          "durationSeconds": 2775.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e16.remembrance.of.hits.past.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-16",
+          "title": "Hill street blues s06e17 larry of arabia",
+          "season": 6,
+          "number": 17,
+          "durationSeconds": 2762.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e17.larry.of.arabia.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-17",
+          "title": "Hill street blues s06e18 iced coffey",
+          "season": 6,
+          "number": 18,
+          "durationSeconds": 2786.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e18.iced.coffey.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-18",
+          "title": "Hill street blues s06e19 jagga the hunk",
+          "season": 6,
+          "number": 19,
+          "durationSeconds": 2787.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e19.jagga.the.hunk.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-19",
+          "title": "Hill street blues s06e20 look homeward, ninja",
+          "season": 6,
+          "number": 20,
+          "durationSeconds": 2764.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e20.look.homeward%2C.ninja.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-20",
+          "title": "Hill street blues s06e21 slum enchanted evening",
+          "season": 6,
+          "number": 21,
+          "durationSeconds": 2780.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e21.slum.enchanted.evening.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-06-21",
+          "title": "Hill street blues s06e22 come and get it",
+          "season": 6,
+          "number": 22,
+          "durationSeconds": 2723.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-06/Hill.street.blues.s06e22.come.and.get.it.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-0",
+          "title": "Hill street blues s07e01 suitcase",
+          "season": 7,
+          "number": 1,
+          "durationSeconds": 2767.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e01.suitcase.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-1",
+          "title": "Hill street blues s07e02 a case of klapp",
+          "season": 7,
+          "number": 2,
+          "durationSeconds": 2791.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e02.a.case.of.klapp.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-2",
+          "title": "Hill street blues s07e03 the best defense",
+          "season": 7,
+          "number": 3,
+          "durationSeconds": 2789.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e03.the.best.defense.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-3",
+          "title": "Hill street blues s07e04 bald ambition",
+          "season": 7,
+          "number": 4,
+          "durationSeconds": 2751.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e04.bald.ambition.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-4",
+          "title": "Hill street blues s07e05 i come on my knees",
+          "season": 7,
+          "number": 5,
+          "durationSeconds": 2763.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e05.i.come.on.my.knees.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-5",
+          "title": "Hill street blues s07e06 say uncle",
+          "season": 7,
+          "number": 6,
+          "durationSeconds": 2783.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e06.say.uncle.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-6",
+          "title": "Hill street blues s07e07 amazing grace",
+          "season": 7,
+          "number": 7,
+          "durationSeconds": 2766.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e07.amazing.grace.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-7",
+          "title": "Hill street blues s07e08 falling from grace",
+          "season": 7,
+          "number": 8,
+          "durationSeconds": 2766.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e08.falling.from.grace.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-8",
+          "title": "Hill street blues s07e09 fathers and guns",
+          "season": 7,
+          "number": 9,
+          "durationSeconds": 2765.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e09.fathers.and.guns.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-9",
+          "title": "Hill street blues s07e10 more skinned against than skinning",
+          "season": 7,
+          "number": 10,
+          "durationSeconds": 2769.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e10.more.skinned.against.than.skinning.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-10",
+          "title": "Hill street blues s07e11 she's so fein",
+          "season": 7,
+          "number": 11,
+          "durationSeconds": 2765.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e11.she's.so.fein.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-11",
+          "title": "Hill street blues s07e12 a wasted weekend",
+          "season": 7,
+          "number": 12,
+          "durationSeconds": 2772.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e12.a.wasted.weekend.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-12",
+          "title": "Hill street blues s07e13 city of refuse",
+          "season": 7,
+          "number": 13,
+          "durationSeconds": 2774,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e13.city.of.refuse.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-13",
+          "title": "Hill street blues s07e14 der roachenkavalier",
+          "season": 7,
+          "number": 14,
+          "durationSeconds": 2771.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e14.der.roachenkavalier.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-14",
+          "title": "Hill street blues s07e15 norman conquest",
+          "season": 7,
+          "number": 15,
+          "durationSeconds": 2759.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e15.norman.conquest.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-15",
+          "title": "Hill street blues s07e16 sorry, wrong number",
+          "season": 7,
+          "number": 16,
+          "durationSeconds": 2754.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e16.sorry%2C.wrong.number.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-16",
+          "title": "Hill street blues s07e17 the cookie crumbles",
+          "season": 7,
+          "number": 17,
+          "durationSeconds": 2796.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e17.the.cookie.crumbles.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-17",
+          "title": "Hill street blues s07e18 dogsbreath afternoon",
+          "season": 7,
+          "number": 18,
+          "durationSeconds": 2801.92,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e18.dogsbreath.afternoon.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-18",
+          "title": "Hill street blues s07e19 days of swine and roses",
+          "season": 7,
+          "number": 19,
+          "durationSeconds": 2785.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e19.days.of.swine.and.roses.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-19",
+          "title": "Hill street blues s07e20 the runner falls on his kisser",
+          "season": 7,
+          "number": 20,
+          "durationSeconds": 2796.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e20.the.runner.falls.on.his.kisser.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-20",
+          "title": "Hill street blues s07e21 a pound of flesh",
+          "season": 7,
+          "number": 21,
+          "durationSeconds": 2797.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e21.a.pound.of.flesh.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hill.street.blues.s-07-21",
+          "title": "Hill street blues s07e22 it ain't over till it's over",
+          "season": 7,
+          "number": 22,
+          "durationSeconds": 2796.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/hill.street.blues.s-07/Hill.street.blues.s07e22.it.ain't.over.till.it's.over.sdtv.x264.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

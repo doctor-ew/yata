@@ -44,9 +44,9 @@
           </div>
           <div id="player-error" class="player-error" role="alert" hidden><p id="player-error-text"></p><div><button id="retry" class="button small">Retry</button><button id="skip-error" class="button small">Skip episode</button><a id="error-original" class="button small" target="_blank" rel="noopener noreferrer">Open original ↗</a></div></div>
           <section class="transport" aria-label="Video playback controls">
-            <div class="transport-position"><label for="video-seek">POSITION</label><output id="video-time">00:00:00 out of --:--:--</output></div>
-            <input id="video-seek" type="range" min="0" max="1" step="1" value="0" aria-label="Playback position" disabled>
-            <div class="transport-buttons">
+            <div id="seek-panel" class="seek-panel" hidden><div class="transport-position"><label for="video-seek">POSITION</label><output id="video-time">00:00:00 out of --:--:--</output></div>
+            <input id="video-seek" type="range" min="0" max="1" step="1" value="0" aria-label="Playback position" disabled></div>
+            <div class="transport-buttons"><button id="toggle-seek-panel" type="button" class="text-button seek-reveal" aria-controls="seek-panel" aria-expanded="false" aria-pressed="false" title="Pin playback position">Position</button>
               <button id="previous-episode" class="button small" aria-label="Previous episode" disabled>⏮ Back</button>
               <button id="rewind-ten" class="button small" aria-label="Back 10 seconds" disabled>↶ 10s</button>
               <button id="toggle-play" class="button small primary" aria-label="Play video" disabled>▶ Play</button>
@@ -63,6 +63,7 @@
             <div id="channels" class="channels" role="group" aria-label="Choose a channel"></div>
             <div class="remote-settings"><button id="open-stream-settings" class="remote-setup" type="button" aria-haspopup="dialog">SET UP</button><span id="settings-summary">Random mix · Commercials on</span></div>
           </section>
+          <details id="mix-panel" class="mix-panel"></details>
           <div class="watch-info"><div><p id="playing-show" class="eyebrow">ON THE STATION CLOCK</p><h2 id="playing-title">Select a channel.</h2><p id="playing-detail" class="muted"></p></div><a id="original-link" target="_blank" rel="noopener noreferrer" class="source-link" hidden>Original source ↗</a></div>
           <div class="playback-actions"><button id="tune-live" class="button primary">▶ Tune in live</button></div>
           <p class="playback-note">Live follows your station clock. Scrub, skip 10 seconds, or restart to watch on your time. YouTube ads and browser autoplay can affect timing.</p>
@@ -126,6 +127,7 @@
           </div></details>
         </div>
         <label>Commercials per break<select id="commercial-count"><option value="1">1 commercial</option><option value="2">2 commercials</option><option value="3">3 commercials</option><option value="random" selected>Random · 1–3 commercials</option></select></label>
+        <label>Playback position<select id="seek-visibility"><option value="auto">On hover or click</option><option value="always">Always visible</option><option value="off">Off</option></select></label>
         <label>Random dial<select id="dial-mode"><option value="channel">This channel · random mix</option><option value="show">One random show</option><option value="all">Everything · random mix</option></select></label>
         <label class="bumper-setting"><input id="dial-feedback" type="checkbox" checked> Dial click &amp; static burst</label>
         <p id="commercial-description">Breaks follow complete stories. Choose a fixed count or a random 1–3. Always skippable.</p>

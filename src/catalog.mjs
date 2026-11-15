@@ -1,3 +1,4 @@
+import {CHANNEL_ADDITIONS} from './channel-additions.mjs';
 import { EXPANDED_ERA_SHOWS } from './expanded-era.mjs';
 import { COMMERCIAL_SHOW_ID } from './domain.mjs';
 import { MOVIE_SHOW_ID, ADDITIONAL_SCIFI_SERIES, MOVIE_WISHLIST } from './collections.mjs';
@@ -104,6 +105,9 @@ export function createSeed() {
       sources: [{ id: 'simulator-youtube', provider: 'youtube', availability: 'unverified',
         url: 'https://www.youtube.com/watch?v=RmycafPZFl8' }] }],
   });
+  for(const show of CHANNEL_ADDITIONS)shows.push({...show,imdbUrl:null,episodes:[]});
+  for(const show of shows)show.channel=migratedShowChannel(show.id,show.channel);
+  for(const [id,title] of [['st-elsewhere','St. Elsewhere (1982)'],['hill-street-blues','Hill Street Blues (1981)']])shows.push({id,title,channel:'drama',imdbUrl:null,episodes:[]});
   return { version: 1, epoch: Date.UTC(2026, 0, 1) / 1000, shows,
     settings: { channel: 'mixed', bumpers: true, commercialCount: 'random', rotation: 'random', shuffleSeed: 1984, storiesPerTurn: 1, streamShow: null } };
 }

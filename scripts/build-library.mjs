@@ -1,3 +1,4 @@
+import {CHANNEL_ADDITIONS} from '../src/channel-additions.mjs';
 import { EXPANDED_ERA_SHOWS } from '../src/expanded-era.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { libraryRevision } from './library-revision.mjs';
@@ -6,7 +7,7 @@ import { createSeed } from '../src/catalog.mjs';
 import { discoveryRows, mergeLibraryBatch } from '../src/bulk.mjs';
 import { buildSchedule, parseCatalogJson, stationSource, COMMERCIAL_SHOW_ID } from '../src/domain.mjs';
 const data = new URL('../data/', import.meta.url);
-const names = ['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel', 'star-trek', 'retro-requests', 'saturday-adventure', 'expanded-era'];
+const names = ['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel', 'star-trek', 'retro-requests', 'saturday-adventure', 'expanded-era', 'drama', 'channel-additions'];
 const extraCartoonIds = new Set(['mister-t', 'frankenstein-impossibles']);
 const stephanieIds = new Set(["jem", "she-ra", "rainbow-brite", "care-bears", "strawberry-shortcake", "my-little-pony", "grimm-fairy-tale-classics", "grape-ape", "shirt-tales", "heathcliff", "garfield-friends"]);
 const networkIds = new Set(["ycdtotv", "turkey-tv", "harvey-birdman", "sealab-2021", "home-movies", "brak-show", "daria", "taxi", "wkrp", "rockford-files", "bionic-woman", "josie-pussycats", "adult-swim-bumps", "nickelodeon-bumps"]);
@@ -22,6 +23,10 @@ const packs = texts.map(JSON.parse);
 const seed = createSeed(); let sequence = 0;
 for (const [index, name] of names.entries()) {
   const expected = seed.shows.filter(show => {
+    if (name === 'channel-additions') return CHANNEL_ADDITIONS.some(s=>s.id===show.id);
+    if (CHANNEL_ADDITIONS.some(s=>s.id===show.id)) return false;
+    if (name === 'drama') return show.channel==='drama'&&['st-elsewhere','hill-street-blues'].includes(show.id);
+    if (['st-elsewhere','hill-street-blues'].includes(show.id)) return false;
     if (name === 'expanded-era') return expandedEraIds.has(show.id);
     if (expandedEraIds.has(show.id)) return false;
     if (name === 'saturday-adventure') return saturdayAdventureIds.has(show.id);

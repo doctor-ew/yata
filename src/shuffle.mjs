@@ -42,10 +42,12 @@ function storyBlocks(queue) {
   }
   return blocks;
 }
-export function randomRotation(queues, bumpers, { seed = 1984, scope = '', storiesPerTurn = 1, includeBumpers = false, commercialCount = 1 } = {}) {
+export function randomRotation(queues, bumpers, { seed = 1984, scope = '', storiesPerTurn = 1, includeBumpers = false, commercialCount = 1, orderedShowIds = [] } = {}) {
+  const orderedIds = new Set(orderedShowIds);
   const states = queues.filter(queue => queue.length).map(queue => {
     const blocks = storyBlocks(queue), random = seededRandom(seed, `${scope}:${queue[0].show.id}`);
-    return { blocks, random, order: shuffled(blocks, random), cursor: 0, last: null };
+    const ordered = orderedIds.has(queue[0].show.id);
+    return { blocks, random, ordered, order: ordered ? blocks.slice() : shuffled(blocks, random), cursor: 0, last: null };
   });
   if (!states.length) return [];
   const count = [1, 2, 3].includes(storiesPerTurn) ? storiesPerTurn : 1;
@@ -65,7 +67,7 @@ export function randomRotation(queues, bumpers, { seed = 1984, scope = '', stori
       const usedThisTurn = new Set();
       for (let i = 0; i < Math.min(count, state.blocks.length); i++) {
         if (state.cursor === state.order.length) {
-          state.order = shuffled(state.blocks, state.random, state.last);
+          state.order = state.ordered ? state.blocks.slice() : shuffled(state.blocks, state.random, state.last);
           if (usedThisTurn.size) state.order = [...state.order.filter(block => !usedThisTurn.has(block)), ...state.order.filter(block => usedThisTurn.has(block))];
           state.cursor = 0;
         }

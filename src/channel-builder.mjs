@@ -21,7 +21,7 @@ export function chooseHost(previous=null, random=Math.random) {
   return choices[Math.floor(Math.max(0,Math.min(0.999999,Number.isFinite(sample)?sample:0))*choices.length)];
 }
 export function channelOffer(catalog) {
-  return availableDialShows(catalog,'mixed').map(({id,title,channel})=>({id,title,channel}));
+  return availableDialShows({...catalog,settings:{...catalog.settings,mixChannels:null}},'mixed').map(({id,title,channel})=>({id,title,channel}));
 }
 export function validateChannelPlan(plan,catalog,host) {
   const offered=new Set(channelOffer(catalog).map(show=>show.id));
