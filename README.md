@@ -242,3 +242,7 @@ Adult Swim and Nickelodeon bumps are separately labeled collections of short bre
 ## Additional classic sitcoms
 
 Fat Albert and the Cosby Kids joins Saturday Morning. Good Times, The Jeffersons, Sanford and Son, Gimme a Break!, and Welcome Back, Kotter join Comedy and the main shuffle using checked Archive program sources. Collection coverage varies; Sanford and Son and Kotter are partial collections. Who’s the Boss? is an official external Tubi series link and does not enter automatic playback. BraveStarr retains its existing catalog entries. Source provenance and exclusions are recorded in `data/classic-comedy-discovery.json`.
+
+## Star Trek
+
+The Original Series, The Next Generation, Deep Space Nine, Voyager and Enterprise are classified under Sci-Fi and also participate in the main mixed channel. There is no separate Star Trek channel. The original 1973 animated series is in Saturday Morning. DS9 coverage is partial: an extended-cut source of Emissary and Rejoined. The animated collection covers its first season. Combined double-length programs remain intact, so program counts differ from split broadcast episode totals. Source provenance and exclusions are recorded in `data/star-trek-discovery.json`.
