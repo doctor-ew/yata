@@ -1,0 +1,2098 @@
+{
+  "checkedAt": "2026-11-15T14:46:20.074Z",
+  "provider": "archive",
+  "notes": [
+    "HTTP range checks establish endpoint availability, not full decoding, language, completeness or rights."
+  ],
+  "excluded": [],
+  "shows": [
+    {
+      "showId": "quantum-leap",
+      "title": "Quantum Leap (1989)",
+      "channel": "scifi",
+      "items": [
+        {
+          "itemId": "QLSeason1",
+          "title": "Quantum Leap Season 1",
+          "metadataUrl": "https://archive.org/metadata/QLSeason1"
+        },
+        {
+          "itemId": "QLSeason2",
+          "title": "Quantum Leap Season 2",
+          "metadataUrl": "https://archive.org/metadata/QLSeason2"
+        },
+        {
+          "itemId": "qlseason-3",
+          "title": "Quantum Leap Season 3",
+          "metadataUrl": "https://archive.org/metadata/qlseason-3"
+        },
+        {
+          "itemId": "QLSeason4",
+          "title": "Quantum Leap Season 4",
+          "metadataUrl": "https://archive.org/metadata/QLSeason4"
+        },
+        {
+          "itemId": "QLSeason5",
+          "title": "Quantum Leap Season 5",
+          "metadataUrl": "https://archive.org/metadata/QLSeason5"
+        }
+      ],
+      "notes": "Original Scott Bakula series. Source program order is retained; the feature-length opening program stays intact. Program counts differ from split broadcast episode counts. Season-zero item numbers represent source program order; they do not assert split broadcast episode numbering.",
+      "episodes": [
+        {
+          "id": "archive-QLSeason1-0",
+          "title": "Quantum Leap · season 1, source program 1",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 5561.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason1/Episode%201.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason1-1",
+          "title": "Quantum Leap · season 1, source program 2",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 2891.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason1/Episode%202.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason1-2",
+          "title": "Quantum Leap · season 1, source program 3",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 2861.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason1/Episode%203.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason1-3",
+          "title": "Quantum Leap · season 1, source program 4",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 2884.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason1/Episode%204.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason1-4",
+          "title": "Quantum Leap · season 1, source program 5",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 2848.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason1/Episode%205.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason1-5",
+          "title": "Quantum Leap · season 1, source program 6",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 2860.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason1/Episode%206.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason1-6",
+          "title": "Quantum Leap · season 1, source program 7",
+          "season": 0,
+          "number": 7,
+          "durationSeconds": 2849.92,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason1/Episode%207.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason1-7",
+          "title": "Quantum Leap · season 1, source program 8",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 2843.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason1/Episode%208.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-0",
+          "title": "Quantum Leap · season 2, source program 1",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 2875.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%201.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-1",
+          "title": "Quantum Leap · season 2, source program 10",
+          "season": 0,
+          "number": 10,
+          "durationSeconds": 2879.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2010.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-2",
+          "title": "Quantum Leap · season 2, source program 11",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 2810.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2011.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-3",
+          "title": "Quantum Leap · season 2, source program 12",
+          "season": 0,
+          "number": 12,
+          "durationSeconds": 2812.86,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2012.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-4",
+          "title": "Quantum Leap · season 2, source program 13",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 2866.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2013.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-5",
+          "title": "Quantum Leap · season 2, source program 14",
+          "season": 0,
+          "number": 14,
+          "durationSeconds": 2885.44,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2014.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-6",
+          "title": "Quantum Leap · season 2, source program 15",
+          "season": 0,
+          "number": 15,
+          "durationSeconds": 2876.35,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2015.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-7",
+          "title": "Quantum Leap · season 2, source program 16",
+          "season": 0,
+          "number": 16,
+          "durationSeconds": 2821.89,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2016.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-8",
+          "title": "Quantum Leap · season 2, source program 17",
+          "season": 0,
+          "number": 17,
+          "durationSeconds": 2886.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2017.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-9",
+          "title": "Quantum Leap · season 2, source program 18",
+          "season": 0,
+          "number": 18,
+          "durationSeconds": 2877.74,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2018.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-10",
+          "title": "Quantum Leap · season 2, source program 19",
+          "season": 0,
+          "number": 19,
+          "durationSeconds": 2889.58,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2019.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-11",
+          "title": "Quantum Leap · season 2, source program 2",
+          "season": 0,
+          "number": 20,
+          "durationSeconds": 2878.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%202.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-12",
+          "title": "Quantum Leap · season 2, source program 20",
+          "season": 0,
+          "number": 21,
+          "durationSeconds": 2880.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2020.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-13",
+          "title": "Quantum Leap · season 2, source program 21",
+          "season": 0,
+          "number": 22,
+          "durationSeconds": 2849.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2021.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-14",
+          "title": "Quantum Leap · season 2, source program 22",
+          "season": 0,
+          "number": 23,
+          "durationSeconds": 2888.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%2022.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-15",
+          "title": "Quantum Leap · season 2, source program 3",
+          "season": 0,
+          "number": 24,
+          "durationSeconds": 2811.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%203.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-16",
+          "title": "Quantum Leap · season 2, source program 4",
+          "season": 0,
+          "number": 25,
+          "durationSeconds": 2891.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%204.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-17",
+          "title": "Quantum Leap · season 2, source program 5",
+          "season": 0,
+          "number": 26,
+          "durationSeconds": 2825.52,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%205.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-18",
+          "title": "Quantum Leap · season 2, source program 6",
+          "season": 0,
+          "number": 27,
+          "durationSeconds": 2886.51,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%206.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-19",
+          "title": "Quantum Leap · season 2, source program 7",
+          "season": 0,
+          "number": 28,
+          "durationSeconds": 2858.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%207.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-20",
+          "title": "Quantum Leap · season 2, source program 8",
+          "season": 0,
+          "number": 29,
+          "durationSeconds": 2870.27,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%208.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason2-21",
+          "title": "Quantum Leap · season 2, source program 9",
+          "season": 0,
+          "number": 30,
+          "durationSeconds": 2866.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason2/Episode%209.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-0",
+          "title": "Quantum Leap · season 3, source program 1",
+          "season": 0,
+          "number": 31,
+          "durationSeconds": 2826.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%201.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-1",
+          "title": "Quantum Leap · season 3, source program 10",
+          "season": 0,
+          "number": 32,
+          "durationSeconds": 2845.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2010.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-2",
+          "title": "Quantum Leap · season 3, source program 11",
+          "season": 0,
+          "number": 33,
+          "durationSeconds": 2787.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2011.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-3",
+          "title": "Quantum Leap · season 3, source program 12",
+          "season": 0,
+          "number": 34,
+          "durationSeconds": 2882.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2012.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-4",
+          "title": "Quantum Leap · season 3, source program 13",
+          "season": 0,
+          "number": 35,
+          "durationSeconds": 2884.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2013.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-5",
+          "title": "Quantum Leap · season 3, source program 14",
+          "season": 0,
+          "number": 36,
+          "durationSeconds": 2883.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2014.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-6",
+          "title": "Quantum Leap · season 3, source program 15",
+          "season": 0,
+          "number": 37,
+          "durationSeconds": 2823.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2015.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-7",
+          "title": "Quantum Leap · season 3, source program 16",
+          "season": 0,
+          "number": 38,
+          "durationSeconds": 2854.27,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2016.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-8",
+          "title": "Quantum Leap · season 3, source program 17",
+          "season": 0,
+          "number": 39,
+          "durationSeconds": 2883.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2017.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-9",
+          "title": "Quantum Leap · season 3, source program 18",
+          "season": 0,
+          "number": 40,
+          "durationSeconds": 2883.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2018.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-10",
+          "title": "Quantum Leap · season 3, source program 19",
+          "season": 0,
+          "number": 41,
+          "durationSeconds": 2823.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2019.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-11",
+          "title": "Quantum Leap · season 3, source program 2",
+          "season": 0,
+          "number": 42,
+          "durationSeconds": 2806.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%202.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-12",
+          "title": "Quantum Leap · season 3, source program 20",
+          "season": 0,
+          "number": 43,
+          "durationSeconds": 2881.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2020.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-13",
+          "title": "Quantum Leap · season 3, source program 21",
+          "season": 0,
+          "number": 44,
+          "durationSeconds": 2827.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2021.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-14",
+          "title": "Quantum Leap · season 3, source program 22",
+          "season": 0,
+          "number": 45,
+          "durationSeconds": 2883.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%2022.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-15",
+          "title": "Quantum Leap · season 3, source program 3",
+          "season": 0,
+          "number": 46,
+          "durationSeconds": 2719.15,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%203.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-16",
+          "title": "Quantum Leap · season 3, source program 4",
+          "season": 0,
+          "number": 47,
+          "durationSeconds": 2862.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%204.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-17",
+          "title": "Quantum Leap · season 3, source program 5",
+          "season": 0,
+          "number": 48,
+          "durationSeconds": 2817.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%205.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-18",
+          "title": "Quantum Leap · season 3, source program 6",
+          "season": 0,
+          "number": 49,
+          "durationSeconds": 2787.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%206.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-19",
+          "title": "Quantum Leap · season 3, source program 7",
+          "season": 0,
+          "number": 50,
+          "durationSeconds": 2789.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%207.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-20",
+          "title": "Quantum Leap · season 3, source program 8",
+          "season": 0,
+          "number": 51,
+          "durationSeconds": 2844.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%208.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-qlseason-3-21",
+          "title": "Quantum Leap · season 3, source program 9",
+          "season": 0,
+          "number": 52,
+          "durationSeconds": 2785.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/qlseason-3/Episode%209.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-0",
+          "title": "Quantum Leap · season 4, source program 1",
+          "season": 0,
+          "number": 53,
+          "durationSeconds": 2793.86,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%201.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-1",
+          "title": "Quantum Leap · season 4, source program 10",
+          "season": 0,
+          "number": 54,
+          "durationSeconds": 2758.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2010.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-2",
+          "title": "Quantum Leap · season 4, source program 11",
+          "season": 0,
+          "number": 55,
+          "durationSeconds": 2821.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2011.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-3",
+          "title": "Quantum Leap · season 4, source program 12",
+          "season": 0,
+          "number": 56,
+          "durationSeconds": 2825.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2012.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-4",
+          "title": "Quantum Leap · season 4, source program 13",
+          "season": 0,
+          "number": 57,
+          "durationSeconds": 2824.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2013.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-5",
+          "title": "Quantum Leap · season 4, source program 14",
+          "season": 0,
+          "number": 58,
+          "durationSeconds": 2823.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2014.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-6",
+          "title": "Quantum Leap · season 4, source program 15",
+          "season": 0,
+          "number": 59,
+          "durationSeconds": 2823.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2015.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-7",
+          "title": "Quantum Leap · season 4, source program 16",
+          "season": 0,
+          "number": 60,
+          "durationSeconds": 2822.89,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2016.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-8",
+          "title": "Quantum Leap · season 4, source program 17",
+          "season": 0,
+          "number": 61,
+          "durationSeconds": 2779.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2017.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-9",
+          "title": "Quantum Leap · season 4, source program 18",
+          "season": 0,
+          "number": 62,
+          "durationSeconds": 2795.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2018.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-10",
+          "title": "Quantum Leap · season 4, source program 19",
+          "season": 0,
+          "number": 63,
+          "durationSeconds": 2845.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2019.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-11",
+          "title": "Quantum Leap · season 4, source program 2",
+          "season": 0,
+          "number": 64,
+          "durationSeconds": 2822.89,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%202.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-12",
+          "title": "Quantum Leap · season 4, source program 20",
+          "season": 0,
+          "number": 65,
+          "durationSeconds": 2824.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2020.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-13",
+          "title": "Quantum Leap · season 4, source program 21",
+          "season": 0,
+          "number": 66,
+          "durationSeconds": 2823.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2021.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-14",
+          "title": "Quantum Leap · season 4, source program 22",
+          "season": 0,
+          "number": 67,
+          "durationSeconds": 2824.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%2022.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-15",
+          "title": "Quantum Leap · season 4, source program 3",
+          "season": 0,
+          "number": 68,
+          "durationSeconds": 2765.18,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%203.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-16",
+          "title": "Quantum Leap · season 4, source program 4",
+          "season": 0,
+          "number": 69,
+          "durationSeconds": 2761.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%204.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-17",
+          "title": "Quantum Leap · season 4, source program 5",
+          "season": 0,
+          "number": 70,
+          "durationSeconds": 2824.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%205.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-18",
+          "title": "Quantum Leap · season 4, source program 6",
+          "season": 0,
+          "number": 71,
+          "durationSeconds": 2798.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%206.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-19",
+          "title": "Quantum Leap · season 4, source program 7",
+          "season": 0,
+          "number": 72,
+          "durationSeconds": 2792.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%207.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-20",
+          "title": "Quantum Leap · season 4, source program 8",
+          "season": 0,
+          "number": 73,
+          "durationSeconds": 2793.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%208.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason4-21",
+          "title": "Quantum Leap · season 4, source program 9",
+          "season": 0,
+          "number": 74,
+          "durationSeconds": 2796.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason4/Episode%209.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-0",
+          "title": "Quantum Leap · season 5, source program 1",
+          "season": 0,
+          "number": 75,
+          "durationSeconds": 2827.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%201.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-1",
+          "title": "Quantum Leap · season 5, source program 10",
+          "season": 0,
+          "number": 76,
+          "durationSeconds": 2869.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2010.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-2",
+          "title": "Quantum Leap · season 5, source program 11",
+          "season": 0,
+          "number": 77,
+          "durationSeconds": 2840.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2011.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-3",
+          "title": "Quantum Leap · season 5, source program 12",
+          "season": 0,
+          "number": 78,
+          "durationSeconds": 2804.86,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2012.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-4",
+          "title": "Quantum Leap · season 5, source program 13",
+          "season": 0,
+          "number": 79,
+          "durationSeconds": 2749.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2013.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-5",
+          "title": "Quantum Leap · season 5, source program 14",
+          "season": 0,
+          "number": 80,
+          "durationSeconds": 2808.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2014.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-6",
+          "title": "Quantum Leap · season 5, source program 15",
+          "season": 0,
+          "number": 81,
+          "durationSeconds": 2804.86,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2015.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-7",
+          "title": "Quantum Leap · season 5, source program 16",
+          "season": 0,
+          "number": 82,
+          "durationSeconds": 2692.74,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2016.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-8",
+          "title": "Quantum Leap · season 5, source program 17",
+          "season": 0,
+          "number": 83,
+          "durationSeconds": 2927.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2017.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-9",
+          "title": "Quantum Leap · season 5, source program 18",
+          "season": 0,
+          "number": 84,
+          "durationSeconds": 2746.82,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2018.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-10",
+          "title": "Quantum Leap · season 5, source program 19",
+          "season": 0,
+          "number": 85,
+          "durationSeconds": 2730.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2019.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-11",
+          "title": "Quantum Leap · season 5, source program 2",
+          "season": 0,
+          "number": 86,
+          "durationSeconds": 2804.86,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%202.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-12",
+          "title": "Quantum Leap · season 5, source program 20",
+          "season": 0,
+          "number": 87,
+          "durationSeconds": 2742.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2020.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-13",
+          "title": "Quantum Leap · season 5, source program 21",
+          "season": 0,
+          "number": 88,
+          "durationSeconds": 2801.86,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2021.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-14",
+          "title": "Quantum Leap · season 5, source program 22",
+          "season": 0,
+          "number": 89,
+          "durationSeconds": 2843.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%2022.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-15",
+          "title": "Quantum Leap · season 5, source program 3",
+          "season": 0,
+          "number": 90,
+          "durationSeconds": 2808.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%203.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-16",
+          "title": "Quantum Leap · season 5, source program 4",
+          "season": 0,
+          "number": 91,
+          "durationSeconds": 2810.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%204.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-17",
+          "title": "Quantum Leap · season 5, source program 5",
+          "season": 0,
+          "number": 92,
+          "durationSeconds": 2749.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%205.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-18",
+          "title": "Quantum Leap · season 5, source program 6",
+          "season": 0,
+          "number": 93,
+          "durationSeconds": 2809.86,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%206.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-19",
+          "title": "Quantum Leap · season 5, source program 7",
+          "season": 0,
+          "number": 94,
+          "durationSeconds": 2779.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%207.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-20",
+          "title": "Quantum Leap · season 5, source program 8",
+          "season": 0,
+          "number": 95,
+          "durationSeconds": 2782.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%208.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-QLSeason5-21",
+          "title": "Quantum Leap · season 5, source program 9",
+          "season": 0,
+          "number": 96,
+          "durationSeconds": 2727.79,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/QLSeason5/Episode%209.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "flash-1990",
+      "title": "The Flash (1990)",
+      "channel": "action",
+      "items": [
+        {
+          "itemId": "the-flash-1990-complete-tv-series-thegoodone",
+          "title": "The Flash Complete TV Series (1990)",
+          "metadataUrl": "https://archive.org/metadata/the-flash-1990-complete-tv-series-thegoodone"
+        }
+      ],
+      "notes": "John Wesley Shipp 1990 series. Feature-length opening pilot stays intact; no 2014 reboot entries.",
+      "episodes": [
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-0",
+          "title": "The Flash S01E01 Pilot",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 5628,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E01%20Pilot.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-1",
+          "title": "The Flash S01E02 Out of Control",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 2847.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E02%20Out%20of%20Control.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-2",
+          "title": "The Flash S01E03 Watching the Detectives",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 2863.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E03%20Watching%20the%20Detectives.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-3",
+          "title": "The Flash S01E04 Honor Among Thieves",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 2865.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E04%20Honor%20Among%20Thieves.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-4",
+          "title": "The Flash S01E05 Double Vision",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 2817.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E05%20Double%20Vision.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-5",
+          "title": "The Flash S01E06 Sins of the Father",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 2813.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E06%20Sins%20of%20the%20Father.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-6",
+          "title": "The Flash S01E07 Child's Play",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 2875.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E07%20Child's%20Play.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-7",
+          "title": "The Flash S01E08 Shroud of Death",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 2813.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E08%20Shroud%20of%20Death.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-8",
+          "title": "The Flash S01E09 Ghost in the Machine",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 2794.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E09%20Ghost%20in%20the%20Machine.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-9",
+          "title": "The Flash S01E10 Sight Unseen",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 2855.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E10%20Sight%20Unseen.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-10",
+          "title": "The Flash S01E11 Bewat the Clock",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 2819.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E11%20Bewat%20the%20Clock.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-11",
+          "title": "The Flash S01E12 The Trickster",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 2824.86,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E12%20The%20Trickster.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-12",
+          "title": "The Flash S01E13 Tina, is that you",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 2877.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E13%20Tina%2C%20is%20that%20you.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-13",
+          "title": "The Flash S01E14 Be My Baby",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 2845.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E14%20Be%20My%20Baby.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-14",
+          "title": "The Flash S01E15 Fast Forward",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 2814.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E15%20Fast%20Forward.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-15",
+          "title": "The Flash S01E16 Deadly Nightshade",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 2846.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E16%20Deadly%20Nightshade.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-16",
+          "title": "The Flash S01E17 Captain Cold",
+          "season": 1,
+          "number": 17,
+          "durationSeconds": 2854.89,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E17%20Captain%20Cold.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-17",
+          "title": "The Flash S01E18 Twin Streaks",
+          "season": 1,
+          "number": 18,
+          "durationSeconds": 2873.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E18%20Twin%20Streaks.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-18",
+          "title": "The Flash S01E19 Done with Mirrors",
+          "season": 1,
+          "number": 19,
+          "durationSeconds": 2872.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E19%20Done%20with%20Mirrors.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-19",
+          "title": "The Flash S01E20 Good Night Central City",
+          "season": 1,
+          "number": 20,
+          "durationSeconds": 2843.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E20%20Good%20Night%20Central%20City.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-20",
+          "title": "The Flash S01E21 Alpha",
+          "season": 1,
+          "number": 21,
+          "durationSeconds": 2829.46,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E21%20Alpha.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-flash-1990-complete-tv-series-thegoodone-21",
+          "title": "The Flash S01E22 The Trial of The Trickster",
+          "season": 1,
+          "number": 22,
+          "durationSeconds": 2843.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-flash-1990-complete-tv-series-thegoodone/The%20Flash%20S01E22%20The%20Trial%20of%20The%20Trickster.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "greatest-american-heroine",
+      "title": "The Greatest American Heroine · pilot",
+      "channel": "action",
+      "items": [
+        {
+          "itemId": "the-greatest-american-heroine-pilot",
+          "title": "The Greatest American Heroine Pilot",
+          "metadataUrl": "https://archive.org/metadata/the-greatest-american-heroine-pilot"
+        }
+      ],
+      "notes": "One unaired spin-off pilot, not a multi-episode series.",
+      "episodes": [
+        {
+          "id": "archive-the-greatest-american-heroine-pilot-0",
+          "title": "The Greatest American Heroine - Pilot",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 2775.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-greatest-american-heroine-pilot/The%20Greatest%20American%20Heroine%20-%20Pilot.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

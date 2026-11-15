@@ -17,7 +17,7 @@ const legacy = () => {
   return catalog;
 };
 
-test('six channels place Sci-Fi third and keep animated science fiction on Saturday Morning', () => {
+test('seven channels place Sci-Fi third and keep animated science fiction on Saturday Morning', () => {
   assert.deepEqual(CHANNELS.map(c=>[c.id,c.number]), [['mixed','01'],['action','02'],['scifi','03'],['cartoons','04'],['comedy','05'],['seventies','06'],['late-night','07']]);
   const seed=createSeed();
   assert.deepEqual(new Set(seed.shows.filter(s=>s.channel==='scifi' && s.id!==MOVIE_SHOW_ID).map(s=>s.id)), SCI_FI_SHOW_IDS);
@@ -53,9 +53,9 @@ test('Sci-Fi schedules and dials use only checked science-fiction programs with 
   const catalog=validateCatalog(JSON.parse(await readFile(new URL('../data/expanded-catalog.json',import.meta.url),'utf8')));
   catalog.settings.channel='scifi';catalog.settings.bumpers=false;
   const schedule=buildSchedule(catalog),programs=schedule.filter(e=>e.episode.kind==='episode');
-  assert.equal(new Set(programs.map(e=>e.episode.id)).size,286);
+  assert.equal(new Set(programs.map(e=>e.episode.id)).size,382);
   assert(programs.every(e=>e.show.channel==='scifi'));
-  assert.equal(availableDialShows(catalog).length,15);
+  assert.equal(availableDialShows(catalog).length,16);
   assert.equal(nextDialShow(catalog,'buck-rogers').id,'battlestar');
   const patch=randomDialPatch(catalog,{mode:'show',seed:42,random:()=>0,currentShowId:'buck-rogers'});
   assert.equal(catalog.shows.find(s=>s.id===patch.streamShow).channel,'scifi');

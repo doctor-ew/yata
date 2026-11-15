@@ -6,7 +6,7 @@ import { discoveryRows, mergeLibraryBatch } from '../src/bulk.mjs';
 import { parseCatalogJson, buildSchedule, saveCatalog, readCatalog } from '../src/domain.mjs';
 const data = new URL('../data/', import.meta.url);
 test('shipped library covers every requested show, fits storage and repeats without adding duplicates', async () => {
- const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
+ const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
  assert.equal(packs[2].curated, true);
  const seed = createSeed(), rows = discoveryRows(seed, packs);
  const result = mergeLibraryBatch(seed, rows);
@@ -27,7 +27,7 @@ test('shipped library covers every requested show, fits storage and repeats with
 
 
 test('Marvel cartoon additions have distinct stories, exclude title cards and merge into older saved catalogs', async () => {
- const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
+ const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
  const seed = createSeed();
  const oldCatalog = structuredClone(seed);
  oldCatalog.shows = oldCatalog.shows.filter(show => !['spider-friends', 'hulk-1982'].includes(show.id));
@@ -49,7 +49,7 @@ test('Marvel cartoon additions have distinct stories, exclude title cards and me
 });
 
 test('Saturday Morning expansion preserves known gaps, source order and older libraries', async () => {
- const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
+ const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
  const counts = {'bionic-six':65, jayce:65, 'pole-position':13, 'turbo-teen':12, bravestarr:19, 'defenders-earth':65, 'drak-pack':16, 'dragons-lair':13};
  const seed = createSeed();
  const old = structuredClone(seed); old.shows = old.shows.filter(show => !(show.id in counts)); old.settings.channel = 'cartoons';
@@ -74,7 +74,7 @@ test('Saturday Morning expansion preserves known gaps, source order and older li
 });
 
 test('Hanna-Barbera expansion preserves shorts, long programs and intact story bundles', async () => {
- const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
+ const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel'].map(async name => JSON.parse(await readFile(new URL(`${name}-discovery.json`, data), 'utf8'))));
  const counts = {'galaxy-rangers':65, visionaries:13, 'space-ghost':20, herculoids:18, galtar:21, 'speed-buggy':16, 'captain-caveman':16, 'hong-kong-phooey':16, dynomutt:20, 'yogi-bear':68, birdman:20, 'jonny-quest':26, 'super-friends':16, flintstones:26, jetsons:24, 'wacky-races':17};
  const seed = createSeed(), old = structuredClone(seed);
  old.shows = old.shows.filter(show => !(show.id in counts)); old.settings.channel = 'cartoons';
