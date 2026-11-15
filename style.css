@@ -1461,3 +1461,9 @@ button.tv-knob:focus-visible { outline-offset: -2px; }
 .channel-builder-action #open-channel-builder {display:block;width:100%;}
 .window-mode .channel-builder-action {display:none;}
 .remote-label .remote-guide {margin-left:auto;}
+
+.creator-byline{max-width:1440px;margin:0 auto;padding:8px 48px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 20px;font-size:12px;line-height:1.5;color:var(--muted);border-bottom:1px solid var(--line)}
+.creator-byline strong{color:var(--text)}
+.creator-byline nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+.creator-byline a{color:var(--text);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:800px){.creator-byline{padding:8px 20px;font-size:11px}}

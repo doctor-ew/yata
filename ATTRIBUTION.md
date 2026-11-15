@@ -28,4 +28,4 @@ Show names, commercials and video content belong to their respective creators an
 
 ## Character host portraits
 
-The channel builder uses self-hosted actor portraits from Wikimedia Commons, with author, license, and source details at https://doctorew.com/host-portraits/credits.html. Actor photographs are captioned as portraits; they are not represented as production stills of their fictional characters. Murdock reuses the existing doctorew.com portfolio artwork. Twiki and Jabberjaw currently have text labels only. Character names and underlying properties belong to their respective owners; the hosts are AI simulations.
+The channel builder uses in-character images for Captain Stubing, Arnold, Benson, Starbuck, Mr. T, Murdock, Twiki, and Jabberjaw. Image sources and rights information are recorded at https://doctorew.com/host-portraits/credits.html. These images are not collectively open-licensed. Murdock and Mr. T reuse existing doctorew.com portfolio artwork. Character names and underlying properties belong to their respective owners; the hosts are AI simulations.
