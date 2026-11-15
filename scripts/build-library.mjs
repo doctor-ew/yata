@@ -5,14 +5,17 @@ import { createSeed } from '../src/catalog.mjs';
 import { discoveryRows, mergeLibraryBatch } from '../src/bulk.mjs';
 import { buildSchedule, parseCatalogJson, stationSource, COMMERCIAL_SHOW_ID } from '../src/domain.mjs';
 const data = new URL('../data/', import.meta.url);
-const names = ['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras'];
+const names = ['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons'];
 const extraCartoonIds = new Set(['mister-t', 'frankenstein-impossibles']);
+const stephanieIds = new Set(["jem", "she-ra", "rainbow-brite", "care-bears", "strawberry-shortcake", "my-little-pony", "grimm-fairy-tale-classics", "grape-ape", "shirt-tales", "heathcliff", "garfield-friends"]);
 const extraIds = new Set(ADDITIONAL_SCIFI_SERIES.map(([id]) => id));
 const texts = await Promise.all(names.map(name => readFile(new URL(`${name}-discovery.json`, data), 'utf8')));
 const packs = texts.map(JSON.parse);
 const seed = createSeed(); let sequence = 0;
 for (const [index, name] of names.entries()) {
   const expected = seed.shows.filter(show => {
+    if (name === 'stephanie-cartoons') return stephanieIds.has(show.id);
+    if (stephanieIds.has(show.id)) return false;
     if (name === 'cartoon-extras') return extraCartoonIds.has(show.id);
     if (name === 'seventies') return show.channel === 'seventies';
     if (name === 'benson') return show.id === 'benson';

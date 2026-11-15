@@ -3,6 +3,7 @@ import { CHANNELS, SHOW_CHANNEL_IDS, migratedShowChannel } from './channels.mjs'
 import { randomRotation, createCommercialBreak } from './shuffle.mjs';
 export const COMMERCIAL_SHOW_ID = 'vintage-commercials';
 export const STORAGE_KEY = 'drew-tv.catalog.v1';
+export const MAX_CATALOG_SHOWS = 128;
 export const MAX_IMPORT_BYTES = 2_000_000;
 const ID = /^[\w.-]{1,160}$/;
 const VIDEO = /^[\w-]{11}$/;
@@ -111,7 +112,7 @@ export async function importArchive(raw, fetcher = globalThis.fetch, timeoutMs =
 }
 
 export function validateCatalog(raw) {
-  if (!raw || raw.version !== 1 || !Array.isArray(raw.shows) || raw.shows.length > 100 || !raw.shows.length) fail('Expected a version-1 YATA catalog with 1–100 shows.');
+  if (!raw || raw.version !== 1 || !Array.isArray(raw.shows) || raw.shows.length > MAX_CATALOG_SHOWS || !raw.shows.length) fail(`Expected a version-1 YATA catalog with 1–${MAX_CATALOG_SHOWS} shows.`);
   if (!Number.isFinite(raw.epoch) || raw.epoch < 0) fail('Invalid station start time.');
   if (!raw.settings || !CHANNELS.some(channel => channel.id === raw.settings.channel) || typeof raw.settings.bumpers !== 'boolean') fail('Invalid station settings.');
   const rotation = raw.settings.rotation ?? 'random';

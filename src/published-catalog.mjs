@@ -1,4 +1,4 @@
-import { validateCatalog, MAX_IMPORT_BYTES } from "./domain.mjs";
+import { validateCatalog, MAX_IMPORT_BYTES, MAX_CATALOG_SHOWS } from "./domain.mjs";
 export const PUBLISHED_MANIFEST_PATH = "data/published-catalog-manifest.json";
 const REVISION = /^[a-f0-9]{64}$/;
 export function catalogCounts(catalog) {
@@ -26,7 +26,7 @@ export function validatePublishedManifest(raw) {
     !counts ||
     !Number.isInteger(counts.shows) ||
     counts.shows < 1 ||
-    counts.shows > 100 ||
+    counts.shows > MAX_CATALOG_SHOWS ||
     !Number.isInteger(counts.episodes) ||
     counts.episodes < 0 ||
     counts.episodes > 5000 ||

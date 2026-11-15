@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-c9a64be038035323",
+  "revision": "expanded-733a683fb726f291",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -10,13 +10,14 @@
     "2026-11-14T13:23:15.444Z",
     "2026-11-14T13:50:40.627Z",
     "2026-11-14T16:37:38.599Z",
-    "2026-11-14T16:43:53.622Z"
+    "2026-11-14T16:43:53.622Z",
+    "2026-11-15T14:12:12.066Z"
   ],
-  "episodes": 3239,
-  "ready": 3120,
+  "episodes": 3670,
+  "ready": 3551,
   "movieReady": 5,
   "breaks": 14,
-  "streamSlots": 41608,
+  "streamSlots": 46293,
   "shows": [
     {
       "id": "dukes",
@@ -755,6 +756,94 @@
       "sources": 18
     },
     {
+      "id": "jem",
+      "title": "Jem and the Holograms",
+      "episodes": 65,
+      "ready": 65,
+      "breaks": 0,
+      "sources": 65
+    },
+    {
+      "id": "she-ra",
+      "title": "She-Ra: Princess of Power (1985)",
+      "episodes": 93,
+      "ready": 93,
+      "breaks": 0,
+      "sources": 93
+    },
+    {
+      "id": "rainbow-brite",
+      "title": "Rainbow Brite (1984)",
+      "episodes": 13,
+      "ready": 13,
+      "breaks": 0,
+      "sources": 13
+    },
+    {
+      "id": "care-bears",
+      "title": "Care Bears (1980s)",
+      "episodes": 71,
+      "ready": 71,
+      "breaks": 0,
+      "sources": 71
+    },
+    {
+      "id": "strawberry-shortcake",
+      "title": "Strawberry Shortcake (1980s)",
+      "episodes": 11,
+      "ready": 11,
+      "breaks": 0,
+      "sources": 11
+    },
+    {
+      "id": "my-little-pony",
+      "title": "My Little Pony ’n Friends (1986)",
+      "episodes": 65,
+      "ready": 65,
+      "breaks": 0,
+      "sources": 65
+    },
+    {
+      "id": "grimm-fairy-tale-classics",
+      "title": "Grimm’s Fairy Tale Classics",
+      "episodes": 1,
+      "ready": 1,
+      "breaks": 0,
+      "sources": 1
+    },
+    {
+      "id": "grape-ape",
+      "title": "The Great Grape Ape Show",
+      "episodes": 0,
+      "ready": 0,
+      "breaks": 0,
+      "sources": 0
+    },
+    {
+      "id": "shirt-tales",
+      "title": "Shirt Tales (1982)",
+      "episodes": 13,
+      "ready": 13,
+      "breaks": 0,
+      "sources": 13
+    },
+    {
+      "id": "heathcliff",
+      "title": "Heathcliff and the Catillac Cats (1984)",
+      "episodes": 86,
+      "ready": 86,
+      "breaks": 0,
+      "sources": 86
+    },
+    {
+      "id": "garfield-friends",
+      "title": "Garfield and Friends (1988)",
+      "episodes": 13,
+      "ready": 13,
+      "breaks": 0,
+      "sources": 13
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -763,6 +852,6 @@
       "sources": 1
     }
   ],
-  "bytes": 1210765,
+  "bytes": 1387705,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

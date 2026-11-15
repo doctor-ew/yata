@@ -20,7 +20,7 @@ content.set('style.css', await readFile(path.join(root, 'style.css')));
 for (const name of await readdir(path.join(root, 'src'))) {
   if (name.endsWith('.mjs')) content.set(`src/${name}`, await readFile(path.join(root, 'src', name)));
 }
-for (const name of ['action-discovery.json', 'cartoon-discovery.json', 'youtube-discovery.json', 'commercials-discovery.json', 'scifi-discovery.json', 'movies-discovery.json', 'comedy-discovery.json', 'benson-discovery.json', 'cartoon-extras-discovery.json', 'seventies-discovery.json', 'library-manifest.json', 'expanded-catalog.json']) {
+for (const name of ['action-discovery.json', 'cartoon-discovery.json', 'youtube-discovery.json', 'commercials-discovery.json', 'scifi-discovery.json', 'movies-discovery.json', 'comedy-discovery.json', 'benson-discovery.json', 'cartoon-extras-discovery.json', 'stephanie-cartoons-discovery.json', 'seventies-discovery.json', 'library-manifest.json', 'expanded-catalog.json']) {
   content.set(`data/${name}`, await readFile(path.join(root, 'data', name)));
 }
 content.set('LICENSE.txt', await readFile(path.join(root, '..', 'LICENSE')));
