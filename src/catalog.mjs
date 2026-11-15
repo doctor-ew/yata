@@ -1,3 +1,4 @@
+import { EXPANDED_ERA_SHOWS } from './expanded-era.mjs';
 import { COMMERCIAL_SHOW_ID } from './domain.mjs';
 import { MOVIE_SHOW_ID, ADDITIONAL_SCIFI_SERIES, MOVIE_WISHLIST } from './collections.mjs';
 import { migratedShowChannel } from './channels.mjs';
@@ -96,6 +97,7 @@ export function createSeed() {
   for(const [id,title,channel] of [["star-trek-tos", "Star Trek: The Original Series", "scifi"], ["star-trek-tng", "Star Trek: The Next Generation", "scifi"], ["star-trek-ds9", "Star Trek: Deep Space Nine", "scifi"], ["star-trek-voyager", "Star Trek: Voyager", "scifi"], ["star-trek-enterprise", "Star Trek: Enterprise", "scifi"], ["star-trek-tas", "Star Trek: The Animated Series (1973)", "cartoons"]]) shows.push({id,title,channel,imdbUrl:null,episodes:[]});
   for(const [id,title,channel] of [['star-wars-droids','Star Wars: Droids (1985)','cartoons'],['star-wars-holiday-special','The Star Wars Holiday Special (1978)','scifi'],['sealab-2020','Sealab 2020 (1972)','cartoons'],['venture-bros','The Venture Bros.','late-night']]) shows.push({id,title,channel,imdbUrl:null,episodes:[]});
   for(const [id,title] of [['flash-gordon-1979','The New Adventures of Flash Gordon (1979)'],['return-planet-apes','Return to the Planet of the Apes (1975)'],['valley-dinosaurs','Valley of the Dinosaurs (1974)']]) shows.push({id,title,channel:'cartoons',imdbUrl:null,episodes:[]});
+  for(const show of EXPANDED_ERA_SHOWS) shows.push({...show,imdbUrl:null,episodes:[]});
   shows.push({ id: 'saturday-simulator', title: 'Saturday Morning Simulator', channel: 'cartoons', imdbUrl: null,
     episodes: [{ id: 'simulator-107', title: 'Saturday Morning Cartoons · compilation #107',
       season: 0, number: 107, durationSeconds: 33116, group: '', kind: 'episode',

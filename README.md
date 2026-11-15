@@ -254,3 +254,11 @@ The requested expansion is recorded in `data/retro-requests-discovery.json`. Sta
 ## Saturday adventure cartoons
 
 The New Adventures of Flash Gordon (1979), Return to the Planet of the Apes (1975), and Valley of the Dinosaurs (1974) join Saturday Morning and the main mixed stream. Provenance and gaps are recorded in `data/saturday-adventure-discovery.json`. Flash Gordon has 24 half-hour programs across two seasons; second-season paired shorts remain intact, and the feature film and production extras are excluded. Animated Planet of the Apes has 13 episodes; source files for episodes 6 and 9 are labeled 480p. Valley of the Dinosaurs has 15 episodes, with episode 10 missing from this source search. Standalone end-credit clips are excluded.
+
+## Expanded 1970s–1990s lineup
+
+The approved recommendation pass adds 69 collections and fills Daria with 65 restored-audio episodes: 3,060 program items in total. Doctor Who, Highwayman, Max Headroom, Blake’s 7, Real Ghostbusters, Robotech, Star Blazers, Sliders, seaQuest, Babylon 5, Farscape and Eerie, Indiana are included alongside further action, comedy, animation and Nickelodeon-era collections. Channels retain their existing identities; no separate Doctor Who or Nickelodeon channel is created. Nickelodeon comedy additions use the existing short Nick break clips.
+
+Coverage varies by source. Doctor Who covers seasons 7, 8 and 12; Daria has five seasons; Farscape covers seasons 1–3. The Muppet Show uses two intact compilation tapes. Remington Steele has one mixed off-air recording with other footage and ads before the program. Eight requested titles remain unsourced in this pass. Existing DS9, Magnum, Simon & Simon, Transformers, Barnaby Jones and Grape Ape gaps are reported without implying they were filled. Detailed counts, exclusions and source links are in `../docs/3/EXPANDED-ERA-SOURCES.md`; reproducible selection rules are in `data/expanded-era-sources.json` and `scripts/expanded-era-discovery.mjs`.
+
+Portable catalog imports allow at most 8 MB, with the existing 256-show and 10,000-item bounds. The larger channel-builder offer uses a bounded backend envelope; ordinary chat retains its previous byte limit.

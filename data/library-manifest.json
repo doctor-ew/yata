@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-a0542334f7c7e14b",
+  "revision": "expanded-129eae546d69471f",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -18,13 +18,14 @@
     "2026-11-15T14:46:20.074Z",
     "2026-11-15T14:51:43.969Z",
     "2026-11-15T15:02:52.808Z",
-    "2026-11-15T15:06:54.717Z"
+    "2026-11-15T15:06:54.717Z",
+    "2026-11-15T15:53:42.678Z"
   ],
-  "episodes": 6154,
-  "ready": 6022,
+  "episodes": 9214,
+  "ready": 9082,
   "movieReady": 5,
   "breaks": 24,
-  "streamSlots": 100524,
+  "streamSlots": 153027,
   "shows": [
     {
       "id": "dukes",
@@ -965,10 +966,10 @@
     {
       "id": "daria",
       "title": "Daria",
-      "episodes": 0,
-      "ready": 0,
+      "episodes": 65,
+      "ready": 65,
       "breaks": 0,
-      "sources": 0
+      "sources": 65
     },
     {
       "id": "taxi",
@@ -1211,6 +1212,558 @@
       "sources": 15
     },
     {
+      "id": "classic-doctor-who",
+      "title": "Doctor Who (1963–1989)",
+      "episodes": 70,
+      "ready": 70,
+      "breaks": 0,
+      "sources": 70
+    },
+    {
+      "id": "highwayman",
+      "title": "The Highwayman (1987–1988)",
+      "episodes": 10,
+      "ready": 10,
+      "breaks": 0,
+      "sources": 10
+    },
+    {
+      "id": "max-headroom",
+      "title": "Max Headroom (1987)",
+      "episodes": 14,
+      "ready": 14,
+      "breaks": 0,
+      "sources": 14
+    },
+    {
+      "id": "blakes-seven",
+      "title": "Blake’s 7 (1978)",
+      "episodes": 52,
+      "ready": 52,
+      "breaks": 0,
+      "sources": 52
+    },
+    {
+      "id": "real-ghostbusters",
+      "title": "The Real Ghostbusters (1986)",
+      "episodes": 135,
+      "ready": 135,
+      "breaks": 0,
+      "sources": 135
+    },
+    {
+      "id": "robotech",
+      "title": "Robotech (1985)",
+      "episodes": 85,
+      "ready": 85,
+      "breaks": 0,
+      "sources": 85
+    },
+    {
+      "id": "star-blazers",
+      "title": "Star Blazers (1979)",
+      "episodes": 52,
+      "ready": 52,
+      "breaks": 0,
+      "sources": 52
+    },
+    {
+      "id": "sliders",
+      "title": "Sliders (1995)",
+      "episodes": 20,
+      "ready": 20,
+      "breaks": 0,
+      "sources": 20
+    },
+    {
+      "id": "seaquest",
+      "title": "seaQuest DSV (1993)",
+      "episodes": 7,
+      "ready": 7,
+      "breaks": 0,
+      "sources": 7
+    },
+    {
+      "id": "babylon-five",
+      "title": "Babylon 5 (1993)",
+      "episodes": 108,
+      "ready": 108,
+      "breaks": 0,
+      "sources": 108
+    },
+    {
+      "id": "farscape",
+      "title": "Farscape (1999)",
+      "episodes": 66,
+      "ready": 66,
+      "breaks": 0,
+      "sources": 66
+    },
+    {
+      "id": "eerie-indiana",
+      "title": "Eerie, Indiana (1991)",
+      "episodes": 19,
+      "ready": 19,
+      "breaks": 0,
+      "sources": 19
+    },
+    {
+      "id": "six-million-man",
+      "title": "The Six Million Dollar Man",
+      "episodes": 34,
+      "ready": 34,
+      "breaks": 0,
+      "sources": 34
+    },
+    {
+      "id": "sledge-hammer",
+      "title": "Sledge Hammer",
+      "episodes": 41,
+      "ready": 41,
+      "breaks": 0,
+      "sources": 41
+    },
+    {
+      "id": "land-lost",
+      "title": "Land of the Lost",
+      "episodes": 43,
+      "ready": 43,
+      "breaks": 0,
+      "sources": 43
+    },
+    {
+      "id": "prisoner",
+      "title": "The Prisoner",
+      "episodes": 17,
+      "ready": 17,
+      "breaks": 0,
+      "sources": 17
+    },
+    {
+      "id": "brisco-county",
+      "title": "The Adventures of Brisco County Jr",
+      "episodes": 27,
+      "ready": 27,
+      "breaks": 0,
+      "sources": 27
+    },
+    {
+      "id": "mr-merlin",
+      "title": "Mr Merlin",
+      "episodes": 22,
+      "ready": 22,
+      "breaks": 0,
+      "sources": 22
+    },
+    {
+      "id": "cities-gold",
+      "title": "The Mysterious Cities of Gold",
+      "episodes": 39,
+      "ready": 39,
+      "breaks": 0,
+      "sources": 39
+    },
+    {
+      "id": "sapphire-steel",
+      "title": "Sapphire and Steel",
+      "episodes": 34,
+      "ready": 34,
+      "breaks": 0,
+      "sources": 34
+    },
+    {
+      "id": "tomorrow-people",
+      "title": "The Tomorrow People",
+      "episodes": 68,
+      "ready": 68,
+      "breaks": 0,
+      "sources": 68
+    },
+    {
+      "id": "tripods",
+      "title": "The Tripods",
+      "episodes": 24,
+      "ready": 24,
+      "breaks": 0,
+      "sources": 24
+    },
+    {
+      "id": "red-dwarf",
+      "title": "Red Dwarf",
+      "episodes": 52,
+      "ready": 52,
+      "breaks": 0,
+      "sources": 52
+    },
+    {
+      "id": "starlost",
+      "title": "The Starlost",
+      "episodes": 16,
+      "ready": 16,
+      "breaks": 0,
+      "sources": 16
+    },
+    {
+      "id": "alien-nation",
+      "title": "Alien Nation",
+      "episodes": 22,
+      "ready": 22,
+      "breaks": 0,
+      "sources": 22
+    },
+    {
+      "id": "invaders",
+      "title": "The Invaders",
+      "episodes": 43,
+      "ready": 43,
+      "breaks": 0,
+      "sources": 43
+    },
+    {
+      "id": "time-tunnel",
+      "title": "The Time Tunnel",
+      "episodes": 30,
+      "ready": 30,
+      "breaks": 0,
+      "sources": 30
+    },
+    {
+      "id": "dino-riders",
+      "title": "Dino Riders",
+      "episodes": 14,
+      "ready": 14,
+      "breaks": 0,
+      "sources": 14
+    },
+    {
+      "id": "inhumanoids",
+      "title": "Inhumanoids",
+      "episodes": 13,
+      "ready": 13,
+      "breaks": 0,
+      "sources": 13
+    },
+    {
+      "id": "gobots",
+      "title": "Challenge of the GoBots",
+      "episodes": 65,
+      "ready": 65,
+      "breaks": 0,
+      "sources": 65
+    },
+    {
+      "id": "battle-planets",
+      "title": "Battle of the Planets",
+      "episodes": 85,
+      "ready": 85,
+      "breaks": 0,
+      "sources": 85
+    },
+    {
+      "id": "saber-rider",
+      "title": "Saber Rider and the Star Sheriffs",
+      "episodes": 52,
+      "ready": 52,
+      "breaks": 0,
+      "sources": 52
+    },
+    {
+      "id": "dinosaucers",
+      "title": "Dinosaucers",
+      "episodes": 65,
+      "ready": 65,
+      "breaks": 0,
+      "sources": 65
+    },
+    {
+      "id": "teddy-ruxpin",
+      "title": "The Adventures of Teddy Ruxpin",
+      "episodes": 52,
+      "ready": 52,
+      "breaks": 0,
+      "sources": 52
+    },
+    {
+      "id": "ulysses-31",
+      "title": "Ulysses 31",
+      "episodes": 26,
+      "ready": 26,
+      "breaks": 0,
+      "sources": 26
+    },
+    {
+      "id": "ewoks",
+      "title": "Ewoks",
+      "episodes": 26,
+      "ready": 26,
+      "breaks": 0,
+      "sources": 26
+    },
+    {
+      "id": "mario-super-show",
+      "title": "The Super Mario Bros Super Show",
+      "episodes": 17,
+      "ready": 17,
+      "breaks": 0,
+      "sources": 17
+    },
+    {
+      "id": "captain-n",
+      "title": "Captain N",
+      "episodes": 33,
+      "ready": 33,
+      "breaks": 0,
+      "sources": 33
+    },
+    {
+      "id": "scarecrow-king",
+      "title": "Scarecrow and Mrs King",
+      "episodes": 88,
+      "ready": 88,
+      "breaks": 0,
+      "sources": 88
+    },
+    {
+      "id": "miami-vice",
+      "title": "Miami Vice",
+      "episodes": 111,
+      "ready": 111,
+      "breaks": 0,
+      "sources": 111
+    },
+    {
+      "id": "beans-baxter",
+      "title": "The New Adventures of Beans Baxter",
+      "episodes": 17,
+      "ready": 17,
+      "breaks": 0,
+      "sources": 17
+    },
+    {
+      "id": "soap",
+      "title": "Soap",
+      "episodes": 87,
+      "ready": 87,
+      "breaks": 0,
+      "sources": 87
+    },
+    {
+      "id": "police-squad",
+      "title": "Police Squad",
+      "episodes": 6,
+      "ready": 6,
+      "breaks": 0,
+      "sources": 6
+    },
+    {
+      "id": "alf",
+      "title": "ALF",
+      "episodes": 100,
+      "ready": 100,
+      "breaks": 0,
+      "sources": 100
+    },
+    {
+      "id": "perfect-strangers",
+      "title": "Perfect Strangers",
+      "episodes": 150,
+      "ready": 150,
+      "breaks": 0,
+      "sources": 150
+    },
+    {
+      "id": "small-wonder",
+      "title": "Small Wonder",
+      "episodes": 2,
+      "ready": 2,
+      "breaks": 0,
+      "sources": 2
+    },
+    {
+      "id": "muppet-show",
+      "title": "The Muppet Show",
+      "episodes": 2,
+      "ready": 2,
+      "breaks": 0,
+      "sources": 2
+    },
+    {
+      "id": "aeon-flux",
+      "title": "Aeon Flux",
+      "episodes": 11,
+      "ready": 11,
+      "breaks": 0,
+      "sources": 11
+    },
+    {
+      "id": "liquid-television",
+      "title": "Liquid Television",
+      "episodes": 22,
+      "ready": 22,
+      "breaks": 0,
+      "sources": 22
+    },
+    {
+      "id": "dr-katz",
+      "title": "Dr Katz",
+      "episodes": 81,
+      "ready": 81,
+      "breaks": 0,
+      "sources": 81
+    },
+    {
+      "id": "critic",
+      "title": "The Critic",
+      "episodes": 23,
+      "ready": 23,
+      "breaks": 0,
+      "sources": 23
+    },
+    {
+      "id": "duckman",
+      "title": "Duckman",
+      "episodes": 70,
+      "ready": 70,
+      "breaks": 0,
+      "sources": 70
+    },
+    {
+      "id": "mission-hill",
+      "title": "Mission Hill",
+      "episodes": 13,
+      "ready": 13,
+      "breaks": 0,
+      "sources": 13
+    },
+    {
+      "id": "oblongs",
+      "title": "The Oblongs",
+      "episodes": 13,
+      "ready": 13,
+      "breaks": 0,
+      "sources": 13
+    },
+    {
+      "id": "clone-high",
+      "title": "Clone High",
+      "episodes": 13,
+      "ready": 13,
+      "breaks": 0,
+      "sources": 13
+    },
+    {
+      "id": "moral-orel",
+      "title": "Moral Orel",
+      "episodes": 44,
+      "ready": 44,
+      "breaks": 0,
+      "sources": 44
+    },
+    {
+      "id": "danger-mouse",
+      "title": "Danger Mouse",
+      "episodes": 90,
+      "ready": 90,
+      "breaks": 0,
+      "sources": 90
+    },
+    {
+      "id": "count-duckula",
+      "title": "Count Duckula",
+      "episodes": 65,
+      "ready": 65,
+      "breaks": 0,
+      "sources": 65
+    },
+    {
+      "id": "double-dare",
+      "title": "Double Dare",
+      "episodes": 187,
+      "ready": 187,
+      "breaks": 0,
+      "sources": 187
+    },
+    {
+      "id": "out-control",
+      "title": "Out of Control",
+      "episodes": 17,
+      "ready": 17,
+      "breaks": 0,
+      "sources": 17
+    },
+    {
+      "id": "salute-shorts",
+      "title": "Salute Your Shorts",
+      "episodes": 26,
+      "ready": 26,
+      "breaks": 0,
+      "sources": 26
+    },
+    {
+      "id": "hey-dude",
+      "title": "Hey Dude",
+      "episodes": 65,
+      "ready": 65,
+      "breaks": 0,
+      "sources": 65
+    },
+    {
+      "id": "pete-pete",
+      "title": "The Adventures of Pete and Pete",
+      "episodes": 22,
+      "ready": 22,
+      "breaks": 0,
+      "sources": 22
+    },
+    {
+      "id": "space-sentinels",
+      "title": "Space Sentinels",
+      "episodes": 13,
+      "ready": 13,
+      "breaks": 0,
+      "sources": 13
+    },
+    {
+      "id": "blackstar",
+      "title": "Blackstar",
+      "episodes": 13,
+      "ready": 13,
+      "breaks": 0,
+      "sources": 13
+    },
+    {
+      "id": "kolchak",
+      "title": "Kolchak",
+      "episodes": 22,
+      "ready": 22,
+      "breaks": 0,
+      "sources": 22
+    },
+    {
+      "id": "hitchhikers-guide",
+      "title": "The Hitchhiker’s Guide to the Galaxy (1981)",
+      "episodes": 6,
+      "ready": 6,
+      "breaks": 0,
+      "sources": 6
+    },
+    {
+      "id": "man-atlantis",
+      "title": "Man from Atlantis (1977)",
+      "episodes": 17,
+      "ready": 17,
+      "breaks": 0,
+      "sources": 17
+    },
+    {
+      "id": "remington-steele",
+      "title": "Remington Steele (1982)",
+      "episodes": 1,
+      "ready": 1,
+      "breaks": 0,
+      "sources": 1
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -1219,6 +1772,6 @@
       "sources": 1
     }
   ],
-  "bytes": 2310523,
+  "bytes": 3429579,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

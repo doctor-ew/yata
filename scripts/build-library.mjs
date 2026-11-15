@@ -1,3 +1,4 @@
+import { EXPANDED_ERA_SHOWS } from '../src/expanded-era.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { libraryRevision } from './library-revision.mjs';
 import { MOVIE_SHOW_ID, ADDITIONAL_SCIFI_SERIES } from '../src/collections.mjs';
@@ -5,12 +6,13 @@ import { createSeed } from '../src/catalog.mjs';
 import { discoveryRows, mergeLibraryBatch } from '../src/bulk.mjs';
 import { buildSchedule, parseCatalogJson, stationSource, COMMERCIAL_SHOW_ID } from '../src/domain.mjs';
 const data = new URL('../data/', import.meta.url);
-const names = ['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel', 'star-trek', 'retro-requests', 'saturday-adventure'];
+const names = ['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel', 'star-trek', 'retro-requests', 'saturday-adventure', 'expanded-era'];
 const extraCartoonIds = new Set(['mister-t', 'frankenstein-impossibles']);
 const stephanieIds = new Set(["jem", "she-ra", "rainbow-brite", "care-bears", "strawberry-shortcake", "my-little-pony", "grimm-fairy-tale-classics", "grape-ape", "shirt-tales", "heathcliff", "garfield-friends"]);
 const networkIds = new Set(["ycdtotv", "turkey-tv", "harvey-birdman", "sealab-2021", "home-movies", "brak-show", "daria", "taxi", "wkrp", "rockford-files", "bionic-woman", "josie-pussycats", "adult-swim-bumps", "nickelodeon-bumps"]);
 const classicIds = new Set(["fat-albert", "good-times", "jeffersons", "sanford-son", "gimme-break", "kotter", "whos-boss"]);
 const timeTravelIds = new Set(["quantum-leap", "flash-1990", "greatest-american-heroine"]);
+const expandedEraIds = new Set(EXPANDED_ERA_SHOWS.map(show=>show.id));
 const saturdayAdventureIds = new Set(['flash-gordon-1979','return-planet-apes','valley-dinosaurs']);
 const retroRequestIds = new Set(['star-wars-droids','star-wars-holiday-special','sealab-2020','venture-bros']);
 const trekIds = new Set(["star-trek-tos", "star-trek-tng", "star-trek-ds9", "star-trek-voyager", "star-trek-enterprise", "star-trek-tas"]);
@@ -20,6 +22,8 @@ const packs = texts.map(JSON.parse);
 const seed = createSeed(); let sequence = 0;
 for (const [index, name] of names.entries()) {
   const expected = seed.shows.filter(show => {
+    if (name === 'expanded-era') return expandedEraIds.has(show.id);
+    if (expandedEraIds.has(show.id)) return false;
     if (name === 'saturday-adventure') return saturdayAdventureIds.has(show.id);
     if (saturdayAdventureIds.has(show.id)) return false;
     if (name === 'retro-requests') return retroRequestIds.has(show.id);
@@ -45,7 +49,7 @@ for (const [index, name] of names.entries()) {
     if (name === 'commercials') return show.id === COMMERCIAL_SHOW_ID;
     return !extraCartoonIds.has(show.id) && show.channel !== 'seventies' && show.channel !== 'comedy' && show.id !== COMMERCIAL_SHOW_ID && show.id !== MOVIE_SHOW_ID && !extraIds.has(show.id) && show.id !== 'saturday-simulator' && (name === 'youtube' || (name === 'action' ? ['action', 'scifi'].includes(show.channel) : show.channel === 'cartoons'));
   }).map(show => show.id).sort();
-  const actual = packs[index].shows.map(show => show.showId).sort();
+  const actual = packs[index].shows.filter(show=>name!=='expanded-era'||show.showId!=='daria').map(show => show.showId).sort();
   if (JSON.stringify(expected) !== JSON.stringify(actual)) throw Error(`${name} discovery is incomplete or contains unexpected shows.`);
 }
 if (packs[2].curated !== true) throw Error('YouTube discovery must finish canonical title curation before building.');

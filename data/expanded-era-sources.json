@@ -1,0 +1,852 @@
+[
+  {
+    "id": "classic-doctor-who",
+    "title": "Doctor Who (1963\u20131989)",
+    "channel": "scifi",
+    "items": [
+      "doctor-who-season-7-1970",
+      "doctor-who-season-8-1971",
+      "doctor-who-season-12-1974-1975"
+    ],
+    "mode": "standard",
+    "min": 1100,
+    "max": 1800,
+    "notes": "Partial coverage: seasons 7, 8 and 12; multipart stories grouped."
+  },
+  {
+    "id": "highwayman",
+    "title": "The Highwayman (1987\u20131988)",
+    "channel": "action",
+    "items": [
+      "the-highwayman-pilot-movie-the-highwayman-sep-20-1987"
+    ],
+    "mode": "highwayman",
+    "min": 2400,
+    "max": 6000,
+    "notes": "Nine regular programs plus the pilot movie."
+  },
+  {
+    "id": "max-headroom",
+    "title": "Max Headroom (1987)",
+    "channel": "scifi",
+    "items": [
+      "max-headroom_202606"
+    ],
+    "mode": "standard",
+    "min": 2400,
+    "max": 3300,
+    "notes": "Original American drama only; talk/music shows and retrospective recordings excluded."
+  },
+  {
+    "id": "blakes-seven",
+    "title": "Blake\u2019s 7 (1978)",
+    "channel": "scifi",
+    "items": [
+      "blakes-7-complete"
+    ],
+    "mode": "standard",
+    "min": 2400,
+    "max": 3600,
+    "notes": "Original four-season series."
+  },
+  {
+    "id": "real-ghostbusters",
+    "title": "The Real Ghostbusters (1986)",
+    "channel": "cartoons",
+    "items": [
+      "the-real-ghostbusters"
+    ],
+    "mode": "standard",
+    "min": 600,
+    "max": 1800,
+    "notes": "Original series, including its shorter episode-length programs; separate Slimer series excluded."
+  },
+  {
+    "id": "robotech",
+    "title": "Robotech (1985)",
+    "channel": "cartoons",
+    "items": [
+      "robotech-restored"
+    ],
+    "mode": "standard",
+    "min": 1100,
+    "max": 1800,
+    "notes": "Source is a fan preservation using original English broadcast audio; duplicate derivatives excluded."
+  },
+  {
+    "id": "star-blazers",
+    "title": "Star Blazers (1979)",
+    "channel": "cartoons",
+    "items": [
+      "star-blazers-1.07-remaster-agk"
+    ],
+    "mode": "star-blazers",
+    "min": 1100,
+    "max": 1800,
+    "notes": "Two English-adapted series; separate end sequences excluded. Source remaster restores some footage."
+  },
+  {
+    "id": "sliders",
+    "title": "Sliders (1995)",
+    "channel": "scifi",
+    "items": [
+      "sliders-s-02-e-01-into-the-mystic",
+      "sliders-s-04-e-06-oh-brother-where-art-thou"
+    ],
+    "mode": "standard",
+    "min": 2300,
+    "max": 3500,
+    "notes": "Partial coverage: season 2 and seven season-4 programs. Incomplete split pilot excluded."
+  },
+  {
+    "id": "seaquest",
+    "title": "seaQuest DSV (1993)",
+    "channel": "scifi",
+    "items": [
+      "seaquest-dsv"
+    ],
+    "mode": "standard",
+    "min": 2300,
+    "max": 6000,
+    "notes": "Partial first-season collection; combined pilot remains intact."
+  },
+  {
+    "id": "babylon-five",
+    "title": "Babylon 5 (1993)",
+    "channel": "scifi",
+    "items": [
+      "b5_20260808"
+    ],
+    "mode": "babylon",
+    "min": 2300,
+    "max": 3400,
+    "notes": "Original five TV seasons only; movies, commentary tracks, extras and Crusade excluded."
+  },
+  {
+    "id": "farscape",
+    "title": "Farscape (1999)",
+    "channel": "scifi",
+    "items": [
+      "farscape-s-01",
+      "farscape-s-02",
+      "farscape-s-03-"
+    ],
+    "mode": "standard",
+    "min": 2400,
+    "max": 3600,
+    "notes": "Seasons 1\u20133 only; season 4 not included in these source collections."
+  },
+  {
+    "id": "eerie-indiana",
+    "title": "Eerie, Indiana (1991)",
+    "channel": "scifi",
+    "items": [
+      "eerie-indiana-1x-18-zombies-in-p.-j.s"
+    ],
+    "mode": "standard",
+    "min": 1100,
+    "max": 1800,
+    "notes": "Original 19-program series; source collection ordering retained."
+  },
+  {
+    "id": "six-million-man",
+    "title": "The Six Million Dollar Man",
+    "channel": "action",
+    "items": [
+      "the-six-million-dollar-man-sp.-no.-01-season-1-001-the-moon-and-the-desert-part-1"
+    ],
+    "mode": "collection",
+    "min": 2300,
+    "max": 6000,
+    "notes": "Special-numbered source sampler, not a complete series. Collection order retained."
+  },
+  {
+    "id": "sledge-hammer",
+    "title": "Sledge Hammer",
+    "channel": "comedy",
+    "items": [
+      "sledge-hammer-season-01",
+      "sledge-hammer-season-02"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 2000,
+    "notes": "Original two seasons; alternate edits excluded."
+  },
+  {
+    "id": "land-lost",
+    "title": "Land of the Lost",
+    "channel": "scifi",
+    "items": [
+      "LotLFullSeries"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1974 series, not the 1991 remake."
+  },
+  {
+    "id": "prisoner",
+    "title": "The Prisoner",
+    "channel": "scifi",
+    "items": [
+      "the-prisoner-complete-series-1967"
+    ],
+    "mode": "standard",
+    "min": 2400,
+    "max": 3600,
+    "notes": "Original 1967 series. Source numbering begins at zero; retained without claiming broadcast order."
+  },
+  {
+    "id": "brisco-county",
+    "title": "The Adventures of Brisco County Jr",
+    "channel": "action",
+    "items": [
+      "adventures-of-brisco-county-jr-s-01-e-01-pilot.-720p.x-265"
+    ],
+    "mode": "standard",
+    "min": 2300,
+    "max": 6000,
+    "notes": "Original 1993 series; double-length pilot kept intact."
+  },
+  {
+    "id": "mr-merlin",
+    "title": "Mr Merlin",
+    "channel": "comedy",
+    "items": [
+      "mr-merlin-1981"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1981 series; source coverage may be partial."
+  },
+  {
+    "id": "cities-gold",
+    "title": "The Mysterious Cities of Gold",
+    "channel": "cartoons",
+    "items": [
+      "tmcog1982"
+    ],
+    "mode": "episode",
+    "min": 1100,
+    "max": 1800,
+    "notes": "Original English-adapted 1982 series, not the later continuation."
+  },
+  {
+    "id": "sapphire-steel",
+    "title": "Sapphire and Steel",
+    "channel": "scifi",
+    "items": [
+      "sapphire-and-steel-1979"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original serials; story assignment labels retained."
+  },
+  {
+    "id": "tomorrow-people",
+    "title": "The Tomorrow People",
+    "channel": "scifi",
+    "items": [
+      "the-tomorrow-people-1973-79"
+    ],
+    "mode": "collection",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1973 series. Source collection order retained; serial identifiers kept in titles."
+  },
+  {
+    "id": "tripods",
+    "title": "The Tripods",
+    "channel": "scifi",
+    "items": [
+      "tripods-s-02-e-01"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1984 series."
+  },
+  {
+    "id": "red-dwarf",
+    "title": "Red Dwarf",
+    "channel": "scifi",
+    "items": [
+      "red-dwarf-s-13-e-01-the-promised-land-pt-1"
+    ],
+    "mode": "standard",
+    "min": 1300,
+    "max": 2200,
+    "notes": "Only seasons 1\u20138, through 1999; later revival seasons excluded."
+  },
+  {
+    "id": "starlost",
+    "title": "The Starlost",
+    "channel": "scifi",
+    "items": [
+      "Httpsen.m.wikipedia.orgwikiThe_Starlost"
+    ],
+    "mode": "episode",
+    "min": 2400,
+    "max": 3600,
+    "notes": "Original 1973 episodes; later film-length compilations excluded."
+  },
+  {
+    "id": "alien-nation",
+    "title": "Alien Nation",
+    "channel": "scifi",
+    "items": [
+      "alien-nation-1989-s-01-e-01-alien-nation-the-tv-movie-ai-upscale-1440p-mister-cooper"
+    ],
+    "mode": "standard",
+    "min": 2400,
+    "max": 6000,
+    "notes": "Original 1989 first-season programs only; later TV movies excluded. Source labeled AI upscale."
+  },
+  {
+    "id": "invaders",
+    "title": "The Invaders",
+    "channel": "scifi",
+    "items": [
+      "the-invaders-s-01-e-01"
+    ],
+    "mode": "standard",
+    "min": 2300,
+    "max": 3600,
+    "notes": "Original 1967 series."
+  },
+  {
+    "id": "time-tunnel",
+    "title": "The Time Tunnel",
+    "channel": "scifi",
+    "items": [
+      "the-time-tunnel-complete-series-1966"
+    ],
+    "mode": "standard",
+    "min": 2400,
+    "max": 3600,
+    "notes": "Original 1966 programs; unaired pilot and extras excluded."
+  },
+  {
+    "id": "dino-riders",
+    "title": "Dino Riders",
+    "channel": "cartoons",
+    "items": [
+      "dino-riders_202512"
+    ],
+    "mode": "episode",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1988 animated collection."
+  },
+  {
+    "id": "inhumanoids",
+    "title": "Inhumanoids",
+    "channel": "cartoons",
+    "items": [
+      "s-01-e-05-the-evil-that-lies-within-part-5"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1986 animated collection."
+  },
+  {
+    "id": "gobots",
+    "title": "Challenge of the GoBots",
+    "channel": "cartoons",
+    "items": [
+      "challenge-of-the-gobots"
+    ],
+    "mode": "leading",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1984 series; collection numbering retained."
+  },
+  {
+    "id": "battle-planets",
+    "title": "Battle of the Planets",
+    "channel": "cartoons",
+    "items": [
+      "s-00-e-03-battle-of-the-planets-the-movie"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original English adaptation; movies and alternate specials excluded."
+  },
+  {
+    "id": "saber-rider",
+    "title": "Saber Rider and the Star Sheriffs",
+    "channel": "cartoons",
+    "items": [
+      "saber-rider-and-the-star-sheriffs-complete-series"
+    ],
+    "mode": "episode",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original English-adapted series."
+  },
+  {
+    "id": "dinosaucers",
+    "title": "Dinosaucers",
+    "channel": "cartoons",
+    "items": [
+      "dinosaucers-ep.-08-be-prepared-480p-amzn-web-dl"
+    ],
+    "mode": "episode",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1987 series."
+  },
+  {
+    "id": "teddy-ruxpin",
+    "title": "The Adventures of Teddy Ruxpin",
+    "channel": "cartoons",
+    "items": [
+      "the-adventures-of-teddy-ruxpin_202402"
+    ],
+    "mode": "episode",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Animated series, not the live-action special. Duplicate derivatives excluded."
+  },
+  {
+    "id": "ulysses-31",
+    "title": "Ulysses 31",
+    "channel": "cartoons",
+    "items": [
+      "ulysses-31-1981-complete-series"
+    ],
+    "mode": "episode",
+    "min": 1000,
+    "max": 1800,
+    "notes": "English-adapted series; unaired pilot excluded."
+  },
+  {
+    "id": "ewoks",
+    "title": "Ewoks",
+    "channel": "cartoons",
+    "items": [
+      "113starwarsewoks1x13asha",
+      "28starwarsewoks2x08theseasonscepter"
+    ],
+    "mode": "standard",
+    "min": 400,
+    "max": 1800,
+    "notes": "Original 1985 cartoon. Source programs may bundle short stories."
+  },
+  {
+    "id": "mario-super-show",
+    "title": "The Super Mario Bros Super Show",
+    "channel": "cartoons",
+    "items": [
+      "thesupermariobrossupershow"
+    ],
+    "mode": "leading",
+    "min": 400,
+    "max": 1800,
+    "notes": "Partial original 1989 episode-length source collection."
+  },
+  {
+    "id": "captain-n",
+    "title": "Captain N",
+    "channel": "cartoons",
+    "items": [
+      "captain-n-the-game-master-complete-series-1989"
+    ],
+    "mode": "standard",
+    "min": 400,
+    "max": 1800,
+    "notes": "Original 1989 collection."
+  },
+  {
+    "id": "scarecrow-king",
+    "title": "Scarecrow and Mrs King",
+    "channel": "action",
+    "items": [
+      "scarecrow_mrs_king_complete_series"
+    ],
+    "mode": "collection",
+    "min": 2300,
+    "max": 3600,
+    "notes": "Individual episode-length DVD source programs only. Whole-disc files and menu clips excluded. Source file order, not invented broadcast numbering."
+  },
+  {
+    "id": "miami-vice",
+    "title": "Miami Vice",
+    "channel": "action",
+    "items": [
+      "miami-vice-1984-1990-complete-series"
+    ],
+    "mode": "standard",
+    "min": 2300,
+    "max": 6200,
+    "notes": "Original series; combined long programs stay intact."
+  },
+  {
+    "id": "beans-baxter",
+    "title": "The New Adventures of Beans Baxter",
+    "channel": "action",
+    "items": [
+      "Unknown-een-special"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 3000,
+    "notes": "Original 1987 series, with combined premiere intact."
+  },
+  {
+    "id": "soap",
+    "title": "Soap",
+    "channel": "comedy",
+    "items": [
+      "soap-1977-1981-s-01e-01"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 2000,
+    "notes": "Original 1977 sitcom."
+  },
+  {
+    "id": "police-squad",
+    "title": "Police Squad",
+    "channel": "comedy",
+    "items": [
+      "police_squad"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Six original programs; extras excluded."
+  },
+  {
+    "id": "alf",
+    "title": "ALF",
+    "channel": "comedy",
+    "items": [
+      "ALF-The-Complete-Series"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 3600,
+    "notes": "Original live-action sitcom, not the animated spin-offs."
+  },
+  {
+    "id": "perfect-strangers",
+    "title": "Perfect Strangers",
+    "channel": "comedy",
+    "items": [
+      "perfect-strangers-Lando18"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 2000,
+    "notes": "Original 1986 sitcom; collection coverage retained."
+  },
+  {
+    "id": "small-wonder",
+    "title": "Small Wonder",
+    "channel": "comedy",
+    "items": [
+      "small-wonder-when-you-hear-the-beep-s-3-e-24",
+      "small-wonder-2.11"
+    ],
+    "mode": "small-wonder",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Partial coverage: two sourced programs."
+  },
+  {
+    "id": "muppet-show",
+    "title": "The Muppet Show",
+    "channel": "comedy",
+    "items": [
+      "Best_Of_The_Muppet_Show_S04E24_S05E06_S02E13_Time_Life_2000_Tape",
+      "Best_Of_The_Muppet_Show_S05E05_S03E20_S05E09_Time_Life_2000_Tape"
+    ],
+    "mode": "bundle",
+    "min": 4000,
+    "max": 5500,
+    "notes": "Two intact multi-episode VHS compilations, not six separately indexed episodes or a full-series claim."
+  },
+  {
+    "id": "aeon-flux",
+    "title": "Aeon Flux",
+    "channel": "late-night",
+    "items": [
+      "aeon-flux_202605"
+    ],
+    "mode": "episode",
+    "min": 600,
+    "max": 1800,
+    "notes": "Original MTV collection; source program numbering retained."
+  },
+  {
+    "id": "liquid-television",
+    "title": "Liquid Television",
+    "channel": "late-night",
+    "items": [
+      "liquid-television-complete"
+    ],
+    "mode": "compact",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Partial anthology collection; keeps each source program intact."
+  },
+  {
+    "id": "dr-katz",
+    "title": "Dr Katz",
+    "channel": "late-night",
+    "items": [
+      "dr.-katz.-s-01-e-04.-cholesterol"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original series; extras excluded."
+  },
+  {
+    "id": "critic",
+    "title": "The Critic",
+    "channel": "late-night",
+    "items": [
+      "the-critic-animated-series"
+    ],
+    "mode": "leading",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original episode-length animated programs; shorter web extras excluded."
+  },
+  {
+    "id": "duckman",
+    "title": "Duckman",
+    "channel": "late-night",
+    "items": [
+      "DuckmanComplete"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1994 series."
+  },
+  {
+    "id": "mission-hill",
+    "title": "Mission Hill",
+    "channel": "late-night",
+    "items": [
+      "underrated-show-69420"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 13-program series; source labeled restoration."
+  },
+  {
+    "id": "oblongs",
+    "title": "The Oblongs",
+    "channel": "late-night",
+    "items": [
+      "the-oblongs-s-complete"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 13-program series."
+  },
+  {
+    "id": "clone-high",
+    "title": "Clone High",
+    "channel": "late-night",
+    "items": [
+      "clone-high-season1"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 2002\u20132003 season only; reboot and DVD extras excluded."
+  },
+  {
+    "id": "moral-orel",
+    "title": "Moral Orel",
+    "channel": "late-night",
+    "items": [
+      "moral-orel-complete-720p"
+    ],
+    "mode": "dash",
+    "min": 500,
+    "max": 1400,
+    "notes": "Original 2005\u20132008 series only; Beforel Orel and extras excluded."
+  },
+  {
+    "id": "danger-mouse",
+    "title": "Danger Mouse",
+    "channel": "cartoons",
+    "items": [
+      "13-dm-the-duel-episode-1-5_202608"
+    ],
+    "mode": "leading",
+    "min": 400,
+    "max": 1800,
+    "notes": "Original 1981 series, not the 2015 reboot. Source may bundle serial parts."
+  },
+  {
+    "id": "count-duckula",
+    "title": "Count Duckula",
+    "channel": "cartoons",
+    "items": [
+      "count-duckula-1x-07-dr-von-goosewings-invisible-ray-upscaled_202608"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1988 series; source labeled upscale."
+  },
+  {
+    "id": "double-dare",
+    "title": "Double Dare",
+    "channel": "comedy",
+    "items": [
+      "doubledare-1986_202010",
+      "double-dare-1988_202011"
+    ],
+    "mode": "collection",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1986 and 1988 recordings, source team names retained. No revival-era programs."
+  },
+  {
+    "id": "out-control",
+    "title": "Out of Control",
+    "channel": "comedy",
+    "items": [
+      "out-of-control_202407"
+    ],
+    "mode": "collection",
+    "min": 800,
+    "max": 1800,
+    "notes": "Partial original 1984 Nickelodeon sketch-show recordings; source lengths vary."
+  },
+  {
+    "id": "salute-shorts",
+    "title": "Salute Your Shorts",
+    "channel": "comedy",
+    "items": [
+      "salute-your-shorts-complete"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1991 series."
+  },
+  {
+    "id": "hey-dude",
+    "title": "Hey Dude",
+    "channel": "comedy",
+    "items": [
+      "hey-dude_202211"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1989 series."
+  },
+  {
+    "id": "pete-pete",
+    "title": "The Adventures of Pete and Pete",
+    "channel": "comedy",
+    "items": [
+      "the-adventures-of-pete-and-pete"
+    ],
+    "mode": "dash",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Partial original 1990s episode archive."
+  },
+  {
+    "id": "space-sentinels",
+    "title": "Space Sentinels",
+    "channel": "cartoons",
+    "items": [
+      "the-wizard-of-od-space-sentinels-full-episode-retro-bites"
+    ],
+    "mode": "collection",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1977 cartoons, episode titles retained; collection order only."
+  },
+  {
+    "id": "blackstar",
+    "title": "Blackstar",
+    "channel": "cartoons",
+    "items": [
+      "blackstar-complete-series-1981"
+    ],
+    "mode": "episode",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Original 1981 animated collection."
+  },
+  {
+    "id": "kolchak",
+    "title": "Kolchak",
+    "channel": "seventies",
+    "items": [
+      "kolchak-the-night-stalker-complete-series-1972"
+    ],
+    "mode": "standard",
+    "min": 2300,
+    "max": 6000,
+    "notes": "Original TV series plus its two TV pilot films; duplicate pilot copies excluded."
+  },
+  {
+    "id": "daria",
+    "title": "Daria",
+    "channel": "late-night",
+    "items": [
+      "daria-restoration"
+    ],
+    "mode": "standard",
+    "min": 1000,
+    "max": 1800,
+    "notes": "Fills the existing gap with five seasons of restored-audio episode files. Restoration source attribution is unknown; no claim of official release."
+  },
+  {
+    "id": "hitchhikers-guide",
+    "title": "The Hitchhiker\u2019s Guide to the Galaxy (1981)",
+    "channel": "scifi",
+    "items": [
+      "the-hitchhikers-guide-to-the-galaxy-complete-series-1981"
+    ],
+    "mode": "episode",
+    "min": 1700,
+    "max": 2300,
+    "notes": "Original six-part BBC television adaptation; not the 2005 film."
+  },
+  {
+    "id": "man-atlantis",
+    "title": "Man from Atlantis (1977)",
+    "channel": "scifi",
+    "items": [
+      "man-from-atlantis-complete-series-1977"
+    ],
+    "mode": "standard",
+    "min": 2300,
+    "max": 6000,
+    "notes": "Original 1977 series and four TV pilot films, each kept intact."
+  },
+  {
+    "id": "remington-steele",
+    "title": "Remington Steele (1982)",
+    "channel": "action",
+    "items": [
+      "remington-steele"
+    ],
+    "mode": "bundle",
+    "min": 3000,
+    "max": 4000,
+    "notes": "Partial coverage: one mixed off-air recording, with unrelated TV footage and embedded ads before the Remington Steele program. Episode identity is not established; collection order only."
+  }
+]

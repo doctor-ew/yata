@@ -5,7 +5,7 @@ export const COMMERCIAL_SHOW_ID = 'vintage-commercials';
 export const STORAGE_KEY = 'drew-tv.catalog.v1';
 export const MAX_CATALOG_SHOWS = 256;
 export const MAX_CATALOG_EPISODES = 10_000;
-export const MAX_IMPORT_BYTES = 4_000_000;
+export const MAX_IMPORT_BYTES = 8_000_000;
 const ID = /^[\w.-]{1,160}$/;
 const VIDEO = /^[\w-]{11}$/;
 const PLAYLIST = /^[\w-]{10,150}$/;
@@ -188,7 +188,7 @@ export function validateCatalog(raw) {
 }
 
 export function parseCatalogJson(input) {
-  if (typeof input !== 'string' || new TextEncoder().encode(input).length > MAX_IMPORT_BYTES) fail('Import exceeds the 4 MB catalog limit.');
+  if (typeof input !== 'string' || new TextEncoder().encode(input).length > MAX_IMPORT_BYTES) fail('Import exceeds the 8 MB catalog limit.');
   let raw;
   try { raw = JSON.parse(input); } catch { fail('That file is not valid JSON. Your catalog has not changed.'); }
   return validateCatalog(raw);
@@ -211,7 +211,7 @@ export function readCatalog(storage, seed, {persistMigration = true} = {}) {
 export function saveCatalog(storage, catalog) {
   const valid = validateCatalog(catalog);
   const json = JSON.stringify(valid);
-  if (new TextEncoder().encode(json).length > MAX_IMPORT_BYTES) fail('Catalog exceeds the 4 MB storage limit.');
+  if (new TextEncoder().encode(json).length > MAX_IMPORT_BYTES) fail('Catalog exceeds the 8 MB storage limit.');
   storage.setItem(STORAGE_KEY, json);
   return valid;
 }
@@ -225,7 +225,7 @@ export function stationSource(episode) {
 export function bumperPool(catalog, shows) {
   const ids = new Set(shows.map(show => show.id)); ids.add(COMMERCIAL_SHOW_ID);
   if(shows.some(show=>show.channel==='late-night'))ids.add('adult-swim-bumps');
-  if(shows.some(show=>show.channel==='cartoons'||['ycdtotv','turkey-tv'].includes(show.id)))ids.add('nickelodeon-bumps');
+  if(shows.some(show=>show.channel==='cartoons'||['ycdtotv','turkey-tv','double-dare','out-control','salute-shorts','hey-dude','pete-pete'].includes(show.id)))ids.add('nickelodeon-bumps');
   return catalog.shows.filter(show => ids.has(show.id)).flatMap(show => show.episodes
     .filter(episode => episode.kind === 'bumper' && parseDuration(episode.durationSeconds) !== null && stationSource(episode))
     .slice().sort((a, b) => a.season - b.season || a.number - b.number)

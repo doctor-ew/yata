@@ -1,3 +1,4 @@
+import { EXPANDED_ERA_SHOWS } from './expanded-era.mjs';
 export const CHANNELS = [
   { id: 'mixed', number: '01', name: 'YATA Channels', subtitle: 'All TV channels.', accent: '#ffc66e' },
   { id: 'action', number: '02', name: 'Action Adventure', subtitle: 'Action and adventure.', accent: '#ff927b' },
@@ -9,6 +10,7 @@ export const CHANNELS = [
 ];
 export const SHOW_CHANNEL_IDS = ['action', 'scifi', 'cartoons', 'comedy', 'seventies', 'late-night'];
 export const SCI_FI_SHOW_IDS = new Set([
+  ...EXPANDED_ERA_SHOWS.filter(show=>show.channel==='scifi').map(show=>show.id),
   'automan', 'phoenix', 'voyagers', 'buck-rogers', 'battlestar', 'v',
   'matthew-star', 'misfits-science', 'otherworld',
   'star-wars-holiday-special', 'star-trek-tos', 'star-trek-tng', 'star-trek-ds9', 'star-trek-voyager', 'star-trek-enterprise', 'quantum-leap', 'space-1999', 'ufo', 'fantastic-journey', 'logans-run', 'space-academy', 'jason-star-command',
