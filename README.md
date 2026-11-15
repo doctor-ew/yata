@@ -213,7 +213,7 @@ Channel 06 mixes checked Baretta and B.J. and the Bear entries and includes Barn
 
 ## TV Guide
 
-Open **Guide** in the header or **TV Guide** beside Library. The two-hour grid uses your actual station clock, episode runtimes, shuffle settings and commercial breaks. Select a program for full details, then **Join channel live** or **Start episode from beginning**. Starting an episode retains its position in the station queue. Browsing tabs leaves current playback running.
+Open **Guide** in the header or **TV Guide** beside Library. The two-hour grid uses your actual station clock, episode runtimes, shuffle settings and commercial breaks. Select a program for full details, then join the live program named on the button or choose **Start episode from beginning**. The live action names what is currently playing, even when the selected listing is in the future. Starting an episode retains its position in the station queue. Browsing tabs leaves current playback running.
 
 On a phone, swipe the grid horizontally; channel names remain visible. Earlier/Later browse other windows and Now returns to the current time. This is your personal station schedule, not a provider broadcast listing. Films remain in Midnight Matinee. Wishlist and unchecked sources stay in Library. Full-channel guide rows do not inherit a selected single-show stream.
 

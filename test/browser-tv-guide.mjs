@@ -32,6 +32,9 @@ try{
  const actionRow=page.locator('.tv-guide-row').filter({has:page.locator('strong',{hasText:'Action Adventure'})});
  await actionRow.locator('.tv-guide-program').filter({hasText:'Guide Knight'}).first().click();
  assert.equal(await page.locator('[data-guide-show]').textContent(),'Knight Rider');
+ assert.match(await page.locator('[data-guide-tune]').textContent(),/Join live: The Dukes of Hazzard — Guide Dukes/);
+ assert.match(await page.locator('[data-guide-live-note]').textContent(),/Joins what is playing now/);
+
  await page.locator('[data-guide-play]').click();await page.waitForFunction(()=>window.__guidePlays.length===1);
  assert.deepEqual(await page.evaluate(()=>window.__guidePlays[0]),{url:'https://archive.org/download/guide-fixture/Guide%20Knight.mp4',offset:0});
  // Selection starts in its station occurrence, so next wraps to the first program.

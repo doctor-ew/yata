@@ -11,6 +11,11 @@ export function mountTvGuide({root,getCatalog,isReady,onTune,onPlay,now=()=>Date
     root.querySelectorAll('.tv-guide-program').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.key===slot.key)));
     detail();
   };
+  function liveSlot(channelId) {
+    const row=rows.find(row=>row.channel.id===channelId), current=now();
+    return row?guideWindow(row,getCatalog().epoch,current,current+1).slots[0]:null;
+  }
+  const liveTitle=slot=>slot.breakCount?'Vintage commercial break':`${slot.entry.show.title} — ${slot.entry.episode.title}`;
   function detail() {
     const valid=!!selection && isReady();
     $('tune').disabled=$('play').disabled=!valid||busy;
@@ -22,6 +27,12 @@ export function mountTvGuide({root,getCatalog,isReady,onTune,onPlay,now=()=>Date
     $('episode').textContent=breakCount?`${breakCount} ${breakCount===1?'clip':'clips'} · ${timeLabel(end-start)}`:entry.episode.title;
     const state=start<=now()&&now()<end?'On now':start>now()?'Coming up':'Earlier';
     $('time').textContent=`${state} · ${clock(start)}–${clock(end)} · ${entry.source.provider==='archive'?'Internet Archive':'YouTube'}`;
+    const live=liveSlot(channel.id);
+    $('tune').disabled=!live||busy;
+    $('tune').textContent=live?`▶ Join live: ${liveTitle(live)}`:'Live channel unavailable';
+    $('live-note').textContent=live&&live.key!==selection.key
+      ?'Joins what is playing now. To watch the selected program, start it from the beginning.'
+      :'Joins this channel at its current live position.';
     $('play').textContent=breakCount?'Start break from beginning':'Start episode from beginning';
   }
   function render() {
@@ -72,7 +83,7 @@ export function mountTvGuide({root,getCatalog,isReady,onTune,onPlay,now=()=>Date
     detail();
   }
   for(const [name,delta]of[['earlier',-1],['later',1],['reset',0]])$(name).addEventListener('click',()=>{offset=delta===0?0:offset+delta;render();});
-  async function action(kind){if(!selection||busy||!isReady())return;busy=true;detail();const chosen=selection;try{const result=await (kind==='tune'?onTune(chosen):onPlay(chosen));$('status').textContent=result===false?'The selection changed or could not be played. Select a current program and try again.':kind==='tune'?`Tuned live to ${chosen.channel.name}.`:`Playing ${chosen.entry.episode.title} from the beginning.`;}catch{$('status').textContent='Playback could not start. Please try again.';}finally{busy=false;render();}}
+  async function action(kind){if(!selection||busy||!isReady())return;busy=true;detail();const chosen=kind==='tune'?liveSlot(selection.channel.id):selection;try{if(!chosen)return;const result=await (kind==='tune'?onTune(chosen):onPlay(chosen));$('status').textContent=result===false?'The selection changed or could not be played. Select a current program and try again.':kind==='tune'?`Tuned live to ${chosen.channel.name}: ${liveTitle(chosen)}.`:`Playing ${chosen.entry.episode.title} from the beginning.`;}catch{$('status').textContent='Playback could not start. Please try again.';}finally{busy=false;render();}}
   $('tune').addEventListener('click',()=>action('tune'));$('play').addEventListener('click',()=>action('play'));
   return {render};
 }

@@ -1344,6 +1344,8 @@ button.tv-knob:focus-visible { outline-offset: -2px; }
 .tv-guide-details h3{font-size:25px;font-weight:500;letter-spacing:-.5px;margin:5px 0 8px}
 .tv-guide-details p{margin:4px 0;overflow-wrap:anywhere}
 .tv-guide-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:end}
+.tv-guide-actions [data-guide-live-note]{flex-basis:100%;margin:0}
+.tv-guide-actions button{max-width:100%;white-space:normal;text-align:left}
 .tv-guide-status{min-height:20px;margin:10px 0;color:var(--muted);font-size:13px}
 .tv-guide-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px;isolation:isolate}
 .tv-guide-inner{min-width:800px;position:relative}
