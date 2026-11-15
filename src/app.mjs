@@ -1,3 +1,5 @@
+import {installArcadeEntry} from './arcade-entry.mjs';
+installArcadeEntry();
 import {mountMixControls} from './mix-controls.mjs';
 import {mountSeekVisibility} from './seek-visibility.mjs';
 import {mountChannelBuilder} from './channel-builder-ui.mjs';

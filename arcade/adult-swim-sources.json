@@ -1,0 +1,3600 @@
+[
+  {
+    "id": "1eb198d9-bafb-beca-6453-143ce4bfff5c",
+    "title": "12 oz. Mouse: Stagger",
+    "developer": "Cartoon Network",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Score-Attack",
+      "Balancing",
+      "Mouse-only",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T01:43:25.668Z",
+        "size": 1538528,
+        "sha256": "3D83D6CDA4F058FDA30BDB03D704EDBCBCC9FCCE772E61D9B7752E86CFEBAEB6",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/stagger/game.swf"
+      }
+    ],
+    "logoPath": "Logos/1e/b1/1eb198d9-bafb-beca-6453-143ce4bfff5c.png"
+  },
+  {
+    "id": "561ec84a-3635-da36-f0c9-6401938b116b",
+    "title": "2AM Truck Stop",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T05:14:17.335Z",
+        "size": 10114000,
+        "sha256": "67EAD13B98C73C6223D2348ACCA404736A9DB24A7C84294B106B0BF57AA452B1",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/two-am-truck-stop/game.swf"
+      }
+    ],
+    "logoPath": "Logos/56/1e/561ec84a-3635-da36-f0c9-6401938b116b.png"
+  },
+  {
+    "id": "3af42717-3a77-aa6c-b9d2-744a52414fb3",
+    "title": "5 Minutes to Kill (Yourself)",
+    "developer": "Ham in the Fridge",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Action",
+      "Axonometric",
+      "Blood",
+      "Strong Violence",
+      "Suicide",
+      "Crude Humor"
+    ],
+    "status": "Partial; Playable",
+    "notes": "microwave.mp3 is missing from Adult Swim's site. This doesn't affect gameplay.",
+    "legacyLaunchCommand": "http://i.adultswim.com/FiveMinutesKillYourself/Five Minutes to Kill Yourself.swf",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2025-07-31T16:17:47.377498Z",
+        "size": 3749565,
+        "sha256": "7277b96bac14b391bdd6f455ac2d2283ab4a5a6a7239ac2a4b4677ca4866f71b",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/FiveMinutesKillYourself/Five%20Minutes%20to%20Kill%20Yourself.swf"
+      }
+    ],
+    "logoPath": "Logos/3a/f4/3af42717-3a77-aa6c-b9d2-744a52414fb3.png"
+  },
+  {
+    "id": "2d739a77-4b82-a174-b3d5-477a3d33e05f",
+    "title": "5 Minutes to Kill (Yourself) 2",
+    "developer": "Ham in the Fridge",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Action",
+      "Axonometric",
+      "Blood",
+      "Strong Violence",
+      "Suicide",
+      "Crude Humor"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games2/game-files/fiveminutes2/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2025-07-31T16:17:51.851192Z",
+        "size": 47609759,
+        "sha256": "e8510befb0ee266660d894e6cb2b840d27a01f7648a980d5cc2a7c83bcf5dd5e",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/fiveminutes2/game.swf"
+      }
+    ],
+    "logoPath": "Logos/2d/73/2d739a77-4b82-a174-b3d5-477a3d33e05f.png"
+  },
+  {
+    "id": "8c673319-88d6-60b5-3ca6-4c2a23bd8cbe",
+    "title": "5 Minutes to Kill (Yourself) Reloaded",
+    "developer": "Ham in the Fridge",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Action",
+      "Axonometric",
+      "Blood",
+      "Strong Violence",
+      "Suicide",
+      "Crude Humor",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T03:12:31.888Z",
+        "size": 13301680,
+        "sha256": "2A0A9ED3F92D2E63742458D19DDF86527148B50F531D8E4E2BE113DDC16DFA76",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/FiveMinutesKillYourselfReloaded/Five Minutes to Kill Yourself Reloaded.swf"
+      }
+    ],
+    "logoPath": "Logos/8c/67/8c673319-88d6-60b5-3ca6-4c2a23bd8cbe.png"
+  },
+  {
+    "id": "dc0fb375-bf71-f769-1004-6675714a7d2e",
+    "title": "5 Minutes to Kill (Yourself) Wedding Day",
+    "developer": "Ham in the Fridge",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Action",
+      "Axonometric",
+      "Blood",
+      "Strong Violence",
+      "Suicide",
+      "Crude Humor"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/FiveMinutesKillYourselfWeddingDay/Five Minutes to Kill Yourself Wedding Day.swf",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2025-07-31T16:18:01.277451Z",
+        "size": 8478428,
+        "sha256": "906a3cf639c85a2bc2563383d4d6164dbb600f7302bcb19a4b6ceb007a583354",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/FiveMinutesKillYourselfWeddingDay/Five%20Minutes%20to%20Kill%20Yourself%20Wedding%20Day.swf"
+      }
+    ],
+    "logoPath": "Logos/dc/0f/dc0fb375-bf71-f769-1004-6675714a7d2e.png"
+  },
+  {
+    "id": "0df307d8-dddf-b573-6b4f-2be76f8724bb",
+    "title": "5 Minutes to Kill (Yourself): Airport Edition",
+    "developer": "Ham in the Fridge",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Action",
+      "Axonometric",
+      "Blood",
+      "Strong Violence",
+      "Suicide",
+      "Crude Humor",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T01:31:09.014Z",
+        "size": 14233127,
+        "sha256": "C54422B040BF44E85C19A51E4C6D3B329CC58C8B99C1A6106648BE6720151BD9",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/fiveminutesairport/game.swf"
+      }
+    ],
+    "logoPath": "Logos/0d/f3/0df307d8-dddf-b573-6b4f-2be76f8724bb.png"
+  },
+  {
+    "id": "8885b127-0db8-5c29-0698-1664117132c6",
+    "title": "Amateur Surgeon",
+    "developer": "Mediatonic",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Simulation",
+      "Surgery",
+      "Blood",
+      "Strong Violence"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://games.adultswim.com/amateursurgeon/Amateur Surgeon.swf",
+    "source": "ArmorGames.com",
+    "gameData": [
+      {
+        "dateAdded": "2023-09-16T00:55:22.257753Z",
+        "size": 3846902,
+        "sha256": "f99885999ccbccec5ade513a098e3cf6335f6fed41793fcde210d9e687c001d0",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/amateursurgeon/game.swf"
+      },
+      {
+        "dateAdded": "2025-04-07T21:35:09.965763Z",
+        "size": 7871290,
+        "sha256": "147b3cf84c8c5164906624dfc9da8515f973efa4ff2703590f4ac4f6dfd8812e",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/amateursurgeon/game.swf",
+        "parameters": ""
+      }
+    ],
+    "logoPath": "Logos/88/85/8885b127-0db8-5c29-0698-1664117132c6.png"
+  },
+  {
+    "id": "5c1d561f-5d9f-9652-da17-00a5fbb5b5d5",
+    "title": "Amateur Surgeon 2",
+    "developer": "Mediatonic",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Simulation",
+      "Surgery",
+      "Blood",
+      "Strong Violence"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games2/game-files/amateursurgeon2/game.swf",
+    "source": "http://web.archive.org/web/20100914054814/http://games.adultswim.com/amateur-surgeon-2-twitchy-online-game.html",
+    "gameData": [
+      {
+        "dateAdded": "2025-10-24T00:37:28.299574Z",
+        "size": 3892353,
+        "sha256": "c1eb04a1ff0e374968f8e092fc6fbcf80f71ffdab2a36613837d0adcf67be1dd",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/amateursurgeon2/game.swf"
+      }
+    ],
+    "logoPath": "Logos/5c/1d/5c1d561f-5d9f-9652-da17-00a5fbb5b5d5.png"
+  },
+  {
+    "id": "7e6920c3-f344-4747-b5ee-69672b3d70e5",
+    "title": "Amateur Surgeon Christmas",
+    "developer": "Mediatonic",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Simulation",
+      "Surgery",
+      "Christmastide",
+      "Blood",
+      "Strong Violence"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://games.adultswim.com/AmateurSurgeonChristmas/Amateur Surgeon Christmas.swf",
+    "source": "adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/7e/69/7e6920c3-f344-4747-b5ee-69672b3d70e5.png"
+  },
+  {
+    "id": "0f3bde86-dc2e-4754-adea-563f2c5e0cd5",
+    "title": "Aqua Teen Hunger Force: Dead Evil",
+    "developer": "Playerthree",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Adventure",
+      "Pixel",
+      "Zombie",
+      "Blood",
+      "Aqua Teen Hunger Force",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "https://www.andkon.com/arcade/adventureaction/deadevil/",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T01:33:35.32Z",
+        "size": 578808,
+        "sha256": "89CA9675C339F512C851EF0233AAEBF46B1F436CE0BC3A6753875939F788479E",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://www.andkon.com/arcade/adventureaction/deadevil/deadevil.swf"
+      }
+    ],
+    "logoPath": "Logos/0f/3b/0f3bde86-dc2e-4754-adea-563f2c5e0cd5.png"
+  },
+  {
+    "id": "4530fc52-109e-4e90-8e98-e8b3cf1e31dc",
+    "title": "Ask Dolphin Boy",
+    "developer": "Funny Garbage",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Interactive",
+      "Mouse-only",
+      "Fortune",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://www.adultswim.com/misc/dolphinboy/dolphinboy.swf",
+    "source": "https://web.archive.org/web/20061116131023/http://www.adultswim.com/shows/sealab/stuff/dolphin_boy/index.html",
+    "gameData": [
+      {
+        "dateAdded": "2026-10-13T19:00:17.24609Z",
+        "size": 190457,
+        "sha256": "0bc6877f09ee5968ae78fc024af1522cf4dd2e9c63b59278538634f64cc8a5db",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://www.adultswim.com/misc/dolphinboy/dolphinboy.swf"
+      }
+    ],
+    "logoPath": "Logos/45/30/4530fc52-109e-4e90-8e98-e8b3cf1e31dc.png"
+  },
+  {
+    "id": "f3e63d7f-5451-8f5d-23ba-56b47bf49550",
+    "title": "Assassin",
+    "developer": "",
+    "publisher": "Adult Swim; Wingon Studios",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Alcohol",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T09:50:21.353Z",
+        "size": 11668409,
+        "sha256": "8DA35A98ECBD62D2734FD10F4ED35648B18BE45ACDCA16B5CE8C0B25CD0E3C0C",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/DrunkenAssassin/Drunken Assassin.swf"
+      }
+    ],
+    "logoPath": "Logos/f3/e6/f3e63d7f-5451-8f5d-23ba-56b47bf49550.png"
+  },
+  {
+    "id": "5647046a-3297-eba1-ecc3-73113d339d1b",
+    "title": "Atomic Gringo",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T06:42:06.906Z",
+        "size": 46137632,
+        "sha256": "A94B9E1C5A716ECC7914CAEB9988B5905A3649011E1F337B13F1C94A82EF5B70",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/big/games/game-files/atomic-gringo/game.swf"
+      }
+    ],
+    "logoPath": "Logos/56/47/5647046a-3297-eba1-ecc3-73113d339d1b.png"
+  },
+  {
+    "id": "83b97117-967f-def6-5b76-773a2ae06060",
+    "title": "Attack of the Fever Heads",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-10-03T05:31:48.649Z",
+        "size": 830380,
+        "sha256": "A8309CAD37337867EFD53CE84C44FC071337DD7CEC43970497ABFE3EEC2B05C7",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/attackofthefeverheads/game.swf"
+      }
+    ],
+    "logoPath": "Logos/83/b9/83b97117-967f-def6-5b76-773a2ae06060.png"
+  },
+  {
+    "id": "4aee598a-bbe4-4117-ae20-628ab6e5d229",
+    "title": "Bible Fight",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Fighting",
+      "Religious"
+    ],
+    "status": "Hacked; Playable",
+    "notes": "Click Control and click Play",
+    "legacyLaunchCommand": "http://games.adultswim.com/BibleFight/Bible Fight.swf",
+    "source": "Adult Swim",
+    "gameData": [],
+    "logoPath": "Logos/4a/ee/4aee598a-bbe4-4117-ae20-628ab6e5d229.png"
+  },
+  {
+    "id": "a665b127-69d0-3be3-4bd3-88bcd54e616b",
+    "title": "Bionic Chainsaw Pogo Gorilla",
+    "developer": "I-Mockery; PoxPower; RainbowCemetery",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Pixel",
+      "Side View",
+      "Axonometric",
+      "Blood",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:11:08.248Z",
+        "size": 37156652,
+        "sha256": "4CBFB4843FB5D20AB552C7D993D8F85500306D79B92AEEB6E94E11C4E13078A7",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/BionicChainsawPogoGorrila/Bionic Chainsaw Pogo Gorilla.swf"
+      }
+    ],
+    "logoPath": "Logos/a6/65/a665b127-69d0-3be3-4bd3-88bcd54e616b.png"
+  },
+  {
+    "id": "d9eb07e0-ea61-4528-8158-c83f7cb948e9",
+    "title": "Burrito Bison Revenge",
+    "developer": "Juicy Beast",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Launch",
+      "Upgrade",
+      "Achievements"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://kongregate.com/BurritoBisonRevenge/bbr_k.swf",
+    "source": "https://www.kongregate.com/games/juicybeast/burrito-bison-revenge",
+    "gameData": [
+      {
+        "dateAdded": "2023-08-25T19:37:32.719248Z",
+        "size": 8593583,
+        "sha256": "f731167dd19439cd5498035536038b82f286f591116760fe2791a026271ace0d",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://kongregate.com/BurritoBisonRevenge/bbr_k.swf"
+      },
+      {
+        "dateAdded": "2024-01-11T03:48:04.90109Z",
+        "size": 17437180,
+        "sha256": "6f283563b3f889d2a13cab441d5567453b94c07a7df249a983e7f1dba366d8d6",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://kongregate.com/BurritoBisonRevenge/bbr_k.swf"
+      }
+    ],
+    "logoPath": "Logos/d9/eb/d9eb07e0-ea61-4528-8158-c83f7cb948e9.png"
+  },
+  {
+    "id": "a88d8292-112d-196d-e0bc-e4094e3f068d",
+    "title": "Captain Commander",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Action",
+      "Pixel",
+      "Alien"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://cache.armorgames.com/captain commander/captain-commander-15661.swf",
+    "source": "Armorgames.com",
+    "gameData": [],
+    "logoPath": "Logos/a8/8d/a88d8292-112d-196d-e0bc-e4094e3f068d.png"
+  },
+  {
+    "id": "33e235d8-1041-f105-439f-fb3730da207e",
+    "title": "Cardboard Box Assembler!",
+    "developer": "Fernando Ramallo; Miguel Angel Perez Martinez",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Platformer",
+      "Puzzle",
+      "3D"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://localflash/cardboardboxassembler/Cube_unlocked.swf",
+    "source": "https://www.kongregate.com/games/adultswimgames/cardboard-box-assembler",
+    "gameData": [
+      {
+        "dateAdded": "2023-08-28T22:05:52.544191Z",
+        "size": 22175965,
+        "sha256": "8040b4931e77e9601e5920c556a6dbfb4fe51a1c99f67aefae47d8f3866b938d",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://game116780.konggames.com/gamez/0011/6780/live/Cube_unlocked.swf?kongregate_game_version=1308933216"
+      }
+    ],
+    "logoPath": "Logos/33/e2/33e235d8-1041-f105-439f-fb3730da207e.png"
+  },
+  {
+    "id": "8bc4bd08-a3eb-0edc-3290-0163ca062ad2",
+    "title": "Corporate Climber",
+    "developer": "PixelJam",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Platformer",
+      "Score-Attack",
+      "Pixel",
+      "Side View",
+      "Nudity",
+      "Blood",
+      "Hidden Content",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T03:10:15.061Z",
+        "size": 19006551,
+        "sha256": "4FDFB2DD601EB618532B06CB785BD9F6E8DE2D2FD1418A8916C9B886BF140FF8",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/CorporateClimber/Corporate Climber.swf"
+      }
+    ],
+    "logoPath": "Logos/8b/c4/8bc4bd08-a3eb-0edc-3290-0163ca062ad2.png"
+  },
+  {
+    "id": "5a0e8bbb-7896-c5da-3dbb-72615d4ec3c9",
+    "title": "Cream Wolf",
+    "developer": "Pixeljam; Messhof",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Simulation",
+      "Pixel",
+      "Top-Down"
+    ],
+    "status": "Hacked; Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/CreamWolf/Cream Wolf.swf",
+    "source": "adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/5a/0e/5a0e8bbb-7896-c5da-3dbb-72615d4ec3c9.png"
+  },
+  {
+    "id": "e6156b69-d908-215b-4ea3-c9d25ee8b49e",
+    "title": "Death Row Diner",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Time Management",
+      "Blood",
+      "3/4 View",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T09:32:43.666Z",
+        "size": 3750021,
+        "sha256": "F57104E756C23DFD748ABACFB777DB711EDD9DE28FC2E1ADFC885B56E7F18467",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/DeathRowDiner/Death Row Diner.swf"
+      }
+    ],
+    "logoPath": "Logos/e6/15/e6156b69-d908-215b-4ea3-c9d25ee8b49e.png"
+  },
+  {
+    "id": "ccbee166-c461-ddc7-e168-02d811bf03c1",
+    "title": "Death Vegas",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Action",
+      "Fighting",
+      "Side View",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "kongregate.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-10-03T05:41:51.732Z",
+        "size": 1273433,
+        "sha256": "A5C6A9D1C176DD11097D49CDA9F15293032BA7B2A18AAF802C6637B35AD148BB",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://chat.kongregate.com/gamez/game.swf"
+      },
+      {
+        "dateAdded": "2022-12-20T22:52:27.463Z",
+        "size": 30218533,
+        "sha256": "71DDF8E4036032EF864EFFB917D9CC3C3BCF3CFE5C9B5EEC42D5941DDD786F5C",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://chat.kongregate.com/gamez/0003/8794/live/game.swf",
+        "parameters": ""
+      }
+    ],
+    "logoPath": "Logos/cc/be/ccbee166-c461-ddc7-e168-02d811bf03c1.png"
+  },
+  {
+    "id": "a7418d09-7063-5ab9-75b5-e187059a5942",
+    "title": "Dinosaur Zookeeper",
+    "developer": "",
+    "publisher": "Adult Swim; Wingon Studios",
+    "library": "arcade",
+    "tags": [
+      "Strategy",
+      "Pixel",
+      "Dinosaur",
+      "Top-Down",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:13:11.28Z",
+        "size": 5037054,
+        "sha256": "40660C9C05F7FC8A8BD0EEE4E51632522C3C7B4439E72E4CDF7CDA125BFD0CE3",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/DinosaurZookeeper/Dinosaur Zookeeper.swf"
+      }
+    ],
+    "logoPath": "Logos/a7/41/a7418d09-7063-5ab9-75b5-e187059a5942.png"
+  },
+  {
+    "id": "c75c676e-c121-3493-7db0-704e03154388",
+    "title": "Dungeons and Dungeons",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Platformer",
+      "Adult",
+      "Sexual Content",
+      "Pixel",
+      "Side View",
+      "Nudity",
+      "BDSM",
+      "Spanking"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games2/game-files/dungeonsanddungeons/index.html",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2023-08-14T16:43:29.35541Z",
+        "size": 4421580,
+        "sha256": "51cc0396f571dbb8acd76601ccbb8b97cdaf40b98f5527a07cfd836ee6fc3b02",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\fpnavigator-portable\\FPNavigator.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/dungeonsanddungeons/index.html"
+      }
+    ],
+    "logoPath": "Logos/c7/5c/c75c676e-c121-3493-7db0-704e03154388.png"
+  },
+  {
+    "id": "cff41779-506f-2dae-440f-e1e41f6e0f10",
+    "title": "Fairway to Hell",
+    "developer": "Ham in the Fridge",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Sports",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T08:40:27.069Z",
+        "size": 32303586,
+        "sha256": "35AEDF63C0529AD0C55AA84F845535EA002872405C4E6334B622B19B31D2011D",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/FairwayHell/Fairway Hell.swf"
+      }
+    ],
+    "logoPath": "Logos/cf/f4/cff41779-506f-2dae-440f-e1e41f6e0f10.png"
+  },
+  {
+    "id": "2344fc45-4039-75d7-5e80-dc4799c0331b",
+    "title": "Fantasy Telemarketer",
+    "developer": "Tiny Mantis; Clambake Animation",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Simulation"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-04-05T00:54:20.825Z",
+        "size": 4062032,
+        "sha256": "5F5481E47EED3DE51294A7A4A96635FACE6CBF8F1BFFBAE648110DECE282062B",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/fantasytelemarketer/game.swf"
+      }
+    ],
+    "logoPath": "Logos/23/44/2344fc45-4039-75d7-5e80-dc4799c0331b.png"
+  },
+  {
+    "id": "230542fd-d131-59c4-08e1-e88ec021c51a",
+    "title": "Fat Wizard",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Action",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T06:26:42.306Z",
+        "size": 8536098,
+        "sha256": "5CC26A763B967F90E7E670370D4ADA303FB600620E4170D8AD06D6E4E07386FC",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/FatWizard/Fat Wizard.swf"
+      }
+    ],
+    "logoPath": "Logos/23/05/230542fd-d131-59c4-08e1-e88ec021c51a.png"
+  },
+  {
+    "id": "b9433dce-1e4e-c161-32e2-6e4bbe213b3d",
+    "title": "Fist Puncher: Streets of Outrage",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Action",
+      "Pixel",
+      "Beat 'Em Up",
+      "3/4 View",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:50:12.421Z",
+        "size": 6890542,
+        "sha256": "BBCB9ED075480B584D832FA5B5AD673CBEB69141D16F06242120DB06F17D48F6",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/big/games/game-files/fist-puncher-streets-of-outrage/game.swf"
+      }
+    ],
+    "logoPath": "Logos/b9/43/b9433dce-1e4e-c161-32e2-6e4bbe213b3d.png"
+  },
+  {
+    "id": "4fbfea69-5e12-706c-fe1f-e8af6eb6b378",
+    "title": "Flight of the Monarch",
+    "developer": "Cartoon Network",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Score-Attack",
+      "Side View",
+      "Mouse-only",
+      "Endless Flyer",
+      "The Venture Bros.",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T02:25:19.298Z",
+        "size": 363528,
+        "sha256": "07FADC54CC1D0DAE22E96A408542C886E11E9D669CDCA3A94256521B593007E0",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/flightofthemonarch/game.swf"
+      }
+    ],
+    "logoPath": "Logos/4f/bf/4fbfea69-5e12-706c-fe1f-e8af6eb6b378.png"
+  },
+  {
+    "id": "9dd4b3c5-f590-84f8-ba1f-96a461deb9da",
+    "title": "Floater",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games3/game-files/floater/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/9d/d4/9dd4b3c5-f590-84f8-ba1f-96a461deb9da.png"
+  },
+  {
+    "id": "79111427-9c95-0e98-80db-c52615d2f700",
+    "title": "Floater on Ice",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games3/game-files/floateronice/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/79/11/79111427-9c95-0e98-80db-c52615d2f700.png"
+  },
+  {
+    "id": "4cf270f6-1435-f6c1-e294-724ea510f160",
+    "title": "Fullmetal Alchemist: Flameout",
+    "developer": "Cartoon Network",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Defense",
+      "Mouse-only",
+      "Fullmetal Alchemist",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T02:20:03.192Z",
+        "size": 933849,
+        "sha256": "E85E15809E868DF9B1166CB4504572B5D67A15A164E0D5D9237C3528A46F1C3D",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/flameout/game.swf"
+      }
+    ],
+    "logoPath": "Logos/4c/f2/4cf270f6-1435-f6c1-e294-724ea510f160.png"
+  },
+  {
+    "id": "7178095b-35bf-046a-0794-e339d45183a6",
+    "title": "Fullmetal Alchemist: State Alchemy Exam",
+    "developer": "Cartoon Network",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Puzzle",
+      "Sudoku",
+      "Mouse-only",
+      "Fullmetal Alchemist",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games2/game-files/statealchemyexam/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/71/78/7178095b-35bf-046a-0794-e339d45183a6.png"
+  },
+  {
+    "id": "f7a654cd-3297-76d4-3838-740d043fa7c6",
+    "title": "Gigolo Assassin",
+    "developer": "Mediatonic",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Adventure"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games3/game-files/gigoloassassin/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2023-10-10T21:59:06.337379Z",
+        "size": 28668728,
+        "sha256": "62bbe0b19a49db7c0c36a6eb10f14b77018ca49423af6dc616d11f28864a5dea",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/gigoloassassin/game.swf"
+      }
+    ],
+    "logoPath": "Logos/f7/a6/f7a654cd-3297-76d4-3838-740d043fa7c6.png"
+  },
+  {
+    "id": "f5473369-b1c6-0317-a896-1b176f0db954",
+    "title": "Girls Like Robots: Nerdfest",
+    "developer": "",
+    "publisher": "Adult Swim; HotAirRaccoon.com",
+    "library": "arcade",
+    "tags": [
+      "Puzzle",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T10:07:58.478Z",
+        "size": 17447616,
+        "sha256": "92DE4D50B78E700554555A99CB45DDF0C651AB8F0D6EED5084718AFF16C8D79F",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/GirlsLikeRobotsNerdfest/Girls Like Robots Nerdfest.swf"
+      }
+    ],
+    "logoPath": "Logos/f5/47/f5473369-b1c6-0317-a896-1b176f0db954.png"
+  },
+  {
+    "id": "a9113cd5-010e-48f1-4421-52427e208520",
+    "title": "Give Up Robot 2",
+    "developer": "Maddy Thorson; Rachel Williamson; Chevy Johnston; Noel Berry; Ben Williamson; Alexander Bruce",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Platformer",
+      "Adventure",
+      "Action",
+      "Score-Attack",
+      "Pixel",
+      "Side View",
+      "Epilepsy Warning",
+      "Time-Attack",
+      "Intentionally Infuriating",
+      "FlashPunk",
+      "Moderate Language",
+      "Machine"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "http://games.adultswim.com/give-up-robot-2-online-game.html",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:13:26.738Z",
+        "size": 50331759,
+        "sha256": "31582CC35E8ABA6306608A16D52449D85FF61E97CB2F62B99A7F5D31CEFE3840",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/GiveUpRobot2/Give Up Robot 2.swf"
+      },
+      {
+        "dateAdded": "2023-11-15T21:37:42.855706Z",
+        "size": 6201216,
+        "sha256": "16309a9ed5ddaff17183af3a09648106a9a0629a56ba135cd709923e436811f4",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/giveuprobot2/game.swf",
+        "parameters": ""
+      }
+    ],
+    "logoPath": "Logos/a9/11/a9113cd5-010e-48f1-4421-52427e208520.png"
+  },
+  {
+    "id": "9e13d990-ab3a-431f-9a04-b1d40513d75a",
+    "title": "Give Up, Robot",
+    "developer": "Maddy Thorson; Coriander Dickinson; Rachel Williamson",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Platformer",
+      "Action",
+      "Score-Attack",
+      "Side View",
+      "Epilepsy Warning",
+      "Time-Attack",
+      "Intentionally Infuriating",
+      "FlashPunk",
+      "Machine",
+      "Voice Acted"
+    ],
+    "status": "Playable",
+    "notes": "Metadata from: https://web.archive.org/web/20100509195559/http://games.adultswim.com/give-up-robot-twitchy-puzzle-online-game.html",
+    "legacyLaunchCommand": "http://games.adultswim.com/giveuprobot.swf",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2023-07-28T20:46:53.140421Z",
+        "size": 2671315,
+        "sha256": "1ca9c7996bf49442ad717e2d2f77a281f5d158758416ff276580bbaa5c0a81ba",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/giveuprobot/game.swf"
+      }
+    ],
+    "logoPath": "Logos/9e/13/9e13d990-ab3a-431f-9a04-b1d40513d75a.png"
+  },
+  {
+    "id": "2782f207-6d11-a512-8eac-d69b1eb44162",
+    "title": "Harvey Birdman: File Frenzy",
+    "developer": "Cartoon Network",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Birdman",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T05:42:33.309Z",
+        "size": 660858,
+        "sha256": "9A8EE1BE3A458F0713A82687EC1C391192A2236EAA66EFA0D796059C893F277B",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/filefrenzy/game.swf"
+      }
+    ],
+    "logoPath": "Logos/27/82/2782f207-6d11-a512-8eac-d69b1eb44162.png"
+  },
+  {
+    "id": "cb64858c-93ef-d0db-82ac-3d6e49fe490f",
+    "title": "Head Games",
+    "developer": "Ferry Halim",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Platformer",
+      "Puzzle",
+      "Aqua Teen Hunger Force",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T08:30:34.403Z",
+        "size": 1018578,
+        "sha256": "9C25E96EB4C491BD4D0EE9D3D7A7CCA65AB3EF4D5FF29572BBE1354FAC94D6CA",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games/game-files/athf_headgames/game.swf"
+      },
+      {
+        "dateAdded": "2023-08-17T02:32:45.794439Z",
+        "size": 2038650,
+        "sha256": "baa519adb1e7d091cfaaddc753886e0459f62b5d420c78b7cf01ef1cfd164d20",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games/game-files/athf_headgames/game.swf"
+      }
+    ],
+    "logoPath": "Logos/cb/64/cb64858c-93ef-d0db-82ac-3d6e49fe490f.png"
+  },
+  {
+    "id": "9873b232-71f6-aab8-fa55-8eeb16d47822",
+    "title": "Headkicker II: The Final Kick",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Pixel",
+      "Beat 'Em Up",
+      "Space Ghost",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T06:06:35.498Z",
+        "size": 993204,
+        "sha256": "59A114C7AE10D925497AC240BD6631288C95C7B8B1EC164B46E7376286420340",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/headkicker/game.swf"
+      }
+    ],
+    "logoPath": "Logos/98/73/9873b232-71f6-aab8-fa55-8eeb16d47822.png"
+  },
+  {
+    "id": "ada8dddc-39ba-085a-ecd4-e3ee555ffeee",
+    "title": "Hemp Tycoon",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Strategy",
+      "Simulation",
+      "Tycoon",
+      "Drugs",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:23:08.421Z",
+        "size": 6292604,
+        "sha256": "771BE348A2A1642053DA3F49D90ED992BC8F38561AFBB1E618531E434B17E4B4",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/HempTycoon/Hemp%20Tycoon.swf",
+        "parameters": ""
+      }
+    ],
+    "logoPath": "Logos/ad/a8/ada8dddc-39ba-085a-ecd4-e3ee555ffeee.png"
+  },
+  {
+    "id": "79a123a2-94d7-48e0-8a73-b134332522b5",
+    "title": "Hipster Kickball",
+    "developer": "PixelJam",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Sports",
+      "Pixel",
+      "Top-Down"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://localflash/hipsterkickball.swf",
+    "source": "https://www.bubblebox.com/play/2070/hipster-kickball.htm",
+    "gameData": [],
+    "logoPath": "Logos/79/a1/79a123a2-94d7-48e0-8a73-b134332522b5.png"
+  },
+  {
+    "id": "a04258bf-c153-ac6a-2f97-45a27d3d09fb",
+    "title": "Holy Crap Bears!",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:12:30.925Z",
+        "size": 19340451,
+        "sha256": "7A0C6C64D9581093BD38BF919982A5A9D1D190F69C075BEB2A1062B4E12CEE76",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/holy_crap_bears/game.swf"
+      }
+    ],
+    "logoPath": "Logos/a0/42/a04258bf-c153-ac6a-2f97-45a27d3d09fb.png"
+  },
+  {
+    "id": "cabdee45-7ac8-3c8c-08f6-5394af5c60cf",
+    "title": "Home Movies Presents: Starboy and the Captain of Outer Space - Mutant Hotdog Game",
+    "developer": "Sarbakan",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Space",
+      "Dodge",
+      "Mouse-only",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T08:28:55.223Z",
+        "size": 361562,
+        "sha256": "292A6E93B6FC29DE9498F63EC16C0C9A4736DDB75C7429AEF7C4EABF5FE72F56",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/starboy/game.swf"
+      }
+    ],
+    "logoPath": "Logos/ca/bd/cabdee45-7ac8-3c8c-08f6-5394af5c60cf.png"
+  },
+  {
+    "id": "db5dc772-b559-571e-d4a9-c84678ff964e",
+    "title": "Home Movies: Look Alive!",
+    "developer": "Ferry Halim",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Score-Attack",
+      "Soccer",
+      "Mouse-only",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games2/game-files/lookalive/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2025-04-07T21:32:27.997245Z",
+        "size": 821673,
+        "sha256": "950767af160af90cf3a38164295a67a18898c1ed40fd5ee2228a4bb99ca46f03",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/lookalive/game.swf"
+      }
+    ],
+    "logoPath": "Logos/db/5d/db5dc772-b559-571e-d4a9-c84678ff964e.png"
+  },
+  {
+    "id": "523d159c-3c4f-5028-c5a6-c91024955481",
+    "title": "Hot Throttle",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Racing",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T05:12:26.161Z",
+        "size": 6959309,
+        "sha256": "0633EF8B8D4E220B919548CDE50721E4B60020685B65F00C5D7827D7EA5B2FCF",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/HotThrottle/Hot Throttle.swf"
+      }
+    ],
+    "logoPath": "Logos/52/3d/523d159c-3c4f-5028-c5a6-c91024955481.png"
+  },
+  {
+    "id": "a041099c-5a43-6cc9-0cd2-d01e647b0f4e",
+    "title": "House of Dead Ninjas",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Pixel",
+      "Side View",
+      "Ninja",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "https://armorgames.com/play/11015/house-of-dead-ninjas",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:14:03.671Z",
+        "size": 5845742,
+        "sha256": "722BD26E5E2D481C402C0739C4FFDFBAA1613AE41AC1AAECCCE73FA06D0504C1",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/HouseDeadNinjas/House of Dead Ninjas.swf"
+      },
+      {
+        "dateAdded": "2024-04-17T20:45:21.675641Z",
+        "size": 18272117,
+        "sha256": "b959f1052a32cd999c6790a798b0cd42add8860cd72468782145ab7f2c4e39ff",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://cache.armorgames.com/files/games/house-of-dead-ninjas-11015.swf?v=1373587525"
+      }
+    ],
+    "logoPath": "Logos/a0/41/a041099c-5a43-6cc9-0cd2-d01e647b0f4e.png"
+  },
+  {
+    "id": "cd871cbb-9792-0410-bb74-754a635247a0",
+    "title": "HRmageddon",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Strategy",
+      "Top-Down",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T08:34:14.489Z",
+        "size": 6563167,
+        "sha256": "E42EFE2A15AD94097AE10D7E7E3290E36776C96CB63FEAFB3F7CB2ADF41A5C6D",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/HRmageddon/HRMageddon.swf"
+      }
+    ],
+    "logoPath": "Logos/cd/87/cd871cbb-9792-0410-bb74-754a635247a0.png"
+  },
+  {
+    "id": "0a26a930-c2b8-d95d-588d-ef3b1068b08d",
+    "title": "I Object!",
+    "developer": "Cartoon Network",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Birdman",
+      "Voice Acted",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T01:25:28.659Z",
+        "size": 716889,
+        "sha256": "3523C5B467307FC4E67A9B79BF6EC1183B14B313AA9E87D06DF662614EA472FE",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/iobject/game.swf"
+      }
+    ],
+    "logoPath": "Logos/0a/26/0a26a930-c2b8-d95d-588d-ef3b1068b08d.png"
+  },
+  {
+    "id": "d2fdec39-c2fa-cee5-521d-1a3f25013b4e",
+    "title": "Idea Volleyball",
+    "developer": "Cartoon Network",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Volleyball",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T08:42:31.085Z",
+        "size": 650762,
+        "sha256": "C884E7B7D5C5F9C58E1E2915119298940D52D8D7E36E5B56ADAE2820569417BD",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/ideavolleyball/game.swf"
+      }
+    ],
+    "logoPath": "Logos/d2/fd/d2fdec39-c2fa-cee5-521d-1a3f25013b4e.png"
+  },
+  {
+    "id": "b1f6770e-9e46-9b14-3ec0-f315678a57d2",
+    "title": "Inuyasha: Demon Tournament: Special Edition",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Strategy",
+      "Pixel",
+      "Turn-Based",
+      "InuYasha",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "Opens a blank browser window on beating the game.",
+    "legacyLaunchCommand": "http://i.adultswim.com/DemonTournament/Demon Tournament.swf",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2023-10-22T01:03:03.260449Z",
+        "size": 2795612,
+        "sha256": "0282018af14c9c8d5ee8ed0f88443f64e61193721f31296768cad6d7d8b709b0",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/DemonTournament/Demon%20Tournament.swf"
+      },
+      {
+        "dateAdded": "2025-10-31T21:09:07.803258Z",
+        "size": 4714304,
+        "sha256": "a35203bba6363f661295b07effb8fae25f50b3837fe0ff644a085b1eaa5d901f",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/DemonTournament/Demon%20Tournament.swf",
+        "parameters": ""
+      }
+    ],
+    "logoPath": "Logos/b1/f6/b1f6770e-9e46-9b14-3ec0-f315678a57d2.png"
+  },
+  {
+    "id": "e764efed-b66b-6197-f516-2a34dde864d1",
+    "title": "JailBirdman",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Birdman",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games2/game-files/jailbirdman/game.swf",
+    "source": "funnygames.co.uk",
+    "gameData": [
+      {
+        "dateAdded": "2023-08-24T18:59:27.766847Z",
+        "size": 543867,
+        "sha256": "9860fd6595a836addcb626c9964240e41d15c3664a87c02204a6689431d393ad",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://media.jaludo.com/escape/jailbirdman.swf"
+      }
+    ],
+    "logoPath": "Logos/e7/64/e764efed-b66b-6197-f516-2a34dde864d1.png"
+  },
+  {
+    "id": "8e096f83-9ce3-4278-a7b0-7cf5b28ed6a4",
+    "title": "Jetpack Jackass",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Platformer",
+      "Score-Attack",
+      "Stereotyping",
+      "Mild Language",
+      "Endless Jumper"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://localflash/jetpackjackass/thisispop.com/jetpackjackass_notsponsored.swf",
+    "source": "Adult Swim",
+    "gameData": [],
+    "logoPath": "Logos/8e/09/8e096f83-9ce3-4278-a7b0-7cf5b28ed6a4.png"
+  },
+  {
+    "id": "2d43181c-de65-965a-8aa4-a78880c45620",
+    "title": "Kill thy Neighbor",
+    "developer": "Ham in the Fridge",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T01:52:25.335Z",
+        "size": 18679422,
+        "sha256": "E8C0E0B2B979B11A13C0EAB94DB25054DCD4FA9B8589A780DA02A667AA8CA06D",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/killthyneighbor/game.swf"
+      }
+    ],
+    "logoPath": "Logos/2d/43/2d43181c-de65-965a-8aa4-a78880c45620.png"
+  },
+  {
+    "id": "830c8a9f-b31d-e466-20b2-ca6fb7efd811",
+    "title": "Killbot!",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Puzzle",
+      "Side View"
+    ],
+    "status": "Playable",
+    "notes": "While it is possible to change the player's appearance as the game loads, this is generally impossible due to near instantaneous loading times.",
+    "legacyLaunchCommand": "http://i.adultswim.com/Killbot/Killbot.swf",
+    "source": "adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/83/0c/830c8a9f-b31d-e466-20b2-ca6fb7efd811.png"
+  },
+  {
+    "id": "adcc977e-47b7-3e2c-db70-3c0312587c98",
+    "title": "Lee-Lee's Quest",
+    "developer": "Marcus Richert / Raitendo",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Platformer",
+      "Side View",
+      "Moderate Language",
+      "Cartoon",
+      "Achievements",
+      "Voice Acted",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:23:27.824Z",
+        "size": 4437091,
+        "sha256": "2AB9CA1D95644D2403171D2DFD3A07601EAF550EF9DC635A937307231E358B71",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/LeeLeesQuest/Lee Lee's Quest.swf"
+      }
+    ],
+    "logoPath": "Logos/ad/cc/adcc977e-47b7-3e2c-db70-3c0312587c98.png"
+  },
+  {
+    "id": "d81eadef-e7b3-4dca-337c-9bc73759b03e",
+    "title": "Lee-Lee's Quest 2",
+    "developer": "Marcus Richert / Raitendo",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Platformer",
+      "Side View",
+      "Moderate Language",
+      "Cartoon",
+      "Achievements",
+      "Voice Acted",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T08:53:51.166Z",
+        "size": 7914792,
+        "sha256": "231B3615CF9167B37B1257F24D2737C92385B5E6817189C795728A215EEA8220",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/LeeLeesQuest2/Lee Lee's Quest 2.swf"
+      }
+    ],
+    "logoPath": "Logos/d8/1e/d81eadef-e7b3-4dca-337c-9bc73759b03e.png"
+  },
+  {
+    "id": "6611513b-200e-474e-a0e2-99af5ad89002",
+    "title": "Lesbian Spider-Queens of Mars",
+    "developer": "Anna Anthropy",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Pixel",
+      "Lesbian",
+      "LGBTQ+"
+    ],
+    "status": "Playable",
+    "notes": "\"Removed Vocals\" is a modified version that removes the grating voice lines that play at random.",
+    "legacyLaunchCommand": "",
+    "source": "Adult Swim",
+    "gameData": [
+      {
+        "dateAdded": "2022-05-02T02:11:19.174Z",
+        "size": 3455928,
+        "sha256": "76241B18BCE81776BBCE42A48BC5647A95BC80E876466D0AF24EB65F25F90DE6",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://localflash/lesbian spider queens from mars.swf"
+      },
+      {
+        "dateAdded": "2025-04-07T23:08:38.794928Z",
+        "size": 6800519,
+        "sha256": "6392cbb2edbef14da9423838d9f5d90ad2ffe4217ab4ab123ce3f080741a928e",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "\"http://localflash/lesbianspiderqueensofmars/lesbian spider queens from mars.swf\""
+      }
+    ],
+    "logoPath": "Logos/66/11/6611513b-200e-474e-a0e2-99af5ad89002.png"
+  },
+  {
+    "id": "c873a2b6-dc3a-f35a-b44e-61f51cbc4306",
+    "title": "Meowcenaries",
+    "developer": "Mediatonic",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Action",
+      "Feline",
+      "Blood",
+      "Strong Violence",
+      "Top-Down"
+    ],
+    "status": "Hacked; Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://localflash/meowcenaries/adultswim/meowcenaries.swf",
+    "source": "http://i.adultswim.com/adultswim/games3/game-files/meowcenaries/game.swf",
+    "gameData": [],
+    "logoPath": "Logos/c8/73/c873a2b6-dc3a-f35a-b44e-61f51cbc4306.png"
+  },
+  {
+    "id": "70093cb2-f122-484d-318e-abd585fd6d8a",
+    "title": "Minoriteam: Racist Checkers",
+    "developer": "Cartoon Network",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Puzzle",
+      "Checkers",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T06:18:30.223Z",
+        "size": 1614443,
+        "sha256": "29C08AC38CBAFD322523D671FB75578B547F319D6CE5281626A586E0ACFC908F",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/racistcheckers/game.swf"
+      }
+    ],
+    "logoPath": "Logos/70/09/70093cb2-f122-484d-318e-abd585fd6d8a.png"
+  },
+  {
+    "id": "e95dc5da-c977-4c5c-83da-88ceb61858fb",
+    "title": "Mooninite Marauders",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Score-Attack",
+      "Fixed Shooter",
+      "Aqua Teen Hunger Force",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-10-03T05:47:22.99Z",
+        "size": 583174,
+        "sha256": "97E07C4D0671791AAE072C240BE705C56080D58E818107DCA5532DD26EF857A3",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games/game-files/athf_mooninite/game.swf"
+      }
+    ],
+    "logoPath": "Logos/e9/5d/e95dc5da-c977-4c5c-83da-88ceb61858fb.png"
+  },
+  {
+    "id": "00692ef0-9852-0eb8-09e3-78c79c6c7d14",
+    "title": "Mountain Maniac",
+    "developer": "",
+    "publisher": "Adult Swim; Battleon.com",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Pixel",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T05:21:20.228Z",
+        "size": 5051113,
+        "sha256": "82CB7A58C822D93734E24424CBFF8220EEA077A9EF1C947E83AA85F9BE657608",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/MountainManiac/Mountain Maniac.swf"
+      }
+    ],
+    "logoPath": "Logos/00/69/00692ef0-9852-0eb8-09e3-78c79c6c7d14.png"
+  },
+  {
+    "id": "e6c94344-cac5-af50-b7b8-711714b2ce84",
+    "title": "Mountain Maniac Xmas",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Pixel",
+      "Christmastide"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games3/game-files/mountainmaniacchristmas/index.html",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/e6/c9/e6c94344-cac5-af50-b7b8-711714b2ce84.png"
+  },
+  {
+    "id": "1b0aefa2-4d8d-4b13-a465-81557ce97bb6",
+    "title": "Mr. Mullet",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games3/game-files/mrmullet/index.html",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/1b/0a/1b0aefa2-4d8d-4b13-a465-81557ce97bb6.png"
+  },
+  {
+    "id": "1d01bf9c-ecfc-4960-bbaa-17c396c14c0a",
+    "title": "My Friend Pedro",
+    "developer": "DeadToast Entertainment",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Action"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://localflash/my-friend-pedro-1598012ef.swf",
+    "source": "ArmorGames.com",
+    "gameData": [],
+    "logoPath": "Logos/1d/01/1d01bf9c-ecfc-4960-bbaa-17c396c14c0a.png"
+  },
+  {
+    "id": "96444f68-29f2-5089-3cfb-3c57aca9dd61",
+    "title": "My Friend Pedro Arena",
+    "developer": "DeadToast Entertainment",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Action"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://localflash/mfparena/650724_mfp-arena-public.swf",
+    "source": "https://www.newgrounds.com/portal/view/650724",
+    "gameData": [],
+    "logoPath": "Logos/96/44/96444f68-29f2-5089-3cfb-3c57aca9dd61.png"
+  },
+  {
+    "id": "28115735-c374-6174-e092-7ed6493e65c0",
+    "title": "My Lil' Bastard",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Simulation",
+      "Sexual Content",
+      "Alcohol",
+      "Tobacco",
+      "Pet",
+      "Achievements",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "https://web.archive.org/web/20160401063219/http://www.adultswim.com:80/games/web/my-lil-bastard",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T06:48:30.332Z",
+        "size": 3335471,
+        "sha256": "45F3C57C7DC17083767D95458F5F2377E2F59D27312DF8F33DE12B42EE0DF95A",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/MyLilBastard/My%20Lil%27%20Bastard.swf",
+        "parameters": ""
+      },
+      {
+        "dateAdded": "2024-07-10T15:50:30.267959Z",
+        "size": 3335880,
+        "sha256": "4690766b4fde54abb6e037dba0fb2ca9d4e6ad5a7c79d577fb4a7967f10b18e2",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/mylilbastard/game.swf"
+      }
+    ],
+    "logoPath": "Logos/28/11/28115735-c374-6174-e092-7ed6493e65c0.png"
+  },
+  {
+    "id": "aa58f3c4-da27-d4ea-9bbb-9b8507c521f5",
+    "title": "Nine Billion Miles from Earth",
+    "developer": "Pet Tomato",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:16:47.414Z",
+        "size": 13364780,
+        "sha256": "49DA1AEA9E80BC209E7A1B65E6443CD7910D11FACB6158F2FDB6AEF721C46CF6",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/ninebillion/game.swf"
+      }
+    ],
+    "logoPath": "Logos/aa/58/aa58f3c4-da27-d4ea-9bbb-9b8507c521f5.png"
+  },
+  {
+    "id": "80f80610-4ba8-d722-7003-8632cb163db8",
+    "title": "Nostalgic Chainsaws",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T04:35:18.687Z",
+        "size": 13346998,
+        "sha256": "F5A664999ED6333301CED37B64120A41E2A681D4BDC7AD939F329507A4A6D86C",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/big/games3/game-files/nostalgic_chainsaws_from_hell/game.swf"
+      }
+    ],
+    "logoPath": "Logos/80/f8/80f80610-4ba8-d722-7003-8632cb163db8.png"
+  },
+  {
+    "id": "73cd9613-b5e2-632d-a4ba-a6c2ab75e502",
+    "title": "Nunchuck Charlie: A Love Story",
+    "developer": "Deadtoast Entertainment",
+    "publisher": "Adult Swim; Battleon.com",
+    "library": "arcade",
+    "tags": [
+      "Beat 'Em Up",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T04:28:44.363Z",
+        "size": 2701574,
+        "sha256": "59A4FB01CB018ED67807FCD6C450EB09285B40DABAA7671F253F23127C6619F1",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/NunchuckCharlie/Nunchuck Charlie.swf"
+      }
+    ],
+    "logoPath": "Logos/73/cd/73cd9613-b5e2-632d-a4ba-a6c2ab75e502.png"
+  },
+  {
+    "id": "9f148be1-b455-c2a0-1e3e-1b61d77c2035",
+    "title": "Nurse Quest: Love Hurts!",
+    "developer": "RobotLizard",
+    "publisher": "Adult Swim; Battleon.com",
+    "library": "arcade",
+    "tags": [
+      "Adventure",
+      "Point and Click",
+      "Pixel"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/NurseQuest/Nurse Quest.swf",
+    "source": "adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/9f/14/9f148be1-b455-c2a0-1e3e-1b61d77c2035.png"
+  },
+  {
+    "id": "22ea53a8-5583-1c51-d95c-543a7f046bd5",
+    "title": "One Man and His Dinosaur",
+    "developer": "",
+    "publisher": "Adult Swim; Battleon.com",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T03:44:02.316Z",
+        "size": 11001210,
+        "sha256": "ECEDDA0A49319B03BE9B61F3DCC9C11492242F41C4125BAC162AE8E8465AF29B",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/OneManHisDinosaur/One Man and his Dinosaur.swf"
+      }
+    ],
+    "logoPath": "Logos/22/ea/22ea53a8-5583-1c51-d95c-543a7f046bd5.png"
+  },
+  {
+    "id": "650ce003-49ff-0631-495c-80db7af1118e",
+    "title": "Orphan Feast",
+    "developer": "Robox Studios",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Beat 'Em Up",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T05:19:15.484Z",
+        "size": 7987680,
+        "sha256": "BB57EDD51C61DB61448661E7A17DA3CDEB2250B5D331BCF4E23C4FDADF3FAE26",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/orphanfeast/game.swf"
+      }
+    ],
+    "logoPath": "Logos/65/0c/650ce003-49ff-0631-495c-80db7af1118e.png"
+  },
+  {
+    "id": "b2ac04af-8d5a-fdf8-1d25-4e1bf1bd08cc",
+    "title": "Perfect Hair Forever: The Ninth Level of Power",
+    "developer": "Cartoon Network",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Arcade",
+      "Score-Attack",
+      "Dodge",
+      "Fixed Screen",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:34:02.089Z",
+        "size": 1068973,
+        "sha256": "257D51AED7552E226073A6BA8CE4DE118707A947F771CEDBEDD3A5491B375301",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/theninthlevelofpower/game.swf"
+      }
+    ],
+    "logoPath": "Logos/b2/ac/b2ac04af-8d5a-fdf8-1d25-4e1bf1bd08cc.png"
+  },
+  {
+    "id": "cdfc5842-16e4-1bf1-a0b2-4aaef222d7b0",
+    "title": "Phantom Pharaoh's Treasure Trap",
+    "developer": "SFB Games",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Adventure",
+      "Ancient Egypt"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://localflash/phantom pharaoh's treasure trap/phantom pharaoh's treasure trap.swf",
+    "source": "",
+    "gameData": [],
+    "logoPath": "Logos/cd/fc/cdfc5842-16e4-1bf1-a0b2-4aaef222d7b0.png"
+  },
+  {
+    "id": "f2756e54-90e8-ba8a-8e8e-5599fd524b94",
+    "title": "Pipedreamz",
+    "developer": "Messhof",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Score-Attack"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games3/game-files/pipedreamz/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/f2/75/f2756e54-90e8-ba8a-8e8e-5599fd524b94.png"
+  },
+  {
+    "id": "5520c008-0447-82db-40c5-9482560fa515",
+    "title": "Piranha Pop",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Toss",
+      "Time-Attack",
+      "Blood",
+      "Mouse-only",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T05:51:49.651Z",
+        "size": 3691910,
+        "sha256": "CE57195B1DDA2DF0A2031C18D553F565E6DA6B85C723075D875A51A929A8560B",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/big/games/game-files/piranha-pop/game.swf"
+      }
+    ],
+    "logoPath": "Logos/55/20/5520c008-0447-82db-40c5-9482560fa515.png"
+  },
+  {
+    "id": "03d2b1e2-ee90-5be9-a302-30571fec0765",
+    "title": "Pizza City",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Pixel",
+      "Hidden Content",
+      "Auto-zipped"
+    ],
+    "status": "Hacked; Playable",
+    "notes": "Passwords (in options menu): copsnrobbers, clownxplosion, targetpractice, crazydrivers, toomuchcoffee, thegetaway, easydriver, bouncytown, deepfreeze, overpopulation",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T01:56:45.132Z",
+        "size": 10753374,
+        "sha256": "0956F3038707C9EA7B758EBAB68A21D5D574C4F79D1528B7BAB65A208E1A1601",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/PizzaCity/Pizza City.swf"
+      }
+    ],
+    "logoPath": "Logos/03/d2/03d2b1e2-ee90-5be9-a302-30571fec0765.png"
+  },
+  {
+    "id": "362c0b94-8945-4785-e0ea-18c3964c7e4c",
+    "title": "Planet Punch",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Space",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T05:03:13.718Z",
+        "size": 45373387,
+        "sha256": "B71B70B0B8AC68E930A25B960338057E04B4F67D5538550F5E673F675D06395A",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/PlanetPunch/Planet Punch.swf"
+      }
+    ],
+    "logoPath": "Logos/36/2c/362c0b94-8945-4785-e0ea-18c3964c7e4c.png"
+  },
+  {
+    "id": "ecc1c383-7cba-b74a-f27e-83ad7d0a631c",
+    "title": "Polar Bear Payback",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Score-Attack",
+      "Beat 'Em Up",
+      "Blood",
+      "Arctic",
+      "Ursidae"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games3/game-files/polarbearpayback/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/ec/c1/ecc1c383-7cba-b74a-f27e-83ad7d0a631c.png"
+  },
+  {
+    "id": "d751b008-4b4e-934d-ff42-72652e736f88",
+    "title": "Poledance Hero",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Adult",
+      "Rhythm",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T08:57:34.35Z",
+        "size": 4898495,
+        "sha256": "E0B3BC698097822BBB0B92AFACDD2865CB6B2A570DAE3BA4E27D1AFC99BDD01D",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/poledancehero/game.swf"
+      }
+    ],
+    "logoPath": "Logos/d7/51/d751b008-4b4e-934d-ff42-72652e736f88.png"
+  },
+  {
+    "id": "e73c9402-9d0d-609f-a17a-8d8e6a91b568",
+    "title": "Poledance Party",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Adult",
+      "Rhythm",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T09:27:43.955Z",
+        "size": 4945777,
+        "sha256": "98AE1C431E27F9BF1420910C7D96B5C182672320360417F3585DAA49BF6E962F",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/poledanceparty/game.swf"
+      }
+    ],
+    "logoPath": "Logos/e7/3c/e73c9402-9d0d-609f-a17a-8d8e6a91b568.png"
+  },
+  {
+    "id": "b5088c62-9c51-01c4-5802-a635e9e486c3",
+    "title": "Poledance Party 2",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Adult",
+      "Rhythm",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:49:20.757Z",
+        "size": 10803864,
+        "sha256": "B0B33AD1F18904F32D359444696441F58180464E9E3BE2B2504709C7A8A875B5",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/poledanceparty2/game.swf"
+      }
+    ],
+    "logoPath": "Logos/b5/08/b5088c62-9c51-01c4-5802-a635e9e486c3.png"
+  },
+  {
+    "id": "4db90760-d19a-d3fd-9f5a-d4da0795e301",
+    "title": "Prism Panic",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Platformer",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T02:21:24.498Z",
+        "size": 12396996,
+        "sha256": "8442B181A737F7A81A2F2B926D90076E56EA4C2B828C9754D8CC3A73A8202B3E",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/big/games/game-files/prism-panic/game.swf"
+      }
+    ],
+    "logoPath": "Logos/4d/b9/4db90760-d19a-d3fd-9f5a-d4da0795e301.png"
+  },
+  {
+    "id": "2772f0f8-49c6-e40f-cb58-d546f6338a0a",
+    "title": "Puzzle Rescue Prime",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Puzzle",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T05:42:32.868Z",
+        "size": 3566384,
+        "sha256": "3807C4973C3617F7318B37D549A7E0F777455E7E51B5EE1D0EC5A1AB3A74B480",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/big/games3/game-files/puzzle_rescue_prime/game.swf"
+      }
+    ],
+    "logoPath": "Logos/27/72/2772f0f8-49c6-e40f-cb58-d546f6338a0a.png"
+  },
+  {
+    "id": "9995726e-f757-6cc6-dcbe-b874f171b1b7",
+    "title": "Radioactive Teddy Bear Zombies",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Action",
+      "Score-Attack",
+      "Side View",
+      "Zombie",
+      "Run 'n' Gun"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games3/game-files/radioactiveteddybearzombies/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/99/95/9995726e-f757-6cc6-dcbe-b874f171b1b7.png"
+  },
+  {
+    "id": "b364fbb7-a11d-4991-95bd-51e8a7ac6d4f",
+    "title": "Reducto's House of Teeny Tiny Things",
+    "developer": "Funny Garbage",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Toy",
+      "Interactive",
+      "Mouse-only",
+      "Birdman",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://www.adultswim.com/shows/birdman/stuff/reductos_house/movie.swf",
+    "source": "https://web.archive.org/web/20051025132222/http://www.adultswim.com/shows/birdman/stuff/reductos_house/index.html",
+    "gameData": [
+      {
+        "dateAdded": "2026-10-13T19:16:15.519029Z",
+        "size": 1016840,
+        "sha256": "ba8450da74300a41886df2725f99e0cad7d11becfb04f8dd416ff2eebafbf9d2",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://www.adultswim.com/shows/birdman/stuff/reductos_house/movie.swf"
+      }
+    ],
+    "logoPath": "Logos/b3/64/b364fbb7-a11d-4991-95bd-51e8a7ac6d4f.png"
+  },
+  {
+    "id": "702478dd-7bc6-20e9-4895-8d6c90fe2f1e",
+    "title": "Retro Unicorn Attack",
+    "developer": "PixelJAM",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Score-Attack",
+      "Runner",
+      "Side View",
+      "Officially Licensed",
+      "Robot Unicorn Attack"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games3/game-files/retro-unicorn-attack/index.html",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2025-10-24T01:01:46.026868Z",
+        "size": 3287497,
+        "sha256": "3717aeb1dd8b65c8d2ec1012e2294a75fb29efdcc7e6d94b646a64fc86e3951d",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\fpnavigator-portable\\FPNavigator.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/retro-unicorn-attack/index.html"
+      }
+    ],
+    "logoPath": "Logos/70/24/702478dd-7bc6-20e9-4895-8d6c90fe2f1e.png"
+  },
+  {
+    "id": "a784b8e6-bdc1-59ef-b5c9-658bb7334a95",
+    "title": "Retro Unicorn Attack: Challenge Edition",
+    "developer": "PixelJAM",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Score-Attack",
+      "Runner",
+      "Side View",
+      "Officially Licensed",
+      "Robot Unicorn Attack"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/big/games/game-files/retro-unicorn-attack-challenge-edition/index.html",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2025-10-24T01:01:31.963997Z",
+        "size": 5030468,
+        "sha256": "db48993ecc237d2459b8da75b0a4f2b38afbc316ef5d25bdf3257e062ed460fe",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\fpnavigator-portable\\FPNavigator.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/big/games/game-files/retro-unicorn-attack-challenge-edition/index.html"
+      }
+    ],
+    "logoPath": "Logos/a7/84/a784b8e6-bdc1-59ef-b5c9-658bb7334a95.png"
+  },
+  {
+    "id": "ee147191-d720-aa4d-7cb4-3919236adca8",
+    "title": "Revenge of the Zombees",
+    "developer": "QB9",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T09:45:22.463Z",
+        "size": 13575890,
+        "sha256": "95CF1BEF5E7CBCFE4BE829D29B2BE61224E202E729B0F3A7E245DA6AE7AE5892",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/revengeofthezombees/game.swf"
+      }
+    ],
+    "logoPath": "Logos/ee/14/ee147191-d720-aa4d-7cb4-3919236adca8.png"
+  },
+  {
+    "id": "ed69debf-b0ad-728d-0fe5-50974995d827",
+    "title": "Rick and Morty: Rushed Licensed Adventure",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Adventure",
+      "Point and Click",
+      "Pixel",
+      "Rick and Morty",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/RickMorty/Rick and Morty.swf",
+    "source": "adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/ed/69/ed69debf-b0ad-728d-0fe5-50974995d827.png"
+  },
+  {
+    "id": "2e541149-d67f-466b-8748-7d1ff6d0c229",
+    "title": "Robot Unicorn Attack",
+    "developer": "Spiritonin Media",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Score-Attack",
+      "Runner",
+      "Side View",
+      "Equine",
+      "Auto-zipped",
+      "Officially Licensed",
+      "Robot Unicorn Attack"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "unicorn.jocke.no",
+    "gameData": [
+      {
+        "dateAdded": "2022-10-03T05:25:20.245Z",
+        "size": 1198619,
+        "sha256": "90D270AD8304271F4463D2DA4FBE47D69D50733C95E62B21EF425D9E4F28798B",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://unicorn.jocke.no/game.swf"
+      },
+      {
+        "dateAdded": "2025-10-24T00:57:22.903973Z",
+        "size": 5083205,
+        "sha256": "76051548ae037ea3bf67a2d980202dbdb93c2c09d10f3d73c2f7de1f16e3a338",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://unicorn.jocke.no/game.swf"
+      }
+    ],
+    "logoPath": "Logos/2e/54/2e541149-d67f-466b-8748-7d1ff6d0c229.png"
+  },
+  {
+    "id": "7754246e-8136-4154-b5a4-2a77bf7d8af5",
+    "title": "Robot Unicorn Attack Christmas",
+    "developer": "Spiritonin Media",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Score-Attack",
+      "Runner",
+      "Christmastide",
+      "Side View",
+      "Auto-zipped",
+      "Officially Licensed",
+      "Robot Unicorn Attack"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T06:44:42.317Z",
+        "size": 7561456,
+        "sha256": "5F386DE4A73DFA99FF056F4B568858D65A7131CDC81631A7B4B18621CFB72B65",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/robot-unicorn-attack-christmas/game.swf"
+      },
+      {
+        "dateAdded": "2025-10-24T01:13:05.365063Z",
+        "size": 18314586,
+        "sha256": "02265e8956f669e0fe3290449cde52d22d3c4b260fa1dc255a5968e2448ae687",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/robot-unicorn-attack-christmas/game.swf"
+      }
+    ],
+    "logoPath": "Logos/77/54/7754246e-8136-4154-b5a4-2a77bf7d8af5.png"
+  },
+  {
+    "id": "0f3d9a0e-44a8-987d-8762-b0d3ca359374",
+    "title": "Robot Unicorn Attack Evolution",
+    "developer": "Mediatonic",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Score-Attack",
+      "Runner",
+      "Side View",
+      "Officially Licensed",
+      "Robot Unicorn Attack"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/RobotUnicornAttackEvolution/Robot Unicorn Attack Evolution.swf",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2025-10-24T01:02:04.942816Z",
+        "size": 28042817,
+        "sha256": "bbdb5961f62591bcc4d3aef808ba235cf3ed7a793bb734125d92293c3e0f03cc",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/RobotUnicornAttackEvolution/Robot%20Unicorn%20Attack%20Evolution.swf"
+      }
+    ],
+    "logoPath": "Logos/0f/3d/0f3d9a0e-44a8-987d-8762-b0d3ca359374.png"
+  },
+  {
+    "id": "f2a45771-04bf-4ab6-be2e-ea8584e68eb5",
+    "title": "Robot Unicorn Attack Heavy Metal",
+    "developer": "Spiritonin Media",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Score-Attack",
+      "Runner",
+      "Side View",
+      "Auto-zipped",
+      "Officially Licensed",
+      "Robot Unicorn Attack"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "Adult Swim",
+    "gameData": [
+      {
+        "dateAdded": "2022-05-02T02:21:57.291Z",
+        "size": 10563973,
+        "sha256": "FBEA57EA9D01FD0A7BF29EDAB5150406928BC9492261A8121BCBE8B1E5A37205",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://localflash/ruahm.swf"
+      },
+      {
+        "dateAdded": "2025-10-24T01:01:03.801168Z",
+        "size": 31690603,
+        "sha256": "2dfdb8e159e7b81a287cac1ba649cb99548161038135486da3e816abf72842be",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/robotunicornattackmetal/game.swf"
+      }
+    ],
+    "logoPath": "Logos/f2/a4/f2a45771-04bf-4ab6-be2e-ea8584e68eb5.png"
+  },
+  {
+    "id": "e0ce46e4-525f-9148-0c8a-c48742984ba9",
+    "title": "Sausage Factory",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Auto-zipped"
+    ],
+    "status": "Hacked; Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T09:17:26.809Z",
+        "size": 2757961,
+        "sha256": "413F53C923F7335E99835D4372D65A07F25A531B027467322902F2AB747905ED",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/SausageFactory/Sausage Factory.swf"
+      }
+    ],
+    "logoPath": "Logos/e0/ce/e0ce46e4-525f-9148-0c8a-c48742984ba9.png"
+  },
+  {
+    "id": "1defd499-7f36-4a91-0bb3-bc6adaae5009",
+    "title": "Schizo-Phrenzy!",
+    "developer": "Smashing Ideas Inc.",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Platformer",
+      "Experimental",
+      "Gore",
+      "Side View",
+      "Epilepsy Warning",
+      "Blood"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games3/game-files/schizophrenzy/index.html",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2024-01-30T22:16:57.759474Z",
+        "size": 4788241,
+        "sha256": "3afa0b1d42f51f3bdab8d58b905d859b89718a6ef8b75fbe81c63127530079de",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\fpnavigator-portable\\FPNavigator.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/schizophrenzy/index.html"
+      }
+    ],
+    "logoPath": "Logos/1d/ef/1defd499-7f36-4a91-0bb3-bc6adaae5009.png"
+  },
+  {
+    "id": "80b8a523-6f0e-166c-e7f1-032a58bdb954",
+    "title": "Sealab 2021: Time for Trouble!",
+    "developer": "Ferry Halim",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T04:34:47.994Z",
+        "size": 664266,
+        "sha256": "F37FBA37A28BDDEBF2556EDB1964B62EAE1146154D3EA3A816964B4682B2C478",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/timefortrouble/game.swf"
+      }
+    ],
+    "logoPath": "Logos/80/b8/80b8a523-6f0e-166c-e7f1-032a58bdb954.png"
+  },
+  {
+    "id": "09b21f2c-1cba-3398-07fa-363c2db0f48b",
+    "title": "Sizzlefist",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/big/games3/game-files/sizzlefist/index.html",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/09/b2/09b21f2c-1cba-3398-07fa-363c2db0f48b.png"
+  },
+  {
+    "id": "c45c0754-b92f-5b77-9366-353b0a8764f7",
+    "title": "Snaaaake!",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games/game-files/snaaaake/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/c4/5c/c45c0754-b92f-5b77-9366-353b0a8764f7.png"
+  },
+  {
+    "id": "e757a0a9-be87-4bdb-8f04-492f60a52276",
+    "title": "Solid Bronze",
+    "developer": "Funny Garbage",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Interactive",
+      "Aqua Teen Hunger Force",
+      "Birdman",
+      "Space Ghost",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://www.adultswim.com/misc/solid_bronze/movie.swf",
+    "source": "https://web.archive.org/web/20031008081539/http://www.adultswim.com/misc/solid_bronze/index.html",
+    "gameData": [
+      {
+        "dateAdded": "2026-10-13T19:16:06.521181Z",
+        "size": 799988,
+        "sha256": "e1f7ee2ece021fb1f062164a8d97b7103b457550e28a8274f2dd6b13c9359c5b",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://www.adultswim.com/misc/solid_bronze/movie.swf"
+      }
+    ],
+    "logoPath": "Logos/e7/57/e757a0a9-be87-4bdb-8f04-492f60a52276.png"
+  },
+  {
+    "id": "9fd8e541-a1e3-5a59-2e0f-32b893b01f95",
+    "title": "Soul Brother",
+    "developer": "Jasper Byrne",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Platformer",
+      "Puzzle",
+      "Score-Attack",
+      "Flixel",
+      "Pixel",
+      "Side View",
+      "Achievements",
+      "Fixed Screen"
+    ],
+    "status": "Playable",
+    "notes": "Launches in the wrong window size. Just click and drag the window to make it bigger.",
+    "legacyLaunchCommand": "http://localflash/soulbrother/soulbrother.swf",
+    "source": "http://www.crazygames.com/game/soul-brother",
+    "gameData": [],
+    "logoPath": "Logos/9f/d8/9fd8e541-a1e3-5a59-2e0f-32b893b01f95.png"
+  },
+  {
+    "id": "2cdbc00f-c174-3f04-e646-bb9961ecd424",
+    "title": "Soundodger",
+    "developer": "Studiobean",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Rhythm",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T01:51:13.27Z",
+        "size": 33120246,
+        "sha256": "8316C39DE5D29066EC9A8C25056AE865238EFE6DE15510CF1F3671882DCBF6EF",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/Soundodger/Soundodger.swf"
+      }
+    ],
+    "logoPath": "Logos/2c/db/2cdbc00f-c174-3f04-e646-bb9961ecd424.png"
+  },
+  {
+    "id": "e81b773d-dcd8-efac-1550-503497c651a9",
+    "title": "Space Combat",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Side View",
+      "Cartoon",
+      "Aqua Teen Hunger Force",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "Description from https://web.archive.org/web/20030603182401/http://www.athf.com/home.html",
+    "legacyLaunchCommand": "",
+    "source": "https://www.newgrounds.com/portal/view/67477",
+    "gameData": [
+      {
+        "dateAdded": "2022-05-02T01:50:38.212Z",
+        "size": 224010,
+        "sha256": "4F19E63964794414F13BC8F4131A4636C06A06D24BEC4AD5801467543030CB05",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://uploads.ungrounded.net/67000/67477_space_combat2.swf"
+      }
+    ],
+    "logoPath": "Logos/e8/1b/e81b773d-dcd8-efac-1550-503497c651a9.png"
+  },
+  {
+    "id": "48ee7636-b4cd-c522-e949-f18fc3cf8103",
+    "title": "Spell My Finger",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Puzzle",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T04:07:26.889Z",
+        "size": 3646968,
+        "sha256": "AD14D7B31B97C1971D3427C2E6912DE6C4C7E3CA0079526DE12415117800C589",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/spellmyfinger/game.swf"
+      }
+    ],
+    "logoPath": "Logos/48/ee/48ee7636-b4cd-c522-e949-f18fc3cf8103.png"
+  },
+  {
+    "id": "a565d43d-8db4-1fde-0b26-555695e837f2",
+    "title": "Squidbillies: Floor It!",
+    "developer": "Ferry Halim",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Score-Attack",
+      "Launch",
+      "Mild Violence",
+      "Cephalopod",
+      "Aqua Teen Hunger Force",
+      "Auto-zipped",
+      "Officially Licensed"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:10:44.46Z",
+        "size": 1449454,
+        "sha256": "378C1E4D7322F844EF59BEC5EEF8CE58BFBDB5C27838D80A45402DA19135EF3C",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/floorit/game.swf"
+      }
+    ],
+    "logoPath": "Logos/a5/65/a565d43d-8db4-1fde-0b26-555695e837f2.png"
+  },
+  {
+    "id": "e0b1efc4-816b-ff49-3ebe-1f4672e52724",
+    "title": "Strip Solitaire",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Card",
+      "Adult",
+      "Solitaire",
+      "Nudity"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games3/game-files/strip-solitaire/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/e0/b1/e0b1efc4-816b-ff49-3ebe-1f4672e52724.png"
+  },
+  {
+    "id": "bf4ebd8d-0791-ee89-a76d-efc629221913",
+    "title": "Super House of Dead Ninjas",
+    "developer": "MegaDev",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Action",
+      "Pixel",
+      "Side View",
+      "Ninja",
+      "Blood"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/SuperHouseDeadNinjas/Super House of Dead Ninjas.swf",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2024-02-18T21:43:39.102277Z",
+        "size": 15785554,
+        "sha256": "b7543b01036c4f6728045bbee64bf2d95c7b1d14ae1f17b2c2d867da765d964a",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/super-house-of-dead-ninjas/game.swf"
+      }
+    ],
+    "logoPath": "Logos/bf/4e/bf4ebd8d-0791-ee89-a76d-efc629221913.png"
+  },
+  {
+    "id": "ebe10b81-e51b-50f1-04d4-26e8ed79d587",
+    "title": "Super Puzzle Platformer Plus",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Pixel",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T09:39:42.205Z",
+        "size": 6179470,
+        "sha256": "FCE348820833620B638F30B2F942A1811F2CB9CC0716E968AB38D8B2A7A9D41E",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/big/games/game-files/super-puzzle-platformer-plus/game.swf"
+      }
+    ],
+    "logoPath": "Logos/eb/e1/ebe10b81-e51b-50f1-04d4-26e8ed79d587.png"
+  },
+  {
+    "id": "e1430773-9117-0628-732f-fa42578f231a",
+    "title": "Surprise Bullfight",
+    "developer": "Messhof",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Score-Attack",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T09:35:35.291Z",
+        "size": 6739723,
+        "sha256": "051639ED47B2063F9ACE05D8A930996CA01C49D95E7007650FC8CABDF9D03FCF",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/surprise-bullfight/game.swf"
+      }
+    ],
+    "logoPath": "Logos/e1/43/e1430773-9117-0628-732f-fa42578f231a.png"
+  },
+  {
+    "id": "e9b847b1-0871-b0fc-33c7-c5c0122586d1",
+    "title": "Titan Lunch Retaliation",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/TitanLunchRetaliation/Titan Lunch Retaliation.swf",
+    "source": "adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/e9/b8/e9b847b1-0871-b0fc-33c7-c5c0122586d1.png"
+  },
+  {
+    "id": "aeaabc21-7d4a-4de2-af44-3a6fa4f6e492",
+    "title": "Tofu Hunter",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Gore",
+      "Shooting Gallery",
+      "Blood",
+      "Hunting",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:25:36.234Z",
+        "size": 15396986,
+        "sha256": "0D8C6E40FEA53B0356ADBE7B76EF07D843EFE6BA87391C1C3A37DD39733707E4",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/TofuHunter/Tofu Hunter.swf"
+      }
+    ],
+    "logoPath": "Logos/ae/aa/aeaabc21-7d4a-4de2-af44-3a6fa4f6e492.png"
+  },
+  {
+    "id": "a8086462-ea99-bf85-d729-561b41ae2a6a",
+    "title": "Tor-Toss",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Artillery",
+      "Pixel",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:16:07.784Z",
+        "size": 3234813,
+        "sha256": "1D33A85BC46EF414E59F7158CB94CFC64F4CF91D976BEDCF81739B0A522398BA",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/tortoss/game.swf"
+      }
+    ],
+    "logoPath": "Logos/a8/08/a8086462-ea99-bf85-d729-561b41ae2a6a.png"
+  },
+  {
+    "id": "2f6c24ed-0ce9-42dc-349e-48f161ab26ec",
+    "title": "Try Harder",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Runner",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T01:54:54.966Z",
+        "size": 13114638,
+        "sha256": "3AD8A905AACA6C6825A54AC9DE8ABB5A3F4DD8B7D60F20C8E005A09452EE7985",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/TryHarder/Try Harder.swf"
+      }
+    ],
+    "logoPath": "Logos/2f/6c/2f6c24ed-0ce9-42dc-349e-48f161ab26ec.png"
+  },
+  {
+    "id": "126abbd0-7ac3-9023-10b5-2783f845a1d8",
+    "title": "Turbo Granny",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Pixel",
+      "Top-Down",
+      "Auto-zipped"
+    ],
+    "status": "Hacked; Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T04:52:34.696Z",
+        "size": 4897059,
+        "sha256": "7A05FCA5446D59DABB4C9B9EE79BDC9FA2B71186187B8C79A39A8D2E79FB5715",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/TurboGranny/Turbo Granny.swf"
+      }
+    ],
+    "logoPath": "Logos/12/6a/126abbd0-7ac3-9023-10b5-2783f845a1d8.png"
+  },
+  {
+    "id": "5d1d15fa-8e8d-f8e4-409d-867b67e319a7",
+    "title": "Turbo Turbo Turbo",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Racing",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T02:33:22.79Z",
+        "size": 11060666,
+        "sha256": "C6FB1726FA1DBC5597A726B741BAAE924A2B26B3B70BB733337BCE036911E398",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/turboturboturbo/game.swf"
+      }
+    ],
+    "logoPath": "Logos/5d/1d/5d1d15fa-8e8d-f8e4-409d-867b67e319a7.png"
+  },
+  {
+    "id": "93bfff14-9060-c17b-febf-446ccfbafb28",
+    "title": "Twirl and Hurl",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Puzzle",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T04:45:59.227Z",
+        "size": 1409231,
+        "sha256": "3063EFFD42F417D1C5836B944F78AE377152D2DB1C554AACCB78206F27E3C6F1",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/twirlandhurl/game.swf"
+      }
+    ],
+    "logoPath": "Logos/93/bf/93bfff14-9060-c17b-febf-446ccfbafb28.png"
+  },
+  {
+    "id": "35ebfd3f-3f51-faa5-fad5-2346a836c7de",
+    "title": "Ultimate Robotoru: Super Alpha Z",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T03:54:52.366Z",
+        "size": 3949840,
+        "sha256": "3EBBA15150CE0BAAE4CECAFEB25A0F00F01792E196D326AC1C6D903C70131F4A",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/ultimate-robotoru/game.swf"
+      }
+    ],
+    "logoPath": "Logos/35/eb/35ebfd3f-3f51-faa5-fad5-2346a836c7de.png"
+  },
+  {
+    "id": "3a4fd10f-575a-f9f4-f39d-f8f8ea284b8a",
+    "title": "Vending Machine Champ",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T01:57:19.076Z",
+        "size": 3083569,
+        "sha256": "BBA393C61EEFF497F435F92723FD207A481E9564AFEF4B5E6768C45F2CC88A63",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/vendingmachinechamp/game.swf"
+      }
+    ],
+    "logoPath": "Logos/3a/4f/3a4fd10f-575a-f9f4-f39d-f8f8ea284b8a.png"
+  },
+  {
+    "id": "0d34d37a-7739-8e31-05d1-111b64c077cf",
+    "title": "Victorian BMX: Death on Wheels",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T01:30:04.889Z",
+        "size": 5008993,
+        "sha256": "F353F444DF25835D31B65F86BD20F13EDFBB29C15F948B8F7BB314A408C6FC49",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/VictorianBMX/Victorian BMX.swf"
+      }
+    ],
+    "logoPath": "Logos/0d/34/0d34d37a-7739-8e31-05d1-111b64c077cf.png"
+  },
+  {
+    "id": "53928080-1deb-2b12-2082-aca2174b4914",
+    "title": "Viva Caligula!",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Action",
+      "Blood",
+      "Strong Violence",
+      "3/4 View",
+      "Ancient Rome"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/VivaCaligula/Viva Caligula.swf",
+    "source": "adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/53/92/53928080-1deb-2b12-2082-aca2174b4914.png"
+  },
+  {
+    "id": "c7e5e426-3b44-8198-1c8b-56359ea87002",
+    "title": "Viva Caligula! In Hell!",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Action",
+      "Gore",
+      "Strong Violence",
+      "Famous Person",
+      "3/4 View",
+      "Auto-zipped",
+      "Nazi Symbols"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T08:11:26.506Z",
+        "size": 21349106,
+        "sha256": "204036A38923F379BF325606562932585EC650C7264A018680C17874F4190531",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/VivaCaligulaHell/Viva Caligula Hell.swf"
+      }
+    ],
+    "logoPath": "Logos/c7/e5/c7e5e426-3b44-8198-1c8b-56359ea87002.png"
+  },
+  {
+    "id": "05c92411-dd7e-13c3-2eac-8c0f8c5052e9",
+    "title": "Waterslide Inferno",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T02:26:14.726Z",
+        "size": 8548940,
+        "sha256": "CF567EBABC5E0B59F8C120C4627153442F3BACFBE44F57F6CB69C0335460B2EF",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/waterslideinferno/game.swf"
+      }
+    ],
+    "logoPath": "Logos/05/c9/05c92411-dd7e-13c3-2eac-8c0f8c5052e9.png"
+  },
+  {
+    "id": "b365e578-9f7e-afa1-318a-f880f700f8c1",
+    "title": "Westerado Poker",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Western",
+      "Poker"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/big/games/game-files/westerado-poker/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/b3/65/b365e578-9f7e-afa1-318a-f880f700f8c1.png"
+  },
+  {
+    "id": "1d533dea-e3b8-f96f-2935-b920b499c611",
+    "title": "Willow Stilleto: Amateur Ninja",
+    "developer": "Mediatonic",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Stealth",
+      "Ninja",
+      "Female",
+      "Top-Down"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games2/game-files/amateurninja/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/1d/53/1d533dea-e3b8-f96f-2935-b920b499c611.png"
+  },
+  {
+    "id": "a8c0aa93-54fc-53ff-aa7a-ac24b847a8b4",
+    "title": "Wine Pong",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Alcohol",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:04:06.489Z",
+        "size": 5111666,
+        "sha256": "38F800E2286F967C2E0F695E47ED8D86103170C853C13590854615E92D6CA9F7",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/winepong/game.swf"
+      }
+    ],
+    "logoPath": "Logos/a8/c0/a8c0aa93-54fc-53ff-aa7a-ac24b847a8b4.png"
+  },
+  {
+    "id": "92b82ca4-d4f7-f911-09bd-3b22ebe082de",
+    "title": "Winnose",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Puzzle",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T04:45:07.91Z",
+        "size": 24661223,
+        "sha256": "E07BEE7E18630A7E194EE642A6EA9B7002E0B9FA908562D4B9218A496DFBDB70",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/big/games3/game-files/winnose/game.swf"
+      }
+    ],
+    "logoPath": "Logos/92/b8/92b82ca4-d4f7-f911-09bd-3b22ebe082de.png"
+  },
+  {
+    "id": "830e359d-53c4-666b-89e6-d21b70f2cfdd",
+    "title": "Worst Game Ever",
+    "developer": "Tiny Mantis Entertainment",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Arcade",
+      "Joke",
+      "Aqua Teen Hunger Force",
+      "Officially Licensed"
+    ],
+    "status": "Partial; Playable",
+    "notes": "Missing http://ht.cdn.turner.com/adultswim/big/games/GoRight_v2a.flv",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/games3/game-files/worstgameever/index.html",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2023-08-06T18:46:22.984586Z",
+        "size": 1174373,
+        "sha256": "ceee3a609f013703bee6326ce467849b25ba69b13628c8aa402b31c0c142b36e",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\fpnavigator-portable\\FPNavigator.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games2/game-files/worstgameever/index.html"
+      }
+    ],
+    "logoPath": "Logos/83/0e/830e359d-53c4-666b-89e6-d21b70f2cfdd.png"
+  },
+  {
+    "id": "a8175059-21fe-0952-ee17-c72f6e3ffe64",
+    "title": "Yeti Sasquatch Annihilation",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "www.adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T07:16:08.441Z",
+        "size": 7275337,
+        "sha256": "407948D039D0D79E0AD1E1B3694E1141084A26C720689EA6D4D76A52BB77AA25",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/adultswim/games3/game-files/yetisasquatchannihilation/game.swf"
+      }
+    ],
+    "logoPath": "Logos/a8/17/a8175059-21fe-0952-ee17-c72f6e3ffe64.png"
+  },
+  {
+    "id": "7950a35b-1303-cc46-0378-c10cf2cf41bf",
+    "title": "Zombie Hooker Nightmare",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Zombie",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T05:59:43.003Z",
+        "size": 3161285,
+        "sha256": "F6D0D2B50C1E8FE0F31EDA7C4347A607C420D7A4FEFDFA00C5C46B0C2FB54C02",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/ZombieHookerNightmare/Zombie Hooker Nightmare.swf"
+      }
+    ],
+    "logoPath": "Logos/79/50/7950a35b-1303-cc46-0378-c10cf2cf41bf.png"
+  },
+  {
+    "id": "e45916e6-5faf-5f59-2dd2-d9251eba4b72",
+    "title": "Zombie Hooker Nightmare XXXMas",
+    "developer": "This Is Pop",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Shooter",
+      "Christmastide",
+      "Zombie",
+      "Blood",
+      "Mild Violence",
+      "3/4 View",
+      "Auto-zipped"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "",
+    "source": "adultswim.com",
+    "gameData": [
+      {
+        "dateAdded": "2022-01-16T09:34:08.483Z",
+        "size": 4755646,
+        "sha256": "50C844F1FD22E37B81C7A9A987A0EE0CFE0DFEE717457ED64C10116F2DA8D255",
+        "crc32": 0,
+        "applicationPath": "FPSoftware\\Flash\\flashplayer_32_sa.exe",
+        "launchCommand": "http://i.adultswim.com/ZombieHookerNightmareXXXMas/Zombie Hooker Nightmare XXXMas.swf"
+      }
+    ],
+    "logoPath": "Logos/e4/59/e45916e6-5faf-5f59-2dd2-d9251eba4b72.png"
+  },
+  {
+    "id": "3056d615-7e5c-f059-9084-2f603a67a1be",
+    "title": "Zomt",
+    "developer": "",
+    "publisher": "Adult Swim",
+    "library": "arcade",
+    "tags": [
+      "Strategy"
+    ],
+    "status": "Playable",
+    "notes": "",
+    "legacyLaunchCommand": "http://i.adultswim.com/adultswim/big/games/game-files/zomt/game.swf",
+    "source": "www.adultswim.com",
+    "gameData": [],
+    "logoPath": "Logos/30/56/3056d615-7e5c-f059-9084-2f603a67a1be.png"
+  }
+]

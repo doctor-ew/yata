@@ -1,7 +1,7 @@
 import{mkdir,cp,writeFile,readFile}from'node:fs/promises';import{createHash}from'node:crypto';
 const target=new URL('./.local-assets/',import.meta.url),source='/Users/drew.schillinger/Dropbox/_AI_/rea-work/FlashAndroid';await mkdir(target,{recursive:true});
 for(const [id,folder]of[['bible-fight','BibleFight'],['viva-caligula','VivaCaligula']]){await cp(`${source}/${folder}/web`,new URL(id+'/',target),{recursive:true});console.log('Copied local bundle: '+id);}
-const base='https://cdn.emulatorjs.org/4.2.3/data/',cores=['stella2014','vice_x64sc','fceumm','snes9x','genesis_plus_gx','gambatte'];
+const base='https://cdn.emulatorjs.org/4.2.3/data/',cores=['mame2003_plus','mame2003','stella2014','vice_x64sc','fceumm','snes9x','genesis_plus_gx','gambatte'];
 const files=['compression/extract7z.js','compression/extractzip.js','compression/libunrar.js','compression/libunrar.wasm','loader.js','emulator.min.js','emulator.min.css',...cores.flatMap(c=>['cores/reports/'+c+'.json','cores/'+c+'-wasm.data','cores/'+c+'-legacy-wasm.data'])];
 const receipts=[];let cursor=0;await Promise.all(Array.from({length:4},async()=>{while(cursor<files.length){const name=files[cursor++],url=base+name;const response=await fetch(url,{signal:AbortSignal.timeout(120000)});if(!response.ok)throw Error(`${response.status}: ${url}`);const bytes=Buffer.from(await response.arrayBuffer());const destination=new URL('emulatorjs/'+name,target);await mkdir(new URL('.',destination),{recursive:true});await writeFile(destination,bytes);receipts.push({name,url,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex')});console.log('EmulatorJS: '+name);}}));
 // Keep the upstream update check on loopback as well.

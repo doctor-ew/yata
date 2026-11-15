@@ -2,7 +2,7 @@ import {readFile,realpath} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('./arcade/',import.meta.url));
-const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.xml':'application/xml','.swf':'application/x-shockwave-flash','.wasm':'application/wasm','.data':'application/octet-stream','.bin':'application/octet-stream','.png':'image/png','.svg':'image/svg+xml','.woff2':'font/woff2','.txt':'text/plain; charset=utf-8'};
+const types={'.webmanifest':'application/manifest+json','.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.xml':'application/xml','.swf':'application/x-shockwave-flash','.wasm':'application/wasm','.data':'application/octet-stream','.flv':'video/x-flv','.gif':'image/gif','.dat':'application/octet-stream','.zip':'application/zip','.jpg':'image/jpeg','.webp':'image/webp','.mp3':'audio/mpeg','.bin':'application/octet-stream','.png':'image/png','.svg':'image/svg+xml','.woff2':'font/woff2','.txt':'text/plain; charset=utf-8'};
 export async function handleArcade(req,res){
  let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{return false;}
  if(pathname!=='/arcade'&&!pathname.startsWith('/arcade/'))return false;
