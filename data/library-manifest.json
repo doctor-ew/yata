@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-a6b0faa693484945",
+  "revision": "expanded-a0542334f7c7e14b",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -17,13 +17,14 @@
     "2026-11-15T14:35:10.913Z",
     "2026-11-15T14:46:20.074Z",
     "2026-11-15T14:51:43.969Z",
-    "2026-11-15T15:02:52.808Z"
+    "2026-11-15T15:02:52.808Z",
+    "2026-11-15T15:06:54.717Z"
   ],
-  "episodes": 6102,
-  "ready": 5970,
+  "episodes": 6154,
+  "ready": 6022,
   "movieReady": 5,
   "breaks": 24,
-  "streamSlots": 98318,
+  "streamSlots": 100524,
   "shows": [
     {
       "id": "dukes",
@@ -1186,6 +1187,30 @@
       "sources": 28
     },
     {
+      "id": "flash-gordon-1979",
+      "title": "The New Adventures of Flash Gordon (1979)",
+      "episodes": 24,
+      "ready": 24,
+      "breaks": 0,
+      "sources": 24
+    },
+    {
+      "id": "return-planet-apes",
+      "title": "Return to the Planet of the Apes (1975)",
+      "episodes": 13,
+      "ready": 13,
+      "breaks": 0,
+      "sources": 13
+    },
+    {
+      "id": "valley-dinosaurs",
+      "title": "Valley of the Dinosaurs (1974)",
+      "episodes": 15,
+      "ready": 15,
+      "breaks": 0,
+      "sources": 15
+    },
+    {
       "id": "saturday-simulator",
       "title": "Saturday Morning Simulator",
       "episodes": 1,
@@ -1194,6 +1219,6 @@
       "sources": 1
     }
   ],
-  "bytes": 2291536,
+  "bytes": 2310523,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

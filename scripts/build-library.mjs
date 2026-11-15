@@ -5,12 +5,13 @@ import { createSeed } from '../src/catalog.mjs';
 import { discoveryRows, mergeLibraryBatch } from '../src/bulk.mjs';
 import { buildSchedule, parseCatalogJson, stationSource, COMMERCIAL_SHOW_ID } from '../src/domain.mjs';
 const data = new URL('../data/', import.meta.url);
-const names = ['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel', 'star-trek', 'retro-requests'];
+const names = ['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel', 'star-trek', 'retro-requests', 'saturday-adventure'];
 const extraCartoonIds = new Set(['mister-t', 'frankenstein-impossibles']);
 const stephanieIds = new Set(["jem", "she-ra", "rainbow-brite", "care-bears", "strawberry-shortcake", "my-little-pony", "grimm-fairy-tale-classics", "grape-ape", "shirt-tales", "heathcliff", "garfield-friends"]);
 const networkIds = new Set(["ycdtotv", "turkey-tv", "harvey-birdman", "sealab-2021", "home-movies", "brak-show", "daria", "taxi", "wkrp", "rockford-files", "bionic-woman", "josie-pussycats", "adult-swim-bumps", "nickelodeon-bumps"]);
 const classicIds = new Set(["fat-albert", "good-times", "jeffersons", "sanford-son", "gimme-break", "kotter", "whos-boss"]);
 const timeTravelIds = new Set(["quantum-leap", "flash-1990", "greatest-american-heroine"]);
+const saturdayAdventureIds = new Set(['flash-gordon-1979','return-planet-apes','valley-dinosaurs']);
 const retroRequestIds = new Set(['star-wars-droids','star-wars-holiday-special','sealab-2020','venture-bros']);
 const trekIds = new Set(["star-trek-tos", "star-trek-tng", "star-trek-ds9", "star-trek-voyager", "star-trek-enterprise", "star-trek-tas"]);
 const extraIds = new Set(ADDITIONAL_SCIFI_SERIES.map(([id]) => id));
@@ -19,6 +20,8 @@ const packs = texts.map(JSON.parse);
 const seed = createSeed(); let sequence = 0;
 for (const [index, name] of names.entries()) {
   const expected = seed.shows.filter(show => {
+    if (name === 'saturday-adventure') return saturdayAdventureIds.has(show.id);
+    if (saturdayAdventureIds.has(show.id)) return false;
     if (name === 'retro-requests') return retroRequestIds.has(show.id);
     if (retroRequestIds.has(show.id)) return false;
     if (name === 'star-trek') return trekIds.has(show.id);

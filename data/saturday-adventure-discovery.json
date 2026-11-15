@@ -1,0 +1,1009 @@
+{
+  "checkedAt": "2026-11-15T15:06:54.717Z",
+  "provider": "archive",
+  "notes": [
+    "Original animated series join Saturday Morning and the main mixed stream. HTTP range checks establish endpoint availability, not full-file decoding."
+  ],
+  "excluded": [],
+  "shows": [
+    {
+      "showId": "flash-gordon-1979",
+      "title": "The New Adventures of Flash Gordon (1979)",
+      "channel": "cartoons",
+      "items": [
+        {
+          "itemId": "the_new_adventures_of_flash_gordon",
+          "title": "The New Adventures of Flash Gordon (1979) [Complete Series + Extras] and Flash Gordon: The Greatest Adventure of All (1982)",
+          "metadataUrl": "https://archive.org/metadata/the_new_adventures_of_flash_gordon"
+        }
+      ],
+      "notes": "24 half-hour programs across two seasons; second-season paired shorts stay intact. Feature-length film and extras excluded.",
+      "episodes": [
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-1",
+          "title": "Flash Gordon S01E01",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1335.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E01.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-2",
+          "title": "Flash Gordon S01E02",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1337.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E02.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-3",
+          "title": "Flash Gordon S01E03",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1337.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E03.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-4",
+          "title": "Flash Gordon S01E04",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1342.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E04.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-5",
+          "title": "Flash Gordon S01E05",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1332.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E05.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-6",
+          "title": "Flash Gordon S01E06",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1333.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E06.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-7",
+          "title": "Flash Gordon S01E07",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1335.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E07.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-8",
+          "title": "Flash Gordon S01E08",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1333.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E08.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-9",
+          "title": "Flash Gordon S01E09",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1333.66,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E09.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-10",
+          "title": "Flash Gordon S01E10",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1333.43,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E10.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-11",
+          "title": "Flash Gordon S01E11",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1334.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E11.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-12",
+          "title": "Flash Gordon S01E12",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1335.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E12.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-13",
+          "title": "Flash Gordon S01E13",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1334.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E13.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-14",
+          "title": "Flash Gordon S01E14",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 1332.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E14.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-15",
+          "title": "Flash Gordon S01E15",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 1334.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E15.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-16",
+          "title": "Flash Gordon S01E16",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 1333.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S01E16.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-17",
+          "title": "Flash Gordon S02E01",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1411.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S02E01.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-18",
+          "title": "Flash Gordon S02E02",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1413.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S02E02.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-19",
+          "title": "Flash Gordon S02E03",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 1415.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S02E03.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-20",
+          "title": "Flash Gordon S02E04",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 1415.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S02E04.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-21",
+          "title": "Flash Gordon S02E05",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 1414.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S02E05.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-22",
+          "title": "Flash Gordon S02E06",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 1413.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-22",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S02E06.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-23",
+          "title": "Flash Gordon S02E07",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 1412.66,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-23",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S02E07.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the_new_adventures_of_flash_gordon-24",
+          "title": "Flash Gordon S02E08",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 1412.58,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-24",
+              "provider": "archive",
+              "url": "https://archive.org/download/the_new_adventures_of_flash_gordon/Flash.Gordon.1979.S02E08.DVDRip.x264-SFM.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "return-planet-apes",
+      "title": "Return to the Planet of the Apes (1975)",
+      "channel": "cartoons",
+      "items": [
+        {
+          "itemId": "return-to-the-planet-of-the-apes-e-10-attack-from-the-clou",
+          "title": "Return To The Planet Of The Apes HD (13 Episodes) (Restored 720p)",
+          "metadataUrl": "https://archive.org/metadata/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou"
+        }
+      ],
+      "notes": "13 episodes. Episodes 6 and 9 are labeled 480p in the source; other filenames labeled HD. Duplicate .ia derivatives excluded.",
+      "episodes": [
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-0",
+          "title": "Return to the Planet of the Apes E01 - Flames of Doom",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1462.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/Return%20to%20the%20Planet%20of%20the%20Apes%20E01%20-%20Flames%20of%20Doom.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-1",
+          "title": "Return to the Planet of the Apes E02 - Escape from Ape City",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1461.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/Return%20to%20the%20Planet%20of%20the%20Apes%20E02%20-%20Escape%20from%20Ape%20City.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-2",
+          "title": "Return to the Planet of the Apes E03 - The Unearthly Prophec",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1466.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/Return%20to%20the%20Planet%20of%20the%20Apes%20E03%20-%20The%20Unearthly%20Prophec.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-3",
+          "title": "Return to the Planet of the Apes E04 - Tunnel of Fear-01",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1463.69,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/Return%20to%20the%20Planet%20of%20the%20Apes%20E04%20-%20Tunnel%20of%20Fear-01.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-4",
+          "title": "Return to the Planet of the Apes E05 - Lagoon of Peril",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1465.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/Return%20to%20the%20Planet%20of%20the%20Apes%20E05%20-%20Lagoon%20of%20Peril.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-11",
+          "title": "z Return to the Planet of the Apes E06 (480p) - Terror on Ice Mountai",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1467.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/z%20Return%20to%20the%20Planet%20of%20the%20Apes%20E06%20(480p)%20-%20Terror%20on%20Ice%20Mountai.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-5",
+          "title": "Return to the Planet of the Apes E07 - River of Flames",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1461.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/Return%20to%20the%20Planet%20of%20the%20Apes%20E07%20-%20River%20of%20Flames.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-6",
+          "title": "Return to the Planet of the Apes E08 - Screaming Wings",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1461.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/Return%20to%20the%20Planet%20of%20the%20Apes%20E08%20-%20Screaming%20Wings.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-12",
+          "title": "z Return to the Planet of the Apes E09 (480p)- Trail to the Unknown",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1465.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/z%20Return%20to%20the%20Planet%20of%20the%20Apes%20E09%20(480p)-%20Trail%20to%20the%20Unknown.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-7",
+          "title": "Return to the Planet of the Apes E10 - Attack from the Clou",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1463.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/Return%20to%20the%20Planet%20of%20the%20Apes%20E10%20-%20Attack%20from%20the%20Clou.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-8",
+          "title": "Return to the Planet of the Apes E11 - Mission of Mercy",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1465.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/Return%20to%20the%20Planet%20of%20the%20Apes%20E11%20-%20Mission%20of%20Mercy.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-9",
+          "title": "Return to the Planet of the Apes E12 - Invasion of the Unde",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1454.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/Return%20to%20the%20Planet%20of%20the%20Apes%20E12%20-%20Invasion%20of%20the%20Unde.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-return-to-the-planet-of-the-apes-e-10-attack-from-the-clou-10",
+          "title": "Return to the Planet of the Apes E13 - Battle of the Titans",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1465.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/return-to-the-planet-of-the-apes-e-10-attack-from-the-clou/Return%20to%20the%20Planet%20of%20the%20Apes%20E13%20-%20Battle%20of%20the%20Titans.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "valley-dinosaurs",
+      "title": "Valley of the Dinosaurs (1974)",
+      "channel": "cartoons",
+      "items": [
+        {
+          "itemId": "what-goes-up_1974",
+          "title": "Valley Of The Dinosaurs Ep. 2 What Goes Up",
+          "metadataUrl": "https://archive.org/metadata/what-goes-up_1974"
+        },
+        {
+          "itemId": "episode-16-torch",
+          "title": "Valley of The Dinosaurs Episode 16: Torch",
+          "metadataUrl": "https://archive.org/metadata/episode-16-torch"
+        },
+        {
+          "itemId": "episode-9-top-cave-please",
+          "title": "Valley Of The Dinosaurs Episode 9: Top Cave, Please",
+          "metadataUrl": "https://archive.org/metadata/episode-9-top-cave-please"
+        },
+        {
+          "itemId": "episode-13-to-fly-a-kite",
+          "title": "Valley Of The Dinosaurs Episode 13: To Fly A Kite",
+          "metadataUrl": "https://archive.org/metadata/episode-13-to-fly-a-kite"
+        },
+        {
+          "itemId": "valley-of-the-dinosaurs-episode-3-a-turned-turtle",
+          "title": "Valley Of The Dinosaurs Ep. 3 A Turned Turtle",
+          "metadataUrl": "https://archive.org/metadata/valley-of-the-dinosaurs-episode-3-a-turned-turtle"
+        },
+        {
+          "itemId": "valley-of-the-dinosaurs-episode-4-the-volcano",
+          "title": "Valley Of The Dinosaurs Ep. 4 The Volcano",
+          "metadataUrl": "https://archive.org/metadata/valley-of-the-dinosaurs-episode-4-the-volcano"
+        },
+        {
+          "itemId": "valley-of-the-dinosaurs-episode-5-smoke-screen",
+          "title": "Valley Of The Dinosaurs Ep. 5 Smoke Screen",
+          "metadataUrl": "https://archive.org/metadata/valley-of-the-dinosaurs-episode-5-smoke-screen"
+        },
+        {
+          "itemId": "valley-of-the-dinosaurs-episode-6-pteranodon",
+          "title": "Valley Of The Dinosaurs - Ep. 6 Pteranodon",
+          "metadataUrl": "https://archive.org/metadata/valley-of-the-dinosaurs-episode-6-pteranodon"
+        },
+        {
+          "itemId": "episode-14-test-flight",
+          "title": "Valley Of The Dinosaurs Episode 14: Test Flight",
+          "metadataUrl": "https://archive.org/metadata/episode-14-test-flight"
+        },
+        {
+          "itemId": "forbidden-fruit1974",
+          "title": "Valley of The Dinosaurs Ep. 1 Forbidden Fruit",
+          "metadataUrl": "https://archive.org/metadata/forbidden-fruit1974"
+        },
+        {
+          "itemId": "episode-11-fire",
+          "title": "Valley Of The Dinosaurs - Episode 11 Fire",
+          "metadataUrl": "https://archive.org/metadata/episode-11-fire"
+        },
+        {
+          "itemId": "episode-7-the-saber-tooth-kids",
+          "title": "Valley Of The Dinosaurs Episode 7: The Saber Tooth Kids",
+          "metadataUrl": "https://archive.org/metadata/episode-7-the-saber-tooth-kids"
+        },
+        {
+          "itemId": "episode-12-rain-of-meteors-november-1974",
+          "title": "Valley Of The Dinosaurs Episode 12: Rain Of Meteors",
+          "metadataUrl": "https://archive.org/metadata/episode-12-rain-of-meteors-november-1974"
+        },
+        {
+          "itemId": "episode-8-after-shock",
+          "title": "Valley Of The Dinosaurs Episode 8: After Shock",
+          "metadataUrl": "https://archive.org/metadata/episode-8-after-shock"
+        },
+        {
+          "itemId": "episode-15-the-big-toothache",
+          "title": "Valley Of The Dinosaurs Episode 15: The Big Toothache",
+          "metadataUrl": "https://archive.org/metadata/episode-15-the-big-toothache"
+        }
+      ],
+      "notes": "Partial coverage: 15 episodes; episode 10 not found in this search. End-credit-only clips excluded.",
+      "episodes": [
+        {
+          "id": "archive-forbidden-fruit1974-0",
+          "title": "Valley of The Dinosaurs Ep. 1 Forbidden Fruit",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1296.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/forbidden-fruit1974/Forbidden%20Fruit.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-what-goes-up_1974-0",
+          "title": "Valley Of The Dinosaurs Ep. 2 What Goes Up",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1295.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/what-goes-up_1974/What%20Goes%20Up.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-valley-of-the-dinosaurs-episode-3-a-turned-turtle-0",
+          "title": "Valley Of The Dinosaurs Ep. 3 A Turned Turtle",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1284.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/valley-of-the-dinosaurs-episode-3-a-turned-turtle/Episode%203%20A%20Turned%20Turtle.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-valley-of-the-dinosaurs-episode-4-the-volcano-0",
+          "title": "Valley Of The Dinosaurs Ep. 4 The Volcano",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1289.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/valley-of-the-dinosaurs-episode-4-the-volcano/Episode%204%20The%20Volcano.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-valley-of-the-dinosaurs-episode-5-smoke-screen-0",
+          "title": "Valley Of The Dinosaurs Ep. 5 Smoke Screen",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1290.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/valley-of-the-dinosaurs-episode-5-smoke-screen/Episode%205%20Smoke%20Screen.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-valley-of-the-dinosaurs-episode-6-pteranodon-0",
+          "title": "Valley Of The Dinosaurs - Ep. 6 Pteranodon",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1277.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/valley-of-the-dinosaurs-episode-6-pteranodon/Episode%206%20Pteranodon.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-episode-7-the-saber-tooth-kids-0",
+          "title": "Valley Of The Dinosaurs Episode 7: The Saber Tooth Kids",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1291.15,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/episode-7-the-saber-tooth-kids/Episode%207%20The%20Saber-Tooth%20Kids.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-episode-8-after-shock-0",
+          "title": "Valley Of The Dinosaurs Episode 8: After Shock",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1294.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/episode-8-after-shock/Episode%208%20After%20Shock.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-episode-9-top-cave-please-0",
+          "title": "Valley Of The Dinosaurs Episode 9: Top Cave, Please",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1287.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/episode-9-top-cave-please/Episode%209%20Top%20Cave%2C%20Please.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-episode-11-fire-0",
+          "title": "Valley Of The Dinosaurs - Episode 11 Fire",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1286.55,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/episode-11-fire/Episode%2011%20Fire.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-episode-12-rain-of-meteors-november-1974-0",
+          "title": "Valley Of The Dinosaurs Episode 12: Rain Of Meteors",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1274.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/episode-12-rain-of-meteors-november-1974/Episode%2012%20Rain%20Of%20Meteors.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-episode-13-to-fly-a-kite-0",
+          "title": "Valley Of The Dinosaurs Episode 13: To Fly A Kite",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1290.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/episode-13-to-fly-a-kite/Episode%2013%20To%20Fly%20A%20Kite.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-episode-14-test-flight-0",
+          "title": "Valley Of The Dinosaurs Episode 14: Test Flight",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 1289.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/episode-14-test-flight/Episode%2014%20Test%20Flight.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-episode-15-the-big-toothache-0",
+          "title": "Valley Of The Dinosaurs Episode 15: The Big Toothache",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 1286.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/episode-15-the-big-toothache/Episode%2015%20The%20Big%20Toothache.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-episode-16-torch-0",
+          "title": "Valley of The Dinosaurs Episode 16: Torch",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 1291.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/episode-16-torch/Episode%2016_%20Torch.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
