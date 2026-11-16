@@ -63,6 +63,18 @@ public class CatalogPlugin extends Plugin {
             finally { if (connection != null) connection.disconnect(); }
         });
     }
+    @PluginMethod
+    public void packageFile(PluginCall call) {
+        executor.submit(() -> {
+            try {
+                java.io.File directory = new java.io.File(getContext().getCacheDir(), "sharing");
+                if (!directory.exists() && !directory.mkdirs()) throw new Exception();
+                java.io.File file = new java.io.File(directory, "YATA-android-test.apk");
+                try (java.io.FileInputStream input = new java.io.FileInputStream(getContext().getApplicationInfo().sourceDir); java.io.FileOutputStream output = new java.io.FileOutputStream(file)) { byte[] buffer = new byte[16384]; int size; while ((size = input.read(buffer)) != -1) output.write(buffer, 0, size); }
+                JSObject result = new JSObject(); result.put("url", android.net.Uri.fromFile(file).toString()); call.resolve(result);
+            } catch (Exception error) { call.reject("The installer could not be prepared for sharing."); }
+        });
+    }
     @Override
     protected void handleOnDestroy() { executor.shutdownNow(); super.handleOnDestroy(); }
 }

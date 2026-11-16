@@ -1,6 +1,8 @@
 import{Capacitor,registerPlugin,SystemBars,SystemBarsStyle}from'@capacitor/core';
 import{App}from'@capacitor/app';
 import{Browser}from'@capacitor/browser';
+import{Share}from'@capacitor/share';
+import{mountMobileControls}from'./controls.mjs';
 const Catalog=registerPlugin('YataCatalog');
 const native=Capacitor.isNativePlatform(),originalFetch=window.fetch.bind(window);
 if(native){
@@ -30,15 +32,9 @@ if(native){
   const expanded=document.querySelector('#episode-information[open]');if(expanded){expanded.open=false;return;}
   if(canGoBack)history.back();else if(location.hash!=='#watch')location.hash='watch';else App.minimizeApp();
  });
- await App.addListener('appStateChange',({isActive})=>{if(!isActive)document.querySelector('#player-host video')?.pause();});
+ globalThis.yataNativeShare=options=>Share.share({...options,dialogTitle:'Share YATA'});
+ await App.addListener('appStateChange',({isActive})=>{if(!isActive)window.dispatchEvent(new Event('yata:pause-video'));});
 }
 await import('./src/app.mjs');
 
-if(native){
- const brand=document.querySelector('.brand');let timer;
- const controls=document.createElement('dialog');controls.setAttribute('aria-label','Secret arcade controls');
- const heading=document.createElement('h2');heading.textContent='A familiar sequence…';controls.append(heading);
- for(const[key,label]of[['ArrowUp','↑'],['ArrowDown','↓'],['ArrowLeft','←'],['ArrowRight','→'],['b','B'],['a','A']]){const button=document.createElement('button');button.textContent=label;button.className='button';button.type='button';button.onclick=()=>document.dispatchEvent(new KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));controls.append(button);}
- const close=document.createElement('button');close.textContent='Done';close.className='button primary';close.onclick=()=>controls.close();controls.append(close);document.body.append(controls);
- brand.addEventListener('pointerdown',()=>timer=setTimeout(()=>controls.showModal(),900));for(const event of['pointerup','pointercancel','pointerleave'])brand.addEventListener(event,()=>clearTimeout(timer));
-}
+if(native)mountMobileControls({Capacitor,App,Share,Catalog,Audio:registerPlugin('YataAudio')});

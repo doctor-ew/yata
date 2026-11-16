@@ -1,3 +1,4 @@
+import {createLineupLink,parseLineupLink,applySharedLineup} from './lineup-share.mjs';
 import {createEpisodeInformation} from './episode-information-ui.mjs';
 import {CUSTOM_CHANNEL,customShows,isCustomChannel,createCustomChannel,tuneCustomChannel} from './custom-channel.mjs';
 import {browseLibrary,showGenres,playableEpisodes} from './library-browser.mjs';
@@ -18,7 +19,7 @@ import { createEpisodeLink, parseEpisodeLink, findSharedEpisode } from './share.
 import { markCommercialPreference } from './preferences.mjs';
 import { mountRetroEffects } from './retro-effects.mjs';
 import { mountWindowMode } from './window-mode.mjs';
-import { playbackTime, adjacentPlayback, playbackPosition } from './transport.mjs';
+import { playbackTime, adjacentPlayback, playbackPosition, playbackQueue } from './transport.mjs';
 import { STARTER_PACK } from './starter-pack.mjs';
 import { youtubeEpisodes, mergeBatch, mergeLibraryBatch, discoveryRows, extendLibraryCatalog } from './bulk.mjs';
 import { CHANNELS, createSeed } from './catalog.mjs';
@@ -110,11 +111,12 @@ function link(label, href, className = '') {
   const node = element('a', label, className); node.href = href; node.target = '_blank'; node.rel = 'noopener noreferrer'; return node;
 }
 function notify(message) { $('notice').textContent = message; $('notice').hidden = !message; }
-async function copyEpisodeLink(show, source, seconds = 0) {
-  const baseUrl = new URL(location.pathname, location.origin).href;
+async function copyEpisodeLink(show, source, seconds = 0, nowPlaying = false) {
+  const baseUrl = globalThis.yataNativeShare ? 'https://doctorew.com/tv/' : new URL(location.pathname, location.origin).href;
   let url;
   try { url = createEpisodeLink({ baseUrl, showId: show.id, sourceUrl: source.url, seconds }); }
   catch (error) { notify(`Could not share this source: ${error.message}`); return; }
+  if(globalThis.yataNativeShare){try{await globalThis.yataNativeShare({title:show.title,text:'Watch this episode on YATA',url,nowPlaying,includePosition:nowPlaying&&$('share-time').checked});}catch{}return;}
   $('share-url').value = url;
   try { await navigator.clipboard.writeText(url); notify(seconds > 0 ? 'Episode link and position copied.' : 'Episode link copied.'); }
   catch {
@@ -123,7 +125,25 @@ async function copyEpisodeLink(show, source, seconds = 0) {
     $('share-url').focus(); $('share-url').select();
   }
 }
+function resolveSharedLineup(){const descriptor=parseLineupLink(location.href),root=$('shared-lineup');if(!root)return;root.hidden=!descriptor;if(!descriptor)return;const appLink=$('open-shared-lineup-app');if(appLink){appLink.hidden=!!globalThis.yataNativeShare;appLink.href='yata://tv/'+location.hash;}$('shared-lineup-title').textContent=descriptor.title;$('shared-lineup-description').textContent=`Shared ${descriptor.shows?descriptor.shows.length+'-show lineup':descriptor.channel+' channel'} · ${descriptor.rotation} rotation. Use it to update your personal viewing preferences.`;$('use-shared-lineup').onclick=async()=>{try{if(await commitSettings(applySharedLineup(catalog,descriptor))){stopPlayer();render();notify('Shared lineup saved. Tune in when ready.');}}catch(error){notify(error.message);}};}
+window.addEventListener('yata:request-playback',event=>{
+ const ownerShowId=active?.queuePosition?.ownerShowId||active?.showId;
+ const sharingCatalog=active?.queueMode==='show'?{...catalog,settings:{...catalog.settings,streamShows:null,streamShow:ownerShowId,rotation:'ordered'}}:catalog;
+ const sharedUrl=createLineupLink(sharingCatalog),share={url:sharedUrl,title:parseLineupLink(sharedUrl).title};
+ if(!active){event.detail.respond({share,items:[],seconds:0});return;}
+ const items=[];
+ const queue=playbackQueue(catalog,active);let index=active.queuePosition?.index;if(!Number.isInteger(index)||queue[index]?.episode.id!==active.episodeId)index=queue.findIndex(e=>e.episode.id===active.episodeId);
+ const currentShow=catalog.shows.find(s=>s.id===active.showId),currentEpisode=currentShow?.episodes.find(e=>e.id===active.episodeId),currentSource=currentEpisode?.sources.find(s=>s.id===active.sourceId);
+ if(currentSource?.provider==='archive'){
+  items.push({url:currentSource.url,title:currentEpisode.title,showTitle:currentShow.title,showId:currentShow.id,episodeId:currentEpisode.id,queueMode:active.queueMode,queuePosition:active.queuePosition});
+  for(let step=1;step<Math.min(queue.length,50);step++){const i=index+step;if(active.queueMode!=='station'&&i>=queue.length)break;const entry=queue[i%queue.length];if(!entry||entry.source.provider!=='archive')break;items.push({url:entry.source.url,title:entry.episode.title,showTitle:entry.show.title,showId:entry.show.id,episodeId:entry.episode.id,queueMode:active.queueMode,queuePosition:playbackPosition(queue,i%queue.length,active.queuePosition?.ownerShowId)});}
+ }
+ event.detail.respond({share,items,seconds:transportState()?.currentTime??active.offset,provider:currentSource?.provider});
+});
+window.addEventListener('yata:resume-video',event=>{const {item,seconds}=event.detail,show=catalog.shows.find(s=>s.id===item.showId),episode=show?.episodes.find(e=>e.id===item.episodeId),source=episode?.sources.find(s=>s.url===item.url);if(show&&episode&&source)playEpisode(show,episode,source,seconds,'start',item.queueMode,item.queuePosition);});
+window.addEventListener('yata:pause-video',()=>session?.pause());
 function resolveSharedEpisode() {
+  resolveSharedLineup();
   if(!ownerMode&&!publicCatalogReady){sharedTarget=null;return;}
   const descriptor = parseEpisodeLink(location.href);
   if (!descriptor) { sharedTarget = null; $('shared-episode').hidden = true; return; }
@@ -367,6 +387,7 @@ function openSource(showId = selectedShowId, episodeId = null) {
 let episodeArtPromise;
 const episodeInformation=createEpisodeInformation({root:$('episode-information'),artwork:()=>episodeArtPromise??=fetch(new URL('../data/library-art.json',import.meta.url)).then(r=>r.json()).then(data=>data.shows)});
 function stopPlayer() {
+  window.dispatchEvent(new Event('yata:playback-changed'));
   episodeInformation.clear();
   playerGeneration++; session?.dispose(); session = null; active = null; scrubbing = false; scrubSession = null;
   renderTransport();
@@ -521,7 +542,7 @@ $('share-episode').addEventListener('click', () => {
   const source = episode?.sources.find(source => source.id === active.sourceId);
   if (!source) return;
   const seconds = $('share-time').checked && !$('share-time').disabled && parseSourceUrl(source.url).kind === 'video' ? Math.floor(transportState()?.currentTime ?? active.offset ?? 0) : 0;
-  void copyEpisodeLink(show, source, seconds);
+  void copyEpisodeLink(show, source, seconds, true);
 });
 $('play-shared').addEventListener('click', () => {
   if (!sharedTarget) return;
