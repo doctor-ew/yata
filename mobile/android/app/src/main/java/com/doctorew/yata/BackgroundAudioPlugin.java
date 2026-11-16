@@ -17,6 +17,12 @@ import org.json.JSONObject;
 @CapacitorPlugin(name = "YataAudio")
 public class BackgroundAudioPlugin extends Plugin {
     private MediaController controller;
+    private ArrayList<MediaItem> armedItems;
+    private String armedJson = "[]";
+    private double armedSeconds;
+    private long armedAt;
+    private boolean armedPlaying;
+    private boolean automaticActive;
     private ListenableFuture<MediaController> connection;
     private void withController(PluginCall call, Runnable action) {
         getActivity().runOnUiThread(() -> {
@@ -25,7 +31,7 @@ public class BackgroundAudioPlugin extends Plugin {
             connection.addListener(() -> { try { controller = connection.get(); action.run(); } catch (Exception error) { call.reject("Background player could not connect."); } }, ContextCompat.getMainExecutor(getContext()));
         });
     }
-    @PluginMethod public void play(PluginCall call) {
+    @PluginMethod public void arm(PluginCall call) {
         ArrayList<MediaItem> items = new ArrayList<>();
         try {
             JSONArray rows = call.getArray("items");
@@ -39,22 +45,50 @@ public class BackgroundAudioPlugin extends Plugin {
         } catch (Exception error) { call.reject("Only public Archive video episodes can play in background."); return; }
         Double seconds = call.getDouble("seconds", 0.0);
         if (!Double.isFinite(seconds) || seconds < 0 || seconds > 86400) { call.reject("Invalid playback position."); return; }
+        boolean playing = Boolean.TRUE.equals(call.getBoolean("playing", false));
         withController(call, () -> {
-            PlaybackService.queueJson = call.getArray("items").toString();
-            controller.setMediaItems(items, 0, (long)(seconds*1000)); controller.prepare(); controller.play(); call.resolve(state());
+            if (!automaticActive) {
+                armedItems = items; armedJson = call.getArray("items").toString();
+                updatePosition(seconds, playing);
+            }
+            call.resolve();
         });
     }
+    private void updatePosition(double seconds, boolean playing) {
+        armedSeconds = seconds; armedPlaying = playing; armedAt = android.os.SystemClock.elapsedRealtime();
+    }
+    @PluginMethod public void position(PluginCall call) {
+        double seconds = call.getDouble("seconds", 0.0);
+        if (!Double.isFinite(seconds) || seconds < 0 || seconds > 86400) { call.reject("Invalid playback position."); return; }
+        getActivity().runOnUiThread(() -> { if (!automaticActive) updatePosition(seconds, Boolean.TRUE.equals(call.getBoolean("playing", false))); call.resolve(); });
+    }
+    @PluginMethod public void disarm(PluginCall call) {
+        getActivity().runOnUiThread(() -> { armedItems = null; armedPlaying = false; automaticActive = false; if (controller != null) {controller.pause(); controller.clearMediaItems();} call.resolve(); });
+    }
+    @Override protected void handleOnPause() {
+        if (controller == null || armedItems == null || !armedPlaying || automaticActive) return;
+        // Handoff in the native lifecycle while the activity is still visible,
+        // before WebView timers can be suspended by the operating system.
+        automaticActive = true;
+        PlaybackService.queueJson = armedJson;
+        long position = (long)(armedSeconds * 1000) + Math.max(0, android.os.SystemClock.elapsedRealtime() - armedAt);
+        controller.setMediaItems(armedItems, 0, position);
+        controller.prepare(); controller.play();
+    }
+
     private JSObject state() {
         JSObject result = new JSObject();
         result.put("active", controller != null && controller.getMediaItemCount() > 0);
         result.put("index", controller != null ? controller.getCurrentMediaItemIndex() : 0);
         result.put("seconds", controller != null ? controller.getCurrentPosition()/1000.0 : 0);
         result.put("playing", controller != null && controller.isPlaying());
+        result.put("playWhenReady", controller != null && controller.getPlayWhenReady());
+        result.put("ended", controller != null && controller.getPlaybackState() == androidx.media3.common.Player.STATE_ENDED);
         result.put("title", controller != null && controller.getMediaMetadata().title != null ? controller.getMediaMetadata().title.toString() : "");
         result.put("error", controller != null && controller.getPlayerError() != null ? "This source could not play in background." : "");
         try { result.put("items", new JSArray(PlaybackService.queueJson)); } catch (Exception ignored) { result.put("items", new JSArray()); }
         return result;
     }
     @PluginMethod public void status(PluginCall call) { withController(call, () -> call.resolve(state())); }
-    @PluginMethod public void stop(PluginCall call) { getActivity().runOnUiThread(() -> { JSObject current = state(); if (controller != null) { controller.pause(); controller.clearMediaItems(); } call.resolve(current); }); }
+    @PluginMethod public void stop(PluginCall call) { getActivity().runOnUiThread(() -> { JSObject current = state(); if (controller != null) { controller.pause(); controller.clearMediaItems(); } automaticActive = false; armedItems = null; armedPlaying = false; call.resolve(current); }); }
 }

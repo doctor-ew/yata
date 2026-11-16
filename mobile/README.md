@@ -21,7 +21,7 @@ npm run android:build
 
 Set `JAVA_HOME` to a JDK 21 installation and `ANDROID_HOME` to an Android SDK containing the platform/build packages required by `android/variables.gradle`. `build.mjs` reads the current public catalog and checks its SHA-256 before bundling it. It does not bundle video files, credentials, APK backups or Arcade runtimes.
 
-The generated APK is copied to `artifacts/YATA-0.2.0-android-debug.apk`. The Gradle output remains `android/app/build/outputs/apk/debug/app-debug.apk`. It is signed with the local Android debug key for sideload testing. Connect one Android device with USB debugging enabled, authorize the Mac, and run from this directory:
+The generated APK is copied to `artifacts/YATA-0.3.0-android-debug.apk`. The Gradle output remains `android/app/build/outputs/apk/debug/app-debug.apk`. It is signed with the local Android debug key for sideload testing. Connect one Android device with USB debugging enabled, authorize the Mac, and run from this directory:
 
 ```sh
 adb install -r android/app/build/outputs/apk/debug/app-debug.apk
@@ -42,16 +42,16 @@ The `YataCatalog` bridge accepts only the public manifest, content-addressed cat
 
 Capacitor and the App/Browser plugins are MIT licensed. The repository's MIT license and existing media/artwork attribution remain applicable; see `../ATTRIBUTION.md`. TVmaze metadata remains attributed under CC BY-SA 4.0.
 
-## Android background audio and sharing (0.2.0)
+## Android automatic playback and navigation (0.3.0)
 
-Start an Archive episode and tap **Listen in background** in **YATA on your phone** beneath the player controls. Audio moves to an Android Media3 foreground service, so it continues when the app is backgrounded or the screen is off. Use the media notification or lock-screen controls to play, pause, seek and skip. **Return to video** resumes the current queued item at its current audio position. This explicit audio mode pauses the WebView video; captions remain available when returning to video. YouTube remains in its visible player and is not included in background audio.
+Archive video automatically hands audio to an Android Media3 foreground service when the app backgrounds or the screen turns off. Reopening the app automatically returns to video at the current queued item's position. A pause made with lock-screen or headset controls remains paused when returning to video. There is no background-playback button. Native lifecycle callbacks perform the handoff before WebView timers are suspended. YouTube remains in its visible player and pauses in the background.
 
-The background queue contains up to 50 consecutive Archive items from the active show or station, including configured commercial breaks. It stops before a YouTube or other unsupported source rather than extracting or skipping that provider. It is a bounded queue, not an indefinitely refreshed station. The service may remain active when the activity is recreated; the app reconnects to that audio session.
+The background queue contains up to 50 consecutive Archive items from the active show or station, including configured commercial breaks. It stops before a YouTube or other unsupported source. This is a bounded queue, not an indefinitely refreshed station.
 
-**Share episode** opens the Android share sheet with a public episode link; **Include position** adds the current video timestamp. **Share lineup** shares the current show playlist or station settings, selected shows, shuffle seed and clock. The receiver previews and explicitly accepts the lineup on the website; existing catalog media is not uploaded. A different catalog revision can change available programs. **Open in Android app** transfers a shared lineup to an installed YATA app via its custom URL scheme.
+The app uses Watch, Guide and Library in a single bottom navigation bar. Watch has a channel selector and core playback controls. More contains sharing, secondary playback actions, channel settings, mix/remix and creator credits. A local fragment-routing handler keeps these tabs in the bundled app instead of loading the asset server's directory fallback.
 
-**Share YATA** sends the website link. **Send Android installer** prepares a copy of the installed APK in the app's private sharing cache and opens the share sheet. It does not upload or send the APK until the user chooses a destination. The APK remains a signed local test build, not an app-store release.
+Episode sharing uses a public episode URL with an optional timestamp. Channel / playlist sharing includes the current show or station settings, selected shows, shuffle seed and clock; the receiver explicitly previews and accepts it. A different catalog revision can change available programs. Open in Android app transfers the shared lineup using YATA's custom URL scheme. YATA website shares the public site link; Android installer shares a private-cache copy of the installed signed test APK. No APK is uploaded automatically.
 
-**Arcade · how to unlock** displays touch controls and the full Konami sequence. Long-pressing the YATA logo continues to open the same controls.
+The Arcade is absent from normal navigation until unlocked. Long-press the YATA logo to reveal touch controls, then enter the Konami sequence. There is no visible Arcade-help button. The unlocked channel opens the hosted arcade in a browser tab.
 
-Media3 1.11.1 is Apache-2.0 licensed; Capacitor Share is MIT licensed. Notices are bundled in the app's `tv/licenses` directory.
+Media3 1.11.1 is Apache-2.0 licensed; Capacitor Share is MIT licensed. Notices are bundled in tv/licenses. Automatic background playback is Android-only; the iOS project remains uncompiled and untested.

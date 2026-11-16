@@ -140,7 +140,7 @@ window.addEventListener('yata:request-playback',event=>{
  }
  event.detail.respond({share,items,seconds:transportState()?.currentTime??active.offset,provider:currentSource?.provider});
 });
-window.addEventListener('yata:resume-video',event=>{const {item,seconds}=event.detail,show=catalog.shows.find(s=>s.id===item.showId),episode=show?.episodes.find(e=>e.id===item.episodeId),source=episode?.sources.find(s=>s.url===item.url);if(show&&episode&&source)playEpisode(show,episode,source,seconds,'start',item.queueMode,item.queuePosition);});
+window.addEventListener('yata:resume-video',event=>{const {item,seconds,playWhenReady}=event.detail,show=catalog.shows.find(s=>s.id===item.showId),episode=show?.episodes.find(e=>e.id===item.episodeId),source=episode?.sources.find(s=>s.url===item.url);if(show&&episode&&source)playEpisode(show,episode,source,seconds,'start',item.queueMode,item.queuePosition,playWhenReady!==false);});
 window.addEventListener('yata:pause-video',()=>session?.pause());
 function resolveSharedEpisode() {
   resolveSharedLineup();
@@ -403,7 +403,7 @@ function playerError(message, generation) {
   $('playback-state').textContent = 'PLAYBACK NEEDS ATTENTION';
 }
 
-function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMode = mode === 'live' ? 'station' : 'show', queuePosition = null) {
+function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMode = mode === 'live' ? 'station' : 'show', queuePosition = null, autoPlay = true) {
   if(!ownerMode&&!publicCatalogReady)return;
   stopPlayer();
   const generation = playerGeneration;
@@ -441,7 +441,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
     video.addEventListener('playing', () => { if (generation === playerGeneration) { $('playback-state').textContent = 'PLAYING · ARCHIVE'; $('player-error').hidden = true; } });
     video.addEventListener('pause', () => { if (generation === playerGeneration) $('playback-state').textContent = 'PAUSED'; });
     episodeInformation.show(show,episode,source,video);
-    session.play();
+    if(autoPlay)session.play();
   } else if (source.provider === 'youtube') {
     episodeInformation.show(show,episode,source,null);
     const holder = element('div'); $('player-host').append(holder);
@@ -458,6 +458,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
     $('player-host').append(box); $('playback-state').textContent = 'OPENS ON TUBI';
   }
   renderGuide();
+  window.dispatchEvent(new Event('yata:playback-ready'));
 }
 
 function tuneLive() {

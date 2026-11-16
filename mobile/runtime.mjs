@@ -25,7 +25,7 @@ if(native){
  document.addEventListener('click',e=>{
   const arcade=e.target.closest('#arcade-channel');
   if(arcade&&!arcade.disabled){e.preventDefault();e.stopImmediatePropagation();open('https://doctorew.com/arcade/');return;}
-  const anchor=e.target.closest('a[href]');if(anchor){const url=new URL(anchor.href,location.href);if(['http:','https:'].includes(url.protocol)&&url.origin!==location.origin){e.preventDefault();e.stopImmediatePropagation();open(url.href);}}
+  const anchor=e.target.closest('a[href]');if(anchor){const raw=anchor.getAttribute('href');if(raw.startsWith('#')){e.preventDefault();location.hash=raw;return;}const url=new URL(anchor.href,location.href);if(url.origin===location.origin&&url.pathname.endsWith('.md')){e.preventDefault();open('https://doctorew.com'+url.pathname);return;}if(['http:','https:'].includes(url.protocol)&&url.origin!==location.origin){e.preventDefault();e.stopImmediatePropagation();open(url.href);}}
  },true);
  await App.addListener('backButton',({canGoBack})=>{
   const dialog=document.querySelector('dialog[open]');if(dialog){dialog.close();return;}
@@ -33,7 +33,7 @@ if(native){
   if(canGoBack)history.back();else if(location.hash!=='#watch')location.hash='watch';else App.minimizeApp();
  });
  globalThis.yataNativeShare=options=>Share.share({...options,dialogTitle:'Share YATA'});
- await App.addListener('appStateChange',({isActive})=>{if(!isActive)window.dispatchEvent(new Event('yata:pause-video'));});
+
 }
 await import('./src/app.mjs');
 
