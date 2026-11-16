@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">YATA</string>
+    <string name="title_activity_main">YATA</string>
+    <string name="package_name">com.doctorew.yata</string>
+    <string name="custom_url_scheme">com.doctorew.yata</string>
+</resources>

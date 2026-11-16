@@ -1,0 +1,17 @@
+{
+  "appId": "com.doctorew.yata",
+  "appName": "YATA",
+  "webDir": "www",
+  "server": {
+    "hostname": "localhost",
+    "androidScheme": "https",
+    "appStartPath": "/tv/index.html"
+  },
+  "android": {
+    "backgroundColor": "#211b14"
+  },
+  "ios": {
+    "backgroundColor": "#211b14",
+    "contentInset": "automatic"
+  }
+}

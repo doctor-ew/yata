@@ -1,3 +1,4 @@
+import {createEpisodeInformation} from './episode-information-ui.mjs';
 import {CUSTOM_CHANNEL,customShows,isCustomChannel,createCustomChannel,tuneCustomChannel} from './custom-channel.mjs';
 import {browseLibrary,showGenres,playableEpisodes} from './library-browser.mjs';
 import {scheduleEpoch,remixLineups,mountLineupRemix,activeRotation} from './remix.mjs';
@@ -363,7 +364,10 @@ function openSource(showId = selectedShowId, episodeId = null) {
   $('source-dialog').showModal();
 }
 
+let episodeArtPromise;
+const episodeInformation=createEpisodeInformation({root:$('episode-information'),artwork:()=>episodeArtPromise??=fetch(new URL('../data/library-art.json',import.meta.url)).then(r=>r.json()).then(data=>data.shows)});
 function stopPlayer() {
+  episodeInformation.clear();
   playerGeneration++; session?.dispose(); session = null; active = null; scrubbing = false; scrubSession = null;
   renderTransport();
   $('player-host').replaceChildren(); $('standby').hidden = false;
@@ -415,8 +419,10 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
     session = createVideoSession(video, { url: source.url, offset, onVerified: verified, onEnd: ended, onError: error });
     video.addEventListener('playing', () => { if (generation === playerGeneration) { $('playback-state').textContent = 'PLAYING · ARCHIVE'; $('player-error').hidden = true; } });
     video.addEventListener('pause', () => { if (generation === playerGeneration) $('playback-state').textContent = 'PAUSED'; });
+    episodeInformation.show(show,episode,source,video);
     session.play();
   } else if (source.provider === 'youtube') {
+    episodeInformation.show(show,episode,source,null);
     const holder = element('div'); $('player-host').append(holder);
     session = createYouTubeSession(holder, { source, offset, origin: location.origin, onVerified: verified, onEnd: ended, onError: error,
       onState: state => {
