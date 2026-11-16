@@ -1,5 +1,5 @@
-const CACHE='doctorew-local-arcade-v2';
-const SHELL=['/arcade/','/arcade/arcade.css','/arcade/arcade.mjs','/arcade/games.mjs','/arcade/flash.html','/arcade/flash.mjs','/arcade/console.html','/arcade/console.mjs','/arcade/manifest.webmanifest','/arcade/icon-192.png','/arcade/icon-512.png','/arcade/assets/adult-swim-catalog.json'];
+const CACHE='doctorew-local-arcade-v3';
+const SHELL=['/arcade/','/arcade/arcade.css','/arcade/arcade.mjs','/arcade/games.mjs','/arcade/ports.mjs','/arcade/flash.html','/arcade/flash.mjs','/arcade/console.html','/arcade/console.mjs','/arcade/manifest.webmanifest','/arcade/icon-192.png','/arcade/icon-512.png','/arcade/assets/adult-swim-catalog.json'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('doctorew-local-arcade-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
 // Only GETs inside this arcade are cached. No TV, account, upload or publication requests.

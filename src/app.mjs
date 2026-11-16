@@ -1,3 +1,4 @@
+import {scheduleEpoch,remixLineups,mountLineupRemix} from './remix.mjs';
 import {installArcadeEntry} from './arcade-entry.mjs';
 installArcadeEntry();
 import {mountMixControls} from './mix-controls.mjs';
@@ -53,7 +54,13 @@ const tiles = ['#5c6242', '#76513b', '#4d6152', '#755d36', '#665841', '#526044',
 const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
 const dialFeedback = mountDialFeedback({ windowRef: window, storage, toggle: $('dial-feedback'), getVolume: () => transportState()?.volume ?? preferredAudio?.volume ?? 1, getMuted: () => transportState()?.muted ?? preferredAudio?.muted ?? false, pulse: () => retroEffects.pulse({ force: true }) });
 
-const mixControls=mountMixControls({root:$('mix-panel'),channels:CHANNELS,getSettings:()=>catalog.settings,onChange:async ids=>{const next=copyCatalog(),main=next.settings.channel==='mixed'&&!next.settings.streamShow&&!next.settings.streamShows,playing=transportState()?.paused===false;if(ids.length===CHANNELS.length-1)delete next.settings.mixChannels;else next.settings.mixChannels=ids;if(main)next.epoch=Date.now()/1000;if(await commitSettings(next)){if(main)stopPlayer();render();if(main&&playing)tuneLive();return true;}return false;}});
+const mixControls=mountMixControls({root:$('mix-panel'),channels:CHANNELS,getSettings:()=>catalog.settings,onChange:async ids=>{const next=copyCatalog(),main=next.settings.channel==='mixed'&&!next.settings.streamShow&&!next.settings.streamShows,playing=transportState()?.paused===false;if(ids.length===CHANNELS.length-1)delete next.settings.mixChannels;else next.settings.mixChannels=ids;if(main){next.epoch=Date.now()/1000;if(next.settings.channelRemixes?.mixed)next.settings.channelRemixes.mixed.epoch=next.epoch;}if(await commitSettings(next)){if(main)stopPlayer();render();if(main&&playing)tuneLive();return true;}return false;}});
+mountLineupRemix({root:$('remix-panel'),channels:CHANNELS,getChannel:()=>catalog.settings.channel,onRemix:async channel=>{
+ if(!ownerMode&&!publicCatalogReady)return false;
+ const current=channel==='all'||channel===catalog.settings.channel,playing=transportState()?.paused===false;
+ if(!await commitSettings(remixLineups(catalog,channel)))return false;
+ if(current)stopPlayer();render();if(current&&playing)tuneLive();return true;
+}});
 mountSeekVisibility({transport:document.querySelector('.transport[aria-label="Video playback controls"]'),panel:$('seek-panel'),toggle:$('toggle-seek-panel'),select:$('seek-visibility'),storage});
 
 let guideJumpPending=location.hash==='#guide';
@@ -68,7 +75,7 @@ for(const name of ['guide','library'])$(name+'-tab').addEventListener('click',()
 document.querySelector('.browse-tabs').addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();const view=event.key==='Home'?'guide':event.key==='End'?'library':$('guide').hidden?'guide':'library';showBrowseView(view);$(view+'-tab').focus();});
 window.addEventListener('hashchange',()=>{if(['#guide','#library'].includes(location.hash))showBrowseView(location.hash.slice(1),{scroll:true});else if(location.hash==='#watch'){showBrowseView('library');$('watch').scrollIntoView({block:'start'});}});
 showBrowseView(location.hash==='#guide'?'guide':'library');
-mountChannelBuilder({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:async showIds=>{const next=copyCatalog();Object.assign(next.settings,{channel:'mixed',streamShow:null,streamShows:showIds,rotation:'random',shuffleSeed:newMix()});next.epoch=Date.now()/1000;if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();$('player-shell').scrollIntoView({block:'center',behavior:'smooth'});return true;}});
+mountChannelBuilder({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:async showIds=>{const next=copyCatalog();Object.assign(next.settings,{channel:'mixed',streamShow:null,streamShows:showIds,rotation:'random',shuffleSeed:newMix()});if(next.settings.channelRemixes)delete next.settings.channelRemixes.mixed;next.epoch=Date.now()/1000;if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();$('player-shell').scrollIntoView({block:'center',behavior:'smooth'});return true;}});
 $('open-stream-settings').addEventListener('click',()=>$('stream-settings').showModal());
 for(const id of ['close-stream-settings','done-stream-settings'])$(id).addEventListener('click',()=>$('stream-settings').close());
 
@@ -172,7 +179,7 @@ async function commitSettings(next) {
 }
 function selectedChannel() { return CHANNELS.find(c => c.id === catalog.settings.channel); }
 function channelShows() { return catalog.shows.filter(s => s.id === COMMERCIAL_SHOW_ID || catalog.settings.channel === 'mixed' || s.channel === catalog.settings.channel); }
-function currentGuide() { return schedulePosition(buildSchedule(catalog), catalog.epoch); }
+function currentGuide() { return schedulePosition(buildSchedule(catalog), scheduleEpoch(catalog)); }
 function episodeDetail(e, movie = false) {
   const order = e.season ? `S${String(e.season).padStart(2, '0')} · E${String(e.number).padStart(2, '0')}` : `Item ${e.number}`;
   return `${e.kind === 'bumper' ? 'Commercial / bumper' : movie ? 'Feature film' : order} · ${timeLabel(e.durationSeconds)}${e.group ? ` · ${e.group}` : ''}`;
@@ -200,7 +207,7 @@ function renderChannels() {
 
 function renderGuide() {
   $('clock').textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
-  const schedule = buildSchedule(catalog), position = schedulePosition(schedule, catalog.epoch);
+  const schedule = buildSchedule(catalog), position = schedulePosition(schedule, scheduleEpoch(catalog));
   const list = $('guide-list'); list.replaceChildren();
   $('tune-live').disabled = $('standby-play').disabled = !position;
   if (!position) {
@@ -415,7 +422,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
 
 function tuneLive() {
   if(!ownerMode&&!publicCatalogReady)return;
-  const queue = buildSchedule(catalog), p = schedulePosition(queue, catalog.epoch);
+  const queue = buildSchedule(catalog), p = schedulePosition(queue, scheduleEpoch(catalog));
   if (p) playEpisode(p.current.show, p.current.episode, p.current.source, p.offset, 'live', 'station', playbackPosition(queue, p.index));
   else openSource();
 }
@@ -883,7 +890,7 @@ function renderStreamSettings() {
 }
 async function configureStream(patch, play = false) {
   const wasPlaying = transportState()?.paused === false;
-  const next = copyCatalog(); Object.assign(next.settings, patch); if ('channel' in patch || 'streamShow' in patch) next.settings.streamShows = null; next.epoch = Date.now() / 1000;
+  const next = copyCatalog(); Object.assign(next.settings, patch); if('shuffleSeed' in patch&&next.settings.channelRemixes){delete next.settings.channelRemixes[next.settings.channel];} if ('channel' in patch || 'streamShow' in patch) next.settings.streamShows = null; next.epoch = Date.now() / 1000;if(next.settings.channelRemixes?.[next.settings.channel])next.settings.channelRemixes[next.settings.channel].epoch=next.epoch;
   if (!await commitSettings(next)) { renderStreamSettings(); return false; }
   stopPlayer(); render();
   if (play || wasPlaying) tuneLive();

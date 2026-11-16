@@ -40,3 +40,13 @@ On the YATA TV page, enter Up, Up, Down, Down, Left, Right, Left, Right, B, A ou
 ## Static release
 
 Run `node scripts/build-arcade.mjs --out <empty-directory>` from `nostalgia-tv`. The builder stages browser game assets with MIME types, SHA-256 hashes and an HTML content security policy. Upload the manifest files under the `arcade/` prefix in the configured S3 bucket, with dependency files before the root HTML. Use the existing CloudFront distribution; keep S3 public-access blocking enabled. The viewer-request function in `deploy/arcade-index-rewrite.js` preserves existing TV/SPA routes, redirects `/arcade` to `/arcade/`, and passes extensionless game companion files through unchanged. Invalidate `/arcade*` after upload. Publish the entry helper before the TV coordinator module.
+
+## Updated controls and mods
+
+The v1.2 preservation packages are sourced from Drew’s authorized Flight Deck download Site. Run `python3 arcade/install-updated-ports.py --source <download-directory>` with those APKs and their `icons` directory. Only browser assets are extracted; APKs and private provenance stay outside the public release. The public release builder includes `ports-v12` and `port-icons`. Its HTML content policy restricts resources to the arcade origin.
+
+The main PLAY build now uses updated touch/keyboard controls and patched SWFs for Tofu Hunter, Pizza City, Amateur Surgeon, Radioactive Teddy Bear Zombies, Rick and Morty, and ATHF Dead Evil. **Archive build** retains the original Flashpoint variant. Rick and Morty has four offline chapters; no cheat inventory is claimed. Nine Billion Miles has its own preserved browser build. Matching launcher illustrations are custom preservation artwork, not official cover files.
+
+Star Wars uses the updated arcade flight controls and optional shield/Force switches. The separate original arcade Spy Hunter adds Gas, Gear and two-token credits; its Atari 2600 port remains separately labeled. After Burner, Double Dragon and NES Knight Rider include their delivered control/mod builds. Desktop Spy Hunter keys: **5** or **Shift** adds a credit, **Enter** starts, **G** accelerates, **H** shifts, arrows steer, Space fires, **S/O/M** use smoke/oil/missiles. Double Dragon uses **Z/X/C** for Punch/Kick/Jump. Cheats start off. Pause / Mods applies the supported game-specific options; neither menu rendering nor brief startup checks establish full gameplay compatibility.
+
+Source handoff: private android-game-preservation Pensieve memory `7c422ac02a3470fe2827b99a5e7e75b58851b942668089fdd6c72ebab2832a9f`, with control and cheat details from memories `75f8adbe862036298725896203760c1ef9a1162a3d25e0d7fffdef50309b2685` and `9be70ba752f00af71990ce8d5eceb4e10ce756679a4011cd4f52f48e7ed8cf57`.

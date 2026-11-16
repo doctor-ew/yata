@@ -1475,3 +1475,5 @@ button.tv-knob:focus-visible { outline-offset: -2px; }
 .tv-remote .channels{grid-template-columns:repeat(3,minmax(0,1fr))}
 .transport{position:relative}.seek-panel[hidden]{display:none!important}.transport[data-seek-visibility="auto"] .seek-panel{position:absolute;z-index:12;bottom:calc(100% - 6px);left:0;right:0;background:#302a21;border:1px solid #9b8055;border-radius:5px;padding:12px 14px;box-shadow:0 -5px 20px #0008}.seek-panel #video-seek{width:100%}.seek-reveal{font:12px 'Courier New',monospace;min-height:36px}.seek-reveal[aria-pressed="true"]{color:#f2b77d;text-decoration:underline}
 .window-mode .mix-panel{display:none}
+
+.remix-controls{display:flex;flex-wrap:wrap;align-items:end;gap:10px;margin:16px 0}.remix-controls label{display:grid;gap:6px;flex:1 1 180px}.remix-controls select{width:100%;min-height:44px}.remix-controls .button{min-height:44px}

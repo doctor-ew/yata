@@ -268,3 +268,7 @@ The approved recommendation pass adds 69 collections and fills Daria with 65 res
 Coverage varies by source. Doctor Who covers seasons 7, 8 and 12; Daria has five seasons; Farscape covers seasons 1–3. The Muppet Show uses two intact compilation tapes. Remington Steele has one mixed off-air recording with other footage and ads before the program. Eight requested titles remain unsourced in this pass. Existing DS9, Magnum, Simon & Simon, Transformers, Barnaby Jones and Grape Ape gaps are reported without implying they were filled. Detailed counts, exclusions and source links are in `../docs/3/EXPANDED-ERA-SOURCES.md`; reproducible selection rules are in `data/expanded-era-sources.json` and `scripts/expanded-era-discovery.mjs`.
 
 Portable catalog imports allow at most 8 MB, with the existing 256-show and 10,000-item bounds. The larger channel-builder offer uses a bounded backend envelope; ordinary chat retains its previous byte limit.
+
+## Personal lineup remix
+
+Open **REMIX · Different reruns** below the channel selector. Choose a channel and select **Remix channel**, or select **Remix all channels**. Each affected channel gets its own new shuffle seed and station start time; other channel clocks and lineups remain unchanged. Preferences survive refresh and shared catalog updates in the same browser. Channel inclusion switches, commercial settings and the shared catalog are preserved. Serialized dramas keep their episode order. With ordered rotation selected, a remix restarts the sequence rather than shuffling episode order.

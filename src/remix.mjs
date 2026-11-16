@@ -1,0 +1,15 @@
+import {CHANNELS} from './channels.mjs';
+// New personal schedule overrides leave every other channel's seed and clock intact.
+export function scheduleEpoch(catalog,channel=catalog.settings.channel){return catalog.settings.channelRemixes?.[channel]?.epoch??catalog.epoch;}
+export function scheduleSeed(catalog,channel=catalog.settings.channel){return catalog.settings.channelRemixes?.[channel]?.seed??catalog.settings.shuffleSeed??1984;}
+export function remixLineups(catalog,channel,{now=Date.now()/1000,seed=()=>crypto.getRandomValues(new Uint32Array(1))[0]}={}){
+ const ids=channel==='all'?CHANNELS.map(c=>c.id):[channel];if(ids.some(id=>!CHANNELS.some(c=>c.id===id)))throw Error('Choose a channel to remix.');if(!Number.isFinite(now)||now<0)throw Error('Invalid remix time.');
+ const channelRemixes={...catalog.settings.channelRemixes};for(const id of ids){let value=seed();if(!Number.isInteger(value)||value<0||value>0xffffffff)throw Error('Invalid remix seed.');if(value===scheduleSeed(catalog,id))value=(value+1)>>>0;channelRemixes[id]={seed:value,epoch:now};}
+ return {...catalog,settings:{...catalog.settings,channelRemixes}};
+}
+export function mountLineupRemix({root,channels,getChannel,onRemix}){
+ if(!root)return {sync(){}};
+ const doc=root.ownerDocument,summary=doc.createElement('summary');summary.textContent='REMIX · Different reruns';const controls=doc.createElement('div');controls.className='remix-controls';const label=doc.createElement('label');label.textContent='Lineup';const select=doc.createElement('select');select.setAttribute('aria-label','Channel to remix');for(const channel of channels){const o=doc.createElement('option');o.value=channel.id;o.textContent=channel.name;select.append(o);}label.append(select);controls.append(label);const status=doc.createElement('p');status.className='muted';status.setAttribute('role','status');const buttons=[];let busy=false;
+ for(const [title,all]of [['↻ Remix channel',false],['↻ Remix all channels',true]]){const b=doc.createElement('button');b.type='button';b.className='button';b.textContent=title;b.addEventListener('click',async()=>{if(busy)return;busy=true;select.disabled=true;buttons.forEach(b=>b.disabled=true);try{const id=all?'all':select.value;if(await onRemix(id)!==false)status.textContent=all?'All lineups remixed. Same channels, different reruns.':`${channels.find(c=>c.id===id).name} remixed. Other channels kept their lineups.`;}catch{status.textContent='The lineup could not be remixed. Please try again.';}finally{busy=false;select.disabled=false;buttons.forEach(b=>b.disabled=false);}});buttons.push(b);controls.append(b);}
+ const help=doc.createElement('p');help.className='muted';help.textContent='Personal to this browser. Your channel switches and commercials stay as set. Serialized stories keep their episode order; ordered rotation restarts from the beginning.';root.replaceChildren(summary,controls,status,help);root.addEventListener('toggle',()=>{if(root.open&&!busy)select.value=getChannel();});return {sync(){if(!root.open&&!busy)select.value=getChannel();}};
+}

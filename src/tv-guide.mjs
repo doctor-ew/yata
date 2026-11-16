@@ -1,3 +1,4 @@
+import {scheduleEpoch} from './remix.mjs';
 import {CHANNELS} from './channels.mjs';
 import {buildSchedule, schedulePosition} from './domain.mjs';
 
@@ -8,12 +9,12 @@ export const GUIDE_TICK_SECONDS = 1800;
 // Cache this compilation until the catalog/settings change, not on every clock tick.
 export function compileGuide(catalog) {
   const fullChannels = {...catalog, settings:{...catalog.settings, streamShow:null,streamShows:null}};
-  return CHANNELS.map(channel=>({channel, schedule:buildSchedule(fullChannels,channel.id)}));
+  return CHANNELS.map(channel=>({channel, epoch:scheduleEpoch(catalog,channel.id), schedule:buildSchedule(fullChannels,channel.id)}));
 }
 
 export function guideWindow(row, epoch, start, end, limit=512) {
   if (!Number.isFinite(start)||!Number.isFinite(end)||end<=start) throw new RangeError('Choose a finite increasing guide window.');
-  const position=schedulePosition(row.schedule,epoch,start);
+  const position=schedulePosition(row.schedule,row.epoch??epoch,start);
   if (!position) return {slots:[],truncated:false};
   let index=position.index, cursor=start-position.offset, visited=0;
   // A window can begin halfway through a break: retain its first clip as the

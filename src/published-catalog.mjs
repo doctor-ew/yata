@@ -121,6 +121,7 @@ export function mergePublishedCatalog(master, previous) {
     "bumpers",
     "rotation",
     "shuffleSeed",
+    "channelRemixes",
     "storiesPerTurn",
     "commercialCount",
     "mixChannels",

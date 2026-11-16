@@ -1,3 +1,4 @@
+import {scheduleSeed} from './remix.mjs';
 import { MOVIE_SHOW_ID } from './collections.mjs';
 import { CHANNELS, SHOW_CHANNEL_IDS, migratedShowChannel, mixIncludes, SERIAL_SHOW_IDS } from './channels.mjs';
 import { randomRotation, createCommercialBreak } from './shuffle.mjs';
@@ -124,6 +125,8 @@ export function validateCatalog(raw) {
   const streamShow = raw.settings.streamShow ?? null;
   const streamShows = raw.settings.streamShows ?? null;
   const mixChannels = raw.settings.mixChannels ?? null;
+  const channelRemixes = raw.settings.channelRemixes ?? {};
+  if(!channelRemixes||typeof channelRemixes!=='object'||Array.isArray(channelRemixes)||Object.entries(channelRemixes).some(([key,value])=>!CHANNELS.some(c=>c.id===key)||!value||typeof value!=='object'||!Number.isInteger(value.seed)||value.seed<0||value.seed>4294967295||!Number.isFinite(value.epoch)||value.epoch<0))fail('Invalid channel remix settings.');
   if(mixChannels!==null&&(!Array.isArray(mixChannels)||mixChannels.length>SHOW_CHANNEL_IDS.length||new Set(mixChannels).size!==mixChannels.length||mixChannels.some(id=>!SHOW_CHANNEL_IDS.includes(id))))fail('Choose valid distinct channels for the YATA mix.');
   if (streamShows !== null && (!Array.isArray(streamShows) || streamShows.length < 1 || streamShows.length > 12 || new Set(streamShows).size !== streamShows.length)) fail('Choose 1–12 distinct shows for a bespoke channel.');
   if (streamShows !== null) streamShows.forEach(id);
@@ -186,7 +189,7 @@ export function validateCatalog(raw) {
     const sources = input.sources.map(entry=>({showId:id(entry.showId),url:parseSourceUrl(entry.url).url}));
     if (episodes.length || sources.length) exclusions = {episodes,sources};
   }
-  return { version: 1, epoch: raw.epoch, shows, ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}), ...(mixChannels!==null?{mixChannels:[...mixChannels]}:{}) } };
+  return { version: 1, epoch: raw.epoch, shows, ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}), ...(mixChannels!==null?{mixChannels:[...mixChannels]}:{}),...(Object.keys(channelRemixes).length?{channelRemixes:Object.fromEntries(Object.entries(channelRemixes).map(([key,value])=>[key,{seed:value.seed,epoch:value.epoch}]))}:{}) } };
 }
 
 export function parseCatalogJson(input) {
@@ -241,9 +244,9 @@ export function buildSchedule(catalog, channel = catalog.settings.channel) {
     .map(episode => ({ show: s, episode, source: stationSource(episode), duration: episode.durationSeconds }));
   const queues = shows.map(s => entries(s).filter(e => e.episode.kind === 'episode'));
   const bumpers = bumperPool(catalog, shows);
-  if ((catalog.settings.rotation ?? 'random') === 'random') return randomRotation(queues, bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShows?.join(',') || catalog.settings.streamShow || 'all'}`, storiesPerTurn: catalog.settings.storiesPerTurn ?? 1, orderedShowIds: SERIAL_SHOW_IDS, includeBumpers: catalog.settings.bumpers, commercialCount: catalog.settings.commercialCount ?? 1 });
+  if ((catalog.settings.rotation ?? 'random') === 'random') return randomRotation(queues, bumpers, { seed: scheduleSeed(catalog,channel), scope: `${channel}:${catalog.settings.streamShows?.join(',') || catalog.settings.streamShow || 'all'}`, storiesPerTurn: catalog.settings.storiesPerTurn ?? 1, orderedShowIds: SERIAL_SHOW_IDS, includeBumpers: catalog.settings.bumpers, commercialCount: catalog.settings.commercialCount ?? 1 });
   const result = [];
-  const nextBreak = createCommercialBreak(bumpers, { seed: catalog.settings.shuffleSeed ?? 1984, scope: `${channel}:${catalog.settings.streamShows?.join(',') || catalog.settings.streamShow || 'all'}:ordered`, commercialCount: catalog.settings.commercialCount ?? 1, randomize: false });
+  const nextBreak = createCommercialBreak(bumpers, { seed: scheduleSeed(catalog,channel), scope: `${channel}:${catalog.settings.streamShows?.join(',') || catalog.settings.streamShow || 'all'}:ordered`, commercialCount: catalog.settings.commercialCount ?? 1, randomize: false });
   while (queues.some(q => q.length)) {
     for (const queue of queues) {
       if (!queue.length) continue;
