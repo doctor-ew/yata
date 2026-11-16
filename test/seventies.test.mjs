@@ -4,8 +4,8 @@ import {availableDialShows} from '../src/dials.mjs';
 test('70s Prime Time schedules checked episodes and retains Barnaby as an honest wishlist',async()=>{
  const c=parseCatalogJson(await readFile(new URL('../data/expanded-catalog.json',import.meta.url),'utf8'));
  c.settings={...c.settings,channel:'seventies',streamShow:null,bumpers:false};
- assert.deepEqual(c.shows.filter(s=>s.channel==='seventies').map(s=>[s.id,s.episodes.length]),[['barnaby-jones',0],['baretta',58],['bj-bear',12],['rockford-files',120],['kolchak',22]]);
+ assert.deepEqual(c.shows.filter(s=>s.channel==='seventies').map(s=>[s.id,s.episodes.length]),[['barnaby-jones',0],['baretta',58],['bj-bear',12],['rockford-files',120],['kolchak',22],['kojak',122],['starsky-hutch',39],['emergency',33]]);
  const schedule=buildSchedule(c);assert.ok(schedule.length);assert.ok(schedule.every(e=>e.show.channel==='seventies'));
- assert.deepEqual(availableDialShows(c).map(s=>s.id),['baretta','bj-bear','rockford-files','kolchak']);
+ assert.deepEqual(availableDialShows(c).map(s=>s.id),['baretta','bj-bear','rockford-files','kolchak','kojak','starsky-hutch','emergency']);
  c.settings.channel='mixed';assert.ok(buildSchedule(c).some(e=>e.show.id==='baretta'));
 });

@@ -1,3 +1,4 @@
+import {VINTAGE_ADDITIONS} from './vintage-additions.mjs';
 import {CHANNEL_ADDITIONS} from './channel-additions.mjs';
 import { EXPANDED_ERA_SHOWS } from './expanded-era.mjs';
 import { COMMERCIAL_SHOW_ID } from './domain.mjs';
@@ -105,6 +106,7 @@ export function createSeed() {
       sources: [{ id: 'simulator-youtube', provider: 'youtube', availability: 'unverified',
         url: 'https://www.youtube.com/watch?v=RmycafPZFl8' }] }],
   });
+  for(const show of VINTAGE_ADDITIONS)shows.push({...show,imdbUrl:null,episodes:[]});
   for(const show of CHANNEL_ADDITIONS)shows.push({...show,imdbUrl:null,episodes:[]});
   for(const show of shows)show.channel=migratedShowChannel(show.id,show.channel);
   for(const [id,title] of [['st-elsewhere','St. Elsewhere (1982)'],['hill-street-blues','Hill Street Blues (1981)']])shows.push({id,title,channel:'drama',imdbUrl:null,episodes:[]});

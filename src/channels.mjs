@@ -1,10 +1,10 @@
 import { EXPANDED_ERA_SHOWS } from './expanded-era.mjs';
 export const NICK_SHOW_IDS = new Set(['ycdtotv','turkey-tv','danger-mouse','count-duckula','cities-gold','double-dare','out-control','salute-shorts','hey-dude','pete-pete','nickelodeon-bumps']);
-export const SERIAL_SHOW_IDS = new Set(['st-elsewhere','hill-street-blues','nypd-blue','cagney-lacey','china-beach','northern-exposure','picket-fences']);
+export const SERIAL_SHOW_IDS = new Set(['dallas','rocky-bullwinkle','st-elsewhere','hill-street-blues','nypd-blue','cagney-lacey','china-beach','northern-exposure','picket-fences']);
 export const CHANNELS = [
   { id: 'mixed', number: '01', name: 'YATA Channels', subtitle: 'All TV channels.', accent: '#ffc66e' },
   { id: 'action', number: '02', name: 'Action Adventure', subtitle: 'Action and adventure.', accent: '#ff927b' },
-  { id: 'scifi', number: '03', name: 'Sci-Fi', subtitle: 'Science-fiction series.', accent: '#79cde5' },
+  { id: 'scifi', number: '10', name: 'Sci-Fi', subtitle: 'Science-fiction series.', accent: '#79cde5' },
   { id: 'cartoons', number: '04', name: 'Saturday Morning', subtitle: 'Animated series.', accent: '#ac9aff' },
   { id: 'nick', number: '08', name: 'Nickelodeon', subtitle: 'After school · classic Nick.', accent: '#df8658' },
   { id: 'comedy', number: '05', name: 'Comedy', subtitle: 'Comedy series.', accent: '#f4c36e' },

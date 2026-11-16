@@ -141,6 +141,8 @@ export function mergePublishedCatalog(master, previous) {
     const surviving = custom.filter(sid => next.shows.some(show => show.id === sid));
     try { if (surviving.length) next.settings = validateCatalog({...next, settings:{...next.settings, streamShow:null,streamShows:surviving}}).settings; } catch { /* Invalid personal selections cannot change the master. */ }
   }
+  const savedCustom=previous.settings.customShows??previous.settings.streamShows;
+  if(Array.isArray(savedCustom)&&savedCustom.length){const surviving=savedCustom.filter(id=>next.shows.some(s=>s.id===id));try{if(surviving.length)next.settings=validateCatalog({...next,settings:{...next.settings,customShows:surviving,customTitle:previous.settings.customTitle??'Your Channel',customSeed:previous.settings.customSeed??previous.settings.shuffleSeed,customEpoch:previous.settings.customEpoch??previous.epoch,customRotation:previous.settings.customRotation??previous.settings.rotation}}).settings;}catch{/* Removed or invalid saved shows cannot change the shared catalog. */}}
   const selected = next.settings.streamShows ? null : previous.settings.streamShow;
   const moved=next.shows.find(show=>show.id===selected);
   if (moved && previous.settings.channel !== 'mixed' && migratedShowChannel(selected, previous.settings.channel) === moved.channel) next.settings.channel = moved.channel;

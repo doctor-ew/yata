@@ -29,10 +29,10 @@ export function mountChannelBuilder({getCatalog,isReady,onTune,requestPlan}={}) 
     try{const result=await request({question,host:host.id,shows:JSON.stringify(shows)},current.signal,status);if(current.signal.aborted)return;plan=validateChannelPlan(result,getCatalog(),host.id);
       $('channel-plan-title').textContent=plan.title;$('channel-plan-intro').textContent=plan.intro;
       $('channel-plan-shows').replaceChildren(...plan.showIds.map(id=>{const node=document.createElement('li');node.textContent=getCatalog().shows.find(show=>show.id===id).title;return node;}));
-      $('tune-custom-channel').hidden=!plan.showIds.length;$('channel-plan').hidden=false;status(plan.showIds.length?'Review the lineup, then tune in.':'No matching checked shows. Try a different request.');
+      $('tune-custom-channel').hidden=!plan.showIds.length;$('channel-plan').hidden=false;status(plan.showIds.length?'Review the lineup, then save it to channel 00.':'No matching checked shows. Try a different request.');
     }catch(error){if(dialog.open)status(current.signal.aborted?'Request cancelled or timed out. Try again.':error.message);}
     finally{clearTimeout(timer);if(controller===current){controller=null;busy(false);}}
   });
-  $('tune-custom-channel').addEventListener('click',async()=>{if(!plan)return;try{const checked=validateChannelPlan(plan,getCatalog(),host.id);if(!checked.showIds.length)return;if(await onTune(checked.showIds)){dialog.close();}}catch(error){reset();status(error.message);}});
+  $('tune-custom-channel').addEventListener('click',async()=>{if(!plan)return;try{const checked=validateChannelPlan(plan,getCatalog(),host.id);if(!checked.showIds.length)return;if(await onTune(checked.showIds,checked.title)){dialog.close();}}catch(error){reset();status(error.message);}});
   hostLabel();
 }

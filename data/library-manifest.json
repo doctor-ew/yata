@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-ff2ecb2ab35413df",
+  "revision": "expanded-0ae020cf7b5c72bb",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -21,13 +21,14 @@
     "2026-11-15T15:06:54.717Z",
     "2026-11-15T15:53:42.678Z",
     "2026-11-15T19:40:16.848Z",
-    "2026-11-15T19:46:26.579Z"
+    "2026-11-15T19:46:26.579Z",
+    "2026-11-16T18:53:32.666Z"
   ],
-  "episodes": 10174,
-  "ready": 10042,
+  "episodes": 11220,
+  "ready": 11083,
   "movieReady": 5,
   "breaks": 24,
-  "streamSlots": 170050,
+  "streamSlots": 300608,
   "shows": [
     {
       "id": "dukes",
@@ -1774,6 +1775,118 @@
       "sources": 1
     },
     {
+      "id": "kojak",
+      "title": "Kojak (1973)",
+      "episodes": 122,
+      "ready": 121,
+      "breaks": 0,
+      "sources": 122
+    },
+    {
+      "id": "starsky-hutch",
+      "title": "Starsky & Hutch (1975)",
+      "episodes": 39,
+      "ready": 35,
+      "breaks": 0,
+      "sources": 45
+    },
+    {
+      "id": "emergency",
+      "title": "Emergency! (1972)",
+      "episodes": 33,
+      "ready": 33,
+      "breaks": 0,
+      "sources": 33
+    },
+    {
+      "id": "mr-magoo",
+      "title": "The Mr. Magoo Show (1960)",
+      "episodes": 23,
+      "ready": 23,
+      "breaks": 0,
+      "sources": 23
+    },
+    {
+      "id": "smurfs",
+      "title": "The Smurfs (1981)",
+      "episodes": 432,
+      "ready": 432,
+      "breaks": 0,
+      "sources": 432
+    },
+    {
+      "id": "dallas",
+      "title": "Dallas (1978)",
+      "episodes": 49,
+      "ready": 49,
+      "breaks": 0,
+      "sources": 49
+    },
+    {
+      "id": "room-222",
+      "title": "Room 222 (1969)",
+      "episodes": 70,
+      "ready": 70,
+      "breaks": 0,
+      "sources": 70
+    },
+    {
+      "id": "fractured-fairy-tales",
+      "title": "Fractured Fairy Tales",
+      "episodes": 18,
+      "ready": 18,
+      "breaks": 0,
+      "sources": 18
+    },
+    {
+      "id": "dudley-do-right",
+      "title": "Dudley Do-Right of the Mounties",
+      "episodes": 40,
+      "ready": 40,
+      "breaks": 0,
+      "sources": 40
+    },
+    {
+      "id": "rocky-bullwinkle",
+      "title": "Rocky and Bullwinkle and Friends (1959)",
+      "episodes": 162,
+      "ready": 162,
+      "breaks": 0,
+      "sources": 162
+    },
+    {
+      "id": "woody-woodpecker",
+      "title": "Woody Woodpecker · original shorts",
+      "episodes": 6,
+      "ready": 6,
+      "breaks": 0,
+      "sources": 6
+    },
+    {
+      "id": "chilly-willy",
+      "title": "Chilly Willy · original shorts",
+      "episodes": 50,
+      "ready": 50,
+      "breaks": 0,
+      "sources": 50
+    },
+    {
+      "id": "dastardly-muttley",
+      "title": "Dastardly and Muttley in Their Flying Machines (1969)",
+      "episodes": 1,
+      "ready": 1,
+      "breaks": 0,
+      "sources": 1
+    },
+    {
+      "id": "mighty-hercules",
+      "title": "The Mighty Hercules (1963)",
+      "episodes": 1,
+      "ready": 1,
+      "breaks": 0,
+      "sources": 1
+    },
+    {
       "id": "x-men-tas",
       "title": "X-Men: The Animated Series (1992)",
       "episodes": 76,
@@ -1846,6 +1959,6 @@
       "sources": 146
     }
   ],
-  "bytes": 3767214,
+  "bytes": 4123841,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

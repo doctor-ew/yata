@@ -81,3 +81,15 @@ test('three-story turns do not repeat a story when a small pool reshuffles mid-t
   }
  }
 });
+
+test('small station pools avoid alternating repeats while preserving equal show turns', () => {
+ for (const size of [3, 4, 7]) for (let seed = 1; seed <= 80; seed++) {
+  const catalog = fixture(); catalog.settings.shuffleSeed = seed;
+  catalog.shows = Array.from({length:size}, (_, i) => ({id:`show-${i}`,title:`Show ${i}`,channel:'seventies',imdbUrl:null,episodes:Array.from({length:i+2},(_,j)=>episode(`show-${i}`,j+1))}));
+  const queue = buildSchedule(catalog), ids = queue.map(e => e.show.id);
+  for (let i = 2; i < ids.length; i++) assert.ok(ids[i] !== ids[i-1] && ids[i] !== ids[i-2], `${size} shows, seed ${seed}, position ${i}`);
+  for (let i = 0; i < ids.length; i += size) assert.equal(new Set(ids.slice(i,i+size)).size,size);
+  assert.notEqual(ids[0],ids.at(-1));
+  assert.deepEqual(buildSchedule(catalog),queue);
+ }
+});

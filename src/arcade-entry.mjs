@@ -1,3 +1,7 @@
+export const ARCADE_CHANNEL={id:'arcade',number:'03',name:'Arcade',games:['Robot Unicorn Attack','Star Wars','Spy Hunter','Q*bert','Donkey Kong']};
+const ARCADE_UNLOCK_KEY='yata.arcade-unlocked.v1';
+export function readArcadeUnlock(storage){try{return (storage??globalThis.sessionStorage)?.getItem(ARCADE_UNLOCK_KEY)==='1';}catch{return false;}}
+export function saveArcadeUnlock(storage){try{(storage??globalThis.sessionStorage)?.setItem(ARCADE_UNLOCK_KEY,'1');}catch{/* The current tab still unlocks when storage is unavailable. */}}
 // The secret entrance is navigation, not an access-control boundary.
 export function installArcadeEntry({target=globalThis.document,enabled=['127.0.0.1','localhost','doctorew.com','www.doctorew.com'].includes(globalThis.location?.hostname),open=()=>globalThis.location.assign('/arcade/')}={}){
  const code=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];let pressed=[];

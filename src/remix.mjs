@@ -1,11 +1,12 @@
 import {CHANNELS} from './channels.mjs';
+export function activeRotation(catalog){return catalog.settings.streamShows?catalog.settings.customRotation??catalog.settings.rotation??'random':catalog.settings.rotation??'random';}
 // New personal schedule overrides leave every other channel's seed and clock intact.
-export function scheduleEpoch(catalog,channel=catalog.settings.channel){return catalog.settings.channelRemixes?.[channel]?.epoch??catalog.epoch;}
-export function scheduleSeed(catalog,channel=catalog.settings.channel){return catalog.settings.channelRemixes?.[channel]?.seed??catalog.settings.shuffleSeed??1984;}
+export function scheduleEpoch(catalog,channel=catalog.settings.channel){return channel==='custom'||channel==='mixed'&&catalog.settings.streamShows?.length?catalog.settings.customEpoch??catalog.epoch:catalog.settings.channelRemixes?.[channel]?.epoch??catalog.epoch;}
+export function scheduleSeed(catalog,channel=catalog.settings.channel){return channel==='custom'||channel==='mixed'&&catalog.settings.streamShows?.length?catalog.settings.customSeed??catalog.settings.shuffleSeed??1984:catalog.settings.channelRemixes?.[channel]?.seed??catalog.settings.shuffleSeed??1984;}
 export function remixLineups(catalog,channel,{now=Date.now()/1000,seed=()=>crypto.getRandomValues(new Uint32Array(1))[0]}={}){
- const ids=channel==='all'?CHANNELS.map(c=>c.id):[channel];if(ids.some(id=>!CHANNELS.some(c=>c.id===id)))throw Error('Choose a channel to remix.');if(!Number.isFinite(now)||now<0)throw Error('Invalid remix time.');
- const channelRemixes={...catalog.settings.channelRemixes};for(const id of ids){let value=seed();if(!Number.isInteger(value)||value<0||value>0xffffffff)throw Error('Invalid remix seed.');if(value===scheduleSeed(catalog,id))value=(value+1)>>>0;channelRemixes[id]={seed:value,epoch:now};}
- return {...catalog,settings:{...catalog.settings,channelRemixes}};
+ const ids=channel==='all'?[...CHANNELS.map(c=>c.id),...(catalog.settings.customShows?.length?['custom']:[])]:[channel];if(ids.some(id=>id!=='custom'&&!CHANNELS.some(c=>c.id===id)))throw Error('Choose a channel to remix.');if(!Number.isFinite(now)||now<0)throw Error('Invalid remix time.');
+ const channelRemixes={...catalog.settings.channelRemixes},settings={...catalog.settings};for(const id of ids){let value=seed();if(!Number.isInteger(value)||value<0||value>0xffffffff)throw Error('Invalid remix seed.');if(value===scheduleSeed(catalog,id))value=(value+1)>>>0;if(id==='custom'){if(!catalog.settings.customShows?.length)throw Error('Create channel 00 first.');settings.customSeed=value;settings.customEpoch=now;}else channelRemixes[id]={seed:value,epoch:now};}
+ return {...catalog,settings:{...settings,channelRemixes}};
 }
 export function mountLineupRemix({root,channels,getChannel,onRemix}){
  if(!root)return {sync(){}};

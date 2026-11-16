@@ -267,8 +267,26 @@ The approved recommendation pass adds 69 collections and fills Daria with 65 res
 
 Coverage varies by source. Doctor Who covers seasons 7, 8 and 12; Daria has five seasons; Farscape covers seasons 1–3. The Muppet Show uses two intact compilation tapes. Remington Steele has one mixed off-air recording with other footage and ads before the program. Eight requested titles remain unsourced in this pass. Existing DS9, Magnum, Simon & Simon, Transformers, Barnaby Jones and Grape Ape gaps are reported without implying they were filled. Detailed counts, exclusions and source links are in `../docs/3/EXPANDED-ERA-SOURCES.md`; reproducible selection rules are in `data/expanded-era-sources.json` and `scripts/expanded-era-discovery.mjs`.
 
-Portable catalog imports allow at most 8 MB, with the existing 256-show and 10,000-item bounds. The larger channel-builder offer uses a bounded backend envelope; ordinary chat retains its previous byte limit.
+Portable catalog imports allow at most 8 MB, with the existing 256-show and 20,000-item bounds. The larger channel-builder offer uses a bounded backend envelope; ordinary chat retains its previous byte limit.
 
 ## Personal lineup remix
 
 Open **REMIX · Different reruns** below the channel selector. Choose a channel and select **Remix channel**, or select **Remix all channels**. Each affected channel gets its own new shuffle seed and station start time; other channel clocks and lineups remain unchanged. Preferences survive refresh and shared catalog updates in the same browser. Channel inclusion switches, commercial settings and the shared catalog are preserved. Serialized dramas keep their episode order. With ordered rotation selected, a remix restarts the sequence rather than shuffling episode order.
+
+## Library browsing and artwork
+
+Library opens the full shared catalog independently of the tuned station. Use the explicit channel, genre, premiere-decade and availability filters, and sort by title, actual premiere date or genre. Title ordering ignores leading articles. Undated entries sort last; no premiere date is invented for collections or unmatched titles. Clear filters restores the full library.
+
+Series metadata, backdrop artwork and available title logos are cached from TVmaze in `data/library-art.json` and `assets/show-art`. The metadata retains provider page and image source URLs; the library credits TVmaze and its CC BY-SA data license. Artwork remains attributed to its respective owners. `scripts/acquire-show-art.py` performs rate-limited, cached lookups and generates a review report for ambiguous or missing matches. Match original-era series explicitly before publishing: a familiar title alone is insufficient to distinguish a remake or an animated adaptation. Images are resized to WebP and served from the existing site. Artwork loading failures preserve titles, controls and episode access.
+
+After acquisition, run `scripts/supplement-show-art.py` with Python and Pillow to apply the reviewed original-series artwork and regional premiere-year corrections, and include archived collection images. Keep each linked source in the metadata when updating a manual match.
+
+## Personal channel 00 and Arcade 03
+
+The AI channel builder saves a separate personal channel 00. Its title, chosen shows, rotation and clock survive browser refresh and shared catalog updates. The main YATA mix and other station schedules remain independent. Channel 03 previews Robot Unicorn Attack, Star Wars, Spy Hunter, Q*bert and Donkey Kong; enter the Konami sequence on the TV page to enable its Arcade shortcut for the current tab session. Sci-Fi retains its category and uses channel 10. The Arcade shortcut is a discovery feature, not access control.
+
+## Original-series additions and spacing
+
+The reviewed vintage batch adds 14 collections: Kojak, Starsky & Hutch, Emergency!, Mr. Magoo, The Smurfs, Dallas, Room 222, Fractured Fairy Tales, Dudley Do-Right, Rocky and Bullwinkle, Woody Woodpecker, Chilly Willy, Dastardly and Muttley, and The Mighty Hercules. Source collections and endpoint checks are recorded in `data/vintage-additions-discovery.json`. Dallas uses seasons two and three; Hercules has one short; Dastardly and Muttley uses one intact VHS compilation. These counts do not establish completeness. Reviewed YouTube candidates remain unverified until embedded playback is checked.
+
+Random rotation retains equal show turns and avoids repeating a show within the next two turns when at least three shows are playable. Schedule-boundary spacing is applied where possible. Dallas and Rocky and Bullwinkle retain source sequence within their turns. Source artwork uses frames from the original programs; no AI imagery is used.

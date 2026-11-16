@@ -29,3 +29,9 @@ Show names, commercials and video content belong to their respective creators an
 ## Character host portraits
 
 The channel builder uses in-character images for Captain Stubing, Arnold, Benson, Starbuck, Mr. T, Murdock, Twiki, and Jabberjaw. Image sources and rights information are recorded at https://doctorew.com/host-portraits/credits.html. These images are not collectively open-licensed. Murdock and Mr. T reuse existing doctorew.com portfolio artwork. Character names and underlying properties belong to their respective owners; the hosts are AI simulations.
+
+## Library metadata and artwork
+
+`data/library-art.json` adapts metadata from [TVmaze](https://www.tvmaze.com/api), with reviewed series matches, premiere-year corrections and source links. TVmaze data is provided under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); the adapted metadata is provided under the same license. Supplemental facts and item images link to their Wikipedia or Internet Archive records. Each entry retains its metadata page and original image URL.
+
+Show artwork, title logos, posters and archive thumbnails retain their respective owners’ rights. Images are resized to WebP and displayed as subdued decorative backgrounds. No generated show art is used. The data license is not a blanket license for depicted show artwork.

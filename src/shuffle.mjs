@@ -42,6 +42,37 @@ function storyBlocks(queue) {
   }
   return blocks;
 }
+// Each round still gives every show one turn. Keep two other shows between
+// repeat turns where the pool permits, including the schedule seam when possible.
+function spacedShowOrder(states, random, recent, opening, finalRound) {
+  const candidates = shuffled(states, random), distance = Math.min(2, states.length - 1);
+  for (const seamDistance of finalRound ? [distance, 1] : [0]) {
+    let visits = 0;
+    const search = (chosen, remaining) => {
+      if (++visits > 10000) return null;
+      if (!remaining.length) {
+        if (finalRound) {
+          const seam = [...recent, ...chosen];
+          for (const state of opening.slice(0, seamDistance)) {
+            if (seam.slice(-seamDistance).includes(state)) return null;
+            seam.push(state);
+          }
+        }
+        return chosen;
+      }
+      const excluded = [...recent, ...chosen].slice(-distance);
+      for (const state of remaining) {
+        if (distance && excluded.includes(state)) continue;
+        const result = search([...chosen, state], remaining.filter(s => s !== state));
+        if (result) return result;
+      }
+      return null;
+    };
+    const result = search([], candidates);
+    if (result) return result;
+  }
+  return shuffled(states, random, recent.at(-1));
+}
 export function randomRotation(queues, bumpers, { seed = 1984, scope = '', storiesPerTurn = 1, includeBumpers = false, commercialCount = 1, orderedShowIds = [] } = {}) {
   const orderedIds = new Set(orderedShowIds);
   const states = queues.filter(queue => queue.length).map(queue => {
@@ -54,15 +85,11 @@ export function randomRotation(queues, bumpers, { seed = 1984, scope = '', stori
   const rounds = Math.max(...states.map(state => Math.ceil(state.blocks.length / Math.min(count, state.blocks.length))));
   const showRandom = seededRandom(seed, `${scope}:show-order`);
   const nextBreak = createCommercialBreak(bumpers, { seed, scope, commercialCount });
-  let firstShow = null, lastShow = null;
+  const recent = [], opening = [];
   const result = [];
   for (let round = 0; round < rounds; round++) {
-    const order = shuffled(states, showRandom, lastShow);
-    if (!firstShow) firstShow = order[0];
-    if (round === rounds - 1 && order.length > 1 && order.at(-1) === firstShow) {
-      const swap = order.findIndex((state, index) => index < order.length - 1 && (index !== 0 || firstShow !== lastShow));
-      if (swap >= 0) [order[swap], order[order.length - 1]] = [order.at(-1), order[swap]];
-    }
+    const order = spacedShowOrder(states, showRandom, recent, opening, round === rounds - 1);
+    if (!opening.length) opening.push(...order.slice(0, 2));
     for (const state of order) {
       const usedThisTurn = new Set();
       for (let i = 0; i < Math.min(count, state.blocks.length); i++) {
@@ -74,7 +101,7 @@ export function randomRotation(queues, bumpers, { seed = 1984, scope = '', stori
         const block = state.order[state.cursor++]; result.push(...block); state.last = block; usedThisTurn.add(block);
         if (includeBumpers) result.push(...nextBreak());
       }
-      lastShow = state;
+      recent.push(state); if (recent.length > 2) recent.shift();
     }
   }
   return result;

@@ -91,11 +91,21 @@
     </section>
     <section id="library" class="library" role="tabpanel" aria-labelledby="library-tab">
       <div class="section-heading"><div><p class="eyebrow">THE LINEUP</p><h2 id="library-heading">Library.</h2><p id="library-count" class="muted"></p></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a show…" aria-label="Search shows"></label></div>
+      <div class="library-filters" aria-label="Browse the library">
+        <label>Channel<select id="library-channel"><option value="all">All channels</option></select></label>
+        <label>Genre<select id="library-genre"><option value="all">All genres</option></select></label>
+        <label>Premiere<select id="library-decade"><option value="all">All years</option><option value="1950">1950s</option><option value="1960">1960s</option><option value="1970">1970s</option><option value="1980">1980s</option><option value="1990">1990s</option><option value="2000">2000s</option><option value="unknown">Year unavailable</option></select></label>
+        <label>Availability<select id="library-availability"><option value="all">All shows</option><option value="playable">With checked episodes</option><option value="wishlist">Wishlist / unchecked</option></select></label>
+        <label>Sort by<select id="library-sort"><option value="title">Title · A–Z</option><option value="title-desc">Title · Z–A</option><option value="oldest">Premiere · oldest first</option><option value="newest">Premiere · newest first</option><option value="genre">Genre</option></select></label>
+        <button id="library-reset" class="text-button" type="button">Clear filters</button>
+      </div>
+      <p id="library-source-note" class="library-source-note"></p>
       <section id="movie-section" class="movie-section" aria-labelledby="movie-heading" hidden>
-        <div><p class="eyebrow">SCI-FI FEATURE FILMS</p><h3 id="movie-heading">Midnight Matinee</h3><p id="movie-count" class="muted"></p><p class="muted">A separate movie-night stream. Features stay out of your regular TV rotation.</p></div>
-        <div class="movie-actions"><button id="movie-browse" class="button">Browse films &amp; wishlist</button><button id="movie-shuffle" class="button primary">▶ Random movie stream</button></div>
+        <div><p class="eyebrow">SCI-FI FEATURE FILMS</p><h3 id="movie-heading">Midnight Matinee</h3><p id="movie-count" class="muted"></p><p class="muted">Feature films, separate from the TV channels.</p></div>
+        <div class="movie-actions"><button id="movie-browse" class="button">Browse films</button><button id="movie-shuffle" class="button primary">▶ Play a random film</button></div>
       </section>
-      <div id="library-grid" class="library-grid"></div><p id="library-empty" class="empty" hidden>No shows match that search.</p>
+      <div id="library-grid" class="library-grid"></div><p id="library-empty" class="empty" hidden>No shows match these filters. Clear filters to see the full library.</p>
+      <p class="library-art-credit">Show metadata &amp; artwork from <a href="https://www.tvmaze.com" target="_blank" rel="noopener noreferrer">TVmaze</a> and linked sources · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA metadata</a>. Artwork belongs to its respective owners.</p>
     </section>
     <section class="collection-tools" aria-labelledby="collection-heading"><div><h2 id="collection-heading">Catalog tools.</h2><p>Edit locally. Review and publish to update the shared catalog.</p></div><div class="tool-actions"><button id="seed-all" class="button primary">Fill all shows</button><button id="bulk-open" class="button small">Seed playlists +</button><button id="export-catalog" class="button small">Export catalog ↓</button><label class="button small import-button" for="import-catalog">Import catalog ↑<input id="import-catalog" type="file" accept="application/json,.json"></label></div></section>
   </main>
@@ -105,7 +115,7 @@
     <div class="dialog-top"><div><p class="eyebrow">YATA / PROGRAMMING DEPARTMENT</p><h2 id="channel-builder-title">You want what on television?</h2></div><button id="close-channel-builder" type="button" class="icon-button" aria-label="Close channel builder">×</button></div>
     <div class="channel-host"><img id="channel-host-image" width="80" height="96" alt="" hidden><div><p id="channel-host-name"></p><a id="channel-host-credit" target="_blank" rel="noopener noreferrer" hidden></a></div><button id="change-channel-host" type="button" class="button small">Different host</button></div>
     <form id="channel-builder-form"><label for="channel-request">A few shows, a theme, or a questionable combination.</label><textarea id="channel-request" maxlength="1000" rows="3" required placeholder="Knight Rider, space adventures, and something ridiculous with a talking animal."></textarea><div id="channel-verification"></div><button id="build-channel" class="button primary" type="submit">Assemble my channel</button></form>
-    <p id="channel-builder-status" role="status" aria-live="polite"></p><section id="channel-plan" hidden><h3 id="channel-plan-title"></h3><p id="channel-plan-intro"></p><ul id="channel-plan-shows"></ul><button id="tune-custom-channel" class="button primary" type="button">▶ Tune this channel</button></section>
+    <p id="channel-builder-status" role="status" aria-live="polite"></p><section id="channel-plan" hidden><h3 id="channel-plan-title"></h3><p id="channel-plan-intro"></p><ul id="channel-plan-shows"></ul><button id="tune-custom-channel" class="button primary" type="button">▶ Save &amp; tune channel 00</button></section>
     <p class="muted">AI-assisted programming from checked TV sources in this catalog. Your mix is personal; it never adds or publishes shows.</p>
   </dialog>
   <dialog id="stream-settings" class="settings-overlay" aria-labelledby="settings-title">
@@ -136,7 +146,7 @@
       </section>
     <div class="settings-done"><button id="done-stream-settings" class="button primary" type="button">Done</button></div>
   </dialog>
-  <dialog id="show-dialog" aria-labelledby="show-title"><div class="dialog-top"><p class="eyebrow">IN YOUR COLLECTION</p><button class="icon-button" id="close-show" aria-label="Close show details">×</button></div><h2 id="show-title"></h2><div id="show-episodes"></div><div class="dialog-actions"><button id="show-shuffle" class="button primary">▶ Shuffle this show</button><button id="show-add" class="button primary">+ Add an episode source</button><a id="show-imdb" target="_blank" rel="noopener noreferrer" hidden>IMDb reference ↗</a></div></dialog>
+  <dialog id="show-dialog" aria-labelledby="show-title"><div class="dialog-top"><p class="eyebrow">IN YOUR COLLECTION</p><button class="icon-button" id="close-show" aria-label="Close show details">×</button></div><h2 id="show-title"></h2><div id="show-episodes"></div><div class="dialog-actions"><button id="show-shuffle" class="button primary">▶ Shuffle this show</button><button id="show-add" class="button primary">+ Add an episode source</button><a id="show-art-source" target="_blank" rel="noopener noreferrer" hidden>Show &amp; artwork reference ↗</a><a id="show-imdb" target="_blank" rel="noopener noreferrer" hidden>IMDb reference ↗</a></div></dialog>
   <dialog id="source-dialog" aria-labelledby="source-heading"><div class="dialog-top"><p class="eyebrow">BUILD YOUR CHANNEL</p><button class="icon-button" id="close-source" aria-label="Close source editor">×</button></div><h2 id="source-heading">Add a source.</h2><p class="muted">Add an Archive item, a YouTube video or playlist, or a Tubi watch link. Unchecked sources stay out of the live rotation.</p>
     <form id="source-form">
       <label>Show<select id="source-show" required></select></label>

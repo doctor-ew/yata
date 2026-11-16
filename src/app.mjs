@@ -1,6 +1,7 @@
-import {scheduleEpoch,remixLineups,mountLineupRemix} from './remix.mjs';
-import {installArcadeEntry} from './arcade-entry.mjs';
-installArcadeEntry();
+import {CUSTOM_CHANNEL,customShows,isCustomChannel,createCustomChannel,tuneCustomChannel} from './custom-channel.mjs';
+import {browseLibrary,showGenres,playableEpisodes} from './library-browser.mjs';
+import {scheduleEpoch,remixLineups,mountLineupRemix,activeRotation} from './remix.mjs';
+import {installArcadeEntry,ARCADE_CHANNEL,readArcadeUnlock,saveArcadeUnlock} from './arcade-entry.mjs';
 import {mountMixControls} from './mix-controls.mjs';
 import {mountSeekVisibility} from './seek-visibility.mjs';
 import {mountChannelBuilder} from './channel-builder-ui.mjs';
@@ -49,15 +50,18 @@ let session = null, active = null, playerGeneration = 0, importBusy = false;
 let scrubbing = false, scrubSession = null, audioSession = null, preferredAudio = null, audioLockUntil = 0;
 let navCatalog = null, navActive = null, previousEntry = null, nextEntry = null;
 let sharedTarget = null;
+let libraryMetadata={},libraryUpdatedAt=null;
+let arcadeUnlocked=readArcadeUnlock();
+installArcadeEntry({open:()=>{arcadeUnlocked=true;saveArcadeUnlock();renderChannels();notify('Channel 03 unlocked. The arcade is open.');$('arcade-channel')?.focus();}});
 const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'Tubi', adultswim: 'Adult Swim' };
-const tiles = ['#5c6242', '#76513b', '#4d6152', '#755d36', '#665841', '#526044', '#704d3d', '#4f635a'];
 const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
 const dialFeedback = mountDialFeedback({ windowRef: window, storage, toggle: $('dial-feedback'), getVolume: () => transportState()?.volume ?? preferredAudio?.volume ?? 1, getMuted: () => transportState()?.muted ?? preferredAudio?.muted ?? false, pulse: () => retroEffects.pulse({ force: true }) });
 
 const mixControls=mountMixControls({root:$('mix-panel'),channels:CHANNELS,getSettings:()=>catalog.settings,onChange:async ids=>{const next=copyCatalog(),main=next.settings.channel==='mixed'&&!next.settings.streamShow&&!next.settings.streamShows,playing=transportState()?.paused===false;if(ids.length===CHANNELS.length-1)delete next.settings.mixChannels;else next.settings.mixChannels=ids;if(main){next.epoch=Date.now()/1000;if(next.settings.channelRemixes?.mixed)next.settings.channelRemixes.mixed.epoch=next.epoch;}if(await commitSettings(next)){if(main)stopPlayer();render();if(main&&playing)tuneLive();return true;}return false;}});
-mountLineupRemix({root:$('remix-panel'),channels:CHANNELS,getChannel:()=>catalog.settings.channel,onRemix:async channel=>{
+mountLineupRemix({root:$('remix-panel'),channels:[CUSTOM_CHANNEL,...CHANNELS],getChannel:()=>isCustomChannel(catalog)?'custom':catalog.settings.channel,onRemix:async channel=>{
  if(!ownerMode&&!publicCatalogReady)return false;
- const current=channel==='all'||channel===catalog.settings.channel,playing=transportState()?.paused===false;
+ if(channel==='custom'&&!customShows(catalog)?.length){notify('Assemble channel 00 first.');return false;}
+ const current=channel==='all'||channel===(isCustomChannel(catalog)?'custom':catalog.settings.channel),playing=transportState()?.paused===false;
  if(!await commitSettings(remixLineups(catalog,channel)))return false;
  if(current)stopPlayer();render();if(current&&playing)tuneLive();return true;
 }});
@@ -75,13 +79,14 @@ for(const name of ['guide','library'])$(name+'-tab').addEventListener('click',()
 document.querySelector('.browse-tabs').addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();const view=event.key==='Home'?'guide':event.key==='End'?'library':$('guide').hidden?'guide':'library';showBrowseView(view);$(view+'-tab').focus();});
 window.addEventListener('hashchange',()=>{if(['#guide','#library'].includes(location.hash))showBrowseView(location.hash.slice(1),{scroll:true});else if(location.hash==='#watch'){showBrowseView('library');$('watch').scrollIntoView({block:'start'});}});
 showBrowseView(location.hash==='#guide'?'guide':'library');
-mountChannelBuilder({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:async showIds=>{const next=copyCatalog();Object.assign(next.settings,{channel:'mixed',streamShow:null,streamShows:showIds,rotation:'random',shuffleSeed:newMix()});if(next.settings.channelRemixes)delete next.settings.channelRemixes.mixed;next.epoch=Date.now()/1000;if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();$('player-shell').scrollIntoView({block:'center',behavior:'smooth'});return true;}});
+mountChannelBuilder({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();$('player-shell').scrollIntoView({block:'center',behavior:'smooth'});return true;}});
+
 $('open-stream-settings').addEventListener('click',()=>$('stream-settings').showModal());
 for(const id of ['close-stream-settings','done-stream-settings'])$(id).addEventListener('click',()=>$('stream-settings').close());
 
 async function playFromGuide(selection,live) {
   if(!ownerMode&&!publicCatalogReady)return false;
-  const next=copyCatalog();next.settings.channel=selection.channel.id;next.settings.streamShow=null;next.settings.streamShows=null;
+  const next=selection.channel.id==='custom'?tuneCustomChannel(copyCatalog()):copyCatalog();if(selection.channel.id!=='custom'){next.settings.channel=selection.channel.id;next.settings.streamShow=null;next.settings.streamShows=null;}
   if(!await commitSettings(next))return false;
   if(live&&!buildSchedule(catalog).length){notify('This channel no longer has a checked schedule. Select another channel.');render();return false;}
   const chosen=live?null:guidePlayback(catalog,selection);
@@ -177,7 +182,7 @@ async function commitSettings(next) {
   if (catalogStore.writable) return commit(next);
   catalog=validateCatalog(next); return true; // Session-only tuning never writes an unlocked catalog.
 }
-function selectedChannel() { return CHANNELS.find(c => c.id === catalog.settings.channel); }
+function selectedChannel() { return isCustomChannel(catalog)?CUSTOM_CHANNEL:CHANNELS.find(c => c.id === catalog.settings.channel); }
 function channelShows() { return catalog.shows.filter(s => s.id === COMMERCIAL_SHOW_ID || catalog.settings.channel === 'mixed' || s.channel === catalog.settings.channel); }
 function currentGuide() { return schedulePosition(buildSchedule(catalog), scheduleEpoch(catalog)); }
 function episodeDetail(e, movie = false) {
@@ -187,20 +192,26 @@ function episodeDetail(e, movie = false) {
 
 function renderChannels() {
   mixControls.sync();
-  $('channels').replaceChildren(...CHANNELS.map(c => {
-    const node = button('', async () => {
-      const next = copyCatalog(); next.settings.channel = c.id; next.settings.streamShow = null; next.settings.streamShows = null;
-      if (await commitSettings(next)) { selectedShowId = channelShows()[0]?.id || catalog.shows[0].id; stopPlayer(); render(); retroEffects.pulse(); }
-    }, 'channel');
-    node.setAttribute('aria-pressed', String(c.id === catalog.settings.channel && !catalog.settings.streamShows));
-    node.setAttribute('aria-label', `Channel ${c.number}: ${c.name}`);
-    const number = element('span', null, 'channel-number'); number.append(element('small', 'CH'), document.createTextNode(c.number));
-    const label = element('span'); label.append(element('span', c.name, 'channel-name'), element('span', catalog.settings.rotation === 'ordered' ? 'Episodes in order' : c.subtitle, 'channel-subtitle'));
-    node.append(number, label, element('span', null, 'dot')); return node;
+  const stations=[CUSTOM_CHANNEL,...CHANNELS.slice(0,2),ARCADE_CHANNEL,...CHANNELS.slice(2)];
+  $('channels').replaceChildren(...stations.map(c=>{
+    const custom=c.id==='custom',arcade=c.id==='arcade';
+    const node=button('',async()=>{
+      if(arcade){if(arcadeUnlocked)location.assign('/arcade/');return;}
+      if(custom&&!customShows(catalog)?.length){$('open-channel-builder').click();return;}
+      const next=custom?tuneCustomChannel(copyCatalog()):copyCatalog();if(!custom){next.settings.channel=c.id;next.settings.streamShow=null;next.settings.streamShows=null;}
+      if(await commitSettings(next)){selectedShowId=channelShows()[0]?.id||catalog.shows[0].id;stopPlayer();render();retroEffects.pulse();}
+    },'channel'+(arcade?' channel-arcade':''));
+    if(arcade){node.id='arcade-channel';node.disabled=!arcadeUnlocked;node.title=arcadeUnlocked?'Open the arcade':'Locked · enter the Konami code';}
+    else node.setAttribute('aria-pressed',String(custom?isCustomChannel(catalog):c.id===catalog.settings.channel&&!isCustomChannel(catalog)));
+    node.setAttribute('aria-label',`Channel ${c.number}: ${c.name}${arcade&&!arcadeUnlocked?' · locked':''}`);
+    const number=element('span',null,'channel-number');number.append(element('small','CH'),document.createTextNode(c.number));
+    const label=element('span',null,'channel-caption');label.append(element('span',c.name,'channel-name'));
+    label.append(element('span',arcade?c.games.join(' · '):custom?(catalog.settings.customTitle||'Assemble your AI lineup'):catalog.settings.rotation==='ordered'?'Episodes in order':c.subtitle,'channel-subtitle'));
+    node.append(number,label,arcade?element('span',arcadeUnlocked?'ENTER ↗':'LOCKED','arcade-lock-state'):element('span',null,'dot'));return node;
   }));
   const channel = selectedChannel();
   const streamShow = catalog.shows.find(show => show.id === catalog.settings.streamShow);
-  $('channel-label').textContent = `CH ${channel.number} · ${(catalog.settings.streamShows ? 'YOUR CHANNEL' : streamShow?.title || channel.name).toUpperCase()} · ${catalog.settings.rotation === 'random' ? 'RANDOM STREAM' : 'IN ORDER'}`;
+  $('channel-label').textContent = `CH ${channel.number} · ${(catalog.settings.streamShows ? catalog.settings.customTitle||'YOUR CHANNEL' : streamShow?.title || channel.name).toUpperCase()} · ${activeRotation(catalog) === 'random' ? 'RANDOM STREAM' : 'IN ORDER'}`;
   renderStreamSettings();
   $('bumpers').checked = catalog.settings.bumpers;
 }
@@ -231,7 +242,7 @@ function renderGuide() {
     row.append(body); list.append(row); startsAt += entry.duration;
   }
   const unique = new Set(schedule.map(entry => entry.episode.id)).size;
-  $('rotation-note').textContent = `${unique} checked ${unique === 1 ? 'item' : 'items'} · ${catalog.settings.rotation === 'random' ? 'Random episodes, balanced show turns. Multipart stories stay together.' : 'Episodes in order within each show.'} Your station clock stays stable across refreshes.`;
+  $('rotation-note').textContent = `${unique} checked ${unique === 1 ? 'item' : 'items'} · ${activeRotation(catalog) === 'random' ? 'Random episodes, balanced show turns. Multipart stories stay together.' : 'Episodes in order within each show.'} Your station clock stays stable across refreshes.`;
   if (!active) {
     $('playing-show').textContent = position.current.show.title.toUpperCase();
     $('playing-title').textContent = position.current.episode.title;
@@ -240,31 +251,32 @@ function renderGuide() {
 }
 
 function renderLibrary() {
-  const query = $('search').value.trim().toLocaleLowerCase();
-  const movies = catalog.shows.find(show => show.id === MOVIE_SHOW_ID);
-  const movieMatch = movies && (movies.title.toLocaleLowerCase().includes(query) || movies.episodes.some(episode => episode.title.toLocaleLowerCase().includes(query)));
-  const movieVisible = ['mixed', 'scifi'].includes(catalog.settings.channel) && movieMatch;
-  $('movie-section').hidden = !movieVisible;
-  const readyMovies = movies?.episodes.filter(episode => episode.kind === 'episode' && parseDuration(episode.durationSeconds) && stationSource(episode)).length || 0;
-  $('movie-count').textContent = `${readyMovies} checked films · ${(movies?.episodes.length || 0) - readyMovies} wishlist / unchecked items`;
-  $('movie-shuffle').disabled = !readyMovies;
-  const shows = channelShows().filter(s => s.id !== MOVIE_SHOW_ID && s.title.toLocaleLowerCase().includes(query));
-  const itemCount = channelShows().reduce((n, show) => n + show.episodes.length, 0);
-  $('library-count').textContent = `${channelShows().length} shows & collections · ${itemCount} catalog episodes and items`;
-  $('library-empty').hidden = shows.length > 0 || movieVisible;
-  $('library-grid').replaceChildren(...shows.map(s => {
-    const card = element('article', null, 'show-card');
-    const art = button('', () => openShow(s.id), 'show-art');
-    art.style.setProperty('--tile', tiles[catalog.shows.indexOf(s) % tiles.length]);
-    art.setAttribute('aria-label', `View episodes and sources for ${s.title}`);
-    art.append(element('small', s.id.endsWith('-bumps') ? 'NETWORK / BUMPS & INTERSTITIALS' : s.id === COMMERCIAL_SHOW_ID ? 'VINTAGE / COMMERCIALS' : s.channel === 'late-night' ? 'LATE NIGHT / ADULT ANIMATION' : s.channel === 'seventies' ? '70s / PRIME TIME' : s.channel === 'comedy' ? 'COMEDY / CLASSIC LAUGHS' : s.channel === 'action' ? 'ACTION / ADVENTURE' : s.channel === 'scifi' ? 'SCI-FI / RETRO FUTURES' : 'SATURDAY / MORNING'), element('strong', s.title));
-    const count = s.episodes.length, live = s.episodes.filter(e => e.kind === 'episode' && stationSource(e) && e.durationSeconds > 0).length;
-    let status = 'No episode sources yet · add yours';
-    if (count) status = (s.id === COMMERCIAL_SHOW_ID || s.id.endsWith('-bumps')) ? `${count} optional break clips · ${catalog.settings.bumpers ? 'enabled between stories' : 'off until enabled'}` : live ? `${live} in live rotation · ${count} catalog ${count === 1 ? 'item' : 'items'}` : `${count} ${count === 1 ? 'source item' : 'source items'} · watch from the library`;
-    card.append(art, element('h3', s.title, 'show-title'), element('p', status, `show-status${live ? ' available' : ''}`));
-    return card;
+  const filters={query:$('search').value,channel:$('library-channel')?.value||'all',genre:$('library-genre')?.value||'all',decade:$('library-decade')?.value||'all',availability:$('library-availability')?.value||'all',sort:$('library-sort')?.value||'title'};
+  const all=catalog.shows.filter(s=>s.id!==MOVIE_SHOW_ID),shows=browseLibrary(all,libraryMetadata,filters);
+  const movies=catalog.shows.find(s=>s.id===MOVIE_SHOW_ID),q=filters.query.trim().toLocaleLowerCase();
+  const readyMovies=movies?playableEpisodes(movies):0;
+  const movieVisible=movies&&['all','scifi'].includes(filters.channel)&&filters.genre==='all'&&['all','unknown'].includes(filters.decade)&&(filters.availability==='all'||(filters.availability==='playable'?readyMovies>0:readyMovies===0))&&(!q||movies.title.toLocaleLowerCase().includes(q)||movies.episodes.some(e=>e.title.toLocaleLowerCase().includes(q)));
+  $('movie-section').hidden=!movieVisible;
+  $('movie-count').textContent=`${readyMovies} checked films · ${(movies?.episodes.length||0)-readyMovies} wishlist / unchecked items`;$('movie-shuffle').disabled=!readyMovies;
+  const itemCount=shows.reduce((n,show)=>n+show.episodes.length,0)+(movieVisible?movies.episodes.length:0);
+  $('library-count').textContent=`${shows.length+(movieVisible?1:0)} of ${catalog.shows.length} shows & collections · ${itemCount.toLocaleString()} episodes & items`;
+  if($('library-source-note'))$('library-source-note').textContent=libraryUpdatedAt?`Shared catalog updated ${new Date(libraryUpdatedAt).toLocaleDateString([],{month:'short',day:'numeric',year:'numeric'})}. Browsing filters do not change your tuned channel.`:'Browsing the full library. Filters do not change your tuned channel.';
+  $('library-empty').hidden=shows.length>0||movieVisible;
+  $('library-grid').replaceChildren(...shows.map(show=>{
+    const info=libraryMetadata[show.id],genres=showGenres(info),card=element('article',null,'show-card');card.dataset.showId=show.id;
+    const art=button('',()=>openShow(show.id),'show-art');art.setAttribute('aria-label',`View episodes and sources for ${show.title}`);
+    if(info?.image){const img=element('img',null,'show-backdrop');img.src=info.image;img.alt='';img.loading='lazy';img.decoding='async';img.addEventListener('error',()=>{img.remove();art.classList.remove('has-art');});art.append(img);art.classList.add('has-art');if(info.imageRole==='title-art')art.classList.add('has-title-art');}
+    const channel=CHANNELS.find(c=>c.id===show.channel);art.append(element('small',[info?.year,channel?.name].filter(Boolean).join(' · '),'art-kicker'));
+    if(info?.logo){const logo=element('img',null,'show-logo');logo.src=info.logo;logo.alt='';logo.loading='lazy';logo.decoding='async';logo.addEventListener('error',()=>{logo.remove();art.append(element('strong',show.title,'art-title'));});art.append(logo);}else art.append(element('strong',show.title,'art-title'));
+    const live=playableEpisodes(show),count=show.episodes.length;let status=live?`${live} checked ${live===1?'episode':'episodes'}`:count?`${count} listed · no checked episodes`:'Wishlist · no episode sources';
+    if(show.id===COMMERCIAL_SHOW_ID||show.id.endsWith('-bumps'))status=`${count} break clips`;
+    card.append(art,element('h3',show.title,'show-title'));
+    if(info?.year||genres.length){const end=info?.ended?.slice(0,4),years=info?.year?(end&&end!==String(info.year)?`${info.year}–${end}`:String(info.year)):null;card.append(element('p',[years,genres.slice(0,2).join(' / ')].filter(Boolean).join(' · '),'show-library-meta'));}
+    card.append(element('p',status,`show-status${live?' available':''}`));return card;
   }));
 }
+function syncLibraryGenres(){const select=$('library-genre');if(!select)return;const previous=select.value,genres=[...new Set(Object.values(libraryMetadata).flatMap(showGenres))].sort();select.replaceChildren(...['all',...genres].map(value=>{const option=element('option',value==='all'?'All genres':value);option.value=value;return option;}));if([...select.options].some(o=>o.value===previous))select.value=previous;}
+async function loadLibraryArtwork(){try{const response=await fetch(new URL('../data/library-art.json',import.meta.url));if(!response.ok)return;const data=await response.json();if(data.version!==1||!data.shows)return;libraryMetadata=data.shows;syncLibraryGenres();renderLibrary();}catch{/* The catalog remains browsable without artwork metadata. */}}
 
 function render() { renderChannels(); renderGuide(); renderLibrary(); renderDials(); stationGuide.render();
   if(guideJumpPending&&(ownerMode||publicCatalogReady)&&!$('guide').hidden){guideJumpPending=false;requestAnimationFrame(()=>{if(!$('guide').hidden)$(innerWidth<=1000?'screen-column':'guide').scrollIntoView({block:'start'});});}
@@ -279,6 +291,7 @@ function openShow(showId) {
   $('show-shuffle').textContent = show.id === MOVIE_SHOW_ID ? '▶ Random movie stream' : '▶ Shuffle this show';
   $('show-add').textContent = show.id === MOVIE_SHOW_ID ? '+ Add a film source' : '+ Add an episode source';
   $('show-shuffle').disabled = !show.episodes.some(episode => episode.kind === 'episode' && episode.durationSeconds > 0 && stationSource(episode));
+  const credit=$('show-art-source'),reference=libraryMetadata[show.id]?.sourceUrl;if(credit){credit.hidden=!reference;if(reference)credit.href=reference;}
   const imdb = $('show-imdb'); imdb.hidden = !show.imdbUrl;
   if (show.imdbUrl) imdb.href = show.imdbUrl;
   const rows = show.episodes.slice().sort((a, b) => a.season - b.season || a.number - b.number).map(e => {
@@ -593,6 +606,10 @@ $('close-show').addEventListener('click', () => $('show-dialog').close());
 for (const id of ['close-source', 'cancel-source']) $(id).addEventListener('click', () => { if (!importBusy) $('source-dialog').close(); });
 $('source-dialog').addEventListener('cancel', event => { if (importBusy) event.preventDefault(); });
 $('search').addEventListener('input', renderLibrary);
+for(const id of ['library-channel','library-genre','library-decade','library-availability','library-sort'])$(id)?.addEventListener('change',renderLibrary);
+if($('library-channel'))for(const channel of CHANNELS.filter(c=>c.id!=='mixed')){const option=element('option',channel.name);option.value=channel.id;$('library-channel').append(option);}
+$('library-reset')?.addEventListener('click',()=>{$('search').value='';for(const id of ['library-channel','library-genre','library-decade','library-availability'])$(id).value='all';$('library-sort').value='title';renderLibrary();});
+void loadLibraryArtwork();
 for (const id of ['tune-live', 'standby-play']) $(id).addEventListener('click', tuneLive);
 $('start-over').addEventListener('click', startOver);
 for (const id of ['skip', 'skip-error']) $(id).addEventListener('click', () => advance(true));
@@ -869,8 +886,8 @@ $('dial-random').addEventListener('click', async () => {
   if (await configureStream(patch, true)) notify(patch.streamShow ? `Random show: ${catalog.shows.find(show => show.id === patch.streamShow).title}.` : `New random mix: ${selectedChannel().name}.`);
 });
 function renderStreamSettings() {
-  $('settings-summary').textContent=`${catalog.settings.streamShows?'Your channel':catalog.settings.rotation==='random'?'Random mix':'Episode order'} · Commercials ${catalog.settings.bumpers?'on':'off'}`;
-  $('stream-rotation').value = catalog.settings.rotation;
+  $('settings-summary').textContent=`${catalog.settings.streamShows?'Your channel':activeRotation(catalog)==='random'?'Random mix':'Episode order'} · Commercials ${catalog.settings.bumpers?'on':'off'}`;
+  $('stream-rotation').value = activeRotation(catalog);
   const all = element('option', catalog.settings.channel === 'mixed' ? 'Any show · everything' : `Any show · ${selectedChannel().name}`); all.value = '';
   $('stream-show').replaceChildren(all, ...channelShows().map(show => {
     const count = show.episodes.filter(episode => episode.kind === 'episode' && episode.durationSeconds > 0 && stationSource(episode)).length;
@@ -880,17 +897,19 @@ function renderStreamSettings() {
   $('stream-run').value = String(catalog.settings.storiesPerTurn);
   $('commercial-count').value = String(catalog.settings.commercialCount);
   $('commercial-count').disabled = !catalog.settings.bumpers;
-  $('stream-run').disabled = catalog.settings.rotation !== 'random' || !!catalog.settings.streamShow;
-  $('stream-reshuffle').disabled = catalog.settings.rotation !== 'random';
+  $('stream-run').disabled = activeRotation(catalog) !== 'random' || !!catalog.settings.streamShow;
+  $('stream-reshuffle').disabled = activeRotation(catalog) !== 'random';
   const title = catalog.shows.find(show => show.id === catalog.settings.streamShow)?.title;
-  $('stream-description').textContent = catalog.settings.rotation === 'random'
+  $('stream-description').textContent = activeRotation(catalog) === 'random'
     ? title ? catalog.settings.streamShow === MOVIE_SHOW_ID ? 'Random feature films only. Movies stay out of ordinary TV mixes; each film plays before the pool repeats.' : `Random ${title} episodes, continuously. Each story plays before its pool repeats.`
       : `Random episodes from random shows · ${catalog.settings.storiesPerTurn} ${catalog.settings.storiesPerTurn === 1 ? 'story' : 'stories'} per show turn. Smaller libraries keep their turn; multipart stories stay together. Serialized dramas stay in episode order.`
     : `${title || 'All shows in this channel'} in episode order. Switch to random for a shuffled stream.`;
 }
 async function configureStream(patch, play = false) {
   const wasPlaying = transportState()?.paused === false;
-  const next = copyCatalog(); Object.assign(next.settings, patch); if('shuffleSeed' in patch&&next.settings.channelRemixes){delete next.settings.channelRemixes[next.settings.channel];} if ('channel' in patch || 'streamShow' in patch) next.settings.streamShows = null; next.epoch = Date.now() / 1000;if(next.settings.channelRemixes?.[next.settings.channel])next.settings.channelRemixes[next.settings.channel].epoch=next.epoch;
+  const custom=isCustomChannel(catalog)&&!('channel' in patch||'streamShow' in patch);
+  if(custom){patch={...patch};if('rotation' in patch){patch.customRotation=patch.rotation;delete patch.rotation;}if('shuffleSeed' in patch){patch.customSeed=patch.shuffleSeed;delete patch.shuffleSeed;}}
+  const next = copyCatalog(); Object.assign(next.settings, patch); if('shuffleSeed' in patch&&next.settings.channelRemixes){delete next.settings.channelRemixes[next.settings.channel];} if ('channel' in patch || 'streamShow' in patch) next.settings.streamShows = null; if(custom)next.settings.customEpoch=Date.now()/1000;else{next.epoch = Date.now() / 1000;if(next.settings.channelRemixes?.[next.settings.channel])next.settings.channelRemixes[next.settings.channel].epoch=next.epoch;}
   if (!await commitSettings(next)) { renderStreamSettings(); return false; }
   stopPlayer(); render();
   if (play || wasPlaying) tuneLive();
@@ -976,6 +995,7 @@ async function loadOwnerSharedCatalog() {
   return publisherRequest('shared');
 }
 async function applySharedCatalog(result) {
+  if(result.manifest?.updatedAt)libraryUpdatedAt=result.manifest.updatedAt;
   const next=mergePublishedCatalog(result.catalog,ownerMode?catalog:viewerPreferences);next.publishedRevision=result.revision;
   if(!ownerMode)viewerPreferences={settings:next.settings,epoch:next.epoch};
   const currentSource=active&&catalog.shows.find(show=>show.id===active.showId)?.episodes.find(episode=>episode.id===active.episodeId)?.sources.find(source=>source.id===active.sourceId);

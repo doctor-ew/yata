@@ -1,4 +1,4 @@
-import {scheduleSeed} from './remix.mjs';
+import {scheduleSeed,activeRotation} from './remix.mjs';
 import { MOVIE_SHOW_ID } from './collections.mjs';
 import { CHANNELS, SHOW_CHANNEL_IDS, migratedShowChannel, mixIncludes, SERIAL_SHOW_IDS } from './channels.mjs';
 import { randomRotation, createCommercialBreak } from './shuffle.mjs';
@@ -124,6 +124,13 @@ export function validateCatalog(raw) {
   const commercialCount = raw.settings.commercialCount ?? 1;
   const streamShow = raw.settings.streamShow ?? null;
   const streamShows = raw.settings.streamShows ?? null;
+  const customShows=raw.settings.customShows??streamShows;
+  const customSeed=raw.settings.customSeed??shuffleSeed,customEpoch=raw.settings.customEpoch??raw.epoch;
+  const customTitle=raw.settings.customTitle??'Your Channel',customRotation=raw.settings.customRotation??rotation;
+  if(customShows!==null&&!['random','ordered'].includes(customRotation))fail('Invalid channel 00 rotation.');
+  if(customShows!==null&&(!Array.isArray(customShows)||customShows.length<1||customShows.length>12||new Set(customShows).size!==customShows.length))fail('Choose 1–12 distinct shows for channel 00.');
+  if(customShows!==null){customShows.forEach(id);if(!Number.isInteger(customSeed)||customSeed<0||customSeed>4294967295||!Number.isFinite(customEpoch)||customEpoch<0)fail('Invalid custom channel clock.');text(customTitle,'custom channel title',80);}
+
   const mixChannels = raw.settings.mixChannels ?? null;
   const channelRemixes = raw.settings.channelRemixes ?? {};
   if(!channelRemixes||typeof channelRemixes!=='object'||Array.isArray(channelRemixes)||Object.entries(channelRemixes).some(([key,value])=>!CHANNELS.some(c=>c.id===key)||!value||typeof value!=='object'||!Number.isInteger(value.seed)||value.seed<0||value.seed>4294967295||!Number.isFinite(value.epoch)||value.epoch<0))fail('Invalid channel remix settings.');
@@ -175,6 +182,7 @@ export function validateCatalog(raw) {
   const migratedStream = streamShow !== null && raw.shows.find(show=>show.id===streamShow)?.channel===raw.settings.channel && shows.find(show=>show.id===streamShow)?.channel!==raw.settings.channel;
   const channel = migratedStream ? shows.find(show=>show.id===streamShow).channel : raw.settings.channel;
   if (streamShows !== null && (streamShow !== null || channel !== 'mixed' || streamShows.some(sid => sid === COMMERCIAL_SHOW_ID || sid === MOVIE_SHOW_ID || !shows.some(show => show.id === sid)))) fail('Invalid bespoke channel selection.');
+  if(customShows!==null&&customShows.some(sid=>sid===COMMERCIAL_SHOW_ID||sid===MOVIE_SHOW_ID||!shows.some(s=>s.id===sid)))fail('Invalid saved channel 00 lineup.');
   if (streamShow === COMMERCIAL_SHOW_ID) fail('Choose a program show for the stream.');
   if (streamShow !== null && !shows.some(show => show.id === streamShow && (channel === 'mixed' || show.channel === channel))) fail('The selected stream show is not in this channel.');
   if (raw.publishedRevision !== undefined && !/^[a-f0-9]{64}$/.test(raw.publishedRevision)) fail('Invalid published catalog revision.');
@@ -189,7 +197,7 @@ export function validateCatalog(raw) {
     const sources = input.sources.map(entry=>({showId:id(entry.showId),url:parseSourceUrl(entry.url).url}));
     if (episodes.length || sources.length) exclusions = {episodes,sources};
   }
-  return { version: 1, epoch: raw.epoch, shows, ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}), ...(mixChannels!==null?{mixChannels:[...mixChannels]}:{}),...(Object.keys(channelRemixes).length?{channelRemixes:Object.fromEntries(Object.entries(channelRemixes).map(([key,value])=>[key,{seed:value.seed,epoch:value.epoch}]))}:{}) } };
+  return { version: 1, epoch: raw.epoch, shows, ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}),...(customShows?{customShows:[...customShows],customTitle:customTitle.trim(),customSeed,customEpoch,customRotation}:{}), ...(mixChannels!==null?{mixChannels:[...mixChannels]}:{}),...(Object.keys(channelRemixes).length?{channelRemixes:Object.fromEntries(Object.entries(channelRemixes).map(([key,value])=>[key,{seed:value.seed,epoch:value.epoch}]))}:{}) } };
 }
 
 export function parseCatalogJson(input) {
@@ -244,7 +252,7 @@ export function buildSchedule(catalog, channel = catalog.settings.channel) {
     .map(episode => ({ show: s, episode, source: stationSource(episode), duration: episode.durationSeconds }));
   const queues = shows.map(s => entries(s).filter(e => e.episode.kind === 'episode'));
   const bumpers = bumperPool(catalog, shows);
-  if ((catalog.settings.rotation ?? 'random') === 'random') return randomRotation(queues, bumpers, { seed: scheduleSeed(catalog,channel), scope: `${channel}:${catalog.settings.streamShows?.join(',') || catalog.settings.streamShow || 'all'}`, storiesPerTurn: catalog.settings.storiesPerTurn ?? 1, orderedShowIds: SERIAL_SHOW_IDS, includeBumpers: catalog.settings.bumpers, commercialCount: catalog.settings.commercialCount ?? 1 });
+  if (activeRotation(catalog) === 'random') return randomRotation(queues, bumpers, { seed: scheduleSeed(catalog,channel), scope: `${channel}:${catalog.settings.streamShows?.join(',') || catalog.settings.streamShow || 'all'}`, storiesPerTurn: catalog.settings.storiesPerTurn ?? 1, orderedShowIds: SERIAL_SHOW_IDS, includeBumpers: catalog.settings.bumpers, commercialCount: catalog.settings.commercialCount ?? 1 });
   const result = [];
   const nextBreak = createCommercialBreak(bumpers, { seed: scheduleSeed(catalog,channel), scope: `${channel}:${catalog.settings.streamShows?.join(',') || catalog.settings.streamShow || 'all'}:ordered`, commercialCount: catalog.settings.commercialCount ?? 1, randomize: false });
   while (queues.some(q => q.length)) {

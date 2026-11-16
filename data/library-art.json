@@ -1,0 +1,3656 @@
+{
+  "version": 1,
+  "provider": {
+    "name": "TVmaze",
+    "url": "https://www.tvmaze.com/api",
+    "license": "CC BY-SA"
+  },
+  "shows": {
+    "a-team": {
+      "title": "The A-Team",
+      "premiered": "1983-01-23",
+      "ended": "1987-03-08",
+      "year": 1983,
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1058/the-a-team",
+      "tvmazeId": 1058,
+      "image": "assets/show-art/a-team.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/557952.jpg"
+    },
+    "adult-swim-bumps": {
+      "title": "Adult Swim · vintage bumps",
+      "premiered": null,
+      "year": null,
+      "genres": [
+        "Collections"
+      ],
+      "sourceUrl": "https://archive.org/details/adult-swim-first-aid-how-to-bumper-brak-heimlich-maneuver-early-2003-crown-princ",
+      "image": "assets/show-art/adult-swim-bumps.webp",
+      "imageSource": "https://archive.org/download/adult-swim-first-aid-how-to-bumper-brak-heimlich-maneuver-early-2003-crown-princ/__ia_thumb.jpg"
+    },
+    "aeon-flux": {
+      "title": "Aeon Flux",
+      "premiered": "1991-09-01",
+      "ended": "1995-10-10",
+      "year": 1991,
+      "genres": [
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/1909/aeon-flux",
+      "tvmazeId": 1909,
+      "image": "assets/show-art/aeon-flux.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/227/568716.jpg"
+    },
+    "airwolf": {
+      "title": "Airwolf",
+      "premiered": "1984-01-22",
+      "ended": "1987-08-07",
+      "year": 1984,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/680/airwolf",
+      "tvmazeId": 680,
+      "image": "assets/show-art/airwolf.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/271/678323.jpg"
+    },
+    "alf": {
+      "title": "ALF",
+      "premiered": "1986-09-22",
+      "ended": "1996-02-17",
+      "year": 1986,
+      "genres": [
+        "Comedy",
+        "Family",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/848/alf",
+      "tvmazeId": 848,
+      "image": "assets/show-art/alf.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/225/563597.jpg"
+    },
+    "alien-nation": {
+      "title": "Alien Nation",
+      "premiered": "1989-09-18",
+      "ended": "1997-07-29",
+      "year": 1989,
+      "genres": [
+        "Drama",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/3646/alien-nation",
+      "tvmazeId": 3646,
+      "image": "assets/show-art/alien-nation.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/75/189665.jpg"
+    },
+    "athf": {
+      "title": "Aqua Teen Hunger Force",
+      "premiered": "2000-12-30",
+      "ended": "2023-12-17",
+      "year": 2000,
+      "genres": [
+        "Comedy",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/382/aqua-teen-hunger-force",
+      "tvmazeId": 382,
+      "image": "assets/show-art/athf.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/13/32875.jpg"
+    },
+    "automan": {
+      "title": "Automan",
+      "premiered": "1983-12-15",
+      "ended": "1984-04-02",
+      "year": 1983,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/8733/automan",
+      "tvmazeId": 8733,
+      "image": "assets/show-art/automan.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/31/77737.jpg"
+    },
+    "babylon-five": {
+      "title": "Babylon 5",
+      "premiered": "1993-02-22",
+      "ended": "2023-08-15",
+      "year": 1993,
+      "genres": [
+        "Drama",
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/475/babylon-5",
+      "tvmazeId": 475,
+      "image": "assets/show-art/babylon-five.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/558689.jpg"
+    },
+    "baretta": {
+      "title": "Baretta",
+      "premiered": "1975-01-17",
+      "ended": "1978-05-18",
+      "year": 1975,
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/8092/baretta",
+      "tvmazeId": 8092,
+      "image": "assets/show-art/baretta.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/29/73504.jpg"
+    },
+    "barnaby-jones": {
+      "title": "Barnaby Jones",
+      "premiered": "1973-01-28",
+      "ended": "1980-04-03",
+      "year": 1973,
+      "genres": [
+        "Drama",
+        "Crime",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/10066/barnaby-jones",
+      "tvmazeId": 10066,
+      "image": "assets/show-art/barnaby-jones.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/80/202035.jpg"
+    },
+    "barney-miller": {
+      "title": "Barney Miller",
+      "premiered": "1975-01-23",
+      "ended": "1982-05-20",
+      "year": 1975,
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/5782/barney-miller",
+      "tvmazeId": 5782,
+      "image": "assets/show-art/barney-miller.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/80/202046.jpg"
+    },
+    "batman-tas": {
+      "title": "Batman: The Animated Series",
+      "premiered": "1992-09-05",
+      "ended": "1998-03-17",
+      "year": 1992,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/757/batman-the-animated-series",
+      "tvmazeId": 757,
+      "image": "assets/show-art/batman-tas.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/224/562274.jpg"
+    },
+    "battle-planets": {
+      "title": "Battle of the Planets",
+      "premiered": "1978-09-18",
+      "ended": "2003-09-23",
+      "year": 1978,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/7758/battle-of-the-planets",
+      "tvmazeId": 7758,
+      "image": "assets/show-art/battle-planets.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/65/163896.jpg"
+    },
+    "battlestar": {
+      "title": "Battlestar Galactica",
+      "premiered": "1978-09-17",
+      "ended": "1979-04-29",
+      "year": 1978,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1059/battlestar-galactica",
+      "tvmazeId": 1059,
+      "image": "assets/show-art/battlestar.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/225/564237.jpg"
+    },
+    "beans-baxter": {
+      "title": "The New Adventures of Beans Baxter",
+      "premiered": "1987-07-18",
+      "ended": "1987-11-28",
+      "year": 1987,
+      "genres": [
+        "Comedy",
+        "Adventure",
+        "Fantasy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/60375/the-new-adventures-of-beans-baxter",
+      "tvmazeId": 60375,
+      "image": "assets/show-art/beans-baxter.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/394/987196.jpg"
+    },
+    "beavis-butthead": {
+      "title": "Beavis and Butt-Head",
+      "premiered": "1992-09-22",
+      "ended": "2011-12-29",
+      "year": 1992,
+      "genres": [
+        "Comedy",
+        "Music"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/910/beavis-and-butt-head",
+      "tvmazeId": 910,
+      "image": "assets/show-art/beavis-butthead.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/221/553459.jpg"
+    },
+    "benson": {
+      "title": "Benson",
+      "premiered": "1979-09-13",
+      "ended": "1986-04-19",
+      "year": 1979,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7348/benson",
+      "tvmazeId": 7348,
+      "image": "assets/show-art/benson.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/27/67813.jpg"
+    },
+    "bionic-six": {
+      "title": "Bionic Six",
+      "premiered": "1987-04-19",
+      "ended": "1987-11-12",
+      "year": 1987,
+      "genres": [
+        "Action",
+        "Children",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4282/bionic-six",
+      "tvmazeId": 4282,
+      "image": "assets/show-art/bionic-six.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/51131.jpg"
+    },
+    "bionic-woman": {
+      "title": "The Bionic Woman",
+      "premiered": "1976-01-14",
+      "ended": "1978-05-13",
+      "year": 1976,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/2140/the-bionic-woman",
+      "tvmazeId": 2140,
+      "image": "assets/show-art/bionic-woman.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/225/564530.jpg"
+    },
+    "birdman": {
+      "title": "Birdman",
+      "premiered": "1967-09-09",
+      "ended": "1968-01-20",
+      "year": 1967,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/53386/birdman",
+      "tvmazeId": 53386,
+      "image": "assets/show-art/birdman.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/295/739670.jpg"
+    },
+    "bj-bear": {
+      "title": "BJ and the Bear",
+      "premiered": "1979-02-10",
+      "ended": "1981-05-09",
+      "year": 1979,
+      "genres": [
+        "Comedy",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/3913/bj-and-the-bear",
+      "tvmazeId": 3913,
+      "image": "assets/show-art/bj-bear.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/79/199731.jpg"
+    },
+    "blackstar": {
+      "title": "Blackstar",
+      "premiered": "1981-09-12",
+      "ended": "1981-12-05",
+      "year": 1981,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/18769/blackstar",
+      "tvmazeId": 18769,
+      "image": "assets/show-art/blackstar.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/64/162463.jpg"
+    },
+    "blakes-seven": {
+      "title": "Blake's 7",
+      "premiered": "1978-01-02",
+      "ended": "1981-12-21",
+      "year": 1978,
+      "genres": [
+        "Drama",
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/6152/blakes-7",
+      "tvmazeId": 6152,
+      "image": "assets/show-art/blakes-seven.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/240/600371.jpg"
+    },
+    "blue-thunder": {
+      "title": "Blue Thunder",
+      "premiered": "1984-01-06",
+      "ended": "1984-04-16",
+      "year": 1984,
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/10729/blue-thunder",
+      "tvmazeId": 10729,
+      "image": "assets/show-art/blue-thunder.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/220/550347.jpg"
+    },
+    "brak-show": {
+      "title": "The Brak Show",
+      "premiered": "2000-12-21",
+      "ended": "2003-12-31",
+      "year": 2000,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/6234/the-brak-show",
+      "tvmazeId": 6234,
+      "image": "assets/show-art/brak-show.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/23/59984.jpg"
+    },
+    "bravestarr": {
+      "title": "BraveStarr",
+      "premiered": "1987-09-14",
+      "ended": "1988-03-18",
+      "year": 1987,
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4229/bravestarr",
+      "tvmazeId": 4229,
+      "image": "assets/show-art/bravestarr.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/228/570220.jpg"
+    },
+    "brisco-county": {
+      "title": "The Adventures of Brisco County, Jr.",
+      "premiered": "1993-08-27",
+      "ended": "1994-05-20",
+      "year": 1993,
+      "genres": [
+        "Adventure",
+        "Science-Fiction",
+        "Western"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1305/the-adventures-of-brisco-county-jr",
+      "tvmazeId": 1305,
+      "image": "assets/show-art/brisco-county.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/7/18481.jpg"
+    },
+    "buck-rogers": {
+      "title": "Buck Rogers in the 25th Century",
+      "premiered": "1979-09-20",
+      "ended": "1981-04-16",
+      "year": 1979,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1460/buck-rogers-in-the-25th-century",
+      "tvmazeId": 1460,
+      "image": "assets/show-art/buck-rogers.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/225/564178.jpg"
+    },
+    "butch-cassidy": {
+      "title": "Butch Cassidy & The Sundance Kids",
+      "premiered": "1973-09-08",
+      "ended": "1973-12-01",
+      "year": 1973,
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/20364/butch-cassidy-the-sundance-kids",
+      "tvmazeId": 20364,
+      "image": "assets/show-art/butch-cassidy.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/72/180227.jpg"
+    },
+    "cagney-lacey": {
+      "title": "Cagney & Lacey",
+      "premiered": "1982-03-25",
+      "ended": "1988-05-16",
+      "year": 1982,
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/12374/cagney-lacey",
+      "tvmazeId": 12374,
+      "image": "assets/show-art/cagney-lacey.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/42/105430.jpg"
+    },
+    "captain-caveman": {
+      "title": "Captain Caveman and the Teen Angels",
+      "premiered": "1977-09-10",
+      "ended": "1980-06-21",
+      "year": 1977,
+      "genres": [
+        "Comedy",
+        "Adventure",
+        "Mystery"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/7899/captain-caveman-and-the-teen-angels",
+      "tvmazeId": 7899,
+      "image": "assets/show-art/captain-caveman.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/28/72412.jpg"
+    },
+    "captain-n": {
+      "title": "Captain N: The Game Master",
+      "premiered": "1989-09-09",
+      "ended": "1991-10-26",
+      "year": 1989,
+      "genres": [
+        "Fantasy",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/13824/captain-n-the-game-master",
+      "tvmazeId": 13824,
+      "image": "assets/show-art/captain-n.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/228/570177.jpg"
+    },
+    "care-bears": {
+      "title": "Care Bears",
+      "premiered": "1985-09-14",
+      "ended": "1988-10-29",
+      "year": 1985,
+      "genres": [
+        "Comedy",
+        "Children",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/9218/care-bears",
+      "tvmazeId": 9218,
+      "image": "assets/show-art/care-bears.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/224/560717.jpg"
+    },
+    "cartoon-planet": {
+      "title": "Cartoon Planet",
+      "premiered": null,
+      "ended": "2014-02-08",
+      "year": 1995,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/33014/cartoon-planet",
+      "tvmazeId": 33014,
+      "providerPremiere": "1997-09-10",
+      "yearSource": "https://en.wikipedia.org/wiki/Cartoon_Planet",
+      "image": "assets/show-art/cartoon-planet.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/133/333201.jpg"
+    },
+    "centurions": {
+      "title": "Centurions",
+      "premiered": "1986-04-07",
+      "ended": "1986-12-12",
+      "year": 1986,
+      "genres": [
+        "Action",
+        "Children",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/6669/centurions",
+      "tvmazeId": 6669,
+      "image": "assets/show-art/centurions.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/25/63376.jpg"
+    },
+    "china-beach": {
+      "title": "China Beach",
+      "premiered": "1988-04-26",
+      "ended": "1991-07-22",
+      "year": 1988,
+      "genres": [
+        "Drama",
+        "War",
+        "Medical"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/4402/china-beach",
+      "tvmazeId": 4402,
+      "image": "assets/show-art/china-beach.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/121/303123.jpg"
+    },
+    "chips": {
+      "title": "CHiPs",
+      "premiered": "1977-09-15",
+      "ended": "1983-05-01",
+      "year": 1977,
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/881/chips",
+      "tvmazeId": 881,
+      "image": "assets/show-art/chips.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/221/553465.jpg"
+    },
+    "cities-gold": {
+      "title": "Les Mystérieuses Cités d'or",
+      "premiered": "1983-09-28",
+      "ended": "2021-01-29",
+      "year": 1983,
+      "genres": [
+        "Comedy",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/18469/les-mysterieuses-cites-dor",
+      "tvmazeId": 18469,
+      "image": "assets/show-art/cities-gold.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/63/157531.jpg"
+    },
+    "classic-doctor-who": {
+      "title": "Doctor Who",
+      "premiered": "1963-11-23",
+      "ended": "1996-05-12",
+      "year": 1963,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/766/doctor-who",
+      "tvmazeId": 766,
+      "image": "assets/show-art/classic-doctor-who.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/220/550802.jpg"
+    },
+    "clone-high": {
+      "title": "Clone High",
+      "premiered": "2002-11-02",
+      "ended": "2003-04-13",
+      "year": 2002,
+      "genres": [
+        "Comedy",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/1643/clone-high",
+      "tvmazeId": 1643,
+      "image": "assets/show-art/clone-high.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/566115.jpg"
+    },
+    "clue-club": {
+      "title": "Clue Club",
+      "premiered": "1976-08-14",
+      "ended": "1976-11-25",
+      "year": 1976,
+      "genres": [],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/17776/clue-club",
+      "tvmazeId": 17776,
+      "image": "assets/show-art/clue-club.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/59/149824.jpg"
+    },
+    "count-duckula": {
+      "title": "Count Duckula",
+      "premiered": "1988-09-06",
+      "ended": "1993-02-16",
+      "year": 1988,
+      "genres": [
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/9486/count-duckula",
+      "tvmazeId": 9486,
+      "image": "assets/show-art/count-duckula.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/566829.jpg"
+    },
+    "critic": {
+      "title": "The Critic",
+      "premiered": "1994-01-26",
+      "ended": "2001-09-01",
+      "year": 1994,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/697/the-critic",
+      "tvmazeId": 697,
+      "image": "assets/show-art/critic.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/559284.jpg"
+    },
+    "danger-mouse": {
+      "title": "Danger Mouse",
+      "premiered": "1981-09-28",
+      "ended": "1992-03-19",
+      "year": 1981,
+      "genres": [
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/10856/danger-mouse",
+      "tvmazeId": 10856,
+      "image": "assets/show-art/danger-mouse.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/36/91453.jpg"
+    },
+    "daria": {
+      "title": "Daria",
+      "premiered": "1997-03-03",
+      "ended": "2002-01-21",
+      "year": 1997,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/2554/daria",
+      "tvmazeId": 2554,
+      "image": "assets/show-art/daria.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/219/548217.jpg"
+    },
+    "defenders-earth": {
+      "title": "Defenders of the Earth",
+      "premiered": "1986-09-08",
+      "ended": "1986-12-05",
+      "year": 1986,
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4474/defenders-of-the-earth",
+      "tvmazeId": 4474,
+      "image": "assets/show-art/defenders-earth.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/51905.jpg"
+    },
+    "dino-riders": {
+      "title": "Dino-Riders",
+      "premiered": "1988-10-01",
+      "ended": "1988-12-31",
+      "year": 1988,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/19139/dino-riders",
+      "tvmazeId": 19139,
+      "image": "assets/show-art/dino-riders.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/66/167099.jpg"
+    },
+    "dinosaucers": {
+      "title": "Dinosaucers",
+      "premiered": "1987-09-12",
+      "ended": "1988-12-03",
+      "year": 1987,
+      "genres": [
+        "Comedy",
+        "Action",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/27509/dinosaucers",
+      "tvmazeId": 27509,
+      "image": "assets/show-art/dinosaucers.webp",
+      "imageSource": "https://archive.org/download/dinosaucers-ep.-08-be-prepared-480p-amzn-web-dl/DINOSAUCERS%20-%20Ep.%2001%20-%20Dinosaur%20Valley%20(480p%20-%20AMZN%20Web-DL).ia.mp4#t=60",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/dinosaucers-ep.-08-be-prepared-480p-amzn-web-dl"
+    },
+    "double-dare": {
+      "title": "Double Dare",
+      "premiered": "1976-12-13",
+      "ended": "1977-04-29",
+      "year": 1976,
+      "genres": [],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/22454/double-dare",
+      "tvmazeId": 22454,
+      "image": "assets/show-art/double-dare.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/82/206547.jpg"
+    },
+    "dr-katz": {
+      "title": "Dr. Katz, Professional Therapist",
+      "premiered": "1995-05-28",
+      "ended": "2002-02-13",
+      "year": 1995,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/7218/dr-katz-professional-therapist",
+      "tvmazeId": 7218,
+      "image": "assets/show-art/dr-katz.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/26/67168.jpg"
+    },
+    "dragons-lair": {
+      "title": "Dragon's Lair",
+      "premiered": "1984-09-08",
+      "ended": "1984-12-01",
+      "year": 1984,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/22381/dragons-lair",
+      "tvmazeId": 22381,
+      "image": "assets/show-art/dragons-lair.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/412/1032389.jpg"
+    },
+    "drak-pack": {
+      "title": "Drak Pack",
+      "premiered": "1980-09-06",
+      "ended": "1980-12-27",
+      "year": 1980,
+      "genres": [
+        "Comedy",
+        "Adventure",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/22361/drak-pack",
+      "tvmazeId": 22361,
+      "image": "assets/show-art/drak-pack.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/82/205000.jpg"
+    },
+    "duckman": {
+      "title": "Duckman: Private Dick/Family Man",
+      "premiered": "1994-03-05",
+      "ended": "1997-09-06",
+      "year": 1994,
+      "genres": [
+        "Comedy",
+        "Crime"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/414/duckman-private-dickfamily-man",
+      "tvmazeId": 414,
+      "image": "assets/show-art/duckman.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/565615.jpg"
+    },
+    "dukes": {
+      "title": "The Dukes of Hazzard",
+      "premiered": "1979-01-26",
+      "ended": "1985-02-08",
+      "year": 1979,
+      "genres": [
+        "Comedy",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/4284/the-dukes-of-hazzard",
+      "tvmazeId": 4284,
+      "image": "assets/show-art/dukes.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/567413.jpg"
+    },
+    "dungeons-dragons": {
+      "title": "Dungeons & Dragons",
+      "premiered": "1983-09-17",
+      "ended": "1985-12-07",
+      "year": 1983,
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/1129/dungeons-dragons",
+      "tvmazeId": 1129,
+      "image": "assets/show-art/dungeons-dragons.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/566260.jpg"
+    },
+    "dynomutt": {
+      "title": "Dynomutt, Dog Wonder",
+      "premiered": "1976-09-11",
+      "ended": "1977-10-29",
+      "year": 1976,
+      "genres": [
+        "Comedy",
+        "Action",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/22070/dynomutt-dog-wonder",
+      "tvmazeId": 22070,
+      "image": "assets/show-art/dynomutt.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/80/200943.jpg"
+    },
+    "eerie-indiana": {
+      "title": "Eerie, Indiana",
+      "premiered": "1991-09-15",
+      "ended": "1993-12-09",
+      "year": 1991,
+      "genres": [
+        "Adventure",
+        "Science-Fiction",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/6499/eerie-indiana",
+      "tvmazeId": 6499,
+      "image": "assets/show-art/eerie-indiana.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/566538.jpg"
+    },
+    "ewoks": {
+      "title": "Ewoks",
+      "premiered": "1985-09-07",
+      "ended": "1986-12-13",
+      "year": 1985,
+      "genres": [],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/5062/ewoks",
+      "tvmazeId": 5062,
+      "image": "assets/show-art/ewoks.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/228/571290.jpg"
+    },
+    "fall-guy": {
+      "title": "The Fall Guy",
+      "premiered": "1981-11-04",
+      "ended": "1986-05-02",
+      "year": 1981,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/2031/the-fall-guy",
+      "tvmazeId": 2031,
+      "image": "assets/show-art/fall-guy.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/11/28370.jpg"
+    },
+    "fantastic-journey": {
+      "title": "The Fantastic Journey",
+      "premiered": "1977-02-03",
+      "ended": "1977-06-16",
+      "year": 1977,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/6276/the-fantastic-journey",
+      "tvmazeId": 6276,
+      "image": "assets/show-art/fantastic-journey-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/530/1325155.jpg",
+      "imageRole": "title-art"
+    },
+    "farscape": {
+      "title": "Farscape",
+      "premiered": "1999-03-19",
+      "ended": "2003-03-21",
+      "year": 1999,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/429/farscape",
+      "tvmazeId": 429,
+      "image": "assets/show-art/farscape-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/394/986111.jpg",
+      "imageRole": "title-art"
+    },
+    "fat-albert": {
+      "title": "Fat Albert and the Cosby Kids",
+      "premiered": "1972-09-09",
+      "ended": "1985-08-10",
+      "year": 1972,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/13681/fat-albert-and-the-cosby-kids",
+      "tvmazeId": 13681,
+      "image": "assets/show-art/fat-albert.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/47/118106.jpg"
+    },
+    "flash-1990": {
+      "title": "The Flash",
+      "premiered": "1990-09-20",
+      "ended": "1991-05-18",
+      "year": 1990,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/528/the-flash",
+      "tvmazeId": 528,
+      "image": "assets/show-art/flash-1990.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/225/563491.jpg"
+    },
+    "flash-gordon-1979": {
+      "title": "The New Animated Adventures of Flash Gordon",
+      "premiered": "1979-09-22",
+      "ended": "1982-11-06",
+      "year": 1979,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/15732/the-new-animated-adventures-of-flash-gordon",
+      "tvmazeId": 15732,
+      "image": "assets/show-art/flash-gordon-1979.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/53/132700.jpg"
+    },
+    "flintstones": {
+      "title": "The Flintstones",
+      "premiered": "1960-09-30",
+      "ended": "1966-04-01",
+      "year": 1960,
+      "genres": [
+        "Comedy",
+        "Adventure",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/2143/the-flintstones",
+      "tvmazeId": 2143,
+      "image": "assets/show-art/flintstones.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/565952.jpg"
+    },
+    "frankenstein-impossibles": {
+      "title": "Frankenstein Jr. and The Impossibles",
+      "premiered": "1966-09-10",
+      "ended": "1967-01-07",
+      "year": 1966,
+      "genres": [],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/76394/frankenstein-jr-and-the-impossibles",
+      "tvmazeId": 76394,
+      "image": "assets/show-art/frankenstein-impossibles.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/516/1290761.jpg"
+    },
+    "funky-phantom": {
+      "title": "The Funky Phantom",
+      "premiered": "1971-09-11",
+      "ended": "1972-01-01",
+      "year": 1971,
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/29835/the-funky-phantom",
+      "tvmazeId": 29835,
+      "image": "assets/show-art/funky-phantom.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/118/296454.jpg"
+    },
+    "galaxy-rangers": {
+      "title": "The Adventures of the Galaxy Rangers",
+      "premiered": "1986-09-14",
+      "ended": "1986-12-11",
+      "year": 1986,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4233/the-adventures-of-the-galaxy-rangers",
+      "tvmazeId": 4233,
+      "image": "assets/show-art/galaxy-rangers.webp",
+      "imageSource": "https://archive.org/download/adventures-of-the-galaxy-rangers-complete-series-1986/Adventures%20Of%20The%20Galaxy%20Rangers%20-%20(Ep.%2001)%20-%20Phoenix.mp4#t=60",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/adventures-of-the-galaxy-rangers-complete-series-1986"
+    },
+    "galtar": {
+      "title": "Galtar and the Golden Lance",
+      "premiered": "1985-09-02",
+      "ended": "1986-01-20",
+      "year": 1985,
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/22043/galtar-and-the-golden-lance",
+      "tvmazeId": 22043,
+      "image": "assets/show-art/galtar.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/80/200344.jpg"
+    },
+    "garfield-friends": {
+      "title": "Garfield and Friends",
+      "premiered": "1988-09-17",
+      "ended": "1994-12-10",
+      "year": 1988,
+      "genres": [
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/6452/garfield-and-friends",
+      "tvmazeId": 6452,
+      "image": "assets/show-art/garfield-friends.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/228/570785.jpg"
+    },
+    "gi-joe": {
+      "title": "G.I. Joe: A Real American Hero",
+      "premiered": "1983-09-12",
+      "ended": "1992-01-20",
+      "year": 1983,
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/6880/gi-joe-a-real-american-hero",
+      "tvmazeId": 6880,
+      "image": "assets/show-art/gi-joe.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/220/551563.jpg"
+    },
+    "gimme-break": {
+      "title": "Gimme a Break!",
+      "premiered": "1981-10-29",
+      "ended": "1987-05-12",
+      "year": 1981,
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7221/gimme-a-break",
+      "tvmazeId": 7221,
+      "image": "assets/show-art/gimme-break.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/565214.jpg"
+    },
+    "gobots": {
+      "title": "Challenge of the GoBots",
+      "premiered": "1984-10-29",
+      "ended": "1985-12-13",
+      "year": 1984,
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/10724/challenge-of-the-gobots",
+      "tvmazeId": 10724,
+      "image": "assets/show-art/gobots.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/220/551250.jpg"
+    },
+    "gold-monkey": {
+      "title": "Tales of the Gold Monkey",
+      "premiered": "1982-09-22",
+      "ended": "1983-06-01",
+      "year": 1982,
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/11954/tales-of-the-gold-monkey",
+      "tvmazeId": 11954,
+      "image": "assets/show-art/gold-monkey-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/592/1482203.jpg",
+      "imageRole": "title-art"
+    },
+    "goober": {
+      "title": "Goober and the Ghost-Chasers",
+      "premiered": "1973-09-08",
+      "ended": "1973-12-22",
+      "year": 1973,
+      "genres": [
+        "Comedy",
+        "Children",
+        "Mystery"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/22026/goober-and-the-ghost-chasers",
+      "tvmazeId": 22026,
+      "image": "assets/show-art/goober.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/80/200176.jpg"
+    },
+    "good-times": {
+      "title": "Good Times",
+      "premiered": "1974-02-08",
+      "ended": "1979-08-01",
+      "year": 1974,
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1472/good-times",
+      "tvmazeId": 1472,
+      "image": "assets/show-art/good-times.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/559173.jpg"
+    },
+    "grape-ape": {
+      "title": "The Great Grape Ape Show",
+      "premiered": "1975-09-06",
+      "ended": "1975-12-13",
+      "year": 1975,
+      "genres": [
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/21827/the-great-grape-ape-show",
+      "tvmazeId": 21827,
+      "image": "assets/show-art/grape-ape.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/78/196626.jpg"
+    },
+    "greatest-american-hero": {
+      "title": "The Greatest American Hero",
+      "premiered": "1981-03-18",
+      "ended": "1986-02-13",
+      "year": 1981,
+      "genres": [
+        "Comedy",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7051/the-greatest-american-hero",
+      "tvmazeId": 7051,
+      "image": "assets/show-art/greatest-american-hero.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/566505.jpg"
+    },
+    "greatest-american-heroine": {
+      "title": "The Greatest American Heroine · pilot",
+      "premiered": null,
+      "year": null,
+      "genres": [
+        "Comedy",
+        "Science-Fiction"
+      ],
+      "sourceUrl": "https://archive.org/details/the-greatest-american-heroine-pilot",
+      "image": "assets/show-art/greatest-american-heroine.webp",
+      "imageSource": "https://archive.org/download/the-greatest-american-heroine-pilot/__ia_thumb.jpg"
+    },
+    "grimm-fairy-tale-classics": {
+      "title": "Grimm Meisaku Gekijou",
+      "premiered": "1987-10-21",
+      "ended": "1989-03-26",
+      "year": 1987,
+      "genres": [
+        "Family",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/56493/grimm-meisaku-gekijou",
+      "tvmazeId": 56493,
+      "image": "assets/show-art/grimm-fairy-tale-classics.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/342/855203.jpg"
+    },
+    "hardcastle": {
+      "title": "Hardcastle and McCormick",
+      "premiered": "1983-09-18",
+      "ended": "1986-05-05",
+      "year": 1983,
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/13102/hardcastle-and-mccormick",
+      "tvmazeId": 13102,
+      "image": "assets/show-art/hardcastle.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/285/713998.jpg"
+    },
+    "harvey-birdman": {
+      "title": "Harvey Birdman, Attorney at Law",
+      "premiered": "2000-12-30",
+      "ended": "2007-07-22",
+      "year": 2000,
+      "genres": [
+        "Comedy",
+        "Science-Fiction",
+        "Legal"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/1810/harvey-birdman-attorney-at-law",
+      "tvmazeId": 1810,
+      "image": "assets/show-art/harvey-birdman.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/295/739683.jpg"
+    },
+    "he-man": {
+      "title": "He-Man and the Masters of the Universe",
+      "premiered": "1983-09-05",
+      "ended": "1984-12-08",
+      "year": 1983,
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4230/he-man-and-the-masters-of-the-universe",
+      "tvmazeId": 4230,
+      "image": "assets/show-art/he-man.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/50749.jpg"
+    },
+    "heathcliff": {
+      "title": "Heathcliff and the Catillac Cats",
+      "premiered": "1984-09-05",
+      "ended": "1984-09-05",
+      "year": 1984,
+      "genres": [
+        "Comedy",
+        "Adventure",
+        "Family"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/26468/heathcliff-and-the-catillac-cats",
+      "tvmazeId": 26468,
+      "image": "assets/show-art/heathcliff.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/104/260432.jpg"
+    },
+    "herculoids": {
+      "title": "The Herculoids",
+      "premiered": "1967-09-09",
+      "ended": "1968-01-06",
+      "year": 1967,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/3778/the-herculoids",
+      "tvmazeId": 3778,
+      "image": "assets/show-art/herculoids.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/19/47925.jpg"
+    },
+    "hey-dude": {
+      "title": "Hey Dude",
+      "premiered": "1989-07-14",
+      "ended": "1991-08-30",
+      "year": 1989,
+      "genres": [
+        "Comedy",
+        "Western"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/6331/hey-dude",
+      "tvmazeId": 6331,
+      "image": "assets/show-art/hey-dude.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/43/108062.jpg"
+    },
+    "highwayman": {
+      "title": "The Highwayman",
+      "premiered": "1987-09-20",
+      "ended": "1988-05-06",
+      "year": 1987,
+      "genres": [
+        "Drama",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/8864/the-highwayman",
+      "tvmazeId": 8864,
+      "image": "assets/show-art/highwayman.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/290/725722.jpg"
+    },
+    "hill-street-blues": {
+      "title": "Hill Street Blues",
+      "premiered": "1981-01-15",
+      "ended": "1987-05-12",
+      "year": 1981,
+      "genres": [
+        "Drama",
+        "Crime",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/3741/hill-street-blues",
+      "tvmazeId": 3741,
+      "image": "assets/show-art/hill-street-blues.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/225/564372.jpg"
+    },
+    "hitchhikers-guide": {
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "premiered": "1981-01-05",
+      "ended": "1981-02-09",
+      "year": 1981,
+      "genres": [
+        "Comedy",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/6083/the-hitchhikers-guide-to-the-galaxy",
+      "tvmazeId": 6083,
+      "image": "assets/show-art/hitchhikers-guide.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/23/59224.jpg"
+    },
+    "home-movies": {
+      "title": "Home Movies",
+      "premiered": "1999-04-26",
+      "ended": "2004-04-04",
+      "year": 1999,
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/7760/home-movies",
+      "tvmazeId": 7760,
+      "image": "assets/show-art/home-movies.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/566891.jpg"
+    },
+    "hong-kong-phooey": {
+      "title": "Hong Kong Phooey",
+      "premiered": "1974-09-07",
+      "ended": "1974-12-21",
+      "year": 1974,
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/8716/hong-kong-phooey",
+      "tvmazeId": 8716,
+      "image": "assets/show-art/hong-kong-phooey.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/566360.jpg"
+    },
+    "hulk": {
+      "title": "The Incredible Hulk",
+      "premiered": "1977-11-04",
+      "ended": "1982-05-12",
+      "year": 1977,
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/2151/the-incredible-hulk",
+      "tvmazeId": 2151,
+      "image": "assets/show-art/hulk.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/559110.jpg"
+    },
+    "hulk-1982": {
+      "title": "The Incredible Hulk",
+      "premiered": "1982-09-18",
+      "ended": "1983-10-08",
+      "year": 1982,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/18938/the-incredible-hulk",
+      "tvmazeId": 18938,
+      "image": "assets/show-art/hulk-1982.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/219/548191.jpg"
+    },
+    "inch-high": {
+      "title": "Inch High, Private Eye",
+      "premiered": "1973-09-08",
+      "ended": "1973-12-01",
+      "year": 1973,
+      "genres": [
+        "Comedy",
+        "Mystery"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/20363/inch-high-private-eye",
+      "tvmazeId": 20363,
+      "image": "assets/show-art/inch-high.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/72/180226.jpg"
+    },
+    "inhumanoids": {
+      "title": "InHumanoids",
+      "premiered": "1986-09-21",
+      "ended": "1986-12-14",
+      "year": 1986,
+      "genres": [
+        "Action",
+        "Children",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/19435/inhumanoids",
+      "tvmazeId": 19435,
+      "image": "assets/show-art/inhumanoids.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/220/550188.jpg"
+    },
+    "inspector-gadget": {
+      "title": "Inspector Gadget",
+      "premiered": "1983-09-10",
+      "ended": "1986-02-01",
+      "year": 1983,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4579/inspector-gadget",
+      "tvmazeId": 4579,
+      "image": "assets/show-art/inspector-gadget.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/220/551349.jpg"
+    },
+    "invaders": {
+      "title": "The Invaders",
+      "premiered": "1967-01-10",
+      "ended": "1968-03-26",
+      "year": 1967,
+      "genres": [
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/2144/the-invaders",
+      "tvmazeId": 2144,
+      "image": "assets/show-art/invaders.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/565956.jpg"
+    },
+    "jason-star-command": {
+      "title": "Jason of Star Command",
+      "premiered": "1978-09-09",
+      "ended": "1979-12-01",
+      "year": 1978,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/19319/jason-of-star-command",
+      "tvmazeId": 19319,
+      "image": "assets/show-art/jason-star-command.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/67/169874.jpg"
+    },
+    "jayce": {
+      "title": "Jayce and the Wheeled Warriors",
+      "premiered": "1985-09-16",
+      "ended": "1985-12-13",
+      "year": 1985,
+      "genres": [],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/15592/jayce-and-the-wheeled-warriors",
+      "tvmazeId": 15592,
+      "image": "assets/show-art/jayce.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/52/132081.jpg"
+    },
+    "jeffersons": {
+      "title": "The Jeffersons",
+      "premiered": "1975-01-18",
+      "ended": "1985-07-02",
+      "year": 1975,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/5389/the-jeffersons",
+      "tvmazeId": 5389,
+      "image": "assets/show-art/jeffersons.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/55569.jpg"
+    },
+    "jem": {
+      "title": "Jem",
+      "premiered": "1985-10-06",
+      "ended": "1988-05-02",
+      "year": 1985,
+      "genres": [
+        "Drama",
+        "Adventure"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4053/jem",
+      "tvmazeId": 4053,
+      "image": "assets/show-art/jem.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/221/553499.jpg"
+    },
+    "jetsons": {
+      "title": "The Jetsons",
+      "premiered": "1962-09-23",
+      "ended": "1987-11-12",
+      "year": 1962,
+      "genres": [
+        "Comedy",
+        "Children",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/2145/the-jetsons",
+      "tvmazeId": 2145,
+      "image": "assets/show-art/jetsons.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/225/564528.jpg"
+    },
+    "jonny-quest": {
+      "title": "Jonny Quest",
+      "premiered": "1964-09-18",
+      "ended": "1965-03-11",
+      "year": 1964,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4044/jonny-quest",
+      "tvmazeId": 4044,
+      "image": "assets/show-art/jonny-quest.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/559505.jpg"
+    },
+    "josie-pussycats": {
+      "title": "Josie and the Pussycats",
+      "premiered": "1970-09-12",
+      "ended": "1971-01-02",
+      "year": 1970,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/5471/josie-and-the-pussycats",
+      "tvmazeId": 5471,
+      "image": "assets/show-art/josie-pussycats.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/55862.jpg"
+    },
+    "knight-rider": {
+      "title": "Knight Rider",
+      "premiered": "1982-09-26",
+      "ended": "1991-05-19",
+      "year": 1982,
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/825/knight-rider",
+      "tvmazeId": 825,
+      "image": "assets/show-art/knight-rider.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/225/563287.jpg"
+    },
+    "kolchak": {
+      "title": "Kolchak: The Night Stalker",
+      "premiered": "1972-01-11",
+      "ended": "1975-03-28",
+      "year": 1972,
+      "genres": [
+        "Comedy",
+        "Horror",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/3564/kolchak-the-night-stalker",
+      "tvmazeId": 3564,
+      "image": "assets/show-art/kolchak.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/228/570161.jpg"
+    },
+    "kotter": {
+      "title": "Welcome Back, Kotter",
+      "premiered": "1975-09-09",
+      "ended": "1979-06-08",
+      "year": 1975,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/3743/welcome-back-kotter",
+      "tvmazeId": 3743,
+      "image": "assets/show-art/kotter.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/19/47757.jpg"
+    },
+    "land-lost": {
+      "title": "Land of the Lost",
+      "premiered": "1974-09-07",
+      "ended": "1976-12-04",
+      "year": 1974,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/6972/land-of-the-lost",
+      "tvmazeId": 6972,
+      "image": "assets/show-art/land-lost.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/26/65525.jpg"
+    },
+    "liquid-television": {
+      "title": "Liquid Television",
+      "premiered": "1991-06-02",
+      "ended": "2014-06-12",
+      "year": 1991,
+      "genres": [],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/39449/liquid-television",
+      "tvmazeId": 39449,
+      "image": "assets/show-art/liquid-television.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/173/433720.jpg"
+    },
+    "logans-run": {
+      "title": "Logan's Run",
+      "premiered": "1977-09-16",
+      "ended": "1978-02-06",
+      "year": 1977,
+      "genres": [
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/9977/logans-run",
+      "tvmazeId": 9977,
+      "image": "assets/show-art/logans-run.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/228/570746.jpg"
+    },
+    "love-boat": {
+      "title": "The Love Boat",
+      "premiered": "1977-09-24",
+      "ended": "1986-05-24",
+      "year": 1977,
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Romance"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1484/the-love-boat",
+      "tvmazeId": 1484,
+      "image": "assets/show-art/love-boat.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/558137.jpg"
+    },
+    "macgyver": {
+      "title": "MacGyver",
+      "premiered": "1985-09-29",
+      "ended": "1994-11-24",
+      "year": 1985,
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/821/macgyver",
+      "tvmazeId": 821,
+      "image": "assets/show-art/macgyver.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/557887.jpg"
+    },
+    "magnum": {
+      "title": "Magnum, P.I.",
+      "premiered": "1980-12-11",
+      "ended": "1988-05-01",
+      "year": 1980,
+      "genres": [
+        "Drama",
+        "Action",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/956/magnum-pi",
+      "tvmazeId": 956,
+      "image": "assets/show-art/magnum.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/221/553396.jpg"
+    },
+    "man-atlantis": {
+      "title": "Man from Atlantis",
+      "premiered": "1977-09-22",
+      "ended": "1978-06-06",
+      "year": 1977,
+      "genres": [
+        "Drama",
+        "Adventure",
+        "Fantasy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1485/man-from-atlantis",
+      "tvmazeId": 1485,
+      "image": "assets/show-art/man-atlantis-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/505/1262935.jpg",
+      "imageRole": "title-art"
+    },
+    "manimal": {
+      "title": "Manimal",
+      "premiered": "1983-09-30",
+      "ended": "1983-12-17",
+      "year": 1983,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/8868/manimal",
+      "tvmazeId": 8868,
+      "image": "assets/show-art/manimal-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/475/1189386.jpg",
+      "imageRole": "title-art"
+    },
+    "mario-super-show": {
+      "title": "The Super Mario Bros. Super Show!",
+      "premiered": "1989-09-04",
+      "ended": "1989-12-01",
+      "year": 1989,
+      "genres": [
+        "Comedy",
+        "Adventure",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4478/the-super-mario-bros-super-show",
+      "tvmazeId": 4478,
+      "image": "assets/show-art/mario-super-show.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/225/563610.jpg"
+    },
+    "mask": {
+      "title": "M.A.S.K.",
+      "premiered": "1985-09-30",
+      "ended": "1986-11-26",
+      "year": 1985,
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4400/mask",
+      "tvmazeId": 4400,
+      "image": "assets/show-art/mask.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/140/350953.jpg"
+    },
+    "matt-houston": {
+      "title": "Matt Houston",
+      "premiered": "1982-09-26",
+      "ended": "1985-03-29",
+      "year": 1982,
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/15615/matt-houston",
+      "tvmazeId": 15615,
+      "image": "assets/show-art/matt-houston.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/218/547299.jpg"
+    },
+    "matthew-star": {
+      "title": "The Powers of Matthew Star",
+      "premiered": "1982-09-17",
+      "ended": "1983-04-15",
+      "year": 1982,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/22271/the-powers-of-matthew-star",
+      "tvmazeId": 22271,
+      "image": "assets/show-art/matthew-star.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/218/547285.jpg"
+    },
+    "max-headroom": {
+      "title": "Max Headroom",
+      "premiered": "1987-03-31",
+      "ended": "1988-05-12",
+      "year": 1987,
+      "genres": [
+        "Drama",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/6606/max-headroom",
+      "tvmazeId": 6606,
+      "image": "assets/show-art/max-headroom.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/221/554724.jpg"
+    },
+    "miami-vice": {
+      "title": "Miami Vice",
+      "premiered": "1984-09-16",
+      "ended": "1990-01-25",
+      "year": 1984,
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/760/miami-vice",
+      "tvmazeId": 760,
+      "image": "assets/show-art/miami-vice.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/8/20062.jpg"
+    },
+    "mighty-orbots": {
+      "title": "Mighty Orbots",
+      "premiered": "1984-09-08",
+      "ended": "1984-12-15",
+      "year": 1984,
+      "genres": [
+        "Comedy",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/19264/mighty-orbots",
+      "tvmazeId": 19264,
+      "image": "assets/show-art/mighty-orbots.webp",
+      "imageSource": "https://archive.org/download/mighty-orbots/mighty-orbots.thumbs/Mighty%20Orbots%20-%20S01E01%20-%20The%20Magnetic%20Menace_000180.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/mighty-orbots"
+    },
+    "misfits-science": {
+      "title": "Misfits of Science",
+      "premiered": "1985-10-04",
+      "ended": "1986-02-21",
+      "year": 1985,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/3619/misfits-of-science",
+      "tvmazeId": 3619,
+      "image": "assets/show-art/misfits-science-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/505/1263318.jpg",
+      "imageRole": "title-art"
+    },
+    "mission-hill": {
+      "title": "Mission Hill",
+      "premiered": "1999-09-24",
+      "ended": "2002-08-11",
+      "year": 1999,
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/7761/mission-hill",
+      "tvmazeId": 7761,
+      "image": "assets/show-art/mission-hill.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/28/71459.jpg"
+    },
+    "mister-t": {
+      "title": "Mister T",
+      "premiered": "1983-09-17",
+      "ended": "1984-12-29",
+      "year": 1983,
+      "genres": [],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/22380/mister-t",
+      "tvmazeId": 22380,
+      "image": "assets/show-art/mister-t.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/82/205396.jpg"
+    },
+    "moral-orel": {
+      "title": "Moral Orel",
+      "premiered": "2005-12-12",
+      "ended": "2008-11-26",
+      "year": 2005,
+      "genres": [],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/1960/moral-orel",
+      "tvmazeId": 1960,
+      "image": "assets/show-art/moral-orel.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/11/27902.jpg"
+    },
+    "mork-mindy": {
+      "title": "Mork & Mindy",
+      "premiered": "1978-09-14",
+      "ended": "1982-05-27",
+      "year": 1978,
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/4631/mork-mindy",
+      "tvmazeId": 4631,
+      "image": "assets/show-art/mork-mindy.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/145/362670.jpg"
+    },
+    "mr-merlin": {
+      "title": "Mr. Merlin",
+      "premiered": "1981-10-07",
+      "ended": "1982-03-22",
+      "year": 1981,
+      "genres": [
+        "Comedy",
+        "Family",
+        "Fantasy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/22675/mr-merlin",
+      "tvmazeId": 22675,
+      "image": "assets/show-art/mr-merlin.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/83/209845.jpg"
+    },
+    "muppet-show": {
+      "title": "The Muppet Show",
+      "premiered": "1976-09-20",
+      "ended": "2026-02-04",
+      "year": 1976,
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Variety",
+      "sourceUrl": "https://www.tvmaze.com/shows/3288/the-muppet-show",
+      "tvmazeId": 3288,
+      "image": "assets/show-art/muppet-show.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/17/43911.jpg"
+    },
+    "my-little-pony": {
+      "title": "My Little Pony 'n Friends",
+      "premiered": "1986-09-15",
+      "ended": "1987-09-25",
+      "year": 1986,
+      "genres": [
+        "Adventure",
+        "Children",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/27017/my-little-pony-n-friends",
+      "tvmazeId": 27017,
+      "image": "assets/show-art/my-little-pony.webp",
+      "imageSource": "https://archive.org/download/my-little-pony-n-friends-02x-14-escape-from-catrina-1/My%20Little%20Pony%20%60n%20Friends%20-%2001x01%20-%20The%20End%20of%20Flutter%20Valley%20(1).mp4#t=60",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/my-little-pony-n-friends-02x-14-escape-from-catrina-1"
+    },
+    "nickelodeon-bumps": {
+      "title": "Nickelodeon · vintage bumps",
+      "premiered": null,
+      "year": null,
+      "genres": [
+        "Collections"
+      ],
+      "sourceUrl": "https://archive.org/details/nickelodeon-bumper-notepad-nick-jingle",
+      "image": "assets/show-art/nickelodeon-bumps.webp",
+      "imageSource": "https://archive.org/download/nickelodeon-bumper-notepad-nick-jingle/Snapshot%201%20%284-22-2020%208-47%20AM%29.png"
+    },
+    "northern-exposure": {
+      "title": "Northern Exposure",
+      "premiered": "1990-07-12",
+      "ended": "1995-07-26",
+      "year": 1990,
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/501/northern-exposure",
+      "tvmazeId": 501,
+      "image": "assets/show-art/northern-exposure.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/565920.jpg"
+    },
+    "nypd-blue": {
+      "title": "NYPD Blue",
+      "premiered": "1993-09-21",
+      "ended": "2005-03-01",
+      "year": 1993,
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/570/nypd-blue",
+      "tvmazeId": 570,
+      "image": "assets/show-art/nypd-blue.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/221/553687.jpg"
+    },
+    "oblongs": {
+      "title": "The Oblongs",
+      "premiered": "2001-04-01",
+      "ended": "2002-10-20",
+      "year": 2001,
+      "genres": [
+        "Comedy",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/6327/the-oblongs",
+      "tvmazeId": 6327,
+      "image": "assets/show-art/oblongs.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/24/60509.jpg"
+    },
+    "otherworld": {
+      "title": "Otherworld",
+      "premiered": "1985-01-26",
+      "ended": "1985-03-16",
+      "year": 1985,
+      "genres": [],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/19368/otherworld",
+      "tvmazeId": 19368,
+      "image": "assets/show-art/otherworld-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/506/1265312.jpg",
+      "imageRole": "title-art"
+    },
+    "out-control": {
+      "title": "Out of Control",
+      "premiered": null,
+      "year": 1984,
+      "genres": [
+        "Comedy"
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Out_of_Control_(TV_series)",
+      "yearSource": "https://en.wikipedia.org/wiki/Out_of_Control_(TV_series)",
+      "image": "assets/show-art/out-control.webp",
+      "imageSource": "https://upload.wikimedia.org/wikipedia/en/c/ca/Outofcontrol.gif?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled"
+    },
+    "perfect-strangers": {
+      "title": "Perfect Strangers",
+      "premiered": "1986-03-25",
+      "ended": "1993-08-06",
+      "year": 1986,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/4304/perfect-strangers",
+      "tvmazeId": 4304,
+      "image": "assets/show-art/perfect-strangers.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/51218.jpg"
+    },
+    "pete-pete": {
+      "title": "The Adventures of Pete & Pete",
+      "premiered": "1993-11-28",
+      "ended": "1996-12-28",
+      "year": 1993,
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Children"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/5940/the-adventures-of-pete-pete",
+      "tvmazeId": 5940,
+      "image": "assets/show-art/pete-pete.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/23/58566.jpg"
+    },
+    "phoenix": {
+      "title": "The Phoenix",
+      "premiered": "1982-03-19",
+      "ended": "1982-04-16",
+      "year": 1982,
+      "genres": [
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/30083/the-phoenix",
+      "tvmazeId": 30083,
+      "image": "assets/show-art/phoenix.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/376/940443.jpg"
+    },
+    "picket-fences": {
+      "title": "Picket Fences",
+      "premiered": "1992-09-18",
+      "ended": "1996-06-26",
+      "year": 1992,
+      "genres": [
+        "Drama",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1165/picket-fences",
+      "tvmazeId": 1165,
+      "image": "assets/show-art/picket-fences.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/565606.jpg"
+    },
+    "pole-position": {
+      "title": "Pole Position",
+      "premiered": "1984-09-15",
+      "ended": "1984-12-08",
+      "year": 1984,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/19249/pole-position",
+      "tvmazeId": 19249,
+      "image": "assets/show-art/pole-position.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/67/168654.jpg"
+    },
+    "police-squad": {
+      "title": "Police Squad!",
+      "premiered": "1982-03-04",
+      "ended": "1982-07-08",
+      "year": 1982,
+      "genres": [
+        "Comedy",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/2256/police-squad",
+      "tvmazeId": 2256,
+      "image": "assets/show-art/police-squad-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/475/1189401.jpg",
+      "imageRole": "title-art"
+    },
+    "prisoner": {
+      "title": "The Prisoner",
+      "premiered": "1967-10-01",
+      "ended": "1968-02-04",
+      "year": 1967,
+      "genres": [
+        "Drama",
+        "Science-Fiction",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/470/the-prisoner",
+      "tvmazeId": 470,
+      "image": "assets/show-art/prisoner.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/3/9292.jpg"
+    },
+    "quantum-leap": {
+      "title": "Quantum Leap",
+      "premiered": "1989-03-26",
+      "ended": "1993-05-05",
+      "year": 1989,
+      "genres": [
+        "Drama",
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/717/quantum-leap",
+      "tvmazeId": 717,
+      "image": "assets/show-art/quantum-leap-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/559/1398837.jpg",
+      "imageRole": "title-art"
+    },
+    "rainbow-brite": {
+      "title": "Rainbow Brite",
+      "premiered": "1984-12-13",
+      "ended": "1985-03-07",
+      "year": 1984,
+      "genres": [
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/19294/rainbow-brite",
+      "tvmazeId": 19294,
+      "image": "assets/show-art/rainbow-brite.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/67/169959.jpg"
+    },
+    "real-ghostbusters": {
+      "title": "The Real Ghostbusters",
+      "premiered": "1986-09-13",
+      "ended": "1991-10-05",
+      "year": 1986,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4299/the-real-ghostbusters",
+      "tvmazeId": 4299,
+      "image": "assets/show-art/real-ghostbusters.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/559437.jpg"
+    },
+    "red-dwarf": {
+      "title": "Red Dwarf",
+      "premiered": "1988-02-15",
+      "ended": "2020-04-09",
+      "year": 1988,
+      "genres": [
+        "Comedy",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/368/red-dwarf",
+      "tvmazeId": 368,
+      "image": "assets/show-art/red-dwarf.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/76/191841.jpg"
+    },
+    "remington-steele": {
+      "title": "Remington Steele",
+      "premiered": "1982-10-01",
+      "ended": "1987-02-17",
+      "year": 1982,
+      "genres": [
+        "Comedy",
+        "Action",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1496/remington-steele",
+      "tvmazeId": 1496,
+      "image": "assets/show-art/remington-steele.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/566148.jpg"
+    },
+    "return-planet-apes": {
+      "title": "Return to the Planet of the Apes",
+      "premiered": "1975-09-06",
+      "ended": "1975-11-29",
+      "year": 1975,
+      "genres": [
+        "Drama",
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/6688/return-to-the-planet-of-the-apes",
+      "tvmazeId": 6688,
+      "image": "assets/show-art/return-planet-apes.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/146/365890.jpg"
+    },
+    "riptide": {
+      "title": "Riptide",
+      "premiered": "1984-01-03",
+      "ended": "1986-08-22",
+      "year": 1984,
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1497/riptide",
+      "tvmazeId": 1497,
+      "image": "assets/show-art/riptide.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/8/21217.jpg"
+    },
+    "robot-chicken": {
+      "title": "Robot Chicken",
+      "premiered": "2005-02-20",
+      "ended": null,
+      "year": 2005,
+      "genres": [
+        "Comedy",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/686/robot-chicken",
+      "tvmazeId": 686,
+      "image": "assets/show-art/robot-chicken.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/219/547677.jpg"
+    },
+    "robotech": {
+      "title": "Robotech",
+      "premiered": "1985-03-04",
+      "ended": "1985-06-28",
+      "year": 1985,
+      "genres": [
+        "Drama",
+        "Action",
+        "Anime",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/6278/robotech",
+      "tvmazeId": 6278,
+      "image": "assets/show-art/robotech.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/24/60489.jpg"
+    },
+    "rockford-files": {
+      "title": "The Rockford Files",
+      "premiered": "1974-03-27",
+      "ended": "1999-04-20",
+      "year": 1974,
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/832/the-rockford-files",
+      "tvmazeId": 832,
+      "image": "assets/show-art/rockford-files.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/559246.jpg"
+    },
+    "saber-rider": {
+      "title": "Saber Rider and the Star Sheriffs",
+      "premiered": "1987-09-14",
+      "ended": "1988-09-02",
+      "year": 1987,
+      "genres": [
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4232/saber-rider-and-the-star-sheriffs",
+      "tvmazeId": 4232,
+      "image": "assets/show-art/saber-rider.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/567444.jpg"
+    },
+    "salute-shorts": {
+      "title": "Salute Your Shorts",
+      "premiered": "1991-06-01",
+      "ended": "1992-06-29",
+      "year": 1991,
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/6304/salute-your-shorts",
+      "tvmazeId": 6304,
+      "image": "assets/show-art/salute-shorts.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/394/987338.jpg"
+    },
+    "sanford-son": {
+      "title": "Sanford and Son",
+      "premiered": "1972-01-14",
+      "ended": "1977-03-25",
+      "year": 1972,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7513/sanford-and-son",
+      "tvmazeId": 7513,
+      "image": "assets/show-art/sanford-son.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/558636.jpg"
+    },
+    "sapphire-steel": {
+      "title": "Sapphire and Steel",
+      "premiered": "1979-07-10",
+      "ended": "1982-08-31",
+      "year": 1979,
+      "genres": [
+        "Science-Fiction",
+        "Thriller",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/18365/sapphire-and-steel",
+      "tvmazeId": 18365,
+      "image": "assets/show-art/sapphire-steel.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/62/156519.jpg"
+    },
+    "scarecrow-king": {
+      "title": "Scarecrow and Mrs. King",
+      "premiered": "1983-10-03",
+      "ended": "1987-05-28",
+      "year": 1983,
+      "genres": [
+        "Drama",
+        "Adventure",
+        "Romance"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/3328/scarecrow-and-mrs-king",
+      "tvmazeId": 3328,
+      "image": "assets/show-art/scarecrow-king-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/527/1317784.jpg",
+      "imageRole": "title-art"
+    },
+    "sealab-2020": {
+      "title": "Sealab 2020",
+      "premiered": "1972-09-09",
+      "ended": "1972-12-02",
+      "year": 1972,
+      "genres": [
+        "Adventure",
+        "Children",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/17699/sealab-2020",
+      "tvmazeId": 17699,
+      "image": "assets/show-art/sealab-2020.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/59/148930.jpg"
+    },
+    "sealab-2021": {
+      "title": "Sealab 2021",
+      "premiered": "2000-12-21",
+      "ended": "2005-04-25",
+      "year": 2000,
+      "genres": [
+        "Comedy",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/7366/sealab-2021",
+      "tvmazeId": 7366,
+      "image": "assets/show-art/sealab-2021.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/222/556074.jpg"
+    },
+    "seaquest": {
+      "title": "seaQuest DSV",
+      "premiered": "1993-09-12",
+      "ended": "1996-06-09",
+      "year": 1993,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/3292/seaquest-dsv",
+      "tvmazeId": 3292,
+      "image": "assets/show-art/seaquest.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/225/564486.jpg"
+    },
+    "she-ra": {
+      "title": "She-Ra: Princess of Power",
+      "premiered": "1985-09-09",
+      "ended": "1987-12-05",
+      "year": 1985,
+      "genres": [
+        "Family",
+        "Fantasy",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/9172/she-ra-princess-of-power",
+      "tvmazeId": 9172,
+      "image": "assets/show-art/she-ra.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/558624.jpg"
+    },
+    "shirt-tales": {
+      "title": "Shirt Tales",
+      "premiered": "1982-09-18",
+      "ended": "1984-01-30",
+      "year": 1982,
+      "genres": [
+        "Family",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/22045/shirt-tales",
+      "tvmazeId": 22045,
+      "image": "assets/show-art/shirt-tales.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/80/200408.jpg"
+    },
+    "silverhawks": {
+      "title": "SilverHawks",
+      "premiered": "1986-09-08",
+      "ended": "1986-12-05",
+      "year": 1986,
+      "genres": [
+        "Action",
+        "Crime",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4485/silverhawks",
+      "tvmazeId": 4485,
+      "image": "assets/show-art/silverhawks.webp",
+      "imageSource": "https://archive.org/download/silverhawks-1986-season-01/S01E01%20-%20SilverHawks%20-%20The%20Origin%20Story%20(1986).ia.mp4#t=60",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/silverhawks-1986-season-01"
+    },
+    "simon": {
+      "title": "Simon & Simon",
+      "premiered": "1981-11-24",
+      "ended": "1989-03-02",
+      "year": 1981,
+      "genres": [
+        "Drama",
+        "Action",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1499/simon-simon",
+      "tvmazeId": 1499,
+      "image": "assets/show-art/simon.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/225/564542.jpg"
+    },
+    "six-million-man": {
+      "title": "The Six Million Dollar Man",
+      "premiered": "1973-03-07",
+      "ended": "1978-03-06",
+      "year": 1973,
+      "genres": [
+        "Drama",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1500/the-six-million-dollar-man",
+      "tvmazeId": 1500,
+      "image": "assets/show-art/six-million-man-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/468/1170798.jpg",
+      "imageRole": "title-art"
+    },
+    "sledge-hammer": {
+      "title": "Sledge Hammer!",
+      "premiered": "1986-09-23",
+      "ended": "1988-02-12",
+      "year": 1986,
+      "genres": [
+        "Comedy",
+        "Action"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1892/sledge-hammer",
+      "tvmazeId": 1892,
+      "image": "assets/show-art/sledge-hammer.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/566026.jpg"
+    },
+    "sliders": {
+      "title": "Sliders",
+      "premiered": "1995-03-22",
+      "ended": "2000-02-04",
+      "year": 1995,
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/583/sliders",
+      "tvmazeId": 583,
+      "image": "assets/show-art/sliders.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/558656.jpg"
+    },
+    "small-wonder": {
+      "title": "Small Wonder",
+      "premiered": "1985-09-07",
+      "ended": "1989-05-20",
+      "year": 1985,
+      "genres": [
+        "Comedy",
+        "Family",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7244/small-wonder",
+      "tvmazeId": 7244,
+      "image": "assets/show-art/small-wonder.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/566923.jpg"
+    },
+    "soap": {
+      "title": "Soap",
+      "premiered": "1977-09-13",
+      "ended": "1981-05-25",
+      "year": 1977,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/2137/soap",
+      "tvmazeId": 2137,
+      "image": "assets/show-art/soap.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/565544.jpg"
+    },
+    "space-1999": {
+      "title": "Space: 1999",
+      "premiered": "1975-09-04",
+      "ended": "1977-11-12",
+      "year": 1975,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/5920/space-1999",
+      "tvmazeId": 5920,
+      "image": "assets/show-art/space-1999.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/566587.jpg"
+    },
+    "space-academy": {
+      "title": "Space Academy",
+      "premiered": "1977-09-10",
+      "ended": "1977-12-17",
+      "year": 1977,
+      "genres": [
+        "Children",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/19316/space-academy",
+      "tvmazeId": 19316,
+      "image": "assets/show-art/space-academy.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/67/169870.jpg"
+    },
+    "space-ghost": {
+      "title": "Space Ghost and Dino Boy",
+      "premiered": "1966-09-10",
+      "ended": "1967-09-16",
+      "year": 1966,
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/21960/space-ghost-and-dino-boy",
+      "tvmazeId": 21960,
+      "image": "assets/show-art/space-ghost.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/79/199000.jpg"
+    },
+    "space-ghost-c2c": {
+      "title": "Space Ghost Coast to Coast",
+      "premiered": "1994-04-15",
+      "ended": "2008-05-31",
+      "year": 1994,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/6239/space-ghost-coast-to-coast",
+      "tvmazeId": 6239,
+      "image": "assets/show-art/space-ghost-c2c.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/566956.jpg"
+    },
+    "space-sentinels": {
+      "title": "The Space Sentinels",
+      "premiered": "1977-09-10",
+      "ended": "1977-12-03",
+      "year": 1977,
+      "genres": [
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/20746/the-space-sentinels",
+      "tvmazeId": 20746,
+      "image": "assets/show-art/space-sentinels.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/73/183523.jpg"
+    },
+    "speed-buggy": {
+      "title": "Speed Buggy",
+      "premiered": "1973-09-08",
+      "ended": "1973-12-22",
+      "year": 1973,
+      "genres": [
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/18342/speed-buggy",
+      "tvmazeId": 18342,
+      "image": "assets/show-art/speed-buggy.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/62/156549.jpg"
+    },
+    "spider-friends": {
+      "title": "Spider-Man and His Amazing Friends",
+      "premiered": "1981-09-12",
+      "ended": "1983-11-04",
+      "year": 1981,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4052/spider-man-and-his-amazing-friends",
+      "tvmazeId": 4052,
+      "image": "assets/show-art/spider-friends.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/19/49654.jpg"
+    },
+    "squidbillies": {
+      "title": "Squidbillies",
+      "premiered": "2005-10-16",
+      "ended": "2021-12-12",
+      "year": 2005,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/1000/squidbillies",
+      "tvmazeId": 1000,
+      "image": "assets/show-art/squidbillies.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/221/554500.jpg"
+    },
+    "st-elsewhere": {
+      "title": "St. Elsewhere",
+      "premiered": "1982-10-26",
+      "ended": "1988-05-25",
+      "year": 1982,
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Medical"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/4460/st-elsewhere",
+      "tvmazeId": 4460,
+      "image": "assets/show-art/st-elsewhere.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/226/567286.jpg"
+    },
+    "star-blazers": {
+      "title": "Star Blazers",
+      "premiered": null,
+      "ended": null,
+      "year": 1979,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Anime",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/14527/star-blazers",
+      "tvmazeId": 14527,
+      "providerPremiere": "1974-10-06",
+      "yearSource": "https://en.wikipedia.org/wiki/Star_Blazers",
+      "providerEnded": "1981-04-04",
+      "image": "assets/show-art/star-blazers.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/49/122992.jpg"
+    },
+    "star-trek-ds9": {
+      "title": "Star Trek: Deep Space Nine",
+      "premiered": "1993-01-03",
+      "ended": "1999-06-02",
+      "year": 1993,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/493/star-trek-deep-space-nine",
+      "tvmazeId": 493,
+      "image": "assets/show-art/star-trek-ds9.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/219/549666.jpg"
+    },
+    "star-trek-enterprise": {
+      "title": "Star Trek: Enterprise",
+      "premiered": "2001-09-26",
+      "ended": "2005-05-13",
+      "year": 2001,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/714/star-trek-enterprise",
+      "tvmazeId": 714,
+      "image": "assets/show-art/star-trek-enterprise-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/458/1145939.jpg",
+      "imageRole": "title-art"
+    },
+    "star-trek-tas": {
+      "title": "Star Trek: The Animated Series",
+      "premiered": "1973-09-08",
+      "ended": "1974-10-12",
+      "year": 1973,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/3513/star-trek-the-animated-series",
+      "tvmazeId": 3513,
+      "image": "assets/show-art/star-trek-tas.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/228/570162.jpg"
+    },
+    "star-trek-tng": {
+      "title": "Star Trek: The Next Generation",
+      "premiered": "1987-09-28",
+      "ended": "1994-05-23",
+      "year": 1987,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/491/star-trek-the-next-generation",
+      "tvmazeId": 491,
+      "image": "assets/show-art/star-trek-tng.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/222/556352.jpg"
+    },
+    "star-trek-tos": {
+      "title": "Star Trek",
+      "premiered": "1966-09-08",
+      "ended": "1969-06-03",
+      "year": 1966,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/490/star-trek",
+      "tvmazeId": 490,
+      "image": "assets/show-art/star-trek-tos.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/222/556982.jpg"
+    },
+    "star-trek-voyager": {
+      "title": "Star Trek: Voyager",
+      "premiered": "1995-01-16",
+      "ended": "2001-05-23",
+      "year": 1995,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/492/star-trek-voyager",
+      "tvmazeId": 492,
+      "image": "assets/show-art/star-trek-voyager.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/222/556981.jpg"
+    },
+    "star-wars-droids": {
+      "title": "Star Wars Droids The Adventures of R2-D2 and C-3P0",
+      "premiered": "1985-09-07",
+      "ended": "1986-06-07",
+      "year": 1985,
+      "genres": [
+        "Children",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/5061/star-wars-droids-the-adventures-of-r2-d2-and-c-3p0",
+      "tvmazeId": 5061,
+      "image": "assets/show-art/star-wars-droids.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/21/54324.jpg"
+    },
+    "star-wars-holiday-special": {
+      "title": "The Star Wars Holiday Special (1978)",
+      "premiered": null,
+      "year": 1978,
+      "genres": [
+        "Science-Fiction"
+      ],
+      "sourceUrl": "https://archive.org/details/the-star-wars-holiday-special",
+      "image": "assets/show-art/star-wars-holiday-special.webp",
+      "imageSource": "https://archive.org/download/the-star-wars-holiday-special/__ia_thumb.jpg"
+    },
+    "starlost": {
+      "title": "The Starlost",
+      "premiered": "1973-09-22",
+      "ended": "1974-01-05",
+      "year": 1973,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1752/the-starlost",
+      "tvmazeId": 1752,
+      "image": "assets/show-art/starlost.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/9/24486.jpg"
+    },
+    "stingray": {
+      "title": "Stingray",
+      "premiered": "1986-03-11",
+      "ended": "1987-05-08",
+      "year": 1986,
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/3512/stingray",
+      "tvmazeId": 3512,
+      "image": "assets/show-art/stingray.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/18/46492.jpg"
+    },
+    "strawberry-shortcake": {
+      "title": "Strawberry Shortcake (1980s)",
+      "premiered": null,
+      "year": null,
+      "genres": [
+        "Animation"
+      ],
+      "sourceUrl": "https://archive.org/details/strawberry-shortcake-1980s-episodes-archive",
+      "image": "assets/show-art/strawberry-shortcake.webp",
+      "imageSource": "https://archive.org/download/strawberry-shortcake-1980s-episodes-archive/__ia_thumb.jpg"
+    },
+    "street-hawk": {
+      "title": "Street Hawk",
+      "premiered": "1985-01-04",
+      "ended": "1985-05-16",
+      "year": 1985,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/8736/street-hawk",
+      "tvmazeId": 8736,
+      "image": "assets/show-art/street-hawk.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/31/77764.jpg"
+    },
+    "super-friends": {
+      "title": "Super Friends",
+      "premiered": "1973-09-08",
+      "ended": "1973-12-22",
+      "year": 1973,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/20279/super-friends",
+      "tvmazeId": 20279,
+      "image": "assets/show-art/super-friends.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/225/564681.jpg"
+    },
+    "taxi": {
+      "title": "Taxi",
+      "premiered": "1978-09-12",
+      "ended": "1983-06-15",
+      "year": 1978,
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/2218/taxi",
+      "tvmazeId": 2218,
+      "image": "assets/show-art/taxi.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/224/561878.jpg"
+    },
+    "teddy-ruxpin": {
+      "title": "The Adventures of Teddy Ruxpin",
+      "premiered": "1987-09-14",
+      "ended": "1987-12-13",
+      "year": 1987,
+      "genres": [
+        "Adventure",
+        "Children",
+        "Family"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/18953/the-adventures-of-teddy-ruxpin",
+      "tvmazeId": 18953,
+      "image": "assets/show-art/teddy-ruxpin.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/65/163825.jpg"
+    },
+    "the-master": {
+      "title": "The Master",
+      "premiered": "1984-01-20",
+      "ended": "1984-08-31",
+      "year": 1984,
+      "genres": [
+        "Drama",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/3846/the-master",
+      "tvmazeId": 3846,
+      "image": "assets/show-art/the-master.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/419/1049078.jpg"
+    },
+    "the-maxx": {
+      "title": "The Maxx",
+      "premiered": "1995-04-08",
+      "ended": "1995-06-19",
+      "year": 1995,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/18163/the-maxx",
+      "tvmazeId": 18163,
+      "image": "assets/show-art/the-maxx.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/219/549093.jpg"
+    },
+    "the-tick": {
+      "title": "The Tick",
+      "premiered": "1994-09-10",
+      "ended": "1996-11-24",
+      "year": 1994,
+      "genres": [
+        "Comedy",
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/1669/the-tick",
+      "tvmazeId": 1669,
+      "image": "assets/show-art/the-tick.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/402/1006151.jpg"
+    },
+    "thundarr": {
+      "title": "Thundarr the Barbarian",
+      "premiered": "1980-10-04",
+      "ended": "1981-10-31",
+      "year": 1980,
+      "genres": [
+        "Adventure",
+        "Family"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/9022/thundarr-the-barbarian",
+      "tvmazeId": 9022,
+      "image": "assets/show-art/thundarr.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/31/79919.jpg"
+    },
+    "thundercats": {
+      "title": "ThunderCats",
+      "premiered": "1985-01-23",
+      "ended": "1989-09-29",
+      "year": 1985,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4476/thundercats",
+      "tvmazeId": 4476,
+      "image": "assets/show-art/thundercats.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/228/570842.jpg"
+    },
+    "time-tunnel": {
+      "title": "The Time Tunnel",
+      "premiered": "1966-09-09",
+      "ended": "1967-04-07",
+      "year": 1966,
+      "genres": [
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1135/the-time-tunnel",
+      "tvmazeId": 1135,
+      "image": "assets/show-art/time-tunnel.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/6/17299.jpg"
+    },
+    "tomorrow-people": {
+      "title": "The Tomorrow People",
+      "premiered": "1973-04-30",
+      "ended": "1979-02-19",
+      "year": 1973,
+      "genres": [
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/3676/the-tomorrow-people",
+      "tvmazeId": 3676,
+      "image": "assets/show-art/tomorrow-people.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/18/47381.jpg"
+    },
+    "transformers": {
+      "title": "Transformers",
+      "premiered": "1984-09-17",
+      "ended": "1987-11-11",
+      "year": 1984,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4227/transformers",
+      "tvmazeId": 4227,
+      "image": "assets/show-art/transformers.webp",
+      "imageSource": "https://archive.org/download/transformers-season-1/transformers-season-1.thumbs/S01E02%20More%20Than%20Meets%20The%20Eye%20%28Part%202%29_000145.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/transformers-season-1"
+    },
+    "tripods": {
+      "title": "The Tripods",
+      "premiered": "1984-09-15",
+      "ended": "1985-11-23",
+      "year": 1984,
+      "genres": [
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/5524/the-tripods",
+      "tvmazeId": 5524,
+      "image": "assets/show-art/tripods.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/56185.jpg"
+    },
+    "turbo-teen": {
+      "title": "Turbo Teen",
+      "premiered": "1984-09-01",
+      "ended": "1984-12-01",
+      "year": 1984,
+      "genres": [
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/9234/turbo-teen",
+      "tvmazeId": 9234,
+      "image": "assets/show-art/turbo-teen.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/224/562464.jpg"
+    },
+    "turkey-tv": {
+      "title": "Turkey Television",
+      "premiered": null,
+      "year": 1985,
+      "genres": [
+        "Comedy"
+      ],
+      "sourceUrl": "https://archive.org/details/turkey-television",
+      "image": "assets/show-art/turkey-tv.webp",
+      "imageSource": "https://archive.org/download/turkey-television/__ia_thumb.jpg"
+    },
+    "ufo": {
+      "title": "UFO",
+      "premiered": "1970-09-16",
+      "ended": "1971-08-07",
+      "year": 1970,
+      "genres": [
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/5919/ufo",
+      "tvmazeId": 5919,
+      "image": "assets/show-art/ufo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/150/376279.jpg"
+    },
+    "ulysses-31": {
+      "title": "Ulysses 31",
+      "premiered": "1981-10-03",
+      "ended": "1982-03-27",
+      "year": 1981,
+      "genres": [
+        "Children",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/19318/ulysses-31",
+      "tvmazeId": 19318,
+      "image": "assets/show-art/ulysses-31.webp",
+      "imageSource": "https://archive.org/download/ulysses-31-1981-complete-series/ulysses-31-1981-complete-series.thumbs/ULYSSES%2031%20E01%20-%20Vengence%20of%20the%20Gods%20%2803%20October%201981%29_000130.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/ulysses-31-1981-complete-series"
+    },
+    "v": {
+      "title": "V",
+      "premiered": "1983-05-01",
+      "ended": "1985-03-22",
+      "year": 1983,
+      "genres": [
+        "Drama",
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1039/v",
+      "tvmazeId": 1039,
+      "image": "assets/show-art/v.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/356/890308.jpg"
+    },
+    "valley-dinosaurs": {
+      "title": "Valley of the Dinosaurs",
+      "premiered": "1974-09-07",
+      "ended": "1974-12-21",
+      "year": 1974,
+      "genres": [],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/19507/valley-of-the-dinosaurs",
+      "tvmazeId": 19507,
+      "image": "assets/show-art/valley-dinosaurs.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/68/171867.jpg"
+    },
+    "venture-bros": {
+      "title": "The Venture Bros.",
+      "premiered": "2003-02-16",
+      "ended": "2023-07-21",
+      "year": 2003,
+      "genres": [
+        "Comedy",
+        "Adventure"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/304/the-venture-bros",
+      "tvmazeId": 304,
+      "image": "assets/show-art/venture-bros.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/557817.jpg"
+    },
+    "vintage-commercials": {
+      "title": "Vintage commercial breaks",
+      "premiered": null,
+      "year": null,
+      "genres": [
+        "Collections"
+      ],
+      "sourceUrl": "https://archive.org/details/youtube-yo9cFl4MNXs",
+      "image": "assets/show-art/vintage-commercials.webp",
+      "imageSource": "https://archive.org/download/youtube-yo9cFl4MNXs/__ia_thumb.jpg"
+    },
+    "visionaries": {
+      "title": "Visionaries: Knights of the Magical Light",
+      "premiered": "1987-09-21",
+      "ended": "1987-12-14",
+      "year": 1987,
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/11032/visionaries-knights-of-the-magical-light",
+      "tvmazeId": 11032,
+      "image": "assets/show-art/visionaries.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/37/92701.jpg"
+    },
+    "voltron": {
+      "title": "Voltron: Defender of the Universe",
+      "premiered": "1984-09-10",
+      "ended": "1985-11-18",
+      "year": 1984,
+      "genres": [
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/18006/voltron-defender-of-the-universe",
+      "tvmazeId": 18006,
+      "image": "assets/show-art/voltron.webp",
+      "imageSource": "https://archive.org/download/voltron-lion-force/Episode%2001.mp4#t=60",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/voltron-lion-force"
+    },
+    "voyagers": {
+      "title": "Voyagers!",
+      "premiered": "1982-10-03",
+      "ended": "1983-07-10",
+      "year": 1982,
+      "genres": [
+        "Adventure",
+        "Family",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1507/voyagers",
+      "tvmazeId": 1507,
+      "image": "assets/show-art/voyagers.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/220/551358.jpg"
+    },
+    "wacky-races": {
+      "title": "Wacky Races",
+      "premiered": "1968-09-14",
+      "ended": "1969-01-04",
+      "year": 1968,
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/5751/wacky-races",
+      "tvmazeId": 5751,
+      "image": "assets/show-art/wacky-races.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/289/724644.jpg"
+    },
+    "wheelie": {
+      "title": "Wheelie and the Chopper Bunch",
+      "premiered": "1974-09-07",
+      "ended": "1974-11-30",
+      "year": 1974,
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/21834/wheelie-and-the-chopper-bunch",
+      "tvmazeId": 21834,
+      "image": "assets/show-art/wheelie.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/78/196704.jpg"
+    },
+    "whiz-kids": {
+      "title": "Whiz Kids",
+      "premiered": "1983-10-05",
+      "ended": "1984-06-02",
+      "year": 1983,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Children"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/18216/whiz-kids",
+      "tvmazeId": 18216,
+      "image": "assets/show-art/whiz-kids.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/61/154072.jpg"
+    },
+    "whos-boss": {
+      "title": "Who's the Boss?",
+      "premiered": "1984-09-20",
+      "ended": "1992-04-25",
+      "year": 1984,
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/711/whos-the-boss",
+      "tvmazeId": 711,
+      "image": "assets/show-art/whos-boss-logo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/308/771451.jpg",
+      "imageRole": "title-art"
+    },
+    "wizards-warriors": {
+      "title": "Wizards and Warriors",
+      "premiered": "1983-02-26",
+      "ended": "1983-05-14",
+      "year": 1983,
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/39581/wizards-and-warriors",
+      "tvmazeId": 39581,
+      "image": "assets/show-art/wizards-warriors.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/269/673017.jpg"
+    },
+    "wkrp": {
+      "title": "WKRP in Cincinnati",
+      "premiered": "1978-09-18",
+      "ended": "1982-04-21",
+      "year": 1978,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/5519/wkrp-in-cincinnati",
+      "tvmazeId": 5519,
+      "image": "assets/show-art/wkrp.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/412/1031188.jpg"
+    },
+    "x-men-tas": {
+      "title": "X-Men",
+      "premiered": "1992-10-31",
+      "ended": "1997-09-20",
+      "year": 1992,
+      "genres": [
+        "Children",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/472/x-men",
+      "tvmazeId": 472,
+      "image": "assets/show-art/x-men-tas.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/219/549383.jpg"
+    },
+    "ycdtotv": {
+      "title": "You Can't Do That on Television",
+      "premiered": "1979-02-03",
+      "ended": "1990-05-25",
+      "year": 1979,
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/8364/you-cant-do-that-on-television",
+      "tvmazeId": 8364,
+      "image": "assets/show-art/ycdtotv.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/30/75010.jpg"
+    },
+    "yogi-bear": {
+      "title": "The Yogi Bear Show",
+      "premiered": "1958-10-02",
+      "ended": "1962-01-06",
+      "year": 1958,
+      "genres": [
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/5755/the-yogi-bear-show",
+      "tvmazeId": 5755,
+      "image": "assets/show-art/yogi-bear.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/57393.jpg"
+    },
+    "dallas": {
+      "title": "Dallas",
+      "premiered": "1978-04-02",
+      "ended": "1991-05-03",
+      "year": 1978,
+      "genres": [
+        "Drama",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/863/dallas",
+      "tvmazeId": 863,
+      "image": "assets/show-art/dallas.webp",
+      "imageSource": "https://archive.org/download/Dallas-s2-1080p/S02E01.Reunion.1.1080p.mp4#t=60",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/Dallas-s2-1080p"
+    },
+    "dastardly-muttley": {
+      "title": "Dastardly & Muttley in Their Flying Machines",
+      "premiered": "1969-09-13",
+      "ended": "1970-01-03",
+      "year": 1969,
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/8721/dastardly-muttley-in-their-flying-machines",
+      "tvmazeId": 8721,
+      "image": "assets/show-art/dastardly-muttley.webp",
+      "imageSource": "https://archive.org/download/dastardly-and-muttley-1985-uk-vhs/dastardly-and-muttley-1985-uk-vhs.thumbs/Dastardly%20and%20Muttley%20%281985%20UK%20VHS%29_000114.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/dastardly-and-muttley-1985-uk-vhs"
+    },
+    "emergency": {
+      "title": "Emergency!",
+      "premiered": "1972-01-15",
+      "ended": "1979-07-03",
+      "year": 1972,
+      "genres": [
+        "Drama",
+        "Action",
+        "Medical"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1470/emergency",
+      "tvmazeId": 1470,
+      "image": "assets/show-art/emergency.webp",
+      "imageSource": "https://archive.org/download/cy-s-0-e-0-te-we-t7/Emergency%20S01E01%20The%20Wedsworth-Townsend%20Act.mp4#t=60",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/cy-s-0-e-0-te-we-t7"
+    },
+    "kojak": {
+      "title": "Kojak",
+      "premiered": "1973-10-24",
+      "ended": "1990-03-16",
+      "year": 1973,
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/2211/kojak",
+      "tvmazeId": 2211,
+      "image": "assets/show-art/kojak.webp",
+      "imageSource": "https://archive.org/download/Kojak-Lando18/Kojak-Lando18.thumbs/Movie%20-%20Kojak%201985%20%28The%20Belarus%20File%29_000153.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/Kojak-Lando18"
+    },
+    "mighty-hercules": {
+      "title": "The Mighty Hercules",
+      "premiered": "1963-09-01",
+      "ended": "1964-10-03",
+      "year": 1963,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/75253/the-mighty-hercules",
+      "tvmazeId": 75253,
+      "image": "assets/show-art/mighty-hercules.webp",
+      "imageSource": "https://archive.org/download/the-mighty-hercules-daedalus-becomes-a-giant-remastered/the-mighty-hercules-daedalus-becomes-a-giant-remastered.thumbs/The%20Mighty%20Hercules%20-%20Daedalus%20Becomes%20A%20Giant%20%28Remastered%29_000060.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/the-mighty-hercules-daedalus-becomes-a-giant-remastered"
+    },
+    "room-222": {
+      "title": "Room 222",
+      "premiered": "1969-09-17",
+      "ended": "1974-01-11",
+      "year": 1969,
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7510/room-222",
+      "tvmazeId": 7510,
+      "image": "assets/show-art/room-222.webp",
+      "imageSource": "https://archive.org/download/Room-222-Season-1/Season%201/S01E01%20-%20Richie's%20Story.ia.mp4#t=60",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/Room-222-Season-1"
+    },
+    "starsky-hutch": {
+      "title": "Starsky & Hutch",
+      "premiered": "1975-04-30",
+      "ended": "1979-05-15",
+      "year": 1975,
+      "genres": [
+        "Action",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/5487/starsky-hutch",
+      "tvmazeId": 5487,
+      "image": "assets/show-art/starsky-hutch.webp",
+      "imageSource": "https://archive.org/download/sty-ch-s-01-e-00-lot/sty-ch-s-01-e-00-lot.thumbs/Starsky%20%26%20Hutch%20S03E02%20Starsky%20and%20Hutch%20on%20Playboy%20Island%20Part%202_000112.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/sty-ch-s-01-e-00-lot"
+    },
+    "woody-woodpecker": {
+      "title": "The Woody Woodpecker Show",
+      "premiered": "1957-10-03",
+      "ended": "1972-09-01",
+      "year": 1957,
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/6882/the-woody-woodpecker-show",
+      "tvmazeId": 6882,
+      "image": "assets/show-art/woody-woodpecker.webp",
+      "imageSource": "https://archive.org/download/028-the-mad-hatter-1948/028-the-mad-hatter-1948.thumbs/007%20-%20The%20Loan%20Stranger_000088.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/028-the-mad-hatter-1948"
+    },
+    "mr-magoo": {
+      "title": "The Mr. Magoo Show (1960)",
+      "genres": [],
+      "sourceUrl": "https://archive.org/details/title_t02_202601",
+      "image": "assets/show-art/mr-magoo.webp",
+      "imageSource": "https://archive.org/download/title_t02_202601/title_t02_202601.thumbs/title_t00_000227.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/title_t02_202601",
+      "type": "Animation",
+      "year": 1960,
+      "dateSource": "https://archive.org/details/title_t02_202601"
+    },
+    "smurfs": {
+      "title": "The Smurfs (1981)",
+      "genres": [],
+      "sourceUrl": "https://archive.org/details/the-smurfs-1981_202601",
+      "image": "assets/show-art/smurfs.webp",
+      "imageSource": "https://archive.org/download/the-smurfs-1981_202601/the-smurfs-1981_202601.thumbs/Specials/Other/Smurf%20Speak_000130.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/the-smurfs-1981_202601",
+      "type": "Animation",
+      "year": 1981,
+      "dateSource": "https://archive.org/details/the-smurfs-1981_202601"
+    },
+    "fractured-fairy-tales": {
+      "title": "Fractured Fairy Tales",
+      "genres": [],
+      "sourceUrl": "https://archive.org/details/z-fractured-fairy-tales-4-hour-marathon",
+      "image": "assets/show-art/fractured-fairy-tales.webp",
+      "imageSource": "https://archive.org/download/z-fractured-fairy-tales-4-hour-marathon/z-fractured-fairy-tales-4-hour-marathon.thumbs/Fractured%20Fairy%20Tales%20%20%20Snow%20White%20Meets%20Rapunzel_000060.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/z-fractured-fairy-tales-4-hour-marathon",
+      "type": "Animation"
+    },
+    "dudley-do-right": {
+      "title": "Dudley Do-Right of the Mounties",
+      "genres": [],
+      "sourceUrl": "https://archive.org/details/dudley-do-right-complete-720-540",
+      "image": "assets/show-art/dudley-do-right.webp",
+      "imageSource": "https://archive.org/download/dudley-do-right-complete-720-540/dudley-do-right-complete-720-540.thumbs/01%20-%20The%20Disloyal%20Canadians_000206.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/dudley-do-right-complete-720-540",
+      "type": "Animation"
+    },
+    "rocky-bullwinkle": {
+      "title": "Rocky and Bullwinkle and Friends (1959)",
+      "genres": [],
+      "sourceUrl": "https://archive.org/details/show-1_20260614",
+      "image": "assets/show-art/rocky-bullwinkle.webp",
+      "imageSource": "https://archive.org/download/show-1_20260614/show-1_20260614.thumbs/S01AEP01%20-%20Jet%20Fuel%20Formula_000196.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/show-1_20260614",
+      "type": "Animation",
+      "year": 1959,
+      "dateSource": "https://archive.org/details/show-1_20260614"
+    },
+    "chilly-willy": {
+      "title": "Chilly Willy · original shorts",
+      "genres": [],
+      "sourceUrl": "https://archive.org/details/walter-lantzs-chilly-willy",
+      "image": "assets/show-art/chilly-willy.webp",
+      "imageSource": "https://archive.org/download/walter-lantzs-chilly-willy/walter-lantzs-chilly-willy.thumbs/01%20-%20Chilly%20Willy%20%281953%29_000123.jpg",
+      "imageRole": "scene",
+      "imageCreditUrl": "https://archive.org/details/walter-lantzs-chilly-willy",
+      "type": "Animation"
+    }
+  }
+}
