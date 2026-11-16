@@ -46,4 +46,10 @@ for game in ["spyhunter","starwars","afterburner","doubledragon","knightrider"]:
  if game=="knightrider":s+="\nasync function frames(n){const start=gm().getFrameNum(),until=Date.now()+5000;while(gm().getFrameNum()-start<n){if(document.hidden||Date.now()>until)throw Error('Game suspended');await new Promise(r=>setTimeout(r,16));}}\n"
  p.write_text(s)
 
+
+# The launch button stays disabled until deferred game controls are bound.
+for game in packages:
+ folder=root/'ports-v12'/game
+ p=folder/'index.html';p.write_text(p.read_text().replace('id="start"','id="start" disabled aria-busy="true"'))
+ p=folder/('deck.js' if (folder/'deck.js').exists() else 'app.js');p.write_text(p.read_text()+"\n// Do not accept the first click before the deferred controls have initialized.\ndocument.getElementById('start').disabled=false;document.getElementById('start').setAttribute('aria-busy','false');\n")
 print(json.dumps({'installed':len(records),'nativeApksPublished':False}))

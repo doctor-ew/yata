@@ -4,7 +4,7 @@ export const flashUpgrades=new Map([
 ]);
 export function upgradeGame(game){
  const id=flashUpgrades.get(game.title);
- if(id)return {...game,frame:frame(id),originalFrame:game.frame||`flash.html?game=${encodeURIComponent(game.id)}`,phone:null,portIcon:art(id),tag:'TOUCH CONTROLS · OPTIONAL MODS',review:'Updated preservation build · optional mods start off',hint:'Updated touch and keyboard controls. Use PAUSE / MODS for this game’s supported options.'};
+ if(id)return {...game,frame:frame(id),originalFrame:game.frame||`flash.html?game=${encodeURIComponent(game.id)}`,phone:null,portIcon:art(id),tag:id==='rick-and-morty'?'TOUCH CONTROLS · FOUR CHAPTERS':'TOUCH CONTROLS · OPTIONAL MODS',review:id==='rick-and-morty'?'All four chapters bundled · updated touch controls':'Updated preservation build · optional mods start off',hint:id==='rick-and-morty'?'All four chapters are available from the original title screen. Use the movement pad and tap objects.':'Updated touch and keyboard controls. Use PAUSE / MODS for this game’s supported options.'};
  if(game.id==='star-wars-arcade'){const {core,file,...rest}=game;return {...rest,frame:frame('starwars'),portIcon:art('starwars'),tag:'ATARI · VECTOR ARCADE · MODS',review:'Updated flight controls · shields and Force switches',hint:'Use the in-game movement pad and Fire. PAUSE / MODS includes Reverse up/down and optional cheats.'};}
  if(game.id==='spy-hunter')return {...game,title:'Spy Hunter (Atari 2600)'};
  return game;
