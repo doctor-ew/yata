@@ -33,3 +33,5 @@ The roster also includes original Strawberry Shortcake, Jem, She-Ra, Kermit, Mis
 Droids-era C-3PO, Kojak and Captain Kangaroo are available as TV companions. Their presence does not add playable show sources. Silver Spoons, The Wonder Years and Captain Kangaroo were absent from the published station catalog when checked for 0.8.4.
 
 Arcade has its own six-character companion pool and game-aware routing; see [ARCADE-BUDDIES.md](ARCADE-BUDDIES.md).
+
+Silver Spoons, the original Wonder Years and Captain Kangaroo were added to the station in 0.8.5; see [THREE-TV-ADDITIONS.md](THREE-TV-ADDITIONS.md) for coverage and recording notes.

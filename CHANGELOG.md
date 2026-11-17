@@ -2,6 +2,14 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.5 — 2026-11-17
+
+- Added Silver Spoons (1982) to Comedy: one standalone episode and 22 labelled Antenna TV broadcast recordings, which include commercials and surrounding airtime.
+- Added 115 original-series Wonder Years episodes to Drama, and 14 original Captain Kangaroo broadcasts or presentations to Nickelodeon.
+- All 152 new source endpoints passed byte-range checks; representative sources use H.264/AAC. Explicit partial Captain Kangaroo files were excluded.
+
+[Android release](https://github.com/doctor-ew/yata/releases/tag/yata-android-v0.8.5)
+
 ## 0.8.4 — 2026-11-17
 
 - Added game-aware play requests: choose TV or game for ambiguous names, retain a locked game until Konami unlock, and launch the exact installed game afterward. Cancelling or closing chat clears the pending launch.

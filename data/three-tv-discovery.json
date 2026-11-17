@@ -1,0 +1,3717 @@
+{
+  "checkedAt": "2026-11-17T18:06:56.151Z",
+  "provider": "archive",
+  "notes": [
+    "Metadata, sample codec probes and small HTTP ranges establish source identity and endpoint availability, not full decoding, rights or future availability. Media remains on its provider."
+  ],
+  "shows": [
+    {
+      "showId": "silver-spoons",
+      "title": "Silver Spoons (1982)",
+      "channel": "comedy",
+      "items": [
+        "silvspon-antennatv",
+        "SilverSpoonsHeadOverHeelsSeason4Premiere"
+      ],
+      "notes": "One standalone episode and intact Antenna TV broadcast recordings. Broadcast recordings retain commercials and surrounding airtime; they are not clean episode cuts. Split-part uploads are excluded.",
+      "episodes": [
+        {
+          "id": "archive-silvspon-antennatv-0",
+          "title": "Silver Spoons S02E16 — A Hunting We Will Go · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 2,
+          "number": 16,
+          "durationSeconds": 2409.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e16%201984-02-18%20A%20Hunting%20We%20Will%20Go%202021-05-30-1655-1.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-1",
+          "title": "Silver Spoons S02E17 — Changes · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 2,
+          "number": 17,
+          "durationSeconds": 2399.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e17%201984-03-03%20Changes%202021-05-30-1725-2.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-2",
+          "title": "Silver Spoons S02E18 — A Summers Romance · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 2,
+          "number": 18,
+          "durationSeconds": 2329.62,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e18%201984-03-10%20A%20Summers%20Romance%202020-09-06-1756-3.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-3",
+          "title": "Silver Spoons S02E19 — A Summers Romance · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 2,
+          "number": 19,
+          "durationSeconds": 2399.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e19%201984-03-17%20A%20Summers%20Romance%202020-09-06-1825-4.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-4",
+          "title": "Silver Spoons S02E20 — Spare The Rod · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 2,
+          "number": 20,
+          "durationSeconds": 2390.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e20%201984-03-24%20Spare%20The%20Rod%202020-09-13-1755-5.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-5",
+          "title": "Silver Spoons S02E21 — Blazing Hotel Rooms · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 2,
+          "number": 21,
+          "durationSeconds": 2419.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e21%201984-03-31%20Blazing%20Hotel%20Rooms%202020-09-13-1825-6.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-6",
+          "title": "Silver Spoons S02E22 — Hi Mom · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 2,
+          "number": 22,
+          "durationSeconds": 2389.92,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e22%201984-04-07%20Hi%20Mom%202020-09-20-1755-7.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-7",
+          "title": "Silver Spoons S03E01 — Best Friends · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 2410.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e01%201984-09-16%20Best%20Friends%202020-09-20-1825-8.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-8",
+          "title": "Silver Spoons S03E02 — Survival Of The Fittest · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 2400.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e02%201984-09-23%20Survival%20Of%20The%20Fittest%202020-09-27-1755-9.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-9",
+          "title": "Silver Spoons S03E03 — Growing Pains · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 2419.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e03%201984-09-30%20Growing%20Pains%202020-10-04-1755-10.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-10",
+          "title": "Silver Spoons S03E04 — Growing Pains · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 2399.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e04%201984-10-07%20Growing%20Pains%202020-10-04-1825-11.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-11",
+          "title": "Silver Spoons S03E05 — A Dark And Stormy Night · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 2400.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e05%201984-10-28%20A%20Dark%20And%20Stormy%20Night%202020-09-27-1825-12.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-12",
+          "title": "Silver Spoons S03E06 — I Wont Dance · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 2399.73,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e06%201984-11-04%20I%20Wont%20Dance%202020-10-18-1755-13.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-13",
+          "title": "Silver Spoons S03E16 — Marry Me Marry Me · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 3,
+          "number": 16,
+          "durationSeconds": 2399.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e16%201985-02-03%20Marry%20Me%20Marry%20Me%202021-02-14-1355-14.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-14",
+          "title": "Silver Spoons S03E17 — Marry Me Marry Me · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 3,
+          "number": 17,
+          "durationSeconds": 2399.41,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e17%201985-02-10%20Marry%20Me%20Marry%20Me%202021-02-14-1425-15.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-15",
+          "title": "Silver Spoons S03E19 — Trouble With Words · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 3,
+          "number": 19,
+          "durationSeconds": 1829.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e19%201985-02-24%20Trouble%20With%20Words%202020-12-13-1805-16.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-16",
+          "title": "Silver Spoons S03E20 — Hotshot · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 3,
+          "number": 20,
+          "durationSeconds": 1880.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e20%201985-03-03%20Hotshot%202020-12-13-1825-17.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-17",
+          "title": "Silver Spoons S03E22 — All The Principals Men · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 3,
+          "number": 22,
+          "durationSeconds": 2389.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e22%201985-03-10%20All%20The%20Principals%20Men%202020-12-20-1755-18.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-18",
+          "title": "Silver Spoons S03E23 — The Secret Life Of Ricky Stratton · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 3,
+          "number": 23,
+          "durationSeconds": 2409.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e23%201985-03-24%20The%20Secret%20Life%20Of%20Ricky%20Stratton%202020-12-20-1825-19.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-SilverSpoonsHeadOverHeelsSeason4Premiere-0",
+          "title": "Silver Spoons S04E01 — Head Over Heels",
+          "season": 4,
+          "number": 1,
+          "durationSeconds": 1473.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/SilverSpoonsHeadOverHeelsSeason4Premiere/Silver-Spoons-Head-Over-Heels-_Season-4-Premiere_.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-19",
+          "title": "Silver Spoons S04E22 — A Family Affair · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 4,
+          "number": 22,
+          "durationSeconds": 2419.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S04e22%201986-03-16%20A%20Family%20Affair%202021-02-13-1425-20.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-20",
+          "title": "Silver Spoons S05E02 — Lost And Found · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 5,
+          "number": 2,
+          "durationSeconds": 2399.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S05e02%201986-09-22%20Lost%20And%20Found%202021-02-07-1425-21.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-silvspon-antennatv-21",
+          "title": "Silver Spoons S05E03 — The Livein · Antenna TV broadcast recording (includes surrounding airtime)",
+          "season": 5,
+          "number": 3,
+          "durationSeconds": 2429.74,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S05e03%201986-09-29%20The%20Livein%202021-02-07-1355-22.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e19%201984-03-17%20A%20Summers%20Romance%202020-09-06-1825-4.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e17%201984-03-03%20Changes%202021-05-30-1725-2.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e16%201984-02-18%20A%20Hunting%20We%20Will%20Go%202021-05-30-1655-1.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e22%201984-04-07%20Hi%20Mom%202020-09-20-1755-7.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e01%201984-09-16%20Best%20Friends%202020-09-20-1825-8.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e20%201984-03-24%20Spare%20The%20Rod%202020-09-13-1755-5.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e18%201984-03-10%20A%20Summers%20Romance%202020-09-06-1756-3.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S02e21%201984-03-31%20Blazing%20Hotel%20Rooms%202020-09-13-1825-6.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e02%201984-09-23%20Survival%20Of%20The%20Fittest%202020-09-27-1755-9.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e03%201984-09-30%20Growing%20Pains%202020-10-04-1755-10.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e04%201984-10-07%20Growing%20Pains%202020-10-04-1825-11.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e16%201985-02-03%20Marry%20Me%20Marry%20Me%202021-02-14-1355-14.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e05%201984-10-28%20A%20Dark%20And%20Stormy%20Night%202020-09-27-1825-12.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e17%201985-02-10%20Marry%20Me%20Marry%20Me%202021-02-14-1425-15.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e19%201985-02-24%20Trouble%20With%20Words%202020-12-13-1805-16.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e20%201985-03-03%20Hotshot%202020-12-13-1825-17.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e06%201984-11-04%20I%20Wont%20Dance%202020-10-18-1755-13.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e22%201985-03-10%20All%20The%20Principals%20Men%202020-12-20-1755-18.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S04e22%201986-03-16%20A%20Family%20Affair%202021-02-13-1425-20.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S03e23%201985-03-24%20The%20Secret%20Life%20Of%20Ricky%20Stratton%202020-12-20-1825-19.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S05e02%201986-09-22%20Lost%20And%20Found%202021-02-07-1425-21.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/silvspon-antennatv/silver%20spoons%20from%20antenna%20tv/Silver%20Spoons%20S05e03%201986-09-29%20The%20Livein%202021-02-07-1355-22.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/SilverSpoonsHeadOverHeelsSeason4Premiere/Silver-Spoons-Head-Over-Heels-_Season-4-Premiere_.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "showId": "wonder-years",
+      "title": "The Wonder Years (1988)",
+      "channel": "drama",
+      "items": [
+        "the-wonder-years-complete-series"
+      ],
+      "notes": "Original Fred Savage series, not the 2021 reboot. Explicit season/episode order retained. Endpoint checks do not establish a full decode or future availability.",
+      "episodes": [
+        {
+          "id": "archive-the-wonder-years-complete-series-0",
+          "title": "The Wonder Years S01E01 - Pilot",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1480.92,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S01E01%20-%20Pilot.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-1",
+          "title": "The Wonder Years S01E02 - Swingers",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1405.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S01E02%20-%20Swingers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-2",
+          "title": "The Wonder Years S01E03 - My Father's Office",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1432.43,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S01E03%20-%20My%20Father's%20Office.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-3",
+          "title": "The Wonder Years S01E04 - Angel",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1420.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S01E04%20-%20Angel.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-4",
+          "title": "The Wonder Years S01E05 - The Phone Call",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1431.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S01E05%20-%20The%20Phone%20Call.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-5",
+          "title": "The Wonder Years S01E06 - Dance with Me",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1426.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S01E06%20-%20Dance%20with%20Me.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-6",
+          "title": "The Wonder Years S02E01 - Heart of Darkness",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1414.48,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E01%20-%20Heart%20of%20Darkness.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-7",
+          "title": "The Wonder Years S02E02 - Our Miss White",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1436.44,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E02%20-%20Our%20Miss%20White.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-8",
+          "title": "The Wonder Years S02E03 - Christmas",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 1374.55,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E03%20-%20Christmas.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-9",
+          "title": "The Wonder Years S02E04 - Steady as She Goes",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 1431.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E04%20-%20Steady%20as%20She%20Goes.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-10",
+          "title": "The Wonder Years S02E05 - Just Between Me and You and Kirk and Paul and Carla and Becky",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 1417.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E05%20-%20Just%20Between%20Me%20and%20You%20and%20Kirk%20and%20Paul%20and%20Carla%20and%20Becky.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-11",
+          "title": "The Wonder Years S02E06 - Pottery Will Get You Nowhere",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 1367.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E06%20-%20Pottery%20Will%20Get%20You%20Nowhere.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-12",
+          "title": "The Wonder Years S02E07 - Coda",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 1401.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E07%20-%20Coda.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-13",
+          "title": "The Wonder Years S02E08 - Hiroshima, Mon Frere",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 1401.43,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E08%20-%20Hiroshima%2C%20Mon%20Frere.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-14",
+          "title": "The Wonder Years S02E09 - Loosiers",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 1387.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E09%20-%20Loosiers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-15",
+          "title": "The Wonder Years S02E10 - Walk Out",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 1394.15,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E10%20-%20Walk%20Out.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-16",
+          "title": "The Wonder Years S02E11 - Nemesis",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 1400.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E11%20-%20Nemesis.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-17",
+          "title": "The Wonder Years S02E12 - Fate",
+          "season": 2,
+          "number": 12,
+          "durationSeconds": 1369.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E12%20-%20Fate.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-18",
+          "title": "The Wonder Years S02E13 - Birthday Boy",
+          "season": 2,
+          "number": 13,
+          "durationSeconds": 1392.15,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E13%20-%20Birthday%20Boy.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-19",
+          "title": "The Wonder Years S02E14 - Brightwing",
+          "season": 2,
+          "number": 14,
+          "durationSeconds": 1347.31,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E14%20-%20Brightwing.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-20",
+          "title": "The Wonder Years S02E15 - Square Dance",
+          "season": 2,
+          "number": 15,
+          "durationSeconds": 1332.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E15%20-%20Square%20Dance.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-21",
+          "title": "The Wonder Years S02E16 - Whose Woods Are These",
+          "season": 2,
+          "number": 16,
+          "durationSeconds": 1388.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E16%20-%20Whose%20Woods%20Are%20These.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-22",
+          "title": "The Wonder Years S02E17 - How I'm Spending My Summer Vacation",
+          "season": 2,
+          "number": 17,
+          "durationSeconds": 1395.63,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-22",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E17%20-%20How%20I'm%20Spending%20My%20Summer%20Vacation.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-23",
+          "title": "The Wonder Years S03E01 - Summer Song",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 1401.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-23",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E01%20-%20Summer%20Song.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-24",
+          "title": "The Wonder Years S03E02 - Math Class",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 1386.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-24",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E02%20-%20Math%20Class.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-25",
+          "title": "The Wonder Years S03E03 - Wayne on Wheels",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 1365.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-25",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E03%20-%20Wayne%20on%20Wheels.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-26",
+          "title": "The Wonder Years S03E04 - Mom Wars",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 1365.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-26",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E04%20-%20Mom%20Wars.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-27",
+          "title": "The Wonder Years S03E05 - On The Spot",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 1388.44,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-27",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E05%20-%20On%20The%20Spot.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-28",
+          "title": "The Wonder Years S03E06 - Odd Man Out",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 1391.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-28",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E06%20-%20Odd%20Man%20Out.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-29",
+          "title": "The Wonder Years S03E07 - The Family Car",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 1395.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-29",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E07%20-%20The%20Family%20Car.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-30",
+          "title": "The Wonder Years S03E08 - The Pimple",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 1376.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-30",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E08%20-%20The%20Pimple.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-31",
+          "title": "The Wonder Years S03E09 - Math Class Squared",
+          "season": 3,
+          "number": 9,
+          "durationSeconds": 1394.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-31",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E09%20-%20Math%20Class%20Squared.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-32",
+          "title": "The Wonder Years S03E10 - Rock 'n Roll",
+          "season": 3,
+          "number": 10,
+          "durationSeconds": 1359.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-32",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E10%20-%20Rock%20'n%20Roll.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-33",
+          "title": "The Wonder Years S03E11 - Don't You Know Anything About Women",
+          "season": 3,
+          "number": 11,
+          "durationSeconds": 1371.35,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-33",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E11%20-%20Don't%20You%20Know%20Anything%20About%20Women.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-34",
+          "title": "The Wonder Years S03E12 - The Powers That Be",
+          "season": 3,
+          "number": 12,
+          "durationSeconds": 1396.18,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-34",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E12%20-%20The%20Powers%20That%20Be.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-35",
+          "title": "The Wonder Years S03E13 - She, My Friend and I",
+          "season": 3,
+          "number": 13,
+          "durationSeconds": 1373.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-35",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E13%20-%20She%2C%20My%20Friend%20and%20I.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-36",
+          "title": "The Wonder Years S03E14 - The St. Valentine's Day Massacre",
+          "season": 3,
+          "number": 14,
+          "durationSeconds": 1386.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-36",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E14%20-%20The%20St.%20Valentine's%20Day%20Massacre.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-37",
+          "title": "The Wonder Years S03E15 - The Tree House",
+          "season": 3,
+          "number": 15,
+          "durationSeconds": 1385.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-37",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E15%20-%20The%20Tree%20House.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-38",
+          "title": "The Wonder Years S03E16 - The Glee Club",
+          "season": 3,
+          "number": 16,
+          "durationSeconds": 1366.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-38",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E16%20-%20The%20Glee%20Club.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-39",
+          "title": "The Wonder Years S03E17 - Night Out",
+          "season": 3,
+          "number": 17,
+          "durationSeconds": 1393.62,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-39",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E17%20-%20Night%20Out.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-40",
+          "title": "The Wonder Years S03E18 - Faith",
+          "season": 3,
+          "number": 18,
+          "durationSeconds": 1391.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-40",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E18%20-%20Faith.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-41",
+          "title": "The Wonder Years S03E19 - The Unnatural",
+          "season": 3,
+          "number": 19,
+          "durationSeconds": 1361,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-41",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E19%20-%20The%20Unnatural.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-42",
+          "title": "The Wonder Years S03E20 - Goodbye",
+          "season": 3,
+          "number": 20,
+          "durationSeconds": 1411.48,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-42",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E20%20-%20Goodbye.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-43",
+          "title": "The Wonder Years S03E21 - Cocoa and Sympathy",
+          "season": 3,
+          "number": 21,
+          "durationSeconds": 1389.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-43",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E21%20-%20Cocoa%20and%20Sympathy.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-44",
+          "title": "The Wonder Years S03E22 - Daddy's Little Girl",
+          "season": 3,
+          "number": 22,
+          "durationSeconds": 1396.46,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-44",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E22%20-%20Daddy's%20Little%20Girl.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-45",
+          "title": "The Wonder Years S03E23 - Moving",
+          "season": 3,
+          "number": 23,
+          "durationSeconds": 1381.46,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-45",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E23%20-%20Moving.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-46",
+          "title": "The Wonder Years S04E01 - Growing Up",
+          "season": 4,
+          "number": 1,
+          "durationSeconds": 1391.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-46",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E01%20-%20Growing%20Up.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-47",
+          "title": "The Wonder Years S04E02 - Ninth Grade Man",
+          "season": 4,
+          "number": 2,
+          "durationSeconds": 1394.92,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-47",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E02%20-%20Ninth%20Grade%20Man.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-48",
+          "title": "The Wonder Years S04E03 - The Journey",
+          "season": 4,
+          "number": 3,
+          "durationSeconds": 1396.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-48",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E03%20-%20The%20Journey.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-49",
+          "title": "The Wonder Years S04E04 - The Cost of Living",
+          "season": 4,
+          "number": 4,
+          "durationSeconds": 1402.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-49",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E04%20-%20The%20Cost%20of%20Living.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-50",
+          "title": "The Wonder Years S04E05 - It's A Mad, Mad, Madeline World",
+          "season": 4,
+          "number": 5,
+          "durationSeconds": 1380.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-50",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E05%20-%20It's%20A%20Mad%2C%20Mad%2C%20Madeline%20World.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-51",
+          "title": "The Wonder Years S04E06 - Little Debbie",
+          "season": 4,
+          "number": 6,
+          "durationSeconds": 1392.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-51",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E06%20-%20Little%20Debbie.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-52",
+          "title": "The Wonder Years S04E07 - The Ties That Bind",
+          "season": 4,
+          "number": 7,
+          "durationSeconds": 1385.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-52",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E07%20-%20The%20Ties%20That%20Bind.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-53",
+          "title": "The Wonder Years S04E08 - The Sixth Man",
+          "season": 4,
+          "number": 8,
+          "durationSeconds": 1368.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-53",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E08%20-%20The%20Sixth%20Man.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-54",
+          "title": "The Wonder Years S04E09 - A Very Cutlip Christmas",
+          "season": 4,
+          "number": 9,
+          "durationSeconds": 1387.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-54",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E09%20-%20A%20Very%20Cutlip%20Christmas.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-55",
+          "title": "The Wonder Years S04E10 - The Candidate",
+          "season": 4,
+          "number": 10,
+          "durationSeconds": 1356.78,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-55",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E10%20-%20The%20Candidate.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-56",
+          "title": "The Wonder Years S04E11 - Heartbreak",
+          "season": 4,
+          "number": 11,
+          "durationSeconds": 1356.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-56",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E11%20-%20Heartbreak.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-57",
+          "title": "The Wonder Years S04E12 - Denial",
+          "season": 4,
+          "number": 12,
+          "durationSeconds": 1383.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-57",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E12%20-%20Denial.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-58",
+          "title": "The Wonder Years S04E13 - Who's Aunt Rose",
+          "season": 4,
+          "number": 13,
+          "durationSeconds": 1385.81,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-58",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E13%20-%20Who's%20Aunt%20Rose.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-59",
+          "title": "The Wonder Years S04E14 - Courage",
+          "season": 4,
+          "number": 14,
+          "durationSeconds": 1362.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-59",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E14%20-%20Courage.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-60",
+          "title": "The Wonder Years S04E15 - Buster",
+          "season": 4,
+          "number": 15,
+          "durationSeconds": 1373.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-60",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E15%20-%20Buster.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-61",
+          "title": "The Wonder Years S04E16 - Road Trip",
+          "season": 4,
+          "number": 16,
+          "durationSeconds": 1385.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-61",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E16%20-%20Road%20Trip.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-62",
+          "title": "The Wonder Years S04E17 - When Worlds Collide",
+          "season": 4,
+          "number": 17,
+          "durationSeconds": 1383.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-62",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E17%20-%20When%20Worlds%20Collide.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-63",
+          "title": "The Wonder Years S04E18 - Separate Rooms",
+          "season": 4,
+          "number": 18,
+          "durationSeconds": 1377.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-63",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E18%20-%20Separate%20Rooms.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-64",
+          "title": "The Wonder Years S04E19 - The Yearbook",
+          "season": 4,
+          "number": 19,
+          "durationSeconds": 1376.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-64",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E19%20-%20The%20Yearbook.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-65",
+          "title": "The Wonder Years S04E20 - The Accident",
+          "season": 4,
+          "number": 20,
+          "durationSeconds": 1384.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-65",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E20%20-%20The%20Accident.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-66",
+          "title": "The Wonder Years S04E21 - The House That Jack Built",
+          "season": 4,
+          "number": 21,
+          "durationSeconds": 1368.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-66",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E21%20-%20The%20House%20That%20Jack%20Built.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-67",
+          "title": "The Wonder Years S04E22 - Graduation",
+          "season": 4,
+          "number": 22,
+          "durationSeconds": 1415.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-67",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E22%20-%20Graduation.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-68",
+          "title": "The Wonder Years S04E23 - The Wonder Years",
+          "season": 4,
+          "number": 23,
+          "durationSeconds": 1396.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-68",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E23%20-%20The%20Wonder%20Years.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-69",
+          "title": "The Wonder Years S05E01 - The Lake",
+          "season": 5,
+          "number": 1,
+          "durationSeconds": 1389.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-69",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E01%20-%20The%20Lake.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-70",
+          "title": "The Wonder Years S05E02 - Day One",
+          "season": 5,
+          "number": 2,
+          "durationSeconds": 1380.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-70",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E02%20-%20Day%20One.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-71",
+          "title": "The Wonder Years S05E03 - The Hardware Store",
+          "season": 5,
+          "number": 3,
+          "durationSeconds": 1378.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-71",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E03%20-%20The%20Hardware%20Store.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-72",
+          "title": "The Wonder Years S05E04 - Frank and Denise",
+          "season": 5,
+          "number": 4,
+          "durationSeconds": 1391.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-72",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E04%20-%20Frank%20and%20Denise.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-73",
+          "title": "The Wonder Years S05E05 - Full Moon Rising",
+          "season": 5,
+          "number": 5,
+          "durationSeconds": 1368.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-73",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E05%20-%20Full%20Moon%20Rising.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-74",
+          "title": "The Wonder Years S05E06 - Triangle",
+          "season": 5,
+          "number": 6,
+          "durationSeconds": 1386.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-74",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E06%20-%20Triangle.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-75",
+          "title": "The Wonder Years S05E07 - Soccer",
+          "season": 5,
+          "number": 7,
+          "durationSeconds": 1385.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-75",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E07%20-%20Soccer.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-76",
+          "title": "The Wonder Years S05E08 - Dinner Out",
+          "season": 5,
+          "number": 8,
+          "durationSeconds": 1385.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-76",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E08%20-%20Dinner%20Out.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-77",
+          "title": "The Wonder Years S05E09 - Christmas Party",
+          "season": 5,
+          "number": 9,
+          "durationSeconds": 1384.92,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-77",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E09%20-%20Christmas%20Party.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-78",
+          "title": "The Wonder Years S05E10 - Pfeiffer's Choice",
+          "season": 5,
+          "number": 10,
+          "durationSeconds": 1389.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-78",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E10%20-%20Pfeiffer's%20Choice.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-79",
+          "title": "The Wonder Years S05E11 - Road Test",
+          "season": 5,
+          "number": 11,
+          "durationSeconds": 1367.51,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-79",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E11%20-%20Road%20Test.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-80",
+          "title": "The Wonder Years S05E12 - Grandpa's Car",
+          "season": 5,
+          "number": 12,
+          "durationSeconds": 1383.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-80",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E12%20-%20Grandpa's%20Car.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-81",
+          "title": "The Wonder Years S05E13 - Kodachrome",
+          "season": 5,
+          "number": 13,
+          "durationSeconds": 1380.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-81",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E13%20-%20Kodachrome.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-82",
+          "title": "The Wonder Years S05E14 - Private Butthead",
+          "season": 5,
+          "number": 14,
+          "durationSeconds": 1428.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-82",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E14%20-%20Private%20Butthead.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-83",
+          "title": "The Wonder Years S05E15 - Of Mastodons and Men",
+          "season": 5,
+          "number": 15,
+          "durationSeconds": 1386.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-83",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E15%20-%20Of%20Mastodons%20and%20Men.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-84",
+          "title": "The Wonder Years S05E16 - Double Double Date",
+          "season": 5,
+          "number": 16,
+          "durationSeconds": 1389.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-84",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E16%20-%20Double%20Double%20Date.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-85",
+          "title": "The Wonder Years S05E17 - Hero",
+          "season": 5,
+          "number": 17,
+          "durationSeconds": 1408.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-85",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E17%20-%20Hero.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-86",
+          "title": "The Wonder Years S05E18 - Lunch Stories",
+          "season": 5,
+          "number": 18,
+          "durationSeconds": 1392.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-86",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E18%20-%20Lunch%20Stories.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-87",
+          "title": "The Wonder Years S05E19 - Carnal Knowledge",
+          "season": 5,
+          "number": 19,
+          "durationSeconds": 1381.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-87",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E19%20-%20Carnal%20Knowledge.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-88",
+          "title": "The Wonder Years S05E20 - The Lost Weekend",
+          "season": 5,
+          "number": 20,
+          "durationSeconds": 1391.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-88",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E20%20-%20The%20Lost%20Weekend.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-89",
+          "title": "The Wonder Years S05E21 - Stormy Weather",
+          "season": 5,
+          "number": 21,
+          "durationSeconds": 1413.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-89",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E21%20-%20Stormy%20Weather.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-90",
+          "title": "The Wonder Years S05E22 - The Wedding",
+          "season": 5,
+          "number": 22,
+          "durationSeconds": 1391.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-90",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E22%20-%20The%20Wedding.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-91",
+          "title": "The Wonder Years S05E23 - Back to The Lake",
+          "season": 5,
+          "number": 23,
+          "durationSeconds": 1405.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-91",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E23%20-%20Back%20to%20The%20Lake.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-92",
+          "title": "The Wonder Years S05E24 - Broken Hearts and Burgers",
+          "season": 5,
+          "number": 24,
+          "durationSeconds": 1325.59,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-92",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E24%20-%20Broken%20Hearts%20and%20Burgers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-93",
+          "title": "The Wonder Years S06E01 - Homecoming",
+          "season": 6,
+          "number": 1,
+          "durationSeconds": 1422.16,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-93",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E01%20-%20Homecoming.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-94",
+          "title": "The Wonder Years S06E02 - Fishing",
+          "season": 6,
+          "number": 2,
+          "durationSeconds": 1400.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-94",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E02%20-%20Fishing.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-95",
+          "title": "The Wonder Years S06E03 - Scenes from A Wedding",
+          "season": 6,
+          "number": 3,
+          "durationSeconds": 1407.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-95",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E03%20-%20Scenes%20from%20A%20Wedding.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-96",
+          "title": "The Wonder Years S06E04 - Sex and Economics",
+          "season": 6,
+          "number": 4,
+          "durationSeconds": 1401.43,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-96",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E04%20-%20Sex%20and%20Economics.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-97",
+          "title": "The Wonder Years S06E05 - Politics as Usual",
+          "season": 6,
+          "number": 5,
+          "durationSeconds": 1401.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-97",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E05%20-%20Politics%20as%20Usual.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-98",
+          "title": "The Wonder Years S06E06 - White Lies",
+          "season": 6,
+          "number": 6,
+          "durationSeconds": 1399.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-98",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E06%20-%20White%20Lies.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-99",
+          "title": "The Wonder Years S06E07 - Wayne and Bonnie",
+          "season": 6,
+          "number": 7,
+          "durationSeconds": 1433,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-99",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E07%20-%20Wayne%20and%20Bonnie.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-100",
+          "title": "The Wonder Years S06E08 - Kevin Delivers",
+          "season": 6,
+          "number": 8,
+          "durationSeconds": 1400.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-100",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E08%20-%20Kevin%20Delivers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-101",
+          "title": "The Wonder Years S06E09 - The Test",
+          "season": 6,
+          "number": 9,
+          "durationSeconds": 1408.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-101",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E09%20-%20The%20Test.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-102",
+          "title": "The Wonder Years S06E10 - Let Nothing You Dismay",
+          "season": 6,
+          "number": 10,
+          "durationSeconds": 1399.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-102",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E10%20-%20Let%20Nothing%20You%20Dismay.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-103",
+          "title": "The Wonder Years S06E11 - New Years",
+          "season": 6,
+          "number": 11,
+          "durationSeconds": 1381.52,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-103",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E11%20-%20New%20Years.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-104",
+          "title": "The Wonder Years S06E12 - Alice in Autoland",
+          "season": 6,
+          "number": 12,
+          "durationSeconds": 1404.31,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-104",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E12%20-%20Alice%20in%20Autoland.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-105",
+          "title": "The Wonder Years S06E13 - Ladies and Gentlemen... The Rolling Stones",
+          "season": 6,
+          "number": 13,
+          "durationSeconds": 1403.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-105",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E13%20-%20Ladies%20and%20Gentlemen...%20The%20Rolling%20Stones.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-106",
+          "title": "The Wonder Years S06E14 - Unpacking",
+          "season": 6,
+          "number": 14,
+          "durationSeconds": 1404.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-106",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E14%20-%20Unpacking.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-107",
+          "title": "The Wonder Years S06E15 - Hulk Arnold",
+          "season": 6,
+          "number": 15,
+          "durationSeconds": 1368.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-107",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E15%20-%20Hulk%20Arnold.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-108",
+          "title": "The Wonder Years S06E16 - Nose",
+          "season": 6,
+          "number": 16,
+          "durationSeconds": 1382.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-108",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E16%20-%20Nose.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-109",
+          "title": "The Wonder Years S06E17 - Eclipse",
+          "season": 6,
+          "number": 17,
+          "durationSeconds": 1399.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-109",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E17%20-%20Eclipse.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-110",
+          "title": "The Wonder Years S06E18 - Poker",
+          "season": 6,
+          "number": 18,
+          "durationSeconds": 1385.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-110",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E18%20-%20Poker.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-111",
+          "title": "The Wonder Years S06E19 - The Little Women",
+          "season": 6,
+          "number": 19,
+          "durationSeconds": 1388.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-111",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E19%20-%20The%20Little%20Women.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-112",
+          "title": "The Wonder Years S06E20 - Reunion",
+          "season": 6,
+          "number": 20,
+          "durationSeconds": 1409.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-112",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E20%20-%20Reunion.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-113",
+          "title": "The Wonder Years S06E21 - Summer",
+          "season": 6,
+          "number": 21,
+          "durationSeconds": 1366.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-113",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E21%20-%20Summer.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-wonder-years-complete-series-114",
+          "title": "The Wonder Years S06E22 - Independence Day",
+          "season": 6,
+          "number": 22,
+          "durationSeconds": 1514.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-114",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E22%20-%20Independence%20Day.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S01E01%20-%20Pilot.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S01E02%20-%20Swingers.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S01E05%20-%20The%20Phone%20Call.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E01%20-%20Heart%20of%20Darkness.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E03%20-%20Christmas.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S01E03%20-%20My%20Father's%20Office.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E06%20-%20Pottery%20Will%20Get%20You%20Nowhere.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S01E04%20-%20Angel.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S01E06%20-%20Dance%20with%20Me.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E02%20-%20Our%20Miss%20White.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E04%20-%20Steady%20as%20She%20Goes.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E05%20-%20Just%20Between%20Me%20and%20You%20and%20Kirk%20and%20Paul%20and%20Carla%20and%20Becky.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E07%20-%20Coda.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E08%20-%20Hiroshima%2C%20Mon%20Frere.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E09%20-%20Loosiers.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E10%20-%20Walk%20Out.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E11%20-%20Nemesis.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E12%20-%20Fate.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E13%20-%20Birthday%20Boy.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E15%20-%20Square%20Dance.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E14%20-%20Brightwing.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E16%20-%20Whose%20Woods%20Are%20These.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S02E17%20-%20How%20I'm%20Spending%20My%20Summer%20Vacation.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E03%20-%20Wayne%20on%20Wheels.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E01%20-%20Summer%20Song.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E02%20-%20Math%20Class.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E04%20-%20Mom%20Wars.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E05%20-%20On%20The%20Spot.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E06%20-%20Odd%20Man%20Out.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E07%20-%20The%20Family%20Car.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E08%20-%20The%20Pimple.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E09%20-%20Math%20Class%20Squared.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E11%20-%20Don't%20You%20Know%20Anything%20About%20Women.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E10%20-%20Rock%20'n%20Roll.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E12%20-%20The%20Powers%20That%20Be.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E13%20-%20She%2C%20My%20Friend%20and%20I.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E14%20-%20The%20St.%20Valentine's%20Day%20Massacre.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E15%20-%20The%20Tree%20House.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E16%20-%20The%20Glee%20Club.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E17%20-%20Night%20Out.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E21%20-%20Cocoa%20and%20Sympathy.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E18%20-%20Faith.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E19%20-%20The%20Unnatural.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E20%20-%20Goodbye.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E22%20-%20Daddy's%20Little%20Girl.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S03E23%20-%20Moving.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E01%20-%20Growing%20Up.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E03%20-%20The%20Journey.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E02%20-%20Ninth%20Grade%20Man.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E08%20-%20The%20Sixth%20Man.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E06%20-%20Little%20Debbie.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E04%20-%20The%20Cost%20of%20Living.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E05%20-%20It's%20A%20Mad%2C%20Mad%2C%20Madeline%20World.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E07%20-%20The%20Ties%20That%20Bind.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E09%20-%20A%20Very%20Cutlip%20Christmas.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E10%20-%20The%20Candidate.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E11%20-%20Heartbreak.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E12%20-%20Denial.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E14%20-%20Courage.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E13%20-%20Who's%20Aunt%20Rose.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E15%20-%20Buster.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E16%20-%20Road%20Trip.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E18%20-%20Separate%20Rooms.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E17%20-%20When%20Worlds%20Collide.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E19%20-%20The%20Yearbook.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E20%20-%20The%20Accident.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E21%20-%20The%20House%20That%20Jack%20Built.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E22%20-%20Graduation.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S04E23%20-%20The%20Wonder%20Years.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E01%20-%20The%20Lake.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E02%20-%20Day%20One.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E03%20-%20The%20Hardware%20Store.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E04%20-%20Frank%20and%20Denise.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E05%20-%20Full%20Moon%20Rising.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E06%20-%20Triangle.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E07%20-%20Soccer.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E08%20-%20Dinner%20Out.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E09%20-%20Christmas%20Party.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E10%20-%20Pfeiffer's%20Choice.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E11%20-%20Road%20Test.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E12%20-%20Grandpa's%20Car.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E13%20-%20Kodachrome.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E14%20-%20Private%20Butthead.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E15%20-%20Of%20Mastodons%20and%20Men.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E16%20-%20Double%20Double%20Date.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E17%20-%20Hero.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E18%20-%20Lunch%20Stories.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E19%20-%20Carnal%20Knowledge.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E20%20-%20The%20Lost%20Weekend.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E21%20-%20Stormy%20Weather.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E22%20-%20The%20Wedding.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E23%20-%20Back%20to%20The%20Lake.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S05E24%20-%20Broken%20Hearts%20and%20Burgers.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E01%20-%20Homecoming.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E02%20-%20Fishing.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E03%20-%20Scenes%20from%20A%20Wedding.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E04%20-%20Sex%20and%20Economics.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E05%20-%20Politics%20as%20Usual.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E06%20-%20White%20Lies.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E07%20-%20Wayne%20and%20Bonnie.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E08%20-%20Kevin%20Delivers.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E09%20-%20The%20Test.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E10%20-%20Let%20Nothing%20You%20Dismay.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E11%20-%20New%20Years.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E12%20-%20Alice%20in%20Autoland.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E13%20-%20Ladies%20and%20Gentlemen...%20The%20Rolling%20Stones.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E14%20-%20Unpacking.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E15%20-%20Hulk%20Arnold.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E16%20-%20Nose.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E17%20-%20Eclipse.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E18%20-%20Poker.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E19%20-%20The%20Little%20Women.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E20%20-%20Reunion.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E21%20-%20Summer.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/the-wonder-years-complete-series/The%20Wonder%20Years%20S06E22%20-%20Independence%20Day.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "showId": "captain-kangaroo",
+      "title": "Captain Kangaroo",
+      "channel": "nick",
+      "items": [
+        "n-ko-s-1-e-0-lly-n-its-",
+        "captain-kangaroo-1977",
+        "captain-kangaroo-1983",
+        "youtube-rVRUreX7cnI"
+      ],
+      "notes": "Original Bob Keeshan broadcasts and PBS/home-video presentations. Unknown ordering remains season zero. Explicit half-show and partial-part files excluded; some surviving copies have low resolution.",
+      "episodes": [
+        {
+          "id": "archive-n-ko-s-1-e-0-lly-n-its--0",
+          "title": "Captain Kangaroo Being Surprised (PBS show)",
+          "season": 0,
+          "number": 1,
+          "durationSeconds": 1645.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20Being%20Surprised%20(PBS%20show).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-n-ko-s-1-e-0-lly-n-its--1",
+          "title": "Captain Kangaroo December 10, 1980 Episode",
+          "season": 0,
+          "number": 2,
+          "durationSeconds": 2753.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20December%2010%2C%201980%20Episode.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-n-ko-s-1-e-0-lly-n-its--2",
+          "title": "Captain Kangaroo December 8, 1984 (Final CBS episode)",
+          "season": 0,
+          "number": 3,
+          "durationSeconds": 1716.79,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20December%208%2C%201984%20(Final%20CBS%20episode).mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-n-ko-s-1-e-0-lly-n-its--3",
+          "title": "Captain Kangaroo Favorite Stories",
+          "season": 0,
+          "number": 4,
+          "durationSeconds": 1617.41,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20Favorite%20Stories.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-n-ko-s-1-e-0-lly-n-its--4",
+          "title": "Captain Kangaroo Going Places",
+          "season": 0,
+          "number": 5,
+          "durationSeconds": 1650.73,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20Going%20Places.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-n-ko-s-1-e-0-lly-n-its--5",
+          "title": "Captain Kangaroo July 22, 1961",
+          "season": 0,
+          "number": 6,
+          "durationSeconds": 3215.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20July%2022%2C%201961.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-n-ko-s-1-e-0-lly-n-its--6",
+          "title": "Captain Kangaroo Kids Like You",
+          "season": 0,
+          "number": 7,
+          "durationSeconds": 1827.29,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20Kids%20Like%20You.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-n-ko-s-1-e-0-lly-n-its--7",
+          "title": "Captain Kangaroo Lil Engine that Could PBS version",
+          "season": 0,
+          "number": 8,
+          "durationSeconds": 1313,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20Lil%20Engine%20that%20Could%20PBS%20version.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-n-ko-s-1-e-0-lly-n-its--8",
+          "title": "Captain Kangaroo May 5- 1969-",
+          "season": 0,
+          "number": 9,
+          "durationSeconds": 1648.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20May%205-%201969-.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-n-ko-s-1-e-0-lly-n-its--11",
+          "title": "Captain Kangaroo episode from 1961",
+          "season": 0,
+          "number": 10,
+          "durationSeconds": 3165.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20episode%20from%201961.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-n-ko-s-1-e-0-lly-n-its--12",
+          "title": "Captain Kangaroo episode from 1968",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 3151.41,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20episode%20from%201968.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-captain-kangaroo-1977-0",
+          "title": "Captain Kangaroo 1977",
+          "season": 0,
+          "number": 12,
+          "durationSeconds": 2625.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/captain-kangaroo-1977/Captain%20Kangaroo%201977.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-captain-kangaroo-1983-0",
+          "title": "Captain Kangaroo — December 24, 1983",
+          "season": 0,
+          "number": 13,
+          "durationSeconds": 1830.41,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/captain-kangaroo-1983/Captain%20Kangaroo%2012-24-1983.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-youtube-rVRUreX7cnI-0",
+          "title": "Captain Kangaroo — October 30, 1982 · WBBM-TV complete broadcast",
+          "season": 0,
+          "number": 14,
+          "durationSeconds": 3584.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/youtube-rVRUreX7cnI/rVRUreX7cnI.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20Being%20Surprised%20(PBS%20show).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20December%2010%2C%201980%20Episode.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20December%208%2C%201984%20(Final%20CBS%20episode).mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20Favorite%20Stories.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20Going%20Places.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20Lil%20Engine%20that%20Could%20PBS%20version.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20July%2022%2C%201961.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20Kids%20Like%20You.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20May%205-%201969-.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20episode%20from%201961.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/n-ko-s-1-e-0-lly-n-its-/Captain%20Kangaroo%20S00E00%20episode%20from%201968.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/captain-kangaroo-1977/Captain%20Kangaroo%201977.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/captain-kangaroo-1983/Captain%20Kangaroo%2012-24-1983.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/youtube-rVRUreX7cnI/rVRUreX7cnI.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "showId": "captain-kangaroo",
+      "title": "Captain Kangaroo S00E00 Saturday Treasure Chest- Saturday- June 17- 1967 First Half of Show Only",
+      "reason": "Incomplete presentation or duration outside reviewed bounds."
+    },
+    {
+      "showId": "captain-kangaroo",
+      "title": "Captain Kangaroo S00E00 Saturday- June 4- 1966- Second Half of Show Only",
+      "reason": "Incomplete presentation or duration outside reviewed bounds."
+    },
+    {
+      "showId": "captain-kangaroo",
+      "title": "Captain Kangaroo S21E03 Dolly Parton Visits the Captain's Place part 4 of 4",
+      "reason": "Incomplete presentation or duration outside reviewed bounds."
+    }
+  ]
+}

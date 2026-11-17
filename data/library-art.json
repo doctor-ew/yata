@@ -3699,6 +3699,52 @@
       "image": "assets/show-art/great-space-coaster.jpg",
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/26/66659.jpg",
       "imageRole": "title-art"
+    },
+    "silver-spoons": {
+      "title": "Silver Spoons",
+      "premiered": "1982-09-25",
+      "ended": "1987-03-04",
+      "year": 1982,
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7059/silver-spoons",
+      "tvmazeId": 7059,
+      "image": "assets/show-art/silver-spoons.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/26/66044.jpg"
+    },
+    "wonder-years": {
+      "title": "The Wonder Years",
+      "premiered": "1988-01-31",
+      "ended": "1993-05-12",
+      "year": 1988,
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1294/the-wonder-years",
+      "tvmazeId": 1294,
+      "image": "assets/show-art/wonder-years.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/62/155340.jpg"
+    },
+    "captain-kangaroo": {
+      "title": "Captain Kangaroo",
+      "premiered": null,
+      "ended": null,
+      "year": 1955,
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/8475/captain-kangaroo",
+      "tvmazeId": 8475,
+      "image": "assets/show-art/captain-kangaroo.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/429/1073089.jpg"
     }
   }
 }

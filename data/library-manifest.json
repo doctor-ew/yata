@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-0ae020cf7b5c72bb",
+  "revision": "expanded-5f89ad15f71c2d6c",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -22,13 +22,14 @@
     "2026-11-15T15:53:42.678Z",
     "2026-11-15T19:40:16.848Z",
     "2026-11-15T19:46:26.579Z",
-    "2026-11-16T18:53:32.666Z"
+    "2026-11-16T18:53:32.666Z",
+    "2026-11-17T18:06:56.151Z"
   ],
-  "episodes": 11220,
-  "ready": 11083,
+  "episodes": 11372,
+  "ready": 11235,
   "movieReady": 5,
   "breaks": 24,
-  "streamSlots": 300608,
+  "streamSlots": 304469,
   "shows": [
     {
       "id": "dukes",
@@ -1887,6 +1888,30 @@
       "sources": 1
     },
     {
+      "id": "silver-spoons",
+      "title": "Silver Spoons (1982)",
+      "episodes": 23,
+      "ready": 23,
+      "breaks": 0,
+      "sources": 23
+    },
+    {
+      "id": "wonder-years",
+      "title": "The Wonder Years (1988)",
+      "episodes": 115,
+      "ready": 115,
+      "breaks": 0,
+      "sources": 115
+    },
+    {
+      "id": "captain-kangaroo",
+      "title": "Captain Kangaroo",
+      "episodes": 14,
+      "ready": 14,
+      "breaks": 0,
+      "sources": 14
+    },
+    {
       "id": "x-men-tas",
       "title": "X-Men: The Animated Series (1992)",
       "episodes": 76,
@@ -1959,6 +1984,6 @@
       "sources": 146
     }
   ],
-  "bytes": 4123841,
+  "bytes": 4181243,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

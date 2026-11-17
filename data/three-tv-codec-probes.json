@@ -1,0 +1,234 @@
+{
+  "recordedAt": "2026-11-17T18:06:00.169659+00:00",
+  "scope": "Nine representative sources only; not a full decode of all imported items.",
+  "samples": [
+    {
+      "show": "silver-spoons",
+      "title": "Silver Spoons S02e16 1984-02-18 A Hunting We Will Go 2021-05-30-1655-1 \u00b7 Antenna TV broadcast recording (includes surrounding airtime)",
+      "exit": 0,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 674,
+            "height": 480
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "2409.929333"
+        }
+      }
+    },
+    {
+      "show": "silver-spoons",
+      "title": "Silver Spoons S03e05 1984-10-28 A Dark And Stormy Night 2020-09-27-1825-12 \u00b7 Antenna TV broadcast recording (includes surrounding airtime)",
+      "exit": 0,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 704,
+            "height": 476
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "2400.094667"
+        }
+      }
+    },
+    {
+      "show": "silver-spoons",
+      "title": "Silver Spoons S04E01 \u2014 Head Over Heels",
+      "exit": 0,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "1473.720000"
+        }
+      }
+    },
+    {
+      "show": "wonder-years",
+      "title": "The Wonder Years S01E01 - Pilot",
+      "exit": 0,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 696,
+            "height": 480
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio"
+          },
+          {
+            "codec_name": "bin_data",
+            "codec_type": "data"
+          }
+        ],
+        "format": {
+          "duration": "1480.916000"
+        }
+      }
+    },
+    {
+      "show": "wonder-years",
+      "title": "The Wonder Years S04E12 - Denial",
+      "exit": 0,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 704,
+            "height": 472
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio"
+          },
+          {
+            "codec_name": "bin_data",
+            "codec_type": "data"
+          }
+        ],
+        "format": {
+          "duration": "1383.380000"
+        }
+      }
+    },
+    {
+      "show": "wonder-years",
+      "title": "The Wonder Years S06E22 - Independence Day",
+      "exit": 0,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 704,
+            "height": 472
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio"
+          },
+          {
+            "codec_name": "bin_data",
+            "codec_type": "data"
+          }
+        ],
+        "format": {
+          "duration": "1514.964000"
+        }
+      }
+    },
+    {
+      "show": "captain-kangaroo",
+      "title": "Captain Kangaroo Being Surprised (PBS show)",
+      "exit": 0,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 176,
+            "height": 144
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "1645.320000"
+        }
+      }
+    },
+    {
+      "show": "captain-kangaroo",
+      "title": "Captain Kangaroo Lil Engine that Could PBS version",
+      "exit": 0,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "1312.995556"
+        }
+      }
+    },
+    {
+      "show": "captain-kangaroo",
+      "title": "rVRUreX7cnI",
+      "exit": 0,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "3584.367000"
+        }
+      }
+    }
+  ]
+}

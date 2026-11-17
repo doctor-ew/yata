@@ -1,8 +1,8 @@
 # Expanded library coverage
 
-Revision: expanded-0ae020cf7b5c72bb. Sources: public Archive metadata and official YouTube metadata. Counts include the original seed items.
+Revision: expanded-5f89ad15f71c2d6c. Sources: public Archive metadata and official YouTube metadata. Counts include the original seed items.
 
-11220 catalog episodes/items; 11083 TV entries eligible for ordinary station mixes, 5 films in the separate Midnight Matinee stream, and 24 optional break clips by existing metadata rules. A schedulable source is not a guarantee of future playback.
+11372 catalog episodes/items; 11235 TV entries eligible for ordinary station mixes, 5 films in the separate Midnight Matinee stream, and 24 optional break clips by existing metadata rules. A schedulable source is not a guarantee of future playback.
 
 | Show | Catalog items | Program-ready | Break-ready | Source links |
 | --- | ---: | ---: | ---: | ---: |
@@ -238,6 +238,9 @@ Revision: expanded-0ae020cf7b5c72bb. Sources: public Archive metadata and offici
 | Chilly Willy · original shorts | 50 | 50 | 0 | 50 |
 | Dastardly and Muttley in Their Flying Machines (1969) | 1 | 1 | 0 | 1 |
 | The Mighty Hercules (1963) | 1 | 1 | 0 | 1 |
+| Silver Spoons (1982) | 23 | 23 | 0 | 23 |
+| The Wonder Years (1988) | 115 | 115 | 0 | 115 |
+| Captain Kangaroo | 14 | 14 | 0 | 14 |
 | X-Men: The Animated Series (1992) | 76 | 76 | 0 | 76 |
 | Batman: The Animated Series (1992) | 85 | 85 | 0 | 85 |
 | NYPD Blue (1993) | 260 | 260 | 0 | 260 |
