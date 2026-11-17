@@ -2,20 +2,24 @@
 
 A personal nostalgia TV station with a retro channel guide, a curated show library, and media that plays from its original provider.
 
+## Android download
+
+Download the test APK from [GitHub Releases](https://github.com/doctor-ew/yata/releases). Android source, iOS scaffolding and build instructions are in [mobile/](mobile/README.md). The current Android build is a debug-signed sideload preview.
+
 ## Hosted station
 
 Open **https://doctorew.com/tv/**. This static deployment uses the existing S3 bucket and CloudFront distribution. Catalog installation and provider playback run in your browser; no media is rehosted. Browser storage is separate from localhost and other devices. The public site is a viewer; catalog editing and import/export management are available in the loopback owner app.
 
-The hosted viewer verifies and installs published catalog updates and retains watching, dials, stream settings and sharing. Seeding, source editing, removal, discovery and catalog import/export are loopback owner tools. The static-view marker controls presentation, not authentication; visitors who tamper with their browser copy cannot change the shared deployed catalog. Deployment details and update commands are in [the AWS deployment guide](../docs/4/DEPLOYMENT.md).
+The hosted viewer verifies and installs published catalog updates and retains watching, dials, stream settings and sharing. Seeding, source editing, removal, discovery and catalog import/export are loopback owner tools. The static-view marker controls presentation, not authentication; visitors who tamper with their browser copy cannot change the shared deployed catalog. Deployment details and update commands are in [the AWS deployment guide](docs/4/DEPLOYMENT.md).
 
 ## Run locally
 
 Requirements: a current Node.js installation and a modern browser. No package installation, account, or API key is required.
 
-From this repository's root:
+From the parent of your checkout:
 
 ```sh
-cd nostalgia-tv
+cd yata
 npm start
 ```
 
@@ -48,7 +52,7 @@ In **SET UP**, **Progress bar** offers **On hover or click** (default), **Always
 - The playback bar provides play/pause, scrubbing, ±10 seconds, restart, previous/next, volume/mute, and elapsed/total time in `HH:MM:SS`. Controls activate when the source is ready; unknown duration stays explicit. Restart seeks within the current player. Manual browsing follows the selected show; station playback follows the channel queue. YouTube playlists keep their own previous/next navigation.
 - **Next episode** advances to another playable item in that queue, if available. Playback failure offers a deliberate Retry, Skip, or Original source action; it never retries indefinitely.
 - The Library includes all requested shows, including those with no added episode sources. A show card opens its episode/source list.
-- The curated expanded library is added automatically on load, including to an existing saved catalog. Public Archive episodes with metadata runtimes enter the station rotation; official YouTube candidates need a playback check. Coverage and gaps are recorded in [the generated coverage report](../docs/3/COVERAGE.md). The supplied Saturday Morning Simulator link is retained as a compilation with unchecked YouTube playback. The G.I. Joe miniseries episode opens on Tubi.
+- The curated expanded library is added automatically on load, including to an existing saved catalog. Public Archive episodes with metadata runtimes enter the station rotation; official YouTube candidates need a playback check. Coverage and gaps are recorded in [the generated coverage report](docs/3/COVERAGE.md). The supplied Saturday Morning Simulator link is retained as a compilation with unchecked YouTube playback. The G.I. Joe miniseries episode opens on Tubi.
 - An empty channel does not imply that its shows are unavailable everywhere. It means your local catalog does not yet contain a checked, schedulable episode for that channel.
 
 ## Add and edit sources
@@ -71,7 +75,7 @@ Adjacent episodes with the same multipart group stay together. Mark a supplied i
 
 Refresh the page to install the expanded curated library automatically. It preserves your sources and channel settings and installs once per content revision. The same revision does not continually restore items you remove. **Fill all shows** opens a review of the discovered library, with show selection, search notes, per-show filtering and 50-row pages. Review counts are source candidates; matching episode titles and explicit season/episode pairs combine alternative sources.
 
-The catalog includes the public-source episodes found during the recorded searches. It does not assert complete worldwide availability. Known gaps, source numbering differences and search limits are recorded in the discovery files and [coverage report](../docs/3/COVERAGE.md). Unknown ordering remains season zero.
+The catalog includes the public-source episodes found during the recorded searches. It does not assert complete worldwide availability. Known gaps, source numbering differences and search limits are recorded in the discovery files and [coverage report](docs/3/COVERAGE.md). Unknown ordering remains season zero.
 
 A portable baseline catalog is available at [expanded-catalog.json](data/expanded-catalog.json). Importing it replaces the current catalog through the normal import tool; automatic installation and whole-library review instead merge additively. Export your personal catalog for a backup of your own edits.
 
@@ -125,13 +129,13 @@ npm run check
 
 To repeat the optional real Archive metadata and media range check, run `npm run verify:archive`. It requires network access and does not establish browser decoding.
 
-Tests use Node's built-in test runner and local provider stand-ins. No provider credentials or live playback are required to run them. Bulk seeding scope and results are in [its specification](../docs/2/SPEC.md) and [validation report](../docs/2/VALIDATION.md). See [the specification](../docs/1/SPEC.md) and [validation report](../docs/1/VALIDATION.md) in the repository for task scope and observed results.
+Tests use Node's built-in test runner and local provider stand-ins. No provider credentials or live playback are required to run them. Bulk seeding scope and results are in [its specification](docs/2/SPEC.md) and [validation report](docs/2/VALIDATION.md). See [the specification](docs/1/SPEC.md) and [validation report](docs/1/VALIDATION.md) in the repository for task scope and observed results.
 
 ## Attribution
 
 YATA — Yet Another TV App is created by **Drew Schillinger**: [GitHub](https://github.com/doctor-ew) · [CTO2GO](https://cto2go.co) · [doctorew.com](https://doctorew.com).
 
-This companion is part of [doctor-ew/floating-browser](https://github.com/doctor-ew/floating-browser), based on Floating Browser by Chris Hansen. The original copyright notice and MIT license remain in the repository root.
+YATA is maintained independently in [doctor-ew/yata](https://github.com/doctor-ew/yata). It began in a Floating Browser fork; Chris Hansen’s original attribution is preserved. The original copyright notice and MIT license remain in the repository root.
 
 Channel scheduling was inspired by [Old Time Radio by Rob Dawson](https://github.com/codebox/old-time-radio). This companion was independently implemented; no radio implementation code was copied. Show names identify their respective series. Media is served by Internet Archive, YouTube, or Tubi, and this project is not affiliated with those services or the listed shows.
 
@@ -139,33 +143,33 @@ To refresh selected reviewed cartoon collections while retaining other records, 
 
 ## Additional Saturday Morning shows
 
-The reviewed catalog adds Bionic Six, Jayce and the Wheeled Warriors, Pole Position, Turbo Teen, BraveStarr, Defenders of the Earth, Drak Pack, and Dragon’s Lair. Dungeons & Dragons retains 27 episodes. Turbo Teen has 12 complete entries with episode 12 missing; episodes 1–5 and 11 are labeled for non-English audio with English subtitles. BraveStarr currently has 19 reviewed English entries. See [source coverage and validation](../docs/9/SATURDAY-MORNING-EXPANSION.md).
+The reviewed catalog adds Bionic Six, Jayce and the Wheeled Warriors, Pole Position, Turbo Teen, BraveStarr, Defenders of the Earth, Drak Pack, and Dragon’s Lair. Dungeons & Dragons retains 27 episodes. Turbo Teen has 12 complete entries with episode 12 missing; episodes 1–5 and 11 are labeled for non-English audio with English subtitles. BraveStarr currently has 19 reviewed English entries. See [source coverage and validation](docs/9/SATURDAY-MORNING-EXPANSION.md).
 
 ## Hanna-Barbera and adventure cartoons
 
-The next reviewed expansion adds 402 items across 16 shows, including original Yogi Bear shorts, Space Ghost and Dino Boy bundles, The Herculoids, Jonny Quest, Birdman, Super Friends, The Jetsons, Wacky Races, Speed Buggy, Hong Kong Phooey, Dynomutt, Captain Caveman, a season-six Flintstones subset, Galaxy Rangers, Visionaries, and Galtar. Short segments and longer programs retain their source runtimes. This is a partial Hanna-Barbera collection; see [coverage, source language limits and validation](../docs/10/HANNA-BARBERA.md).
+The next reviewed expansion adds 402 items across 16 shows, including original Yogi Bear shorts, Space Ghost and Dino Boy bundles, The Herculoids, Jonny Quest, Birdman, Super Friends, The Jetsons, Wacky Races, Speed Buggy, Hong Kong Phooey, Dynomutt, Captain Caveman, a season-six Flintstones subset, Galaxy Rangers, Visionaries, and Galtar. Short segments and longer programs retain their source runtimes. This is a partial Hanna-Barbera collection; see [coverage, source language limits and validation](docs/10/HANNA-BARBERA.md).
 
 ## Cartoon Express deep cuts
 
-The latest batch adds Butch Cassidy and the Sundance Kids, Clue Club, Goober and the Ghost Chasers, Wheelie and the Chopper Bunch, The Funky Phantom, and Inch High, Private Eye. Live-action additions are Wizards and Warriors, The Powers of Matthew Star, Whiz Kids, Misfits of Science, and Otherworld. Goober lacks episode 7; Wheelie files each contain three stories. See [source coverage and editorial direction](../docs/11/DEEP-CUTS.md).
+The latest batch adds Butch Cassidy and the Sundance Kids, Clue Club, Goober and the Ghost Chasers, Wheelie and the Chopper Bunch, The Funky Phantom, and Inch High, Private Eye. Live-action additions are Wizards and Warriors, The Powers of Matthew Star, Whiz Kids, Misfits of Science, and Otherworld. Goober lacks episode 7; Wheelie files each contain three stories. See [source coverage and editorial direction](docs/11/DEEP-CUTS.md).
 
 ## Gadget heroes
 
-Added Blue Thunder (11 videos), The Master (13), Tales of the Gold Monkey (21 including its combined pilot), and a one-episode Matt Houston subset. Stingray (1985) has an external Tubi series link and is excluded from automatic station playback. See [reviewed sources and limits](../docs/12/GADGET-HEROES.md).
+Added Blue Thunder (11 videos), The Master (13), Tales of the Gold Monkey (21 including its combined pilot), and a one-episode Matt Houston subset. Stingray (1985) has an external Tubi series link and is excluded from automatic station playback. See [reviewed sources and limits](docs/12/GADGET-HEROES.md).
 
 ## Vintage commercial breaks
 
-Enable **Vintage commercial breaks + my bumpers** in Stream settings for one short break between complete stories. The starter pack contains 14 standalone, approximately 30-second vintage toy, cereal and game commercials. Breaks work across channels and show-only streams; Next skips a clip. Commercial breaks default to on; the cabinet update also enables them once for older saved catalogs. Choices made after that upgrade are remembered. Browse Vintage commercial breaks in the library to preview or remove sources. See [source credits, scheduling and validation](../docs/13/COMMERCIAL-BREAKS.md). Inspired by [retro-tv-webos](https://github.com/Nikolay1243/retro-tv-webos) and Joey Cato’s [MyRetroTVs](https://www.myretrotvs.com/); independently implemented.
+Enable **Vintage commercial breaks + my bumpers** in Stream settings for one short break between complete stories. The starter pack contains 14 standalone, approximately 30-second vintage toy, cereal and game commercials. Breaks work across channels and show-only streams; Next skips a clip. Commercial breaks default to on; the cabinet update also enables them once for older saved catalogs. Choices made after that upgrade are remembered. Browse Vintage commercial breaks in the library to preview or remove sources. See [source credits, scheduling and validation](docs/13/COMMERCIAL-BREAKS.md). Inspired by [retro-tv-webos](https://github.com/Nikolay1243/retro-tv-webos) and Joey Cato’s [MyRetroTVs](https://www.myretrotvs.com/); independently implemented.
 
 ## Optional CRT picture
 
-Stream settings now offers **CRT surround & scanlines** and **Tuning static**. These independently drawn effects preserve provider-player placement, save your preference, and can be switched off. Tuning static is a brief silent fade and respects reduced-motion settings. Commercials start on, with a one-time upgrade for older Off defaults; later choices are preserved. See [defaults and effect validation](../docs/14/CRT-AND-DEFAULTS.md).
+Stream settings now offers **CRT surround & scanlines** and **Tuning static**. These independently drawn effects preserve provider-player placement, save your preference, and can be switched off. Tuning static is a brief silent fade and respects reduced-motion settings. Commercials start on, with a one-time upgrade for older Off defaults; later choices are preserved. See [defaults and effect validation](docs/14/CRT-AND-DEFAULTS.md).
 
 ## TV cabinets, static and episode sharing
 
 Choose a 1970s woodgrain, 1980s color-TV, 1990s charcoal cabinet, or None in Stream settings. The video player stays in place and Fill window still works. Adjust static strength, tuning length, tuning/continuous mode, and preview it. The effect settings are remembered independently. Commercials per break can be 1, 2, 3, or Random 1–3, capped to the available distinct clips.
 
-Use **Share episode** beside the player; check **Include position** for a timestamp. Each library item also has a Share action. Recipients see the matching episode with a Play button. Links match provider source URLs rather than browser-local IDs; custom sources absent from the recipient’s catalog offer an original-source link. See [cabinet and migration details](../docs/15/TV-CABINETS.md) and [episode sharing](../docs/16/SHARING.md).
+Use **Share episode** beside the player; check **Include position** for a timestamp. Each library item also has a Share action. Recipients see the matching episode with a Play button. Links match provider source URLs rather than browser-local IDs; custom sources absent from the recipient’s catalog offer an original-source link. See [cabinet and migration details](docs/15/TV-CABINETS.md) and [episode sharing](docs/16/SHARING.md).
 
 The cabinet’s top dial advances to the next playable show in the selected channel. The bottom dial starts a new random mix; Stream settings selects this channel, one random show, or everything. **Dial click & static burst** defaults on, remembers your choice, and follows player mute and volume. The sound is synthesized locally without audio downloads. Static strength and duration apply to dial bursts; reduced-motion preferences suppress the visual effect. Automatic episode transitions do not play the click.
 
@@ -175,13 +179,13 @@ Fill window expands the player to the entire browser viewport, with playback con
 
 Channel 03 is **Sci-Fi**, between Action Adventure and Saturday Morning (now channel 04). It contains nine live-action series already present in the curated library: Automan, The Phoenix, Voyagers!, Buck Rogers in the 25th Century, Battlestar Galactica, V, The Powers of Matthew Star, Misfits of Science, and Otherworld. Existing source metadata makes 156 entries eligible for the station, including 33 Buck Rogers and 21 Battlestar entries. Eligibility does not guarantee future source availability or successful decoding of every file.
 
-Saved catalogs automatically move these curated shows out of Action Adventure. A selected show-only stream follows its show to Sci-Fi. Episode sources, ordering, custom shows, and commercial preferences remain intact. All-shows YATA still includes every channel; animated science fiction stays on Saturday Morning. Dials, random streams, and optional commercial breaks use the same scheduling rules as other channels. See [migration and validation](../docs/18/SCI-FI-CHANNEL.md).
+Saved catalogs automatically move these curated shows out of Action Adventure. A selected show-only stream follows its show to Sci-Fi. Episode sources, ordering, custom shows, and commercial preferences remain intact. All-shows YATA still includes every channel; animated science fiction stays on Saturday Morning. Dials, random streams, and optional commercial breaks use the same scheduling rules as other channels. See [migration and validation](docs/18/SCI-FI-CHANNEL.md).
 
 ## Midnight Matinee and more Sci-Fi
 
 Sci-Fi adds Space: 1999, UFO, The Fantastic Journey, Logan’s Run (TV series), Space Academy, and Jason of Star Command. The bounded search adds 130 metadata/HTTP-checked entries; Space Academy currently has only entries 1, 2, 3, and 8, and Jason includes short chapters as well as longer episodes.
 
-**Midnight Matinee** is a separate library section under Sci-Fi and the mixed library. Choose **Random movie stream** for films only, or browse sources and the wishlist. Five checked feature-length sources are seeded; five requested classics without seeded sources remain visible wishlist entries. Films stay out of normal TV mixes and tuning-dial choices. The regular stream selector can explicitly select Midnight Matinee, and New mix reshuffles it. Commercials remain optional and play between films. See [coverage, provenance and rotation rules](../docs/20/MIDNIGHT-MATINEE.md).
+**Midnight Matinee** is a separate library section under Sci-Fi and the mixed library. Choose **Random movie stream** for films only, or browse sources and the wishlist. Five checked feature-length sources are seeded; five requested classics without seeded sources remain visible wishlist entries. Films stay out of normal TV mixes and tuning-dial choices. The regular stream selector can explicitly select Midnight Matinee, and New mix reshuffles it. Commercials remain optional and play between films. See [coverage, provenance and rotation rules](docs/20/MIDNIGHT-MATINEE.md).
 
 
 ## Catalog integrity
@@ -223,7 +227,7 @@ Open **Guide** in the header or **TV Guide** beside Library. The two-hour grid u
 
 On a phone, swipe the grid horizontally; channel names remain visible. Earlier/Later browse other windows and Now returns to the current time. This is your personal station schedule, not a provider broadcast listing. Films remain in Midnight Matinee. Wishlist and unchecked sources stay in Library. Full-channel guide rows do not inherit a selected single-show stream.
 
-The optional `test/browser-tv-guide.mjs` takes an installed Playwright module path and optional Chromium executable. It uses provider stand-ins for repeatable playback wiring checks. See [TV Guide specification](../docs/22/SPEC.md).
+The optional `test/browser-tv-guide.mjs` takes an installed Playwright module path and optional Chromium executable. It uses provider stand-ins for repeatable playback wiring checks. See [TV Guide specification](docs/22/SPEC.md).
 
 The compact remote beneath the TV provides channel keys and **SET UP**, which opens stream, commercial and TV-effect options in an overlay. Escape, Close or Done returns to watching. Old browser catalog backup export is tucked into **Previous browser backup** in the footer. In desktop Guide mode, the TV stays beside the schedule while scrolling. Use **Fill window** to expand it and Escape to restore it. On narrow screens, the TV sits above the guide.
 
@@ -265,7 +269,7 @@ The New Adventures of Flash Gordon (1979), Return to the Planet of the Apes (197
 
 The approved recommendation pass adds 69 collections and fills Daria with 65 restored-audio episodes: 3,060 program items in total. Doctor Who, Highwayman, Max Headroom, Blake’s 7, Real Ghostbusters, Robotech, Star Blazers, Sliders, seaQuest, Babylon 5, Farscape and Eerie, Indiana are included alongside further action, comedy, animation and Nickelodeon-era collections. Channels retain their existing identities; no separate Doctor Who or Nickelodeon channel is created. Nickelodeon comedy additions use the existing short Nick break clips.
 
-Coverage varies by source. Doctor Who covers seasons 7, 8 and 12; Daria has five seasons; Farscape covers seasons 1–3. The Muppet Show uses two intact compilation tapes. Remington Steele has one mixed off-air recording with other footage and ads before the program. Eight requested titles remain unsourced in this pass. Existing DS9, Magnum, Simon & Simon, Transformers, Barnaby Jones and Grape Ape gaps are reported without implying they were filled. Detailed counts, exclusions and source links are in `../docs/3/EXPANDED-ERA-SOURCES.md`; reproducible selection rules are in `data/expanded-era-sources.json` and `scripts/expanded-era-discovery.mjs`.
+Coverage varies by source. Doctor Who covers seasons 7, 8 and 12; Daria has five seasons; Farscape covers seasons 1–3. The Muppet Show uses two intact compilation tapes. Remington Steele has one mixed off-air recording with other footage and ads before the program. Eight requested titles remain unsourced in this pass. Existing DS9, Magnum, Simon & Simon, Transformers, Barnaby Jones and Grape Ape gaps are reported without implying they were filled. Detailed counts, exclusions and source links are in `docs/3/EXPANDED-ERA-SOURCES.md`; reproducible selection rules are in `data/expanded-era-sources.json` and `scripts/expanded-era-discovery.mjs`.
 
 Portable catalog imports allow at most 8 MB, with the existing 256-show and 20,000-item bounds. The larger channel-builder offer uses a bounded backend envelope; ordinary chat retains its previous byte limit.
 

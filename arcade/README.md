@@ -2,7 +2,7 @@
 
 ## Run
 
-From `nostalgia-tv`, run `node arcade/setup.mjs` once to copy the recovered Dropbox Flash bundles and download EmulatorJS 4.2.3 runtimes. Then run `npm start` and open `http://127.0.0.1:4173/arcade/`.
+From the repository root, run `node arcade/setup.mjs` once to copy the recovered Dropbox Flash bundles and download EmulatorJS 4.2.3 runtimes. Then run `npm start` and open `http://127.0.0.1:4173/arcade/`.
 
 The setup source is the existing `FlashAndroid` folder in the user's Dropbox `_AI_/rea-work` directory. Originals are not modified. Assets go into the ignored `.local-assets` directory, including runtime licenses and a download/hash manifest. Do not commit the copied game assets.
 

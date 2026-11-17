@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+arcade/.local-assets/
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
