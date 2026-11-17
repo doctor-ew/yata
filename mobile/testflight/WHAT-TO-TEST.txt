@@ -1,0 +1,14 @@
+YATA — It’s probably a rerun.
+
+Please test:
+• Launch and refresh the shared catalog on Wi-Fi and cellular.
+• Browse the guide, join a live channel, and start a selected episode from the beginning.
+• Pause, leave the app, return, and resume. Report any unexpected rewind, jump, or playback failure.
+• Tap guide episodes and add them next/end on Channel 00. Reorder/remove items and confirm the queue and position survive relaunch.
+• Check layouts on your iPhone or iPad in both orientations.
+• Try the buddy, optional web AI verification flow, and return to the app.
+• Share an episode and open an incoming YATA link.
+• Check captions when the source provides them.
+• Find the anonymous usage switch in More → Privacy and confirm your preference persists.
+
+Include device model, iOS version, source/channel, steps and expected versus actual behavior in feedback. Do not include passwords or private media links. Provider availability and restrictions can affect playback. Native iOS background/screen-off audio is not part of this build.

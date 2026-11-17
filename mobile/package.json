@@ -7,7 +7,11 @@
     "sync": "npm run build && cap sync",
     "android": "cap open android",
     "ios": "cap open ios",
-    "android:build": "node android-build.mjs"
+    "android:build": "node android-build.mjs",
+    "ios:check": "node ios-build.mjs --check",
+    "ios:simulator": "node ios-build.mjs --simulator",
+    "ios:archive": "node ios-build.mjs",
+    "ios:testflight": "node ios-build.mjs --upload"
   },
   "keywords": [],
   "author": "",

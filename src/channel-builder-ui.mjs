@@ -7,7 +7,7 @@ export function mountChannelBuilder({getCatalog,isReady,onTune,requestPlan}={}) 
   const $=id=>document.getElementById(id),dialog=$('channel-builder');
   const request=requestPlan||createChannelAi({sitekey:document.querySelector('meta[name="yata-turnstile-sitekey"]')?.content,container:'#channel-verification'});
   const buddy=getBuddySession();let host=buddy.persona,plan=null,controller=null,returnToApp=false;
-  const returnButton=document.createElement('a');returnButton.className='button primary';returnButton.id='return-channel-app';returnButton.hidden=true;returnButton.textContent='Use this channel in the Android app';$('channel-plan').append(returnButton);
+  const returnButton=document.createElement('a');returnButton.className='button primary';returnButton.id='return-channel-app';returnButton.hidden=true;returnButton.textContent='Use this channel in the YATA app';$('channel-plan').append(returnButton);
   const status=message=>{$('channel-builder-status').textContent=message;};
   function hostLabel(){
     $('channel-builder-form').dataset.host=host.id;
