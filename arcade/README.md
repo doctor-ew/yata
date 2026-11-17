@@ -56,3 +56,15 @@ Source handoff: private android-game-preservation Pensieve memory `7c422ac02a347
 The arcade opens on Arcade & cartridges (12 curated classic entries). Flash, the combined catalog and the workshop are under Other shelves. The Flash catalog is fetched only when one of those additional views is selected; its entries are excluded from the default grid, search results and installed count. The service worker no longer preloads that catalog. Both website and Android use this hosted arcade. Changing presentation does not establish distribution permission.
 
 The current local-file slot supports C64 but there are no curated C64 games. ColecoVision is not implemented by the current core allowlist or machine selector.
+
+## Installed local expansion
+
+Run `npm run arcade:expansion` to reproduce the pinned downloads in `expansion-sources.json` and runtime downloads in `expansion-runtimes.json`. Game files and emulator binaries remain in ignored `.local-assets`; the Git repository contains source references and integrity hashes only.
+
+Fourteen local entries are installed: Rampage, Rampage World Tour, Rampage 2: Universal Tour (N64), X-Men (Konami arcade), Street Fighter II, Super Street Fighter II Turbo, Street Fighter Alpha 3, Street Fighter III: 3rd Strike, X-Men: Children of the Atom, Marvel Super Heroes, X-Men vs. Street Fighter, Marvel Super Heroes vs. Street Fighter, Marvel vs. Capcom: Clash of Super Heroes, and Capcom vs. SNK Pro (PlayStation).
+
+MAME 2003 Plus handles the eleven older arcade builds; FBNeo handles Third Strike, Mupen64Plus Next handles Universal Tour, and PCSX ReARMed handles the PlayStation version of Capcom vs. SNK Pro. New runtimes are pinned to EmulatorJS 4.2.3. All fourteen produced rendered emulator output in local Chromium launch checks. This is a boot/render check, not a full-playthrough, multiplayer or Android performance certification. Capcom vs. SNK Pro is a roughly 326 MiB disc image and is a heavier download than the arcade sets.
+
+The cabinet sends emulator inputs directly for cartridge/arcade cores. Fighter entries expose six action buttons; coin/select and Start remain separate. Short touch releases are held briefly across emulator frames. Keyboard/gamepad mappings remain configurable in the emulator menu.
+
+Marvel vs. Capcom 2 and Capcom vs. SNK 2 are explicitly not installed: the current player has no Dreamcast/NAOMI runtime. They have unavailable cards instead of Play buttons. The expansion is installed in the local checkout; no new game binaries have been published to the hosted site by this installation pass.

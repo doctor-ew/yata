@@ -1,0 +1,148 @@
+[
+  {
+    "id": "rampage",
+    "item": "MAME_2003-Plus_Reference",
+    "file": "roms/rampage.zip",
+    "bytes": 257164,
+    "sha256": "7f1010c8e859d2b9bcef6e5492e3a82c3e1770d991fa14dac112bf96463b07b9",
+    "md5": "7ca0c2839e8dc34fa0b47e82007b4bf0",
+    "url": "https://archive.org/download/MAME_2003-Plus_Reference/roms/rampage.zip",
+    "status": "downloaded"
+  },
+  {
+    "id": "rmpgwt",
+    "item": "MAME_2003-Plus_Reference",
+    "file": "roms/rmpgwt.zip",
+    "bytes": 13420501,
+    "sha256": "6ff4e45494ce95086847f87e3e8b040893df05fd7a52a87b3223e48c737b582a",
+    "md5": "db451ead7f07d2a818ae50784c907edb",
+    "url": "https://archive.org/download/MAME_2003-Plus_Reference/roms/rmpgwt.zip",
+    "status": "downloaded"
+  },
+  {
+    "id": "xmen",
+    "item": "MAME_2003-Plus_Reference",
+    "file": "roms/xmen.zip",
+    "bytes": 4243362,
+    "sha256": "53183fd4e723cdcfcc129e55f077974b0f4d50ac42d7f272977265f9cf478580",
+    "md5": "b7dd88749ac63efaf220a116c9167009",
+    "url": "https://archive.org/download/MAME_2003-Plus_Reference/roms/xmen.zip",
+    "status": "downloaded"
+  },
+  {
+    "id": "sf2",
+    "item": "MAME_2003-Plus_Reference",
+    "file": "roms/sf2.zip",
+    "bytes": 3550669,
+    "sha256": "d5c53c25b4c92144b714d1b284ac19f6f8de9cc07e4550f7f5e8469ca2bd697b",
+    "md5": "304373a21b565efe99598cf02417fd13",
+    "url": "https://archive.org/download/MAME_2003-Plus_Reference/roms/sf2.zip",
+    "status": "downloaded"
+  },
+  {
+    "id": "ssf2t",
+    "item": "MAME_2003-Plus_Reference",
+    "file": "roms/ssf2t.zip",
+    "bytes": 11892505,
+    "sha256": "359337a89e7ed65b63424dd3e90281db8b73db7add3d24278ec9918de449435e",
+    "md5": "40feaa30359a3047b090e0c95f3691fe",
+    "url": "https://archive.org/download/MAME_2003-Plus_Reference/roms/ssf2t.zip",
+    "status": "downloaded"
+  },
+  {
+    "id": "sfa3",
+    "item": "MAME_2003-Plus_Reference",
+    "file": "roms/sfa3.zip",
+    "bytes": 23349543,
+    "sha256": "48b1bc6f4ea7553b5331d22bdf040cff4ffd867ef6c9220faf6cf1f7799cc3ce",
+    "md5": "362aed4f22d4af4f4ef5ecf74a4b8f48",
+    "url": "https://archive.org/download/MAME_2003-Plus_Reference/roms/sfa3.zip",
+    "status": "downloaded"
+  },
+  {
+    "id": "xmcota",
+    "item": "MAME_2003-Plus_Reference",
+    "file": "roms/xmcota.zip",
+    "bytes": 20054296,
+    "sha256": "8d2922d9b485f01bba60a49c4392d8b1d06df0cb3bf1047ab5edbe126c75d21c",
+    "md5": "86807ad6100d82304684052322eefc40",
+    "url": "https://archive.org/download/MAME_2003-Plus_Reference/roms/xmcota.zip",
+    "status": "downloaded"
+  },
+  {
+    "id": "msh",
+    "item": "MAME_2003-Plus_Reference",
+    "file": "roms/msh.zip",
+    "bytes": 20099229,
+    "sha256": "c2c7efd429aeb7fc28f55be3ed7ea996e83f1108d2293fc8fb8ed6bfcd377882",
+    "md5": "0e40b1c1e96cab5707b43b64639189d3",
+    "url": "https://archive.org/download/MAME_2003-Plus_Reference/roms/msh.zip",
+    "status": "downloaded"
+  },
+  {
+    "id": "xmvsf",
+    "item": "MAME_2003-Plus_Reference",
+    "file": "roms/xmvsf.zip",
+    "bytes": 19605648,
+    "sha256": "5ec28daab8721d4e99752d7aa40d9217364076ce604d48d99ba00e12445e9d90",
+    "md5": "083528b7b4d18937f192ca7f1f4a741d",
+    "url": "https://archive.org/download/MAME_2003-Plus_Reference/roms/xmvsf.zip",
+    "status": "downloaded"
+  },
+  {
+    "id": "mshvsf",
+    "item": "MAME_2003-Plus_Reference",
+    "file": "roms/mshvsf.zip",
+    "bytes": 23124816,
+    "sha256": "e847f87438af3137f6a9ccec5c24a8897a8dbb198263b68600d81961fd2f2cd4",
+    "md5": "b2274697eaeeb618ae78f4163cb8239c",
+    "url": "https://archive.org/download/MAME_2003-Plus_Reference/roms/mshvsf.zip",
+    "status": "downloaded"
+  },
+  {
+    "id": "mvsc",
+    "item": "MAME_2003-Plus_Reference",
+    "file": "roms/mvsc.zip",
+    "bytes": 22699761,
+    "sha256": "6f63627cc37c554f74e8bf07b21730fa7f85511c7d5d07449850be98dde91da8",
+    "md5": "2aa39f0747bf3252598f480ce9fa4c48",
+    "url": "https://archive.org/download/MAME_2003-Plus_Reference/roms/mvsc.zip",
+    "status": "downloaded"
+  },
+  {
+    "id": "rampage2",
+    "item": "20240625_20240625_2327",
+    "file": "Rampage 2 - Universal Tour (USA).z64",
+    "bytes": 12582912,
+    "md5": "8113d0ea2008402d4631f241f625d16b",
+    "sha256": "9c8fc5075e370ea1cfdac4abf38038eb0eee736b3a622caea83f48dc776a02b8",
+    "url": "https://archive.org/download/20240625_20240625_2327/Rampage%202%20-%20Universal%20Tour%20%28USA%29.z64",
+    "core": "mupen64plus_next",
+    "localFile": "rampage2.z64",
+    "status": "downloaded"
+  },
+  {
+    "id": "sfiii3n",
+    "item": "sfiii3n.7z",
+    "file": "sfiii3n.zip",
+    "bytes": 70811597,
+    "md5": "b33b1fd54a6b19aea9edd9c0eb6e46fb",
+    "sha256": "0f19046a0786883d3cf211777568774c4434159e15038b5dd6d36fe58a0cb7da",
+    "url": "https://archive.org/download/sfiii3n.7z/sfiii3n.zip",
+    "core": "fbneo",
+    "localFile": "sfiii3n.zip",
+    "status": "downloaded"
+  },
+  {
+    "id": "cvspro",
+    "item": "psx_cvspro",
+    "file": "playstationdisc.chd",
+    "localFile": "cvspro.chd",
+    "core": "pcsx_rearmed",
+    "bytes": 341746540,
+    "sha256": "5db93e0928a88bc2a0002b1131154ea6b4d357a8dea14415b4dcd486f046db58",
+    "md5": "477074b1b2d367edb3ddd5fe7cc52560",
+    "url": "https://archive.org/download/psx_cvspro/playstationdisc.chd",
+    "status": "downloaded"
+  }
+]

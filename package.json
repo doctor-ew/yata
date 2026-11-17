@@ -12,6 +12,7 @@
     "arcade:setup": "node arcade/setup.mjs",
     "arcade:adult-swim": "node arcade/acquire-adult-swim.mjs",
     "arcade:artwork": "node arcade/acquire-artwork.mjs",
-    "arcade:classics": "node arcade/acquire-classics.mjs"
+    "arcade:classics": "node arcade/acquire-classics.mjs",
+    "arcade:expansion": "node arcade/acquire-expansion.mjs"
   }
 }

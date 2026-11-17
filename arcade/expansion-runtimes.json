@@ -1,0 +1,56 @@
+[
+  {
+    "path": "cores/reports/fbneo.json",
+    "url": "https://cdn.emulatorjs.org/4.2.3/data/cores/reports/fbneo.json",
+    "bytes": 119,
+    "sha256": "d2c5e07c2afc2b53937f14b721d7d025ad599d111e9627fc77e9b3fd17450e70"
+  },
+  {
+    "path": "cores/fbneo-wasm.data",
+    "url": "https://cdn.emulatorjs.org/4.2.3/data/cores/fbneo-wasm.data",
+    "bytes": 8273551,
+    "sha256": "315a25e0bcd61d58ee0d9e8b1dbf3740b9e0ca4b7d0726f848ce1068de73437c"
+  },
+  {
+    "path": "cores/fbneo-legacy-wasm.data",
+    "url": "https://cdn.emulatorjs.org/4.2.3/data/cores/fbneo-legacy-wasm.data",
+    "bytes": 8272960,
+    "sha256": "9dbb6242c028f4179549f324688b654353881beb552292f939bc6171a0828b5f"
+  },
+  {
+    "path": "cores/reports/mupen64plus_next.json",
+    "url": "https://cdn.emulatorjs.org/4.2.3/data/cores/reports/mupen64plus_next.json",
+    "bytes": 153,
+    "sha256": "270105553cec57fd1058c50e0541b8b89dbd30b2323fd70682036f6919b805cc"
+  },
+  {
+    "path": "cores/mupen64plus_next-wasm.data",
+    "url": "https://cdn.emulatorjs.org/4.2.3/data/cores/mupen64plus_next-wasm.data",
+    "bytes": 1451795,
+    "sha256": "2da1cbce9fda395e3ae83ca5787353baa159142d45ef3ea90f108b92524f76cc"
+  },
+  {
+    "path": "cores/mupen64plus_next-legacy-wasm.data",
+    "url": "https://cdn.emulatorjs.org/4.2.3/data/cores/mupen64plus_next-legacy-wasm.data",
+    "bytes": 1451870,
+    "sha256": "425072f4bf94eec02633cbe9b84f47d6803dc0ec1b3c3b8de3ebbd2eb5617c3f"
+  },
+  {
+    "path": "cores/reports/pcsx_rearmed.json",
+    "url": "https://cdn.emulatorjs.org/4.2.3/data/cores/reports/pcsx_rearmed.json",
+    "bytes": 149,
+    "sha256": "93b99266955ab16e9aa0faa0d6338f4a29b50c197764dd48be945573a5b449c1"
+  },
+  {
+    "path": "cores/pcsx_rearmed-wasm.data",
+    "url": "https://cdn.emulatorjs.org/4.2.3/data/cores/pcsx_rearmed-wasm.data",
+    "bytes": 1039627,
+    "sha256": "fe5515f6c29f093f0e8c01824b213804f1f76eb9cb4c97c72fe2cc17606bfbc2"
+  },
+  {
+    "path": "cores/pcsx_rearmed-legacy-wasm.data",
+    "url": "https://cdn.emulatorjs.org/4.2.3/data/cores/pcsx_rearmed-legacy-wasm.data",
+    "bytes": 1038636,
+    "sha256": "88faee73d06c597a68a8b78e5621d97feefca134c64b623e65f0a900037456da"
+  }
+]
