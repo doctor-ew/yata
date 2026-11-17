@@ -6,3 +6,14 @@ test('channel, genre, premiere decade and availability filters combine without a
 test('premiere sorts keep undated titles last in either direction and break ties by title',()=>{assert.deepEqual(browseLibrary(shows,meta,{sort:'oldest'}).map(s=>s.id),['a','z','b','u']);assert.deepEqual(browseLibrary(shows,meta,{sort:'newest'}).map(s=>s.id),['b','z','a','u']);assert.deepEqual(showGenres({type:'Animation',genres:['Comedy','Comedy']}),['Comedy','Animation']);});
 
 test('premiere sorting uses actual dates within the same year',()=>{const entries=[show('late','Alpha','action'),show('early','Zulu','action')],data={late:{year:1982,premiered:'1982-12-01'},early:{year:1982,premiered:'1982-01-01'}};assert.deepEqual(browseLibrary(entries,data,{sort:'oldest'}).map(s=>s.id),['early','late']);});
+
+test('episode browser combines title/story and season filters without changing the show or splitting collections',async()=>{
+ const {browseEpisodes}=await import('../src/library-browser.mjs');
+ const show={episodes:[{id:'late',title:'S02E01 Return',season:2,number:1},{id:'collection',title:'Snow White / Briar Rose · VHS collection',season:0,number:1},{id:'early',title:'S01E02 Return to Etheria',season:1,number:2}]};
+ assert.deepEqual(browseEpisodes(show,{query:'return',season:'1'}).map(e=>e.id),['early']);
+ assert.deepEqual(browseEpisodes(show,{query:'briar'}).map(e=>e.id),['collection']);
+ assert.deepEqual(browseEpisodes(show,{season:'0'}).map(e=>e.id),['collection']);
+ assert.deepEqual(browseEpisodes(show).map(e=>e.id),['collection','early','late']);
+ assert.deepEqual(browseEpisodes(show,{query:'missing'}),[]);
+ assert.equal(show.episodes[0].id,'late');assert.equal(show.episodes.length,3);
+});

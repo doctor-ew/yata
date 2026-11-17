@@ -1,8 +1,8 @@
 # Expanded library coverage
 
-Revision: expanded-5f89ad15f71c2d6c. Sources: public Archive metadata and official YouTube metadata. Counts include the original seed items.
+Revision: expanded-d09b2667e23c4fa8. Sources: public Archive metadata and official YouTube metadata. Counts include the original seed items.
 
-11372 catalog episodes/items; 11235 TV entries eligible for ordinary station mixes, 5 films in the separate Midnight Matinee stream, and 24 optional break clips by existing metadata rules. A schedulable source is not a guarantee of future playback.
+11891 catalog episodes/items; 11754 TV entries eligible for ordinary station mixes, 5 films in the separate Midnight Matinee stream, and 24 optional break clips by existing metadata rules. A schedulable source is not a guarantee of future playback.
 
 | Show | Catalog items | Program-ready | Break-ready | Source links |
 | --- | ---: | ---: | ---: | ---: |
@@ -241,6 +241,14 @@ Revision: expanded-5f89ad15f71c2d6c. Sources: public Archive metadata and offici
 | Silver Spoons (1982) | 23 | 23 | 0 | 23 |
 | The Wonder Years (1988) | 115 | 115 | 0 | 115 |
 | Captain Kangaroo | 14 | 14 | 0 | 14 |
+| Gargoyles (1994) | 78 | 78 | 0 | 78 |
+| Adventures of the Gummi Bears (1985) | 94 | 94 | 0 | 94 |
+| Teenage Mutant Ninja Turtles (1987) | 5 | 5 | 0 | 5 |
+| Animaniacs (1993) | 99 | 99 | 0 | 99 |
+| Tiny Toon Adventures (1990) | 3 | 3 | 0 | 3 |
+| Darkwing Duck (1991) | 91 | 91 | 0 | 91 |
+| Chip ’n Dale: Rescue Rangers (1989) | 3 | 3 | 0 | 3 |
+| Mighty Morphin Power Rangers (1993) | 146 | 146 | 0 | 146 |
 | X-Men: The Animated Series (1992) | 76 | 76 | 0 | 76 |
 | Batman: The Animated Series (1992) | 85 | 85 | 0 | 85 |
 | NYPD Blue (1993) | 260 | 260 | 0 | 260 |

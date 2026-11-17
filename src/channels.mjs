@@ -1,6 +1,6 @@
 import { EXPANDED_ERA_SHOWS } from './expanded-era.mjs';
 export const NICK_SHOW_IDS = new Set(['ycdtotv','turkey-tv','danger-mouse','count-duckula','cities-gold','double-dare','out-control','salute-shorts','hey-dude','pete-pete','nickelodeon-bumps']);
-export const SERIAL_SHOW_IDS = new Set(['dallas','rocky-bullwinkle','st-elsewhere','hill-street-blues','nypd-blue','cagney-lacey','china-beach','northern-exposure','picket-fences']);
+export const SERIAL_SHOW_IDS = new Set(['gargoyles','dallas','rocky-bullwinkle','st-elsewhere','hill-street-blues','nypd-blue','cagney-lacey','china-beach','northern-exposure','picket-fences']);
 export const CHANNELS = [
   { id: 'mixed', number: '01', name: 'YATA Channels', subtitle: 'All TV channels.', accent: '#ffc66e' },
   { id: 'action', number: '02', name: 'Action Adventure', subtitle: 'Action and adventure.', accent: '#ff927b' },

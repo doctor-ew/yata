@@ -10,3 +10,9 @@ export function browseLibrary(shows,metadata,{query='',channel='all',genre='all'
   if(sort==='genre'){const ag=showGenres(metadata[a.id])[0]||'\uffff',bg=showGenres(metadata[b.id])[0]||'\uffff';return compare(ag,bg)||title;}return title;
  });
 }
+
+export function browseEpisodes(show, {query = '', season = 'all'} = {}) {
+ const q = query.trim().toLocaleLowerCase();
+ return show.episodes.filter(e => (season === 'all' || String(e.season) === season) && (!q || e.title.toLocaleLowerCase().includes(q)))
+  .slice().sort((a, b) => a.season - b.season || a.number - b.number || compare(a.title, b.title));
+}

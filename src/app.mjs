@@ -1,4 +1,5 @@
-import{ARCADE_GAMES}from'./arcade-games.mjs';
+import{ARCADE_GAMES,refreshArcadeGames}from'./arcade-games.mjs';
+import{fetchPublicFeed,validateArtworkFeed}from'./catalog-feeds.mjs';
 import{createGameGate}from'./game-intents.mjs';
 import{prepareBuddyQueue}from'./buddy-queue.mjs';
 import{queueEpisode,editEpisodeQueue,resolveEpisodeQueue,episodeQueueSelected,hasEpisodeQueue}from'./episode-queue.mjs';
@@ -11,7 +12,7 @@ import{displayEpisodeTitle}from'./display-title.mjs';
 import {createLineupLink,parseLineupLink,applySharedLineup} from './lineup-share.mjs';
 import {createEpisodeInformation} from './episode-information-ui.mjs';
 import {CUSTOM_CHANNEL,customShows,isCustomChannel,createCustomChannel,tuneCustomChannel} from './custom-channel.mjs';
-import {browseLibrary,showGenres,playableEpisodes} from './library-browser.mjs';
+import { browseEpisodes,browseLibrary,showGenres,playableEpisodes} from './library-browser.mjs';
 import {scheduleEpoch,remixLineups,mountLineupRemix,activeRotation} from './remix.mjs';
 import {installArcadeEntry,ARCADE_CHANNEL,readArcadeUnlock,saveArcadeUnlock} from './arcade-entry.mjs';
 import {mountMixControls} from './mix-controls.mjs';
@@ -103,7 +104,18 @@ window.addEventListener('hashchange',()=>{if(['#guide','#library'].includes(loca
 showBrowseView(location.hash==='#guide'?'guide':'library');
 mountChannelBuilder({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();$('player-shell').scrollIntoView({block:'center',behavior:'smooth'});return true;}});
 
-mountBuddy({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onShow:openShow,onGame:id=>gameGate.request(id),onCancelGame:()=>gameGate.cancel(),onQueue:queueFromBuddy,onWatch:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();return true;}});
+function navigateStation(view){
+ if(!['watch','guide','library'].includes(view))return;
+ location.hash=view;
+ if(view==='watch'){$('watch').scrollIntoView({block:'start'});}else showBrowseView(view,{scroll:true});
+}
+function syncMainNavigation(){const view=['#guide','#library'].includes(location.hash)?location.hash:'#watch';for(const link of document.querySelectorAll('.masthead nav a[href^="#"]')){if(link.getAttribute('href')===view)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');}}
+window.addEventListener('hashchange',syncMainNavigation);syncMainNavigation();
+function companionPlaybackContext(){
+ const show=active&&catalog.shows.find(s=>s.id===active.showId),episode=show?.episodes.find(e=>e.id===active.episodeId);
+ return {showTitle:show?.title||'',episodeTitle:episode?.title||'',nextShowTitle:nextEntry?.show.title||'',nextEpisodeTitle:nextEntry?.episode.title||''};
+}
+mountBuddy({getPlaybackContext:companionPlaybackContext,onNavigate:navigateStation,getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onShow:openShow,onGame:id=>gameGate.request(id),onCancelGame:()=>gameGate.cancel(),onQueue:queueFromBuddy,onWatch:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();return true;}});
 
 const queueRoot=element('details',null,'mix-panel episode-queue');queueRoot.id='episode-queue';$('open-channel-builder').closest('.channel-builder-action').after(queueRoot);
 const queueUi=mountEpisodeQueue({root:queueRoot,getCatalog:()=>catalog,onPlay:playQueuedEpisode,onEdit:async(id,action)=>{if(await commitSettings(editEpisodeQueue(copyCatalog(),id,action))){render();queueUi.render();}},onMode:async mode=>{const next=copyCatalog();next.settings.customMode=mode;next.settings.customQueueActive=false;if(mode==='episodes')next.settings.streamShows=null;if(await commitSettings(next)){stopPlayer();render();queueUi.render();}}});
@@ -283,7 +295,7 @@ function renderGuide() {
   if (!position) {
     list.append(element('p', catalog.settings.channel==='mixed'&&!catalog.settings.streamShow&&!catalog.settings.streamShows&&catalog.settings.mixChannels?.length===0?'All channels in your YATA mix are off. Turn a switch on below.':ownerMode ? 'No checked episodes on this channel. Add a source or check an existing source in Library.' : 'No checked episodes on this channel. Browse Library for source links and wishlist shows.', 'empty'));
     $('rotation-note').textContent = 'Tubi links and YouTube playlists are available in the library, outside the live rotation.';
-    if (!active) { $('playing-show').textContent = 'CHANNEL OFF AIR'; $('playing-title').textContent = 'No checked episodes.'; $('playing-detail').textContent = ownerMode ? 'Add an episode source.' : 'Try another channel or browse the Library.'; }
+    if (!active) { $('browse-playing-episodes').hidden = true; $('playing-show').textContent = 'CHANNEL OFF AIR'; $('playing-title').textContent = 'No checked episodes.'; $('playing-detail').textContent = ownerMode ? 'Add an episode source.' : 'Try another channel or browse the Library.'; }
     return;
   }
   let startsAt = Date.now() / 1000 - position.offset;
@@ -304,6 +316,7 @@ function renderGuide() {
   $('rotation-note').textContent = `${unique} checked ${unique === 1 ? 'item' : 'items'} · ${activeRotation(catalog) === 'random' ? 'Random episodes, balanced show turns. Multipart stories stay together.' : 'Episodes in order within each show.'} Your station clock stays stable across refreshes.`;
   if (!active) {
     $('playing-show').textContent = position.current.show.title.toUpperCase();
+    $('browse-playing-episodes').dataset.showId = position.current.show.id; $('browse-playing-episodes').hidden = false;
     presentEpisodeTitle(position.current.episode,position.current.show);
     $('playing-detail').textContent = `${episodeDetail(position.current.episode, position.current.show.id === MOVIE_SHOW_ID)} · ${providerName[position.current.source.provider]}`;
   }
@@ -324,9 +337,9 @@ function renderLibrary() {
   $('library-grid').replaceChildren(...shows.map(show=>{
     const info=libraryMetadata[show.id],genres=showGenres(info),card=element('article',null,'show-card');card.dataset.showId=show.id;
     const art=button('',()=>openShow(show.id),'show-art');art.setAttribute('aria-label',`View episodes and sources for ${show.title}`);
-    if(info?.image){const img=element('img',null,'show-backdrop');img.src=info.image;img.alt='';img.loading='lazy';img.decoding='async';img.addEventListener('error',()=>{img.remove();art.classList.remove('has-art');});art.append(img);art.classList.add('has-art');if(info.imageRole==='title-art')art.classList.add('has-title-art');}
+    if(info?.image){const img=element('img',null,'show-backdrop');img.src=info.image;img.alt='';img.loading='lazy';img.decoding='async';let retried=false;img.addEventListener('error',()=>{const fallback=info.imageFallback&&new URL(info.imageFallback,document.baseURI).href;if(!retried&&fallback&&fallback!==img.src){retried=true;img.src=fallback;return;}img.remove();art.classList.remove('has-art');});art.append(img);art.classList.add('has-art');if(info.imageRole==='title-art')art.classList.add('has-title-art');}
     const channel=CHANNELS.find(c=>c.id===show.channel);art.append(element('small',[info?.year,channel?.name].filter(Boolean).join(' · '),'art-kicker'));
-    if(info?.logo){const logo=element('img',null,'show-logo');logo.src=info.logo;logo.alt='';logo.loading='lazy';logo.decoding='async';logo.addEventListener('error',()=>{logo.remove();art.append(element('strong',show.title,'art-title'));});art.append(logo);}else art.append(element('strong',show.title,'art-title'));
+    if(info?.logo){const logo=element('img',null,'show-logo');logo.src=info.logo;logo.alt='';logo.loading='lazy';logo.decoding='async';let retriedLogo=false;logo.addEventListener('error',()=>{const fallback=info.logoFallback&&new URL(info.logoFallback,document.baseURI).href;if(!retriedLogo&&fallback&&fallback!==logo.src){retriedLogo=true;logo.src=fallback;return;}logo.remove();art.append(element('strong',show.title,'art-title'));});art.append(logo);}else art.append(element('strong',show.title,'art-title'));
     const live=playableEpisodes(show),count=show.episodes.length;let status=live?`${live} checked ${live===1?'episode':'episodes'}`:count?`${count} listed · no checked episodes`:'Wishlist · no episode sources';
     if(show.id===COMMERCIAL_SHOW_ID||show.id.endsWith('-bumps'))status=`${count} break clips`;
     card.append(art,element('h3',show.title,'show-title'));
@@ -335,7 +348,14 @@ function renderLibrary() {
   }));
 }
 function syncLibraryGenres(){const select=$('library-genre');if(!select)return;const previous=select.value,genres=[...new Set(Object.values(libraryMetadata).flatMap(showGenres))].sort();select.replaceChildren(...['all',...genres].map(value=>{const option=element('option',value==='all'?'All genres':value);option.value=value;return option;}));if([...select.options].some(o=>o.value===previous))select.value=previous;}
-async function loadLibraryArtwork(){try{const response=await fetch(new URL('../data/library-art.json',import.meta.url));if(!response.ok)return;const data=await response.json();if(data.version!==1||!data.shows)return;libraryMetadata=data.shows;syncLibraryGenres();renderLibrary();}catch{/* The catalog remains browsable without artwork metadata. */}}
+async function loadLibraryArtwork(){try{
+ const localUrl=new URL('../data/library-art.json',import.meta.url),assetBase=globalThis.yataPublicAssetBase||new URL('../',import.meta.url);
+ const {data}=await fetchPublicFeed({url:localUrl,validate:raw=>validateArtworkFeed(raw,{assetBase}),cacheKey:'yata.public-artwork.v1'});
+ libraryMetadata=data.shows;syncLibraryGenres();renderLibrary();
+}catch{/* The catalog remains browsable without artwork metadata. */}}
+void refreshArcadeGames().catch(()=>{});
+window.addEventListener('visibilitychange',()=>{if(!document.hidden){void loadLibraryArtwork();void refreshArcadeGames().catch(()=>{});}});
+
 
 function presentEpisodeTitle(episode,show){
  const title=displayEpisodeTitle(episode,show);$('playing-title').textContent=title;
@@ -348,7 +368,7 @@ function render() {
   if(guideJumpPending&&(ownerMode||publicCatalogReady)&&!$('guide').hidden){guideJumpPending=false;requestAnimationFrame(()=>{if(!$('guide').hidden)$(innerWidth<=1000?'screen-column':'guide').scrollIntoView({block:'start'});});}
 }
 
-function openShow(showId) {
+function openShow(showId, preserveFilters = false) {
   if(!ownerMode&&!publicCatalogReady)return;
   selectedShowId = showId;
   const show = catalog.shows.find(s => s.id === showId);
@@ -360,7 +380,17 @@ function openShow(showId) {
   const credit=$('show-art-source'),reference=libraryMetadata[show.id]?.sourceUrl;if(credit){credit.hidden=!reference;if(reference)credit.href=reference;}
   const imdb = $('show-imdb'); imdb.hidden = !show.imdbUrl;
   if (show.imdbUrl) imdb.href = show.imdbUrl;
-  const rows = show.episodes.slice().sort((a, b) => a.season - b.season || a.number - b.number).map(e => {
+  if (!preserveFilters) {
+    $('episode-search').value = '';
+    const seasons = [...new Set(show.episodes.map(e => e.season))].sort((a,b) => a-b);
+    $('episode-season').replaceChildren(...['all', ...seasons].map(season => {
+      const option = element('option', season === 'all' ? 'All seasons & collections' : season === 0 ? 'Collections / unnumbered' : `Season ${season}`);
+      option.value = String(season); return option;
+    }));
+  }
+  const filtered = browseEpisodes(show, {query: $('episode-search').value, season: $('episode-season').value});
+  $('show-episode-count').textContent = `${filtered.length} of ${show.episodes.length} available items. Collections and VHS recordings may contain more than one story.`;
+  const rows = filtered.map(e => {
     const row = element('article', null, 'episode-row');
     row.append(element('h3', e.title), element('p', episodeDetail(e, show.id === MOVIE_SHOW_ID), 'episode-meta'));
     const sources = element('div', null, 'sources');
@@ -368,7 +398,7 @@ function openShow(showId) {
       const parsed = parseSourceUrl(source.url);
       if (parsed.kind === 'external') sources.append(link(`Watch on ${providerName[source.provider]} ↗`, source.url, 'button small'));
       else sources.append(button(`▶ ${providerName[source.provider]}${parsed.kind === 'playlist' ? ' playlist' : ''}`, () => {
-        $('show-dialog').close(); playEpisode(show, e, source, 0, 'start'); $('watch').scrollIntoView();
+        $('show-dialog').close(); location.hash = 'watch'; playEpisode(show, e, source, 0, 'start'); $('watch').scrollIntoView();
       }));
       if (parsed.kind !== 'external') sources.append(link('Original ↗', source.url, 'button small'));
       if (ownerMode && catalogStore.writable) sources.append(button('Remove source',async()=>{
@@ -393,7 +423,7 @@ function openShow(showId) {
     }, 'text-button'));
     row.append(tools); return row;
   });
-  $('show-episodes').replaceChildren(...(rows.length ? rows : [element('p', 'No matched episodes were found in the current public-source search. Add a source if you find another collection.', 'empty')]));
+  $('show-episodes').replaceChildren(...(rows.length ? rows : [element('p', show.episodes.length ? 'No episodes match these filters. Try another title or season.' : 'No episode sources are available for this show yet.', 'empty')]));
   if (!$('show-dialog').open) $('show-dialog').showModal();
 }
 
@@ -467,6 +497,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
   $('standby').hidden = true;
   showTuningStatic(true);
   $('playing-show').textContent = show.title.toUpperCase();
+  $('browse-playing-episodes').dataset.showId = show.id; $('browse-playing-episodes').hidden = false;
   presentEpisodeTitle(episode,show);
   $('playing-detail').textContent = `${episodeDetail(episode, show.id === MOVIE_SHOW_ID)} · ${mode === 'live' ? 'Station clock · best-effort sync' : offset > 0 ? `From ${playbackTime(offset)}` : 'From the beginning'} · ${providerName[source.provider]}`;
   $('original-link').href = $('error-original').href = source.url;
@@ -509,7 +540,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
     session = createYouTubeSession(holder, { source, offset, origin: location.origin, onVerified: verified, onEnd: ended, onError: error,
       onState: state => {
         if (generation !== playerGeneration) return;
-        showTuningStatic(state===3);sampleWatch();
+        showTuningStatic(state===3);sampleWatch(); document.dispatchEvent(new Event('yata:playback-state'));
         if (state === 1) { $('playback-state').textContent = 'PLAYING · YOUTUBE'; $('player-error').hidden = true; }
         if (state === 2){playbackLifecycle.save();markTimeShift();$('playback-state').textContent = 'PAUSED';}
         if (state === 3) $('playback-state').textContent = 'BUFFERING';
@@ -694,6 +725,8 @@ $('source-show').addEventListener('change', () => {
 });
 for (const id of ['manage-sources', 'guide-add']) $(id).addEventListener('click', () => openSource());
 $('show-add').addEventListener('click', () => openSource(selectedShowId));
+$('browse-playing-episodes').addEventListener('click', () => openShow($('browse-playing-episodes').dataset.showId));
+for (const id of ['episode-search','episode-season']) $(id).addEventListener(id === 'episode-search' ? 'input' : 'change', () => openShow(selectedShowId, true));
 $('close-show').addEventListener('click', () => $('show-dialog').close());
 for (const id of ['close-source', 'cancel-source']) $(id).addEventListener('click', () => { if (!importBusy) $('source-dialog').close(); });
 $('source-dialog').addEventListener('cancel', event => { if (importBusy) event.preventDefault(); });
@@ -904,7 +937,7 @@ async function fetchLibrary() {
   if (!response.ok) throw Error('The expanded episode library is not ready yet.');
   const manifest = await response.json();
   if (typeof manifest.revision !== 'string' || !/^[a-z0-9.-]{1,100}$/.test(manifest.revision)) throw Error('Invalid library revision.');
-  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel', 'star-trek', 'retro-requests', 'saturday-adventure', 'expanded-era', 'drama', 'channel-additions'].map(async provider => {
+  const packs = await Promise.all(['action', 'cartoon', 'youtube', 'commercials', 'scifi', 'movies', 'comedy', 'seventies', 'benson', 'cartoon-extras', 'stephanie-cartoons', 'late-night', 'network-expansion', 'classic-comedy', 'time-travel', 'star-trek', 'retro-requests', 'saturday-adventure', 'expanded-era', 'drama', 'channel-additions', 'vintage-additions', 'three-tv', 'viewer-requests'].map(async provider => {
     const response = await fetch(`data/${provider}-discovery.json`);
     if (!response.ok) throw Error('A library source file could not be loaded. Your catalog is unchanged.');
     return response.json();
@@ -1025,7 +1058,7 @@ $('show-shuffle').addEventListener('click', () => {
   $('watch').scrollIntoView();
 });
 
-mountWindowMode({ documentRef: document, screen: $('screen-column'), toggle: $('fill-window'), closeButton: $('exit-window') });
+mountWindowMode({ documentRef: document, screen: $('screen-column'), toggle: $('fill-window'), closeButton: $('exit-window'), fullScreenButton: $('screen-fullscreen'), getPlaybackState: transportState, isWatching: () => location.hash !== '#library' });
 
 $('movie-browse').addEventListener('click', () => openShow(MOVIE_SHOW_ID));
 $('movie-shuffle').addEventListener('click', async () => { if (await configureStream({channel: 'scifi', streamShow: MOVIE_SHOW_ID, rotation: 'random', shuffleSeed: newMix()}, true)) $('watch').scrollIntoView(); });

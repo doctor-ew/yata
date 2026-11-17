@@ -14,9 +14,11 @@ export async function handleArcade(req,res){
  if(rel.split('/').some(part=>part.startsWith('.'))||rel.includes('\0'))throw Error();
  if(rel.startsWith('assets/'))rel='.local-assets/'+rel.slice(7);
  if(rel.endsWith('/'))rel+='index.html';
- const target=await realpath(path.join(root,rel));
+ const shared=new Map(['catalog-feeds.mjs','arcade-catalog.mjs'].map(name=>['shared/'+name,fileURLToPath(new URL('./src/'+name,import.meta.url))]));
+ const sharedFile=shared.get(rel);
+ const target=sharedFile||await realpath(path.join(root,rel));
  const mime=types[path.extname(target)]||(/^LICENSE(?:_|$)/.test(path.basename(target))?'text/plain; charset=utf-8':null);
- if(!target.startsWith(root)||!mime)throw Error();
+ if((!sharedFile&&!target.startsWith(root))||!mime)throw Error();
  const body=await readFile(target);
  const headers={'Content-Type':mime,'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'self' blob: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; media-src 'self' blob: data:; frame-src 'self' blob:; frame-ancestors 'self'; object-src 'none'; base-uri 'self'"};
  if(rel==='index.html')headers['Content-Security-Policy']=headers['Content-Security-Policy'].replace("script-src 'self'", "script-src 'self' https://challenges.cloudflare.com").replace("connect-src 'self' blob: data:", "connect-src 'self' blob: data: https://skippyts.doctorew.com https://challenges.cloudflare.com").replace("frame-src 'self'", "frame-src 'self' https://challenges.cloudflare.com");

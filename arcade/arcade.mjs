@@ -1,3 +1,5 @@
+import{fetchPublicFeed}from'./shared/catalog-feeds.mjs';
+import{validateLauncherCatalog}from'./shared/arcade-catalog.mjs';
 import{expansionGames,unsupportedExpansionGames}from'./expansion.mjs';
 import {upgradeGame,additionalPorts} from './ports.mjs';
 import{curatedGames,preservedOverrides,featuredTitles}from'./games.mjs';
@@ -12,8 +14,13 @@ async function startGame(game,button){dialog.classList.toggle('six-button-game',
 $('close-game').addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>{stop();launcher?.focus();});$('fullscreen').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await dialog.requestFullscreen();}catch{$('game-hint').textContent='Fullscreen is unavailable in this browser. You can still play in this window.';}});
 $('open-cartridge').addEventListener('click',()=>{$('file-error').textContent='';$('cartridge-dialog').showModal();});for(const button of document.querySelectorAll('[data-close]'))button.addEventListener('click',()=>$(button.dataset.close).close());
 $('cartridge-form').addEventListener('submit',event=>{event.preventDefault();const file=$('rom-file').files[0],bios=$('bios-file').files[0];if(!file)return;const allowed=/\.(a26|bin|rom|d64|t64|prg|crt|tap|nes|sfc|smc|md|gen|gb|gbc|zip)$/i;if(!allowed.test(file.name)){$('file-error').textContent='Choose a cartridge, disk or ZIP file supported by this machine.';return;}if(file.size>64*1024*1024||bios?.size>16*1024*1024){$('file-error').textContent='This slot supports game files up to 64 MB and BIOS files up to 16 MB.';return;}$('cartridge-dialog').close();const system=$('system');const frame=launch(file.name,system.selectedOptions[0].textContent+' · Open the emulator menu for controls, controllers and save states.','console.html',$('open-cartridge'));frame.addEventListener('load',()=>frame.contentWindow.postMessage({type:'arcade-load',core:system.value,name:file.name,file,bios:bios||null},location.origin),{once:true});});
+let launcherFeedLoaded=false;
+const launcherCatalogReady=(async()=>{
+ try{const result=await fetchPublicFeed({url:'launcher-catalog.json',validate:validateLauncherCatalog,cacheKey:'yata.arcade-launcher.v1'});games=result.data.games;launcherFeedLoaded=true;render();}
+ catch{/* Existing generated shelf remains the offline compatibility fallback. */}
+})();
 let flashCatalogPromise;
-function loadFlashShelf(){return flashCatalogPromise??= (async()=>{
+async function loadFlashShelf(){await launcherCatalogReady;if(launcherFeedLoaded)return;return flashCatalogPromise??= (async()=>{
 try{const response=await fetch('assets/adult-swim-catalog.json');if(response.ok){const catalog=await response.json();games.push(...catalog.games.filter(g=>!preservedOverrides.has(g.id)).map(upgradeGame));const priority=new Map(featuredTitles.map((title,i)=>[title,i]));games.sort((a,b)=>(a.category==='console'?0:1)-(b.category==='console'?0:1)||(priority.get(a.title)??100)-(priority.get(b.title)??100)||a.title.localeCompare(b.title));$('catalog-note').textContent='Downloaded packages are integrity checked. “Not gameplay checked” means exactly that; archive availability is not a compatibility guarantee.';}else $('catalog-note').textContent='Adult Swim intake has not been run yet. The recovered games and local cartridge slot are available.';}catch{$('catalog-note').textContent='Adult Swim catalog could not be loaded. The local cartridge slot is still available.';}
 })();}
 $('catalog-note').textContent='Arcade and cartridge shelf · play-check notes are shown on each machine.';
@@ -31,8 +38,7 @@ window.addEventListener('blur',()=>{if(document.activeElement?.tagName!=='IFRAME
 let installPrompt=null;window.addEventListener('beforeinstallprompt',event=>{event.preventDefault();installPrompt=event;});$('install-app').addEventListener('click',async()=>{if(installPrompt){await installPrompt.prompt();installPrompt=null;}else $('catalog-note').textContent='On Android Chrome, open the browser menu and choose Install app or Add to Home screen. An internet connection is needed for games you have not loaded yet.';});if('serviceWorker' in navigator)navigator.serviceWorker.register('/arcade/service-worker.js').catch(()=>{});
 
 export async function launchArcadeGame(id){
- const metadata=(await import('/tv/src/arcade-games.mjs')).ARCADE_GAMES.find(g=>g.id===id&&g.status==='installed');
- if(!metadata){$('catalog-note').textContent='That game is not installed. Pick an available machine.';return false;}
+ await launcherCatalogReady;
  let game=games.find(g=>g.id===id);if(!game){await loadFlashShelf();game=games.find(g=>g.id===id);}
  if(!game||game.status!=='installed'){$('catalog-note').textContent='This game could not be loaded. Try again from its machine.';return false;}
  filter=game.category;limit=games.length;$('game-search').value=game.title;render();const button=document.querySelector('[data-game="'+CSS.escape(id)+'"]');if(!button)return false;await startGame(game,button);return dialog.open;

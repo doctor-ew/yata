@@ -2,6 +2,16 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.6 — 2026-11-17
+
+- Library artwork and Arcade cards now refresh from validated public JSON feeds, with cached or bundled fallback. Private Plex integration is still roadmap work.
+- Made Watch, Guide and Library navigation more visible and available through buddy chat. Optional companion text notes use current/next titles, suggestions and character quips; motorcycle Knight Rider requests can resolve to checked Street Hawk.
+- Added eight requested original series with 519 checked entries: Gargoyles, Gummi Bears, TMNT (five first-season episodes), Animaniacs, Tiny Toons, Darkwing Duck, Rescue Rangers and Mighty Morphin Power Rangers. Tiny Toons and Rescue Rangers currently use labelled collections/specials.
+- Choose an episode beside the playing program; filter by title/story and season. Grimm’s currently has one verified VHS compilation.
+- Added fullscreen on the picture and automatic landscape expansion on touch phones while keeping playback position. Browser/native fullscreen depends on platform support; physical iPhone verification remains outstanding.
+
+[Android release](https://github.com/doctor-ew/yata/releases/tag/yata-android-v0.8.6)
+
 ## 0.8.5 — 2026-11-17
 
 - Added Silver Spoons (1982) to Comedy: one standalone episode and 22 labelled Antenna TV broadcast recordings, which include commercials and surrounding airtime.

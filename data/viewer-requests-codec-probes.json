@@ -1,0 +1,289 @@
+{
+  "checkedAt": "2026-11-17T18:51:38.768Z",
+  "method": "ffprobe representative public files; not an exhaustive decode",
+  "results": [
+    {
+      "item": "gargoyles-s-01-e-11-long-way-to-morning-480p-dvdrip_202601",
+      "url": "https://archive.org/download/gargoyles-s-01-e-11-long-way-to-morning-480p-dvdrip_202601/Gargoyles%20-%20S01%20E01%20-%20Awakening%2C%20Part%201%20%28480p%20-%20DVDRip%29.ia.mp4",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 720,
+          "height": 480,
+          "tags": {
+            "language": "und"
+          }
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "tags": {
+            "language": "eng"
+          }
+        }
+      ],
+      "exitCode": 0
+    },
+    {
+      "item": "gummi-bears-s-01-e-09-a-gummi-by-any-other-name",
+      "url": "https://archive.org/download/gummi-bears-s-01-e-09-a-gummi-by-any-other-name/Gummi%20Bears%20S01E01%20-%20A%20New%20Beginning.ia.mp4",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 480,
+          "tags": {
+            "language": "und"
+          }
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "tags": {
+            "language": "und"
+          }
+        }
+      ],
+      "exitCode": 0
+    },
+    {
+      "item": "TMNTSEASON1",
+      "url": "https://archive.org/download/TMNTSEASON1/S01E001%20-%20TURTLE%20TRACKS.mp4",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 480,
+          "tags": {
+            "language": "und"
+          }
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "tags": {
+            "language": "und"
+          }
+        }
+      ],
+      "exitCode": 0
+    },
+    {
+      "item": "s-01-e-05-taming-of-the-screwy",
+      "url": "https://archive.org/download/s-01-e-05-taming-of-the-screwy/S01E01%20De-Zanitized%20-%20The%20Monkey%20Song%20-%20Nighty-Night%20Toon.mp4",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 648,
+          "height": 480,
+          "tags": {
+            "language": "eng"
+          }
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "tags": {
+            "language": "eng"
+          }
+        },
+        {
+          "codec_name": "subrip",
+          "codec_type": "subtitle",
+          "tags": {
+            "language": "eng"
+          }
+        }
+      ],
+      "exitCode": 0
+    },
+    {
+      "item": "12064",
+      "url": "https://archive.org/download/12064/TT%20Music%20Television.mp4",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 480,
+          "tags": {
+            "language": "und"
+          }
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "tags": {
+            "language": "und"
+          }
+        }
+      ],
+      "exitCode": 0
+    },
+    {
+      "item": "tinytoonsnightghoulery1995_202003",
+      "url": "https://archive.org/download/tinytoonsnightghoulery1995_202003/Tiny%20Toons%27%20Night%20Ghoulery%20%281995%29.mp4",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 464,
+          "tags": {
+            "language": "und"
+          }
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "tags": {
+            "language": "und"
+          }
+        }
+      ],
+      "exitCode": 0
+    },
+    {
+      "item": "tinytoonspringbreak_201912",
+      "url": "https://archive.org/download/tinytoonspringbreak_201912/Tiny%20Toon%20Spring%20Break.mp4",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 480,
+          "tags": {
+            "language": "und"
+          }
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "tags": {
+            "language": "und"
+          }
+        }
+      ],
+      "exitCode": 0
+    },
+    {
+      "item": "darkwing-duck-1991_202601",
+      "url": "https://archive.org/download/darkwing-duck-1991_202601/Season%201/Darkwing%20Duck%20-%20S01E01%20-%20Darkly%20Dawns%20the%20Duck%20%281%29.mp4",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 634,
+          "height": 476,
+          "tags": {
+            "language": "und"
+          }
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "tags": {
+            "language": "und"
+          }
+        }
+      ],
+      "exitCode": 0
+    },
+    {
+      "item": "chip-n-dale-rescue-rangers-undercover-critters-1989-vhs",
+      "url": "https://archive.org/download/chip-n-dale-rescue-rangers-undercover-critters-1989-vhs/Chip%20%27n%20Dale%20Rescue%20Rangers%20-%20Undercover%20Critters%20%281989%20VHS%29.ia.mp4",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 480,
+          "tags": {
+            "language": "und"
+          }
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "tags": {
+            "language": "und"
+          }
+        }
+      ],
+      "exitCode": 0
+    },
+    {
+      "item": "mighty-morphin-power-rangers-season-1",
+      "url": "https://archive.org/download/mighty-morphin-power-rangers-season-1/Power%20Rangers%20-%20S01E01%20-%20Day%20of%20the%20Dumpster%20%28480p%20x265%20EDGE2020%29.mp4",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 480,
+          "tags": {
+            "language": "und"
+          }
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "tags": {
+            "language": "und"
+          }
+        }
+      ],
+      "exitCode": 0
+    },
+    {
+      "item": "mighty-morphin-power-rangers-season-2",
+      "url": "https://archive.org/download/mighty-morphin-power-rangers-season-2/Power%20Rangers%20-%20S02E01%20-%20The%20Mutiny%20%281%29%20%28480p%20x265%20EDGE2020%29.mp4",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 480,
+          "tags": {
+            "language": "und"
+          }
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "tags": {
+            "language": "und"
+          }
+        }
+      ],
+      "exitCode": 0
+    },
+    {
+      "item": "mighty-morphin-power-rangers-season-3",
+      "url": "https://archive.org/download/mighty-morphin-power-rangers-season-3/Power%20Rangers%20-%20S03E01%20-%20A%20Friend%20in%20Need%20%281%29%20%28480p%20x265%20EDGE2020%29.mp4",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 480,
+          "tags": {
+            "language": "und"
+          }
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "tags": {
+            "language": "und"
+          }
+        }
+      ],
+      "exitCode": 0
+    }
+  ]
+}

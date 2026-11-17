@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-5f89ad15f71c2d6c",
+  "revision": "expanded-d09b2667e23c4fa8",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -23,13 +23,14 @@
     "2026-11-15T19:40:16.848Z",
     "2026-11-15T19:46:26.579Z",
     "2026-11-16T18:53:32.666Z",
-    "2026-11-17T18:06:56.151Z"
+    "2026-11-17T18:06:56.151Z",
+    "2026-11-17T18:56:12.994Z"
   ],
-  "episodes": 11372,
-  "ready": 11235,
+  "episodes": 11891,
+  "ready": 11754,
   "movieReady": 5,
   "breaks": 24,
-  "streamSlots": 304469,
+  "streamSlots": 314859,
   "shows": [
     {
       "id": "dukes",
@@ -1912,6 +1913,70 @@
       "sources": 14
     },
     {
+      "id": "gargoyles",
+      "title": "Gargoyles (1994)",
+      "episodes": 78,
+      "ready": 78,
+      "breaks": 0,
+      "sources": 78
+    },
+    {
+      "id": "gummi-bears",
+      "title": "Adventures of the Gummi Bears (1985)",
+      "episodes": 94,
+      "ready": 94,
+      "breaks": 0,
+      "sources": 94
+    },
+    {
+      "id": "tmnt-1987",
+      "title": "Teenage Mutant Ninja Turtles (1987)",
+      "episodes": 5,
+      "ready": 5,
+      "breaks": 0,
+      "sources": 5
+    },
+    {
+      "id": "animaniacs",
+      "title": "Animaniacs (1993)",
+      "episodes": 99,
+      "ready": 99,
+      "breaks": 0,
+      "sources": 99
+    },
+    {
+      "id": "tiny-toons",
+      "title": "Tiny Toon Adventures (1990)",
+      "episodes": 3,
+      "ready": 3,
+      "breaks": 0,
+      "sources": 3
+    },
+    {
+      "id": "darkwing-duck",
+      "title": "Darkwing Duck (1991)",
+      "episodes": 91,
+      "ready": 91,
+      "breaks": 0,
+      "sources": 91
+    },
+    {
+      "id": "rescue-rangers",
+      "title": "Chip ’n Dale: Rescue Rangers (1989)",
+      "episodes": 3,
+      "ready": 3,
+      "breaks": 0,
+      "sources": 3
+    },
+    {
+      "id": "mighty-morphin-power-rangers",
+      "title": "Mighty Morphin Power Rangers (1993)",
+      "episodes": 146,
+      "ready": 146,
+      "breaks": 0,
+      "sources": 146
+    },
+    {
       "id": "x-men-tas",
       "title": "X-Men: The Animated Series (1992)",
       "episodes": 76,
@@ -1984,6 +2049,6 @@
       "sources": 146
     }
   ],
-  "bytes": 4181243,
+  "bytes": 4390500,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }
