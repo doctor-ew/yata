@@ -99,7 +99,7 @@ window.addEventListener('hashchange',()=>{if(['#guide','#library'].includes(loca
 showBrowseView(location.hash==='#guide'?'guide':'library');
 mountChannelBuilder({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();$('player-shell').scrollIntoView({block:'center',behavior:'smooth'});return true;}});
 
-mountBuddy({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onShow:openShow});
+mountBuddy({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onShow:openShow,onWatch:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();return true;}});
 
 const queueRoot=element('details',null,'mix-panel episode-queue');queueRoot.id='episode-queue';$('open-channel-builder').closest('.channel-builder-action').after(queueRoot);
 const queueUi=mountEpisodeQueue({root:queueRoot,getCatalog:()=>catalog,onPlay:playQueuedEpisode,onEdit:async(id,action)=>{if(await commitSettings(editEpisodeQueue(copyCatalog(),id,action))){render();queueUi.render();}},onMode:async mode=>{const next=copyCatalog();next.settings.customMode=mode;next.settings.customQueueActive=false;if(mode==='episodes')next.settings.streamShows=null;if(await commitSettings(next)){stopPlayer();render();queueUi.render();}}});

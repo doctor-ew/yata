@@ -1,3 +1,4 @@
+import{normalizeBuddyReply}from'./buddy-reply.mjs';
 import{getAnalytics}from'./analytics.mjs';
 // The public widget key is supplied in HTML. Session grants stay in memory.
 const base='https://skippyts.doctorew.com';
@@ -38,4 +39,4 @@ export function createChannelAi({sitekey,container,fetcher=fetch,verify=challeng
   };
 }
 
-export function createBuddyChat(options={}){const request=createChannelAi({...options,mode:'buddy',responseKey:'answer'});return async(...args)=>{const answer=await request(...args);if(typeof answer!=='string'||!answer.trim()||answer.length>12000)throw Error('Your buddy sent an unreadable reply. Try again.');return answer;};}
+export function createBuddyChat(options={}){const request=createChannelAi({...options,mode:'buddy',responseKey:'answer'});return async(...args)=>{const answer=normalizeBuddyReply(await request(...args));if(typeof answer!=='string'||!answer.trim()||answer.length>12000)throw Error('Your buddy sent an unreadable reply. Try again.');return answer;};}

@@ -1,0 +1,1 @@
+export function normalizeBuddyReply(value){let text=String(value).trim();for(let i=0;i<4;i++){const next=text.replace(/^[\s"'“”‘’*_`]*(?:a+h+)\b[\s"'“”‘’*_`,.!?:;…—–-]*/i,'').trimStart();if(next===text)break;text=next;}return text;}
