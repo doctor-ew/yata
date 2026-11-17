@@ -15,3 +15,9 @@ Android-origin bridge behavior has been tested with simulated service responses.
 ## Characters
 
 The roster includes Scooter, Super Friends-era Robin, Master Shake, Orko, Penny, Inspector Gadget and classic Velma. Bundled artwork credits are in `assets/buddy/credits.html`. Character dialogue is original and character-inspired.
+
+## Character and queue commands
+
+“Turn into Twiki” selects and pins that character. “Pin you” keeps the current buddy, and “unpin” or “surprise me on each launch” restores random selection. These commands run locally against the finite roster. The character selector remains available inside the chat settings.
+
+“Play Mork and Mindy next” chooses the first checked episode not already queued or currently playing. If a checked episode is playing, it becomes the queue anchor and the requested episode follows it without restarting the video. “Add Taxi to my queue” appends to Channel 00 without changing the current station. Queue references and character preferences remain local to the browser or app and survive relaunch. No shared catalog is modified.
