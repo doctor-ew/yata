@@ -55,3 +55,7 @@ Episode sharing uses a public episode URL with an optional timestamp. Channel / 
 The Arcade is absent from normal navigation until unlocked. Long-press the YATA logo to reveal touch controls, then enter the Konami sequence. There is no visible Arcade-help button. The unlocked channel opens the hosted arcade in a browser tab.
 
 Media3 1.11.1 is Apache-2.0 licensed; Capacitor Share is MIT licensed. Notices are bundled in tv/licenses. Automatic background playback is Android-only; the iOS project remains uncompiled and untested.
+
+### Vintage rooms (0.4.0)
+
+Fresh WebView launches choose a different room finish from the previous launch. Resuming the app or switching views keeps the current finish. More → Appearance provides the finish selector and a pin checkbox. The independent decal selector supports Autobots, Decepticons, Cobra, a random selection, or none. Preferences remain on the device. CSS draws the five room textures; bundled source insignia and source credits are in `decor/`. No remote image request is required at runtime.

@@ -2,6 +2,7 @@ import{execFileSync}from'node:child_process';import{readFile,writeFile,mkdir,rm,
 const root=path.dirname(fileURLToPath(import.meta.url)),web=path.join(root,'www'),stage=path.join(root,'.stage');
 await rm(stage,{recursive:true,force:true});execFileSync(process.execPath,['../scripts/build-static.mjs','--out',stage,'--base','/tv/'],{cwd:root,stdio:'inherit'});
 await rm(web,{recursive:true,force:true});await mkdir(web,{recursive:true});await cp(stage,path.join(web,'tv'),{recursive:true});
+await cp(path.join(root,'decor'),path.join(web,'tv/decor'),{recursive:true});
 // Bundle a verified catalog for cold launch; subsequent launches refresh public metadata.
 const response=await fetch('https://doctorew.com/tv/data/published-catalog-manifest.json');if(!response.ok)throw Error('Published catalog manifest unavailable.');const text=await response.text(),manifest=JSON.parse(text);if(!/^[a-f0-9]{64}$/.test(manifest.revision)||manifest.catalog!==`data/catalogs/${manifest.revision}.json`)throw Error('Invalid catalog path.');
 const snapshot=await(await fetch(new URL(manifest.catalog,'https://doctorew.com/tv/'))).text();if(createHash('sha256').update(snapshot).digest('hex')!==manifest.revision)throw Error('Catalog integrity check failed.');await mkdir(path.join(web,'tv/data/catalogs'),{recursive:true});await writeFile(path.join(web,'tv',manifest.catalog),snapshot);await writeFile(path.join(web,'tv/data/published-catalog-manifest.json'),text);
