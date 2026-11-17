@@ -1,4 +1,4 @@
-export const ARCADE_CHANNEL={id:'arcade',number:'03',name:'Arcade',games:['Robot Unicorn Attack','Star Wars','Spy Hunter','Q*bert','Donkey Kong']};
+export const ARCADE_CHANNEL={id:'arcade',number:'03',name:'Arcade',games:['Star Wars','Spy Hunter','Q*bert','Donkey Kong','Star Raiders']};
 const ARCADE_UNLOCK_KEY='yata.arcade-unlocked.v1';
 export function readArcadeUnlock(storage){try{return (storage??globalThis.sessionStorage)?.getItem(ARCADE_UNLOCK_KEY)==='1';}catch{return false;}}
 export function saveArcadeUnlock(storage){try{(storage??globalThis.sessionStorage)?.setItem(ARCADE_UNLOCK_KEY,'1');}catch{/* The current tab still unlocks when storage is unavailable. */}}

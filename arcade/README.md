@@ -50,3 +50,9 @@ The main PLAY build now uses updated touch/keyboard controls and patched SWFs fo
 Star Wars uses the updated arcade flight controls and optional shield/Force switches. The separate original arcade Spy Hunter adds Gas, Gear and two-token credits; its Atari 2600 port remains separately labeled. After Burner, Double Dragon and NES Knight Rider include their delivered control/mod builds. Desktop Spy Hunter keys: **5** or **Shift** adds a credit, **Enter** starts, **G** accelerates, **H** shifts, arrows steer, Space fires, **S/O/M** use smoke/oil/missiles. Double Dragon uses **Z/X/C** for Punch/Kick/Jump. Cheats start off. Pause / Mods applies the supported game-specific options; neither menu rendering nor brief startup checks establish full gameplay compatibility.
 
 Source handoff: private android-game-preservation Pensieve memory `7c422ac02a3470fe2827b99a5e7e75b58851b942668089fdd6c72ebab2832a9f`, with control and cheat details from memories `75f8adbe862036298725896203760c1ef9a1162a3d25e0d7fffdef50309b2685` and `9be70ba752f00af71990ce8d5eceb4e10ce756679a4011cd4f52f48e7ed8cf57`.
+
+## Default shelf
+
+The arcade opens on Arcade & cartridges (12 curated classic entries). Flash, the combined catalog and the workshop are under Other shelves. The Flash catalog is fetched only when one of those additional views is selected; its entries are excluded from the default grid, search results and installed count. The service worker no longer preloads that catalog. Both website and Android use this hosted arcade. Changing presentation does not establish distribution permission.
+
+The current local-file slot supports C64 but there are no curated C64 games. ColecoVision is not implemented by the current core allowlist or machine selector.

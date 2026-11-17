@@ -21,7 +21,7 @@ npm run android:build
 
 Set `JAVA_HOME` to a JDK 21 installation and `ANDROID_HOME` to an Android SDK containing the platform/build packages required by `android/variables.gradle`. `build.mjs` reads the current public catalog and checks its SHA-256 before bundling it. It does not bundle video files, credentials, APK backups or Arcade runtimes.
 
-The generated APK is copied to `artifacts/YATA-0.6.1-android-debug.apk`. The Gradle output remains `android/app/build/outputs/apk/debug/app-debug.apk`. It is signed with the local Android debug key for sideload testing. Connect one Android device with USB debugging enabled, authorize the Mac, and run from this directory:
+The generated APK is copied to `artifacts/YATA-0.6.2-android-debug.apk`. The Gradle output remains `android/app/build/outputs/apk/debug/app-debug.apk`. It is signed with the local Android debug key for sideload testing. Connect one Android device with USB debugging enabled, authorize the Mac, and run from this directory:
 
 ```sh
 adb install -r android/app/build/outputs/apk/debug/app-debug.apk
