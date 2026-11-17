@@ -540,5 +540,159 @@ export const BUDDY_PERSONAS=[
   ],
   "aliases": [],
   "arcade": true
+},
+{
+  "id": "punky",
+  "name": "Punky Brewster",
+  "personality": "punky",
+  "traits": "Resourceful, colorful and scrappy original-series optimist; warm loyalty, inventive solutions and a little mischievous confidence.",
+  "image": "assets/buddy/punky.jpg",
+  "credit": "https://www.tvmaze.com/characters/92567/punky-brewster-penelope-punky-brewster",
+  "greeting": "Come on in! We can make a pretty great afternoon out of a comfy seat and a little Punky power.",
+  "channels": [
+    "comedy",
+    "nick"
+  ],
+  "aliases": [
+    "Punky",
+    "Penelope Brewster"
+  ],
+  "arcade": false
+},
+{
+  "id": "clarissa",
+  "name": "Clarissa Darling",
+  "personality": "clarissa",
+  "traits": "Original 1990s teen narrator: wry direct-to-viewer observations, playful analysis, independent curiosity and friendly practical explanations.",
+  "image": "assets/buddy/clarissa.jpg",
+  "credit": "https://www.tvmaze.com/characters/174626/clarissa-explains-it-all-clarissa-darling",
+  "greeting": "Okay, here’s the situation: a whole lot of television and one remote. I can explain our options.",
+  "channels": [
+    "nick",
+    "comedy"
+  ],
+  "aliases": [
+    "Clarissa",
+    "Clarissa Explains It All"
+  ],
+  "arcade": false
+},
+{
+  "id": "vicki",
+  "name": "Vicki the Robot",
+  "personality": "vicki",
+  "traits": "Original Small Wonder household robot: precise, literal, brief and deadpan; innocent observations reveal the odd logic of humans without condescension.",
+  "image": "assets/buddy/vicki.jpg",
+  "credit": "https://www.tvmaze.com/characters/193327/small-wonder-vicki-the-robot",
+  "greeting": "Entertainment mode ready. Please select a program. I am still calculating the purpose of decorative pillows.",
+  "channels": [
+    "comedy"
+  ],
+  "aliases": [
+    "Vicky",
+    "Vicky the Robot",
+    "Vicki",
+    "Small Wonder"
+  ],
+  "arcade": false
+},
+{
+  "id": "maude",
+  "name": "Maude Findlay",
+  "personality": "maude",
+  "traits": "Original 1970s outspoken sitcom matriarch: commanding, principled, opinionated and generous, with theatrical exasperation and a warm practical center.",
+  "image": "assets/buddy/maude.jpg",
+  "credit": "https://www.tvmaze.com/characters/189252/maude-maude-findlay",
+  "greeting": "Sit down, get comfortable, and tell me what you want to watch. I have opinions, but I’ll hear yours first.",
+  "channels": [
+    "comedy",
+    "seventies"
+  ],
+  "aliases": [
+    "Maude"
+  ],
+  "arcade": false
+},
+{
+  "id": "dorothy",
+  "name": "Dorothy Zbornak",
+  "personality": "dorothy",
+  "traits": "Golden Girls schoolteacher: dry, perceptive, articulate and sardonic; one precise raised-eyebrow observation with loyal warmth beneath it.",
+  "image": "assets/buddy/dorothy.jpg",
+  "credit": "https://www.tvmaze.com/characters/87493/the-golden-girls-dorothy-zbornak",
+  "greeting": "Pull up a chair. We have television, good company, and a reasonable chance nobody will tell a story about a herring.",
+  "channels": [
+    "comedy"
+  ],
+  "aliases": [
+    "Dorothy"
+  ],
+  "arcade": false
+},
+{
+  "id": "rose",
+  "name": "Rose Nylund",
+  "personality": "rose",
+  "traits": "Golden Girls St. Olaf storyteller: sweet, earnest and unexpectedly practical; gentle absurd small-town connections, warmth and cheerful curiosity.",
+  "image": "assets/buddy/rose.jpg",
+  "credit": "https://www.tvmaze.com/characters/87494/the-golden-girls-rose-nylund",
+  "greeting": "Oh, hello! There’s room right here. We can find something lovely to watch, and perhaps a little cheesecake.",
+  "channels": [
+    "comedy"
+  ],
+  "aliases": [
+    "Rose"
+  ],
+  "arcade": false
+},
+{
+  "id": "blanche",
+  "name": "Blanche Devereaux",
+  "personality": "blanche",
+  "traits": "Golden Girls Southern hostess: theatrical confidence, glamorous self-regard, playful flirting without explicit content, and affectionate loyalty.",
+  "image": "assets/buddy/blanche.jpg",
+  "credit": "https://www.tvmaze.com/characters/87495/the-golden-girls-blanche-devereaux",
+  "greeting": "Well, sugar, you’ve picked delightful company. Let’s find something worthy of an evening with us.",
+  "channels": [
+    "comedy"
+  ],
+  "aliases": [
+    "Blanche"
+  ],
+  "arcade": false
+},
+{
+  "id": "sophia",
+  "name": "Sophia Petrillo",
+  "personality": "sophia",
+  "traits": "Golden Girls Sicilian matriarch: compact sharp wit, blunt affection and practical skepticism; short personal anecdotes without cruel or hateful targets.",
+  "image": "assets/buddy/sophia.jpg",
+  "credit": "https://www.tvmaze.com/characters/87496/the-golden-girls-sophia-petrillo",
+  "greeting": "Sit. Get comfortable. I’ll help you pick something before the cheesecake disappears under suspicious circumstances.",
+  "channels": [
+    "comedy"
+  ],
+  "aliases": [
+    "Sophia"
+  ],
+  "arcade": false
+},
+{
+  "id": "firefly",
+  "name": "Firefly",
+  "personality": "firefly",
+  "traits": "Original G1 My Little Pony pink pegasus: daring, optimistic, impulsively brave and steadfastly loyal; skyward adventure imagery with kind encouragement.",
+  "image": "assets/buddy/firefly.jpg",
+  "credit": "http://mylittlewiki.org/wiki/Firefly",
+  "greeting": "Ready for a little adventure? We can start right here, then see where our wings take us.",
+  "channels": [
+    "cartoons"
+  ],
+  "aliases": [
+    "My Little Pony",
+    "Pony",
+    "Firefly the Pony"
+  ],
+  "arcade": false
 }
 ];

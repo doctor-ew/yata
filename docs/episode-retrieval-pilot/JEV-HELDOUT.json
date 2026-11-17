@@ -1,0 +1,133 @@
+{
+  "method": "Five independently authored source-aware queries, frozen before retrieval results. Jev MCP jev_find saw all 86 descriptions; AWS hybrid used a vector shortlist of 10. This is not an equal-candidate reranker benchmark or a blind/random sample.",
+  "candidateCount": 86,
+  "results": [
+    {
+      "id": "heldout-remembered-plot-1",
+      "query": "I remember someone trying to get a singer to record a message for the public, then getting tangled up with her shady circle and a killing.",
+      "expectedEvidenceId": "964e5ce08da66b244c860959789d6a0465214691416ad1f3e63137d8d7bce5e8",
+      "exists": 0.98,
+      "existsVerdict": "answered",
+      "top": [
+        {
+          "id": "964e5ce08da66b244c860959789d6a0465214691416ad1f3e63137d8d7bce5e8",
+          "probability": 1
+        },
+        {
+          "id": "374ca37339c43c05eb9a250bb472d02c53f79d86f5abb12962699296fc278a8a",
+          "probability": 0
+        },
+        {
+          "id": "af1eeb2c92018d8a2b4a141fe0db580cd3fb0d3ba811934869d5eacf662ffd2a",
+          "probability": 0
+        }
+      ],
+      "usage": {
+        "input_tokens": 17744,
+        "output_tokens": 5485
+      }
+    },
+    {
+      "id": "heldout-remembered-plot-2",
+      "query": "Which story was about a former ruler\u2019s widow arranging a soldier-for-hire\u2019s jailbreak, and someone investigating why she did it?",
+      "expectedEvidenceId": "147fbb05c6210515429c924f865ac60ab71e52f85bff950cc0849ee20ceec472",
+      "exists": 0.98,
+      "existsVerdict": "answered",
+      "top": [
+        {
+          "id": "147fbb05c6210515429c924f865ac60ab71e52f85bff950cc0849ee20ceec472",
+          "probability": 1
+        },
+        {
+          "id": "374ca37339c43c05eb9a250bb472d02c53f79d86f5abb12962699296fc278a8a",
+          "probability": 0
+        },
+        {
+          "id": "af1eeb2c92018d8a2b4a141fe0db580cd3fb0d3ba811934869d5eacf662ffd2a",
+          "probability": 0
+        }
+      ],
+      "usage": {
+        "input_tokens": 17747,
+        "output_tokens": 5481
+      }
+    },
+    {
+      "id": "heldout-remembered-plot-3",
+      "query": "There was a religious leader trying to bring an artificial guardian to life to take on gangsters in a European city. Which episode was that?",
+      "expectedEvidenceId": "3b8fae0b40287e8c6e2dd8c797110bbc36806cd83a02ce42e4ab4e4e5fd6baf4",
+      "exists": 0.98,
+      "existsVerdict": "answered",
+      "top": [
+        {
+          "id": "3b8fae0b40287e8c6e2dd8c797110bbc36806cd83a02ce42e4ab4e4e5fd6baf4",
+          "probability": 0.99
+        },
+        {
+          "id": "3da2a81a6b8cd038580f03c8c8c2a99dc3ed1ceeb464f3d69582207192165252",
+          "probability": 0.01
+        },
+        {
+          "id": "374ca37339c43c05eb9a250bb472d02c53f79d86f5abb12962699296fc278a8a",
+          "probability": 0
+        }
+      ],
+      "usage": {
+        "input_tokens": 17744,
+        "output_tokens": 5480
+      }
+    },
+    {
+      "id": "heldout-remembered-plot-4",
+      "query": "Find the one where a member of the group discovers an eye disease is making him go blind.",
+      "expectedEvidenceId": "36dbdf0e298200f0837a40ea986f5e7dbb4fb883e09ead021e2fade7c93e1045",
+      "exists": 0.98,
+      "existsVerdict": "answered",
+      "top": [
+        {
+          "id": "36dbdf0e298200f0837a40ea986f5e7dbb4fb883e09ead021e2fade7c93e1045",
+          "probability": 1
+        },
+        {
+          "id": "374ca37339c43c05eb9a250bb472d02c53f79d86f5abb12962699296fc278a8a",
+          "probability": 0
+        },
+        {
+          "id": "af1eeb2c92018d8a2b4a141fe0db580cd3fb0d3ba811934869d5eacf662ffd2a",
+          "probability": 0
+        }
+      ],
+      "usage": {
+        "input_tokens": 17717,
+        "output_tokens": 5479
+      }
+    },
+    {
+      "id": "heldout-remembered-plot-5",
+      "query": "I remember a fighter being knocked unconscious and waking up to an ordinary suburban life with a spouse and kids.",
+      "expectedEvidenceId": "640a994bfb07bcb3ef626b4d307ac6379dee8cf12baffc896a121a267e91b921",
+      "exists": 0.98,
+      "existsVerdict": "answered",
+      "top": [
+        {
+          "id": "640a994bfb07bcb3ef626b4d307ac6379dee8cf12baffc896a121a267e91b921",
+          "probability": 1
+        },
+        {
+          "id": "374ca37339c43c05eb9a250bb472d02c53f79d86f5abb12962699296fc278a8a",
+          "probability": 0
+        },
+        {
+          "id": "af1eeb2c92018d8a2b4a141fe0db580cd3fb0d3ba811934869d5eacf662ffd2a",
+          "probability": 0
+        }
+      ],
+      "usage": {
+        "input_tokens": 17723,
+        "output_tokens": 5480
+      }
+    }
+  ],
+  "scope": "Development MCP experiment only; no TypeSafe runtime credential configured in AWS.",
+  "historicalScope": "This records the earlier development MCP experiment. A subsequent IAM-only AWS Jev strategy was deployed and tested separately; see VERIFICATION.md."
+}

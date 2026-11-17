@@ -1,0 +1,60 @@
+{
+  "scope": "One source-aware developer MCP experiment; not a production Jev API integration or blind benchmark.",
+  "query": "Which one has a mischievous magical being reverse everyone\u2019s species after being released from an enchanted looking glass?",
+  "expectedEvidenceId": "0ce371fe57231157d98e1b9bd7226a2f639f0e39857d8a9acf97a4c38093a7c8",
+  "inputEvidenceIds": [
+    "dcac8d560e753454aa4db6f9b210997eb7d71939fff52c42cebc1713496aba02",
+    "0ce371fe57231157d98e1b9bd7226a2f639f0e39857d8a9acf97a4c38093a7c8",
+    "cc006bbc46eea9387185090d2cd688541b0345b456abd5a309d59cba7bc2579a",
+    "7034447dec3473c209bc6e32e980fba8f3bc079e44dfb018c185516b1b0f216a",
+    "3b8fae0b40287e8c6e2dd8c797110bbc36806cd83a02ce42e4ab4e4e5fd6baf4"
+  ],
+  "returnedRanking": [
+    {
+      "id": "0ce371fe57231157d98e1b9bd7226a2f639f0e39857d8a9acf97a4c38093a7c8",
+      "probability": 1
+    },
+    {
+      "id": "dcac8d560e753454aa4db6f9b210997eb7d71939fff52c42cebc1713496aba02",
+      "probability": 0
+    },
+    {
+      "id": "cc006bbc46eea9387185090d2cd688541b0345b456abd5a309d59cba7bc2579a",
+      "probability": 0
+    }
+  ],
+  "exists": 0.98,
+  "existsVerdict": "answered",
+  "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 402
+  },
+  "validation": {
+    "expected": "0ce371fe57231157d98e1b9bd7226a2f639f0e39857d8a9acf97a4c38093a7c8",
+    "first": "0ce371fe57231157d98e1b9bd7226a2f639f0e39857d8a9acf97a4c38093a7c8",
+    "correct": true,
+    "exists": 0.98,
+    "accepted": [
+      {
+        "id": "0ce371fe57231157d98e1b9bd7226a2f639f0e39857d8a9acf97a4c38093a7c8",
+        "probability": 1
+      },
+      {
+        "id": "dcac8d560e753454aa4db6f9b210997eb7d71939fff52c42cebc1713496aba02",
+        "probability": 0
+      },
+      {
+        "id": "cc006bbc46eea9387185090d2cd688541b0345b456abd5a309d59cba7bc2579a",
+        "probability": 0
+      }
+    ],
+    "rejected": [],
+    "usage": {
+      "input_tokens": 1535,
+      "output_tokens": 402
+    }
+  },
+  "source": "TVmaze episode summaries; provider provenance remains in the private corpus.",
+  "runtimeAccess": "MCP connector in this development session only; no provider credential installed in AWS.",
+  "historicalScope": "This records the earlier development MCP experiment. A subsequent IAM-only AWS Jev strategy was deployed and tested separately; see VERIFICATION.md."
+}

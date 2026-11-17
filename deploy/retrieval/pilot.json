@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "stacks": [
+    "yata-retrieval-assets",
+    "yata-episode-retrieval-pilot"
+  ],
+  "region": "us-east-1",
+  "artifactSha256": "86b33d13f7a431327cef4cfec1d04243d18677bf5a743f8fbab5e044659c9db9",
+  "outputs": {
+    "AllowanceTable": "yata-episode-retrieval-pilot-Allowance-F27OTGPT1OBC",
+    "IngestFunction": "yata-episode-retrieval-pilot-ingest",
+    "EvidenceBucket": "yata-episode-retrieval-pilot-evidence-fpuh9n6z8p7x",
+    "VectorIndexArn": "arn:aws:s3vectors:us-east-1:432230020714:bucket/yata-episodes-pilot-432230020714/index/episode-summaries-v1",
+    "JevCredentialArn": "arn:aws:secretsmanager:us-east-1:432230020714:secret:JevCredential-MJz2os516Lxf-NFvANO",
+    "SearchFunction": "yata-episode-retrieval-pilot-search"
+  },
+  "access": "AWS IAM only; no public endpoint"
+}
