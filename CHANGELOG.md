@@ -2,6 +2,13 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.7 — 2026-11-17
+
+- Search episode and story titles across the whole library, with existing channel, genre, decade and availability filters. Results preserve collection labels and checked playback sources; descriptions and transcripts are not searched yet.
+
+- Added sourced US series ratings to library cards and show details for Gargoyles, Gummi Bears, Rescue Rangers, Darkwing Duck, X-Men, Aqua Teen Hunger Force and The Venture Bros.
+- Unverified ratings remain Unrated. Series labels link to Disney or Adult Swim; archived edits, collections and breaks may differ. These labels do not enforce parental controls.
+
 ## 0.8.6 — 2026-11-17
 
 - Library artwork and Arcade cards now refresh from validated public JSON feeds, with cached or bundled fallback. Private Plex integration is still roadmap work.

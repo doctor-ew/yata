@@ -38,3 +38,11 @@ test('chunked feed reads stop and cancel before consuming an oversized response'
  await assert.rejects(fetchPublicFeed({url:'/feed',validate:validateGameMetadata,cacheKey:'large',storage:null,fetcher:async()=>({ok:true,headers:new Headers(),body:{getReader:()=>reader}})}));
  assert.equal(reads,2);assert.equal(cancelled,true);assert.equal(released,true);
 });
+
+test('ratings preserve jurisdiction, series scope and provenance without treating review scores as age ratings',()=>{
+ const rating={system:'US-TV',value:'TV-Y7',region:'US',scope:'series',sourceUrl:'https://shows.disney.com/gargoyles',sourceName:'Disney',verifiedOn:'2026-11-17'};
+ const feed=r=>validateArtworkFeed({version:1,shows:{gargoyles:{title:'Gargoyles',contentRating:r}}}).shows.gargoyles;
+ assert.deepEqual(feed(rating).contentRating,rating);
+ assert.equal(feed(undefined).contentRating,undefined);
+ for(const patch of[{value:8.1},{system:'IMDb'},{region:'GB'},{scope:'episode'},{sourceUrl:'javascript:alert(1)'},{sourceUrl:'https://user:secret@example.com'},{sourceName:''},{verifiedOn:'unknown'},{verifiedOn:'2026-02-30'}])assert.throws(()=>feed({...rating,...patch}));
+});

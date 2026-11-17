@@ -8,6 +8,7 @@ export function validateArtworkFeed(raw,{assetBase}={}){
   if(!ID.test(id)||!item||typeof item!=='object')throw Error('Invalid artwork entry.');
   const clean={title:safeText(item.title,500),genres:Array.isArray(item.genres)?item.genres.filter(g=>typeof g==='string'&&g.length<=80).slice(0,20):[]};
   for(const key of['premiered','ended','type','imageRole'])if(item[key])clean[key]=safeText(item[key],80);
+  if(item.contentRating)clean.contentRating=validateContentRating(item.contentRating);
   if(Number.isInteger(item.year)&&item.year>=1900&&item.year<=2200)clean.year=item.year;
   if(Number.isInteger(item.tvmazeId)&&item.tvmazeId>0)clean.tvmazeId=item.tvmazeId;
   for(const key of['sourceUrl','imageSource','imageCreditUrl']){if(!item[key])continue;const u=new URL(item[key]);if(u.protocol!=='https:'||u.username||u.password)throw Error('Invalid artwork reference.');clean[key]=u.href;}
@@ -48,4 +49,12 @@ export async function fetchPublicFeed({url,validate,bundled,cacheKey,fetcher=glo
 export async function refreshGameMetadata(target,options={}){
  const result=await fetchPublicFeed({url:new URL('../data/arcade-games.json',import.meta.url),validate:validateGameMetadata,bundled:{version:1,games:target},cacheKey:'yata.public-games.v1',...options});
  target.splice(0,target.length,...result.data.games);return result;
+}
+
+// Series references do not classify an archived edit, compilation or inserted break.
+export function validateContentRating(raw){
+ if(raw?.system!=='US-TV'||raw.region!=='US'||raw.scope!=='series'||!['TV-Y','TV-Y7','TV-Y7-FV','TV-G','TV-PG','TV-14','TV-MA'].includes(raw.value)||!safeText(raw.sourceName,100)||!/^\d{4}-\d{2}-\d{2}$/.test(raw.verifiedOn))throw Error('Invalid content rating.');
+ if(new Date(raw.verifiedOn+'T00:00:00Z').toISOString().slice(0,10)!==raw.verifiedOn)throw Error('Invalid rating verification date.');
+ const url=new URL(raw.sourceUrl);if(url.protocol!=='https:'||url.username||url.password)throw Error('Invalid rating reference.');
+ return{system:raw.system,value:raw.value,region:raw.region,scope:raw.scope,sourceUrl:url.href,sourceName:raw.sourceName,verifiedOn:raw.verifiedOn};
 }

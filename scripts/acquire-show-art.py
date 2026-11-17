@@ -76,5 +76,12 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
    if note:review.append({'id':sid,'catalogTitle':show['title'],'note':note})
   except Exception as e:review.append({'id':show['id'],'catalogTitle':show['title'],'error':str(e)[:200]})
   if n%25==0:print(f'{n}/{len(shows)} titles processed',flush=True)
+# Retain reviewed ratings only while the matched series identity is unchanged.
+previous_path=root/'data/library-art.json'
+previous=json.loads(previous_path.read_text()).get('shows',{}) if previous_path.exists() else {}
+for sid,entry in metadata.items():
+ old=previous.get(sid,{})
+ if old.get('contentRating') and entry.get('tvmazeId') and entry['tvmazeId']==old.get('tvmazeId'):
+  entry['contentRating']=old['contentRating']
 output={'version':1,'provider':{'name':'TVmaze','url':'https://www.tvmaze.com/api','license':'CC BY-SA'},'shows':dict(sorted(metadata.items()))}
 (root/'data/library-art.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n');(args.cache/'review.json').write_text(json.dumps(review,ensure_ascii=False,indent=2));print(json.dumps({'matched':len(metadata),'artwork':sum('image'in e for e in metadata.values()),'logos':sum('logo'in e for e in metadata.values()),'review':review}),flush=True)

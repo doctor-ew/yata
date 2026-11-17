@@ -108,7 +108,16 @@
       "sourceUrl": "https://www.tvmaze.com/shows/382/aqua-teen-hunger-force",
       "tvmazeId": 382,
       "image": "assets/show-art/athf.webp",
-      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/13/32875.jpg"
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/13/32875.jpg",
+      "contentRating": {
+        "system": "US-TV",
+        "value": "TV-MA",
+        "region": "US",
+        "scope": "series",
+        "sourceUrl": "https://www.adultswim.com/videos/aqua-teen-hunger-force",
+        "sourceName": "Adult Swim",
+        "verifiedOn": "2026-11-17"
+      }
     },
     "automan": {
       "title": "Automan",
@@ -3253,7 +3262,16 @@
       "sourceUrl": "https://www.tvmaze.com/shows/304/the-venture-bros",
       "tvmazeId": 304,
       "image": "assets/show-art/venture-bros.webp",
-      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/557817.jpg"
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/223/557817.jpg",
+      "contentRating": {
+        "system": "US-TV",
+        "value": "TV-MA",
+        "region": "US",
+        "scope": "series",
+        "sourceUrl": "https://www.adultswim.com/videos/the-venture-bros",
+        "sourceName": "Adult Swim",
+        "verifiedOn": "2026-11-17"
+      }
     },
     "vintage-commercials": {
       "title": "Vintage commercial breaks",
@@ -3417,7 +3435,16 @@
       "sourceUrl": "https://www.tvmaze.com/shows/472/x-men",
       "tvmazeId": 472,
       "image": "assets/show-art/x-men-tas.webp",
-      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/219/549383.jpg"
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/219/549383.jpg",
+      "contentRating": {
+        "system": "US-TV",
+        "value": "TV-Y7",
+        "region": "US",
+        "scope": "series",
+        "sourceUrl": "https://shows.disney.com/x-men",
+        "sourceName": "Disney",
+        "verifiedOn": "2026-11-17"
+      }
     },
     "ycdtotv": {
       "title": "You Can't Do That on Television",
@@ -3762,7 +3789,16 @@
       "image": "assets/show-art/gargoyles.webp",
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/11/27638.jpg",
       "imageRole": "poster",
-      "imageCreditUrl": "https://www.tvmaze.com/shows/1898/gargoyles"
+      "imageCreditUrl": "https://www.tvmaze.com/shows/1898/gargoyles",
+      "contentRating": {
+        "system": "US-TV",
+        "value": "TV-Y7",
+        "region": "US",
+        "scope": "series",
+        "sourceUrl": "https://shows.disney.com/gargoyles",
+        "sourceName": "Disney",
+        "verifiedOn": "2026-11-17"
+      }
     },
     "gummi-bears": {
       "title": "Disney's Adventures of the Gummi Bears",
@@ -3779,7 +3815,16 @@
       "image": "assets/show-art/gummi-bears.webp",
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/55239.jpg",
       "imageRole": "poster",
-      "imageCreditUrl": "https://www.tvmaze.com/shows/5314/disneys-adventures-of-the-gummi-bears"
+      "imageCreditUrl": "https://www.tvmaze.com/shows/5314/disneys-adventures-of-the-gummi-bears",
+      "contentRating": {
+        "system": "US-TV",
+        "value": "TV-Y7",
+        "region": "US",
+        "scope": "series",
+        "sourceUrl": "https://shows.disney.com/adventures-of-the-gummi-bears",
+        "sourceName": "Disney",
+        "verifiedOn": "2026-11-17"
+      }
     },
     "tmnt-1987": {
       "title": "Teenage Mutant Ninja Turtles",
@@ -3849,7 +3894,16 @@
       "image": "assets/show-art/darkwing-duck.webp",
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/55234.jpg",
       "imageRole": "poster",
-      "imageCreditUrl": "https://www.tvmaze.com/shows/5309/darkwing-duck"
+      "imageCreditUrl": "https://www.tvmaze.com/shows/5309/darkwing-duck",
+      "contentRating": {
+        "system": "US-TV",
+        "value": "TV-Y7",
+        "region": "US",
+        "scope": "series",
+        "sourceUrl": "https://shows.disney.com/darkwing-duck",
+        "sourceName": "Disney",
+        "verifiedOn": "2026-11-17"
+      }
     },
     "rescue-rangers": {
       "title": "Chip 'N Dale Rescue Rangers",
@@ -3866,7 +3920,16 @@
       "image": "assets/show-art/rescue-rangers.webp",
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/55233.jpg",
       "imageRole": "poster",
-      "imageCreditUrl": "https://www.tvmaze.com/shows/5308/chip-n-dale-rescue-rangers"
+      "imageCreditUrl": "https://www.tvmaze.com/shows/5308/chip-n-dale-rescue-rangers",
+      "contentRating": {
+        "system": "US-TV",
+        "value": "TV-Y7",
+        "region": "US",
+        "scope": "series",
+        "sourceUrl": "https://shows.disney.com/chip-n-dale-rescue-rangers",
+        "sourceName": "Disney",
+        "verifiedOn": "2026-11-17"
+      }
     },
     "mighty-morphin-power-rangers": {
       "title": "Mighty Morphin Power Rangers",
