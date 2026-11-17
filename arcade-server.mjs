@@ -19,6 +19,7 @@ export async function handleArcade(req,res){
  if(!target.startsWith(root)||!mime)throw Error();
  const body=await readFile(target);
  const headers={'Content-Type':mime,'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'self' blob: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; media-src 'self' blob: data:; frame-src 'self' blob:; frame-ancestors 'self'; object-src 'none'; base-uri 'self'"};
+ if(rel==='index.html')headers['Content-Security-Policy']=headers['Content-Security-Policy'].replace("script-src 'self'", "script-src 'self' https://challenges.cloudflare.com").replace("connect-src 'self' blob: data:", "connect-src 'self' blob: data: https://skippyts.doctorew.com https://challenges.cloudflare.com").replace("frame-src 'self'", "frame-src 'self' https://challenges.cloudflare.com");
  res.writeHead(200,headers).end(req.method==='HEAD'?undefined:body);
  }catch{res.writeHead(404,{'Content-Type':'text/plain'}).end('Not found');}return true;
 }

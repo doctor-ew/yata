@@ -27,3 +27,9 @@ The roster includes Scooter, Super Friends-era Robin, Master Shake, Orko, Penny,
 “What’s new?” and “latest updates” use the latest structured record in `src/release-notes.mjs` as factual context for the selected companion’s existing voice. The reply includes a separate, application-generated link to `CHANGELOG.md` on GitHub. If AI is unavailable, the app displays the release facts directly. Update questions do not alter playback, queues or buddy preferences.
 
 The roster also includes original Strawberry Shortcake, Jem, She-Ra, Kermit, Miss Piggy and Gonzo. “Ms Piggy” and “Kermit” are supported chat aliases.
+
+## Arcade and additional TV voices
+
+Droids-era C-3PO, Kojak and Captain Kangaroo are available as TV companions. Their presence does not add playable show sources. Silver Spoons, The Wonder Years and Captain Kangaroo were absent from the published station catalog when checked for 0.8.4.
+
+Arcade has its own six-character companion pool and game-aware routing; see [ARCADE-BUDDIES.md](ARCADE-BUDDIES.md).

@@ -1,3 +1,4 @@
+import{ARCADE_GAMES}from'../src/arcade-games.mjs';
 import{getAnalytics}from'../src/analytics.mjs';
 import{createBuddyHandoff}from'../src/buddy-bridge.mjs';
 import{Capacitor,registerPlugin,SystemBars,SystemBarsStyle}from'@capacitor/core';
@@ -24,6 +25,7 @@ if(native){
   }catch{return originalFetch(input,options);}
  };
  const open=url=>Browser.open({url,toolbarColor:'#211b14'});
+ globalThis.yataOpenArcadeGame=id=>{if(!ARCADE_GAMES.some(g=>g.id===id&&g.status==='installed'))throw Error('Unknown Arcade game.');return open('https://doctorew.com/arcade/?game='+encodeURIComponent(id));};
  globalThis.yataBuddyBridge=request=>{getAnalytics().record('ai_handoff',{host:request.host});return open(createBuddyHandoff(request));};
  globalThis.yataOpenFeedback=url=>{const parsed=new URL(url);if(parsed.origin!=='https://github.com'||parsed.pathname!=='/doctor-ew/yata/issues/new')throw Error('Invalid feedback destination.');return open(parsed.href);};
  document.addEventListener('submit',e=>{if(e.target.id==='channel-builder-form'){e.preventDefault();e.stopImmediatePropagation();const request={host:e.target.dataset.host,question:document.querySelector('#channel-request').value.trim(),action:'channel',nonce:crypto.randomUUID().replaceAll('-','')};document.querySelector('#channel-builder-status').textContent='Continue with your host in the verified web window, then choose Use this channel in the YATA app.';void globalThis.yataBuddyBridge(request).catch(error=>document.querySelector('#channel-builder-status').textContent=error.message);}},true);

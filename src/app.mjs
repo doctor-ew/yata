@@ -1,3 +1,5 @@
+import{ARCADE_GAMES}from'./arcade-games.mjs';
+import{createGameGate}from'./game-intents.mjs';
 import{prepareBuddyQueue}from'./buddy-queue.mjs';
 import{queueEpisode,editEpisodeQueue,resolveEpisodeQueue,episodeQueueSelected,hasEpisodeQueue}from'./episode-queue.mjs';
 import{mountEpisodeQueue}from'./episode-queue-ui.mjs';
@@ -69,7 +71,8 @@ let navCatalog = null, navActive = null, previousEntry = null, nextEntry = null;
 let sharedTarget = null;
 let libraryMetadata={},libraryUpdatedAt=null;
 let arcadeUnlocked=readArcadeUnlock();
-const unlockArcade=()=>{if(!arcadeUnlocked)analytics.record('arcade_unlock');arcadeUnlocked=true;saveArcadeUnlock();renderChannels();notify('Channel 03 unlocked. The arcade is open.');};
+const gameGate=createGameGate({games:ARCADE_GAMES,isUnlocked:()=>arcadeUnlocked,launch:game=>{session?.pause();playbackLifecycle.save();if(globalThis.yataOpenArcadeGame)void globalThis.yataOpenArcadeGame(game.id).catch(error=>notify(error.message));else location.assign('/arcade/?game='+encodeURIComponent(game.id));}});
+const unlockArcade=()=>{if(!arcadeUnlocked)analytics.record('arcade_unlock');arcadeUnlocked=true;saveArcadeUnlock();renderChannels();notify('Channel 03 unlocked. The arcade is open.');gameGate.unlock();};
 installArcadeEntry({open:()=>{unlockArcade();$('arcade-channel')?.focus();}});
 window.addEventListener('yata:unlock-arcade',unlockArcade);
 const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'Tubi', adultswim: 'Adult Swim' };
@@ -100,7 +103,7 @@ window.addEventListener('hashchange',()=>{if(['#guide','#library'].includes(loca
 showBrowseView(location.hash==='#guide'?'guide':'library');
 mountChannelBuilder({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();$('player-shell').scrollIntoView({block:'center',behavior:'smooth'});return true;}});
 
-mountBuddy({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onShow:openShow,onQueue:queueFromBuddy,onWatch:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();return true;}});
+mountBuddy({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onShow:openShow,onGame:id=>gameGate.request(id),onCancelGame:()=>gameGate.cancel(),onQueue:queueFromBuddy,onWatch:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();return true;}});
 
 const queueRoot=element('details',null,'mix-panel episode-queue');queueRoot.id='episode-queue';$('open-channel-builder').closest('.channel-builder-action').after(queueRoot);
 const queueUi=mountEpisodeQueue({root:queueRoot,getCatalog:()=>catalog,onPlay:playQueuedEpisode,onEdit:async(id,action)=>{if(await commitSettings(editEpisodeQueue(copyCatalog(),id,action))){render();queueUi.render();}},onMode:async mode=>{const next=copyCatalog();next.settings.customMode=mode;next.settings.customQueueActive=false;if(mode==='episodes')next.settings.streamShows=null;if(await commitSettings(next)){stopPlayer();render();queueUi.render();}}});

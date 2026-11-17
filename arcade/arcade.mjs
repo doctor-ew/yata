@@ -29,3 +29,12 @@ for(const button of document.querySelectorAll('[data-control-key]')){const code=
 window.addEventListener('blur',()=>{if(document.activeElement?.tagName!=='IFRAME'){releaseStick();releaseCabinet();}});document.addEventListener('visibilitychange',()=>{if(document.hidden){releaseStick();releaseCabinet();}});
 
 let installPrompt=null;window.addEventListener('beforeinstallprompt',event=>{event.preventDefault();installPrompt=event;});$('install-app').addEventListener('click',async()=>{if(installPrompt){await installPrompt.prompt();installPrompt=null;}else $('catalog-note').textContent='On Android Chrome, open the browser menu and choose Install app or Add to Home screen. An internet connection is needed for games you have not loaded yet.';});if('serviceWorker' in navigator)navigator.serviceWorker.register('/arcade/service-worker.js').catch(()=>{});
+
+export async function launchArcadeGame(id){
+ const metadata=(await import('/tv/src/arcade-games.mjs')).ARCADE_GAMES.find(g=>g.id===id&&g.status==='installed');
+ if(!metadata){$('catalog-note').textContent='That game is not installed. Pick an available machine.';return false;}
+ let game=games.find(g=>g.id===id);if(!game){await loadFlashShelf();game=games.find(g=>g.id===id);}
+ if(!game||game.status!=='installed'){$('catalog-note').textContent='This game could not be loaded. Try again from its machine.';return false;}
+ filter=game.category;limit=games.length;$('game-search').value=game.title;render();const button=document.querySelector('[data-game="'+CSS.escape(id)+'"]');if(!button)return false;await startGame(game,button);return dialog.open;
+}
+const requestedGame=new URLSearchParams(location.search).get('game');if(requestedGame)void launchArcadeGame(requestedGame).catch(()=>{$('catalog-note').textContent='The game could not be opened. Try its machine again.';});

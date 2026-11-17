@@ -2,6 +2,14 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.4 — 2026-11-17
+
+- Added game-aware play requests: choose TV or game for ambiguous names, retain a locked game until Konami unlock, and launch the exact installed game afterward. Cancelling or closing chat clears the pending launch.
+- Arcade now has its own pinnable companions: Pac-Man, Donkey Kong, Q*bert, Frogger, Mario and Sonic, with game controls and documented mod context.
+- Added Droids-era C-3PO, Kojak and Captain Kangaroo as TV companions. The full roster has 39 characters. Silver Spoons, The Wonder Years and Captain Kangaroo are not in the playable TV lineup.
+
+[Android release](https://github.com/doctor-ew/yata/releases/tag/yata-android-v0.8.4)
+
 ## 0.8.3 — 2026-11-17
 
 - Added Strawberry Shortcake, Jem, original She-Ra, Kermit, Miss Piggy and Gonzo as selectable, pinnable buddies; the roster now has 31 characters.
