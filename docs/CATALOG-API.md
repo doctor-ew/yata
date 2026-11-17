@@ -31,4 +31,6 @@ Private cache records must be scoped to the authenticated account/library and cl
 
 ## Ratings and store readiness
 
-Current TV entries do not contain verified age ratings. Missing information must remain Unrated. A future rating contract must retain rating system, jurisdiction, scope and source provenance, with consistent restrictions across discovery, mixed schedules, queues, companions and direct links. App-store questionnaires and per-title ratings serve different purposes. See GitHub issue 12; no parental-control or store-compliance claim is made by this data-feed change.
+The optional contentRating field in data/library-art.json retains system, value, region, scope, sourceUrl, sourceName and verifiedOn. The initial supported contract is US-TV, US jurisdiction and series scope. Five original Disney series have sourced TV-Y7 references. Missing ratings display Unrated; numerical review scores are not content classifications. Series references do not classify archived edits, compilations or commercial breaks.
+
+These labels are informational. Profile restrictions across discovery, schedules, queues, companions and direct links remain future work. App-store questionnaires and per-title ratings serve different purposes. See GitHub issue 12; no parental-control or store-compliance claim is made by this data-feed change.

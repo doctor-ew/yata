@@ -1,4 +1,6 @@
 import{ARCADE_GAMES,refreshArcadeGames}from'./arcade-games.mjs';
+import{mountEpisodeSearch}from'./episode-search-ui.mjs';
+import{resolveEpisodeSearchResult}from'./episode-search.mjs';
 import{fetchPublicFeed,validateArtworkFeed}from'./catalog-feeds.mjs';
 import{createGameGate}from'./game-intents.mjs';
 import{prepareBuddyQueue}from'./buddy-queue.mjs';
@@ -71,6 +73,11 @@ let scrubbing = false, scrubSession = null, audioSession = null, preferredAudio 
 let navCatalog = null, navActive = null, previousEntry = null, nextEntry = null;
 let sharedTarget = null;
 let libraryMetadata={},libraryUpdatedAt=null;
+const episodeSearch=mountEpisodeSearch({root:$('global-episode-search'),getCatalog:()=>ownerMode||publicCatalogReady?catalog:{shows:[]},getMetadata:()=>libraryMetadata,getFilters:()=>({channel:$('library-channel')?.value||'all',genre:$('library-genre')?.value||'all',decade:$('library-decade')?.value||'all',availability:$('library-availability')?.value||'all'}),onShow:showId=>openShow(showId),onPlay:reference=>{
+ if(!ownerMode&&!publicCatalogReady)return;
+ const match=resolveEpisodeSearchResult(catalog,reference);if(!match)return;
+ location.hash='watch';playEpisode(match.show,match.episode,match.source,0,'start');$('watch').scrollIntoView();
+}});
 let arcadeUnlocked=readArcadeUnlock();
 const gameGate=createGameGate({games:ARCADE_GAMES,isUnlocked:()=>arcadeUnlocked,launch:game=>{session?.pause();playbackLifecycle.save();if(globalThis.yataOpenArcadeGame)void globalThis.yataOpenArcadeGame(game.id).catch(error=>notify(error.message));else location.assign('/arcade/?game='+encodeURIComponent(game.id));}});
 const unlockArcade=()=>{if(!arcadeUnlocked)analytics.record('arcade_unlock');arcadeUnlocked=true;saveArcadeUnlock();renderChannels();notify('Channel 03 unlocked. The arcade is open.');gameGate.unlock();};
@@ -323,6 +330,7 @@ function renderGuide() {
 }
 
 function renderLibrary() {
+  episodeSearch.render();
   const filters={query:$('search').value,channel:$('library-channel')?.value||'all',genre:$('library-genre')?.value||'all',decade:$('library-decade')?.value||'all',availability:$('library-availability')?.value||'all',sort:$('library-sort')?.value||'title'};
   const all=catalog.shows.filter(s=>s.id!==MOVIE_SHOW_ID),shows=browseLibrary(all,libraryMetadata,filters);
   const movies=catalog.shows.find(s=>s.id===MOVIE_SHOW_ID),q=filters.query.trim().toLocaleLowerCase();
@@ -344,6 +352,7 @@ function renderLibrary() {
     if(show.id===COMMERCIAL_SHOW_ID||show.id.endsWith('-bumps'))status=`${count} break clips`;
     card.append(art,element('h3',show.title,'show-title'));
     if(info?.year||genres.length){const end=info?.ended?.slice(0,4),years=info?.year?(end&&end!==String(info.year)?`${info.year}–${end}`:String(info.year)):null;card.append(element('p',[years,genres.slice(0,2).join(' / ')].filter(Boolean).join(' · '),'show-library-meta'));}
+    const rating=info?.contentRating;card.append(element('p',rating?`${rating.value} · US series rating`:'Unrated · rating not verified','show-library-meta'));
     card.append(element('p',status,`show-status${live?' available':''}`));return card;
   }));
 }
@@ -374,6 +383,10 @@ function openShow(showId, preserveFilters = false) {
   const show = catalog.shows.find(s => s.id === showId);
   if (!show) return;
   $('show-title').textContent = show.title;
+  let ratingNote=$('show-content-rating');if(!ratingNote){ratingNote=element('p',null,'show-library-meta');ratingNote.id='show-content-rating';$('show-title').after(ratingNote);}
+  const rating=libraryMetadata[show.id]?.contentRating;ratingNote.replaceChildren();
+  if(rating){const link=element('a',`${rating.value} · US series rating (${rating.sourceName}) ↗`);link.href=rating.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';ratingNote.append(link,document.createTextNode(' · Archived edits, collections and breaks may differ.'));}
+  else ratingNote.textContent='Unrated · No verified content rating available.';
   $('show-shuffle').textContent = show.id === MOVIE_SHOW_ID ? '▶ Random movie stream' : '▶ Shuffle this show';
   $('show-add').textContent = show.id === MOVIE_SHOW_ID ? '+ Add a film source' : '+ Add an episode source';
   $('show-shuffle').disabled = !show.episodes.some(episode => episode.kind === 'episode' && episode.durationSeconds > 0 && stationSource(episode));
