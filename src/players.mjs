@@ -2,12 +2,12 @@ import { seekPosition } from './transport.mjs';
 import { parseSourceUrl } from './domain.mjs';
 
 export function createVideoSession(video, { url, offset = 0, onEnd = () => {}, onVerified = () => {}, onError = () => {} }) {
-  let disposed = false, ended = false, metadataReady = false, failed = false;
+  let disposed = false, ended = false, metadataReady = false, failed = false, initialSeekApplied = false;
   const metadata = () => {
     if (disposed) return;
     metadataReady = true; failed = false;
     if (Number.isFinite(video.duration) && video.duration > 0) {
-      video.currentTime = Math.max(0, Math.min(offset, Math.max(0, video.duration - 0.1)));
+      if(!initialSeekApplied){video.currentTime = Math.max(0, Math.min(offset, Math.max(0, video.duration - 0.1)));initialSeekApplied=true;}
       onVerified(video.duration);
     }
   };

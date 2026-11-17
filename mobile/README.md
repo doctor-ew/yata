@@ -85,3 +85,11 @@ Buddy requests use a dedicated server prompt, finite host validation, input and 
 ### Anonymous usage (0.7.1)
 
 The app and website report allowlisted aggregate usage events to a private AWS dashboard. More → Privacy on Android and television setup on web provide an opt-out switch. Browser privacy signals disable collection. No chat text, email, private URLs or persistent viewer identifiers are sent. Watch time measures confirmed foreground playback only; native screen-off audio is excluded. Event log retention is 30 days. See `docs/ANALYTICS.md` for definitions and limitations.
+
+### Saved episode queue and playback resume (0.8.0)
+
+Click or right-click a guide episode for Play now, Play next on 00, or Add to end of 00. On touch screens, tap the episode. Hovering offers a brief buddy hint without making an AI request. The Your Channel drawer stores up to 100 distinct episode references in local preferences; it supports reorder, remove, play now and resume. The AI show mix remains available as a separate mode. Adding to the queue does not interrupt playback. Missing catalog entries remain visible as unavailable and are skipped during playback. The queue stops at its end and does not shuffle or silently wrap.
+
+Queue order and playback position persist on the same browser or app installation; they do not synchronize between devices. Exact episode-queue sharing is not included yet; episode sharing remains available. The native background snapshot remains usable for queued Archive sources.
+
+Repeated Archive metadata events apply the initial seek only once. Page-cache transitions checkpoint and pause the player without disposing it; full navigation saves a local resume bookmark. A reload offers Resume last episode, and Channel 00 resumes its saved episode and position. Native iOS device testing remains separate from automated browser-engine tests.

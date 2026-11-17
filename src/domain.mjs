@@ -1,3 +1,4 @@
+import{validateEpisodeQueue,episodeQueueSelected,resolveEpisodeQueue}from'./episode-queue.mjs';
 import {scheduleSeed,activeRotation} from './remix.mjs';
 import { MOVIE_SHOW_ID } from './collections.mjs';
 import { CHANNELS, SHOW_CHANNEL_IDS, migratedShowChannel, mixIncludes, SERIAL_SHOW_IDS } from './channels.mjs';
@@ -125,6 +126,8 @@ export function validateCatalog(raw) {
   const streamShow = raw.settings.streamShow ?? null;
   const streamShows = raw.settings.streamShows ?? null;
   const customShows=raw.settings.customShows??streamShows;
+  const customQueue=validateEpisodeQueue(raw.settings.customQueue??[]),customMode=raw.settings.customMode??'shows',customQueueActive=raw.settings.customQueueActive??false;
+  if(!['episodes','shows'].includes(customMode)||typeof customQueueActive!=='boolean')fail('Invalid channel 00 mode.');
   const customSeed=raw.settings.customSeed??shuffleSeed,customEpoch=raw.settings.customEpoch??raw.epoch;
   const customTitle=raw.settings.customTitle??'Your Channel',customRotation=raw.settings.customRotation??rotation;
   if(customShows!==null&&!['random','ordered'].includes(customRotation))fail('Invalid channel 00 rotation.');
@@ -197,7 +200,7 @@ export function validateCatalog(raw) {
     const sources = input.sources.map(entry=>({showId:id(entry.showId),url:parseSourceUrl(entry.url).url}));
     if (episodes.length || sources.length) exclusions = {episodes,sources};
   }
-  return { version: 1, epoch: raw.epoch, shows, ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}),...(customShows?{customShows:[...customShows],customTitle:customTitle.trim(),customSeed,customEpoch,customRotation}:{}), ...(mixChannels!==null?{mixChannels:[...mixChannels]}:{}),...(Object.keys(channelRemixes).length?{channelRemixes:Object.fromEntries(Object.entries(channelRemixes).map(([key,value])=>[key,{seed:value.seed,epoch:value.epoch}]))}:{}) } };
+  return { version: 1, epoch: raw.epoch, shows, ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}),...(customQueue.length?{customQueue,customMode,customQueueActive}:{}),...(customShows?{customShows:[...customShows],customTitle:customTitle.trim(),customSeed,customEpoch,customRotation}:{}), ...(mixChannels!==null?{mixChannels:[...mixChannels]}:{}),...(Object.keys(channelRemixes).length?{channelRemixes:Object.fromEntries(Object.entries(channelRemixes).map(([key,value])=>[key,{seed:value.seed,epoch:value.epoch}]))}:{}) } };
 }
 
 export function parseCatalogJson(input) {
@@ -246,6 +249,7 @@ export function bumperPool(catalog, shows) {
 }
 
 export function buildSchedule(catalog, channel = catalog.settings.channel) {
+  if(channel==='mixed'&&episodeQueueSelected(catalog))return resolveEpisodeQueue(catalog);
   const shows = catalog.shows.filter(s => (!catalog.settings.streamShows || catalog.settings.streamShows.includes(s.id)) && s.id !== COMMERCIAL_SHOW_ID && (s.id !== MOVIE_SHOW_ID || catalog.settings.streamShow === MOVIE_SHOW_ID) && (channel === 'mixed' || s.channel === channel) && (channel!=='mixed'||catalog.settings.streamShow||catalog.settings.streamShows||mixIncludes(catalog.settings,s.channel)) && (!catalog.settings.streamShow || s.id === catalog.settings.streamShow));
   const eligible = e => parseDuration(e.durationSeconds) !== null && stationSource(e);
   const entries = s => s.episodes.filter(eligible).sort((a, b) => a.season - b.season || a.number - b.number)

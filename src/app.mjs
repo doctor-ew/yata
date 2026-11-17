@@ -1,3 +1,6 @@
+import{queueEpisode,editEpisodeQueue,resolveEpisodeQueue,episodeQueueSelected,hasEpisodeQueue}from'./episode-queue.mjs';
+import{mountEpisodeQueue}from'./episode-queue-ui.mjs';
+import{installPlaybackLifecycle,readPlaybackBookmark,resolvePlaybackBookmark,QUEUE_BOOKMARK}from'./playback-resume.mjs';
 import{initializeAnalytics,getAnalytics,createWatchTracker}from'./analytics.mjs';
 import{mountBuddy}from'./buddy-ui.mjs';
 import{initializeAppearance,mountAppearance}from'./appearance.mjs';
@@ -83,7 +86,7 @@ mountLineupRemix({root:$('remix-panel'),channels:[CUSTOM_CHANNEL,...CHANNELS],ge
 mountSeekVisibility({transport:document.querySelector('.transport[aria-label="Video playback controls"]'),panel:$('seek-panel'),toggle:$('toggle-seek-panel'),select:$('seek-visibility'),storage});
 
 let guideJumpPending=location.hash==='#guide';
-const stationGuide=mountTvGuide({root:$('guide'),getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:selection=>playFromGuide(selection,true),onPlay:selection=>playFromGuide(selection,false)});
+const stationGuide=mountTvGuide({root:$('guide'),getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:selection=>playFromGuide(selection,true),onPlay:selection=>playFromGuide(selection,false),onQueue:(selection,position)=>addGuideEpisode(selection,position),getQueuePosition:()=>active?.queueMode==='custom-queue'?{episodeId:active.episodeId,seconds:transportState()?.currentTime||active.offset}:readPlaybackBookmark(storage,QUEUE_BOOKMARK)});
 function showBrowseView(view,{scroll=false}={}) {
   const guide=view==='guide';document.body.classList.toggle('guide-view',guide);$('guide').hidden=!guide;$('library').hidden=guide;
   if(!guide)guideJumpPending=false;
@@ -98,12 +101,23 @@ mountChannelBuilder({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalog
 
 mountBuddy({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onShow:openShow});
 
+const queueRoot=element('details',null,'mix-panel episode-queue');queueRoot.id='episode-queue';$('open-channel-builder').closest('.channel-builder-action').after(queueRoot);
+const queueUi=mountEpisodeQueue({root:queueRoot,getCatalog:()=>catalog,onPlay:playQueuedEpisode,onEdit:async(id,action)=>{if(await commitSettings(editEpisodeQueue(copyCatalog(),id,action))){render();queueUi.render();}},onMode:async mode=>{const next=copyCatalog();next.settings.customMode=mode;next.settings.customQueueActive=false;if(mode==='episodes')next.settings.streamShows=null;if(await commitSettings(next)){stopPlayer();render();queueUi.render();}}});
+async function addGuideEpisode(selection,position){const chosen=guidePlayback(catalog,selection);if(!chosen||chosen.episode.kind!=='episode')return false;try{const bookmark=readPlaybackBookmark(storage,QUEUE_BOOKMARK);const afterEpisodeId=active?.queueMode==='custom-queue'?active.episodeId:bookmark?.episodeId;const next=queueEpisode(copyCatalog(),chosen,{position,afterEpisodeId});if(!await commitSettings(next))return false;render();queueUi.render();notify(position==='next'?'Saved to play next on channel 00. Current playback is unchanged.':'Added to the end of channel 00. Saved for your next visit.');return true;}catch(error){notify(error.message);return false;}}
+async function playQueuedEpisode(episodeId=null){if(!ownerMode&&!publicCatalogReady)return false;if(!hasEpisodeQueue(catalog)){if(customShows(catalog)?.length){if(!await commitSettings(tuneCustomChannel(copyCatalog())))return false;stopPlayer();render();tuneLive();return true;}return false;}const next=tuneCustomChannel(copyCatalog());if(!await commitSettings(next))return false;const queue=resolveEpisodeQueue(catalog),bookmark=readPlaybackBookmark(storage,QUEUE_BOOKMARK);let index=queue.findIndex(e=>e.episode.id===(episodeId||bookmark?.episodeId));if(index<0)index=0;const entry=queue[index];if(!entry){notify('No checked episodes remain in this queue. Remove unavailable entries or add another episode.');return false;}const seconds=!episodeId&&bookmark?.episodeId===entry.episode.id?Math.min(bookmark.seconds,entry.duration-.1):0;stopPlayer();render();playEpisode(entry.show,entry.episode,entry.source,seconds,'start','custom-queue',playbackPosition(queue,index));return true;}
+const resumeButton=button('Resume last episode',async()=>{const saved=resolvePlaybackBookmark(catalog,readPlaybackBookmark(storage));if(!saved)return;if(saved.queueMode==='custom-queue'){await playQueuedEpisode();return;}playEpisode(saved.show,saved.episode,saved.source,saved.seconds,'start',saved.queueMode);},'button');resumeButton.id='resume-last-episode';resumeButton.hidden=true;$('standby').append(resumeButton);
+function renderResume(){const saved=resolvePlaybackBookmark(catalog,readPlaybackBookmark(storage));resumeButton.hidden=!saved||!!active;if(saved)resumeButton.textContent=`Resume ${saved.show.title} · ${playbackTime(saved.seconds)}`;}
+const playbackLifecycle=installPlaybackLifecycle({storage,getSession:()=>session,getActive:()=>active,onRestore:bookmark=>{const saved=resolvePlaybackBookmark(catalog,bookmark),state=transportState();if(saved&&(!state?.ready||Math.abs(state.currentTime-bookmark.seconds)>2))playEpisode(saved.show,saved.episode,saved.source,saved.seconds,'start',saved.queueMode,null,false);renderTransport();}});
+setInterval(()=>playbackLifecycle.save(),5000);document.addEventListener('visibilitychange',()=>{if(document.hidden)playbackLifecycle.save();});
+
+
 $('open-stream-settings').addEventListener('click',()=>$('stream-settings').showModal());
 for(const id of ['close-stream-settings','done-stream-settings'])$(id).addEventListener('click',()=>$('stream-settings').close());
 
 async function playFromGuide(selection,live) {
   if(!ownerMode&&!publicCatalogReady)return false;
-  const next=selection.channel.id==='custom'?tuneCustomChannel(copyCatalog()):copyCatalog();if(selection.channel.id!=='custom'){next.settings.channel=selection.channel.id;next.settings.streamShow=null;next.settings.streamShows=null;}
+  if(selection.channel.id==='custom'&&hasEpisodeQueue(catalog))return playQueuedEpisode(live?null:selection.entry.episode.id);
+  const next=selection.channel.id==='custom'?tuneCustomChannel(copyCatalog()):copyCatalog();if(selection.channel.id!=='custom'){next.settings.channel=selection.channel.id;next.settings.streamShow=null;next.settings.streamShows=null;next.settings.customQueueActive=false;}
   if(!await commitSettings(next))return false;
   if(live&&!buildSchedule(catalog).length){notify('This channel no longer has a checked schedule. Select another channel.');render();return false;}
   const chosen=live?null:guidePlayback(catalog,selection);
@@ -144,7 +158,7 @@ function resolveSharedLineup(){const descriptor=parseLineupLink(location.href),r
 window.addEventListener('yata:request-playback',event=>{
  const ownerShowId=active?.queuePosition?.ownerShowId||active?.showId;
  const sharingCatalog=active?.queueMode==='show'?{...catalog,settings:{...catalog.settings,streamShows:null,streamShow:ownerShowId,rotation:'ordered'}}:catalog;
- const sharedUrl=createLineupLink(sharingCatalog),share={url:sharedUrl,title:parseLineupLink(sharedUrl).title};
+ let share;try{const sharedUrl=createLineupLink(sharingCatalog);share={url:sharedUrl,title:parseLineupLink(sharedUrl).title};}catch(error){share={error:error.message};}
  if(!active){event.detail.respond({share,items:[],seconds:0});return;}
  const items=[];
  const queue=playbackQueue(catalog,active);let index=active.queuePosition?.index;if(!Number.isInteger(index)||queue[index]?.episode.id!==active.episodeId)index=queue.findIndex(e=>e.episode.id===active.episodeId);
@@ -218,7 +232,7 @@ async function commitSettings(next) {
   if (catalogStore.writable) return commit(next);
   catalog=validateCatalog(next); return true; // Session-only tuning never writes an unlocked catalog.
 }
-function selectedChannel() { return isCustomChannel(catalog)?CUSTOM_CHANNEL:CHANNELS.find(c => c.id === catalog.settings.channel); }
+function selectedChannel() { return isCustomChannel(catalog)?(episodeQueueSelected(catalog)?{...CUSTOM_CHANNEL,name:'Your Episode Queue'}:CUSTOM_CHANNEL):CHANNELS.find(c => c.id === catalog.settings.channel); }
 function channelShows() { return catalog.shows.filter(s => s.id === COMMERCIAL_SHOW_ID || catalog.settings.channel === 'mixed' || s.channel === catalog.settings.channel); }
 function currentGuide() { return schedulePosition(buildSchedule(catalog), scheduleEpoch(catalog)); }
 function episodeDetail(e, movie = false) {
@@ -234,7 +248,7 @@ function renderChannels() {
     const node=button('',async()=>{
       if(arcade){if(arcadeUnlocked)location.assign('/arcade/');return;}
       if(custom&&!customShows(catalog)?.length){$('open-channel-builder').click();return;}
-      const next=custom?tuneCustomChannel(copyCatalog()):copyCatalog();if(!custom){next.settings.channel=c.id;next.settings.streamShow=null;next.settings.streamShows=null;}
+      const next=custom?tuneCustomChannel(copyCatalog()):copyCatalog();if(!custom){next.settings.channel=c.id;next.settings.streamShow=null;next.settings.streamShows=null;next.settings.customQueueActive=false;}
       if(await commitSettings(next)){selectedShowId=channelShows()[0]?.id||catalog.shows[0].id;stopPlayer();render();retroEffects.pulse();}
     },'channel'+(arcade?' channel-arcade':''));
     if(arcade){node.id='arcade-channel';node.disabled=!arcadeUnlocked;node.title=arcadeUnlocked?'Open the arcade':'Locked · enter the Konami code';}
@@ -242,12 +256,12 @@ function renderChannels() {
     node.setAttribute('aria-label',`Channel ${c.number}: ${c.name}${arcade&&!arcadeUnlocked?' · locked':''}`);
     const number=element('span',null,'channel-number');number.append(element('small','CH'),document.createTextNode(c.number));
     const label=element('span',null,'channel-caption');label.append(element('span',c.name,'channel-name'));
-    label.append(element('span',arcade?c.games.join(' · '):custom?(catalog.settings.customTitle||'Assemble your AI lineup'):catalog.settings.rotation==='ordered'?'Episodes in order':c.subtitle,'channel-subtitle'));
+    label.append(element('span',arcade?c.games.join(' · '):custom?(hasEpisodeQueue(catalog)?`${catalog.settings.customQueue.length} saved episodes`:catalog.settings.customTitle||'Assemble your AI lineup'):catalog.settings.rotation==='ordered'?'Episodes in order':c.subtitle,'channel-subtitle'));
     node.append(number,label,arcade?element('span',arcadeUnlocked?'ENTER ↗':'LOCKED','arcade-lock-state'):element('span',null,'dot'));return node;
   }));
   const channel = selectedChannel();
   const streamShow = catalog.shows.find(show => show.id === catalog.settings.streamShow);
-  $('channel-label').textContent = `CH ${channel.number} · ${(catalog.settings.streamShows ? catalog.settings.customTitle||'YOUR CHANNEL' : streamShow?.title || channel.name).toUpperCase()} · ${activeRotation(catalog) === 'random' ? 'RANDOM STREAM' : 'IN ORDER'}`;
+  $('channel-label').textContent = `CH ${channel.number} · ${(catalog.settings.streamShows ? catalog.settings.customTitle||'YOUR CHANNEL' : streamShow?.title || channel.name).toUpperCase()} · ${episodeQueueSelected(catalog)?'SAVED EPISODE QUEUE':activeRotation(catalog) === 'random' ? 'RANDOM STREAM' : 'IN ORDER'}`;
   renderStreamSettings();
   $('bumpers').checked = catalog.settings.bumpers;
 }
@@ -320,7 +334,8 @@ function presentEpisodeTitle(episode,show){
  details.hidden=title===episode.title;details.querySelector('p').textContent=episode.title;details.open=false;
 }
 
-function render() { renderChannels(); renderGuide(); renderLibrary(); renderDials(); stationGuide.render();
+function render() {
+  queueUi?.render();renderResume(); renderChannels(); renderGuide(); renderLibrary(); renderDials(); stationGuide.render();
   if(guideJumpPending&&(ownerMode||publicCatalogReady)&&!$('guide').hidden){guideJumpPending=false;requestAnimationFrame(()=>{if(!$('guide').hidden)$(innerWidth<=1000?'screen-column':'guide').scrollIntoView({block:'start'});});}
 }
 
@@ -413,7 +428,7 @@ function showTuningStatic(show){
  if(show)tuningTimer=setTimeout(()=>{$('source-tuning-static').hidden=true;},12000);
 }
 function stopPlayer() {
-  sampleWatch();watchTracker.stop();watchDimensions=null;
+  playbackLifecycle.save();sampleWatch();watchTracker.stop();watchDimensions=null;
   window.dispatchEvent(new Event('yata:playback-changed'));
   showTuningStatic(false);
   episodeInformation.clear();
@@ -439,7 +454,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
   const generation = playerGeneration;
   retroEffects.pulse();
   active = { showId: show.id, episodeId: episode.id, sourceId: source.id, offset, mode, queueMode, queuePosition };
-  watchDimensions={channel:show.id===MOVIE_SHOW_ID?'movies':queueMode==='station'?(isCustomChannel(catalog)?'custom':catalog.settings.channel):'library',provider:source.provider};watchTracker.begin(watchDimensions);
+  watchDimensions={channel:show.id===MOVIE_SHOW_ID?'movies':queueMode==='custom-queue'?'custom':queueMode==='station'?(isCustomChannel(catalog)?'custom':catalog.settings.channel):'library',provider:source.provider};watchTracker.begin(watchDimensions);
   $('standby').hidden = true;
   showTuningStatic(true);
   $('playing-show').textContent = show.title.toUpperCase();
@@ -473,8 +488,10 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
     for(const event of ['waiting','stalled','seeking'])video.addEventListener(event,()=>{if(generation===playerGeneration&&!video.paused)showTuningStatic(true);});
     for(const event of ['playing','pause','waiting','stalled','seeking','seeked'])video.addEventListener(event,()=>{if(generation===playerGeneration)sampleWatch();});
     for(const event of ['canplay','loadeddata','pause'])video.addEventListener(event,()=>{if(generation===playerGeneration)showTuningStatic(false);});
+    video.addEventListener('seeked',()=>{if(generation===playerGeneration)playbackLifecycle.save();});
+    video.addEventListener('loadedmetadata',()=>{if(generation===playerGeneration&&!autoPlay){showTuningStatic(false);$('playback-state').textContent='PAUSED';}});
     video.addEventListener('playing', () => { if (generation === playerGeneration) { showTuningStatic(false);$('playback-state').textContent = 'PLAYING · ARCHIVE'; $('player-error').hidden = true; } });
-    video.addEventListener('pause', () => { if (generation === playerGeneration) $('playback-state').textContent = 'PAUSED'; });
+    video.addEventListener('pause', () => { if (generation === playerGeneration){playbackLifecycle.save();markTimeShift();$('playback-state').textContent = 'PAUSED';} });
     episodeInformation.show(show,episode,source,video);
     if(autoPlay)session.play();
   } else if (source.provider === 'youtube') {
@@ -485,7 +502,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
         if (generation !== playerGeneration) return;
         showTuningStatic(state===3);sampleWatch();
         if (state === 1) { $('playback-state').textContent = 'PLAYING · YOUTUBE'; $('player-error').hidden = true; }
-        if (state === 2) $('playback-state').textContent = 'PAUSED';
+        if (state === 2){playbackLifecycle.save();markTimeShift();$('playback-state').textContent = 'PAUSED';}
         if (state === 3) $('playback-state').textContent = 'BUFFERING';
       } });
   } else {
@@ -499,6 +516,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
 }
 
 function tuneLive() {
+  if(episodeQueueSelected(catalog)){void playQueuedEpisode();return;}
   if(!ownerMode&&!publicCatalogReady)return;
   const queue = buildSchedule(catalog), p = schedulePosition(queue, scheduleEpoch(catalog));
   if (p) playEpisode(p.current.show, p.current.episode, p.current.source, p.offset, 'live', 'station', playbackPosition(queue, p.index));
@@ -738,7 +756,7 @@ render();
 if (ownerMode && !catalogStore.writable) { notify('Catalog changes are read-only: safe tab coordination is unavailable. Playback and export remain available.'); showCatalogRecovery(); }
 if (loaded.error && ownerMode) notify(loaded.error);
 setInterval(()=>{renderGuide();stationGuide.render();}, 15000);
-window.addEventListener('pagehide', () => session?.dispose());
+// Page-cache transitions and reload checkpoints are handled by playbackLifecycle.
 
 let batchRows = [], batchPage = 0, batchFilter = '', wholeLibrary = false;
 $('bulk-open').addEventListener('click', () => {
@@ -974,7 +992,7 @@ async function configureStream(patch, play = false) {
   const wasPlaying = transportState()?.paused === false;
   const custom=isCustomChannel(catalog)&&!('channel' in patch||'streamShow' in patch);
   if(custom){patch={...patch};if('rotation' in patch){patch.customRotation=patch.rotation;delete patch.rotation;}if('shuffleSeed' in patch){patch.customSeed=patch.shuffleSeed;delete patch.shuffleSeed;}}
-  const next = copyCatalog(); Object.assign(next.settings, patch); if('shuffleSeed' in patch&&next.settings.channelRemixes){delete next.settings.channelRemixes[next.settings.channel];} if ('channel' in patch || 'streamShow' in patch) next.settings.streamShows = null; if(custom)next.settings.customEpoch=Date.now()/1000;else{next.epoch = Date.now() / 1000;if(next.settings.channelRemixes?.[next.settings.channel])next.settings.channelRemixes[next.settings.channel].epoch=next.epoch;}
+  const next = copyCatalog(); Object.assign(next.settings, patch); if('shuffleSeed' in patch&&next.settings.channelRemixes){delete next.settings.channelRemixes[next.settings.channel];} if ('channel' in patch || 'streamShow' in patch){next.settings.streamShows = null;next.settings.customQueueActive=false;} if(custom)next.settings.customEpoch=Date.now()/1000;else{next.epoch = Date.now() / 1000;if(next.settings.channelRemixes?.[next.settings.channel])next.settings.channelRemixes[next.settings.channel].epoch=next.epoch;}
   if (!await commitSettings(next)) { renderStreamSettings(); return false; }
   stopPlayer(); render();
   if (play || wasPlaying) tuneLive();

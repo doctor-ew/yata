@@ -69,3 +69,4 @@ test('YouTube video advancement happens once and loader failures are actionable'
   const failed = createYouTubeSession({}, { source, apiLoader: async () => { throw Error('offline'); }, onError: e => error = e });
   await failed.ready; assert.equal(error, 'offline');
 });
+test('repeated metadata after an iOS interruption never rewinds to the original offset',async()=>{const v=new FakeVideo(),s=createVideoSession(v,{url:'https://archive.org/download/sample/a.mp4',offset:10});v.dispatchEvent(new Event('loadedmetadata'));v.currentTime=67;s.pause();v.dispatchEvent(new Event('loadedmetadata'));assert.equal(v.currentTime,67);await s.play();assert.equal(v.currentTime,67);s.dispose();});

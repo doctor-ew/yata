@@ -9,7 +9,7 @@ export const GUIDE_TICK_SECONDS = 1800;
 // Each row is the actual full-channel station scope, independent of a tuned show.
 // Cache this compilation until the catalog/settings change, not on every clock tick.
 export function compileGuide(catalog) {
-  const fullChannels = {...catalog, settings:{...catalog.settings, streamShow:null,streamShows:null}};
+  const fullChannels = {...catalog, settings:{...catalog.settings, streamShow:null,streamShows:null,customQueueActive:false}};
   const rows=CHANNELS.map(channel=>({channel, epoch:scheduleEpoch(fullChannels,channel.id), schedule:buildSchedule(fullChannels,channel.id)}));if(customShows(catalog)?.length){const custom=customGuideCatalog(catalog);rows.unshift({channel:CUSTOM_CHANNEL,epoch:scheduleEpoch(custom,'custom'),schedule:buildSchedule(custom,'mixed')});}return rows;
 }
 
@@ -44,7 +44,7 @@ export function guidePlayback(catalog, selection) {
   const custom=selection.channel.id==='custom';
   const channel=custom?CUSTOM_CHANNEL:CHANNELS.find(channel=>channel.id===selection.channel.id);
   if(!channel)return null;
-  const row={channel,schedule:custom?buildSchedule(customGuideCatalog(catalog),'mixed'):buildSchedule({...catalog,settings:{...catalog.settings,streamShow:null,streamShows:null}},channel.id)};
+  const row={channel,schedule:custom?buildSchedule(customGuideCatalog(catalog),'mixed'):buildSchedule({...catalog,settings:{...catalog.settings,streamShow:null,streamShows:null,customQueueActive:false}},channel.id)};
   const matches=entry=>entry?.show.id===selection.entry.show.id && entry.episode.id===selection.entry.episode.id && entry.source.url===selection.entry.source.url;
   const index=matches(row.schedule[selection.index])?selection.index:row.schedule.findIndex(matches);
   return index<0?null:{...row.schedule[index],index,schedule:row.schedule};

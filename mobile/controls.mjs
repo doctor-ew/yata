@@ -33,7 +33,7 @@ export function mountMobileControls({Capacitor,App,Share,Catalog,Audio}){
  });
  if(android)void foreground();
  mountMobileNavigation({android,report,actions:{
-  lineup:()=>{const state=snapshot();return Share.share({title:state.share.title,text:'My YATA lineup',url:state.share.url,dialogTitle:'Share lineup'});},
+  lineup:()=>{const state=snapshot();if(state.share.error)throw Error(state.share.error);return Share.share({title:state.share.title,text:'My YATA lineup',url:state.share.url,dialogTitle:'Share lineup'});},
   website:()=>Share.share({title:'YATA · It’s probably a rerun.',text:'Retro TV, personal channels and a vintage TV guide.',url:'https://doctorew.com/tv/',dialogTitle:'Share YATA'}),
   installer:async()=>{const file=await Catalog.packageFile();return Share.share({title:'YATA Android test app',text:'YATA test APK for Android. Install only if you trust the sender.',files:[file.url],dialogTitle:'Share Android installer'});}
  }});

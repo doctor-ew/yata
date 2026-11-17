@@ -11,7 +11,7 @@ export function mountMobileNavigation({android,report,actions}){
  if(android)sharing.append(button('Android installer',()=>{menu.close();return actions.installer();}));
  const time=doc.createElement('label'),check=doc.createElement('input');check.type='checkbox';check.onchange=()=>doc.querySelector('#share-time').checked=check.checked;time.append(check,' Include episode position');sharing.append(time);
  const privacy=group('Privacy');mountAnalyticsSettings(privacy);
- const playback=group('Playback');for(const[label,id]of[['Previous episode','previous-episode'],['Restart episode','start-over'],['Show position','toggle-seek-panel'],['Fill screen','fill-window'],['Mute / unmute','video-mute']])playback.append(button(label,()=>invoke(id)));
+ const playback=group('Playback');playback.append(button('Your Channel 00 queue',()=>{menu.close();location.hash='watch';const queue=doc.getElementById('episode-queue');if(queue){queue.open=true;queue.scrollIntoView({block:'start',behavior:'smooth'});}}));for(const[label,id]of[['Previous episode','previous-episode'],['Restart episode','start-over'],['Show position','toggle-seek-panel'],['Fill screen','fill-window'],['Mute / unmute','video-mute']])playback.append(button(label,()=>invoke(id)));
  const channels=group('Channels');for(const[label,id]of[['Make a channel','open-channel-builder'],['Playback settings','open-stream-settings']])channels.append(button(label,()=>invoke(id)));
  for(const id of['remix-panel','mix-panel'])channels.append(doc.getElementById(id));
  mountAppearance(group('Appearance'));

@@ -1,3 +1,4 @@
+import{resolveEpisodeQueue}from'./episode-queue.mjs';
 import { buildSchedule, parseSourceUrl, stationSource, bumperPool, COMMERCIAL_SHOW_ID } from './domain.mjs';
 import { createCommercialBreak } from './shuffle.mjs';
 
@@ -11,6 +12,7 @@ export function seekPosition(seconds, duration) {
 }
 export function playbackQueue(catalog, active) {
   if (!active) return [];
+  if(active.queueMode==='custom-queue')return resolveEpisodeQueue(catalog);
   if (active.queueMode === 'station') return buildSchedule(catalog);
   const ownerShowId = active.queuePosition?.ownerShowId || active.showId;
   const show = catalog.shows.find(show => show.id === ownerShowId && show.id !== COMMERCIAL_SHOW_ID);
@@ -50,6 +52,7 @@ export function playbackPosition(queue, index, ownerShowId = null) {
   };
 }
 export function adjacentPlayback(catalog, active, direction) {
+  if(active?.queueMode==='custom-queue'){const queue=resolveEpisodeQueue(catalog),index=queue.findIndex(e=>e.episode.id===active.episodeId),target=index+direction;if(index<0){if(direction===1&&active.queuePosition?.index>=queue.length)return null;const neighbor=queue.findIndex(e=>e.episode.id===(direction===1?active.queuePosition?.nextId:active.queuePosition?.previousId));return neighbor<0?null:{...queue[neighbor],queuePosition:playbackPosition(queue,neighbor)};}if(target<0||target>=queue.length)return null;return{...queue[target],queuePosition:playbackPosition(queue,target)};}
   if (!active || ![-1, 1].includes(direction)) return null;
   const queue = playbackQueue(catalog, active);
   if (!queue.length) return null;
