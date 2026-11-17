@@ -16,7 +16,8 @@ export async function buildArcade(output,{shellOnly=false}={}){
   manifest.push({name,bytes:data.length,sha256:createHash('sha256').update(data).digest('hex'),contentType:types[ext]||'text/plain; charset=utf-8'});
  }
  async function tree(relative){const directory=path.join(assets,relative);for(const item of await readdir(directory,{withFileTypes:true})){if(item.name.startsWith('.'))continue;const rel=path.posix.join(relative,item.name);if(item.isSymbolicLink())throw Error('Symlink in release: '+rel);if(item.isDirectory())await tree(rel);else if(item.isFile())await add(path.join(assets,rel),'assets/'+rel);}}
- for(const name of ['index.html','arcade.css','arcade.mjs','buddy.mjs','games.mjs','ports.mjs','expansion.mjs','flash.html','flash.mjs','console.html','console.mjs','manifest.webmanifest','service-worker.js','icon.svg','icon-192.png','icon-512.png'])await add(path.join(root,name),name);
+ for(const name of ['index.html','arcade.css','arcade.mjs','buddy.mjs','games.mjs','ports.mjs','expansion.mjs','launcher-catalog.json','flash.html','flash.mjs','console.html','console.mjs','manifest.webmanifest','service-worker.js','icon.svg','icon-192.png','icon-512.png'])await add(path.join(root,name),name);
+ for(const name of ['catalog-feeds.mjs','arcade-catalog.mjs'])await add(path.join(root,'../src',name),'shared/'+name);
  if(shellOnly){await writeFile(path.join(output,'release-manifest.json'),JSON.stringify({shellOnly:true,files:manifest},null,2));return{output,shellOnly:true,files:manifest.length};}
  for(const dir of ['bible-fight','viva-caligula','emulatorjs','covers','flashpoint','qbert','donkey-kong','frogger','pitfall','space-invaders','star-raiders','spy-hunter','star-wars-arcade','ports-v12','port-icons','expansion'])await tree(dir);
  const phones=JSON.parse(await readFile(path.join(assets,'android/phone-builds.json'),'utf8'));

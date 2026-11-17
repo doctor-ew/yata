@@ -3745,6 +3745,145 @@
       "tvmazeId": 8475,
       "image": "assets/show-art/captain-kangaroo.webp",
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/429/1073089.jpg"
+    },
+    "gargoyles": {
+      "title": "Gargoyles",
+      "year": 1994,
+      "premiered": "1994-10-24",
+      "ended": "1997-02-22",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/1898/gargoyles",
+      "tvmazeId": 1898,
+      "image": "assets/show-art/gargoyles.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/11/27638.jpg",
+      "imageRole": "poster",
+      "imageCreditUrl": "https://www.tvmaze.com/shows/1898/gargoyles"
+    },
+    "gummi-bears": {
+      "title": "Disney's Adventures of the Gummi Bears",
+      "year": 1985,
+      "premiered": "1985-09-14",
+      "ended": "1991-02-22",
+      "genres": [
+        "Children",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/5314/disneys-adventures-of-the-gummi-bears",
+      "tvmazeId": 5314,
+      "image": "assets/show-art/gummi-bears.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/55239.jpg",
+      "imageRole": "poster",
+      "imageCreditUrl": "https://www.tvmaze.com/shows/5314/disneys-adventures-of-the-gummi-bears"
+    },
+    "tmnt-1987": {
+      "title": "Teenage Mutant Ninja Turtles",
+      "year": 1987,
+      "premiered": "1987-12-14",
+      "ended": "1996-11-02",
+      "genres": [
+        "Comedy",
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4159/teenage-mutant-ninja-turtles",
+      "tvmazeId": 4159,
+      "image": "assets/show-art/tmnt-1987.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/50244.jpg",
+      "imageRole": "poster",
+      "imageCreditUrl": "https://www.tvmaze.com/shows/4159/teenage-mutant-ninja-turtles"
+    },
+    "animaniacs": {
+      "title": "Animaniacs",
+      "year": 1993,
+      "premiered": "1993-09-13",
+      "ended": "1998-11-14",
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/6806/animaniacs",
+      "tvmazeId": 6806,
+      "image": "assets/show-art/animaniacs.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/25/64454.jpg",
+      "imageRole": "poster",
+      "imageCreditUrl": "https://www.tvmaze.com/shows/6806/animaniacs"
+    },
+    "tiny-toons": {
+      "title": "Tiny Toon Adventures",
+      "year": 1990,
+      "premiered": "1990-09-14",
+      "ended": "1995-05-28",
+      "genres": [
+        "Comedy",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4484/tiny-toon-adventures",
+      "tvmazeId": 4484,
+      "image": "assets/show-art/tiny-toons.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/51954.jpg",
+      "imageRole": "poster",
+      "imageCreditUrl": "https://www.tvmaze.com/shows/4484/tiny-toon-adventures"
+    },
+    "darkwing-duck": {
+      "title": "Darkwing Duck",
+      "year": 1991,
+      "premiered": "1991-09-08",
+      "ended": "1992-12-05",
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/5309/darkwing-duck",
+      "tvmazeId": 5309,
+      "image": "assets/show-art/darkwing-duck.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/55234.jpg",
+      "imageRole": "poster",
+      "imageCreditUrl": "https://www.tvmaze.com/shows/5309/darkwing-duck"
+    },
+    "rescue-rangers": {
+      "title": "Chip 'N Dale Rescue Rangers",
+      "year": 1989,
+      "premiered": "1989-03-05",
+      "ended": "1990-11-19",
+      "genres": [
+        "Adventure",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/5308/chip-n-dale-rescue-rangers",
+      "tvmazeId": 5308,
+      "image": "assets/show-art/rescue-rangers.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/55233.jpg",
+      "imageRole": "poster",
+      "imageCreditUrl": "https://www.tvmaze.com/shows/5308/chip-n-dale-rescue-rangers"
+    },
+    "mighty-morphin-power-rangers": {
+      "title": "Mighty Morphin Power Rangers",
+      "year": 1993,
+      "premiered": "1993-08-28",
+      "genres": [
+        "Action",
+        "Children",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/794/power-rangers",
+      "tvmazeId": 794,
+      "image": "assets/show-art/mighty-morphin-power-rangers.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
+      "imageRole": "poster",
+      "imageCreditUrl": "https://www.tvmaze.com/shows/794/power-rangers"
     }
   }
 }

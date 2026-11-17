@@ -1,3 +1,4 @@
+import {refreshGameMetadata} from './catalog-feeds.mjs';
 // Generated from Arcade source catalogs by scripts/build-game-index.mjs. No game binaries or launch URLs.
 export const ARCADE_GAMES=[
   {
@@ -1305,3 +1306,4 @@ export const ARCADE_GAMES=[
     "reason": "Legacy files need recovery"
   }
 ];
+export const refreshArcadeGames = options => refreshGameMetadata(ARCADE_GAMES, options);
