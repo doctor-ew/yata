@@ -2,7 +2,7 @@
 
 ## Result
 
-Fourteen requested variants are installed locally. Two later crossover titles remain unavailable because the current browser emulator has no Dreamcast/NAOMI runtime. See arcade/README.md for the exact variants and reproduction command.
+Fourteen requested variants are installed locally and deployed at https://doctorew.com/arcade/. Two later crossover titles remain unavailable because the current browser emulator has no Dreamcast/NAOMI runtime. See arcade/README.md for the exact variants and reproduction command.
 
 ## Evidence
 
@@ -15,4 +15,4 @@ Fourteen requested variants are installed locally. Two later crossover titles re
 
 ## Boundaries
 
-Game binaries remain ignored locally. No new game binaries were uploaded to GitHub or the public web host. Availability in an archive is not proof of redistribution permission. The public site and native app continue to use the previously deployed hosted catalog until a separate publication.
+Game binaries remain ignored locally and excluded from GitHub source. At Drew’s explicit deployment request, fourteen game files, nine runtime files and six launcher files were uploaded to the existing arcade host. The TV shared catalog and bucket public-access blocks were preserved. The app opens the same hosted arcade. Availability in an archive is not proof of redistribution permission. Deployment receipt: /Users/drew.schillinger/Projects/yata-audits/arcade-expansion/deployment.json.

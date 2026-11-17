@@ -67,4 +67,4 @@ MAME 2003 Plus handles the eleven older arcade builds; FBNeo handles Third Strik
 
 The cabinet sends emulator inputs directly for cartridge/arcade cores. Fighter entries expose six action buttons; coin/select and Start remain separate. Short touch releases are held briefly across emulator frames. Keyboard/gamepad mappings remain configurable in the emulator menu.
 
-Marvel vs. Capcom 2 and Capcom vs. SNK 2 are explicitly not installed: the current player has no Dreamcast/NAOMI runtime. They have unavailable cards instead of Play buttons. The expansion is installed in the local checkout; no new game binaries have been published to the hosted site by this installation pass.
+Marvel vs. Capcom 2 and Capcom vs. SNK 2 are explicitly not installed: the current player has no Dreamcast/NAOMI runtime. They have unavailable cards instead of Play buttons. The expansion is installed in the local checkout and published at https://doctorew.com/arcade/ at Drew’s deployment request. The Android app opens the same hosted arcade; ROMs remain separate from the APK and GitHub source.
