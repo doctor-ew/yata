@@ -2,6 +2,11 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.9 — 2026-11-17
+
+- Ask a companion to find an episode by plot: chat now searches the available sourced episode summaries and answers in character with TVmaze citations.
+- Matched episodes have a play button that rechecks the current catalog. Search currently covers 86 summaries from Gargoyles and Street Hawk; scripts, exact dialogue and scene timestamps are not searched.
+
 ## 0.8.8 — 2026-11-17
 
 - Added Punky Brewster, Clarissa, Vicki, Maude, Dorothy, Rose, Blanche, Sophia and original-era Firefly as selectable, pinnable companions with credited portraits.
