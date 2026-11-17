@@ -1,0 +1,93 @@
+{
+  "start": "-P7D",
+  "widgets": [
+    {
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 24,
+      "height": 3,
+      "properties": {
+        "markdown": "# YATA anonymous usage\nPrivate owner dashboard \u00b7 last 7 days by default. Counts are client-reported, not unique viewers or audited audience figures. Watch time covers confirmed foreground playback only; screen-off native audio is excluded. AI success means a response was returned, not that its answer was useful. No chat text, email, private URL or persistent viewer ID is collected. Event logs retain 30 days. Refresh only when needed."
+      }
+    },
+    {
+      "type": "log",
+      "x": 0,
+      "y": 3,
+      "width": 12,
+      "height": 7,
+      "properties": {
+        "region": "us-east-1",
+        "title": "App launches by platform (not unique people)",
+        "view": "table",
+        "query": "SOURCE '/aws/lambda/yata-analytics' | filter type = 'yata_usage' and version != '0.0.0' | filter metric = 'app_open' | stats sum(value) as launches by platform, version | sort launches desc"
+      }
+    },
+    {
+      "type": "log",
+      "x": 12,
+      "y": 3,
+      "width": 12,
+      "height": 7,
+      "properties": {
+        "region": "us-east-1",
+        "title": "Channel plays",
+        "view": "table",
+        "query": "SOURCE '/aws/lambda/yata-analytics' | filter type = 'yata_usage' and version != '0.0.0' | filter metric = 'play_start' | stats sum(value) as plays by channel, platform | sort plays desc"
+      }
+    },
+    {
+      "type": "log",
+      "x": 0,
+      "y": 10,
+      "width": 12,
+      "height": 7,
+      "properties": {
+        "region": "us-east-1",
+        "title": "Foreground playback hours by channel",
+        "view": "table",
+        "query": "SOURCE '/aws/lambda/yata-analytics' | filter type = 'yata_usage' and version != '0.0.0' | filter metric = 'watch_seconds' | stats sum(value)/3600 as hours by channel, platform | sort hours desc"
+      }
+    },
+    {
+      "type": "log",
+      "x": 12,
+      "y": 10,
+      "width": 12,
+      "height": 7,
+      "properties": {
+        "region": "us-east-1",
+        "title": "AI request outcomes and web handoffs",
+        "view": "table",
+        "query": "SOURCE '/aws/lambda/yata-analytics' | filter type = 'yata_usage' and version != '0.0.0' | filter metric like /^ai_/ | stats sum(value) as events by metric, host, platform | sort events desc"
+      }
+    },
+    {
+      "type": "log",
+      "x": 0,
+      "y": 17,
+      "width": 12,
+      "height": 7,
+      "properties": {
+        "region": "us-east-1",
+        "title": "Playback failures (one per attempted source)",
+        "view": "table",
+        "query": "SOURCE '/aws/lambda/yata-analytics' | filter type = 'yata_usage' and version != '0.0.0' | filter metric = 'play_error' | stats sum(value) as failures by channel, provider, platform | sort failures desc"
+      }
+    },
+    {
+      "type": "log",
+      "x": 12,
+      "y": 17,
+      "width": 12,
+      "height": 7,
+      "properties": {
+        "region": "us-east-1",
+        "title": "Feedback drafts and arcade unlocks",
+        "view": "table",
+        "query": "SOURCE '/aws/lambda/yata-analytics' | filter type = 'yata_usage' and version != '0.0.0' | filter metric in ['feedback_draft','arcade_unlock'] | stats sum(value) as events by metric, platform | sort events desc"
+      }
+    }
+  ]
+}

@@ -8,7 +8,7 @@ GitHub issues are the source of truth for planned work. These items are proposal
 | Shared channel lineups | [#2](https://github.com/doctor-ew/yata/issues/2) | Extend existing lineup links with preview, portability, and missing-content handling |
 | Watch together | [#3](https://github.com/doctor-ew/yata/issues/3) | Invited rooms, synchronized playback, drift correction, provider limitations |
 | Chat with friends | [#4](https://github.com/doctor-ew/yata/issues/4) | Invitations, mute/block/report controls, retention and moderation decisions |
-| Anonymous usage analytics | [#5](https://github.com/doctor-ew/yata/issues/5) | Channel popularity, approximate watch time, playback failures, AI outcomes, platform distribution |
+| Anonymous usage analytics — shipped in 0.7.1 | [#5](https://github.com/doctor-ew/yata/issues/5) | Channel plays, approximate foreground playback time, failures, AI outcomes, platform distribution; [definitions and access](ANALYTICS.md) |
 
 ## Feedback intake
 
@@ -18,4 +18,4 @@ Bug reports and content/channel suggestions use repository issue forms. Maintain
 
 ## Analytics boundary
 
-The proposed analytics work is tracked separately. This release does not add usage tracking or store buddy transcripts. Aggregate metric definitions, retention, viewer controls, and optional diagnostics must be documented before collection is enabled. Watch duration requires an explicit definition for paused, hidden, background-audio, failed, and disconnected playback; heartbeat counts alone are not exact viewing time.
+Anonymous aggregate usage is implemented in 0.7.1. See [ANALYTICS.md](ANALYTICS.md) for definitions, retention, viewer controls and dashboard access. Chat transcripts, contact email and private URLs are excluded. Opt-in diagnostics and native background-audio timing remain separate work.

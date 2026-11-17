@@ -6,3 +6,6 @@ arcade/.local-assets/
 !.env.example
 *.jks
 *.keystore
+
+__pycache__/
+*.pyc

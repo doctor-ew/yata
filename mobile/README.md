@@ -81,3 +81,7 @@ Feedback is conversational. The buddy gathers details and previews the request b
 The Konami sequence also works in buddy chat as words, arrows, key names, or compact notation. It unlocks the existing Channel 03 entrance for the current session; it is a navigation secret, not an access-control mechanism.
 
 Buddy requests use a dedicated server prompt, finite host validation, input and output moderation, bounded output, Turnstile and existing quotas. Replies render as plain text and cannot execute tools or publish requests. Common instruction-override attempts are redirected before model generation. These controls reduce abuse; prompt-injection detection is not a guarantee that every hostile wording will be recognized.
+
+### Anonymous usage (0.7.1)
+
+The app and website report allowlisted aggregate usage events to a private AWS dashboard. More → Privacy on Android and television setup on web provide an opt-out switch. Browser privacy signals disable collection. No chat text, email, private URLs or persistent viewer identifiers are sent. Watch time measures confirmed foreground playback only; native screen-off audio is excluded. Event log retention is 30 days. See `docs/ANALYTICS.md` for definitions and limitations.

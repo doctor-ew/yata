@@ -1,3 +1,4 @@
+import{initializeAnalytics,getAnalytics,createWatchTracker}from'./analytics.mjs';
 import{mountBuddy}from'./buddy-ui.mjs';
 import{initializeAppearance,mountAppearance}from'./appearance.mjs';
 import{displayEpisodeTitle}from'./display-title.mjs';
@@ -31,6 +32,10 @@ import { parseSourceUrl, parseDuration, importArchive, validateCatalog, parseCat
 import { createVideoSession, createYouTubeSession } from './players.mjs';
 
 initializeAppearance();
+initializeAnalytics();
+const analytics=getAnalytics(),watchTracker=createWatchTracker({record:(...args)=>analytics.record(...args)});let watchDimensions=null,analyticsPlayFailure=-1;
+const sampleWatch=()=>watchTracker.sample(session?.getState?.(),!document.hidden);
+
 if(!document.documentElement.classList.contains('native-app'))mountAppearance(document.getElementById('web-room-settings'));
 const $ = id => document.getElementById(id);
 const staticHosting = document.querySelector('meta[name="drew-tv-hosting"]')?.content === 'static';
@@ -54,12 +59,13 @@ let publisherReview = null, publisherCsrf = null, publicationUi = null, publishe
 let rejectedCatalog = null, lastSaveError = '', unsavedChanges = false, pendingWrites = 0;
 let selectedShowId = catalog.shows[0].id, editingEpisodeId = null;
 let session = null, active = null, playerGeneration = 0, importBusy = false;
+setInterval(sampleWatch,10000);document.addEventListener('visibilitychange',sampleWatch);window.addEventListener('pagehide',()=>{sampleWatch();void analytics.flush();});
 let scrubbing = false, scrubSession = null, audioSession = null, preferredAudio = null, audioLockUntil = 0;
 let navCatalog = null, navActive = null, previousEntry = null, nextEntry = null;
 let sharedTarget = null;
 let libraryMetadata={},libraryUpdatedAt=null;
 let arcadeUnlocked=readArcadeUnlock();
-const unlockArcade=()=>{arcadeUnlocked=true;saveArcadeUnlock();renderChannels();notify('Channel 03 unlocked. The arcade is open.');};
+const unlockArcade=()=>{if(!arcadeUnlocked)analytics.record('arcade_unlock');arcadeUnlocked=true;saveArcadeUnlock();renderChannels();notify('Channel 03 unlocked. The arcade is open.');};
 installArcadeEntry({open:()=>{unlockArcade();$('arcade-channel')?.focus();}});
 window.addEventListener('yata:unlock-arcade',unlockArcade);
 const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'Tubi', adultswim: 'Adult Swim' };
@@ -407,6 +413,7 @@ function showTuningStatic(show){
  if(show)tuningTimer=setTimeout(()=>{$('source-tuning-static').hidden=true;},12000);
 }
 function stopPlayer() {
+  sampleWatch();watchTracker.stop();watchDimensions=null;
   window.dispatchEvent(new Event('yata:playback-changed'));
   showTuningStatic(false);
   episodeInformation.clear();
@@ -419,6 +426,7 @@ function stopPlayer() {
 
 function playerError(message, generation) {
   if (generation !== playerGeneration) return;
+  sampleWatch();if(analyticsPlayFailure!==generation){analyticsPlayFailure=generation;analytics.record('play_error',watchDimensions||{});}
   showTuningStatic(false);
   $('player-error-text').textContent = message;
   $('player-error').hidden = false;
@@ -431,6 +439,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
   const generation = playerGeneration;
   retroEffects.pulse();
   active = { showId: show.id, episodeId: episode.id, sourceId: source.id, offset, mode, queueMode, queuePosition };
+  watchDimensions={channel:show.id===MOVIE_SHOW_ID?'movies':queueMode==='station'?(isCustomChannel(catalog)?'custom':catalog.settings.channel):'library',provider:source.provider};watchTracker.begin(watchDimensions);
   $('standby').hidden = true;
   showTuningStatic(true);
   $('playing-show').textContent = show.title.toUpperCase();
@@ -454,7 +463,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
       renderGuide(); renderLibrary();
     }
   };
-  const ended = () => { if (generation === playerGeneration) advance(false); };
+  const ended = () => { if (generation === playerGeneration){sampleWatch();advance(false);} };
   const error = message => playerError(message, generation);
   if (source.provider === 'archive') {
     const video = element('video'); video.controls = true; video.playsInline = true; video.preload = 'metadata';
@@ -462,6 +471,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
     $('player-host').append(video);
     session = createVideoSession(video, { url: source.url, offset, onVerified: verified, onEnd: ended, onError: error });
     for(const event of ['waiting','stalled','seeking'])video.addEventListener(event,()=>{if(generation===playerGeneration&&!video.paused)showTuningStatic(true);});
+    for(const event of ['playing','pause','waiting','stalled','seeking','seeked'])video.addEventListener(event,()=>{if(generation===playerGeneration)sampleWatch();});
     for(const event of ['canplay','loadeddata','pause'])video.addEventListener(event,()=>{if(generation===playerGeneration)showTuningStatic(false);});
     video.addEventListener('playing', () => { if (generation === playerGeneration) { showTuningStatic(false);$('playback-state').textContent = 'PLAYING · ARCHIVE'; $('player-error').hidden = true; } });
     video.addEventListener('pause', () => { if (generation === playerGeneration) $('playback-state').textContent = 'PAUSED'; });
@@ -473,7 +483,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
     session = createYouTubeSession(holder, { source, offset, origin: location.origin, onVerified: verified, onEnd: ended, onError: error,
       onState: state => {
         if (generation !== playerGeneration) return;
-        showTuningStatic(state===3);
+        showTuningStatic(state===3);sampleWatch();
         if (state === 1) { $('playback-state').textContent = 'PLAYING · YOUTUBE'; $('player-error').hidden = true; }
         if (state === 2) $('playback-state').textContent = 'PAUSED';
         if (state === 3) $('playback-state').textContent = 'BUFFERING';
