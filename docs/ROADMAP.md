@@ -4,6 +4,7 @@ GitHub issues are the source of truth for planned work. Status is shown per item
 
 | Proposal | Tracking issue | Scope |
 | --- | --- | --- |
+| Arcade companions and game routing — proposed | [#10](https://github.com/doctor-ew/yata/issues/10) | Distinguish TV/game names, retain a game across Konami unlock, direct launch, independent game-focused buddy choice |
 | Personal Plex library | [#1](https://github.com/doctor-ew/yata/issues/1) | Explicit authorization, private credentials, personal server permissions |
 | Shared channel lineups | [#2](https://github.com/doctor-ew/yata/issues/2) | Extend existing lineup links with preview, portability, and missing-content handling |
 | Watch together | [#3](https://github.com/doctor-ew/yata/issues/3) | Invited rooms, synchronized playback, drift correction, provider limitations |
