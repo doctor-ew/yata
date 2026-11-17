@@ -16,6 +16,7 @@ let html = await readFile(path.join(root, 'index.html'), 'utf8');
 html = html.replace('<head>', `<head>\n  <base href="${base}">\n  <meta name="drew-tv-hosting" content="static">`);
 html = html.replace('<body>', '<body class="public-view public-catalog-pending">');
 content.set('index.html', html);
+content.set('buddy-service.html',await readFile(path.join(root,'buddy-service.html')));
 for(const name of ['style.css','appearance.css','buddy.css'])content.set(name,await readFile(path.join(root,name)));
 for(const dir of ['decor','buddy'])for(const name of await readdir(path.join(root,'assets',dir)))content.set(`assets/${dir}/${name}`,await readFile(path.join(root,'assets',dir,name)));
 for (const name of await readdir(path.join(root, 'src'))) {
