@@ -27,5 +27,19 @@ export function mountMobileNavigation({android,report,actions}){
  const info=doc.querySelector('.watch-info'),description=doc.querySelector('#episode-information');doc.querySelector('.transport[aria-label="Video playback controls"]').after(info);info.after(description);
  const controls=doc.createElement('dialog');controls.id='touch-konami';controls.setAttribute('aria-label','Arcade unlock controls');const title=doc.createElement('h2');title.textContent='A familiar sequence…';const help=doc.createElement('p');help.textContent='↑ ↑ ↓ ↓ ← → ← → B A';controls.append(title,help);const keys=doc.createElement('div');keys.className='native-secret-keys';controls.append(keys);
  for(const[key,label]of[['ArrowUp','↑'],['ArrowDown','↓'],['ArrowLeft','←'],['ArrowRight','→'],['b','B'],['a','A']]){const b=button(label,()=>{doc.dispatchEvent(new KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));if(!doc.querySelector('#arcade-channel').disabled)help.textContent='Channel 03 unlocked.';});keys.append(b);}controls.append(button('Done',()=>controls.close()));doc.body.append(controls);
- const brand=doc.querySelector('.brand');let timer;brand.addEventListener('contextmenu',event=>event.preventDefault());brand.addEventListener('pointerdown',()=>timer=setTimeout(()=>controls.showModal(),900));for(const event of['pointerup','pointercancel','pointerleave'])brand.addEventListener(event,()=>clearTimeout(timer));
+ const brand=doc.querySelector('.brand');let timer,held=false,startX=0,startY=0;
+ const cancel=()=>{clearTimeout(timer);timer=null;};
+ brand.addEventListener('contextmenu',event=>{event.preventDefault();cancel();held=true;doc.getSelection()?.removeAllRanges();if(!controls.open)controls.showModal();});
+ brand.addEventListener('selectstart',event=>event.preventDefault());
+ brand.addEventListener('pointerdown',event=>{
+  if(event.button!==0)return;
+  cancel();held=false;startX=event.clientX;startY=event.clientY;
+  // Android WebView otherwise begins text selection before the hold completes.
+  event.preventDefault();brand.setPointerCapture?.(event.pointerId);
+  timer=setTimeout(()=>{held=true;doc.getSelection()?.removeAllRanges();controls.showModal();},600);
+ });
+ brand.addEventListener('pointermove',event=>{if(Math.hypot(event.clientX-startX,event.clientY-startY)>16)cancel();});
+ for(const event of['pointerup','pointercancel','lostpointercapture'])brand.addEventListener(event,cancel);
+ brand.addEventListener('click',event=>{if(held){event.preventDefault();event.stopPropagation();held=false;}},true);
+
 }

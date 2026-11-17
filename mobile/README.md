@@ -21,7 +21,7 @@ npm run android:build
 
 Set `JAVA_HOME` to a JDK 21 installation and `ANDROID_HOME` to an Android SDK containing the platform/build packages required by `android/variables.gradle`. `build.mjs` reads the current public catalog and checks its SHA-256 before bundling it. It does not bundle video files, credentials, APK backups or Arcade runtimes.
 
-The generated APK is copied to `artifacts/YATA-0.6.0-android-debug.apk`. The Gradle output remains `android/app/build/outputs/apk/debug/app-debug.apk`. It is signed with the local Android debug key for sideload testing. Connect one Android device with USB debugging enabled, authorize the Mac, and run from this directory:
+The generated APK is copied to `artifacts/YATA-0.6.1-android-debug.apk`. The Gradle output remains `android/app/build/outputs/apk/debug/app-debug.apk`. It is signed with the local Android debug key for sideload testing. Connect one Android device with USB debugging enabled, authorize the Mac, and run from this directory:
 
 ```sh
 adb install -r android/app/build/outputs/apk/debug/app-debug.apk
@@ -67,3 +67,7 @@ The app and website share locally bundled Cabin text and Fraunces display fonts.
 ### Tuning snow (0.6.0)
 
 Standby reads “It’s probably a rerun.” Source loading and buffering display animated monochrome TV snow. Picture readiness, pause, playback errors, and a 12-second recovery timeout dismiss the overlay. Reduced-motion settings keep the noise still. CRT scanlines and tuning static default to on; saved user choices remain respected. Provider controls remain available when playback needs a tap.
+
+### Samsung long-press correction (0.6.1)
+
+The header logo blocks native text selection and handles both the pointer hold and Android WebView context-menu gesture. Native long-press recognition can send pointercancel before contextmenu; the context-menu handler opens the secret controls directly. A moving finger cancels the timed hold; a normal short tap keeps home navigation. Verified on Drew’s Samsung with ADB long-press and physical input taps through the full sequence.
