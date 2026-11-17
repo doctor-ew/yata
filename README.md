@@ -1,5 +1,7 @@
 # YATA — Yet Another TV App
 
+[Changelog](https://github.com/doctor-ew/yata/blob/main/CHANGELOG.md) · [Android releases](https://github.com/doctor-ew/yata/releases)
+
 A personal nostalgia TV station with a retro channel guide, a curated show library, and media that plays from its original provider.
 
 ## Android download

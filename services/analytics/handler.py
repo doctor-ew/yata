@@ -8,7 +8,7 @@ import re
 
 METRICS = {'app_open', 'play_start', 'watch_seconds', 'play_error', 'ai_attempt', 'ai_success', 'ai_failure', 'ai_cancel', 'ai_handoff', 'feedback_draft', 'arcade_unlock'}
 CHANNELS = {'none', 'mixed', 'action', 'scifi', 'cartoons', 'nick', 'comedy', 'drama', 'seventies', 'late-night', 'custom', 'library', 'movies'}
-HOSTS = {'none', 'stubing', 'arnold', 'jabberjaw', 'benson', 'mrt', 'murdock', 'twiki', 'starbuck', 'horshack', 'fonz', 'revjim', 'mrsgarrett', 'mrmagoo', 'kitt', 'docbrown', 'statlerwaldorf', 'qbert', 'skeletor', 'scooter', 'robin', 'mastershake', 'orko', 'penny', 'gadget', 'velma'}
+HOSTS = {'none', 'stubing', 'arnold', 'jabberjaw', 'benson', 'mrt', 'murdock', 'twiki', 'starbuck', 'horshack', 'fonz', 'revjim', 'mrsgarrett', 'mrmagoo', 'kitt', 'docbrown', 'statlerwaldorf', 'qbert', 'skeletor', 'scooter', 'robin', 'mastershake', 'orko', 'penny', 'gadget', 'velma', 'strawberry', 'jem', 'shera', 'kermit', 'mspiggy', 'gonzo'}
 ORIGINS = {'https://doctorew.com', 'https://www.doctorew.com', 'https://localhost', 'capacitor://localhost'}
 
 

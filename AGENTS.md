@@ -9,3 +9,5 @@ Keep the published shared catalog authoritative. Never replace its manifest or i
 Use isolated ticket branches. Publish to doctor-ew/yata when authorized; do not send YATA work upstream to the original browser repository. Do not automate the installed Floating Browser native app. Test with a separate browser, owned emulator or user-authorized ADB device.
 
 Validate changes with relevant tests and builds. Web deploys and mobile installs require task authorization. Historical reports under docs preserve prior observations and issue links; they are not fresh test results.
+
+Keep CHANGELOG.md current for each user-visible release. Back shipped changes with repository commits or GitHub release notes; do not describe roadmap work as shipped. Keep src/release-notes.mjs aligned with the latest published version so buddy “what’s new” replies use verified facts. Preserve changelog links on web and in the native About menu.

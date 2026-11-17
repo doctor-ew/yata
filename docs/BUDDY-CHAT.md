@@ -21,3 +21,9 @@ The roster includes Scooter, Super Friends-era Robin, Master Shake, Orko, Penny,
 “Turn into Twiki” selects and pins that character. “Pin you” keeps the current buddy, and “unpin” or “surprise me on each launch” restores random selection. These commands run locally against the finite roster. The character selector remains available inside the chat settings.
 
 “Play Mork and Mindy next” chooses the first checked episode not already queued or currently playing. If a checked episode is playing, it becomes the queue anchor and the requested episode follows it without restarting the video. “Add Taxi to my queue” appends to Channel 00 without changing the current station. Queue references and character preferences remain local to the browser or app and survive relaunch. No shared catalog is modified.
+
+## Release updates
+
+“What’s new?” and “latest updates” use the latest structured record in `src/release-notes.mjs` as factual context for the selected companion’s existing voice. The reply includes a separate, application-generated link to `CHANGELOG.md` on GitHub. If AI is unavailable, the app displays the release facts directly. Update questions do not alter playback, queues or buddy preferences.
+
+The roster also includes original Strawberry Shortcake, Jem, She-Ra, Kermit, Miss Piggy and Gonzo. “Ms Piggy” and “Kermit” are supported chat aliases.
