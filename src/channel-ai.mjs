@@ -1,4 +1,5 @@
 import{normalizeBuddyReply}from'./buddy-reply.mjs';
+import{normalizeBuddyConversation}from'./buddy-evidence.mjs';
 import{getAnalytics}from'./analytics.mjs';
 // The public widget key is supplied in HTML. Session grants stay in memory.
 const base='https://skippyts.doctorew.com';
@@ -24,7 +25,7 @@ export async function challenge(sitekey,container,signal) {
     try {widget=api.render(container,{sitekey,action:'page',execution:'execute',appearance:'interaction-only','response-field':false,callback:finish,'error-callback':abort,'expired-callback':abort,'timeout-callback':abort});if(!done)api.execute(container);else api.remove(widget);}catch{finish();}
   });
 }
-export function createChannelAi({sitekey,container,fetcher=fetch,verify=challenge,mode='channel',responseKey='plan'}={}) {
+export function createChannelAi({sitekey,container,fetcher=fetch,verify=challenge,mode='channel',responseKey='plan',structured=false}={}) {
   let grant=null;
   async function post(path,body,signal){const response=await fetcher(base+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal});let result;try{result=await response.json();}catch{throw Error('The host could not be reached. Try again.');}if(!response.ok){if(response.status===401)grant=null;throw Error(typeof result.error==='string'?result.error:'The host could not finish. Try again.');}return result;}
   return async (request,signal,onPhase=()=>{})=>{
@@ -32,11 +33,13 @@ export function createChannelAi({sitekey,container,fetcher=fetch,verify=challeng
     try{
     if(!grant||grant.expiresAt*1000<Date.now()+30000){onPhase('Checking this browser…');const turnstileToken=await verify(sitekey,container,signal);grant=await post('/session',{turnstileToken},signal);if(typeof grant.sessionToken!=='string'||!Number.isFinite(grant.expiresAt)){grant=null;throw Error('Invalid browser verification. Try again.');}}
     if(signal.aborted)throw Error('Request cancelled.');onPhase(mode==='channel'?'The programming department is arguing over your lineup…':'Your buddy is thinking…');
-    const result=(await post('/chatbot',{...request,...(['channel','buddy'].includes(mode)?{mode}:{}),sessionToken:grant.sessionToken},signal))[responseKey];
-    if(result===undefined||result===null||(responseKey==='answer'&&(typeof result!=='string'||!result.trim()||result.length>12000)))throw Error('The host sent an unreadable reply. Try again.');
+    const envelope=await post('/chatbot',{...request,...(['channel','buddy'].includes(mode)?{mode}:{}),sessionToken:grant.sessionToken},signal);
+    const result=structured?envelope:envelope[responseKey];
+    if(result===undefined||result===null||(responseKey==='answer'&&!structured&&(typeof result!=='string'||!result.trim()||result.length>12000)))throw Error('The host sent an unreadable reply. Try again.');
     analytics.record('ai_success',dimensions);return result;
     }catch(error){analytics.record(signal.aborted?'ai_cancel':'ai_failure',dimensions);throw error;}
   };
 }
 
 export function createBuddyChat(options={}){const request=createChannelAi({...options,mode:'buddy',responseKey:'answer'});return async(...args)=>{const answer=normalizeBuddyReply(await request(...args));if(typeof answer!=='string'||!answer.trim()||answer.length>12000)throw Error('Your buddy sent an unreadable reply. Try again.');return answer;};}
+export function createBuddyConversation(options={}){const request=createChannelAi({...options,mode: "buddy",responseKey: "answer",structured:true});return async(...args)=>normalizeBuddyConversation(await request(...args));}

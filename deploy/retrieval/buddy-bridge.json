@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "stack": "langchain-chatbot-dev",
+  "functionLogicalId": "ChatbotLambdaFunction",
+  "roleLogicalId": "IamRoleLambdaExecution",
+  "functionName": "langchain-chatbot-dev-chatbot",
+  "roleName": "langchain-chatbot-dev-us-east-1-lambdaRole",
+  "environmentKey": "EPISODE_RETRIEVAL_FUNCTION",
+  "retrievalFunction": "yata-episode-retrieval-pilot-search",
+  "policyName": "yata-episode-retrieval-invoke"
+}

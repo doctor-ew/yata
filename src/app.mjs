@@ -122,7 +122,13 @@ function companionPlaybackContext(){
  const show=active&&catalog.shows.find(s=>s.id===active.showId),episode=show?.episodes.find(e=>e.id===active.episodeId);
  return {showTitle:show?.title||'',episodeTitle:episode?.title||'',nextShowTitle:nextEntry?.show.title||'',nextEpisodeTitle:nextEntry?.episode.title||''};
 }
-mountBuddy({getPlaybackContext:companionPlaybackContext,onNavigate:navigateStation,getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onShow:openShow,onGame:id=>gameGate.request(id),onCancelGame:()=>gameGate.cancel(),onQueue:queueFromBuddy,onWatch:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();return true;}});
+function playBuddyEvidence(selection){
+ if(!ownerMode&&!publicCatalogReady)return false;
+ const show=catalog.shows.find(s=>s.id===selection.showId),episode=show?.episodes.find(e=>e.id===selection.episodeId),source=episode?.sources.find(s=>s.id===selection.sourceId);
+ if(!show||!episode||episode.kind!=='episode'||!source||stationSource({...episode,sources:[source]})?.id!==source.id)return false;
+ playEpisode(show,episode,source,0,'start');navigateStation('watch');return true;
+}
+mountBuddy({onPlayEvidence:playBuddyEvidence,getPlaybackContext:companionPlaybackContext,onNavigate:navigateStation,getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onShow:openShow,onGame:id=>gameGate.request(id),onCancelGame:()=>gameGate.cancel(),onQueue:queueFromBuddy,onWatch:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();return true;}});
 
 const queueRoot=element('details',null,'mix-panel episode-queue');queueRoot.id='episode-queue';$('open-channel-builder').closest('.channel-builder-action').after(queueRoot);
 const queueUi=mountEpisodeQueue({root:queueRoot,getCatalog:()=>catalog,onPlay:playQueuedEpisode,onEdit:async(id,action)=>{if(await commitSettings(editEpisodeQueue(copyCatalog(),id,action))){render();queueUi.render();}},onMode:async mode=>{const next=copyCatalog();next.settings.customMode=mode;next.settings.customQueueActive=false;if(mode==='episodes')next.settings.streamShows=null;if(await commitSettings(next)){stopPlayer();render();queueUi.render();}}});

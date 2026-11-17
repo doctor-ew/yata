@@ -2,7 +2,7 @@
 
 ## Boundary
 
-CloudFormation owns every new resource and IAM policy in this pilot. `assets.yaml` owns the private artifact bucket/policy. `stack.yaml` owns private evidence storage/policy, the S3 vector bucket/index, on-demand allowance/cache table, two execution roles, two IAM-only Lambda functions and seven-day log groups. There is no function URL, public API route, VPC, NAT gateway or always-on database.
+CloudFormation owns every new resource and IAM policy in this pilot. `assets.yaml` owns the private artifact bucket/policy. `stack.yaml` owns private evidence storage/policy, the S3 vector bucket/index, on-demand allowance/cache table, two execution roles, two IAM-only Lambda functions and seven-day log groups. There is no function URL, direct public retrieval route, VPC, NAT gateway or always-on database. The guarded companion integration now invokes search from the existing chatbot route; see [the bridge architecture](../../docs/buddy-retrieval/ARCHITECTURE.md).
 
 Deployment credentials belong to the operator's AWS session. No credentials are stored in code, APK assets, outputs or receipts. Existing web/AI infrastructure is outside these two stacks.
 
@@ -74,3 +74,7 @@ The direct API uses the verified jev-latest alias and records the returned model
 The Jev experiment can see all 86 summaries, while the hybrid strategy starts from 10 vector candidates. Report that unequal candidate pool when comparing results. This is a source-aware small-corpus experiment, not a general accuracy claim or public app feature.
 
 [TypeSafe API](https://docs.typesafe.ai/api/system-one) · [Secrets Manager pricing](https://aws.amazon.com/secrets-manager/pricing/)
+
+## Guarded companion integration
+
+The existing buddy route now has an opt-in summary retrieval path. The search function itself remains IAM-only. See [companion architecture](../../docs/buddy-retrieval/ARCHITECTURE.md) for the public-session boundary, exact-function IAM bridge, shared-role limitation, native response transport and current coverage. The private pilot results above remain development measurements.
