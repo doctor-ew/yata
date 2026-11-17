@@ -1,3 +1,4 @@
+import{displayEpisodeTitle}from'./display-title.mjs';
 import {createLineupLink,parseLineupLink,applySharedLineup} from './lineup-share.mjs';
 import {createEpisodeInformation} from './episode-information-ui.mjs';
 import {CUSTOM_CHANNEL,customShows,isCustomChannel,createCustomChannel,tuneCustomChannel} from './custom-channel.mjs';
@@ -266,7 +267,7 @@ function renderGuide() {
   $('rotation-note').textContent = `${unique} checked ${unique === 1 ? 'item' : 'items'} · ${activeRotation(catalog) === 'random' ? 'Random episodes, balanced show turns. Multipart stories stay together.' : 'Episodes in order within each show.'} Your station clock stays stable across refreshes.`;
   if (!active) {
     $('playing-show').textContent = position.current.show.title.toUpperCase();
-    $('playing-title').textContent = position.current.episode.title;
+    presentEpisodeTitle(position.current.episode,position.current.show);
     $('playing-detail').textContent = `${episodeDetail(position.current.episode, position.current.show.id === MOVIE_SHOW_ID)} · ${providerName[position.current.source.provider]}`;
   }
 }
@@ -298,6 +299,12 @@ function renderLibrary() {
 }
 function syncLibraryGenres(){const select=$('library-genre');if(!select)return;const previous=select.value,genres=[...new Set(Object.values(libraryMetadata).flatMap(showGenres))].sort();select.replaceChildren(...['all',...genres].map(value=>{const option=element('option',value==='all'?'All genres':value);option.value=value;return option;}));if([...select.options].some(o=>o.value===previous))select.value=previous;}
 async function loadLibraryArtwork(){try{const response=await fetch(new URL('../data/library-art.json',import.meta.url));if(!response.ok)return;const data=await response.json();if(data.version!==1||!data.shows)return;libraryMetadata=data.shows;syncLibraryGenres();renderLibrary();}catch{/* The catalog remains browsable without artwork metadata. */}}
+
+function presentEpisodeTitle(episode,show){
+ const title=displayEpisodeTitle(episode,show);$('playing-title').textContent=title;
+ let details=$('playing-source-title');if(!details){details=element('details',null,'source-title-details');details.id='playing-source-title';details.append(element('summary','Source title'),element('p'));$('playing-title').after(details);}
+ details.hidden=title===episode.title;details.querySelector('p').textContent=episode.title;details.open=false;
+}
 
 function render() { renderChannels(); renderGuide(); renderLibrary(); renderDials(); stationGuide.render();
   if(guideJumpPending&&(ownerMode||publicCatalogReady)&&!$('guide').hidden){guideJumpPending=false;requestAnimationFrame(()=>{if(!$('guide').hidden)$(innerWidth<=1000?'screen-column':'guide').scrollIntoView({block:'start'});});}
@@ -411,7 +418,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
   active = { showId: show.id, episodeId: episode.id, sourceId: source.id, offset, mode, queueMode, queuePosition };
   $('standby').hidden = true;
   $('playing-show').textContent = show.title.toUpperCase();
-  $('playing-title').textContent = episode.title;
+  presentEpisodeTitle(episode,show);
   $('playing-detail').textContent = `${episodeDetail(episode, show.id === MOVIE_SHOW_ID)} · ${mode === 'live' ? 'Station clock · best-effort sync' : offset > 0 ? `From ${playbackTime(offset)}` : 'From the beginning'} · ${providerName[source.provider]}`;
   $('original-link').href = $('error-original').href = source.url;
   $('original-link').hidden = false;

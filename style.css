@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@font-face{font-family:'Cabin';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/cabin-400.ttf') format('truetype')}
+@font-face{font-family:'Cabin';font-style:normal;font-weight:500;font-display:swap;src:url('assets/fonts/cabin-500.ttf') format('truetype')}
+@font-face{font-family:'Cabin';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/cabin-600.ttf') format('truetype')}
+@font-face{font-family:'Cabin';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/cabin-700.ttf') format('truetype')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/fraunces-600.ttf') format('truetype')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/fraunces-700.ttf') format('truetype')}
 :root {
   color-scheme:dark;
   --bg:#211a15;
@@ -15,7 +20,7 @@
   --paper-muted:#55452d;
   --olive:#343a28;
   --hardware-amber:#f2b65c;
-  font-family:'DM Sans',system-ui,sans-serif;
+  font-family:'Cabin',system-ui,sans-serif;
   font-size:15px
 }
 * {
@@ -76,7 +81,7 @@ h1,h2,h3,p {
   margin:0
 }
 h1,h2,h3,.brand,.standby-logo,.channel-number {
-  font-family:'Space Grotesk',system-ui,sans-serif
+  font-family:'Fraunces',system-ui,sans-serif
 }
 h1 {
   font-size:clamp(36px,4.9vw,65px);
@@ -112,7 +117,7 @@ h1 em {
 }
 .brand small {
   display:block;
-  font:8px 'DM Sans',sans-serif;
+  font:8px 'Cabin',sans-serif;
   letter-spacing:1.8px;
   margin-top:7px;
   color:var(--muted)
@@ -599,7 +604,7 @@ main {
 }
 .show-art strong {
   position:relative;
-  font-family:'Space Grotesk',system-ui,sans-serif;
+  font-family:'Fraunces',system-ui,sans-serif;
   font-size:clamp(13px,1.25vw,18px);
   line-height:1.1;
   max-width:95%;
@@ -683,7 +688,7 @@ footer {
   font-size:10px
 }
 .footer-brand {
-  font-family:'Space Grotesk',sans-serif;
+  font-family:'Fraunces',sans-serif;
   font-size:15px;
   color:var(--accent);
   font-weight:600
@@ -1521,3 +1526,15 @@ html.native-app[data-room] .show-card>h3,html.native-app[data-room] .show-card>p
 #native-more section>label:has(select){display:grid;gap:8px}#native-more select{width:100%;min-height:44px;background:#29251e;color:#f3ead7;border:1px solid #8c7956;padding:8px}.native-room-note{font-size:12px;line-height:1.6;color:#c8bba6}#native-more{background:#28231c;color:#f3ead7}
 html.native-app body.window-mode::before,html.native-app body.window-mode #native-room-decal{display:none}
 #native-room-decal{top:auto;bottom:100px;right:10px;width:175px;height:190px;opacity:.28}
+/* Warm print, quiet surfaces, and the small physical controls of an old set. */
+:root{--bg:#272019;--surface:#352d23;--line:#75664e;--text:#efe3cb;--muted:#c2b49a;--accent:#d69a70;--action:#985432;--action-hover:#ad6540;--paper:#e6d8b8;--paper-ink:#3a3022;--olive:#424431;font-family:'Cabin',sans-serif}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-optical-sizing:auto;letter-spacing:-.025em;line-height:1.18}.brand,.standby-logo,.channel-number{font-family:'Cabin',sans-serif}.show-title,.tv-guide-program h3,.guide-copy h3{font-family:'Cabin',sans-serif;font-weight:600;letter-spacing:0}.eyebrow{letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.watch-info{padding:22px 4px 16px}.watch-info h2{font-size:clamp(24px,2.3vw,34px);font-weight:600;line-height:1.22;letter-spacing:-.025em}.watch-info .eyebrow{color:#d4ab7e;font-size:12px;font-family:'Cabin',sans-serif}.watch-info .muted{font-size:14px;color:#c2b49a;margin-top:10px}.source-title-details{margin:9px 0;color:var(--muted);font:13px/1.55 'Cabin',sans-serif}.source-title-details summary{cursor:pointer;width:fit-content;text-decoration:underline;text-underline-offset:3px}.source-title-details p{margin-top:7px;max-width:70ch;overflow-wrap:anywhere}
+.button{border-radius:9px;font-weight:600;letter-spacing:0;box-shadow:inset 0 1px #ffffff12,0 2px 0 #120e0a66}.button.primary{background:linear-gradient(#a7623d,#8d4a2b);color:#fff0d5}.button.primary:hover{background:#ad6540}.transport-buttons{gap:7px}.transport-buttons .button{background:linear-gradient(#4b4c38,#363928);border:1px solid #76684777;border-bottom:3px solid #1b1c13;box-shadow:inset 0 1px #e7d4a721;border-radius:9px}.transport-buttons #toggle-play{background:linear-gradient(#ac6943,#8c4a2e);border-color:#ca936755;border-bottom-color:#512d1b}
+.tv-remote{background:linear-gradient(130deg,#4a3a28,#30291e);border:1px solid #89725088;border-radius:14px;box-shadow:inset 0 1px #e6c99422,0 3px 7px #100b0744}.tv-remote .channel{border-radius:8px;border-color:#16180f;border-bottom-width:3px}.tv-remote .channel[aria-pressed=true]{border-color:#bf955d;box-shadow:inset 0 1px #ddbd7955}.remote-guide{letter-spacing:.08em}.remote-setup{border-radius:7px}#open-channel-builder.remote-setup{border-radius:9px;font-family:'Cabin',sans-serif;font-size:16px;letter-spacing:.03em;text-transform:none}
+.tv-guide-channel{background:#403629}.tv-guide-program{border-radius:8px;border-color:#9a88654d}.tv-guide-program[aria-pressed=true]{background:#d5b88f;box-shadow:inset 0 0 0 2px #9c623d}.tv-guide-time{background:#d6c6a1}.tv-guide-now{background:#a76841}.library-filters{border-color:#8e7b5744}.library-filters select,.library .search{border-color:#9b865744;border-radius:8px}.show-art{border-radius:9px;border-color:#a08b5d44}.show-card .show-title{font-size:18px;font-weight:600;margin-top:13px}.section-heading h2{font-size:clamp(30px,3.4vw,46px)}
+html.native-app[data-room] .screen-top{background:transparent;border:0;padding:7px 3px;text-shadow:0 1px 4px #000}.native-channel-switch,html.native-app[data-room] .native-channel-switch{background:transparent;border:0;border-radius:0;padding:6px 2px;margin:14px 0 10px;gap:10px}.native-channel-switch>span{display:none}.native-channel-switch select{background:#29291fe8;border:1px solid #c0a67655;border-radius:10px;box-shadow:inset 0 1px #f2d69e12;font-size:15px;min-height:44px;padding:8px 12px}
+html.native-app[data-room] .watch-info{background:linear-gradient(110deg,#292219f5,#292219ed);border:0;border-radius:14px;padding:18px 17px;margin-top:18px;box-shadow:0 3px 14px #120b0733}html.native-app .watch-info h2{font:600 clamp(25px,5vw,34px)/1.18 'Fraunces',Georgia,serif;letter-spacing:-.025em;margin:6px 0 12px}html.native-app .watch-info .eyebrow{font-size:12px;font-family:'Cabin',sans-serif;font-weight:500;color:#d5b084;letter-spacing:.1em}html.native-app .watch-info .muted{font-size:14px;line-height:1.6}
+html.native-app[data-room] .transport{background:#302b20e6;border:1px solid #c3a46d33;border-bottom:3px solid #100e0a77;border-radius:14px;padding:8px;box-shadow:inset 0 1px #f2dfad14}html.native-app .transport-buttons .button{font-size:14px;min-height:43px;padding:8px 3px;border-radius:8px}.episode-information{background:#30291fe8;border:0;border-top:1px solid #a68b5944;border-radius:10px;font-size:14px;line-height:1.6}.episode-information summary{font-weight:500}
+#native-navigation{background:#2a241ced;border-top:1px solid #b49a6a33;gap:4px;padding-top:5px;box-shadow:0 -3px 16px #110e0b33}#native-navigation a{position:relative;background:transparent!important;border-radius:0;color:#b9ad94;font-weight:500;font-size:15px;padding:14px 8px 11px}#native-navigation a[aria-current=page]{color:#f4dfb7}#native-navigation a[aria-current=page]::before{content:'';position:absolute;top:4px;left:calc(50% - 3px);width:6px;height:6px;background:#dca264;border-radius:50%;box-shadow:0 0 6px #d7964944}#native-more{border:1px solid #ac946566;border-radius:17px;box-shadow:0 12px 60px #0b080888}#native-more h2{font-family:'Fraunces',Georgia,serif;font-size:32px}#native-more h3{font-family:'Cabin',sans-serif;font-weight:500;color:#ceb184}.native-menu-item{border-bottom-color:#b99a5c22;font-weight:400}.native-menu-close{border-radius:9px}
+@media(min-width:1001px){.watch-info h2{max-width:28ch}.masthead nav a{font-weight:500}.guide-view .masthead{background:#272019f5}.watch-layout>.guide{background:#30291fe8;border:1px solid #9d845433;border-radius:12px;padding:20px}}

@@ -59,3 +59,7 @@ Media3 1.11.1 is Apache-2.0 licensed; Capacitor Share is MIT licensed. Notices a
 ### Vintage rooms (0.4.0)
 
 Fresh WebView launches choose a different room finish from the previous launch. Resuming the app or switching views keeps the current finish. More → Appearance provides the finish selector and a pin checkbox. The independent decal selector supports Autobots, Decepticons, Cobra, a random selection, or none. Preferences remain on the device. CSS draws the five room textures; bundled source insignia and source credits are in `decor/`. No remote image request is required at runtime.
+
+### Typography and surfaces (0.5.0)
+
+The app and website share locally bundled Cabin text and Fraunces display fonts. Their SIL Open Font License notices ship in `assets/fonts/`. The remote uses grouped physical controls, while mobile navigation uses a small amber position light. Known show prefixes and season/episode labels are shortened for display; the original title remains in expandable source details. The catalog and provider titles are not changed.
