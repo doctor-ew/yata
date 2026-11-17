@@ -2,6 +2,13 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.8 — 2026-11-17
+
+- Added Punky Brewster, Clarissa, Vicki, Maude, Dorothy, Rose, Blanche, Sophia and original-era Firefly as selectable, pinnable companions with credited portraits.
+
+- All 48 companions now rotate character-specific hover and keyboard-focus lines without immediate repeats.
+- Hover notes can mention current and next titles; they are instant, silent and make no paid AI requests. Mobile tap still opens chat.
+
 ## 0.8.7 — 2026-11-17
 
 - Search episode and story titles across the whole library, with existing channel, genre, decade and availability filters. Results preserve collection labels and checked playback sources; descriptions and transcripts are not searched yet.

@@ -1,3 +1,4 @@
+import{createBuddyHoverRotation}from'./buddy-quips.mjs';
 import{buddyNavigation,descriptiveShows,playbackContext,createCompanionNotePolicy}from'./buddy-context.mjs';
 import{ARCADE_GAMES}from'./arcade-games.mjs';
 import{gameRequest,matchingGames,gameTitle}from'./game-intents.mjs';
@@ -41,8 +42,15 @@ export function mountBuddy({getCatalog=()=>({shows:[],settings:{}}),isReady=()=>
  const planner=requestPlan||((...args)=>native()?requestEmbeddedBuddy('channel',verification,...args):webPlanner(...args)),webPlanner=createChannelAi(options);
  const notePolicy=createCompanionNotePolicy();greeting.setAttribute('role','status');greeting.setAttribute('tabindex','0');greeting.setAttribute('aria-label','Companion note. Click or press Escape to dismiss.');greeting.onclick=()=>{greeting.hidden=true;notePolicy.dismiss();};greeting.onkeydown=event=>{if(['Escape','Enter',' '].includes(event.key)){event.preventDefault();greeting.hidden=true;notePolicy.dismiss();}};
  let noteTimer;const readContext=()=>{try{return playbackContext(getPlaybackContext());}catch{return playbackContext(null);}};
+ const hoverRotation=createBuddyHoverRotation();let pointerWithin=false,focusWithin=false;
+ function showHoverNote(){if(!state.enabled||panel.open||doc.hidden)return;const text=hoverRotation.next({persona:state.persona,context:arcade?null:readContext(),previousText:greeting.textContent});if(!text)return;clearTimeout(greetingTimer);greeting.textContent=text;greeting.hidden=false;greetingTimer=setTimeout(()=>greeting.hidden=true,12000);}
+ dock.addEventListener('pointerenter',event=>{if(event.pointerType==='touch')return;const active=pointerWithin||focusWithin;pointerWithin=true;if(!active)showHoverNote();});
+ dock.addEventListener('pointerleave',event=>{if(event.pointerType==='touch')return;pointerWithin=false;if(!focusWithin)greeting.hidden=true;});
+ dock.addEventListener('focusin',()=>{const active=pointerWithin||focusWithin;focusWithin=true;if(!active)showHoverNote();});
+ dock.addEventListener('focusout',event=>{if(event.relatedTarget&&dock.contains(event.relatedTarget))return;focusWithin=false;if(!pointerWithin)greeting.hidden=true;});
+
  function scheduleNote(){clearTimeout(noteTimer);if(arcade||doc.hidden)return;noteTimer=setTimeout(()=>{if(state.enabled&&chatter.checked&&!panel.open&&isReady()){const suggestion=pickBuddyShows(getCatalog(),channelOffer(getCatalog()),state.persona,{limit:1})[0];const text=notePolicy.next({enabled:state.enabled&&chatter.checked,visible:!doc.hidden,panelOpen:panel.open,context:readContext(),suggestionTitle:suggestion?.title,personaId:state.persona.id,personaQuip:state.persona.greeting});if(text){greeting.textContent=text;greeting.hidden=false;clearTimeout(greetingTimer);greetingTimer=setTimeout(()=>greeting.hidden=true,12000);}}scheduleNote();},15000);}
- doc.addEventListener('visibilitychange',()=>{if(doc.hidden){clearTimeout(noteTimer);greeting.hidden=true;}else scheduleNote();});scheduleNote();
+ doc.addEventListener('visibilitychange',()=>{if(doc.hidden){clearTimeout(noteTimer);clearTimeout(greetingTimer);pointerWithin=false;focusWithin=false;greeting.hidden=true;}else scheduleNote();});scheduleNote();
  let greetingTimer;let controller=null,seen='',handoff=null,intake=null;
  const feedback=mountFeedback({say:(text)=>say(text)});
  const feedbackButton=button('Requests & bugs',()=>{intake={kind:'feature',stage:'summary'};say('What would you like me to pass along to Drew? Tell me about a bug, a feature, a channel, or a show. You can ask for a form anytime.');});actions.append(feedbackButton);
