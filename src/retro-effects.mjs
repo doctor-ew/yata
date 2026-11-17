@@ -1,5 +1,5 @@
 export const RETRO_EFFECTS_STORAGE_KEY = 'yata.retro-effects.v1';
-const DEFAULTS = { crt: false, static: false, theme: '80s', staticLevel: 12, staticDuration: 180, staticMode: 'tuning' };
+const DEFAULTS = { crt: true, static: true, theme: '80s', staticLevel: 12, staticDuration: 180, staticMode: 'tuning' };
 const THEMES = ['none', '70s', '80s', '90s'];
 const bounded = (value, min, max, fallback) => typeof value === 'number' && Number.isFinite(value) ? Math.min(max, Math.max(min, value)) : fallback;
 

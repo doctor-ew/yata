@@ -38,8 +38,8 @@
           <div class="screen-top"><span id="channel-label">CH 01 · YATA</span><span id="playback-state">READY TO TUNE</span></div>
           <div id="tv-cabinet" class="tv-cabinet" data-theme="80s">
           <div id="player-shell" class="player-shell">
-            <div id="player-host" class="player-host"></div>
-            <div id="standby" class="standby"><span class="test-pattern" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="standby-logo">YA<span>TA</span></span><p>YES, THESE ARE RERUNS.</p><button id="standby-play" class="button primary">▶ Tune in</button><small>Press play.</small></div>
+            <div id="player-host" class="player-host"></div><div id="source-tuning-static" class="tuning-static" role="status" hidden><span class="tuning-snow" aria-hidden="true"></span><p>It’s probably a rerun.</p><small>Tuning in…</small></div>
+            <div id="standby" class="standby"><span class="test-pattern" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="standby-logo">YA<span>TA</span></span><p>It’s probably a rerun.</p><button id="standby-play" class="button primary">Tune in</button><small>Press play.</small></div>
           </div>
           <aside class="tv-cabinet-controls" aria-label="Television tuning dials"><span class="tv-cabinet-label" aria-hidden="true">YATA · COLOR</span><div class="tv-dial"><button id="dial-next-show" type="button" class="tv-knob" aria-label="Next show" title="Next show"></button><span class="dial-caption" aria-hidden="true">SHOW +</span></div><div class="tv-dial"><button id="dial-random" type="button" class="tv-knob" aria-label="Random channel mix" title="Random channel mix"></button><span class="dial-caption" aria-hidden="true">RANDOM</span></div><div class="tv-speaker" aria-hidden="true"></div></aside>
           </div>
@@ -68,7 +68,7 @@
           <details id="mix-panel" class="mix-panel"></details>
           <details id="episode-information" class="episode-information" hidden></details>
           <div class="watch-info"><div><p id="playing-show" class="eyebrow">ON THE STATION CLOCK</p><h2 id="playing-title">Select a channel.</h2><p id="playing-detail" class="muted"></p></div><a id="original-link" target="_blank" rel="noopener noreferrer" class="source-link" hidden>Original source ↗</a></div>
-          <div class="playback-actions"><button id="tune-live" class="button primary">▶ Tune in live</button></div>
+          <div class="playback-actions"><button id="tune-live" class="button primary">Tune in live</button></div>
           <p class="playback-note">Live follows your station clock. Scrub, skip 10 seconds, or restart to watch on your time. YouTube ads and browser autoplay can affect timing.</p>
   <dialog id="share-dialog" aria-labelledby="share-heading"><h2 id="share-heading">Share this episode</h2><p>Copy this link and send it to a friend.</p><input id="share-url" type="url" readonly aria-label="Episode link"><div><button id="copy-share" class="button primary" type="button">Copy link</button> <button id="close-share" class="button" type="button">Close</button></div><p id="share-copy-status" role="status"></p></dialog>
         </div>

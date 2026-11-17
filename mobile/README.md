@@ -63,3 +63,7 @@ Fresh WebView launches choose a different room finish from the previous launch. 
 ### Typography and surfaces (0.5.0)
 
 The app and website share locally bundled Cabin text and Fraunces display fonts. Their SIL Open Font License notices ship in `assets/fonts/`. The remote uses grouped physical controls, while mobile navigation uses a small amber position light. Known show prefixes and season/episode labels are shortened for display; the original title remains in expandable source details. The catalog and provider titles are not changed.
+
+### Tuning snow (0.6.0)
+
+Standby reads “It’s probably a rerun.” Source loading and buffering display animated monochrome TV snow. Picture readiness, pause, playback errors, and a 12-second recovery timeout dismiss the overlay. Reduced-motion settings keep the noise still. CRT scanlines and tuning static default to on; saved user choices remain respected. Provider controls remain available when playback needs a tap.

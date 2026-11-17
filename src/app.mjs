@@ -393,8 +393,14 @@ function openSource(showId = selectedShowId, episodeId = null) {
 
 let episodeArtPromise;
 const episodeInformation=createEpisodeInformation({root:$('episode-information'),artwork:()=>episodeArtPromise??=fetch(new URL('../data/library-art.json',import.meta.url)).then(r=>r.json()).then(data=>data.shows)});
+let tuningTimer;
+function showTuningStatic(show){
+ clearTimeout(tuningTimer);$('source-tuning-static').hidden=!show;
+ if(show)tuningTimer=setTimeout(()=>{$('source-tuning-static').hidden=true;},12000);
+}
 function stopPlayer() {
   window.dispatchEvent(new Event('yata:playback-changed'));
+  showTuningStatic(false);
   episodeInformation.clear();
   playerGeneration++; session?.dispose(); session = null; active = null; scrubbing = false; scrubSession = null;
   renderTransport();
@@ -405,6 +411,7 @@ function stopPlayer() {
 
 function playerError(message, generation) {
   if (generation !== playerGeneration) return;
+  showTuningStatic(false);
   $('player-error-text').textContent = message;
   $('player-error').hidden = false;
   $('playback-state').textContent = 'PLAYBACK NEEDS ATTENTION';
@@ -417,6 +424,7 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
   retroEffects.pulse();
   active = { showId: show.id, episodeId: episode.id, sourceId: source.id, offset, mode, queueMode, queuePosition };
   $('standby').hidden = true;
+  showTuningStatic(true);
   $('playing-show').textContent = show.title.toUpperCase();
   presentEpisodeTitle(episode,show);
   $('playing-detail').textContent = `${episodeDetail(episode, show.id === MOVIE_SHOW_ID)} · ${mode === 'live' ? 'Station clock · best-effort sync' : offset > 0 ? `From ${playbackTime(offset)}` : 'From the beginning'} · ${providerName[source.provider]}`;
@@ -445,7 +453,9 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
     video.setAttribute('aria-label', `${show.title}: ${episode.title}`);
     $('player-host').append(video);
     session = createVideoSession(video, { url: source.url, offset, onVerified: verified, onEnd: ended, onError: error });
-    video.addEventListener('playing', () => { if (generation === playerGeneration) { $('playback-state').textContent = 'PLAYING · ARCHIVE'; $('player-error').hidden = true; } });
+    for(const event of ['waiting','stalled','seeking'])video.addEventListener(event,()=>{if(generation===playerGeneration&&!video.paused)showTuningStatic(true);});
+    for(const event of ['canplay','loadeddata','pause'])video.addEventListener(event,()=>{if(generation===playerGeneration)showTuningStatic(false);});
+    video.addEventListener('playing', () => { if (generation === playerGeneration) { showTuningStatic(false);$('playback-state').textContent = 'PLAYING · ARCHIVE'; $('player-error').hidden = true; } });
     video.addEventListener('pause', () => { if (generation === playerGeneration) $('playback-state').textContent = 'PAUSED'; });
     episodeInformation.show(show,episode,source,video);
     if(autoPlay)session.play();
@@ -455,11 +465,13 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
     session = createYouTubeSession(holder, { source, offset, origin: location.origin, onVerified: verified, onEnd: ended, onError: error,
       onState: state => {
         if (generation !== playerGeneration) return;
+        showTuningStatic(state===3);
         if (state === 1) { $('playback-state').textContent = 'PLAYING · YOUTUBE'; $('player-error').hidden = true; }
         if (state === 2) $('playback-state').textContent = 'PAUSED';
         if (state === 3) $('playback-state').textContent = 'BUFFERING';
       } });
   } else {
+    showTuningStatic(false);
     const box = element('div', null, 'external-player');
     box.append(element('h3', 'This one’s on Tubi.'), element('p', 'Watch this episode on its original Tubi page. It stays outside your station’s continuous playback.'), link('Watch on Tubi ↗', source.url, 'button primary'));
     $('player-host').append(box); $('playback-state').textContent = 'OPENS ON TUBI';

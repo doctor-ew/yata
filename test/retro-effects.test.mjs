@@ -33,11 +33,11 @@ function fixture(saved = null, { brokenStorage = false, reduced = false, forced 
   return {cabinet, themeSelect, levelInput, durationInput, modeSelect, previewButton, levelOutput, durationOutput, input, body, shell, player, screenToggle, staticToggle, timers, writes, animations, controls, change, reducedQuery, forcedQuery};
 }
 
-test('retro effects default off, validate saved booleans and preserve the provider node', () => {
+test('retro effects default on, validate saved booleans and preserve the provider node', () => {
   for (const saved of [null, '{', '[]', '{"crt":"yes","static":true}', '{"crt":true}']) {
-    const f = fixture(saved); assert.equal(f.screenToggle.checked, false); assert.equal(f.staticToggle.checked, false);
-    assert.equal(f.controls.pulse(), false); assert.equal(f.player.parentElement, f.shell); assert.equal(f.shell.children[0], f.player);
-    const overlay = f.shell.children[1]; assert.equal(overlay.attributes.get('aria-hidden'), 'true'); assert.equal(overlay.hidden, true);
+    const f = fixture(saved); assert.equal(f.screenToggle.checked, true); assert.equal(f.staticToggle.checked, true);
+    assert.equal(f.controls.pulse(), true); assert.equal(f.player.parentElement, f.shell); assert.equal(f.shell.children[0], f.player);
+    const overlay = f.shell.children[1]; assert.equal(overlay.attributes.get('aria-hidden'), 'true'); assert.equal(overlay.hidden, false);
     f.controls.dispose(); assert.deepEqual(f.shell.children, [f.player]);
   }
   const f = fixture('{"crt":true,"static":true}'); assert.ok(f.body.classes.has('crt-mode')); assert.equal(f.staticToggle.checked, true);
@@ -96,7 +96,7 @@ test('cabinet changes persist independently and never move the player', () => {
 });
 
 test('strength and pulse duration are configurable, bounded and reflected', () => {
-  const f = fixture(); assert.equal(f.previewButton.disabled, true);
+  const f = fixture('{"crt":false,"static":false}'); assert.equal(f.previewButton.disabled, true);
   f.change(f.staticToggle, true); assert.equal(f.previewButton.disabled, false);
   f.input(f.levelInput, 99); f.input(f.durationInput, 10000); f.controls.pulse();
   assert.equal(f.levelOutput.textContent, '30%'); assert.equal(f.durationOutput.textContent, '800 ms');
@@ -109,7 +109,7 @@ test('strength and pulse duration are configurable, bounded and reflected', () =
 });
 
 test('continuous static respects toggles, media preferences and cleanup', () => {
-  const f = fixture(); f.input(f.modeSelect, 'continuous', 'change');
+  const f = fixture('{"crt":false,"static":false}'); f.input(f.modeSelect, 'continuous', 'change');
   assert.equal(f.shell.children[1].hidden, true);
   f.change(f.staticToggle, true); const overlay = f.shell.children[1];
   assert.equal(overlay.hidden, false); assert.ok(overlay.classes.has('retro-static-continuous')); assert.equal(f.timers.size, 0);
@@ -139,7 +139,7 @@ test('the original mounting API works without the optional cabinet controls', ()
 });
 
 test('dial pulses bypass the tuning toggle while respecting motion and zero strength', () => {
-  const f = fixture();
+  const f = fixture('{"crt":false,"static":false}');
   assert.equal(f.controls.pulse(), false);
   assert.equal(f.controls.pulse({force:true}), true);
   assert.equal(f.staticToggle.checked, false);
