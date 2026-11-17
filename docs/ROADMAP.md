@@ -1,6 +1,6 @@
 # YATA roadmap
 
-GitHub issues are the source of truth for planned work. These items are proposals, not shipped capabilities.
+GitHub issues are the source of truth for planned work. Status is shown per item; open proposals are not shipped capabilities.
 
 | Proposal | Tracking issue | Scope |
 | --- | --- | --- |
@@ -19,3 +19,8 @@ Bug reports and content/channel suggestions use repository issue forms. Maintain
 ## Analytics boundary
 
 Anonymous aggregate usage is implemented in 0.7.1. See [ANALYTICS.md](ANALYTICS.md) for definitions, retention, viewer controls and dashboard access. Chat transcripts, contact email and private URLs are excluded. Opt-in diagnostics and native background-audio timing remain separate work.
+
+## Shipped follow-ups
+
+- [Saved Channel 00 episode queue, #6](https://github.com/doctor-ew/yata/issues/6): shipped in 0.8.0, including reorder/remove, saved position and guide actions.
+- [Pause/resume follow-up, #7](https://github.com/doctor-ew/yata/issues/7): identified metadata and page-cache reset paths corrected in 0.8.0; automated WebKit checks pass. The original viewer’s physical iPhone retest remains open.
