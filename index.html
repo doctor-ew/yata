@@ -14,7 +14,9 @@
   <meta property="og:title" content="YATA · It’s probably a rerun.">
   <meta property="og:description" content="Channel-surf ’70s–’90s TV, obscure cartoons, sci-fi, and comedies. Retro TV guide, optional vintage commercials, and personal AI-built channels.">
   <meta property="og:url" content="https://doctorew.com/tv/">
-  <link rel="stylesheet" href="style.css?v=creator-credits-1">
+  <link rel="stylesheet" href="style.css?v=buddy-1">
+  <link rel="stylesheet" href="appearance.css">
+  <link rel="stylesheet" href="buddy.css">
   <script type="module" src="src/app.mjs"></script>
 </head>
 <body>
@@ -146,6 +148,7 @@
         <p id="commercial-description">Breaks follow complete stories. Choose a fixed count or a random 1–3. Always skippable.</p>
         <p id="stream-description">Random episodes from random shows. Multipart stories stay together.</p>
       </section>
+    <section id="web-room-settings" aria-label="Room appearance"><h3>The room.</h3></section>
     <div class="settings-done"><button id="done-stream-settings" class="button primary" type="button">Done</button></div>
   </dialog>
   <dialog id="show-dialog" aria-labelledby="show-title"><div class="dialog-top"><p class="eyebrow">IN YOUR COLLECTION</p><button class="icon-button" id="close-show" aria-label="Close show details">×</button></div><h2 id="show-title"></h2><div id="show-episodes"></div><div class="dialog-actions"><button id="show-shuffle" class="button primary">▶ Shuffle this show</button><button id="show-add" class="button primary">+ Add an episode source</button><a id="show-art-source" target="_blank" rel="noopener noreferrer" hidden>Show &amp; artwork reference ↗</a><a id="show-imdb" target="_blank" rel="noopener noreferrer" hidden>IMDb reference ↗</a></div></dialog>

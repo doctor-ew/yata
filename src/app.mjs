@@ -1,3 +1,5 @@
+import{mountBuddy}from'./buddy-ui.mjs';
+import{initializeAppearance,mountAppearance}from'./appearance.mjs';
 import{displayEpisodeTitle}from'./display-title.mjs';
 import {createLineupLink,parseLineupLink,applySharedLineup} from './lineup-share.mjs';
 import {createEpisodeInformation} from './episode-information-ui.mjs';
@@ -28,6 +30,8 @@ import { parseSourceUrl, parseDuration, importArchive, validateCatalog, parseCat
   readCatalog, buildSchedule, schedulePosition, stationSource, timeLabel, MAX_IMPORT_BYTES, COMMERCIAL_SHOW_ID, STORAGE_KEY } from './domain.mjs';
 import { createVideoSession, createYouTubeSession } from './players.mjs';
 
+initializeAppearance();
+if(!document.documentElement.classList.contains('native-app'))mountAppearance(document.getElementById('web-room-settings'));
 const $ = id => document.getElementById(id);
 const staticHosting = document.querySelector('meta[name="drew-tv-hosting"]')?.content === 'static';
 const ownerMode = !staticHosting && ['127.0.0.1','localhost','[::1]'].includes(location.hostname);
@@ -55,7 +59,9 @@ let navCatalog = null, navActive = null, previousEntry = null, nextEntry = null;
 let sharedTarget = null;
 let libraryMetadata={},libraryUpdatedAt=null;
 let arcadeUnlocked=readArcadeUnlock();
-installArcadeEntry({open:()=>{arcadeUnlocked=true;saveArcadeUnlock();renderChannels();notify('Channel 03 unlocked. The arcade is open.');$('arcade-channel')?.focus();}});
+const unlockArcade=()=>{arcadeUnlocked=true;saveArcadeUnlock();renderChannels();notify('Channel 03 unlocked. The arcade is open.');};
+installArcadeEntry({open:()=>{unlockArcade();$('arcade-channel')?.focus();}});
+window.addEventListener('yata:unlock-arcade',unlockArcade);
 const providerName = { archive: 'Internet Archive', youtube: 'YouTube', tubi: 'Tubi', adultswim: 'Adult Swim' };
 const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
 const dialFeedback = mountDialFeedback({ windowRef: window, storage, toggle: $('dial-feedback'), getVolume: () => transportState()?.volume ?? preferredAudio?.volume ?? 1, getMuted: () => transportState()?.muted ?? preferredAudio?.muted ?? false, pulse: () => retroEffects.pulse({ force: true }) });
@@ -83,6 +89,8 @@ document.querySelector('.browse-tabs').addEventListener('keydown',event=>{if(!['
 window.addEventListener('hashchange',()=>{if(['#guide','#library'].includes(location.hash))showBrowseView(location.hash.slice(1),{scroll:true});else if(location.hash==='#watch'){showBrowseView('library');$('watch').scrollIntoView({block:'start'});}});
 showBrowseView(location.hash==='#guide'?'guide':'library');
 mountChannelBuilder({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onTune:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();$('player-shell').scrollIntoView({block:'center',behavior:'smooth'});return true;}});
+
+mountBuddy({getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onShow:openShow});
 
 $('open-stream-settings').addEventListener('click',()=>$('stream-settings').showModal());
 for(const id of ['close-stream-settings','done-stream-settings'])$(id).addEventListener('click',()=>$('stream-settings').close());

@@ -71,3 +71,13 @@ Standby reads “It’s probably a rerun.” Source loading and buffering displa
 ### Samsung long-press correction (0.6.1)
 
 The header logo blocks native text selection and handles both the pointer hold and Android WebView context-menu gesture. Native long-press recognition can send pointercancel before contextmenu; the context-menu handler opens the secret controls directly. A moving finger cancels the timed hold; a normal short tap keeps home navigation. Verified on Drew’s Samsung with ADB long-press and physical input taps through the full sequence.
+
+### TV buddy and shared room finishes (0.7.0)
+
+Web and Android share 18 character-inspired companions and 11 room finishes. A buddy can remain pinned, rotate on launch, or be hidden and restored from settings. Portraits use existing portfolio artwork and original-era images; credits ship with the app. The buddy offers checked catalog selections and opens the channel builder with the selected host. Buddy chat requires the same interaction-only Turnstile verification as doctorew.com. Android opens a verified web continuation and can return a reply or reviewed lineup to the app; native localhost origins are not exempted from verification.
+
+Feedback is conversational. The buddy gathers details and previews the request before opening a public GitHub issue draft. The viewer must review and submit it on GitHub. The fallback form opens the same destination. No SES notifications or email collection are used. Transcripts and verification grants remain in memory.
+
+The Konami sequence also works in buddy chat as words, arrows, key names, or compact notation. It unlocks the existing Channel 03 entrance for the current session; it is a navigation secret, not an access-control mechanism.
+
+Buddy requests use a dedicated server prompt, finite host validation, input and output moderation, bounded output, Turnstile and existing quotas. Replies render as plain text and cannot execute tools or publish requests. Common instruction-override attempts are redirected before model generation. These controls reduce abuse; prompt-injection detection is not a guarantee that every hostile wording will be recognized.

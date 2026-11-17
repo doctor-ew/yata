@@ -12,7 +12,7 @@ function loadTurnstile() {
     script.onerror=fail;script.onload=()=>{clearTimeout(timer);if(window.turnstile)resolve(window.turnstile);else fail();};document.head.append(script);
   });return loading;
 }
-async function challenge(sitekey,container,signal) {
+export async function challenge(sitekey,container,signal) {
   if(!sitekey)throw Error('Channel building is unavailable while verification is configured.');
   const api=await loadTurnstile();if(signal.aborted)throw Error('Request cancelled.');
   return new Promise((resolve,reject)=>{
@@ -22,12 +22,14 @@ async function challenge(sitekey,container,signal) {
     try {widget=api.render(container,{sitekey,action:'page',execution:'execute',appearance:'interaction-only','response-field':false,callback:finish,'error-callback':abort,'expired-callback':abort,'timeout-callback':abort});if(!done)api.execute(container);else api.remove(widget);}catch{finish();}
   });
 }
-export function createChannelAi({sitekey,container,fetcher=fetch,verify=challenge}={}) {
+export function createChannelAi({sitekey,container,fetcher=fetch,verify=challenge,mode='channel',responseKey='plan'}={}) {
   let grant=null;
   async function post(path,body,signal){const response=await fetcher(base+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal});let result;try{result=await response.json();}catch{throw Error('The host could not be reached. Try again.');}if(!response.ok){if(response.status===401)grant=null;throw Error(typeof result.error==='string'?result.error:'The host could not finish. Try again.');}return result;}
   return async (request,signal,onPhase=()=>{})=>{
     if(!grant||grant.expiresAt*1000<Date.now()+30000){onPhase('Checking this browser…');const turnstileToken=await verify(sitekey,container,signal);grant=await post('/session',{turnstileToken},signal);if(typeof grant.sessionToken!=='string'||!Number.isFinite(grant.expiresAt)){grant=null;throw Error('Invalid browser verification. Try again.');}}
-    if(signal.aborted)throw Error('Request cancelled.');onPhase('The programming department is arguing over your lineup…');
-    return (await post('/chatbot',{...request,mode:'channel',sessionToken:grant.sessionToken},signal)).plan;
+    if(signal.aborted)throw Error('Request cancelled.');onPhase(mode==='channel'?'The programming department is arguing over your lineup…':'Your buddy is thinking…');
+    return (await post('/chatbot',{...request,...(['channel','buddy'].includes(mode)?{mode}:{}),sessionToken:grant.sessionToken},signal))[responseKey];
   };
 }
+
+export function createBuddyChat(options={}){const request=createChannelAi({...options,mode:'buddy',responseKey:'answer'});return async(...args)=>{const answer=await request(...args);if(typeof answer!=='string'||!answer.trim()||answer.length>12000)throw Error('Your buddy sent an unreadable reply. Try again.');return answer;};}

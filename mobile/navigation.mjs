@@ -13,6 +13,7 @@ export function mountMobileNavigation({android,report,actions}){
  const channels=group('Channels');for(const[label,id]of[['Make a channel','open-channel-builder'],['Playback settings','open-stream-settings']])channels.append(button(label,()=>invoke(id)));
  for(const id of['remix-panel','mix-panel'])channels.append(doc.getElementById(id));
  mountAppearance(group('Appearance'));
+ const companion=group('Company');companion.append(button('Your TV buddy',()=>{menu.close();window.dispatchEvent(new Event('yata:open-buddy'));}));
  const about=group('About');const credits=doc.querySelector('.creator-byline');if(credits)about.append(credits);const footer=doc.querySelector('footer');if(footer)about.append(footer);
  const close=button('Done',()=>menu.close());close.classList.add('native-menu-close');menu.append(close);doc.body.append(menu);
  const more=button('⋯',()=>{check.checked=doc.querySelector('#share-time').checked;check.disabled=doc.querySelector('#share-time').disabled;menu.showModal();});more.id='native-more-button';more.setAttribute('aria-label','More options');more.setAttribute('aria-haspopup','dialog');doc.querySelector('.masthead').append(more);

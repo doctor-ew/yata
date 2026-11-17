@@ -1,20 +1,7 @@
 import {availableDialShows} from './dials.mjs';
-export const CHANNEL_HOSTS = [
-  {id:'stubing',name:'Captain Stubing'}, {id:'arnold',name:'Arnold Jackson'},
-  {id:'jabberjaw',name:'Jabberjaw'}, {id:'benson',name:'Benson'},
-  {id:'mrt',name:'Mr. T'}, {id:'murdock',name:'Murdock'},
-  {id:'twiki',name:'Twiki'}, {id:'starbuck',name:'Starbuck'},
-];
-export const HOST_PORTRAITS = {
-  jabberjaw:{src:'https://doctorew.com/host-portraits/jabberjaw-character-v1.jpg',caption:"Jabberjaw \u00b7 original Hanna-Barbera series"},
-  twiki:{src:'https://doctorew.com/host-portraits/twiki-character-v1.jpg',caption:"Twiki with Dr. Theopolis \u00b7 Buck Rogers"},
-  stubing:{src:'https://doctorew.com/host-portraits/stubing-character-v1.jpg',caption:"Gavin MacLeod as Captain Stubing"},
-  arnold:{src:'https://doctorew.com/host-portraits/arnold-character-v1.jpg',caption:"Gary Coleman as Arnold Jackson"},
-  benson:{src:'https://doctorew.com/host-portraits/benson.jpg',caption:'Robert Guillaume as Benson'},
-  mrt:{src:'https://doctorew.com/host-portraits/mrt-character-v1.png',caption:"Mr. T as B. A. Baracus \u00b7 existing portfolio artwork"},
-  starbuck:{src:'https://doctorew.com/host-portraits/starbuck-character-v1.jpg',caption:"Dirk Benedict as Starbuck, 1978"},
-  murdock:{src:'https://www.doctorew.com/assets/gpt_personalities/murdock.png',caption:'Murdock · existing portfolio artwork'},
-};
+import{BUDDY_PERSONAS}from'./buddy-personas.mjs';
+export const CHANNEL_HOSTS=BUDDY_PERSONAS.map(({id,name})=>({id,name}));
+export const HOST_PORTRAITS=Object.fromEntries(BUDDY_PERSONAS.map(p=>[p.id,{src:p.image,caption:p.name,credit:p.credit}]));
 export function chooseHost(previous=null, random=Math.random) {
   const choices=CHANNEL_HOSTS.filter(host=>host.id!==previous);
   const sample=random();

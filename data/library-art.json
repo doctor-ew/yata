@@ -3651,6 +3651,54 @@
       "imageRole": "scene",
       "imageCreditUrl": "https://archive.org/details/walter-lantzs-chilly-willy",
       "type": "Animation"
+    },
+    "the-dukes-animated": {
+      "title": "The Dukes (1983)",
+      "premiered": "1983-02-05",
+      "ended": "1983-10-29",
+      "year": 1983,
+      "genres": [
+        "Comedy",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/29705/the-dukes",
+      "tvmazeId": 29705,
+      "image": "assets/show-art/the-dukes-animated.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/118/295037.jpg",
+      "imageRole": "title-art"
+    },
+    "pac-man-1982": {
+      "title": "Pac-Man (1982)",
+      "premiered": "1982-09-25",
+      "ended": "1983-11-05",
+      "year": 1982,
+      "genres": [
+        "Children",
+        "Family"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/10112/pac-man",
+      "tvmazeId": 10112,
+      "image": "assets/show-art/pac-man-1982.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/34/86329.jpg",
+      "imageRole": "title-art"
+    },
+    "great-space-coaster": {
+      "title": "The Great Space Coaster (1981)",
+      "premiered": null,
+      "ended": null,
+      "year": 1981,
+      "genres": [
+        "Children"
+      ],
+      "type": "Variety",
+      "sourceUrl": "https://www.tvmaze.com/shows/7132/the-great-space-coaster",
+      "tvmazeId": 7132,
+      "image": "assets/show-art/great-space-coaster.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/26/66659.jpg",
+      "imageRole": "title-art"
     }
   }
 }

@@ -7,4 +7,4 @@ const env={...process.env,JAVA_HOME:javaHome,ANDROID_HOME:sdk,ANDROID_SDK_ROOT:s
 execFileSync(process.execPath,['build.mjs'],{cwd:root,env,stdio:'inherit'});
 execFileSync(path.join(root,'node_modules/.bin/cap'),['sync'],{cwd:root,env,stdio:'inherit'});
 execFileSync(path.join(root,'android/gradlew'),['-p',path.join(root,'android'),'assembleDebug'],{cwd:root,env,stdio:'inherit'});
-await mkdir(path.join(root,'artifacts'),{recursive:true});await copyFile(path.join(root,'android/app/build/outputs/apk/debug/app-debug.apk'),path.join(root,'artifacts/YATA-0.6.2-android-debug.apk'));console.log('APK: artifacts/YATA-0.6.2-android-debug.apk');
+await mkdir(path.join(root,'artifacts'),{recursive:true});await copyFile(path.join(root,'android/app/build/outputs/apk/debug/app-debug.apk'),path.join(root,'artifacts/YATA-0.7.0-android-debug.apk'));console.log('APK: artifacts/YATA-0.7.0-android-debug.apk');

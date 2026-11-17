@@ -1,0 +1,1635 @@
+{
+  "checkedAt": "2026-11-17T14:51:05.255986+00:00",
+  "provider": "archive",
+  "notes": [
+    "Fresh source metadata and small HTTP video-range checks. Availability does not establish rights, full playback, English audio, series completeness or enduring access. No master publication performed. Original .mp4 files preferred over duplicate .ia.mp4 derivatives.",
+    "Taxi already exists in current master with114 source programs; no duplicate show added. Who’s the Boss? currently has only an external Tubi series record with no runtime, not a station episode."
+  ],
+  "rejected": [
+    {
+      "itemId": "TheGreatSpaceCoasterEpisode1BrainFreeze",
+      "reason": "286.91-second HA Animation fan upload; not established as an original 1980s episode."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=TIeN4mKN240",
+      "reason": "Official Sony channel compilation/live nonstop stream; not split into invented independent episodes."
+    },
+    {
+      "itemId": "the-pac-man-rubix-hour-episode",
+      "reason": "3307.24-second combined Pac-Man/Rubik hour compilation not included with the six distinct Pac-Man segments."
+    },
+    {
+      "itemId": "1988-various",
+      "metadataUrl": "https://archive.org/metadata/1988-various",
+      "reason": "Metadata labels the Who’s the Boss? portion as partial (2:27:35–2:29:32); not a full episode."
+    },
+    {
+      "itemId": "WTB20150927",
+      "metadataUrl": "https://archive.org/metadata/WTB20150927",
+      "reason": "A 2015 stream ending in the Jury podcast, not established as the sitcom."
+    },
+    {
+      "itemId": "afrts-aen-satellite-benson-c.-h.-i.-p.-s-whos-the-boss-benson-bob-hope-lampoons-tv-1985",
+      "metadataUrl": "https://archive.org/metadata/afrts-aen-satellite-benson-c.-h.-i.-p.-s-whos-the-boss-benson-bob-hope-lampoons-tv-1985",
+      "reason": "20529.4-second mixed AFRTS VHS tape; no independent sitcom episode boundaries established."
+    },
+    {
+      "itemId": "vhs-tape-1987.03.31-ksfy-whos-the-boss-growing-pains-moonlighting-kelo-knots-lan_202409",
+      "metadataUrl": "https://archive.org/metadata/vhs-tape-1987.03.31-ksfy-whos-the-boss-growing-pains-moonlighting-kelo-knots-lan_202409",
+      "reason": "21423.05-second mixed TV tape; no independent episode boundaries established."
+    },
+    {
+      "itemId": "vhs-tape-1989.01.07-kelo-the-fullfillment-of-mary-gray-news-wtbs-bewitched-ksfy-",
+      "metadataUrl": "https://archive.org/metadata/vhs-tape-1989.01.07-kelo-the-fullfillment-of-mary-gray-news-wtbs-bewitched-ksfy-",
+      "reason": "21361.87-second mixed TV tape; no independent episode boundaries established."
+    }
+  ],
+  "excluded": [
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "1. The Great Space Coaster Telethon.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "2. The Great Space Coaster Sugar Ray Leonard.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "3. The Great Space Coaster Pegasus.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "4. The Great Space Coaster Jim Martin and Sugar Ray Leonard.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "5. The Great Space Coaster.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "6. The Great Space Coaster Aileen Quinn 3.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "7. The Great Space Coaster Anti-Gravity Day.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "8. The Great Space Coaster Rocksteady Dancers.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "9. The Great Space Coaster Episode 11.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster FULL Episode 105 TGSC- Gary Gnu's No Gnews Stand and Speed Reader Song.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster FULL Episode 91 TGSC- Baxter hired to fix Gary Gnu's No Gnews TV.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster FULL episode 110 TGSC Gary Fires His Crew.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster Supershow.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 115 Cartoon only TGSC.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 115 TGSC (without cartoon).ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 69 TGSC including  Hello Texas  and La Linea.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 73 TGSC.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 87 TGSC with Charlotte Rae.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 93 TGSC Goriddle's weather station.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 95 TGSC Gary Gnu gets Hypnotized.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 97 TGSC with Sally Struthers.ia.mp4",
+      "reason": "Duplicate .ia derivative of source .mp4"
+    }
+  ],
+  "shows": [
+    {
+      "showId": "the-dukes-animated",
+      "title": "The Dukes (1983 animated)",
+      "channel": "cartoons",
+      "items": [
+        {
+          "itemId": "TheDukes",
+          "title": "The Dukes",
+          "metadataUrl": "https://archive.org/metadata/TheDukes"
+        }
+      ],
+      "notes": "Original 1983 Hanna-Barbera cartoon; 20 separately labeled source programs. Source season/episode labels retained.",
+      "episodes": [
+        {
+          "id": "archive-TheDukes-d911c82d8321ac73",
+          "title": "The Dukes S01E01 Put Up Your Dukes",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1339.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-d911c82d8321ac73",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E01%20Put%20Up%20Your%20Dukes.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-d04a49b9aa34a5d9",
+          "title": "The Dukes S01E02 Jungle Jitters",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1337.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-d04a49b9aa34a5d9",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E02%20Jungle%20Jitters.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-90441c84bc3f33c4",
+          "title": "The Dukes S01E03 The Dukes in Venice",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1332.44,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-90441c84bc3f33c4",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E03%20The%20Dukes%20in%20Venice.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-d1fbcdab4b949436",
+          "title": "The Dukes S01E04 Morocco Bound",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1335.74,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-d1fbcdab4b949436",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E04%20Morocco%20Bound.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-ea00f0960b0daa67",
+          "title": "The Dukes S01E05 The Secret Satellite",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1339.35,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-ea00f0960b0daa67",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E05%20The%20Secret%20Satellite.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-e262150c9b9893b1",
+          "title": "The Dukes S01E06 The Dukes of London",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1339.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-e262150c9b9893b1",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E06%20The%20Dukes%20of%20London.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-8d2cbef1890b511d",
+          "title": "The Dukes S01E07 The Greece Fleece",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1338.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8d2cbef1890b511d",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E07%20The%20Greece%20Fleece.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-3bc68fa7903d24f8",
+          "title": "The Dukes S01E08 The Dukes in India",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1333.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3bc68fa7903d24f8",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E08%20The%20Dukes%20in%20India.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-0a150801087abe7b",
+          "title": "The Dukes S01E09 The Dukes in Uzbekistan",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1336.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0a150801087abe7b",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E09%20The%20Dukes%20in%20Uzbekistan.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-5677d5acacb4e1c0",
+          "title": "The Dukes S01E10 The Dukes in Hong Kong",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1339.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5677d5acacb4e1c0",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E10%20The%20Dukes%20in%20Hong%20Kong.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-c5278be4f7fc5faf",
+          "title": "The Dukes S01E11 The Dukes of Scotland",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1336.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-c5278be4f7fc5faf",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E11%20The%20Dukes%20of%20Scotland.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-6934a61c2463b399",
+          "title": "The Dukes S01E12 The Dukes Do Paris",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1334.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6934a61c2463b399",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E12%20The%20Dukes%20Do%20Paris.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-359b95a98f75b068",
+          "title": "The Dukes S01E13 The Dukes in Switzerland",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1337.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-359b95a98f75b068",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E13%20The%20Dukes%20in%20Switzerland.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-3759ec43eb5fcdc7",
+          "title": "The Dukes S02E01 Boss O'Hogg and the Little People",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1339.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3759ec43eb5fcdc7",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E01%20Boss%20O%27Hogg%20and%20the%20Little%20People.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-eb7d651d4c4f8b04",
+          "title": "The Dukes S02E02 Tales of the Vienna Hoods",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1331.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-eb7d651d4c4f8b04",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E02%20Tales%20of%20the%20Vienna%20Hoods.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-7d37217cc3439879",
+          "title": "The Dukes S02E03 The Kid from Madrid",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 1338.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7d37217cc3439879",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E03%20The%20Kid%20from%20Madrid.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-c24b5cb7a3434ea0",
+          "title": "The Dukes S02E04 A Dickens of a Christmas",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 1334.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-c24b5cb7a3434ea0",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E04%20A%20Dickens%20of%20a%20Christmas.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-e58235af9b18febe",
+          "title": "The Dukes S02E05 The Canadian Caper",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 1339.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-e58235af9b18febe",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E05%20The%20Canadian%20Caper.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-f874d79299e7cc7d",
+          "title": "The Dukes S02E06 The Dukes in Hollywood",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 1350.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-f874d79299e7cc7d",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E06%20The%20Dukes%20in%20Hollywood.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-TheDukes-367639da79e02a1f",
+          "title": "The Dukes S02E07 A Hogg in the Foggy Bog",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 1338.24,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-367639da79e02a1f",
+              "provider": "archive",
+              "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E07%20A%20Hogg%20in%20the%20Foggy%20Bog.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "great-space-coaster",
+      "title": "The Great Space Coaster (1981)",
+      "channel": "cartoons",
+      "items": [
+        {
+          "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+          "title": "The Great Space Coaster (1981-86)",
+          "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea"
+        }
+      ],
+      "notes": "Original syndicated puppet/variety program, not a Nickelodeon original. Saturday Morning includes puppets. This collection contains complete recordings, a supershow compilation, an explicitly labeled cartoon-only segment and an explicitly labeled episode without its cartoon; source labels are retained, not a complete-series claim.",
+      "episodes": [
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-66fe2c15bd334334",
+          "title": "1. The Great Space Coaster Telethon",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": 1770.69,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-66fe2c15bd334334",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/1.%20The%20Great%20Space%20Coaster%20Telethon.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-5b2fa23d02d1347f",
+          "title": "2. The Great Space Coaster Sugar Ray Leonard",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": 1758.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5b2fa23d02d1347f",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/2.%20The%20Great%20Space%20Coaster%20Sugar%20Ray%20Leonard.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-682b9781f7d517ca",
+          "title": "3. The Great Space Coaster Pegasus",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": 1585.41,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-682b9781f7d517ca",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/3.%20The%20Great%20Space%20Coaster%20Pegasus.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-0826e2f38fd3e85d",
+          "title": "4. The Great Space Coaster Jim Martin and Sugar Ray Leonard",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": 1788.43,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0826e2f38fd3e85d",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/4.%20The%20Great%20Space%20Coaster%20Jim%20Martin%20and%20Sugar%20Ray%20Leonard.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-1c340e907303f4b2",
+          "title": "5. The Great Space Coaster",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": 1715.51,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1c340e907303f4b2",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/5.%20The%20Great%20Space%20Coaster.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-7d23cc19eb1ce647",
+          "title": "6. The Great Space Coaster Aileen Quinn 3",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": 1686.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7d23cc19eb1ce647",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/6.%20The%20Great%20Space%20Coaster%20Aileen%20Quinn%203.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-f32cc00bd91dd75b",
+          "title": "7. The Great Space Coaster Anti-Gravity Day",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": 1755.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-f32cc00bd91dd75b",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/7.%20The%20Great%20Space%20Coaster%20Anti-Gravity%20Day.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-bf9581e05e370ab4",
+          "title": "8. The Great Space Coaster Rocksteady Dancers",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": 1710.15,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-bf9581e05e370ab4",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/8.%20The%20Great%20Space%20Coaster%20Rocksteady%20Dancers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-7e906e00e5dd2f39",
+          "title": "9. The Great Space Coaster Episode 11",
+          "season": 0,
+          "number": 11,
+          "durationSeconds": 1755.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7e906e00e5dd2f39",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/9.%20The%20Great%20Space%20Coaster%20Episode%2011.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-682746aef66d4ece",
+          "title": "The Great Space Coaster FULL Episode 105 TGSC- Gary Gnu's No Gnews Stand and Speed Reader Song",
+          "season": 0,
+          "number": 105,
+          "durationSeconds": 1429.63,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-682746aef66d4ece",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20FULL%20Episode%20105%20TGSC-%20Gary%20Gnu%27s%20No%20Gnews%20Stand%20and%20Speed%20Reader%20Song.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-ca8fe10b9894b5c7",
+          "title": "The Great Space Coaster FULL Episode 91 TGSC- Baxter hired to fix Gary Gnu's No Gnews TV",
+          "season": 0,
+          "number": 91,
+          "durationSeconds": 1432.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-ca8fe10b9894b5c7",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20FULL%20Episode%2091%20TGSC-%20Baxter%20hired%20to%20fix%20Gary%20Gnu%27s%20No%20Gnews%20TV.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-65c76d3ae8bb87e1",
+          "title": "The Great Space Coaster FULL episode 110 TGSC Gary Fires His Crew",
+          "season": 0,
+          "number": 110,
+          "durationSeconds": 1473.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-65c76d3ae8bb87e1",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20FULL%20episode%20110%20TGSC%20Gary%20Fires%20His%20Crew.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-695fb278dd03b404",
+          "title": "The Great Space Coaster Supershow",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": 3346.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-695fb278dd03b404",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20Supershow.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-1c13a521c16c102a",
+          "title": "The Great Space Coaster episode 115 Cartoon only TGSC",
+          "season": 0,
+          "number": 115,
+          "durationSeconds": 290.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1c13a521c16c102a",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%20115%20Cartoon%20only%20TGSC.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-b4bf71da9976071e",
+          "title": "The Great Space Coaster episode 115 TGSC (without cartoon)",
+          "season": 0,
+          "number": 115,
+          "durationSeconds": 1163.46,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-b4bf71da9976071e",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%20115%20TGSC%20%28without%20cartoon%29.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-0e447ca1007ce4c6",
+          "title": "The Great Space Coaster episode 69 TGSC including  Hello Texas  and La Linea",
+          "season": 0,
+          "number": 69,
+          "durationSeconds": 1429.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0e447ca1007ce4c6",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%2069%20TGSC%20including%20%20Hello%20Texas%20%20and%20La%20Linea.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-8d7c907e09ba9d60",
+          "title": "The Great Space Coaster episode 73 TGSC",
+          "season": 0,
+          "number": 73,
+          "durationSeconds": 1433.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8d7c907e09ba9d60",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%2073%20TGSC.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-e2ee7f7120f7e1b9",
+          "title": "The Great Space Coaster episode 87 TGSC with Charlotte Rae",
+          "season": 0,
+          "number": 87,
+          "durationSeconds": 1431.49,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-e2ee7f7120f7e1b9",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%2087%20TGSC%20with%20Charlotte%20Rae.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-16e3df6797607b09",
+          "title": "The Great Space Coaster episode 93 TGSC Goriddle's weather station",
+          "season": 0,
+          "number": 93,
+          "durationSeconds": 1420.44,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16e3df6797607b09",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%2093%20TGSC%20Goriddle%27s%20weather%20station.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-20eb464bb9c9e3bd",
+          "title": "The Great Space Coaster episode 95 TGSC Gary Gnu gets Hypnotized",
+          "season": 0,
+          "number": 95,
+          "durationSeconds": 1431.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20eb464bb9c9e3bd",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%2095%20TGSC%20Gary%20Gnu%20gets%20Hypnotized.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea-8ac24e98f8328fb6",
+          "title": "The Great Space Coaster episode 97 TGSC with Sally Struthers",
+          "season": 0,
+          "number": 97,
+          "durationSeconds": 1449.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8ac24e98f8328fb6",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%2097%20TGSC%20with%20Sally%20Struthers.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "pac-man-1982",
+      "title": "Pac-Man (1982)",
+      "channel": "cartoons",
+      "items": [
+        {
+          "itemId": "hanna-barbera-pac-man-s-01-e-02-picnic-in-pac-land",
+          "title": "Hanna Barbera Pac Man ( S 01 E 02 Picnic In Pac Land)",
+          "metadataUrl": "https://archive.org/metadata/hanna-barbera-pac-man-s-01-e-02-picnic-in-pac-land"
+        },
+        {
+          "itemId": "hanna-barbera-pac-man-s-01-e-22-the-great-power-pellet-robbery",
+          "title": "Hanna Barbera Pac-Man (Season 01 Episode 22 - The Great Power Pellet Robbery)",
+          "metadataUrl": "https://archive.org/metadata/hanna-barbera-pac-man-s-01-e-22-the-great-power-pellet-robbery"
+        },
+        {
+          "itemId": "hanna-barbera-pac-man-s-02-e-01-heres-super-pac",
+          "title": "Hanna Barbera Pac-Man (Season 02 Episode 01 - Here's Super-Pac)",
+          "metadataUrl": "https://archive.org/metadata/hanna-barbera-pac-man-s-02-e-01-heres-super-pac"
+        },
+        {
+          "itemId": "hanna-barbera-pac-man-s-02-e-02-hey-hey-hey...-its-p.-j.",
+          "title": "Hanna Barbera Pac Man (Season 02 Episode 02 - Hey, Hey, Hey... It's P. J.)",
+          "metadataUrl": "https://archive.org/metadata/hanna-barbera-pac-man-s-02-e-02-hey-hey-hey...-its-p.-j."
+        },
+        {
+          "itemId": "hanna-barbera-pac-man-s-02-e-03-the-super-pac-bowl",
+          "title": "Hanna Barbera Pac-Man (Season 02 Episode 03 - The Super-Pac-Bowl)",
+          "metadataUrl": "https://archive.org/metadata/hanna-barbera-pac-man-s-02-e-03-the-super-pac-bowl"
+        },
+        {
+          "itemId": "hanna-barbera-pac-man-s-02-e-04-journey-into-the-pac-past",
+          "title": "Hanna Barbera Pac-Man ( Season 02 Episode 04 - Journey Into The Pac-Past)",
+          "metadataUrl": "https://archive.org/metadata/hanna-barbera-pac-man-s-02-e-04-journey-into-the-pac-past"
+        }
+      ],
+      "notes": "Original Hanna-Barbera 1982 series, not the modern Ghostly Adventures remake. Six individually labeled approximately 11–12 minute cartoon segments. Source episode numbering retained; do not count segments as complete half-hour broadcasts.",
+      "episodes": [
+        {
+          "id": "archive-hanna-barbera-pac-man-s-01-e-02-picnic-in-pac-land-e61df975d4118f99",
+          "title": "Hanna Barbera Pac-Man (S01 - E02 - Picnic In Pac-Land)",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 725.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-e61df975d4118f99",
+              "provider": "archive",
+              "url": "https://archive.org/download/hanna-barbera-pac-man-s-01-e-02-picnic-in-pac-land/Hanna%20Barbera%20Pac-Man%20%28S01%20-%20E02%20-%20Picnic%20In%20Pac-Land%29.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hanna-barbera-pac-man-s-01-e-22-the-great-power-pellet-robbery-fce5d1f285a1eeef",
+          "title": "Hanna Barbera Pac-Man (S01 - E22 - The Great Power Pellet Robbery)",
+          "season": 1,
+          "number": 22,
+          "durationSeconds": 736.0,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-fce5d1f285a1eeef",
+              "provider": "archive",
+              "url": "https://archive.org/download/hanna-barbera-pac-man-s-01-e-22-the-great-power-pellet-robbery/Hanna%20Barbera%20Pac-Man%20%28S01%20-%20E22%20-%20The%20Great%20Power%20Pellet%20Robbery%29.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hanna-barbera-pac-man-s-02-e-01-heres-super-pac-3a5f95b0ccc6426b",
+          "title": "Hanna Barbera Pac-Man (S02 - E01 - Here's Super Pac)",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 669.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3a5f95b0ccc6426b",
+              "provider": "archive",
+              "url": "https://archive.org/download/hanna-barbera-pac-man-s-02-e-01-heres-super-pac/Hanna%20Barbera%20Pac-Man%20%28S02%20-%20E01%20-%20Here%27s%20Super%20Pac%29.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hanna-barbera-pac-man-s-02-e-02-hey-hey-hey...-its-p.-j.-94223904be30c9db",
+          "title": "Hanna Barbera Pac-Man (S02 - E02 - Hey, Hey, Hey... It's P.J.)",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 668.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-94223904be30c9db",
+              "provider": "archive",
+              "url": "https://archive.org/download/hanna-barbera-pac-man-s-02-e-02-hey-hey-hey...-its-p.-j./Hanna%20Barbera%20Pac-Man%20%28S02%20-%20E02%20-%20Hey%2C%20Hey%2C%20Hey...%20It%27s%20P.J.%29.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hanna-barbera-pac-man-s-02-e-03-the-super-pac-bowl-413eb96026c0286e",
+          "title": "Hanna Barbera Pac-Man (S02 - E03 - The Super Pac-Bowl)",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 701.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-413eb96026c0286e",
+              "provider": "archive",
+              "url": "https://archive.org/download/hanna-barbera-pac-man-s-02-e-03-the-super-pac-bowl/Hanna%20Barbera%20Pac-Man%20%28S02%20-%20E03%20-%20The%20Super%20Pac-Bowl%29.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-hanna-barbera-pac-man-s-02-e-04-journey-into-the-pac-past-94417ca022f2f7bc",
+          "title": "Hanna Barbera Pac-Man (S02 - E04 - Journey Into The Pac-Past)",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 668.61,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-94417ca022f2f7bc",
+              "provider": "archive",
+              "url": "https://archive.org/download/hanna-barbera-pac-man-s-02-e-04-journey-into-the-pac-past/Hanna%20Barbera%20Pac-Man%20%28S02%20-%20E04%20-%20Journey%20Into%20The%20Pac-Past%29.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "showId": "whos-boss",
+      "title": "Who’s the Boss?",
+      "channel": "comedy",
+      "items": [
+        {
+          "itemId": "whos-the-boss-head-of-the-class",
+          "title": "Who’s the Boss? + Head of the Class",
+          "metadataUrl": "https://archive.org/metadata/whos-the-boss-head-of-the-class"
+        }
+      ],
+      "notes": "Intact original November20,1990 two-show broadcast recording. Includes Who’s the Boss? and Head of the Class, with any embedded breaks retained. This is one fixed source program, not two independently verified sitcom episodes. No episode boundaries or season numbering inferred. Existing external Tubi listing is retained by merge.",
+      "episodes": [
+        {
+          "id": "archive-whos-the-boss-head-of-the-class-5226bb3354a1b721",
+          "title": "Whos the Boss + Head of the Class — intact original broadcast block (1990-11-20)",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": 3543.62,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5226bb3354a1b721",
+              "provider": "archive",
+              "url": "https://archive.org/download/whos-the-boss-head-of-the-class/Whos%20the%20Boss%20%2B%20Head%20of%20the%20Class.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E01 Put Up Your Dukes.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E01%20Put%20Up%20Your%20Dukes.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1339.84,
+      "checkedAt": "2026-11-17T14:51:08.357203+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/176398849",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E02 Jungle Jitters.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E02%20Jungle%20Jitters.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1337.39,
+      "checkedAt": "2026-11-17T14:51:08.357639+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/162551744",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E03 The Dukes in Venice.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E03%20The%20Dukes%20in%20Venice.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1332.44,
+      "checkedAt": "2026-11-17T14:51:08.357868+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/166596424",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E04 Morocco Bound.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E04%20Morocco%20Bound.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1335.74,
+      "checkedAt": "2026-11-17T14:51:08.358184+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/177867544",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E05 The Secret Satellite.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E05%20The%20Secret%20Satellite.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1339.35,
+      "checkedAt": "2026-11-17T14:51:08.358447+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/162365302",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E06 The Dukes of London.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E06%20The%20Dukes%20of%20London.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1339.84,
+      "checkedAt": "2026-11-17T14:51:08.358753+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/170921794",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E07 The Greece Fleece.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E07%20The%20Greece%20Fleece.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1338.22,
+      "checkedAt": "2026-11-17T14:51:08.359320+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/174403892",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E08 The Dukes in India.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E08%20The%20Dukes%20in%20India.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1333.25,
+      "checkedAt": "2026-11-17T14:51:08.360776+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/155821726",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E09 The Dukes in Uzbekistan.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E09%20The%20Dukes%20in%20Uzbekistan.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1336.56,
+      "checkedAt": "2026-11-17T14:51:12.077167+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/168595749",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E10 The Dukes in Hong Kong.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E10%20The%20Dukes%20in%20Hong%20Kong.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1339.01,
+      "checkedAt": "2026-11-17T14:51:12.214163+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/154079434",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E11 The Dukes of Scotland.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E11%20The%20Dukes%20of%20Scotland.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1336.56,
+      "checkedAt": "2026-11-17T14:51:12.454149+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/153031170",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E12 The Dukes Do Paris.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E12%20The%20Dukes%20Do%20Paris.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1334.08,
+      "checkedAt": "2026-11-17T14:51:15.577654+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/160759832",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S01E13 The Dukes in Switzerland.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S01E13%20The%20Dukes%20in%20Switzerland.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1337.39,
+      "checkedAt": "2026-11-17T14:51:15.954724+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/175917505",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S02E01 Boss O'Hogg and the Little People.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E01%20Boss%20O%27Hogg%20and%20the%20Little%20People.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1339.84,
+      "checkedAt": "2026-11-17T14:51:17.061337+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/163595096",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S02E02 Tales of the Vienna Hoods.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E02%20Tales%20of%20the%20Vienna%20Hoods.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1331.71,
+      "checkedAt": "2026-11-17T14:51:17.064325+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/163723309",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S02E03 The Kid from Madrid.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E03%20The%20Kid%20from%20Madrid.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1338.22,
+      "checkedAt": "2026-11-17T14:51:17.065271+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/164190629",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S02E04 A Dickens of a Christmas.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E04%20A%20Dickens%20of%20a%20Christmas.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1334.91,
+      "checkedAt": "2026-11-17T14:51:17.066964+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/160766029",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S02E05 The Canadian Caper.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E05%20The%20Canadian%20Caper.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1339.01,
+      "checkedAt": "2026-11-17T14:51:17.156772+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/156267511",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S02E06 The Dukes in Hollywood.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E06%20The%20Dukes%20in%20Hollywood.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1350.57,
+      "checkedAt": "2026-11-17T14:51:18.396836+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/164545096",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "TheDukes",
+      "file": "The Dukes/The Dukes S02E07 A Hogg in the Foggy Bog.mp4",
+      "url": "https://archive.org/download/TheDukes/The%20Dukes/The%20Dukes%20S02E07%20A%20Hogg%20in%20the%20Foggy%20Bog.mp4",
+      "metadataUrl": "https://archive.org/metadata/TheDukes",
+      "durationSeconds": 1338.24,
+      "checkedAt": "2026-11-17T14:51:19.157692+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/176465675",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "1. The Great Space Coaster Telethon.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/1.%20The%20Great%20Space%20Coaster%20Telethon.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1770.69,
+      "checkedAt": "2026-11-17T14:51:19.358196+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/225151603",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "2. The Great Space Coaster Sugar Ray Leonard.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/2.%20The%20Great%20Space%20Coaster%20Sugar%20Ray%20Leonard.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1758.01,
+      "checkedAt": "2026-11-17T14:51:19.832584+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/265361862",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "3. The Great Space Coaster Pegasus.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/3.%20The%20Great%20Space%20Coaster%20Pegasus.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1585.41,
+      "checkedAt": "2026-11-17T14:51:20.325028+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/225794828",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "4. The Great Space Coaster Jim Martin and Sugar Ray Leonard.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/4.%20The%20Great%20Space%20Coaster%20Jim%20Martin%20and%20Sugar%20Ray%20Leonard.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1788.43,
+      "checkedAt": "2026-11-17T14:51:20.641918+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/207402077",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "5. The Great Space Coaster.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/5.%20The%20Great%20Space%20Coaster.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1715.51,
+      "checkedAt": "2026-11-17T14:51:20.685604+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/231399091",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "6. The Great Space Coaster Aileen Quinn 3.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/6.%20The%20Great%20Space%20Coaster%20Aileen%20Quinn%203.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1686.95,
+      "checkedAt": "2026-11-17T14:51:20.692590+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/194216746",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "7. The Great Space Coaster Anti-Gravity Day.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/7.%20The%20Great%20Space%20Coaster%20Anti-Gravity%20Day.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1755.03,
+      "checkedAt": "2026-11-17T14:51:21.178135+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/204289537",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "8. The Great Space Coaster Rocksteady Dancers.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/8.%20The%20Great%20Space%20Coaster%20Rocksteady%20Dancers.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1710.15,
+      "checkedAt": "2026-11-17T14:51:21.355919+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/202033164",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "9. The Great Space Coaster Episode 11.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/9.%20The%20Great%20Space%20Coaster%20Episode%2011.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1755.45,
+      "checkedAt": "2026-11-17T14:51:21.501781+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/169045276",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster FULL Episode 105 TGSC- Gary Gnu's No Gnews Stand and Speed Reader Song.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20FULL%20Episode%20105%20TGSC-%20Gary%20Gnu%27s%20No%20Gnews%20Stand%20and%20Speed%20Reader%20Song.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1429.63,
+      "checkedAt": "2026-11-17T14:51:21.579826+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/310290824",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster FULL Episode 91 TGSC- Baxter hired to fix Gary Gnu's No Gnews TV.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20FULL%20Episode%2091%20TGSC-%20Baxter%20hired%20to%20fix%20Gary%20Gnu%27s%20No%20Gnews%20TV.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1432.88,
+      "checkedAt": "2026-11-17T14:51:21.896828+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/253529815",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster FULL episode 110 TGSC Gary Fires His Crew.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20FULL%20episode%20110%20TGSC%20Gary%20Fires%20His%20Crew.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1473.42,
+      "checkedAt": "2026-11-17T14:51:21.916986+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/353563646",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster Supershow.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20Supershow.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 3346.38,
+      "checkedAt": "2026-11-17T14:51:21.985505+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/208282988",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 115 Cartoon only TGSC.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%20115%20Cartoon%20only%20TGSC.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 290.11,
+      "checkedAt": "2026-11-17T14:51:22.043309+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/62404081",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 115 TGSC (without cartoon).mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%20115%20TGSC%20%28without%20cartoon%29.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1163.46,
+      "checkedAt": "2026-11-17T14:51:22.050260+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/245696991",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 69 TGSC including  Hello Texas  and La Linea.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%2069%20TGSC%20including%20%20Hello%20Texas%20%20and%20La%20Linea.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1429.49,
+      "checkedAt": "2026-11-17T14:51:22.109979+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/379080756",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 73 TGSC.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%2073%20TGSC.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1433.42,
+      "checkedAt": "2026-11-17T14:51:22.198886+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/371483799",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 87 TGSC with Charlotte Rae.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%2087%20TGSC%20with%20Charlotte%20Rae.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1431.49,
+      "checkedAt": "2026-11-17T14:51:22.549569+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/314453927",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 93 TGSC Goriddle's weather station.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%2093%20TGSC%20Goriddle%27s%20weather%20station.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1420.44,
+      "checkedAt": "2026-11-17T14:51:22.592539+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/305216460",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 95 TGSC Gary Gnu gets Hypnotized.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%2095%20TGSC%20Gary%20Gnu%20gets%20Hypnotized.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1431.02,
+      "checkedAt": "2026-11-17T14:51:22.596055+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/355483418",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "file": "The Great Space Coaster episode 97 TGSC with Sally Struthers.mp4",
+      "url": "https://archive.org/download/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea/The%20Great%20Space%20Coaster%20episode%2097%20TGSC%20with%20Sally%20Struthers.mp4",
+      "metadataUrl": "https://archive.org/metadata/the-great-space-coaster-episode-69-tgsc-including-hello-texas-and-la-linea",
+      "durationSeconds": 1449.83,
+      "checkedAt": "2026-11-17T14:51:22.677451+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/243207738",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "hanna-barbera-pac-man-s-01-e-02-picnic-in-pac-land",
+      "file": "Hanna Barbera Pac-Man (S01 - E02 - Picnic In Pac-Land).mp4",
+      "url": "https://archive.org/download/hanna-barbera-pac-man-s-01-e-02-picnic-in-pac-land/Hanna%20Barbera%20Pac-Man%20%28S01%20-%20E02%20-%20Picnic%20In%20Pac-Land%29.mp4",
+      "metadataUrl": "https://archive.org/metadata/hanna-barbera-pac-man-s-01-e-02-picnic-in-pac-land",
+      "durationSeconds": 725.93,
+      "checkedAt": "2026-11-17T14:51:22.680631+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/70278669",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "hanna-barbera-pac-man-s-01-e-22-the-great-power-pellet-robbery",
+      "file": "Hanna Barbera Pac-Man (S01 - E22 - The Great Power Pellet Robbery).mp4",
+      "url": "https://archive.org/download/hanna-barbera-pac-man-s-01-e-22-the-great-power-pellet-robbery/Hanna%20Barbera%20Pac-Man%20%28S01%20-%20E22%20-%20The%20Great%20Power%20Pellet%20Robbery%29.mp4",
+      "metadataUrl": "https://archive.org/metadata/hanna-barbera-pac-man-s-01-e-22-the-great-power-pellet-robbery",
+      "durationSeconds": 736.0,
+      "checkedAt": "2026-11-17T14:51:22.717485+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/71050126",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "hanna-barbera-pac-man-s-02-e-01-heres-super-pac",
+      "file": "Hanna Barbera Pac-Man (S02 - E01 - Here's Super Pac).mp4",
+      "url": "https://archive.org/download/hanna-barbera-pac-man-s-02-e-01-heres-super-pac/Hanna%20Barbera%20Pac-Man%20%28S02%20-%20E01%20-%20Here%27s%20Super%20Pac%29.mp4",
+      "metadataUrl": "https://archive.org/metadata/hanna-barbera-pac-man-s-02-e-01-heres-super-pac",
+      "durationSeconds": 669.97,
+      "checkedAt": "2026-11-17T14:51:22.720220+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/64840563",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "hanna-barbera-pac-man-s-02-e-02-hey-hey-hey...-its-p.-j.",
+      "file": "Hanna Barbera Pac-Man (S02 - E02 - Hey, Hey, Hey... It's P.J.).mp4",
+      "url": "https://archive.org/download/hanna-barbera-pac-man-s-02-e-02-hey-hey-hey...-its-p.-j./Hanna%20Barbera%20Pac-Man%20%28S02%20-%20E02%20-%20Hey%2C%20Hey%2C%20Hey...%20It%27s%20P.J.%29.mp4",
+      "metadataUrl": "https://archive.org/metadata/hanna-barbera-pac-man-s-02-e-02-hey-hey-hey...-its-p.-j.",
+      "durationSeconds": 668.71,
+      "checkedAt": "2026-11-17T14:51:23.052590+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/64899661",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "hanna-barbera-pac-man-s-02-e-03-the-super-pac-bowl",
+      "file": "Hanna Barbera Pac-Man (S02 - E03 - The Super Pac-Bowl).mp4",
+      "url": "https://archive.org/download/hanna-barbera-pac-man-s-02-e-03-the-super-pac-bowl/Hanna%20Barbera%20Pac-Man%20%28S02%20-%20E03%20-%20The%20Super%20Pac-Bowl%29.mp4",
+      "metadataUrl": "https://archive.org/metadata/hanna-barbera-pac-man-s-02-e-03-the-super-pac-bowl",
+      "durationSeconds": 701.12,
+      "checkedAt": "2026-11-17T14:51:23.194322+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/67507145",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "hanna-barbera-pac-man-s-02-e-04-journey-into-the-pac-past",
+      "file": "Hanna Barbera Pac-Man (S02 - E04 - Journey Into The Pac-Past).mp4",
+      "url": "https://archive.org/download/hanna-barbera-pac-man-s-02-e-04-journey-into-the-pac-past/Hanna%20Barbera%20Pac-Man%20%28S02%20-%20E04%20-%20Journey%20Into%20The%20Pac-Past%29.mp4",
+      "metadataUrl": "https://archive.org/metadata/hanna-barbera-pac-man-s-02-e-04-journey-into-the-pac-past",
+      "durationSeconds": 668.61,
+      "checkedAt": "2026-11-17T14:51:23.210614+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/65045044",
+      "bytesSampled": 1024
+    },
+    {
+      "itemId": "whos-the-boss-head-of-the-class",
+      "file": "Whos the Boss + Head of the Class.mp4",
+      "url": "https://archive.org/download/whos-the-boss-head-of-the-class/Whos%20the%20Boss%20%2B%20Head%20of%20the%20Class.mp4",
+      "metadataUrl": "https://archive.org/metadata/whos-the-boss-head-of-the-class",
+      "durationSeconds": 3543.62,
+      "checkedAt": "2026-11-17T14:54:03.248130+00:00",
+      "httpStatus": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-1023/355138587",
+      "bytesSampled": 1024
+    }
+  ]
+}
