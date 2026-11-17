@@ -1,0 +1,222 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: IAM-only YATA episode-summary retrieval pilot. No public API or function URL.
+Parameters:
+  ArtifactBucket: {Type: String}
+  ArtifactKey: {Type: String, AllowedPattern: 'retrieval/[a-f0-9]{64}\.zip'}
+  MonthlyAllowanceMicrousd: {Type: Number, Default: 3000000, MinValue: 10000, MaxValue: 3000000}
+  DailyAllowanceMicrousd: {Type: Number, Default: 1000000, MinValue: 10000, MaxValue: 2000000}
+  EnableJev: {Type: String, Default: 'false', AllowedValues: ['false', 'true']}
+  JevApiKey: {Type: String, Default: '', NoEcho: true}
+Conditions:
+  HasJevCredential: !Not [!Equals [!Ref JevApiKey, '']]
+Rules:
+  EnabledJevRequiresCredential:
+    Assertions:
+      - Assert: !Or [!Equals [!Ref EnableJev, 'false'], !Not [!Equals [!Ref JevApiKey, '']]]
+        AssertDescription: Enabling Jev requires a configured TypeSafe credential.
+Resources:
+  JevCredential:
+    Type: AWS::SecretsManager::Secret
+    Condition: HasJevCredential
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      Description: YATA private pilot TypeSafe credential; never exposed to clients.
+      SecretString: !Ref JevApiKey
+      Tags: [{Key: Repository, Value: doctor-ew/yata}]
+  JevReadPolicy:
+    Type: AWS::IAM::Policy
+    Condition: HasJevCredential
+    Properties:
+      PolicyName: jev-pilot-credential-read
+      Roles: [!Ref SearchRole]
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Action: secretsmanager:GetSecretValue
+            Resource: !Ref JevCredential
+  Evidence:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault: {SSEAlgorithm: AES256}
+      VersioningConfiguration: {Status: Enabled}
+      Tags: [{Key: Repository, Value: doctor-ew/yata}]
+  EvidencePolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref Evidence
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Deny
+            Principal: '*'
+            Action: s3:*
+            Resource: [!GetAtt Evidence.Arn, !Sub '${Evidence.Arn}/*']
+            Condition: {Bool: {aws:SecureTransport: 'false'}}
+  Vectors:
+    Type: AWS::S3Vectors::VectorBucket
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      VectorBucketName: !Sub 'yata-episodes-pilot-${AWS::AccountId}'
+      EncryptionConfiguration: {SseType: AES256}
+      Tags: [{Key: Repository, Value: doctor-ew/yata}]
+  EpisodeIndex:
+    Type: AWS::S3Vectors::Index
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      VectorBucketArn: !GetAtt Vectors.VectorBucketArn
+      IndexName: episode-summaries-v1
+      DataType: float32
+      Dimension: 512
+      DistanceMetric: cosine
+      Tags: [{Key: Repository, Value: doctor-ew/yata}]
+  Allowance:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions: [{AttributeName: pk, AttributeType: S}]
+      KeySchema: [{AttributeName: pk, KeyType: HASH}]
+      TimeToLiveSpecification: {AttributeName: expiresAt, Enabled: true}
+      SSESpecification: {SSEEnabled: true}
+      Tags: [{Key: Repository, Value: doctor-ew/yata}]
+  SearchLog:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${AWS::StackName}-search'
+      RetentionInDays: 7
+      Tags: [{Key: Repository, Value: doctor-ew/yata}]
+  IngestLog:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${AWS::StackName}-ingest'
+      RetentionInDays: 7
+      Tags: [{Key: Repository, Value: doctor-ew/yata}]
+  SearchRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement: [{Effect: Allow, Principal: {Service: lambda.amazonaws.com}, Action: 'sts:AssumeRole'}]
+      Tags: [{Key: Repository, Value: doctor-ew/yata}]
+      Policies:
+        - PolicyName: bounded-retrieval
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: [logs:CreateLogStream, logs:PutLogEvents]
+                Resource: !Sub '${SearchLog.Arn}'
+              - Effect: Allow
+                Action: s3:GetObject
+                Resource: [!Sub '${Evidence.Arn}/current.json', !Sub '${Evidence.Arn}/corpora/*']
+              - Effect: Allow
+                Action: [s3vectors:QueryVectors, s3vectors:GetVectors]
+                Resource: !GetAtt EpisodeIndex.IndexArn
+              - Effect: Allow
+                Action: bedrock:InvokeModel
+                Resource: !Sub 'arn:${AWS::Partition}:bedrock:${AWS::Region}::foundation-model/amazon.titan-embed-text-v2:0'
+              - Effect: Allow
+                Action: [dynamodb:GetItem, dynamodb:PutItem, dynamodb:UpdateItem]
+                Resource: !GetAtt Allowance.Arn
+                Condition: {ForAllValues:StringLike: {dynamodb:LeadingKeys: ['yata-search:*']}}
+  IngestRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement: [{Effect: Allow, Principal: {Service: lambda.amazonaws.com}, Action: 'sts:AssumeRole'}]
+      Tags: [{Key: Repository, Value: doctor-ew/yata}]
+      Policies:
+        - PolicyName: bounded-corpus-writer
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: [logs:CreateLogStream, logs:PutLogEvents]
+                Resource: !Sub '${IngestLog.Arn}'
+              - Effect: Allow
+                Action: s3:GetObject
+                Resource: [!Sub '${Evidence.Arn}/corpora/*', !Sub '${Evidence.Arn}/embeddings/*']
+              - Effect: Allow
+                Action: s3:ListBucket
+                Resource: !GetAtt Evidence.Arn
+              - Effect: Allow
+                Action: s3:PutObject
+                Resource: [!Sub '${Evidence.Arn}/current.json', !Sub '${Evidence.Arn}/embeddings/*']
+              - Effect: Allow
+                Action: s3vectors:PutVectors
+                Resource: !GetAtt EpisodeIndex.IndexArn
+              - Effect: Allow
+                Action: bedrock:InvokeModel
+                Resource: !Sub 'arn:${AWS::Partition}:bedrock:${AWS::Region}::foundation-model/amazon.titan-embed-text-v2:0'
+              - Effect: Allow
+                Action: [dynamodb:PutItem, dynamodb:UpdateItem]
+                Resource: !GetAtt Allowance.Arn
+                Condition: {ForAllValues:StringLike: {dynamodb:LeadingKeys: ['yata-search:*']}}
+  Search:
+    Type: AWS::Lambda::Function
+    DependsOn: SearchLog
+    Properties:
+      FunctionName: !Sub '${AWS::StackName}-search'
+      Runtime: python3.13
+      Architectures: [arm64]
+      Handler: handler.handler
+      Role: !GetAtt SearchRole.Arn
+      Code: {S3Bucket: !Ref ArtifactBucket, S3Key: !Ref ArtifactKey}
+      MemorySize: 256
+      Timeout: 25
+      ReservedConcurrentExecutions: 2
+      Environment:
+        Variables:
+          EVIDENCE_BUCKET: !Ref Evidence
+          VECTOR_INDEX_ARN: !GetAtt EpisodeIndex.IndexArn
+          ALLOWANCE_TABLE: !Ref Allowance
+          MONTHLY_ALLOWANCE_MICROUSD: !Ref MonthlyAllowanceMicrousd
+          DAILY_ALLOWANCE_MICROUSD: !Ref DailyAllowanceMicrousd
+          JEV_ENABLED: !Ref EnableJev
+          JEV_SECRET_ARN: !If [HasJevCredential, !Ref JevCredential, '']
+      Tags: [{Key: Repository, Value: doctor-ew/yata}]
+  Ingest:
+    Type: AWS::Lambda::Function
+    DependsOn: IngestLog
+    Properties:
+      FunctionName: !Sub '${AWS::StackName}-ingest'
+      Runtime: python3.13
+      Architectures: [arm64]
+      Handler: ingest.handler
+      Role: !GetAtt IngestRole.Arn
+      Code: {S3Bucket: !Ref ArtifactBucket, S3Key: !Ref ArtifactKey}
+      MemorySize: 256
+      Timeout: 900
+      ReservedConcurrentExecutions: 1
+      Environment:
+        Variables:
+          EVIDENCE_BUCKET: !Ref Evidence
+          VECTOR_INDEX_ARN: !GetAtt EpisodeIndex.IndexArn
+          ALLOWANCE_TABLE: !Ref Allowance
+          MONTHLY_ALLOWANCE_MICROUSD: !Ref MonthlyAllowanceMicrousd
+          DAILY_ALLOWANCE_MICROUSD: !Ref DailyAllowanceMicrousd
+      Tags: [{Key: Repository, Value: doctor-ew/yata}]
+Outputs:
+  JevCredentialArn:
+    Condition: HasJevCredential
+    Value: !Ref JevCredential
+  EvidenceBucket: {Value: !Ref Evidence}
+  VectorIndexArn: {Value: !GetAtt EpisodeIndex.IndexArn}
+  AllowanceTable: {Value: !Ref Allowance}
+  SearchFunction: {Value: !Ref Search}
+  IngestFunction: {Value: !Ref Ingest}

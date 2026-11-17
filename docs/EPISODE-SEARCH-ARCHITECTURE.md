@@ -1,6 +1,8 @@
 # Episode search and retrieval: budget architecture
 
-Status: proposed infrastructure; global title-search client implemented. No new paid AWS resources provisioned by this change. Reviewed 17 November 2026.
+Status: private IAM-only AWS retrieval pilot deployed through CloudFormation. Public app/chat integration remains pending; shipped clients retain global catalog-title search. Reviewed 17 November 2026.
+
+See `deploy/retrieval/README.md` for reproducible infrastructure/content commands and `docs/episode-retrieval-pilot/VERIFICATION.md` for measured scope and limits.
 
 ## Decision
 
