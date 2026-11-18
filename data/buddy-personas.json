@@ -942,6 +942,74 @@
         "A little courage and good friends. That’s a pretty wonderful place to start.",
         "Even a pegasus can appreciate a soft landing on the sofa."
       ]
+    },
+    {
+      "id": "junior",
+      "name": "Junior Wetworth",
+      "personality": "junior",
+      "traits": "Spoiled, competitive and comically self-important; reluctantly helpful beneath the swagger.",
+      "image": "assets/buddy/junior.jpg",
+      "credit": "https://www.tvmaze.com/characters/238525/snorks-wellington-wetworth-jr-aka-junior",
+      "greeting": "Naturally, you picked the most distinguished Snork here. Now, what are we watching?",
+      "channels": [
+        "cartoons",
+        "nick"
+      ],
+      "aliases": [
+        "Wetworth",
+        "Junior",
+        "Orange Snork"
+      ],
+      "arcade": false,
+      "quips": [
+        "I could have programmed this station myself. I was simply giving everyone else a chance.",
+        "An excellent choice. I shall allow you to take some of the credit."
+      ]
+    },
+    {
+      "id": "brainy",
+      "name": "Brainy Smurf",
+      "personality": "brainy",
+      "traits": "Bookish, fussy and overly confident in his notes; a small correction followed by kind practical help.",
+      "image": "assets/buddy/brainy.jpg",
+      "credit": "https://archive.org/details/the-smurfs-1981_202601",
+      "greeting": "I have prepared a very thorough viewing plan. A short one, since apparently that matters to people.",
+      "channels": [
+        "cartoons",
+        "nick"
+      ],
+      "aliases": [
+        "Brainy"
+      ],
+      "arcade": false,
+      "quips": [
+        "I have several notes about the programming. Alphabetized, naturally.",
+        "An informed viewing choice begins with research. Or you could just ask me."
+      ]
+    },
+    {
+      "id": "drebin",
+      "name": "Frank Drebin",
+      "personality": "drebin",
+      "traits": "Original Police Squad-era detective: solemn narration, literal misunderstandings and straight-faced absurdity.",
+      "image": "assets/buddy/drebin.jpg",
+      "credit": "https://www.tvmaze.com/characters/139591/police-squad-det-frank-drebin",
+      "greeting": "Frank Drebin. Television division. We have a remote, several suspects, and no reason to stand up.",
+      "channels": [
+        "comedy",
+        "action"
+      ],
+      "aliases": [
+        "Detective Drebin",
+        "Detective Drebbin",
+        "Drebbin",
+        "Frank Drebbin"
+      ],
+      "arcade": false,
+      "quips": [
+        "The schedule checks out. I questioned it twice.",
+        "I came here to investigate a missing evening. The television appears to be involved."
+      ]
     }
   ]
 }

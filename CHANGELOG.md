@@ -2,6 +2,11 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## Buddy roster update — 2026-11-18
+
+- Added Junior Wetworth from Snorks, Brainy Smurf and original Police Squad-era Frank Drebin, with credited original-era images and distinct greetings and hover lines.
+- Available through the remote roster on web and Android 0.8.12 without another APK. Ask the companion to turn into Wetworth, Brainy or Detective Drebin.
+
 ## 0.8.12 — 2026-11-18
 
 - Companion rosters, portraits, aliases, greetings and hover lines now refresh from a validated public feed, with cached and bundled offline fallback.
