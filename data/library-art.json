@@ -4053,6 +4053,84 @@
       "image": "assets/show-art/pinwheel.webp",
       "imageSource": "https://archive.org/download/nickelodeon-pinwheel-1987-1-hr-20m_202408/__ia_thumb.jpg",
       "type": "Variety"
+    },
+    "harlem-globetrotters": {
+      "title": "Harlem Globe Trotters",
+      "premiered": "1970-09-12",
+      "ended": "1971-10-16",
+      "genres": [
+        "Adventure",
+        "Children",
+        "Sports"
+      ],
+      "type": "Animation",
+      "year": 1970,
+      "sourceUrl": "https://www.tvmaze.com/shows/4048/harlem-globe-trotters",
+      "tvmazeId": 4048,
+      "image": "assets/show-art/harlem-globetrotters.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/50665.jpg"
+    },
+    "new-scooby-doo-movies": {
+      "title": "The New Scooby-Doo Movies",
+      "premiered": "1972-09-09",
+      "ended": "1973-10-27",
+      "genres": [
+        "Comedy",
+        "Children",
+        "Mystery"
+      ],
+      "type": "Animation",
+      "year": 1972,
+      "sourceUrl": "https://www.tvmaze.com/shows/4286/the-new-scooby-doo-movies",
+      "tvmazeId": 4286,
+      "image": "assets/show-art/new-scooby-doo-movies.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/51150.jpg"
+    },
+    "bananaman": {
+      "title": "Bananaman",
+      "premiered": "1983-10-03",
+      "ended": "1986-04-15",
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "year": 1983,
+      "sourceUrl": "https://www.tvmaze.com/shows/5677/bananaman",
+      "tvmazeId": 5677,
+      "image": "assets/show-art/bananaman.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/56896.jpg"
+    },
+    "george-jungle-1967": {
+      "title": "George of the Jungle",
+      "premiered": "1967-09-09",
+      "ended": "1967-12-30",
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "year": 1967,
+      "sourceUrl": "https://www.tvmaze.com/shows/5659/george-of-the-jungle",
+      "tvmazeId": 5659,
+      "image": "assets/show-art/george-jungle-1967.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/56873.jpg"
+    },
+    "super-globetrotters": {
+      "title": "The Super Globetrotters",
+      "premiered": "1979-09-22",
+      "ended": "1979-12-15",
+      "genres": [
+        "Comedy",
+        "Children",
+        "Sports"
+      ],
+      "type": "Animation",
+      "year": 1979,
+      "sourceUrl": "https://www.tvmaze.com/shows/16748/the-super-globetrotters",
+      "tvmazeId": 16748,
+      "image": "assets/show-art/super-globetrotters.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/55/139787.jpg"
     }
   }
 }
