@@ -1,7 +1,7 @@
 export const DIAL_FEEDBACK_STORAGE_KEY = 'yata.dial-feedback.v1';
 const SOUND_SECONDS = .112;
 
-// Original procedural sound, created only by a user's dial gesture.
+// Original optional procedural tuning sound; volume and mute follow the player.
 export function mountDialFeedback({ windowRef, storage, toggle, getVolume = () => 1, getMuted = () => false, pulse = () => {} }) {
   let enabled = true, disposed = false, context = null, active = null, generation = 0;
   try {
@@ -36,11 +36,11 @@ export function mountDialFeedback({ windowRef, storage, toggle, getVolume = () =
   toggle?.addEventListener('change', changed);
 
   return {
-    async play() {
+    async play({ visual = true } = {}) {
       if (disposed || !enabled) return false;
       const ticket = ++generation;
       cleanup(active, true);
-      try { pulse(); } catch { /* Visual feedback must not block the dial action. */ }
+      try { if (visual) pulse(); } catch { /* Visual feedback must not block the dial action. */ }
       if (!audioVolume()) return false;
       let graph = null;
       try {

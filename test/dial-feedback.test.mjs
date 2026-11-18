@@ -75,3 +75,8 @@ test('suspended contexts resume on a gesture and stale resumes cannot create sou
     f.resume();assert.equal(await pending,false);assert.equal(f.contexts[0].nodes.length,0);f.controls.dispose();
   }
 });
+
+test('channel tuning can play sound without restarting the visual snow, while mute still wins',async()=>{
+ const f=fixture();assert.equal(await f.controls.play({visual:false}),true);assert.equal(f.pulses.length,0);assert.equal(f.contexts.length,1);f.controls.dispose();
+ const muted=fixture({muted:true});assert.equal(await muted.controls.play({visual:false}),false);assert.equal(muted.contexts.length,0);assert.equal(muted.pulses.length,0);muted.controls.dispose();
+});

@@ -2,6 +2,11 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.13 — 2026-11-18
+
+- Channel changes now show a brief burst of animated grey TV snow, then clear to the next picture without delaying playback. Optional channel tuning hiss and click follow the existing sound setting, player volume and mute.
+- The effect respects static-off, zero strength, reduced-motion and forced-color preferences. Tuning duration remains configurable; the new default is 240 ms.
+
 ## Catalog update — 2026-11-18
 
 - Added Harlem Globetrotters (1970), The New Scooby-Doo Movies (1972), The Super Globetrotters (1979), Bananaman (1983) and original George of the Jungle (1967), with original-series artwork.

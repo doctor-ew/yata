@@ -283,7 +283,7 @@ function renderChannels() {
       if(arcade){if(arcadeUnlocked)location.assign('/arcade/');return;}
       if(custom&&!customShows(catalog)?.length){$('open-channel-builder').click();return;}
       const next=custom?tuneCustomChannel(copyCatalog()):copyCatalog();if(!custom){next.settings.channel=c.id;next.settings.streamShow=null;next.settings.streamShows=null;next.settings.customQueueActive=false;}
-      if(await commitSettings(next)){selectedShowId=channelShows()[0]?.id||catalog.shows[0].id;stopPlayer();render();retroEffects.pulse();}
+      if(await commitSettings(next)){selectedShowId=channelShows()[0]?.id||catalog.shows[0].id;stopPlayer();render();retroEffects.channelChange();void dialFeedback.play({visual:false});}
     },'channel'+(arcade?' channel-arcade':''));
     if(arcade){node.id='arcade-channel';node.disabled=!arcadeUnlocked;node.title=arcadeUnlocked?'Open the arcade':'Locked · enter the Konami code';}
     else node.setAttribute('aria-pressed',String(custom?isCustomChannel(catalog):c.id===catalog.settings.channel&&!isCustomChannel(catalog)));
@@ -508,9 +508,10 @@ function playerError(message, generation) {
 
 function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMode = mode === 'live' ? 'station' : 'show', queuePosition = null, autoPlay = true) {
   if(!ownerMode&&!publicCatalogReady)return;
+  const changingChannel = active && active.showId !== show.id;
   stopPlayer();
   const generation = playerGeneration;
-  retroEffects.pulse();
+  if(changingChannel){retroEffects.channelChange();if(!document.hidden)void dialFeedback.play({visual:false});}else retroEffects.pulse();
   active = { showId: show.id, episodeId: episode.id, sourceId: source.id, offset, mode, queueMode, queuePosition };
   watchDimensions={channel:show.id===MOVIE_SHOW_ID?'movies':queueMode==='custom-queue'?'custom':queueMode==='station'?(isCustomChannel(catalog)?'custom':catalog.settings.channel):'library',provider:source.provider};watchTracker.begin(watchDimensions);
   $('standby').hidden = true;
