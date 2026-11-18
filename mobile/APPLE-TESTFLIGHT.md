@@ -2,7 +2,7 @@
 
 ## Status
 
-Updated on 2026-11-17 on branch `feature/apple-testflight`. App Store Connect app 6836149390, **Yet Another Television App**, contains iOS and tvOS version 0.8.10 build 1. Both uploads succeeded and both builds show **Ready to Test**. Export-compliance questionnaires are complete. The YATA Internal group contains both builds and one account-holder tester with status **Invited**. Automatic distribution is disabled; future builds must be added explicitly. No external testing or App Store release was submitted.
+Updated on 2026-11-17 on branch `feature/apple-testflight`. App Store Connect app 6836149390, **Yet Another Television App**, contains iOS and tvOS version 0.8.10 build 1. Both uploads succeeded and both builds show **Ready to Test**. Export-compliance questionnaires are complete. The YATA Internal group contains both builds and one account-holder tester with status **Invited**. Automatic distribution is disabled; future builds must be added explicitly. Both platform builds were subsequently submitted for external beta review and verified Waiting for Review in YATA Public Beta. The public invitation link is https://testflight.apple.com/join/f7ZWnFZx (open to anyone, no custom tester limit). Apple states testers cannot join until the group has an approved build. No public App Store release was submitted.
 
 Evidence: [TestFlight group](https://appstoreconnect.apple.com/apps/6836149390/testflight/groups/21781e18-a544-4c6c-a6a9-653e4acdb2a3/builds). Both projects use bundle identifier `com.doctorew.yata`; the archive helper takes the marketing version from `mobile/package.json` and requires an explicit build number. Build numbers must be checked against App Store Connect before uploading.
 
