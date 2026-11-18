@@ -2,6 +2,12 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.11 — 2026-11-18
+
+- Added Snorks (1984): 76 checked standalone shorts on Saturday Morning.
+- Added Captain Planet and the Planeteers (1990): 113 checked episodes on Saturday Morning, including its New Adventures continuation.
+- Added Road to Avonlea (1990) to Drama with three checked season-five episodes and original-series artwork. The original Smurfs remains available with 432 checked entries.
+
 ## 0.8.10 — 2026-11-18
 
 - Added original Punky Brewster to Comedy with 86 checked entries, including labelled intact paired presentations.

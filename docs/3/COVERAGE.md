@@ -1,8 +1,8 @@
 # Expanded library coverage
 
-Revision: expanded-10c3e1f7537e7745. Sources: public Archive metadata and official YouTube metadata. Counts include the original seed items.
+Revision: expanded-e55a0aeb31d1b055. Sources: public Archive metadata and official YouTube metadata. Counts include the original seed items.
 
-12036 catalog episodes/items; 11899 TV entries eligible for ordinary station mixes, 5 films in the separate Midnight Matinee stream, and 24 optional break clips by existing metadata rules. A schedulable source is not a guarantee of future playback.
+12228 catalog episodes/items; 12091 TV entries eligible for ordinary station mixes, 5 films in the separate Midnight Matinee stream, and 24 optional break clips by existing metadata rules. A schedulable source is not a guarantee of future playback.
 
 | Show | Catalog items | Program-ready | Break-ready | Source links |
 | --- | ---: | ---: | ---: | ---: |
@@ -252,6 +252,9 @@ Revision: expanded-10c3e1f7537e7745. Sources: public Archive metadata and offici
 | Punky Brewster (1984) | 86 | 86 | 0 | 86 |
 | Clarissa Explains It All (1991) | 54 | 54 | 0 | 54 |
 | Ramona (1988) | 5 | 5 | 0 | 5 |
+| Snorks (1984) | 76 | 76 | 0 | 76 |
+| Captain Planet and the Planeteers (1990) | 113 | 113 | 0 | 113 |
+| Road to Avonlea (1990) | 3 | 3 | 0 | 3 |
 | X-Men: The Animated Series (1992) | 76 | 76 | 0 | 76 |
 | Batman: The Animated Series (1992) | 85 | 85 | 0 | 85 |
 | NYPD Blue (1993) | 260 | 260 | 0 | 260 |

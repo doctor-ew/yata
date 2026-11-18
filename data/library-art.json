@@ -3993,6 +3993,54 @@
       "tvmazeId": 54357,
       "image": "assets/show-art/ramona.webp",
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/301/753436.jpg"
+    },
+    "snorks": {
+      "title": "Snorks",
+      "premiered": "1984-09-15",
+      "ended": "1989-01-14",
+      "year": 1984,
+      "genres": [
+        "Comedy",
+        "Adventure",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/12422/snorks",
+      "tvmazeId": 12422,
+      "image": "assets/show-art/snorks.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/42/106167.jpg"
+    },
+    "captain-planet": {
+      "title": "Captain Planet and the Planeteers",
+      "premiered": "1990-09-15",
+      "ended": "1996-02-24",
+      "year": 1990,
+      "genres": [
+        "Adventure",
+        "Children",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4416/captain-planet-and-the-planeteers",
+      "tvmazeId": 4416,
+      "image": "assets/show-art/captain-planet.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/51753.jpg"
+    },
+    "road-to-avonlea": {
+      "title": "Road to Avonlea",
+      "premiered": "1990-01-07",
+      "ended": "1996-03-31",
+      "year": 1990,
+      "genres": [
+        "Drama",
+        "Family",
+        "History"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7876/road-to-avonlea",
+      "tvmazeId": 7876,
+      "image": "assets/show-art/road-to-avonlea.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/28/72162.jpg"
     }
   }
 }
