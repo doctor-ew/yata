@@ -2,6 +2,11 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## Unreleased — Apple beta preparation
+
+- Added a native Apple TV library, show search and Archive video player with a verified bundled catalog and public catalog refresh. YouTube, buddy chat, Arcade and scheduled channel playback are not implemented in this target.
+- Prepared iOS custom-link handling and a repeatable Apple archive/upload command. These changes are not a TestFlight release; signing, upload and beta validation remain pending.
+
 ## 0.8.10 — 2026-11-18
 
 - Added original Punky Brewster to Comedy with 86 checked entries, including labelled intact paired presentations.

@@ -2,7 +2,7 @@
 
 ## Status
 
-Android local test build, with an iOS project prepared from the same web interface. No app-store publication is configured. Android uses API 36 with a minimum API 24. The current Mac has command-line Android tools and JDK 21; full Xcode is not installed, so the iOS project has not been compiled or tested.
+Android local test build, with an iOS project using the same web interface and a separate native Apple TV project. Neither Apple app is published to TestFlight yet. Android uses API 36 with a minimum API 24. Apple build evidence and remaining delivery requirements are recorded in [APPLE-TESTFLIGHT.md](APPLE-TESTFLIGHT.md).
 
 The app bundles the TV interface, real artwork and an integrity-checked catalog snapshot. Public catalog updates use a narrowly scoped native reader. A failed update falls back to the bundled snapshot. Video requires an internet connection and streams directly from its provider. Personal preferences remain on this device; they do not sync with the website.
 
@@ -34,7 +34,7 @@ npm run sync
 npm run ios
 ```
 
-Choose a signing team in Xcode before installing on a physical iPhone. iOS compilation, simulator playback and device signing remain unverified.
+Choose a signing team in Xcode before installing on a physical iPhone. iOS simulator compilation and initial launch passed on 2026-11-17. Simulator playback, physical-device behavior and signing remain unverified.
 
 ## Native boundary
 
@@ -54,7 +54,7 @@ Episode sharing uses a public episode URL with an optional timestamp. Channel / 
 
 The Arcade is absent from normal navigation until unlocked. Long-press the YATA logo to reveal touch controls, then enter the Konami sequence. There is no visible Arcade-help button. The unlocked channel opens the hosted arcade in a browser tab.
 
-Media3 1.11.1 is Apache-2.0 licensed; Capacitor Share is MIT licensed. Notices are bundled in tv/licenses. Automatic background playback is Android-only; the iOS project remains uncompiled and untested.
+Media3 1.11.1 is Apache-2.0 licensed; Capacitor Share is MIT licensed. Notices are bundled in tv/licenses. Automatic background playback is Android-only; Apple validation status is tracked separately in [APPLE-TESTFLIGHT.md](APPLE-TESTFLIGHT.md).
 
 ### Vintage rooms (0.4.0)
 
