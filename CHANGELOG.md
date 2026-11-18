@@ -4,6 +4,8 @@ User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub
 
 ## Buddy roster update — 2026-11-18
 
+- Added Mrs. Roper and original Jonny Quest’s Bandit as selectable remote companions, with credited vintage portraits and three hover lines each. No APK update required.
+
 - Added original WKRP in Cincinnati companion Les Nessman, with credited portrait, selectable aliases and three rotating hover lines. Available through the remote roster without another APK.
 - Added Junior Wetworth from Snorks, Brainy Smurf and original Police Squad-era Frank Drebin, with credited original-era images and distinct greetings and hover lines.
 - Available through the remote roster on web and Android 0.8.12 without another APK. Ask the companion to turn into Wetworth, Brainy or Detective Drebin.
