@@ -138,14 +138,14 @@
           <details class="static-options"><summary>Adjust static</summary><div class="static-settings">
             <label>When<select id="static-mode"><option value="tuning">When tuning</option><option value="continuous">Continuous grain</option></select></label>
             <label class="static-range">Strength <output id="static-level-value" for="static-level">12%</output><input id="static-level" type="range" min="0" max="30" step="1" value="12"></label>
-            <label class="static-range">Tuning length <output id="static-duration-value" for="static-duration">180 ms</output><input id="static-duration" type="range" min="80" max="800" step="20" value="180"></label>
+            <label class="static-range">Tuning length <output id="static-duration-value" for="static-duration">240 ms</output><input id="static-duration" type="range" min="80" max="800" step="20" value="240"></label>
             <button id="static-preview" class="button small" type="button">Preview static</button>
           </div></details>
         </div>
         <label>Commercials per break<select id="commercial-count"><option value="1">1 commercial</option><option value="2">2 commercials</option><option value="3">3 commercials</option><option value="random" selected>Random · 1–3 commercials</option></select></label>
         <label>Playback position<select id="seek-visibility"><option value="auto">On hover or click</option><option value="always">Always visible</option><option value="off">Off</option></select></label>
         <label>Random dial<select id="dial-mode"><option value="channel">This channel · random mix</option><option value="show">One random show</option><option value="all">Everything · random mix</option></select></label>
-        <label class="bumper-setting"><input id="dial-feedback" type="checkbox" checked> Dial click &amp; static burst</label>
+        <label class="bumper-setting"><input id="dial-feedback" type="checkbox" checked> Channel / dial click &amp; static burst</label>
         <p id="commercial-description">Breaks follow complete stories. Choose a fixed count or a random 1–3. Always skippable.</p>
         <p id="stream-description">Random episodes from random shows. Multipart stories stay together.</p>
       </section>

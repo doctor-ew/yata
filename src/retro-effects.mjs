@@ -1,5 +1,5 @@
 export const RETRO_EFFECTS_STORAGE_KEY = 'yata.retro-effects.v1';
-const DEFAULTS = { crt: true, static: true, theme: '80s', staticLevel: 12, staticDuration: 180, staticMode: 'tuning' };
+const DEFAULTS = { crt: true, static: true, theme: '80s', staticLevel: 12, staticDuration: 240, staticMode: 'tuning' };
 const THEMES = ['none', '70s', '80s', '90s'];
 const bounded = (value, min, max, fallback) => typeof value === 'number' && Number.isFinite(value) ? Math.min(max, Math.max(min, value)) : fallback;
 
@@ -36,6 +36,7 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
   function stopPulse() {
     if (timer !== null) clearTimer(timer);
     timer = null; animation?.cancel(); animation = null;
+    overlay.classList.toggle('retro-static-channel-change', false);
     reflectNoise();
   }
   function reflect() {
@@ -64,11 +65,14 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
   listen(levelInput, 'input', () => update('staticLevel', bounded(Number(levelInput.value), 0, 30, DEFAULTS.staticLevel)));
   listen(durationInput, 'input', () => update('staticDuration', bounded(Number(durationInput.value), 80, 800, DEFAULTS.staticDuration)));
   listen(modeSelect, 'change', () => update('staticMode', modeSelect.value === 'continuous' ? 'continuous' : 'tuning'));
-  function pulse({ force = false } = {}) {
+  function pulse({ force = false, transition = false } = {}) {
     if (disposed || suppressed() || preferences.staticLevel <= 0 || (!force && !preferences.static)) return false;
     stopPulse(); overlay.hidden = false; shell.classList.toggle('retro-static-active', true);
-    // One bounded, low-contrast fade; no sound or full-screen white/black flash.
-    animation = overlay.animate?.([
+    // Channel snow holds a steady grey field, then clears; playback is never delayed.
+    overlay.classList.toggle('retro-static-channel-change', transition);
+    animation = overlay.animate?.(transition ? [
+      { opacity: 1, offset: 0 }, { opacity: 1, offset: .75 }, { opacity: 0, offset: 1 },
+    ] : [
       { opacity: preferences.staticLevel / 100, backgroundPosition: '0px 0px' },
       { opacity: 0, backgroundPosition: '13px 7px' },
     ], { duration: preferences.staticDuration, iterations: 1, easing: 'ease-out' }) || null;
@@ -80,7 +84,7 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
   const media = [reducedMotion, forcedColors].filter(Boolean);
   for (const query of media) query.addEventListener?.('change', mediaChanged);
   reflect();
-  return { pulse,
+  return { pulse, channelChange: () => pulse({ transition: true }),
     dispose() {
       if (disposed) return;
       disposed = true; stopPulse(); body.classList.toggle('crt-mode', false);

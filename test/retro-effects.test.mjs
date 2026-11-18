@@ -42,15 +42,15 @@ test('retro effects default on, validate saved booleans and preserve the provide
   }
   const f = fixture('{"crt":true,"static":true}'); assert.ok(f.body.classes.has('crt-mode')); assert.equal(f.staticToggle.checked, true);
   f.change(f.screenToggle, false); assert.equal(f.body.classes.has('crt-mode'), false);
-  assert.deepEqual(f.writes.at(-1), [RETRO_EFFECTS_STORAGE_KEY, {crt:false, static:true, theme:'80s', staticLevel:12, staticDuration:180, staticMode:'tuning'}]);
+  assert.deepEqual(f.writes.at(-1), [RETRO_EFFECTS_STORAGE_KEY, {crt:false, static:true, theme:'80s', staticLevel:12, staticDuration:240, staticMode:'tuning'}]);
   f.controls.dispose();
 });
 
 test('tuning static is short, repeat-safe and cancelled when disabled', () => {
   const f = fixture(); f.change(f.staticToggle, true); assert.equal(f.controls.pulse(), true);
   assert.equal(f.shell.children[1].hidden, false); assert.ok(f.shell.classes.has('retro-static-active'));
-  assert.equal(f.timers.size, 1); assert.equal([...f.timers.values()][0].ms, 180);
-  assert.equal(f.animations[0].options.duration, 180); assert.equal(f.animations[0].options.iterations, 1);
+  assert.equal(f.timers.size, 1); assert.equal([...f.timers.values()][0].ms, 240);
+  assert.equal(f.animations[0].options.duration, 240); assert.equal(f.animations[0].options.iterations, 1);
   assert.ok(f.animations[0].frames.every(frame => frame.opacity >= 0 && frame.opacity <= .16));
   f.controls.pulse(); assert.equal(f.timers.size, 1); assert.equal(f.animations[0].cancelled, true);
   const timer = [...f.timers.values()][0]; timer.callback();
@@ -126,7 +126,7 @@ test('continuous static respects toggles, media preferences and cleanup', () => 
 
 test('legacy preferences migrate with defaults and malformed new settings stay bounded', () => {
   const legacy = fixture('{"crt":true,"static":true}');
-  assert.equal(legacy.themeSelect.value, '80s'); assert.equal(legacy.levelInput.value, '12'); assert.equal(legacy.durationInput.value, '180'); assert.equal(legacy.modeSelect.value, 'tuning'); legacy.controls.dispose();
+  assert.equal(legacy.themeSelect.value, '80s'); assert.equal(legacy.levelInput.value, '12'); assert.equal(legacy.durationInput.value, '240'); assert.equal(legacy.modeSelect.value, 'tuning'); legacy.controls.dispose();
   const f = fixture(JSON.stringify({crt:false, static:true, theme:'invalid', staticLevel:-4, staticDuration:900, staticMode:'invalid'}));
   assert.equal(f.themeSelect.value, '80s'); assert.equal(f.levelInput.value, '0'); assert.equal(f.durationInput.value, '800'); assert.equal(f.modeSelect.value, 'tuning'); f.controls.dispose();
 });
@@ -149,4 +149,14 @@ test('dial pulses bypass the tuning toggle while respecting motion and zero stre
   const reduced = fixture(null, {reduced:true});
   assert.equal(reduced.controls.pulse({force:true}), false);
   reduced.controls.dispose();
+});
+
+test('channel snow holds briefly, replaces previous pulses and restores continuous grain',()=>{
+ const f=fixture();const overlay=f.shell.children[1];assert.equal(f.controls.channelChange(),true);assert.ok(overlay.classes.has('retro-static-channel-change'));assert.equal(f.animations.at(-1).frames[1].opacity,1);assert.equal(f.player.parentElement,f.shell);
+ f.controls.channelChange();assert.equal(f.timers.size,1);assert.equal(f.animations[0].cancelled,true);[...f.timers.values()][0].callback();assert.equal(overlay.hidden,true);assert.equal(overlay.classes.has('retro-static-channel-change'),false);
+ f.input(f.modeSelect,'continuous','change');f.controls.channelChange();[...f.timers.values()][0].callback();assert.equal(overlay.hidden,false);assert.ok(overlay.classes.has('retro-static-continuous'));f.controls.dispose();
+});
+test('channel snow respects static off, zero strength and accessibility preferences',()=>{
+ for(const opts of [{reduced:true},{forced:true}]){const f=fixture(null,opts);assert.equal(f.controls.channelChange(),false);assert.equal(f.timers.size,0);f.controls.dispose();}
+ const f=fixture();f.change(f.staticToggle,false);assert.equal(f.controls.channelChange(),false);f.change(f.staticToggle,true);f.input(f.levelInput,0);assert.equal(f.controls.channelChange(),false);f.controls.dispose();
 });
