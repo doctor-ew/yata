@@ -35,7 +35,8 @@ public class CatalogPlugin extends Plugin {
         } else {
             if (!path.equals("/tv/data/published-catalog-manifest.json") &&
                 !path.equals("/tv/data/published-catalog-v2-manifest.json") &&
-                !path.equals("/tv/data/library-art.json") && !path.equals("/tv/data/arcade-games.json") &&
+                !path.equals("/tv/data/library-art.json") &&
+                !path.equals("/tv/data/buddy-personas.json") && !path.equals("/tv/data/arcade-games.json") &&
                 !path.matches("/tv/data/catalogs/[a-f0-9]{64}\\.json")) {
                 call.reject("Unsupported catalog path."); return;
             }

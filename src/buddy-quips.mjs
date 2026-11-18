@@ -52,7 +52,7 @@ export const BUDDY_QUIPS=Object.freeze({
 });
 export function buddyHoverMessages(persona,context) {
  const current=playbackContext(context),clean=value=>typeof value==='string'?value.replace(/[\u0000-\u001f\u007f]/g,' ').trim().slice(0,240):'';
- const messages=[clean(persona?.greeting),...(BUDDY_QUIPS[persona?.id]||['A good seat and a little company. We’re ready.','The remote is yours. I’m here when you need a hand.'])];
+ const messages=[clean(persona?.greeting),...(persona?.quips?.length?persona.quips:BUDDY_QUIPS[persona?.id]||['A good seat and a little company. We’re ready.','The remote is yours. I’m here when you need a hand.'])];
  if(current.showTitle)messages.push(`On your screen: ${current.showTitle}${current.episodeTitle?' · '+current.episodeTitle:''}.`);
  if(current.nextShowTitle)messages.push(`In the lineup next: ${current.nextShowTitle}${current.nextEpisodeTitle?' · '+current.nextEpisodeTitle:''}.`);
  return [...new Set(messages.map(clean).filter(Boolean))];

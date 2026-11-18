@@ -1,13 +1,14 @@
+import{ANALYTICS_HOSTS}from'./analytics-hosts.mjs';
 import{CHANNELS}from'./channels.mjs';
 import{BUDDY_PERSONAS}from'./buddy-personas.mjs';
 export const ANALYTICS_KEY='yata.analytics.v1';
 const metrics=new Set(['app_open','play_start','watch_seconds','play_error','ai_attempt','ai_success','ai_failure','ai_cancel','ai_handoff','feedback_draft','arcade_unlock']);
-const channels=new Set(['none','custom','library','movies',...CHANNELS.map(c=>c.id)]),hosts=new Set(['none',...BUDDY_PERSONAS.map(p=>p.id)]);
+const channels=new Set(['none','custom','library','movies',...CHANNELS.map(c=>c.id)]),hosts=new Set(ANALYTICS_HOSTS);
 export function analyticsAllowed(storage,navigator={}){if(navigator.globalPrivacyControl===true||navigator.doNotTrack==='1')return false;try{return storage?.getItem(ANALYTICS_KEY)!=='off';}catch{return true;}}
 export function createAnalytics({storage,navigator={},platform='web',version='0.8.5',fetcher=globalThis.fetch,randomId=()=>crypto.randomUUID().replaceAll('-','')}={}){
  let enabled=analyticsAllowed(storage,navigator),queue=[];const listeners=new Set();const privacySignal=navigator.globalPrivacyControl===true||navigator.doNotTrack==='1';
  const safePlatform=['web','android','ios'].includes(platform)?platform:'web',safeVersion=/^\d{1,2}\.\d{1,2}\.\d{1,2}$/.test(version)?version:'0.8.5';
- function record(metric,dimensions={}){if(!enabled||!metrics.has(metric))return;const {channel='none',provider='none',host='none',value=1}=dimensions;if(!channels.has(channel)||!['none','archive','youtube','tubi'].includes(provider)||!hosts.has(host)||!Number.isInteger(value)||value<1||value>(metric==='watch_seconds'?30:1))return;queue.push({metric,channel,provider,host,value,platform:safePlatform,version:safeVersion});if(queue.length>20)queue.shift();if(queue.length>=10)void flush();}
+ function record(metric,dimensions={}){if(!enabled||!metrics.has(metric))return;const {channel='none',provider='none',host='none',value=1}=dimensions;if(!channels.has(channel)||!['none','archive','youtube','tubi'].includes(provider)||!(host==='none'||BUDDY_PERSONAS.some(p=>p.id===host))||!Number.isInteger(value)||value<1||value>(metric==='watch_seconds'?30:1))return;queue.push({metric,channel,provider,host:hosts.has(host)?host:'none',value,platform:safePlatform,version:safeVersion});if(queue.length>20)queue.shift();if(queue.length>=10)void flush();}
  async function flush(){if(!enabled){queue=[];return;}const events=queue.splice(0,10);if(!events.length)return;try{const batch=randomId();if(!/^[a-f0-9]{32}$/.test(batch))return;await fetcher('https://skippyts.doctorew.com/analytics',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({batch,events}),keepalive:true,credentials:'omit',referrerPolicy:'no-referrer',signal:AbortSignal.timeout(5000)});}catch{/* Analytics never blocks viewing and does not persist or retry drafts. */}}
  return{record,flush,get enabled(){return enabled;},get privacySignal(){return privacySignal;},setEnabled(value){enabled=!!value&&!privacySignal;if(!enabled)queue=[];try{storage?.setItem(ANALYTICS_KEY,enabled?'on':'off');}catch{}for(const listener of listeners)listener(enabled);},subscribe(listener){listeners.add(listener);return()=>listeners.delete(listener);}};
 }

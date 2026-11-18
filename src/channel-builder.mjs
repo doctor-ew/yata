@@ -1,8 +1,9 @@
+import{subscribeBuddyRoster}from'./buddy-registry.mjs';
 import{normalizeBuddyReply}from'./buddy-reply.mjs';
 import {availableDialShows} from './dials.mjs';
 import{BUDDY_PERSONAS}from'./buddy-personas.mjs';
 export const CHANNEL_HOSTS=BUDDY_PERSONAS.map(({id,name})=>({id,name}));
-export const HOST_PORTRAITS=Object.fromEntries(BUDDY_PERSONAS.map(p=>[p.id,{src:p.image,caption:p.name,credit:p.credit}]));
+export const HOST_PORTRAITS=Object.fromEntries(BUDDY_PERSONAS.map(p=>[p.id,{src:p.imageUrl||p.image,fallback:p.imageFallback||'',caption:p.name,credit:p.credit}]));
 export function chooseHost(previous=null, random=Math.random) {
   const choices=CHANNEL_HOSTS.filter(host=>host.id!==previous);
   const sample=random();
@@ -16,3 +17,5 @@ export function validateChannelPlan(plan,catalog,host) {
   if(!plan||plan.host!==host||!CHANNEL_HOSTS.some(item=>item.id===host)||typeof plan.title!=='string'||!plan.title.trim()||plan.title.length>80||typeof plan.intro!=='string'||plan.intro.length>700||!Array.isArray(plan.showIds)||plan.showIds.length>12||new Set(plan.showIds).size!==plan.showIds.length||plan.showIds.some(id=>!offered.has(id))) throw Error('The lineup no longer matches the checked catalog. Ask the host again.');
   return {title:plan.title.trim(),intro:normalizeBuddyReply(plan.intro),host,showIds:[...plan.showIds]};
 }
+
+subscribeBuddyRoster(personas=>{CHANNEL_HOSTS.splice(0,CHANNEL_HOSTS.length,...personas.map(({id,name})=>({id,name})));for(const key of Object.keys(HOST_PORTRAITS))delete HOST_PORTRAITS[key];Object.assign(HOST_PORTRAITS,Object.fromEntries(personas.map(p=>[p.id,{src:p.imageUrl||p.image,fallback:p.imageFallback||'',caption:p.name,credit:p.credit}])));});

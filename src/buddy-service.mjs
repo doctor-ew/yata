@@ -1,12 +1,15 @@
+import{initializeBuddyRoster,refreshBuddyRoster}from'./buddy-registry.mjs';
 import{createBuddyConversation,createChannelAi}from'./channel-ai.mjs';
 import{BUDDY_PERSONAS}from'./buddy-personas.mjs';
+initializeBuddyRoster();await refreshBuddyRoster();
 const nonce=location.hash.slice(1),origins=new Set(['https://localhost','capacitor://localhost']),hosts=new Set(BUDDY_PERSONAS.map(p=>p.id));
 let used=false;
 if(window.parent!==window&&/^[a-f0-9]{32}$/.test(nonce)){
  window.addEventListener('message',async event=>{
   if(used||event.source!==parent||!origins.has(event.origin)||event.data?.nonce!==nonce||event.data.type!=='request')return;
   const {mode,request}=event.data;
-  if(!['buddy','channel'].includes(mode)||!request||typeof request.question!=='string'||request.question.length>(mode==='buddy'?4000:1000)||!hosts.has(mode==='buddy'?request.personality:request.host))return;
+  if(!['buddy','channel'].includes(mode)||!request||typeof request.question!=='string'||request.question.length>(mode==='buddy'?4000:1000))return;
+  if(!hosts.has(mode==='buddy'?request.personality:request.host)){used=true;parent.postMessage({nonce,type:'error',code:'roster-refresh'},event.origin);return;}
   if(mode==='buddy'&&request.retrievalQuery!==undefined&&(typeof request.retrievalQuery!=='string'||!request.retrievalQuery.trim()||request.retrievalQuery.length>300))return;
   if(mode==='channel'&&(typeof request.shows!=='string'||request.shows.length>100000))return;
   used=true;const reply=data=>parent.postMessage({...data,nonce},event.origin),controller=new AbortController(),timer=setTimeout(()=>controller.abort(),110000);
