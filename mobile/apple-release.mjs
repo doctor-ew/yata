@@ -11,6 +11,8 @@ const team = args.includes('--team') ? value('--team') : '';
 const build = args.includes('--build') ? value('--build') : '';
 const unsigned = args.includes('--unsigned');
 const upload = args.includes('--upload');
+// App Store export can sign a tvOS archive without registering a development device.
+const signOnExport = platform === 'tvos' && upload;
 if (!['ios', 'tvos'].includes(platform) || !/^[1-9][0-9]*$/.test(build || '') ||
     (!unsigned && !/^[A-Z0-9]{10}$/.test(team || '')) || (unsigned && upload)) {
     throw Error('Use --platform ios|tvos --build NUMBER and either --team TEAMID [--upload] or --unsigned. Upload requires an authenticated Apple Developer account.');
@@ -28,7 +30,9 @@ run('xcodebuild', [
     '-scheme', platform === 'ios' ? 'App' : 'YATA', '-configuration', 'Release',
     '-destination', platform === 'ios' ? 'generic/platform=iOS' : 'generic/platform=tvOS',
     '-archivePath', archive, `MARKETING_VERSION=${version}`, `CURRENT_PROJECT_VERSION=${build}`,
-    ...(unsigned ? ['CODE_SIGNING_ALLOWED=NO'] : [`DEVELOPMENT_TEAM=${team}`, '-allowProvisioningUpdates']),
+    ...(unsigned ? ['CODE_SIGNING_ALLOWED=NO'] : signOnExport
+        ? ['CODE_SIGNING_ALLOWED=NO', `DEVELOPMENT_TEAM=${team}`]
+        : [`DEVELOPMENT_TEAM=${team}`, '-allowProvisioningUpdates']),
     'archive'
 ]);
 if (upload) {
