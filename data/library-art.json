@@ -4041,6 +4041,18 @@
       "tvmazeId": 7876,
       "image": "assets/show-art/road-to-avonlea.webp",
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/28/72162.jpg"
+    },
+    "pinwheel": {
+      "title": "Pinwheel",
+      "year": null,
+      "genres": [
+        "Children",
+        "Family"
+      ],
+      "sourceUrl": "https://archive.org/details/nickelodeon-pinwheel-1987-1-hr-20m_202408",
+      "image": "assets/show-art/pinwheel.webp",
+      "imageSource": "https://archive.org/download/nickelodeon-pinwheel-1987-1-hr-20m_202408/__ia_thumb.jpg",
+      "type": "Variety"
     }
   }
 }
