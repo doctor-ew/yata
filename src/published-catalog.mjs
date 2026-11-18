@@ -1,6 +1,7 @@
 import { validateCatalog, MAX_IMPORT_BYTES, MAX_CATALOG_SHOWS, MAX_CATALOG_EPISODES } from "./domain.mjs";
 import { migratedShowChannel } from "./channels.mjs";
-export const PUBLISHED_MANIFEST_PATH = "data/published-catalog-manifest.json";
+export const LEGACY_PUBLISHED_MANIFEST_PATH = "data/published-catalog-manifest.json";
+export const PUBLISHED_MANIFEST_PATH = "data/published-catalog-v2-manifest.json";
 const REVISION = /^[a-f0-9]{64}$/;
 export function catalogCounts(catalog) {
   return {
@@ -67,6 +68,8 @@ export async function fetchPublishedCatalog({
     cache: "no-store",
     credentials: "omit",
   });
+  if (response.status === 404 && manifestUrl === PUBLISHED_MANIFEST_PATH)
+    return fetchPublishedCatalog({fetcher,currentRevision,manifestUrl:LEGACY_PUBLISHED_MANIFEST_PATH,cryptoRef});
   if (response.status === 404)
     return {
       available: false,

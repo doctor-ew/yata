@@ -17,7 +17,7 @@ function fixture() {
 
 test('starter catalog includes the original list, all extras and a separately labeled compilation', () => {
   const c = validateCatalog(createSeed());
-  assert.equal(c.shows.length, 252);
+  assert.equal(c.shows.length, 255);
   assert.equal(c.settings.bumpers, true);
   for (const title of ['Mighty Orbots', 'Street Hawk', 'The Phoenix', 'SilverHawks', 'V']) assert(c.shows.some(s => s.title === title));
   assert.equal(c.shows.find(s => s.id === 'saturday-simulator').episodes[0].sources[0].availability, 'unverified');
@@ -133,7 +133,7 @@ test('catalog persistence round-trips and storage errors are not reported as sav
 test('catalog accepts the expanded Saturday Morning lineup and rejects excessive shows', () => {
   const c=createSeed();
   for(const id of ['jem','she-ra','rainbow-brite','care-bears','strawberry-shortcake','my-little-pony','grimm-fairy-tale-classics','grape-ape','shirt-tales','heathcliff','garfield-friends'])assert.equal(c.shows.find(s=>s.id===id)?.channel,'cartoons');
-  while(c.shows.length<257)c.shows.push({id:'extra-'+c.shows.length,title:'Extra',channel:'cartoons',imdbUrl:null,episodes:[]});
-  assert.throws(()=>validateCatalog(c),/1–256 shows/);
-  c.shows.pop();assert.equal(validateCatalog(c).shows.length,256);
+  while(c.shows.length<513)c.shows.push({id:'extra-'+c.shows.length,title:'Extra',channel:'cartoons',imdbUrl:null,episodes:[]});
+  assert.throws(()=>validateCatalog(c),/1–512 shows/);
+  c.shows.pop();assert.equal(validateCatalog(c).shows.length,512);
 });

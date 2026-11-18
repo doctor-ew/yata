@@ -27,7 +27,7 @@ def read_public(url, maximum=15000000):
 
 
 def verify_bindings(corpus):
-    manifest = json.loads(read_public('https://doctorew.com/tv/data/published-catalog-manifest.json', 3000))
+    manifest = json.loads(read_public('https://doctorew.com/tv/data/published-catalog-v2-manifest.json', 3000))
     revision = manifest['revision']
     require(corpus['catalogRevision'] == revision, 'Catalog changed; regenerate/review evidence before ingestion')
     require(manifest['catalog'] == f'data/catalogs/{revision}.json', 'Invalid catalog manifest')

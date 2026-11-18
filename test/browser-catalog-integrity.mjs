@@ -25,7 +25,7 @@ try {
   if(publicView){
     const text=JSON.stringify(createSeed()),revision=createHash('sha256').update(text).digest('hex'),seed=createSeed();
     const counts={shows:seed.shows.length,episodes:seed.shows.reduce((n,s)=>n+s.episodes.length,0),sources:seed.shows.reduce((n,s)=>n+s.episodes.reduce((m,e)=>m+e.sources.length,0),0)};
-    await ctx.route('**/data/published-catalog-manifest.json',route=>route.fulfill({json:{version:1,revision,catalog:`data/catalogs/${revision}.json`,updatedAt:new Date().toISOString(),counts}}));
+    await ctx.route('**/data/published-catalog-v2-manifest.json',route=>route.fulfill({json:{version:1,revision,catalog:`data/catalogs/${revision}.json`,updatedAt:new Date().toISOString(),counts}}));
     await ctx.route('**/data/catalogs/*.json',route=>route.fulfill({contentType:'application/json',body:text}));
   }
   if(publicView)await ctx.route(origin+'/',async route=>{const response=await route.fetch();await route.fulfill({response,body:(await response.text()).replace('<head>','<head><meta name="drew-tv-hosting" content="static">')});});
