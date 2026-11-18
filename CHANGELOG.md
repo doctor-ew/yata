@@ -2,6 +2,12 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## Catalog update — 2026-11-18
+
+- Added Harlem Globetrotters (1970), The New Scooby-Doo Movies (1972), The Super Globetrotters (1979), Bananaman (1983) and original George of the Jungle (1967), with original-series artwork.
+- Added 100 checked entries: 17 Harlem episodes, 24 Scooby guest-star episodes, two English Super Globetrotters episodes, 40 uploader-labelled Bananaman shorts and 17 intact George/Super Chicken/Tom Slick programs.
+- Available through the shared catalog on web and Android 0.8.10 or later; no APK update.
+
 ## Buddy roster update — 2026-11-18
 
 - Added Mrs. Roper and original Jonny Quest’s Bandit as selectable remote companions, with credited vintage portraits and three hover lines each. No APK update required.

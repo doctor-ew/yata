@@ -1,0 +1,2470 @@
+{
+  "checkedAt": "2026-11-18T19:26:51.769Z",
+  "shows": [
+    {
+      "showId": "harlem-globetrotters",
+      "title": "Harlem Globetrotters (1970)",
+      "channel": "cartoons",
+      "items": [
+        "harlem-globetrotters_202403"
+      ],
+      "episodes": [
+        {
+          "id": "cartoon-wave-82ca42d468126577c369",
+          "title": "Harlem Globetrotters (1970) — The Great Geese Goof-Up",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1209.69,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-82ca42d468126577c369",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2001%20The%20Great%20Geese%20Goof-Up.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-8bd63ffba2413e72ed4e",
+          "title": "Harlem Globetrotters (1970) — Football Zeros",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1189.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-8bd63ffba2413e72ed4e",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2002%20Football%20Zeros.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-50a608d2ed7ed0065850",
+          "title": "Harlem Globetrotters (1970) — Hold That Hillbilly",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1204.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-50a608d2ed7ed0065850",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2003%20Hold%20That%20Hillbilly.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-07f7c6c5f3744d0a318d",
+          "title": "Harlem Globetrotters (1970) — Bad News Cruise",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1202.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-07f7c6c5f3744d0a318d",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2004%20Bad%20News%20Cruise.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-c5e4d49ca9ca3e96c5d1",
+          "title": "Harlem Globetrotters (1970) — Rodeo Duds",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1215.15,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-c5e4d49ca9ca3e96c5d1",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2005%20Rodeo%20Duds.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-1ec1527d2375593e67ac",
+          "title": "Harlem Globetrotters (1970) — Double Dribble Double",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1205.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-1ec1527d2375593e67ac",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2006%20Double%20Dribble%20Double.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-c551127a88a9b1f0089b",
+          "title": "Harlem Globetrotters (1970) — Heir Loons",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1204.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-c551127a88a9b1f0089b",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2007%20Heir%20Loons.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-6f3e30013ad81f33474f",
+          "title": "Harlem Globetrotters (1970) — From Scoop to Nuts",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1204.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-6f3e30013ad81f33474f",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2008%20From%20Scoop%20to%20Nuts.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-584705e865245ec6d151",
+          "title": "Harlem Globetrotters (1970) — What a Day for a Birthday",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1202.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-584705e865245ec6d151",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2009%20What%20a%20Day%20For%20a%20Birthday.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-cd261d149f37be480c53",
+          "title": "Harlem Globetrotters (1970) — It's Snow Vacation",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1197.73,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-cd261d149f37be480c53",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2010%20It%E2%80%99s%20Snow%20Vacation.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-e60c83cee54fa471b5d3",
+          "title": "Harlem Globetrotters (1970) — The Great Ouch Doors",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1199.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-e60c83cee54fa471b5d3",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2011%20The%20Great%20Ouch%20Doors.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-e9a4cbf87f01e43b0063",
+          "title": "Harlem Globetrotters (1970) — Shook-Up Sheriff",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1187.31,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-e9a4cbf87f01e43b0063",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2013%20Shook%20Up%20Sheriff.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-aaef5940d933c6d956a0",
+          "title": "Harlem Globetrotters (1970) — Gone to the Dogs",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 1199.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-aaef5940d933c6d956a0",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2014%20Gone%20To%20The%20Dogs.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-a85a80ed4aac6a079af3",
+          "title": "Harlem Globetrotters (1970) — The Wild Blue Yonder",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 1200.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-a85a80ed4aac6a079af3",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2015%20The%20Wild%20Blue%20Yonder.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-d9d4dfd41ed380355c0b",
+          "title": "Harlem Globetrotters (1970) — Long Gone Gip",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 1198.66,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-d9d4dfd41ed380355c0b",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2016%20Long%20Gone%20Gip.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-af1edf8e4fe911365b57",
+          "title": "Harlem Globetrotters (1970) — A Pearl of a Game",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1225.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-af1edf8e4fe911365b57",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2017%20A%20Pearl%20of%20a%20Game%20.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-6d719e6a1ca640955692",
+          "title": "Harlem Globetrotters (1970) — Nothing to Moon About",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1205.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-6d719e6a1ca640955692",
+              "provider": "archive",
+              "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2018%20Nothing%20to%20Moon%20About.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2001%20The%20Great%20Geese%20Goof-Up.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2003%20Hold%20That%20Hillbilly.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2006%20Double%20Dribble%20Double.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2005%20Rodeo%20Duds.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2002%20Football%20Zeros.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2004%20Bad%20News%20Cruise.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2007%20Heir%20Loons.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2008%20From%20Scoop%20to%20Nuts.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2009%20What%20a%20Day%20For%20a%20Birthday.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2011%20The%20Great%20Ouch%20Doors.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2010%20It%E2%80%99s%20Snow%20Vacation.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2013%20Shook%20Up%20Sheriff.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2014%20Gone%20To%20The%20Dogs.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2015%20The%20Wild%20Blue%20Yonder.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2016%20Long%20Gone%20Gip.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2017%20A%20Pearl%20of%20a%20Game%20.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/harlem-globetrotters_202403/1972%20Harlem%20Globetrotters/Harlem%20Globetrotters%20Episode%2018%20Nothing%20to%20Moon%20About.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        }
+      ]
+    },
+    {
+      "showId": "new-scooby-doo-movies",
+      "title": "The New Scooby-Doo Movies (1972)",
+      "channel": "cartoons",
+      "items": [
+        "the-new-scooby-doo-movies-1972-season-1_202604",
+        "the-new-scooby-doo-movies-1972-season-2"
+      ],
+      "episodes": [
+        {
+          "id": "cartoon-wave-3f8803b2ace63408d394",
+          "title": "The New Scooby-Doo Movies (1972) — Ghastly Ghost Town",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 2572.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-3f8803b2ace63408d394",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-4de6b35a02b1beb08a77",
+          "title": "The New Scooby-Doo Movies (1972) — The Dynamic Scooby-Doo Affair",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 2485.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-4de6b35a02b1beb08a77",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-0cd40cc05a6625968e8e",
+          "title": "The New Scooby-Doo Movies (1972) — Wednesday is Missing",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 2478.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-0cd40cc05a6625968e8e",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-81c1c70c8a47eb4e2f30",
+          "title": "The New Scooby-Doo Movies (1972) — The Frickert Fracas",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 2604.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-81c1c70c8a47eb4e2f30",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP04.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-9a9a20aeff7399c7c7a8",
+          "title": "The New Scooby-Doo Movies (1972) — Guess Who's Knott Coming to Dinner!",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 2604.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-9a9a20aeff7399c7c7a8",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP05.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-713b825a8a4a6e1b6af5",
+          "title": "The New Scooby-Doo Movies (1972) — A Good Medium is Rare",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 2471.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-713b825a8a4a6e1b6af5",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP06.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-a8a793fedbab1b91e7e7",
+          "title": "The New Scooby-Doo Movies (1972) — Sandy Duncan's Jekyll and Hyde",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 2480.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-a8a793fedbab1b91e7e7",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP07.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-cadfdc2ea9c813c3d835",
+          "title": "The New Scooby-Doo Movies (1972) — The Secret Of Shark Island",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 2488.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-cadfdc2ea9c813c3d835",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP08.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-733953760764c64c1e18",
+          "title": "The New Scooby-Doo Movies (1972) — The Spooky Fog",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 2596.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-733953760764c64c1e18",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP09.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-1a46c25039bcc80a3cd0",
+          "title": "The New Scooby-Doo Movies (1972) — Scooby-Doo Meets Laurel & Hardy",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 2598.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-1a46c25039bcc80a3cd0",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP10.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-6cba932e4f761bd33d56",
+          "title": "The New Scooby-Doo Movies (1972) — The Ghost of The Red Baron",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 2600.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-6cba932e4f761bd33d56",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP11.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-3c6ded7064abf3ac0450",
+          "title": "The New Scooby-Doo Movies (1972) — The Ghostly Creep from the Deep",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 2586.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-3c6ded7064abf3ac0450",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP12.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-8fde4e6246712f655eae",
+          "title": "The New Scooby-Doo Movies (1972) — The Haunted Horseman of Hagglethorn Hall",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 2474.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-8fde4e6246712f655eae",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP13.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-6477fb7fb292bf2049f4",
+          "title": "The New Scooby-Doo Movies (1972) — The Phantom of the Country Music Hall",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 2474.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-6477fb7fb292bf2049f4",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP14.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-fcee0a4ffb219be5d569",
+          "title": "The New Scooby-Doo Movies (1972) — The Caped Crusader Caper",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 2560.35,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-fcee0a4ffb219be5d569",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP15.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-23a1ca37743af05c5151",
+          "title": "The New Scooby-Doo Movies (1972) — The Loch Ness Mess",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 2601.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-23a1ca37743af05c5151",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP16.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-2468ea55121be4cfa6ca",
+          "title": "The New Scooby-Doo Movies (1972) — The Mystery of Haunted Island",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 2611.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-2468ea55121be4cfa6ca",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-bd513b567995bb5da2bf",
+          "title": "The New Scooby-Doo Movies (1972) — The Haunted Showboat",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 2607.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-bd513b567995bb5da2bf",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-7f1b8a5d009d3b54f9d3",
+          "title": "The New Scooby-Doo Movies (1972) — Scooby-Doo Meets Jeannie (Mystery in Persia)",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 2576,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-7f1b8a5d009d3b54f9d3",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-11a51365b168de67d291",
+          "title": "The New Scooby-Doo Movies (1972) — The Spirited Spooked Sports Show",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 2589.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-11a51365b168de67d291",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP04.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-d1f92a630dea4e128b0d",
+          "title": "The New Scooby-Doo Movies (1972) — The Exterminator",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 2620.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-d1f92a630dea4e128b0d",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP05.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-ec33a107e6e6107550d8",
+          "title": "The New Scooby-Doo Movies (1972) — The Weird Winds of Winona",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 2616.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-ec33a107e6e6107550d8",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP06.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-f301e6987c58693ee83b",
+          "title": "The New Scooby-Doo Movies (1972) — The Haunted Candy Factory",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 2601.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-f301e6987c58693ee83b",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP07.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-4343ba7ed7a83dd180e4",
+          "title": "The New Scooby-Doo Movies (1972) — Scooby-Doo Meets Dick Van Dyke",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 2602.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-4343ba7ed7a83dd180e4",
+              "provider": "archive",
+              "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP08.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP06.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP04.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP05.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP08.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP07.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP09.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP10.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP11.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP14.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP13.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP12.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP15.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-1_202604/The%20New%20Scooby-Doo%20Movies%20(1972)%20S1%20EP16.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP04.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP05.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP07.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP06.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/the-new-scooby-doo-movies-1972-season-2/The%20New%20Scooby-Doo%20Movies%20(1972)%20S2%20EP08.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        }
+      ]
+    },
+    {
+      "showId": "bananaman",
+      "title": "Bananaman (1983)",
+      "channel": "nick",
+      "items": [
+        "bananaman-the-complete-series-1983-88"
+      ],
+      "episodes": [
+        {
+          "id": "cartoon-wave-f0c2f67e5360e0eca804",
+          "title": "Bananaman S01E01 - Bananaman Meets Dr. Gloom",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 305.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-f0c2f67e5360e0eca804",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E01%20-%20Bananaman%20Meets%20Dr.%20Gloom.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-62c970b3ceb435a0cc09",
+          "title": "Bananaman S01E02 - The Big Breakout",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 306.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-62c970b3ceb435a0cc09",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E02%20-%20The%20Big%20Breakout.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-caa0c16e85a013ef16f6",
+          "title": "Bananaman S01E03 - Ice Station Zero",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 300.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-caa0c16e85a013ef16f6",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E03%20-%20Ice%20Station%20Zero.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-8a915e1d843c5e4272f6",
+          "title": "Bananaman S01E04 - Alien Planet",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 306.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-8a915e1d843c5e4272f6",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E04%20-%20Alien%20Planet.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-0e77d79e40719c61199f",
+          "title": "Bananaman S01E05 - The Kidnap Caper",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 303.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-0e77d79e40719c61199f",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E05%20-%20The%20Kidnap%20Caper.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-55e87e2efa524b856232",
+          "title": "Bananaman S01E06 - House on Hangman's Hill",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 306.48,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-55e87e2efa524b856232",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E06%20-%20House%20on%20Hangman's%20Hill.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-a65021c95ebbaf3038c6",
+          "title": "Bananaman S01E07 - Destination Danger",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 302.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-a65021c95ebbaf3038c6",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E07%20-%20Destination%20Danger.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-7972f497650cf952afea",
+          "title": "Bananaman S01E08 - Wall of Death",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 303.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-7972f497650cf952afea",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E08%20-%20Wall%20of%20Death.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-0d22c5c375a10270f9f0",
+          "title": "Bananaman S01E09 - Jaws of Steel",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 302.44,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-0d22c5c375a10270f9f0",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E09%20-%20Jaws%20of%20Steel.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-0d84fa36867b36d8a6d1",
+          "title": "Bananaman S01E10 - Banana Kid",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 302.44,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-0d84fa36867b36d8a6d1",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E10%20-%20Banana%20Kid.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-da3e1d712cbaa5e56ce5",
+          "title": "Bananaman S01E11 - Auntie's Back in Town",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 304.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-da3e1d712cbaa5e56ce5",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E11%20-%20Auntie's%20Back%20in%20Town.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-bb06ff82158b41884abf",
+          "title": "Bananaman S01E12 - Tunnel of Terror",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 307.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-bb06ff82158b41884abf",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E12%20-%20Tunnel%20of%20Terror.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-938753c8efd47703b93e",
+          "title": "Bananaman S02E01 - Mystery at the Old Mine",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 305.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-938753c8efd47703b93e",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E01%20-%20Mystery%20at%20the%20Old%20Mine.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-27b9a41de561e114a7f8",
+          "title": "Bananaman S02E02 - Lost Tribe of the Tapiocas",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 301.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-27b9a41de561e114a7f8",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E02%20-%20Lost%20Tribe%20of%20the%20Tapiocas.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-785720a8614673b5d76b",
+          "title": "Bananaman S02E03 - Trouble at the Mill",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 298.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-785720a8614673b5d76b",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E03%20-%20Trouble%20at%20the%20Mill.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-850c7abd1d8b5abd727a",
+          "title": "Bananaman S02E04 - The Web of Evil",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 299.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-850c7abd1d8b5abd727a",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E04%20-%20The%20Web%20of%20Evil.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-49eead2ac5c7e3a8917f",
+          "title": "Bananaman S02E05 - The Mummy's Curse",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 301,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-49eead2ac5c7e3a8917f",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E05%20-%20The%20Mummy's%20Curse.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-1eec2f469ae5b53c6d42",
+          "title": "Bananaman S02E06 - The Night Patrol",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 301.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-1eec2f469ae5b53c6d42",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E06%20-%20The%20Night%20Patrol.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-afacc4cf0ff9766274bd",
+          "title": "Bananaman S02E07 - Fog of Fear",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 302.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-afacc4cf0ff9766274bd",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E07%20-%20Fog%20of%20Fear.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-5f9441694e1aa68b5380",
+          "title": "Bananaman S02E08 - A Tank Full of Trouble",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 315.52,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-5f9441694e1aa68b5380",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E08%20-%20A%20Tank%20Full%20of%20Trouble.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-ba5efe3ea314cc7a7111",
+          "title": "Bananaman S02E09 - Double Trouble",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 308.52,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-ba5efe3ea314cc7a7111",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E09%20-%20Double%20Trouble.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-209fca1a8c4c055bcee6",
+          "title": "Bananaman S02E10 - The Last Banana",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 311.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-209fca1a8c4c055bcee6",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E10%20-%20The%20Last%20Banana.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-087d56e38b90b2318760",
+          "title": "Bananaman S02E11 - Intergalactic Olympics",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 310.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-087d56e38b90b2318760",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E11%20-%20Intergalactic%20Olympics.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-0b13fe313caaf9abaa2f",
+          "title": "Bananaman S02E12 - Memory Lane",
+          "season": 2,
+          "number": 12,
+          "durationSeconds": 308.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-0b13fe313caaf9abaa2f",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E12%20-%20Memory%20Lane.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-f24c9747a922eaa7aca6",
+          "title": "Bananaman S02E13 - The Final Orbit",
+          "season": 2,
+          "number": 13,
+          "durationSeconds": 309.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-f24c9747a922eaa7aca6",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E13%20-%20The%20Final%20Orbit.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-08f054b806a135562657",
+          "title": "Bananaman S03E01 - Disaster at Devil's Castle",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 299.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-08f054b806a135562657",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E01%20-%20Disaster%20at%20Devil's%20Castle.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-2f80a635868c2ccd6a51",
+          "title": "Bananaman S03E02 - Night of the Nerks",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 316.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-2f80a635868c2ccd6a51",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E02%20-%20Night%20of%20the%20Nerks.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-28856a9a70fec5a3666e",
+          "title": "Bananaman S03E03 - The Snowman Cometh",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 305.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-28856a9a70fec5a3666e",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E03%20-%20The%20Snowman%20Cometh.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-b189279565a324e3581a",
+          "title": "Bananaman S03E04 - Pirate TV Station",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 308.52,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-b189279565a324e3581a",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E04%20-%20Pirate%20TV%20Station.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-4e0c9ee1766650919a97",
+          "title": "Bananaman S03E05 - Battle of the Bridge",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 304.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-4e0c9ee1766650919a97",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E05%20-%20Battle%20of%20the%20Bridge.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-f2c225840b21fac95d75",
+          "title": "Bananaman S03E06 - Harbour of Lost Ships",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 307.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-f2c225840b21fac95d75",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E06%20-%20Harbour%20of%20Lost%20Ships.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-38de79bb8a8894b16da1",
+          "title": "Bananaman S03E07 - Visibility Zero",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 296.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-38de79bb8a8894b16da1",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E07%20-%20Visibility%20Zero.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-ccd7561c109867dacc80",
+          "title": "Bananaman S03E08 - Battle of the Century",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 303.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-ccd7561c109867dacc80",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E08%20-%20Battle%20of%20the%20Century.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-8a5a88120e35c1ee4d4c",
+          "title": "Bananaman S03E09 - The Perils of Ping Pong",
+          "season": 3,
+          "number": 9,
+          "durationSeconds": 305.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-8a5a88120e35c1ee4d4c",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E09%20-%20The%20Perils%20of%20Ping%20Pong.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-aaf1bfc6c6dde3c5c00a",
+          "title": "Bananaman S03E10 - The Great Air Race",
+          "season": 3,
+          "number": 10,
+          "durationSeconds": 299.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-aaf1bfc6c6dde3c5c00a",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E10%20-%20The%20Great%20Air%20Race.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-105d88c89332f711e731",
+          "title": "Bananaman S03E11 - Cavern of the Lost",
+          "season": 3,
+          "number": 11,
+          "durationSeconds": 296.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-105d88c89332f711e731",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E11%20-%20Cavern%20of%20the%20Lost.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-3f62aff593532cb45550",
+          "title": "Bananaman S03E12 - Clown Capers",
+          "season": 3,
+          "number": 12,
+          "durationSeconds": 300.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-3f62aff593532cb45550",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E12%20-%20Clown%20Capers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-86a9c67f50aac08807ef",
+          "title": "Bananaman S03E13 - Banana Junction",
+          "season": 3,
+          "number": 13,
+          "durationSeconds": 298.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-86a9c67f50aac08807ef",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E13%20-%20Banana%20Junction.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-1aa391cb738924f70bbd",
+          "title": "Bananaman S03E14 - The Crown Jewel Caper",
+          "season": 3,
+          "number": 14,
+          "durationSeconds": 306.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-1aa391cb738924f70bbd",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E14%20-%20The%20Crown%20Jewel%20Caper.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-2d4efd91e377b28e6315",
+          "title": "Bananaman S03E15 - Operation Total",
+          "season": 3,
+          "number": 15,
+          "durationSeconds": 309.52,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-2d4efd91e377b28e6315",
+              "provider": "archive",
+              "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E15%20-%20Operation%20Total.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E04%20-%20Alien%20Planet.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E06%20-%20House%20on%20Hangman's%20Hill.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E05%20-%20The%20Kidnap%20Caper.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E03%20-%20Ice%20Station%20Zero.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E01%20-%20Bananaman%20Meets%20Dr.%20Gloom.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E02%20-%20The%20Big%20Breakout.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E07%20-%20Destination%20Danger.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E11%20-%20Auntie's%20Back%20in%20Town.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E10%20-%20Banana%20Kid.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E12%20-%20Tunnel%20of%20Terror.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E08%20-%20Wall%20of%20Death.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S01E09%20-%20Jaws%20of%20Steel.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E02%20-%20Lost%20Tribe%20of%20the%20Tapiocas.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E03%20-%20Trouble%20at%20the%20Mill.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E01%20-%20Mystery%20at%20the%20Old%20Mine.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E05%20-%20The%20Mummy's%20Curse.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E04%20-%20The%20Web%20of%20Evil.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E06%20-%20The%20Night%20Patrol.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E07%20-%20Fog%20of%20Fear.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E09%20-%20Double%20Trouble.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E08%20-%20A%20Tank%20Full%20of%20Trouble.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E11%20-%20Intergalactic%20Olympics.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E10%20-%20The%20Last%20Banana.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E12%20-%20Memory%20Lane.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E01%20-%20Disaster%20at%20Devil's%20Castle.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S02E13%20-%20The%20Final%20Orbit.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E02%20-%20Night%20of%20the%20Nerks.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E03%20-%20The%20Snowman%20Cometh.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E04%20-%20Pirate%20TV%20Station.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E05%20-%20Battle%20of%20the%20Bridge.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E08%20-%20Battle%20of%20the%20Century.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E07%20-%20Visibility%20Zero.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E09%20-%20The%20Perils%20of%20Ping%20Pong.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E10%20-%20The%20Great%20Air%20Race.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E14%20-%20The%20Crown%20Jewel%20Caper.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E12%20-%20Clown%20Capers.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E06%20-%20Harbour%20of%20Lost%20Ships.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E11%20-%20Cavern%20of%20the%20Lost.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E13%20-%20Banana%20Junction.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/bananaman-the-complete-series-1983-88/Bananaman%20S03E15%20-%20Operation%20Total.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        }
+      ]
+    },
+    {
+      "showId": "george-jungle-1967",
+      "title": "George of the Jungle (1967)",
+      "channel": "cartoons",
+      "items": [
+        "g-of-j-pilot-ep-g-of-j"
+      ],
+      "episodes": [
+        {
+          "id": "cartoon-wave-390ee898359aa9b1ee79",
+          "title": "GOJ 01. The Malady Lingers On - Monster Rally - One of Our States Is Missing! · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1296.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-390ee898359aa9b1ee79",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2001.%20The%20Malady%20Lingers%20On%20-%20Monster%20Rally%20-%20One%20of%20Our%20States%20Is%20Missing!.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-65309790f79be79ba24d",
+          "title": "GOJ 02. Ungawa the Gorilla God - Snow What - The Oyster · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1297.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-65309790f79be79ba24d",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2002.%20Ungawa%20the%20Gorilla%20God%20-%20Snow%20What%20-%20The%20Oyster.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-05948c13bfa64796544a",
+          "title": "GOJ 03. Oo-Oo Birds of a Feather - Send in a Sub - Wild Ralph Hiccup · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1296.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-05948c13bfa64796544a",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2003.%20Oo-Oo%20Birds%20of%20a%20Feather%20-%20Send%20in%20a%20Sub%20-%20Wild%20Ralph%20Hiccup.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-f60b0d11fda8eb2f4560",
+          "title": "GOJ 04. Monkey Business - I've Been Railroaded - The Elephant Spreader · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1296.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-f60b0d11fda8eb2f4560",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2004.%20Monkey%20Business%20-%20I've%20Been%20Railroaded%20-%20The%20Elephant%20Spreader.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-da9253b5ee4c0f783e57",
+          "title": "GOJ 05. The Desperate Showers - The Cupp Cup Race - Rotten Hood · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1295.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-da9253b5ee4c0f783e57",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2005.%20The%20Desperate%20Showers%20-%20The%20Cupp%20Cup%20Race%20-%20Rotten%20Hood.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-7ebc803201674c237d64",
+          "title": "GOJ 06. Little Scissor - The Great Balloon Race - The Easter Bunny · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1295.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-7ebc803201674c237d64",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2006.%20Little%20Scissor%20-%20The%20Great%20Balloon%20Race%20-%20The%20Easter%20Bunny.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-22e39029137b7fa57288",
+          "title": "GOJ 07. Next Time, Take the Train - The Geezer - Dranko the Dragster · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1296.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-22e39029137b7fa57288",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2007.%20Next%20Time%2C%20Take%20the%20Train%20-%20The%20Geezer%20-%20Dranko%20the%20Dragster.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-c74f97ad37e3648929c0",
+          "title": "GOJ 08. The Trouble I've Seed - The Noodle - Overstocked · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1295.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-c74f97ad37e3648929c0",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2008.%20The%20Trouble%20I've%20Seed%20-%20The%20Noodle%20-%20Overstocked.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-c3991e98fef294462161",
+          "title": "GOJ 09. Big Flop at the Big Top - Salvador Rag Dolly - The Sneaky Sheik · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1297,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-c3991e98fef294462161",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2009.%20Big%20Flop%20at%20the%20Big%20Top%20-%20Salvador%20Rag%20Dolly%20-%20The%20Sneaky%20Sheik.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-8463caf145318f5c309b",
+          "title": "GOJ 10. Rescue Is My Business - Merlin Brando - The Appleless Indian 500 · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1296,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-8463caf145318f5c309b",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2010.%20Rescue%20Is%20My%20Business%20-%20Merlin%20Brando%20-%20The%20Appleless%20Indian%20500.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-7047e2dfb88645b24ad6",
+          "title": "GOJ 11. Dr. Schpritzer, I Presume - The Fat Man - The Double Cross Country Race · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1297.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-7047e2dfb88645b24ad6",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2011.%20Dr.%20Schpritzer%2C%20I%20Presume%20-%20The%20Fat%20Man%20-%20The%20Double%20Cross%20Country%20Race.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-0ce10ac19602ad271e06",
+          "title": "GOJ 12. The Chi Chi Dog - Briggs Bad-Wolf - The Cheap Skateboard Derby · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1296.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-0ce10ac19602ad271e06",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2012.%20The%20Chi%20Chi%20Dog%20-%20Briggs%20Bad-Wolf%20-%20The%20Cheap%20Skateboard%20Derby.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-80e6f84afa0128a4a388",
+          "title": "GOJ 13. The Treasure of Sarah Madre - The Laundry Man - The Irish Cheapstakes · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 1297,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-80e6f84afa0128a4a388",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2013.%20The%20Treasure%20of%20Sarah%20Madre%20-%20The%20Laundry%20Man%20-%20The%20Irish%20Cheapstakes.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-20e690f0b7ba5065559a",
+          "title": "GOJ 14. A Man of All Hunting Seasons - The Muscle - The Badyear Blimp · intact George / Super Chicken / Tom Slick presentation",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": 1296.62,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-20e690f0b7ba5065559a",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2014.%20A%20Man%20of%20All%20Hunting%20Seasons%20-%20The%20Muscle%20-%20The%20Badyear%20Blimp.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-dc986944f7516f2f2cdc",
+          "title": "GOJ 15. The Forest's Prime Evil - Dr. Gizmo - The Swamp Buggy Race · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 1295.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-dc986944f7516f2f2cdc",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2015.%20The%20Forest's%20Prime%20Evil%20-%20Dr.%20Gizmo%20-%20The%20Swamp%20Buggy%20Race.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-72b143b760b213c3f09f",
+          "title": "GOJ 16. Kings Back to Back - The Wild Hair - The Mack Buster Trophy · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 17,
+          "durationSeconds": 1296.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-72b143b760b213c3f09f",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2016.%20Kings%20Back%20to%20Back%20-%20The%20Wild%20Hair%20-%20The%20Mack%20Buster%20Trophy.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "cartoon-wave-0a57a997e8d7b91bea0f",
+          "title": "GOJ 17. The Sultan's Pearl - The Zipper - The Bigg Race · intact George / Super Chicken / Tom Slick presentation",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1298.54,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "cartoon-wave-source-0a57a997e8d7b91bea0f",
+              "provider": "archive",
+              "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2017.%20The%20Sultan's%20Pearl%20-%20The%20Zipper%20-%20The%20Bigg%20Race.mp4.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2001.%20The%20Malady%20Lingers%20On%20-%20Monster%20Rally%20-%20One%20of%20Our%20States%20Is%20Missing!.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2002.%20Ungawa%20the%20Gorilla%20God%20-%20Snow%20What%20-%20The%20Oyster.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2003.%20Oo-Oo%20Birds%20of%20a%20Feather%20-%20Send%20in%20a%20Sub%20-%20Wild%20Ralph%20Hiccup.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2005.%20The%20Desperate%20Showers%20-%20The%20Cupp%20Cup%20Race%20-%20Rotten%20Hood.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2006.%20Little%20Scissor%20-%20The%20Great%20Balloon%20Race%20-%20The%20Easter%20Bunny.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2004.%20Monkey%20Business%20-%20I've%20Been%20Railroaded%20-%20The%20Elephant%20Spreader.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2007.%20Next%20Time%2C%20Take%20the%20Train%20-%20The%20Geezer%20-%20Dranko%20the%20Dragster.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2009.%20Big%20Flop%20at%20the%20Big%20Top%20-%20Salvador%20Rag%20Dolly%20-%20The%20Sneaky%20Sheik.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2008.%20The%20Trouble%20I've%20Seed%20-%20The%20Noodle%20-%20Overstocked.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2010.%20Rescue%20Is%20My%20Business%20-%20Merlin%20Brando%20-%20The%20Appleless%20Indian%20500.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2012.%20The%20Chi%20Chi%20Dog%20-%20Briggs%20Bad-Wolf%20-%20The%20Cheap%20Skateboard%20Derby.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2011.%20Dr.%20Schpritzer%2C%20I%20Presume%20-%20The%20Fat%20Man%20-%20The%20Double%20Cross%20Country%20Race.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2014.%20A%20Man%20of%20All%20Hunting%20Seasons%20-%20The%20Muscle%20-%20The%20Badyear%20Blimp.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2017.%20The%20Sultan's%20Pearl%20-%20The%20Zipper%20-%20The%20Bigg%20Race.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2015.%20The%20Forest's%20Prime%20Evil%20-%20Dr.%20Gizmo%20-%20The%20Swamp%20Buggy%20Race.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2016.%20Kings%20Back%20to%20Back%20-%20The%20Wild%20Hair%20-%20The%20Mack%20Buster%20Trophy.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/g-of-j-pilot-ep-g-of-j/GOJ%2013.%20The%20Treasure%20of%20Sarah%20Madre%20-%20The%20Laundry%20Man%20-%20The%20Irish%20Cheapstakes.mp4.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        }
+      ]
+    },
+    {
+      "showId": "super-globetrotters",
+      "title": "The Super Globetrotters (1979)",
+      "channel": "cartoons",
+      "items": [],
+      "episodes": [
+        {
+          "id": "youtube-UurWAsYFtyE",
+          "title": "The Super Globetrotters vs. The Time Lord",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1390,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "youtube-source-UurWAsYFtyE",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=UurWAsYFtyE",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-lAJm_VjJITI",
+          "title": "The Super Globetrotters vs. Transylvania Terrors",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1392,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "youtube-source-lAJm_VjJITI",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=lAJm_VjJITI",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.youtube.com/watch?v=UurWAsYFtyE",
+          "method": "yt-dlp public/embed metadata; original English automatic captions; sampled frame at 2:00 reviewed",
+          "verified": true,
+          "duration": 1390,
+          "language": "en"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lAJm_VjJITI",
+          "method": "yt-dlp public/embed metadata; original English automatic captions; sampled frame at 2:00 reviewed",
+          "verified": true,
+          "duration": 1392,
+          "language": "en"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Original series only; duplicate encodings and shorts duplicated inside intact George presentations omitted.",
+    "Bananaman uses explicit uploader season/episode labels; TVmaze differs around Memory Lane/The Final Orbit. No completeness claim.",
+    "Episode order matched to TVmaze by exact normalized title or explicit uploader season/episode labels; unknown order remains zero. George collection order is preserved in its title, separately from guide order.",
+    "Endpoint checks are not full decoding, distribution-rights verification or future-availability guarantees."
+  ]
+}
