@@ -2,10 +2,12 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
-## Unreleased — Apple beta preparation
+## Unreleased — Apple beta updates
+
+- Reuse the Android retro-TV launcher artwork for iOS and Apple TV icons, replacing the iOS template icon and tvOS text artwork.
 
 - Added a native Apple TV library, show search and Archive video player with a verified bundled catalog and public catalog refresh. YouTube, buddy chat, Arcade and scheduled channel playback are not implemented in this target.
-- Prepared iOS custom-link handling and a repeatable Apple archive/upload command. These changes are not a TestFlight release; signing, upload and beta validation remain pending.
+- Prepared iOS custom-link handling and a repeatable Apple archive/upload command. Build 0.8.10 (1) is available for internal TestFlight testing and submitted for external beta review; device validation remains incomplete.
 
 ## 0.8.10 — 2026-11-18
 
