@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-11-18T14:56:02.351Z",
+  "showId": "pinwheel",
+  "title": "Pinwheel",
+  "channel": "nick",
+  "item": "nickelodeon-pinwheel-1987-1-hr-20m_202408",
+  "episodes": [
+    {
+      "id": "pinwheel-recording-3a1a048c229de71df8ec",
+      "title": "Pinwheel — early 1986 broadcast recording · uploader-labelled full episode",
+      "season": 0,
+      "number": 0,
+      "durationSeconds": 3215.75,
+      "group": "",
+      "kind": "episode",
+      "sources": [
+        {
+          "id": "pinwheel-source-3a1a048c229de71df8ec",
+          "provider": "archive",
+          "url": "https://archive.org/download/nickelodeon-pinwheel-1987-1-hr-20m_202408/Pinwheel%20Full%20Episode%20(Tape%20from%20Early%201986)-(480p).ia.mp4",
+          "availability": "verified"
+        }
+      ]
+    },
+    {
+      "id": "pinwheel-recording-ff2cba1bae090776be18",
+      "title": "Pinwheel — broadcast recording 2 · uploader-labelled full episode",
+      "season": 0,
+      "number": 0,
+      "durationSeconds": 3077.74,
+      "group": "",
+      "kind": "episode",
+      "sources": [
+        {
+          "id": "pinwheel-source-ff2cba1bae090776be18",
+          "provider": "archive",
+          "url": "https://archive.org/download/nickelodeon-pinwheel-1987-1-hr-20m_202408/Pinwheel%20Full%20Episode%20-%202.ia.mp4",
+          "availability": "verified"
+        }
+      ]
+    },
+    {
+      "id": "pinwheel-recording-1be7d9c14068388d2e77",
+      "title": "Pinwheel — broadcast recording 1 · uploader-labelled full episode",
+      "season": 0,
+      "number": 0,
+      "durationSeconds": 3156.68,
+      "group": "",
+      "kind": "episode",
+      "sources": [
+        {
+          "id": "pinwheel-source-1be7d9c14068388d2e77",
+          "provider": "archive",
+          "url": "https://archive.org/download/nickelodeon-pinwheel-1987-1-hr-20m_202408/Pinwheel%20Full%20Episode%20-1.mp4",
+          "availability": "verified"
+        }
+      ]
+    },
+    {
+      "id": "pinwheel-recording-a7ad2f55b1a4ab78b4b6",
+      "title": "Pinwheel — undated broadcast recording · uploader-labelled full episode",
+      "season": 0,
+      "number": 0,
+      "durationSeconds": 3446.39,
+      "group": "",
+      "kind": "episode",
+      "sources": [
+        {
+          "id": "pinwheel-source-a7ad2f55b1a4ab78b4b6",
+          "provider": "archive",
+          "url": "https://archive.org/download/nickelodeon-pinwheel-1987-1-hr-20m_202408/Pinwheel%20Full%20Episode.ia.mp4",
+          "availability": "verified"
+        }
+      ]
+    }
+  ],
+  "sourceChecks": [
+    {
+      "url": "https://archive.org/download/nickelodeon-pinwheel-1987-1-hr-20m_202408/Pinwheel%20Full%20Episode%20(Tape%20from%20Early%201986)-(480p).ia.mp4",
+      "verified": true,
+      "status": 206,
+      "contentType": "video/mp4",
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/nickelodeon-pinwheel-1987-1-hr-20m_202408/Pinwheel%20Full%20Episode%20-%202.ia.mp4",
+      "verified": true,
+      "status": 206,
+      "contentType": "video/mp4",
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/nickelodeon-pinwheel-1987-1-hr-20m_202408/Pinwheel%20Full%20Episode%20-1.mp4",
+      "verified": true,
+      "status": 206,
+      "contentType": "video/mp4",
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/nickelodeon-pinwheel-1987-1-hr-20m_202408/Pinwheel%20Full%20Episode.ia.mp4",
+      "verified": true,
+      "status": 206,
+      "contentType": "video/mp4",
+      "method": "GET bytes=0-1023"
+    }
+  ],
+  "notes": [
+    "Four surviving broadcast recordings labelled full episodes by the uploader, not a verified complete-series inventory.",
+    "Season/episode numbers are unknown and remain zero. Recordings may retain surrounding airtime; no cuts or scene boundaries are invented.",
+    "Selected one encoding per recording; omitted short clips, partial tapes, making-of material and potential aliases of the same recordings.",
+    "Current endpoints and metadata are not full-decoding, distribution-permission or future-availability guarantees. Videos remain on Archive."
+  ]
+}

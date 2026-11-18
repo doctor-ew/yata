@@ -2,6 +2,10 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## Catalog update — 2026-11-18
+
+- Added Pinwheel to Nickelodeon with four surviving broadcast recordings labelled as full episodes by the uploader. Original episode numbers are unknown; short clips and partial tapes were excluded. Available through catalog refresh on apps from 0.8.10, with no APK update required.
+
 ## 0.8.11 — 2026-11-18
 
 - Added Snorks (1984): 76 checked standalone shorts on Saturday Morning.
