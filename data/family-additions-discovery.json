@@ -1,0 +1,3550 @@
+{
+  "checkedAt": "2026-11-18T00:53:16.786Z",
+  "notes": [
+    "Original 1984 Punky Brewster, original 1991 Clarissa and 1988 Sarah Polley Ramona; no remakes.",
+    "Public endpoint and embed metadata checks are not full video decoding, rights verification or guarantees of future availability. No video is rehosted.",
+    "Encoding duplicates collapsed by season/episode. Missing episodes are not invented."
+  ],
+  "shows": [
+    {
+      "showId": "punky-brewster",
+      "title": "Punky Brewster (1984)",
+      "channel": "comedy",
+      "items": [
+        "punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus"
+      ],
+      "episodes": [
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-0",
+          "title": "Punky Brewster - S01E01 - Punky Finds a Home (Part 1)",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1475.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E01%20-%20Punky%20Finds%20a%20Home%20(Part%201).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-1",
+          "title": "Punky Brewster - S01E02 - Punky Finds a Home (Part 2)",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1476.37,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E02%20-%20Punky%20Finds%20a%20Home%20(Part%202).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-2",
+          "title": "Punky Brewster - S01E03 - Punky Finds a Home (Part 3)",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1470.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E03%20-%20Punky%20Finds%20a%20Home%20(Part%203).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-3",
+          "title": "Punky Brewster - S01E04-E05 - Lost and Found - Punky Gets Her Own Room · intact two-episode presentation",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1468.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E04-E05%20-%20Lost%20and%20Found%20-%20Punky%20Gets%20Her%20Own%20Room.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-4",
+          "title": "Punky Brewster - S01E06-E07 - Walk Pool - Gone Fishing · intact two-episode presentation",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1463.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E06-E07%20-%20Walk%20Pool%20-%20Gone%20Fishing.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-5",
+          "title": "Punky Brewster - S01E08 - Take Me Out to the Ballgame",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1468.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E08%20-%20Take%20Me%20Out%20to%20the%20Ballgame.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-6",
+          "title": "Punky Brewster - S01E09 - Parents Night",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1419.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E09%20-%20Parents%20Night.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-7",
+          "title": "Punky Brewster - S01E10-E11 - Go to Sleep - A Visit to the Doctor · intact two-episode presentation",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1464.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E10-E11%20-%20Go%20to%20Sleep%20-%20A%20Visit%20to%20the%20Doctor.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-8",
+          "title": "Punky Brewster - S01E12 - Miss Adorable",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1474.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E12%20-%20Miss%20Adorable.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-9",
+          "title": "Punky Brewster - S01E13 - Dog Dough Afternoon",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1465.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E13%20-%20Dog%20Dough%20Afternoon.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-10",
+          "title": "Punky Brewster - S01E14 - Bye Bye, My",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 1462.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E14%20-%20Bye%20Bye%2C%20My.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-11",
+          "title": "Punky Brewster - S01E15-E16 - Yes Punky There Is a Santa Claus · intact two-episode presentation",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 2929.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E15-E16%20-%20Yes%20Punky%20There%20Is%20a%20Santa%20Claus.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-12",
+          "title": "Punky Brewster - S01E17 - Play It Again, Punky (Punky In The Record Business)",
+          "season": 1,
+          "number": 17,
+          "durationSeconds": 1463.43,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E17%20-%20Play%20It%20Again%2C%20Punky%20(Punky%20In%20The%20Record%20Business).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-13",
+          "title": "Punky Brewster - S01E18 - Henry Falls in Love (Part.1)",
+          "season": 1,
+          "number": 18,
+          "durationSeconds": 1425.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-13",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E18%20-%20Henry%20Falls%20in%20Love%20(Part.1).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-14",
+          "title": "Punky Brewster - S01E19 - Henry Falls in Love (Part 2)",
+          "season": 1,
+          "number": 19,
+          "durationSeconds": 1448.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-14",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E19%20-%20Henry%20Falls%20in%20Love%20(Part%202).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-15",
+          "title": "Punky Brewster - S01E20 - My Aged Valentine",
+          "season": 1,
+          "number": 20,
+          "durationSeconds": 1461.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-15",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E20%20-%20My%20Aged%20Valentine.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-16",
+          "title": "Punky Brewster - S01E21 - I Love You Brandon",
+          "season": 1,
+          "number": 21,
+          "durationSeconds": 1462.37,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-16",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E21%20-%20I%20Love%20You%20Brandon.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-17",
+          "title": "Punky Brewster - S01E22 - Punky Brewster's Workout",
+          "season": 1,
+          "number": 22,
+          "durationSeconds": 1462.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-17",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E22%20-%20Punky%20Brewster's%20Workout.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-18",
+          "title": "Punky Brewster - S01E23 - Gals and Dolls",
+          "season": 1,
+          "number": 23,
+          "durationSeconds": 1456.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-18",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E23%20-%20Gals%20and%20Dolls.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-19",
+          "title": "Punky Brewster - S01E24-E25 - Fenster Hall · intact two-episode presentation",
+          "season": 1,
+          "number": 24,
+          "durationSeconds": 2906.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-19",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E24-E25%20-%20Fenster%20Hall.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-20",
+          "title": "Punky Brewster - S02E01 - The K. O. Kid",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1468.73,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-20",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E01%20-%20The%20K.%20O.%20Kid.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-21",
+          "title": "Punky Brewster - S02E02 - Punkys Tree House",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1463.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-21",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E02%20-%20Punkys%20Tree%20House.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-22",
+          "title": "Punky Brewster - S02E03 - Cheaters Never Win",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 1452.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-22",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E03%20-%20Cheaters%20Never%20Win.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-23",
+          "title": "Punky Brewster - S02E04 - Baby Buddies, Inc.",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 1466.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-23",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E04%20-%20Baby%20Buddies%2C%20Inc..ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-24",
+          "title": "Punky Brewster - S02E05 - Tap Your Troubles Away",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 1465.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-24",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E05%20-%20Tap%20Your%20Troubles%20Away.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-25",
+          "title": "Punky Brewster - S02E06 - The Perils of Punky (Part 1)",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 1489.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-25",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E06%20-%20The%20Perils%20of%20Punky%20(Part%201).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-26",
+          "title": "Punky Brewster - S02E07 - The Perils of Punky (Part 2)",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 1468.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-26",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E07%20-%20The%20Perils%20of%20Punky%20(Part%202).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-27",
+          "title": "Punky Brewster - S02E08 - Just Say No",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 1467.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-27",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E08%20-%20Just%20Say%20No.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-28",
+          "title": "Punky Brewster - S02E09 - The Search",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 1474.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-28",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E09%20-%20The%20Search.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-29",
+          "title": "Punky Brewster - S02E10 - Love Thy Neighbor",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 1469.63,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-29",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E10%20-%20Love%20Thy%20Neighbor.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-30",
+          "title": "Punky Brewster - S02E11 - The Gift",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 1470.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-30",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E11%20-%20The%20Gift.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-31",
+          "title": "Punky Brewster - S02E12 - Milk Does a Body Good",
+          "season": 2,
+          "number": 12,
+          "durationSeconds": 1477.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-31",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E12%20-%20Milk%20Does%20a%20Body%20Good.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-32",
+          "title": "Punky Brewster - S02E13 - Christmas Shoplifting",
+          "season": 2,
+          "number": 13,
+          "durationSeconds": 1469.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-32",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E13%20-%20Christmas%20Shoplifting.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-33",
+          "title": "Punky Brewster - S02E14 - Urban Fear",
+          "season": 2,
+          "number": 14,
+          "durationSeconds": 1474.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-33",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E14%20-%20Urban%20Fear.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-34",
+          "title": "Punky Brewster - S02E15 - Girls Will Be Boys",
+          "season": 2,
+          "number": 15,
+          "durationSeconds": 1465.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-34",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E15%20-%20Girls%20Will%20Be%20Boys.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-35",
+          "title": "Punky Brewster - S02E16 - Cherie Lifesaver",
+          "season": 2,
+          "number": 16,
+          "durationSeconds": 1444.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-35",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E16%20-%20Cherie%20Lifesaver.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-36",
+          "title": "Punky Brewster - S02E17 - Changes (Part 1)",
+          "season": 2,
+          "number": 17,
+          "durationSeconds": 1491,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-36",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E17%20-%20Changes%20(Part%201).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-37",
+          "title": "Punky Brewster - S02E18 - Changes (Part 2)",
+          "season": 2,
+          "number": 18,
+          "durationSeconds": 1489.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-37",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E18%20-%20Changes%20(Part%202).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-38",
+          "title": "Punky Brewster - S02E19 - Changes (Part 3)",
+          "season": 2,
+          "number": 19,
+          "durationSeconds": 1480.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-38",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E19%20-%20Changes%20(Part%203).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-39",
+          "title": "Punky Brewster - S02E20 - Changes (Part 4)",
+          "season": 2,
+          "number": 20,
+          "durationSeconds": 1494.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-39",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E20%20-%20Changes%20(Part%204).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-40",
+          "title": "Punky Brewster - S02E21 - Changes (Part 5)",
+          "season": 2,
+          "number": 21,
+          "durationSeconds": 1468.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-40",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E21%20-%20Changes%20(Part%205).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-41",
+          "title": "Punky Brewster - S02E22 - Accidents Happen",
+          "season": 2,
+          "number": 22,
+          "durationSeconds": 1467.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-41",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E22%20-%20Accidents%20Happen.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-42",
+          "title": "Punky Brewster - S03E01 - Reading Writing and Rock & Roll",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 1321.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-42",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E01%20-%20Reading%20Writing%20and%20Rock%20%26%20Roll.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-43",
+          "title": "Punky Brewster - S03E02 - Punkys Big Story",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 1321.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-43",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E02%20-%20Punkys%20Big%20Story.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-44",
+          "title": "Punky Brewster - S03E03 - Tons of Fun",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 1322.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-44",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E03%20-%20Tons%20of%20Fun.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-45",
+          "title": "Punky Brewster - S03E04 - Divorce Anderson Style",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 1322.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-45",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E04%20-%20Divorce%20Anderson%20Style.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-46",
+          "title": "Punky Brewster - S03E05 - Beer and Buffaloes Dont Mix",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 1321.37,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-46",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E05%20-%20Beer%20and%20Buffaloes%20Dont%20Mix.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-47",
+          "title": "Punky Brewster - S03E06 - Hands Across the Halls",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 1326.46,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-47",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E06%20-%20Hands%20Across%20the%20Halls.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-48",
+          "title": "Punky Brewster - S03E07 - Best Friends",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 1320.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-48",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E07%20-%20Best%20Friends.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-49",
+          "title": "Punky Brewster - S03E08 - Its a Dogs Life",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 1320.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-49",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E08%20-%20Its%20a%20Dogs%20Life.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-50",
+          "title": "Punky Brewster - S03E09 - The Metamorphosis",
+          "season": 3,
+          "number": 9,
+          "durationSeconds": 1321.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-50",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E09%20-%20The%20Metamorphosis.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-51",
+          "title": "Punky Brewster - S03E10 - Fighting City Hall",
+          "season": 3,
+          "number": 10,
+          "durationSeconds": 1320.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-51",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E10%20-%20Fighting%20City%20Hall.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-52",
+          "title": "Punky Brewster - S03E11 - The Matchmaker",
+          "season": 3,
+          "number": 11,
+          "durationSeconds": 1321.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-52",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E11%20-%20The%20Matchmaker.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-53",
+          "title": "Punky Brewster - S03E12 - My Fair Punky",
+          "season": 3,
+          "number": 12,
+          "durationSeconds": 1321.37,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-53",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E12%20-%20My%20Fair%20Punky.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-54",
+          "title": "Punky Brewster - S03E13 - The Anniversary",
+          "season": 3,
+          "number": 13,
+          "durationSeconds": 1322.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-54",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E13%20-%20The%20Anniversary.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-55",
+          "title": "Punky Brewster - S03E14 - Tangled Web",
+          "season": 3,
+          "number": 14,
+          "durationSeconds": 1329.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-55",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E14%20-%20Tangled%20Web.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-56",
+          "title": "Punky Brewster - S03E15 Punkys Porker",
+          "season": 3,
+          "number": 15,
+          "durationSeconds": 1323.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-56",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E15%20Punkys%20Porker.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-57",
+          "title": "Punky Brewster - S03E16 - This Spuds for You",
+          "season": 3,
+          "number": 16,
+          "durationSeconds": 1323.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-57",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E16%20-%20This%20Spuds%20for%20You.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-58",
+          "title": "Punky Brewster - S03E17 - So Long Studio",
+          "season": 3,
+          "number": 17,
+          "durationSeconds": 1323.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-58",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E17%20-%20So%20Long%20Studio.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-59",
+          "title": "Punky Brewster - S03E18 - Help Wanted",
+          "season": 3,
+          "number": 18,
+          "durationSeconds": 1320.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-59",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E18%20-%20Help%20Wanted.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-60",
+          "title": "Punky Brewster - S03E19 - Remember When",
+          "season": 3,
+          "number": 19,
+          "durationSeconds": 1322.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-60",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E19%20-%20Remember%20When.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-61",
+          "title": "Punky Brewster - S03E20 - Unhooking Henry",
+          "season": 3,
+          "number": 20,
+          "durationSeconds": 1322.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-61",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E20%20-%20Unhooking%20Henry.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-62",
+          "title": "Punky Brewster - S03E21 - Open Door Broken Heart (Part 1)",
+          "season": 3,
+          "number": 21,
+          "durationSeconds": 1321.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-62",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E21%20-%20Open%20Door%20Broken%20Heart%20(Part%201).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-63",
+          "title": "Punky Brewster - S03E22 - Open Door Broken Heart (Part 2)",
+          "season": 3,
+          "number": 22,
+          "durationSeconds": 1321.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-63",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E22%20-%20Open%20Door%20Broken%20Heart%20(Part%202).ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-64",
+          "title": "Punky Brewster - S04E01 - The Nuns Story",
+          "season": 4,
+          "number": 1,
+          "durationSeconds": 1321.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-64",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E01%20-%20The%20Nuns%20Story.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-65",
+          "title": "Punky Brewster - S04E02 - Crushed",
+          "season": 4,
+          "number": 2,
+          "durationSeconds": 1325.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-65",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E02%20-%20Crushed.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-66",
+          "title": "Punky Brewster - S04E03 - Going to Camp",
+          "season": 4,
+          "number": 3,
+          "durationSeconds": 1323.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-66",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E03%20-%20Going%20to%20Camp.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-67",
+          "title": "Punky Brewster - S04E04 - Poor Margaux",
+          "season": 4,
+          "number": 4,
+          "durationSeconds": 1321.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-67",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E04%20-%20Poor%20Margaux.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-68",
+          "title": "Punky Brewster - S04E05 - Brandons Commercial",
+          "season": 4,
+          "number": 5,
+          "durationSeconds": 1320.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-68",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E05%20-%20Brandons%20Commercial.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-69",
+          "title": "Punky Brewster - S04E06 - Passed Away at Punkys Place",
+          "season": 4,
+          "number": 6,
+          "durationSeconds": 1322.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-69",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E06%20-%20Passed%20Away%20at%20Punkys%20Place.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-70",
+          "title": "Punky Brewster - S04E07 - Christmas Hero",
+          "season": 4,
+          "number": 7,
+          "durationSeconds": 1320.63,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-70",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E07%20-%20Christmas%20Hero.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-71",
+          "title": "Punky Brewster - S04E08 - Cosmetic Scam",
+          "season": 4,
+          "number": 8,
+          "durationSeconds": 1323.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-71",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E08%20-%20Cosmetic%20Scam.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-72",
+          "title": "Punky Brewster - S04E09 - See You in Court",
+          "season": 4,
+          "number": 9,
+          "durationSeconds": 1320.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-72",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E09%20-%20See%20You%20in%20Court.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-73",
+          "title": "Punky Brewster - S04E10 - Radio Daze",
+          "season": 4,
+          "number": 10,
+          "durationSeconds": 1320.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-73",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E10%20-%20Radio%20Daze.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-74",
+          "title": "Punky Brewster - S04E11 - Aunt Larnese Is Coming to Town",
+          "season": 4,
+          "number": 11,
+          "durationSeconds": 1320.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-74",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E11%20-%20Aunt%20Larnese%20Is%20Coming%20to%20Town.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-75",
+          "title": "Punky Brewster - S04E12 - Dear Diary",
+          "season": 4,
+          "number": 12,
+          "durationSeconds": 1322.43,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-75",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E12%20-%20Dear%20Diary.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-76",
+          "title": "Punky Brewster - S04E13 - The Reading Game",
+          "season": 4,
+          "number": 13,
+          "durationSeconds": 1320.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-76",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E13%20-%20The%20Reading%20Game.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-77",
+          "title": "Punky Brewster - S04E14 - Ouch",
+          "season": 4,
+          "number": 14,
+          "durationSeconds": 1319.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-77",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E14%20-%20Ouch.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-78",
+          "title": "Punky Brewster - S04E15 - No No We Wont Go",
+          "season": 4,
+          "number": 15,
+          "durationSeconds": 1320.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-78",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E15%20-%20No%20No%20We%20Wont%20Go.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-79",
+          "title": "Punky Brewster - S04E16 - Bad Dog",
+          "season": 4,
+          "number": 16,
+          "durationSeconds": 1320.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-79",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E16%20-%20Bad%20Dog.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-80",
+          "title": "Punky Brewster - S04E17 - Vice-Versa",
+          "season": 4,
+          "number": 17,
+          "durationSeconds": 1320.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-80",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E17%20-%20Vice-Versa.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-81",
+          "title": "Punky Brewster - S04E18 - Wimped Out",
+          "season": 4,
+          "number": 18,
+          "durationSeconds": 1320.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-81",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E18%20-%20Wimped%20Out.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-82",
+          "title": "Punky Brewster - S04E19 - One Plus Tutor Is Three",
+          "season": 4,
+          "number": 19,
+          "durationSeconds": 1320.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-82",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E19%20-%20One%20Plus%20Tutor%20Is%20Three.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-83",
+          "title": "Punky Brewster - S04E20 - The Dilemma",
+          "season": 4,
+          "number": 20,
+          "durationSeconds": 1315.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-83",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E20%20-%20The%20Dilemma.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-84",
+          "title": "Punky Brewster - S04E21 - Whats Your Sign",
+          "season": 4,
+          "number": 21,
+          "durationSeconds": 1320.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-84",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E21%20-%20Whats%20Your%20Sign.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus-85",
+          "title": "Punky Brewster - S04E22 - Wedding Bells for Brandon",
+          "season": 4,
+          "number": 22,
+          "durationSeconds": 1317,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-85",
+              "provider": "archive",
+              "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E22%20-%20Wedding%20Bells%20for%20Brandon.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E01%20-%20Punky%20Finds%20a%20Home%20(Part%201).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E02%20-%20Punky%20Finds%20a%20Home%20(Part%202).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E03%20-%20Punky%20Finds%20a%20Home%20(Part%203).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E04-E05%20-%20Lost%20and%20Found%20-%20Punky%20Gets%20Her%20Own%20Room.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E06-E07%20-%20Walk%20Pool%20-%20Gone%20Fishing.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E08%20-%20Take%20Me%20Out%20to%20the%20Ballgame.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E09%20-%20Parents%20Night.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E10-E11%20-%20Go%20to%20Sleep%20-%20A%20Visit%20to%20the%20Doctor.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E12%20-%20Miss%20Adorable.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E13%20-%20Dog%20Dough%20Afternoon.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E14%20-%20Bye%20Bye%2C%20My.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E17%20-%20Play%20It%20Again%2C%20Punky%20(Punky%20In%20The%20Record%20Business).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E18%20-%20Henry%20Falls%20in%20Love%20(Part.1).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E19%20-%20Henry%20Falls%20in%20Love%20(Part%202).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E20%20-%20My%20Aged%20Valentine.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E21%20-%20I%20Love%20You%20Brandon.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E22%20-%20Punky%20Brewster's%20Workout.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E23%20-%20Gals%20and%20Dolls.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E01%20-%20The%20K.%20O.%20Kid.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E02%20-%20Punkys%20Tree%20House.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E03%20-%20Cheaters%20Never%20Win.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E04%20-%20Baby%20Buddies%2C%20Inc..ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E05%20-%20Tap%20Your%20Troubles%20Away.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E06%20-%20The%20Perils%20of%20Punky%20(Part%201).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E07%20-%20The%20Perils%20of%20Punky%20(Part%202).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E08%20-%20Just%20Say%20No.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E09%20-%20The%20Search.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E10%20-%20Love%20Thy%20Neighbor.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E11%20-%20The%20Gift.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E12%20-%20Milk%20Does%20a%20Body%20Good.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E13%20-%20Christmas%20Shoplifting.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E14%20-%20Urban%20Fear.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E15%20-%20Girls%20Will%20Be%20Boys.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E16%20-%20Cherie%20Lifesaver.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E17%20-%20Changes%20(Part%201).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E18%20-%20Changes%20(Part%202).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E19%20-%20Changes%20(Part%203).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E20%20-%20Changes%20(Part%204).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E21%20-%20Changes%20(Part%205).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S02E22%20-%20Accidents%20Happen.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E01%20-%20Reading%20Writing%20and%20Rock%20%26%20Roll.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E02%20-%20Punkys%20Big%20Story.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E03%20-%20Tons%20of%20Fun.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E04%20-%20Divorce%20Anderson%20Style.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E05%20-%20Beer%20and%20Buffaloes%20Dont%20Mix.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E06%20-%20Hands%20Across%20the%20Halls.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E07%20-%20Best%20Friends.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E08%20-%20Its%20a%20Dogs%20Life.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E09%20-%20The%20Metamorphosis.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E10%20-%20Fighting%20City%20Hall.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E11%20-%20The%20Matchmaker.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E12%20-%20My%20Fair%20Punky.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E13%20-%20The%20Anniversary.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E14%20-%20Tangled%20Web.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E15%20Punkys%20Porker.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E16%20-%20This%20Spuds%20for%20You.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E17%20-%20So%20Long%20Studio.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E18%20-%20Help%20Wanted.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E19%20-%20Remember%20When.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E20%20-%20Unhooking%20Henry.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E21%20-%20Open%20Door%20Broken%20Heart%20(Part%201).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S03E22%20-%20Open%20Door%20Broken%20Heart%20(Part%202).ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E01%20-%20The%20Nuns%20Story.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E02%20-%20Crushed.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E03%20-%20Going%20to%20Camp.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E04%20-%20Poor%20Margaux.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E05%20-%20Brandons%20Commercial.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E06%20-%20Passed%20Away%20at%20Punkys%20Place.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E07%20-%20Christmas%20Hero.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E08%20-%20Cosmetic%20Scam.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E09%20-%20See%20You%20in%20Court.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E10%20-%20Radio%20Daze.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E11%20-%20Aunt%20Larnese%20Is%20Coming%20to%20Town.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E12%20-%20Dear%20Diary.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E13%20-%20The%20Reading%20Game.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E14%20-%20Ouch.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E15%20-%20No%20No%20We%20Wont%20Go.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E16%20-%20Bad%20Dog.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E17%20-%20Vice-Versa.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E18%20-%20Wimped%20Out.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E19%20-%20One%20Plus%20Tutor%20Is%20Three.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E20%20-%20The%20Dilemma.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E21%20-%20Whats%20Your%20Sign.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S04E22%20-%20Wedding%20Bells%20for%20Brandon.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E15-E16%20-%20Yes%20Punky%20There%20Is%20a%20Santa%20Claus.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/punky-brewster-s-01-e-15-e-16-yes-punky-there-is-a-santa-claus/Punky%20Brewster%20-%20S01E24-E25%20-%20Fenster%20Hall.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "showId": "clarissa",
+      "title": "Clarissa Explains It All (1991)",
+      "channel": "nick",
+      "items": [
+        "clarissa-explains-it-all-season-1",
+        "ceia-1991-s-02",
+        "ceia-1991-s-03",
+        "ceia-1991-s-04",
+        "clarissa-explains-it-all-1991-s-05-e-08"
+      ],
+      "episodes": [
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-0",
+          "title": "CEIA S01 E01 - Clarissa'a Revenge",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1200.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E01%20-%20Clarissa'a%20Revenge.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-1",
+          "title": "CEIA S01 E02 - School Picture",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1539.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E02%20-%20School%20Picture.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-2",
+          "title": "CEIA S01 E03 - No T.V.",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1536.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E03%20-%20No%20T.V..mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-3",
+          "title": "CEIA S01 E04 - Urge to Drive",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1535,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E04%20-%20Urge%20to%20Drive.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-4",
+          "title": "CEIA S01 E05 - Clarissa News Network",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1528.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E05%20-%20Clarissa%20News%20Network.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-5",
+          "title": "CEIA S01 E06 - Haunted House",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1575.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E06%20-%20Haunted%20House.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-6",
+          "title": "CEIA S01 E07 - The Bully",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1552.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E07%20-%20The%20Bully.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-7",
+          "title": "CEIA S01 E08 - New Addition",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1511.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E08%20-%20New%20Addition.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-8",
+          "title": "CEIA S01 E09 - Brain Drain",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1565.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E09%20-%20Brain%20Drain.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-9",
+          "title": "CEIA S01 E10 - Clarissa Makes a Cake",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1541.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E10%20-%20Clarissa%20Makes%20a%20Cake.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-10",
+          "title": "CEIA S01 E11 - Parents Who Say No",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1544.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E11%20-%20Parents%20Who%20Say%20No.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-11",
+          "title": "CEIA S01 E12 - Cool Dad",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1535.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E12%20-%20Cool%20Dad.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-season-1-12",
+          "title": "CEIA S01 E13 - Sick Days",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1550.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E13%20-%20Sick%20Days.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-02-0",
+          "title": "CEIA [1991] S02E01",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1459.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-02/CEIA%20%5B1991%5D%20S02E01.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-02-1",
+          "title": "CEIA [1991] S02E02",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1469.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-02/CEIA%20%5B1991%5D%20S02E02.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-02-2",
+          "title": "CEIA [1991] S02E03",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 1458.78,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-02/CEIA%20%5B1991%5D%20S02E03.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-02-3",
+          "title": "CEIA [1991] S02E04",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 1455.35,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-02/CEIA%20%5B1991%5D%20S02E04.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-02-4",
+          "title": "CEIA [1991] S02E05",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 1440.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-02/CEIA%20%5B1991%5D%20S02E05.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-02-5",
+          "title": "CEIA [1991] S02E06",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 1398.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-02/CEIA%20%5B1991%5D%20S02E06.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-0",
+          "title": "CEIA [1991] S03E01",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 1457.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E01.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-1",
+          "title": "CEIA [1991] S03E02",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 1357.59,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E02.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-2",
+          "title": "CEIA [1991] S03E03",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 1458.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E03.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-3",
+          "title": "CEIA [1991] S03E04",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 1472,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E04.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-4",
+          "title": "CEIA [1991] S03E05",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 1473.18,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E05.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-5",
+          "title": "CEIA [1991] S03E06",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 1424.58,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E06.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-6",
+          "title": "CEIA [1991] S03E07",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 1454.61,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E07.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-7",
+          "title": "CEIA [1991] S03E08",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 1504.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E08.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-8",
+          "title": "CEIA [1991] S03E09",
+          "season": 3,
+          "number": 9,
+          "durationSeconds": 1471.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E09.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-9",
+          "title": "CEIA [1991] S03E10",
+          "season": 3,
+          "number": 10,
+          "durationSeconds": 1458.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E10.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-10",
+          "title": "CEIA [1991] S03E11",
+          "season": 3,
+          "number": 11,
+          "durationSeconds": 1473.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E11.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-11",
+          "title": "CEIA [1991] S03E12",
+          "season": 3,
+          "number": 12,
+          "durationSeconds": 1470.59,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-11",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E12.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-03-12",
+          "title": "CEIA [1991] S03E13",
+          "season": 3,
+          "number": 13,
+          "durationSeconds": 1473.22,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-12",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E13.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-04-0",
+          "title": "CEIA [1991] S04E01",
+          "season": 4,
+          "number": 1,
+          "durationSeconds": 1454.51,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E01.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-04-1",
+          "title": "CEIA [1991] S04E03",
+          "season": 4,
+          "number": 3,
+          "durationSeconds": 1440.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E03.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-04-2",
+          "title": "CEIA [1991] S04E04",
+          "season": 4,
+          "number": 4,
+          "durationSeconds": 1441.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E04.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-04-3",
+          "title": "CEIA [1991] S04E05",
+          "season": 4,
+          "number": 5,
+          "durationSeconds": 1472.54,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E05.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-04-4",
+          "title": "CEIA [1991] S04E06",
+          "season": 4,
+          "number": 6,
+          "durationSeconds": 1459.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E06.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-04-5",
+          "title": "CEIA [1991] S04E07",
+          "season": 4,
+          "number": 7,
+          "durationSeconds": 1470.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E07.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-04-6",
+          "title": "CEIA [1991] S04E08",
+          "season": 4,
+          "number": 8,
+          "durationSeconds": 1443.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E08.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-04-7",
+          "title": "CEIA [1991] S04E09",
+          "season": 4,
+          "number": 9,
+          "durationSeconds": 1473.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E09.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-04-8",
+          "title": "CEIA [1991] S04E11",
+          "season": 4,
+          "number": 11,
+          "durationSeconds": 1458.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E11.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-04-9",
+          "title": "CEIA [1991] S04E12",
+          "season": 4,
+          "number": 12,
+          "durationSeconds": 1470.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E12.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-ceia-1991-s-04-10",
+          "title": "CEIA [1991] S04E14",
+          "season": 4,
+          "number": 14,
+          "durationSeconds": 1473.69,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E14.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-1991-s-05-e-08-0",
+          "title": "Clarissa Explains It All [1991] S05E01",
+          "season": 5,
+          "number": 1,
+          "durationSeconds": 1473.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-0",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E01.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-1991-s-05-e-08-1",
+          "title": "Clarissa Explains It All [1991] S05E02",
+          "season": 5,
+          "number": 2,
+          "durationSeconds": 1501.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-1",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E02.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-1991-s-05-e-08-2",
+          "title": "Clarissa Explains It All [1991] S05E04",
+          "season": 5,
+          "number": 4,
+          "durationSeconds": 1469.78,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-2",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E04.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-1991-s-05-e-08-3",
+          "title": "Clarissa Explains It All [1991] S05E05",
+          "season": 5,
+          "number": 5,
+          "durationSeconds": 1469.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-3",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E05.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-1991-s-05-e-08-4",
+          "title": "Clarissa Explains It All [1991] S05E06",
+          "season": 5,
+          "number": 6,
+          "durationSeconds": 1470.37,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-4",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E06.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-1991-s-05-e-08-5",
+          "title": "Clarissa Explains It All [1991] S05E07",
+          "season": 5,
+          "number": 7,
+          "durationSeconds": 1473.31,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-5",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E07.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-1991-s-05-e-08-6",
+          "title": "Clarissa Explains It All [1991] S05E08",
+          "season": 5,
+          "number": 8,
+          "durationSeconds": 1562.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-6",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E08.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-1991-s-05-e-08-7",
+          "title": "Clarissa Explains It All [1991] S05E09",
+          "season": 5,
+          "number": 9,
+          "durationSeconds": 1473.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-7",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E09.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-1991-s-05-e-08-8",
+          "title": "Clarissa Explains It All [1991] S05E10",
+          "season": 5,
+          "number": 10,
+          "durationSeconds": 1473.4,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-8",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E10.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-1991-s-05-e-08-9",
+          "title": "Clarissa Explains It All [1991] S05E11",
+          "season": 5,
+          "number": 11,
+          "durationSeconds": 1458.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-9",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E11.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "archive-clarissa-explains-it-all-1991-s-05-e-08-10",
+          "title": "Clarissa Explains It All [1991] S05E12",
+          "season": 5,
+          "number": 12,
+          "durationSeconds": 1499.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-file-10",
+              "provider": "archive",
+              "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E12.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E01%20-%20Clarissa'a%20Revenge.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E02%20-%20School%20Picture.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E03%20-%20No%20T.V..mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E04%20-%20Urge%20to%20Drive.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E05%20-%20Clarissa%20News%20Network.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E06%20-%20Haunted%20House.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E07%20-%20The%20Bully.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E08%20-%20New%20Addition.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E09%20-%20Brain%20Drain.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E10%20-%20Clarissa%20Makes%20a%20Cake.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E11%20-%20Parents%20Who%20Say%20No.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E12%20-%20Cool%20Dad.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-season-1/CEIA%20S01%20E13%20-%20Sick%20Days.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-02/CEIA%20%5B1991%5D%20S02E01.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-02/CEIA%20%5B1991%5D%20S02E02.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-02/CEIA%20%5B1991%5D%20S02E03.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-02/CEIA%20%5B1991%5D%20S02E04.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-02/CEIA%20%5B1991%5D%20S02E05.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-02/CEIA%20%5B1991%5D%20S02E06.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E01.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E02.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E03.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E04.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E05.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E06.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E07.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E08.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E09.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E10.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E11.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E12.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-03/CEIA%20%5B1991%5D%20S03E13.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E01.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E03.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E04.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E05.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E06.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E07.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E08.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E09.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E11.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E12.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/ceia-1991-s-04/CEIA%20%5B1991%5D%20S04E14.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E01.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E02.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E04.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E05.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E06.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E07.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E08.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E09.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E10.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E11.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        },
+        {
+          "url": "https://archive.org/download/clarissa-explains-it-all-1991-s-05-e-08/Clarissa%20Explains%20It%20All%20%5B1991%5D%20S05E12.ia.mp4",
+          "method": "GET bytes=0-1023",
+          "status": 206,
+          "contentType": "video/mp4",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "showId": "ramona",
+      "title": "Ramona (1988)",
+      "channel": "nick",
+      "items": [],
+      "episodes": [
+        {
+          "id": "youtube-Q9uiNspXon8",
+          "title": "Ramona 1988, Episode 01 - Squeakerfoot",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1539,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "youtube-source-Q9uiNspXon8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Q9uiNspXon8",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-Ji1wxQRgS1E",
+          "title": "Ramona 1988, Episode 02 - Mystery Meal",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1558,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "youtube-source-Ji1wxQRgS1E",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Ji1wxQRgS1E",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-bWdLxKWqbeg",
+          "title": "Ramona 1988,  Episode 04 - Rainy Sunday",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1648,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "youtube-source-bWdLxKWqbeg",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=bWdLxKWqbeg",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-Nslb2dn3gko",
+          "title": "Ramona 1988,  Episode 05 - Goodbye Hello",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1599,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "youtube-source-Nslb2dn3gko",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Nslb2dn3gko",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "youtube-JOVgUR8A7cQ",
+          "title": "Ramona 1988 Episode 09 - The Perfect Day",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1640,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "youtube-source-JOVgUR8A7cQ",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=JOVgUR8A7cQ",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.youtube.com/watch?v=Q9uiNspXon8",
+          "method": "yt-dlp metadata; public and playable_in_embed",
+          "verified": true,
+          "duration": 1539
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ji1wxQRgS1E",
+          "method": "yt-dlp metadata; public and playable_in_embed",
+          "verified": true,
+          "duration": 1558
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bWdLxKWqbeg",
+          "method": "yt-dlp metadata; public and playable_in_embed",
+          "verified": true,
+          "duration": 1648
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Nslb2dn3gko",
+          "method": "yt-dlp metadata; public and playable_in_embed",
+          "verified": true,
+          "duration": 1599
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JOVgUR8A7cQ",
+          "method": "yt-dlp metadata; public and playable_in_embed",
+          "verified": true,
+          "duration": 1640
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "showId": "ramona",
+      "id": "xGYL2bFgVNY",
+      "reason": "YouTube metadata verification unavailable."
+    },
+    {
+      "showId": "ramona",
+      "id": "LKC0UdR0M7Y",
+      "reason": "YouTube metadata verification unavailable."
+    },
+    {
+      "showId": "ramona",
+      "id": "rxGHRxGIGBc",
+      "reason": "YouTube metadata verification unavailable."
+    },
+    {
+      "showId": "ramona",
+      "id": "Dp15PIZGRZo",
+      "reason": "YouTube metadata verification unavailable."
+    },
+    {
+      "showId": "ramona",
+      "id": "RogHqaNfyPI",
+      "reason": "YouTube metadata verification unavailable."
+    }
+  ]
+}

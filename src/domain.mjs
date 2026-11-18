@@ -5,7 +5,7 @@ import { CHANNELS, SHOW_CHANNEL_IDS, migratedShowChannel, mixIncludes, SERIAL_SH
 import { randomRotation, createCommercialBreak } from './shuffle.mjs';
 export const COMMERCIAL_SHOW_ID = 'vintage-commercials';
 export const STORAGE_KEY = 'drew-tv.catalog.v1';
-export const MAX_CATALOG_SHOWS = 256;
+export const MAX_CATALOG_SHOWS = 512;
 export const MAX_CATALOG_EPISODES = 20_000;
 export const MAX_IMPORT_BYTES = 8_000_000;
 const ID = /^[\w.-]{1,160}$/;

@@ -1,5 +1,5 @@
 {
-  "revision": "expanded-d09b2667e23c4fa8",
+  "revision": "expanded-10c3e1f7537e7745",
   "checkedAt": [
     "2026-11-13T20:32:06.539Z",
     "2026-11-13T20:21:28.575Z",
@@ -24,13 +24,14 @@
     "2026-11-15T19:46:26.579Z",
     "2026-11-16T18:53:32.666Z",
     "2026-11-17T18:06:56.151Z",
-    "2026-11-17T18:56:12.994Z"
+    "2026-11-17T18:56:12.994Z",
+    "2026-11-18T00:53:16.786Z"
   ],
-  "episodes": 11891,
-  "ready": 11754,
+  "episodes": 12036,
+  "ready": 11899,
   "movieReady": 5,
   "breaks": 24,
-  "streamSlots": 314859,
+  "streamSlots": 318751,
   "shows": [
     {
       "id": "dukes",
@@ -1977,6 +1978,30 @@
       "sources": 146
     },
     {
+      "id": "punky-brewster",
+      "title": "Punky Brewster (1984)",
+      "episodes": 86,
+      "ready": 86,
+      "breaks": 0,
+      "sources": 86
+    },
+    {
+      "id": "clarissa",
+      "title": "Clarissa Explains It All (1991)",
+      "episodes": 54,
+      "ready": 54,
+      "breaks": 0,
+      "sources": 54
+    },
+    {
+      "id": "ramona",
+      "title": "Ramona (1988)",
+      "episodes": 5,
+      "ready": 5,
+      "breaks": 0,
+      "sources": 5
+    },
+    {
       "id": "x-men-tas",
       "title": "X-Men: The Animated Series (1992)",
       "episodes": 76,
@@ -2049,6 +2074,6 @@
       "sources": 146
     }
   ],
-  "bytes": 4390500,
+  "bytes": 4444277,
   "note": "A bounded public-source search, not proof of complete worldwide series availability. Archive metadata and sampled endpoint checks do not establish decoding for every file. YouTube playback remains unverified until played."
 }

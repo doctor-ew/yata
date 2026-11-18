@@ -2,6 +2,12 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.10 — 2026-11-18
+
+- Added original Punky Brewster to Comedy with 86 checked entries, including labelled intact paired presentations.
+- Added 54 checked Clarissa Explains It All episodes and five verified public, embeddable Ramona (1988) episodes to Nickelodeon, with original-series artwork.
+- Expanded catalog capacity using a separate feed. Older app builds keep their compatible 255-show edition; update to see the new additions.
+
 ## 0.8.9 — 2026-11-17
 
 - Ask a companion to find an episode by plot: chat now searches the available sourced episode summaries and answers in character with TVmaze citations.

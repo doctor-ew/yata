@@ -3947,6 +3947,52 @@
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
       "imageRole": "poster",
       "imageCreditUrl": "https://www.tvmaze.com/shows/794/power-rangers"
+    },
+    "punky-brewster": {
+      "title": "Punky Brewster",
+      "premiered": "1984-09-16",
+      "ended": "1988-05-27",
+      "year": 1984,
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1253/punky-brewster",
+      "tvmazeId": 1253,
+      "image": "assets/show-art/punky-brewster.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/292/731593.jpg"
+    },
+    "clarissa": {
+      "title": "Clarissa Explains It All",
+      "premiered": "1991-03-01",
+      "ended": "1994-12-01",
+      "year": 1991,
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/4274/clarissa-explains-it-all",
+      "tvmazeId": 4274,
+      "image": "assets/show-art/clarissa.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/51116.jpg"
+    },
+    "ramona": {
+      "title": "Ramona",
+      "premiered": "1988-09-10",
+      "ended": "1989-01-21",
+      "year": 1988,
+      "genres": [
+        "Drama",
+        "Children",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/54357/ramona",
+      "tvmazeId": 54357,
+      "image": "assets/show-art/ramona.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/301/753436.jpg"
     }
   }
 }

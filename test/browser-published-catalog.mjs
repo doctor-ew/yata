@@ -23,7 +23,7 @@ try {
   await ctx.addInitScript(({raw,key})=>{if(!localStorage.getItem(key)){localStorage.setItem(key,raw);localStorage.setItem('yata.commercial-default.v2','1');}},{raw:legacyRaw,key:STORAGE_KEY});
   await ctx.route('https://archive.org/**',route=>route.abort());
   if(publicView)await ctx.route(origin+'/',async route=>{const response=await route.fetch();await route.fulfill({response,body:(await response.text()).replace('<head>','<head><meta name="drew-tv-hosting" content="static">')});});
-  await ctx.route('**/data/published-catalog-manifest.json',route=>route.fulfill({json:master.manifest}));
+  await ctx.route('**/data/published-catalog-v2-manifest.json',route=>route.fulfill({json:master.manifest}));
   await ctx.route('**/data/catalogs/*.json',route=>route.fulfill({contentType:'application/json',body:master.text}));
   return ctx;
  }
@@ -50,12 +50,12 @@ try {
  assert.equal(await a.evaluate(()=>document.querySelector('#player-host video')===window.retainedPlayer),true);
  assert.match(await a.locator('#channel-label').textContent(),/ACTION ADVENTURE/);assert.match(await b.locator('#channel-label').textContent(),/SCI-FI/);
  assert.equal(await a.evaluate(key=>localStorage.getItem(key),STORAGE_KEY),legacyRaw);
- await publicCtx.route('**/data/published-catalog-manifest.json',route=>route.fulfill({status:403,body:'Access denied'}));
+ await publicCtx.route('**/data/published-catalog-v2-manifest.json',route=>route.fulfill({status:403,body:'Access denied'}));
  await b.getByRole('button',{name:'Refresh shared catalog',exact:true}).click();await b.locator('#notice').filter({hasText:'refresh failed'}).waitFor();
  assert.equal(await b.getByRole('button',{name:'View episodes and sources for Owner’s new sci-fi show',exact:true}).count(),1);
  assert.deepEqual(errors,[]);await publicCtx.close();
  // A failed first manifest read exposes no source catalog or seed playback.
- const failed=await context();await failed.route('**/data/published-catalog-manifest.json',route=>route.fulfill({status:403,body:'Access denied'}));
+ const failed=await context();await failed.route('**/data/published-catalog-v2-manifest.json',route=>route.fulfill({status:403,body:'Access denied'}));
  await failed.route('**/data/library-manifest.json',route=>route.fulfill({json:{revision:'fallback'}}));await failed.route('**/data/*-discovery.json',route=>route.fulfill({json:{shows:[]}}));
  const fp=await failed.newPage();await fp.goto(origin);await fp.locator('#public-catalog-message').filter({hasText:'could not be loaded'}).waitFor();
  assert.equal(await fp.locator('#watch').isVisible(),false);assert.equal(await fp.locator('#library').isVisible(),false);
@@ -63,7 +63,7 @@ try {
  assert.equal(await fp.getByRole('button',{name:'View episodes and sources for Unpublished personal show',exact:true}).count(),0);assert.equal(await fp.evaluate(key=>localStorage.getItem(key),STORAGE_KEY),legacyRaw);await failed.close();
  // Owner loading uses the protected same-origin endpoint, not remote/CORS reads.
  const owner=await context(false);let sharedReads=0,previews=0,confirms=0,lastPreview;
- await owner.route('**/data/published-catalog-manifest.json',()=>{throw Error('Owner must use the protected shared endpoint.');});
+ await owner.route('**/data/published-catalog-v2-manifest.json',()=>{throw Error('Owner must use the protected shared endpoint.');});
  await owner.route('**/api/publisher/*',async route=>{
   const action=new URL(route.request().url()).pathname.split('/').at(-1);
   assert.equal(route.request().method(),'POST');if(action!=='capability')assert.equal(route.request().headers()['x-yata-csrf'],'browser-csrf');
