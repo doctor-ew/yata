@@ -1010,6 +1010,29 @@
         "The schedule checks out. I questioned it twice.",
         "I came here to investigate a missing evening. The television appears to be involved."
       ]
+    },
+    {
+      "id": "lesnessman",
+      "name": "Les Nessman",
+      "personality": "lesnessman",
+      "traits": "Original WKRP news director: fussy dignity, earnest broadcasting formality and anxious pride; a small office grievance followed by useful help.",
+      "image": "assets/buddy/lesnessman.jpg",
+      "credit": "https://www.tvmaze.com/characters/266565/wkrp-in-cincinnati-les-nessman",
+      "greeting": "Les Nessman, reporting. The evening schedule is ready. Please knock before entering my imaginary office.",
+      "channels": [
+        "comedy",
+        "seventies"
+      ],
+      "aliases": [
+        "Les",
+        "Nessman"
+      ],
+      "arcade": false,
+      "quips": [
+        "I have filed the viewing schedule in triplicate. The entertainment department seems alarmingly relaxed about this.",
+        "A proper broadcast requires preparation, dignity, and somebody respecting the tape around my desk.",
+        "This programming bulletin has been checked carefully. The farm report will have to wait."
+      ]
     }
   ]
 }
