@@ -2,6 +2,12 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.12 — 2026-11-18
+
+- Companion rosters, portraits, aliases, greetings and hover lines now refresh from a validated public feed, with cached and bundled offline fallback.
+- Pinned buddies survive roster refreshes. TV and Arcade selections, channel hosts and the native chat bridge use the same refreshed roster.
+- Future approved characters can be published without an APK update. New capabilities still require application changes; character voices and permissions remain controlled by the backend.
+
 ## Catalog update — 2026-11-18
 
 - Added Pinwheel to Nickelodeon with four surviving broadcast recordings labelled as full episodes by the uploader. Original episode numbers are unknown; short clips and partial tapes were excluded. Available through catalog refresh on apps from 0.8.10, with no APK update required.

@@ -12,11 +12,11 @@ export function mountChannelBuilder({getCatalog,isReady,onTune,requestPlan}={}) 
   function hostLabel(){
     $('channel-builder-form').dataset.host=host.id;
     $('channel-host-name').textContent=`Your host: ${host.name}`;
-    const portrait=HOST_PORTRAITS[host.id],image=$('channel-host-image'),credit=$('channel-host-credit');
+    const portrait=host.image?{src:host.imageUrl||host.image,fallback:host.imageFallback||'',caption:host.name,credit:host.credit}:HOST_PORTRAITS[host.id],image=$('channel-host-image'),credit=$('channel-host-credit');
     image.hidden=!portrait;credit.hidden=!portrait;
-    if(portrait){image.src=portrait.src;image.alt=portrait.caption;credit.textContent=portrait.caption+' · image credit ↗';credit.href=portrait.credit;}else image.removeAttribute('src');
+    if(portrait){image.dataset.fallback=portrait.fallback||'';image.src=portrait.src;image.alt=portrait.caption;credit.textContent=portrait.caption+' · image credit ↗';credit.href=portrait.credit;}else image.removeAttribute('src');
   }
-  $('channel-host-image').addEventListener('error',()=>{$('channel-host-image').hidden=true;});
+  $('channel-host-image').addEventListener('error',()=>{const image=$('channel-host-image'),fallback=image.dataset.fallback;image.dataset.fallback='';if(fallback)image.src=fallback;else image.hidden=true;});
   function reset(){plan=null;$('channel-plan').hidden=true;returnButton.hidden=true;status('');}
   function busy(value){$('build-channel').disabled=value;$('change-channel-host').disabled=value;$('channel-request').disabled=value;}
   function openBuilder(question='',returning=false,automatic=false,start=false){returnToApp=returning;autoTune=start&&!returning;document.getElementById('buddy-panel')?.close();if(question)$('channel-request').value=question;reset();if(!isReady())status('Wait for the checked catalog to finish loading.');if(!dialog.open)dialog.showModal();$('channel-request').focus();if(automatic&&isReady())$('channel-builder-form').requestSubmit();}
@@ -25,7 +25,7 @@ export function mountChannelBuilder({getCatalog,isReady,onTune,requestPlan}={}) 
   $('close-channel-builder').addEventListener('click',()=>dialog.close());
   dialog.addEventListener('close',()=>{controller?.abort();controller=null;busy(false);});
   $('change-channel-host').addEventListener('click',()=>buddy.shuffle());
-  buddy.subscribe(()=>{controller?.abort();host=buddy.persona;hostLabel();reset();});
+  buddy.subscribe(()=>{const changed=host.id!==buddy.persona.id;host=buddy.persona;hostLabel();if(changed){controller?.abort();reset();}});
   $('channel-request').addEventListener('input',reset);
   $('channel-builder-form').addEventListener('submit',async event=>{
     event.preventDefault();if(controller)return;reset();

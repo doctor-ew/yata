@@ -64,6 +64,18 @@ def main():
     print(json.dumps({'apply': args.apply, 'changedFiles': len(changed)}), flush=True)
     if not args.apply:
         return
+    buddy_plan = next((p for p in changed if p['key'] == 'tv/data/buddy-personas.json'), None)
+    if buddy_plan:
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('buddy_publication', root / 'scripts/buddy-feed-publication.py')
+        buddy_publication = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(buddy_publication)
+        feed = buddy_publication.validated_feed(buddy_plan['data'], root)
+        release_keys = {p['key'] for p in plans}
+        require(all('tv/' + p['image'] in release_keys for p in feed['personas']), 'Buddy portrait missing from release')
+        bridge = json.loads((root / 'deploy/retrieval/buddy-bridge.json').read_text())
+        receipt['acceptedBuddies'] = buddy_publication.verify_backend(feed, session.client('lambda'), bridge['functionName'])
+        args.receipt.write_text(json.dumps(receipt, indent=2))
 
     def upload(plan):
         before, item = plan['before'], plan['item']
@@ -74,9 +86,20 @@ def main():
         return {'key': plan['key'], 'previousVersionId': before.get('VersionId') if before else None,
                 'versionId': result.get('VersionId'), 'sha256': item['sha256']}
 
-    # Imported dependencies first, then coordinators, then HTML entry points.
-    priority = lambda p: 2 if p['key'].endswith('index.html') else 1 if p['key'] in ['tv/src/app.mjs', 'arcade/arcade.mjs'] else 0
-    for group in range(3):
+    # Portraits/assets finish before the roster can advertise them. New leaf modules
+    # finish before importing UI modules; coordinators and HTML follow last.
+    def priority(plan):
+        key = plan['key']
+        if '/assets/' in key or key == 'tv/src/buddy-registry.mjs':
+            return 0
+        if key == 'tv/data/buddy-personas.json':
+            return 1
+        if key.endswith('index.html'):
+            return 4
+        if key in ['tv/src/app.mjs', 'arcade/arcade.mjs']:
+            return 3
+        return 2
+    for group in range(5):
         with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
             futures = [pool.submit(upload, p) for p in changed if priority(p) == group]
             for future in concurrent.futures.as_completed(futures):

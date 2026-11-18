@@ -1,3 +1,4 @@
+import{refreshBuddyRoster}from'./buddy-registry.mjs';
 import{createBuddyHoverRotation}from'./buddy-quips.mjs';
 import{buddyNavigation,descriptiveShows,playbackContext,createCompanionNotePolicy}from'./buddy-context.mjs';
 import{ARCADE_GAMES}from'./arcade-games.mjs';
@@ -15,11 +16,12 @@ import{requestEmbeddedBuddy}from'./buddy-service-client.mjs';
 import{createBuddyHandoff,parseBuddyHandoff,createBuddyReturn,parseBuddyReturn}from'./buddy-bridge.mjs';
 const PENDING='yata.buddy-pending.v1';
 export function mountBuddy({getCatalog=()=>({shows:[],settings:{}}),isReady=()=>true,onShow,onWatch,onQueue,onPlayEvidence,onGame,onCancelGame,getPlaybackContext=()=>null,onNavigate,context='tv',requestChat,requestPlan}={}){
- const arcade=context==='arcade',personas=arcade?BUDDY_PERSONAS.filter(p=>p.arcade):BUDDY_PERSONAS,doc=document,state=getBuddySession(context),native=()=>doc.documentElement.classList.contains('native-app');
+ const arcade=context==='arcade',doc=document,state=getBuddySession(context),native=()=>doc.documentElement.classList.contains('native-app');
+ let personas=state.personas;
  const node=(tag,text,cls)=>{const e=doc.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e;};
  const button=(label,action,cls)=>{const b=node('button',label,cls);b.type='button';b.onclick=action;return b;};
  const dock=node('aside',null,'tv-buddy');dock.id='tv-buddy';dock.setAttribute('aria-label',arcade?'Your Arcade buddy':'Your TV buddy');
- const greeting=node('p',null,'buddy-greeting'),avatar=button('',()=>open(),'buddy-avatar'),image=node('img');image.alt='';image.onerror=()=>{image.hidden=true;};const badge=node('span');avatar.append(image,badge);dock.append(greeting,avatar);doc.body.append(dock);
+ const greeting=node('p',null,'buddy-greeting'),avatar=button('',()=>open(),'buddy-avatar'),image=node('img');image.alt='';image.onerror=()=>{const fallback=image.dataset.fallback;image.dataset.fallback='';if(fallback){image.src=fallback;return;}image.hidden=true;};const badge=node('span');avatar.append(image,badge);dock.append(greeting,avatar);doc.body.append(dock);
  const panel=node('dialog',null,'buddy-panel');panel.id='buddy-panel';panel.setAttribute('aria-labelledby','buddy-title');
  const top=node('div',null,'buddy-top'),title=node('h2');title.id='buddy-title';top.append(title,button('×',()=>panel.close(),'buddy-close'));panel.append(top);
  const traits=node('p',null,'buddy-traits');panel.append(traits);
@@ -69,7 +71,7 @@ export function mountBuddy({getCatalog=()=>({shows:[],settings:{}}),isReady=()=>
    picks.append(row);
   }
  }
- function refresh(){const p=state.persona;dock.hidden=!state.enabled;title.textContent=p.name;traits.textContent=p.traits;avatar.setAttribute('aria-label',`Talk to ${p.name}`);image.hidden=false;image.src=arcade?'/tv/'+p.image:p.image;badge.textContent=p.name;select.value=p.id;random.checked=state.mode==='random';enabled.checked=state.enabled;greeting.textContent=p.greeting;
+ function refresh(){personas=state.personas;select.replaceChildren(...personas.map(p=>new Option(p.name,p.id)));const p=state.persona;dock.hidden=!state.enabled;title.textContent=p.name;traits.textContent=p.traits;avatar.setAttribute('aria-label',`Talk to ${p.name}`);image.hidden=false;image.dataset.fallback=p.imageFallback?(arcade?'/tv/'+p.imageFallback:p.imageFallback):'';image.src=p.imageUrl||(arcade?'/tv/'+p.image:p.image);badge.textContent=p.name;select.value=p.id;random.checked=state.mode==='random';enabled.checked=state.enabled;greeting.textContent=p.greeting;
   if(seen!==p.id){if(seen)onCancelGame?.();intake=null;controller?.abort();controller=null;send.disabled=false;transcript.replaceChildren();picks.replaceChildren();status.textContent='';returnLink.hidden=true;seen=p.id;say(p.greeting);greeting.hidden=false;clearTimeout(greetingTimer);greetingTimer=setTimeout(()=>greeting.hidden=true,12000);}}
  function open(){if(!panel.open){if(arcade)panel.showModal();else panel.show();}refresh();greeting.hidden=true;}
  function recommend(){if(arcade){const games=ARCADE_GAMES.filter(g=>g.status==='installed'&&g.category==='console').sort(()=>Math.random()-.5).slice(0,3);say('Three machines worth a look. Pick one and I’ll take you there.');picks.replaceChildren(...games.map(g=>button('Play '+g.title,()=>void chooseGame(g))));return;}if(!isReady()){status.textContent='The station catalog is still loading. Give it a moment.';return;}const selected=pickBuddyShows(getCatalog(),channelOffer(getCatalog()),state.persona,{query:input.value});picks.replaceChildren();if(!selected.length){status.textContent='No checked shows are available right now.';return;}say({arnold:'These look pretty good. For grown-up television, anyway.',benson:'Three reasonable choices. I trust that is not too many.',revjim:'I found three. Or one, three times in different hats.',fonz:'Here. A little cool, a little comfort. Your call.',mrsgarrett:'Here are a few I think you’ll enjoy, honey.',horshack:'Ooh! These! Can we start with one of these?',mrmagoo:'Three excellent seats at the… channels. Plenty of leg room.'}[state.persona.id]||'I found a few in the checked station catalog.');for(const show of selected)picks.append(button('Browse '+show.title,()=>{panel.close();onShow(show.id);}));status.textContent='Picks come from the current playable catalog.';}
@@ -101,7 +103,7 @@ export function mountBuddy({getCatalog=()=>({shows:[],settings:{}}),isReady=()=>
  const receive=()=>{if(native()){let pending;try{pending=JSON.parse(sessionStorage.getItem(PENDING)||'null');}catch{}const reply=parseBuddyReturn(location.href,pending);if(reply){sessionStorage.removeItem(PENDING);state.select(reply.host);state.enable(true);open();say(reply.text);history.replaceState(null,'','#watch');}return;}
   const incoming=parseBuddyHandoff(location.href);if(incoming){handoff=incoming;state.select(incoming.host);state.enable(true);if(incoming.action==='channel'){window.dispatchEvent(new CustomEvent('yata:open-builder',{detail:{question:incoming.question,returnToApp:true,autoBuild:true}}));}else{open();input.value=incoming.question;status.textContent='Your request is ready. Tap Talk to send it.';}}};
  window.addEventListener('yata:buddy-tip',event=>{if(!state.enabled||panel.open||typeof event.detail?.text!=='string')return;greeting.textContent=event.detail.text.slice(0,240);greeting.hidden=false;clearTimeout(greetingTimer);greetingTimer=setTimeout(()=>greeting.hidden=true,8000);});
- state.subscribe(refresh);refresh();window.addEventListener('hashchange',receive);window.addEventListener('yata:open-buddy',()=>{state.enable(true);open();});receive();
+ state.subscribe(refresh);refresh();void refreshBuddyRoster().then(()=>receive()).catch(()=>{});window.addEventListener('hashchange',receive);window.addEventListener('yata:open-buddy',()=>{state.enable(true);open();});receive();
  for(const where of [doc.querySelector('#web-room-settings'),doc.querySelector('#native-more')])if(where)where.append(button(arcade?'Your Arcade buddy':'Your TV buddy',()=>{doc.querySelector('#native-more')?.close();state.enable(true);open();},'buddy-settings-link'));
  return {open,refresh,receive};
 }
