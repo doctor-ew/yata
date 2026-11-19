@@ -2,6 +2,10 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.18 — 2026-11-19
+
+- Loading and channel changes now share the same original animated TV snow; removed the remaining SVG loading texture.
+
 ## 0.8.17 — 2026-11-19
 
 - Replaced the repeating SVG tuning texture with original animated monochrome snow frames and a direct cut back to the picture. Removed the fade-out.
