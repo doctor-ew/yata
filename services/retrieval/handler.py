@@ -74,19 +74,50 @@ class Runtime:
         self.db.put_item(TableName=self.table, Item={'pk': {'S': 'yata-search:cache:' + key},
             'result': {'S': json.dumps(value)}, 'expiresAt': {'N': str(int(time.time()) + 86400)}})
 
-    def jev(self, query, documents):
+    def jev_key(self):
         if os.environ.get('JEV_ENABLED') != 'true' or not os.environ.get('JEV_SECRET_ARN'):
             raise ValueError('Jev is disabled')
         import boto3
         from botocore.config import Config
+        return boto3.client('secretsmanager', config=Config(retries={'max_attempts': 0}, connect_timeout=3, read_timeout=5)).get_secret_value(SecretId=os.environ['JEV_SECRET_ARN'])['SecretString']
+
+    def jev(self, query, documents):
         from jev import choose, request_body
-        request_body(query, documents)  # Validate the bounded request before reserving paid work.
-        secret = boto3.client('secretsmanager', config=Config(retries={'max_attempts': 0}, connect_timeout=3, read_timeout=5)).get_secret_value(SecretId=os.environ['JEV_SECRET_ARN'])['SecretString']
+        request_body(query, documents)
+        secret=self.jev_key()
         self.allowance()
         return choose(query, documents, secret)
 
+    def classify(self, query):
+        from intent import classify, request_body
+        request_body(query)
+        secret=self.jev_key()
+        self.allowance()
+        return classify(query,secret)
+
+
+def intent_handler(event, *, runtime=None):
+    from intent import validate_event, validate_result
+    try:
+        query=validate_event(event)
+    except (ValueError,TypeError):
+        return {'version':1,'status':'invalid-request','intent':'clarify','confidence':0}
+    try:
+        runtime=runtime or Runtime()
+        key=digest(canonical_bytes(['intent-v1',query.casefold()]))
+        value=runtime.cached(key,embedding=False)
+        if value is None:
+            value=validate_result(runtime.classify(query))
+            try:runtime.cache(key,value)
+            except Exception:pass
+        return validate_result(value)
+    except Exception:
+        return {'version':1,'status':'unavailable','intent':'clarify','confidence':0}
+
 
 def handler(event, context, *, runtime=None):
+    if isinstance(event,dict) and event.get("operation")=="intent":
+        return intent_handler(event,runtime=runtime)
     try:
         query, limit = validate_query(event)
     except (ValueError, TypeError):

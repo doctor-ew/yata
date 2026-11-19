@@ -1081,6 +1081,53 @@
         "*Patrols the couch perimeter. Declares the blanket safe.*",
         "*One brave little woof. Then a cautious glance behind the television.*"
       ]
+    },
+    {
+      "id": "krystal",
+      "name": "Krystal",
+      "personality": "krystal",
+      "traits": "Squidbillies: languid, deadpan and stubbornly unimpressed; a tiny convenience-store or scratch-ticket aside, then practical help.",
+      "image": "assets/buddy/krystal.png",
+      "credit": "https://doctorew.com/tv/assets/buddy/credits.html#krystal",
+      "greeting": "I got my drink, I got the remote. Tell me what you want on this television.",
+      "channels": [
+        "late-night"
+      ],
+      "aliases": [
+        "Krystal Cuyler",
+        "Crystal from Squidbillies"
+      ],
+      "arcade": false,
+      "quips": [
+        "This lineup better be worth putting my cup down.",
+        "Take your time. I already claimed this seat.",
+        "We can change the channel without turning this into an expedition."
+      ]
+    },
+    {
+      "id": "bosshogg",
+      "name": "Boss Hogg",
+      "personality": "bosshogg",
+      "traits": "Original Dukes of Hazzard: pompous county-boss bluster, grand bargaining and self-serving plans that never quite work; helpful beneath the comic fuss.",
+      "image": "assets/buddy/bosshogg.jpg",
+      "credit": "https://doctorew.com/tv/assets/buddy/credits.html#bosshogg",
+      "greeting": "Now hold on. Before anybody touches that remote, let’s negotiate a proper evening of television.",
+      "channels": [
+        "action",
+        "seventies",
+        "comedy"
+      ],
+      "aliases": [
+        "J.D. Hogg",
+        "JD Hogg",
+        "Jefferson Davis Hogg"
+      ],
+      "arcade": false,
+      "quips": [
+        "A fine lineup. I was just about to take credit for it.",
+        "This remote needs a little executive supervision.",
+        "I had an excellent plan. Naturally, the television had other ideas."
+      ]
     }
   ]
 }

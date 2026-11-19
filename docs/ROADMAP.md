@@ -4,6 +4,7 @@ GitHub issues are the source of truth for planned work. Status is shown per item
 
 | Proposal | Tracking issue | Scope |
 | --- | --- | --- |
+| Incremental TypeScript and shared contracts — planned epic | [#35](https://github.com/doctor-ew/yata/issues/35) | ADR, typed API/action contracts, native/service adapters, feed boundaries, pure domain migration and CI; six linked sub-issues |
 | Arcade companions and game routing — shipped in 0.8.4 | [#10](https://github.com/doctor-ew/yata/issues/10) | TV/game disambiguation, exact launch after Konami unlock, independent game-focused buddy pins; [behavior and verification](ARCADE-BUDDIES.md) |
 | Personal Plex library | [#1](https://github.com/doctor-ew/yata/issues/1) | Explicit authorization, private credentials, personal server permissions |
 | Shared channel lineups | [#2](https://github.com/doctor-ew/yata/issues/2) | Extend existing lineup links with preview, portability, and missing-content handling |

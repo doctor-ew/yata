@@ -1,3 +1,4 @@
+import{RELEASES}from'./release-notes.mjs';
 import{ARCADE_GAMES,refreshArcadeGames}from'./arcade-games.mjs';
 import{mountEpisodeSearch}from'./episode-search-ui.mjs';
 import{resolveEpisodeSearchResult}from'./episode-search.mjs';
@@ -47,6 +48,7 @@ const sampleWatch=()=>watchTracker.sample(session?.getState?.(),!document.hidden
 
 if(!document.documentElement.classList.contains('native-app'))mountAppearance(document.getElementById('web-room-settings'));
 const $ = id => document.getElementById(id);
+for(const label of document.querySelectorAll('[data-app-version]'))label.textContent='v'+RELEASES[0].version;
 const staticHosting = document.querySelector('meta[name="drew-tv-hosting"]')?.content === 'static';
 const ownerMode = !staticHosting && ['127.0.0.1','localhost','[::1]'].includes(location.hostname);
 document.body.classList.toggle('public-view', !ownerMode);

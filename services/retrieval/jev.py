@@ -49,10 +49,9 @@ def select(raw, documents):
             'model': str(raw.get('model', ''))[:100], 'decision': 'selected' if accepted else 'possibilities' if possible else 'abstain'}
 
 
-def choose(query, documents, api_key, *, opener=None):
+def invoke(body, api_key, *, opener=None):
     if not isinstance(api_key, str) or not 1 <= len(api_key) <= 2048 or '\n' in api_key or '\r' in api_key:
         raise ValueError('Jev credential unavailable')
-    body = request_body(query, documents)
     encoded = json.dumps(body, ensure_ascii=False).encode()
     if len(encoded) > 50000:
         raise ValueError('Jev request exceeds pilot token envelope')
@@ -64,4 +63,8 @@ def choose(query, documents, api_key, *, opener=None):
         data = response.read(1000001)
         if len(data) > 1000000:
             raise ValueError('Jev response too large')
-    return select(json.loads(data), documents)
+    return json.loads(data)
+
+
+def choose(query, documents, api_key, *, opener=None):
+    return select(invoke(request_body(query, documents), api_key, opener=opener), documents)

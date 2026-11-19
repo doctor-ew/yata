@@ -4,7 +4,7 @@
 
 A retro channel-surfing TV app built by Drew Schillinger: classic television, Saturday morning cartoons, vintage commercial breaks and character-inspired AI companions.
 
-[Watch on the web](https://doctorew.com/tv/) · [Download Android](https://github.com/doctor-ew/yata/releases/tag/yata-android-v0.8.20) · [What’s new](CHANGELOG.md) · [Report a bug](https://github.com/doctor-ew/yata/issues/new/choose)
+[Watch on the web](https://doctorew.com/tv/) · [Download Android](https://github.com/doctor-ew/yata/releases/tag/yata-android-v0.8.21) · [What’s new](CHANGELOG.md) · [Report a bug](https://github.com/doctor-ew/yata/issues/new/choose)
 
 ![YATA Watch screen with a vintage television, upcoming programs and an AI companion](docs/media/watch.png)
 
@@ -19,7 +19,7 @@ A retro channel-surfing TV app built by Drew Schillinger: classic television, Sa
 | Platform | Availability |
 | --- | --- |
 | Web | [Open YATA](https://doctorew.com/tv/) in a modern desktop or mobile browser. |
-| Android | [0.8.20 APK preview](https://github.com/doctor-ew/yata/releases/download/yata-android-v0.8.20/YATA-0.8.20-android-debug.apk). Debug-signed for sideload testing; not a Google Play release. [All releases](https://github.com/doctor-ew/yata/releases). |
+| Android | [0.8.21 APK preview](https://github.com/doctor-ew/yata/releases/download/yata-android-v0.8.21/YATA-0.8.21-android-debug.apk). Debug-signed for sideload testing; not a Google Play release. [All releases](https://github.com/doctor-ew/yata/releases). |
 | iPhone / iPad | Try the website now. A Capacitor iOS project is prepared; no compiled Apple build or TestFlight distribution has been verified in this checkout. [Apple build handoff](docs/apple/TONIGHT-HANDOFF.md). |
 | Apple TV | A separate native client is planned; no tvOS app ships here. |
 
@@ -57,6 +57,19 @@ The guide groups programming by its viewing feel rather than strict channel-numb
 ![YATA TV Guide with themed channels and scheduled episodes](docs/media/guide.png)
 
 ![YATA library with original artwork and browsing filters](docs/media/library.png)
+
+## How the app, backend and data fit together
+
+| Part | Responsibility | How updates arrive |
+| --- | --- | --- |
+| Shared frontend | Navigation, playback controls, rendering, finite action execution, companion search and version label | Web deployment; new APK/iOS build for packaged clients |
+| Guarded backend | Verified sessions, moderation, quotas, generation and typed intent routing | Server deployment; no app rebuild for compatible contracts |
+| Remote public data | Catalog, artwork, Arcade metadata, companion presentation profiles | Validated feeds with local/bundled fallback |
+| Private retrieval | Sourced summaries, embeddings, cached Jev decisions and spending guard | Server-side ingestion/deployment |
+
+Companion names, portraits and greetings are presentation data. Approved identity and character-style instructions remain backend-controlled. Feed data cannot grant tools or invent playback URLs.
+
+Natural messages that do not match a direct command go through a bounded Jev intent classifier. It returns an allowed intent, not code, URLs or generated tool arguments. The app validates catalog identities before acting. Uncertain or unavailable classification asks for clarification; it does not guess an action. Direct known commands remain a fast path. The same existing session/usage limits apply, and classifier calls share the retrieval spending allowance and cache. The interface version appears in the header and About/footer; it identifies loaded application code, not the catalog revision.
 
 ## Episode search and AI
 
