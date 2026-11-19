@@ -11,6 +11,8 @@ HEX = re.compile(r'^[a-f0-9]{64}$')
 IDENTITY = re.compile(r'^[a-zA-Z0-9][a-zA-Z0-9._-]{0,159}$')
 MODEL = 'amazon.titan-embed-text-v2:0'
 DIMENSIONS = 512
+MAX_CORPUS_DOCUMENTS = 12000
+MAX_CORPUS_BYTES = 16000000
 RESERVATION = 10000  # Conservative one-cent allowance per attempted embedding, not a price quote.
 
 
@@ -26,8 +28,8 @@ def validate_corpus(raw):
     if not isinstance(raw, dict) or raw.get('version') != 1 or not HEX.fullmatch(str(raw.get('catalogRevision', ''))):
         raise ValueError('Invalid evidence corpus')
     docs = raw.get('documents')
-    if not isinstance(docs, list) or not 1 <= len(docs) <= 150:
-        raise ValueError('Pilot corpus must contain 1–150 documents')
+    if not isinstance(docs, list) or not 1 <= len(docs) <= MAX_CORPUS_DOCUMENTS:
+        raise ValueError('Corpus document bound exceeded')
     seen = set()
     for doc in docs:
         if not isinstance(doc, dict) or not HEX.fullmatch(str(doc.get('evidenceId', ''))) or doc['evidenceId'] in seen:
@@ -52,7 +54,9 @@ def validate_corpus(raw):
                 or not re.fullmatch(r'/episodes/[1-9][0-9]*/[^/]+', url.path)
                 or type(match.get('providerEpisodeId')) is not int
                 or not url.path.startswith(f"/episodes/{match['providerEpisodeId']}/")
-                or match.get('providerSeason') != doc['season'] or match.get('providerNumber') != doc['number']):
+                or match.get('providerSeason') != doc['season']
+                or type(match.get('providerNumber')) is not int or match['providerNumber'] < 1
+                or (match.get('providerNumber') != doc['number'] and match.get('method') != 'canonical-title-numbering-variant')):
             raise ValueError('Unverified provider mapping')
         record = {k: v for k, v in doc.items() if k not in ('evidenceId', 'fetchedAt')}
         if digest(canonical_bytes(record)) != doc['evidenceId']:
@@ -140,3 +144,54 @@ def public_result(doc):
     return {k: doc[k] for k in ('evidenceId', 'showId', 'episodeId', 'sourceId', 'showTitle', 'episodeTitle', 'season', 'number', 'provider', 'sourceUrl', 'license')} | {
         'excerpt': doc['summary'][:350], 'evidenceType': 'episode-summary', 'spoilerScope': 'whole-episode',
     }
+
+
+def document_reservation(text):
+    """Conservative ingestion-only Titan V2 bound, not a query allowance reduction.
+
+    The published price is $0.02/million tokens. Reserving .025 microUSD per
+    UTF-8 byte assumes one token per byte plus a 25% margin. Text is bounded.
+    """
+    if not isinstance(text, str) or not 1 <= len(text) <= 5000:
+        raise ValueError('Invalid embedding text')
+    return max(1, math.ceil(len(text.encode('utf-8')) / 40))
+
+def named_series_documents(documents, query):
+    """Derive series scope solely from current corpus titles, never fixed aliases."""
+    phrase = ' ' + ' '.join(words(re.sub(r'\s*\(\d{4}[^)]*\)\s*$', '', query))) + ' '
+    names = {}
+    for doc in documents:
+        title = re.sub(r'\s*\(\d{4}[^)]*\)\s*$', '', doc['showTitle'])
+        title = re.sub(r'^the\s+', '', title, flags=re.I)
+        key = ' '.join(words(title))
+        if len(key) >= 4 and ' ' + key + ' ' in phrase:
+            names[doc['showId']] = len(key)
+    if not names:
+        return []
+    longest = max(names.values())
+    selected = {key for key, length in names.items() if length == longest}
+    return [doc for doc in documents if doc['showId'] in selected]
+
+def jev_candidates(documents, query, maximum=40):
+    """A bounded shortlist; explicit series are scoped before lexical ranking."""
+    scope = named_series_documents(documents, query) or documents
+    ranked = lexical_results(scope, query)
+    by_id = {doc['evidenceId']: doc for doc in scope}
+    ordered = [by_id[eid] for eid in ranked if eid in by_id]
+    seen = {doc['evidenceId'] for doc in ordered}
+    ordered += [doc for doc in scope if doc['evidenceId'] not in seen]
+    # Keep all named-series episodes when they fit the provider's bounded state.
+    named = bool(named_series_documents(documents, query))
+    cap = 100 if named else maximum
+    from jev import request_body
+    output = []
+    for doc in ordered[:cap]:
+        proposed = output + [doc]
+        try:
+            body = request_body(query, proposed)
+        except ValueError:
+            break
+        if len(json.dumps(body, ensure_ascii=False).encode('utf-8')) > 48000:
+            break
+        output = proposed
+    return output

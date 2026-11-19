@@ -5,13 +5,14 @@ import json
 import pathlib
 import sys
 import subprocess
+import time
 import urllib.request
 import boto3
 from botocore.config import Config
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'services/retrieval'))
-from core import validate_corpus, digest
+from core import validate_corpus, digest, document_reservation, MAX_CORPUS_BYTES
 
 
 def require(ok, message):
@@ -57,6 +58,8 @@ def main():
     parser.add_argument('--deployment', type=pathlib.Path, required=True)
     parser.add_argument('--corpus', type=pathlib.Path)
     parser.add_argument('--evaluation', type=pathlib.Path)
+    parser.add_argument('--ingestion-start', type=int, default=0)
+    parser.add_argument('--maximum-ingestion-reservation-microusd', type=int, default=1000000)
     parser.add_argument('--out', type=pathlib.Path, required=True)
     parser.add_argument('--strategy', choices=['hybrid', 'jev'], default='hybrid')
     args = parser.parse_args()
@@ -69,7 +72,14 @@ def main():
     report = {'ingestion': None, 'evaluation': None}
 
     def invoke(name, payload):
-        response = lam.invoke(FunctionName=name, InvocationType='RequestResponse', Payload=json.dumps(payload))
+        for attempt in range(6):
+            try:
+                response = lam.invoke(FunctionName=name, InvocationType='RequestResponse', Payload=json.dumps(payload))
+                break
+            except lam.exceptions.TooManyRequestsException:
+                if attempt == 5:
+                    raise
+                time.sleep(min(16, 2 ** attempt))
         raw = response['Payload'].read()
         require(not response.get('FunctionError'), 'Lambda operation failed: ' + raw.decode()[:1000])
         return json.loads(raw)
@@ -77,6 +87,10 @@ def main():
     if args.corpus:
         data = args.corpus.read_bytes()
         corpus = validate_corpus(json.loads(data))
+        require(len(data) <= MAX_CORPUS_BYTES, 'Corpus exceeds service byte bound')
+        allowance = sum(document_reservation(d['text']) for d in corpus['documents'])
+        require(0 < args.maximum_ingestion_reservation_microusd <= 1000000 and allowance <= args.maximum_ingestion_reservation_microusd, 'Ingestion reservation exceeds the reviewed one-dollar bound')
+        report['ingestionReservationMicrousd'] = allowance
         verify_bindings(corpus)
         revision = digest(data)
         bucket, key = outputs['EvidenceBucket'], f'corpora/{revision}.json'
@@ -87,8 +101,16 @@ def main():
             if error.response['Error']['Code'] != 'PreconditionFailed':
                 raise
             require(s3.head_object(Bucket=bucket, Key=key)['Metadata'].get('sha256') == revision, 'Corpus upload conflict')
-        report['ingestion'] = invoke(outputs['IngestFunction'], {'corpusRevision': revision})
-        require(report['ingestion']['status'] == 'ready', 'Corpus was not activated')
+        start = args.ingestion_start
+        require(0 <= start < len(corpus['documents']) and start % 200 == 0, 'Invalid ingestion start')
+        while True:
+            report['ingestion'] = invoke(outputs['IngestFunction'], {'corpusRevision': revision, 'start': start})
+            print(json.dumps(report['ingestion']), flush=True)
+            if report['ingestion']['status'] == 'ready':
+                break
+            require(report['ingestion']['status'] == 'staged' and report['ingestion']['nextStart'] == start + 200, 'Invalid ingestion progress')
+            start = report['ingestion']['nextStart']
+            require(start < len(corpus['documents']), 'Invalid ingestion cursor')
         print(json.dumps(report['ingestion']), flush=True)
     if args.evaluation:
         cases = json.loads(args.evaluation.read_text())
