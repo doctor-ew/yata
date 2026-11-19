@@ -39,3 +39,7 @@ test('navigation is a finite explicit action rather than arbitrary routing',()=>
 test('a common motorcycle typo still resolves only the checked Street Hawk identity',()=>{
  assert.equal(descriptiveShows('that Knight Rider that is a motorcylcle',[{id:'street-hawk',title:'Street Hawk'}])[0].id,'street-hawk');
 });
+
+test('named Knight Rider episode plots never become Street Hawk',()=>{
+ for(const target of ['Knight Rider episode where they fight a motorcycle gang','the episode of Knight Rider with a motorcycle gang','Knight Rider where they fight a motorcycle gang','Knight Rider motorcycle'])assert.deepEqual(descriptiveShows(target,offers),[]);
+});

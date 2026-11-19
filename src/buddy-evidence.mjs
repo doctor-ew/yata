@@ -2,8 +2,10 @@ import{normalizeBuddyReply}from'./buddy-reply.mjs';
 import{stationSource}from'./domain.mjs';
 const text=(value,max)=>typeof value==='string'&&value.trim()&&value.length<=max?value.trim():null;
 export function isEpisodeStoryQuestion(question){
- if(typeof question!=='string'||!question.trim()||question.length>300)return false;
- return /\b(?:which|what|find|search|remember|looking for|tell me about)\b/i.test(question)&&/\b(?:episode|story|plot|happens|happened|involves|about the|character|scene|quote)\b/i.test(question);
+ if(typeof question!=='string'||!question.trim()||question.length>1000)return false;
+ const lookup=/\b(?:which|what|find|search|remember|looking for|tell me about)\b/i.test(question),watch=/\b(?:watch|play|put on|see)\b/i.test(question);
+ const episode=/\b(?:episode|story|plot|happens|happened|involves|about the|character|scene|quote)\b/i.test(question);
+ return (lookup||watch)&&episode || watch&&/\b(?:where|in which)\b.{1,120}\b(?:they|he|she|gang|fight|fights|fighting)\b/i.test(question);
 }
 export function normalizeBuddyConversation(value){
  const answer=typeof value==='string'?value:value?.answer;
@@ -25,4 +27,12 @@ export function catalogBuddyEvidence(value,catalog){
   if(!show||!episode||episode.kind!=='episode'||!source||stationSource({...episode,sources:[source]})!==source)return [];
   return [{...item,showTitle:show.title,episodeTitle:episode.title}];
  });
+}
+
+// A named-series request must not offer episodes from another series.
+export function scopeEpisodeConversation(result,shows=[]){
+ if(!shows.length)return result;const ids=new Set(shows.map(s=>s.id)),results=result.retrieval?.results||[],matching=results.filter(r=>ids.has(r.showId));
+ if(results.length&&matching.length===results.length)return result;
+ const names=shows.map(s=>s.title).join(', ');
+ return {...result,answer:matching.length?`I found sourced episode candidates for ${names}. Choose one below; playback has not changed.`:`I don’t have a sourced episode match for ${names} yet. Playback has not changed. Try the episode title or browse that show’s episode list.`,retrieval:result.retrieval?{...result.retrieval,results:matching}:undefined};
 }
