@@ -1576,3 +1576,7 @@ html:not(.native-app) .masthead nav a[aria-current="page"]{background:#be784c;co
 
 .static-disabled .tuning-static{display:none}
 @media(prefers-reduced-motion:reduce),(forced-colors:active){.tuning-snow{display:none}}
+
+.app-version{font:12px/1.4 'Cabin',sans-serif;color:#e9cba3;letter-spacing:.04em;white-space:nowrap;padding:4px 8px;border:1px solid #9b815c66;border-radius:5px;background:#241e16aa}.masthead .app-version{margin-right:auto}html.native-app .masthead .app-version{display:inline-block;font-size:11px}
+.player-host{min-width:0;min-height:0;inset:8px;overflow:hidden}.player-host>video,.player-host>iframe,.player-host>div{position:absolute;inset:0;max-width:100%;max-height:100%;min-width:0;min-height:0}.player-host>video{object-fit:contain;object-position:center;background:#000}.window-mode #player-host{inset:0}
+.buddy-settings input[type=search]{width:100%;min-height:40px}.buddy-settings select{width:100%}

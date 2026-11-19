@@ -2,6 +2,12 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.21 — 2026-11-19
+
+- A bounded Jev intent router handles natural requests that do not match direct commands. Uncertain requests ask for clarification; catalog checks still control every action.
+- Added a visible interface version, alphabetically sorted searchable companion selection, and Krystal from Squidbillies plus original Boss Hogg.
+- Video now uses an inset rectangular viewport with contain sizing to keep the picture clear of the cabinet edges.
+
 ## 0.8.20 — 2026-11-19
 
 - Explicit make/create/build-channel requests now call the guarded planner inside buddy chat. After the buddy asks what to include, the next reply builds the channel instead of becoming ordinary conversation.
