@@ -29,10 +29,11 @@ export function catalogBuddyEvidence(value,catalog){
  });
 }
 
-// A named-series request must not offer episodes from another series.
+// Keep exact-series candidates separate from explicitly labelled alternatives.
 export function scopeEpisodeConversation(result,shows=[]){
  if(!shows.length)return result;const ids=new Set(shows.map(s=>s.id)),results=result.retrieval?.results||[],matching=results.filter(r=>ids.has(r.showId));
  if(results.length&&matching.length===results.length)return result;
  const names=shows.map(s=>s.title).join(', ');
- return {...result,answer:matching.length?`I found sourced episode candidates for ${names}. Choose one below; playback has not changed.`:`I don’t have a sourced episode match for ${names} yet. Playback has not changed. Try the episode title or browse that show’s episode list.`,retrieval:result.retrieval?{...result.retrieval,results:matching}:undefined};
+ const alternatives=!matching.length&&results.length;
+ return {...result,answer:matching.length?`I found sourced episode candidates for ${names}. Choose one below; playback has not changed.`:alternatives?`I don’t have a sourced episode match for ${names}. These are possible alternatives from other shows, not the requested episode. Playback has not changed.`:`I don’t have a sourced episode match for ${names} yet. Playback has not changed. Try the episode title or browse that show’s episode list.`,retrieval:result.retrieval?{...result.retrieval,results:matching.length?matching:results}:undefined};
 }

@@ -13,3 +13,14 @@ export function watchShows(target,offered){const request=' '+normalizedTitle(tar
 const safeCommand=text=>{const s=String(text).normalize('NFKC').trim();return /\b(?:ignore|drop|forget|override|disregard)\b.{0,60}\b(?:instructions?|instrux|rules?|system|developer|previous)\b/i.test(s)?null:s.replace(/[.!?]+$/,'').replace(/^(?:(?:can|could|would) (?:you|we) |please\s+)/i,'').replace(/^please\s+/i,'').replace(/\s+please$/i,'').trim();};
 export function buddyCommand(text,personas){const s=safeCommand(text);if(!s)return null;if(/^(?:unpin(?: (?:you|my buddy|this buddy|the buddy))?|(?:randomize|shuffle)(?: (?:my )?buddy)?|surprise me(?: (?:on )?(?:each|every) launch)?)$/i.test(s))return{action:'random'};if(/^(?:pin|keep|stick with) (?:you|this|this buddy|my buddy|the current buddy)(?: (?:as my buddy|on each launch))?$/i.test(s)||/^pin (?:my |the )?buddy$/i.test(s))return{action:'pin'};const m=s.match(/^(?:turn into|change into|become|be|switch(?: (?:my )?(?:buddy|bot))? to|change (?:my )?(?:buddy|bot) to|(?:pin|keep|choose|select))\s+(.+?)(?:\s+as my buddy)?(?:\s+and pin(?: (?:it|you|that buddy))?)?$/i);if(!m)return null;const key=normalizedTitle(m[1]);const p=personas.find(p=>[p.id,p.name,...(p.aliases||[])].some(name=>normalizedTitle(name)===key));return p?{action:'select',id:p.id}:{action:'unknown',name:m[1]};}
 export function queueRequest(text){const s=safeCommand(text);if(!s)return null;let m=s.match(/^(?:play|watch|put on)\s+(.+?)\s+next$/i)||s.match(/^(?:play|watch)\s+next\s*:\s*(.+)$/i);if(m)return{target:m[1].trim(),position:'next'};m=s.match(/^(?:add|queue)\s+(.+?)\s+(?:to (?:the |my )?(?:end of (?:the |my )?)?queue|at the end)$/i);if(m)return{target:m[1].trim(),position:'end'};m=s.match(/^queue\s+(.+)$/i);return m?{target:m[1].trim(),position:'end'}:null;}
+
+// Only literal title/list requests take the instant local playback path.
+// Descriptive requests go to the verified AI planner with the current catalog.
+export function directWatchShows(target,offered){
+ const matches=watchShows(target,offered);if(!matches.length)return [];
+ let remaining=' '+normalizedTitle(target)+' ';
+ const names=[...new Set(matches.flatMap(s=>[normalizedTitle(s.title),normalizedTitle(s.title.split(/[:(]/)[0])]))].sort((a,b)=>b.length-a.length);
+ for(const name of names)remaining=remaining.replaceAll(' '+name+' ',' ');
+ remaining=remaining.replace(/\b(?:and|or|the|a|an|some|episodes?|of|please|now|today|tonight)\b/g,'').trim();
+ return remaining?[]:matches;
+}

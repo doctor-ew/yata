@@ -11,7 +11,9 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
   const forcedColors = view?.matchMedia?.('(forced-colors: active)');
   const startTimer = view?.setTimeout ? view.setTimeout.bind(view) : setTimeout;
   const clearTimer = view?.clearTimeout ? view.clearTimeout.bind(view) : clearTimeout;
-  let preferences = { ...DEFAULTS }, timer = null, animation = null, disposed = false;
+  const requestFrame = view?.requestAnimationFrame?.bind(view) || (fn => startTimer(fn, 0));
+  const cancelFrame = view?.cancelAnimationFrame?.bind(view) || clearTimer;
+  let preferences = { ...DEFAULTS }, timer = null, frame = null, animation = null, disposed = false;
   try {
     const saved = JSON.parse(storage?.getItem(RETRO_EFFECTS_STORAGE_KEY) || 'null');
     if (saved && !Array.isArray(saved) && typeof saved.crt === 'boolean' && typeof saved.static === 'boolean') {
@@ -34,6 +36,8 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
     shell.classList.toggle('retro-static-active', !overlay.hidden);
   }
   function stopPulse() {
+    if (frame !== null) cancelFrame(frame);
+    frame = null;
     if (timer !== null) clearTimer(timer);
     timer = null; animation?.cancel(); animation = null;
     overlay.classList.toggle('retro-static-channel-change', false);
@@ -51,6 +55,7 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
     if (durationOutput) durationOutput.textContent = `${preferences.staticDuration} ms`;
     if (previewButton) previewButton.disabled = !enabled();
     overlay.style.setProperty('--static-opacity', String(preferences.staticLevel / 100));
+    overlay.style.setProperty('--static-contrast', String(Math.max(.25,Math.min(2.5,preferences.staticLevel/12))));
     reflectNoise();
   }
   function save() {
@@ -79,12 +84,22 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
     timer = startTimer(stopPulse, preferences.staticDuration);
     return true;
   }
-  listen(previewButton, 'click', pulse);
+  function channelChange({onStart} = {}) {
+    if(disposed || !enabled())return false;
+    stopPulse();
+    // Start the visible interval after synchronous guide/layout work has finished.
+    frame = requestFrame(() => {
+      frame = null;
+      if(pulse({transition:true}))try{onStart?.();}catch{/* Feedback must not block playback. */}
+    });
+    return true;
+  }
+  listen(previewButton, 'click', () => channelChange());
   const mediaChanged = () => { stopPulse(); reflect(); };
   const media = [reducedMotion, forcedColors].filter(Boolean);
   for (const query of media) query.addEventListener?.('change', mediaChanged);
   reflect();
-  return { pulse, channelChange: () => pulse({ transition: true }),
+  return { pulse, channelChange,
     dispose() {
       if (disposed) return;
       disposed = true; stopPulse(); body.classList.toggle('crt-mode', false);
