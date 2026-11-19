@@ -2,6 +2,11 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.20 — 2026-11-19
+
+- Explicit make/create/build-channel requests now call the guarded planner inside buddy chat. After the buddy asks what to include, the next reply builds the channel instead of becoming ordinary conversation.
+- Fixed the backend show-count ceiling rejecting the current catalog. Existing request-byte, verification and usage limits remain unchanged.
+
 ## 0.8.19 — 2026-11-19
 
 - The saved Static switch now disables both channel-change and loading snow. Zero strength and accessibility preferences suppress both; sound remains separately configurable.
