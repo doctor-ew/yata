@@ -1,0 +1,2405 @@
+{
+  "version": 1,
+  "catalogRevision": "aa5adc5243ae04ef039595851f5ac18ad0b360f7d4b45b1d9fb204bf09043c06",
+  "generatedAt": "2026-11-19T02:02:08.059Z",
+  "scope": "TVmaze full-episode summaries for matched checked standalone items; no transcripts, scene timestamps, cast extraction or measured retrieval quality.",
+  "coverage": [
+    {
+      "showId": "dukes",
+      "showTitle": "The Dukes of Hazzard",
+      "catalogItems": 146,
+      "included": 27,
+      "reasons": {
+        "no-summary": 107,
+        "no-unambiguous-match": 10,
+        "conflicting-numbering": 1,
+        "runtime-scope-mismatch": 1
+      }
+    },
+    {
+      "showId": "knight-rider",
+      "showTitle": "Knight Rider",
+      "catalogItems": 85,
+      "included": 74,
+      "reasons": {
+        "not-standalone-checked": 5,
+        "conflicting-numbering": 3,
+        "multipart-title-mismatch": 2,
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "greatest-american-hero",
+      "showTitle": "The Greatest American Hero",
+      "catalogItems": 45,
+      "included": 24,
+      "reasons": {
+        "not-standalone-checked": 3,
+        "no-summary": 14,
+        "no-unambiguous-match": 1,
+        "multipart-title-mismatch": 3
+      }
+    },
+    {
+      "showId": "airwolf",
+      "showTitle": "Airwolf",
+      "catalogItems": 51,
+      "included": 49,
+      "reasons": {
+        "not-standalone-checked": 1,
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "a-team",
+      "showTitle": "The A-Team",
+      "catalogItems": 95,
+      "included": 90,
+      "reasons": {
+        "not-standalone-checked": 2,
+        "no-unambiguous-match": 3
+      }
+    },
+    {
+      "showId": "fall-guy",
+      "showTitle": "The Fall Guy",
+      "catalogItems": 110,
+      "included": 97,
+      "reasons": {
+        "not-standalone-checked": 1,
+        "no-unambiguous-match": 12
+      }
+    },
+    {
+      "showId": "macgyver",
+      "showTitle": "MacGyver",
+      "catalogItems": 141,
+      "included": 133,
+      "reasons": {
+        "not-standalone-checked": 2,
+        "no-unambiguous-match": 6
+      }
+    },
+    {
+      "showId": "magnum",
+      "showTitle": "Magnum, P.I.",
+      "catalogItems": 5,
+      "included": 2,
+      "reasons": {
+        "not-standalone-checked": 2,
+        "multipart-title-mismatch": 1
+      }
+    },
+    {
+      "showId": "chips",
+      "showTitle": "CHiPs",
+      "catalogItems": 18,
+      "included": 10,
+      "reasons": {
+        "no-unambiguous-match": 8
+      }
+    },
+    {
+      "showId": "simon",
+      "showTitle": "Simon & Simon",
+      "catalogItems": 3,
+      "included": 1,
+      "reasons": {
+        "no-summary": 1,
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "riptide",
+      "showTitle": "Riptide",
+      "catalogItems": 39,
+      "included": 34,
+      "reasons": {
+        "not-standalone-checked": 1,
+        "runtime-scope-mismatch": 1,
+        "no-unambiguous-match": 3
+      }
+    },
+    {
+      "showId": "hardcastle",
+      "showTitle": "Hardcastle and McCormick",
+      "catalogItems": 66,
+      "included": 5,
+      "reasons": {
+        "not-standalone-checked": 2,
+        "no-summary": 35,
+        "conflicting-numbering": 17,
+        "no-unambiguous-match": 7
+      }
+    },
+    {
+      "showId": "automan",
+      "showTitle": "Automan",
+      "catalogItems": 13,
+      "included": 12,
+      "reasons": {
+        "conflicting-numbering": 1
+      }
+    },
+    {
+      "showId": "street-hawk",
+      "showTitle": "Street Hawk",
+      "catalogItems": 14,
+      "included": 12,
+      "reasons": {
+        "not-standalone-checked": 1,
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "manimal",
+      "showTitle": "Manimal",
+      "catalogItems": 8,
+      "included": 8,
+      "reasons": {}
+    },
+    {
+      "showId": "phoenix",
+      "showTitle": "The Phoenix",
+      "catalogItems": 5,
+      "included": 0,
+      "reasons": {
+        "no-summary": 5
+      }
+    },
+    {
+      "showId": "voyagers",
+      "showTitle": "Voyagers!",
+      "catalogItems": 20,
+      "included": 1,
+      "reasons": {
+        "no-summary": 17,
+        "no-unambiguous-match": 2
+      }
+    },
+    {
+      "showId": "buck-rogers",
+      "showTitle": "Buck Rogers in the 25th Century",
+      "catalogItems": 33,
+      "included": 24,
+      "reasons": {
+        "not-standalone-checked": 4,
+        "no-unambiguous-match": 5
+      }
+    },
+    {
+      "showId": "battlestar",
+      "showTitle": "Battlestar Galactica",
+      "catalogItems": 21,
+      "included": 12,
+      "reasons": {
+        "not-standalone-checked": 2,
+        "no-unambiguous-match": 6,
+        "conflicting-numbering": 1
+      }
+    },
+    {
+      "showId": "v",
+      "showTitle": "V",
+      "catalogItems": 18,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 3,
+        "no-unambiguous-match": 2,
+        "conflicting-numbering": 13
+      }
+    },
+    {
+      "showId": "hulk",
+      "showTitle": "The Incredible Hulk",
+      "catalogItems": 12,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 2,
+        "conflicting-numbering": 10
+      }
+    },
+    {
+      "showId": "wizards-warriors",
+      "showTitle": "Wizards and Warriors (1983)",
+      "catalogItems": 8,
+      "included": 0,
+      "reasons": {
+        "no-summary": 8
+      }
+    },
+    {
+      "showId": "matthew-star",
+      "showTitle": "The Powers of Matthew Star",
+      "catalogItems": 22,
+      "included": 19,
+      "reasons": {
+        "no-unambiguous-match": 1,
+        "no-summary": 2
+      }
+    },
+    {
+      "showId": "misfits-science",
+      "showTitle": "Misfits of Science (1985)",
+      "catalogItems": 16,
+      "included": 15,
+      "reasons": {
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "otherworld",
+      "showTitle": "Otherworld (1985)",
+      "catalogItems": 8,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 8
+      }
+    },
+    {
+      "showId": "whiz-kids",
+      "showTitle": "Whiz Kids",
+      "catalogItems": 18,
+      "included": 1,
+      "reasons": {
+        "no-summary": 17
+      }
+    },
+    {
+      "showId": "blue-thunder",
+      "showTitle": "Blue Thunder (1984)",
+      "catalogItems": 11,
+      "included": 1,
+      "reasons": {
+        "no-summary": 10
+      }
+    },
+    {
+      "showId": "the-master",
+      "showTitle": "The Master (1984)",
+      "catalogItems": 13,
+      "included": 3,
+      "reasons": {
+        "no-summary": 10
+      }
+    },
+    {
+      "showId": "gold-monkey",
+      "showTitle": "Tales of the Gold Monkey",
+      "catalogItems": 21,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 21
+      }
+    },
+    {
+      "showId": "stingray",
+      "showTitle": "Stingray (1985)",
+      "catalogItems": 1,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "matt-houston",
+      "showTitle": "Matt Houston",
+      "catalogItems": 1,
+      "included": 1,
+      "reasons": {}
+    },
+    {
+      "showId": "space-1999",
+      "showTitle": "Space: 1999",
+      "catalogItems": 48,
+      "included": 24,
+      "reasons": {
+        "no-summary": 24
+      }
+    },
+    {
+      "showId": "ufo",
+      "showTitle": "UFO",
+      "catalogItems": 26,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 26
+      }
+    },
+    {
+      "showId": "fantastic-journey",
+      "showTitle": "The Fantastic Journey",
+      "catalogItems": 10,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 10
+      }
+    },
+    {
+      "showId": "logans-run",
+      "showTitle": "Logan\u2019s Run (TV series)",
+      "catalogItems": 14,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 14
+      }
+    },
+    {
+      "showId": "space-academy",
+      "showTitle": "Space Academy",
+      "catalogItems": 4,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 4
+      }
+    },
+    {
+      "showId": "jason-star-command",
+      "showTitle": "Jason of Star Command",
+      "catalogItems": 28,
+      "included": 0,
+      "reasons": {
+        "runtime-scope-mismatch": 16,
+        "no-summary": 12
+      }
+    },
+    {
+      "showId": "he-man",
+      "showTitle": "He-Man and the Masters of the Universe",
+      "catalogItems": 130,
+      "included": 13,
+      "reasons": {
+        "no-summary": 112,
+        "no-unambiguous-match": 4,
+        "conflicting-numbering": 1
+      }
+    },
+    {
+      "showId": "gi-joe",
+      "showTitle": "G.I. Joe: A Real American Hero",
+      "catalogItems": 104,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 19,
+        "no-unambiguous-match": 15,
+        "conflicting-numbering": 40,
+        "no-summary": 30
+      }
+    },
+    {
+      "showId": "transformers",
+      "showTitle": "The Transformers",
+      "catalogItems": 100,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 6,
+        "no-summary": 10,
+        "not-standalone-checked": 84
+      }
+    },
+    {
+      "showId": "mighty-orbots",
+      "showTitle": "Mighty Orbots",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "no-summary": 13
+      }
+    },
+    {
+      "showId": "thundercats",
+      "showTitle": "ThunderCats",
+      "catalogItems": 130,
+      "included": 108,
+      "reasons": {
+        "multipart-title-mismatch": 2,
+        "conflicting-numbering": 13,
+        "no-unambiguous-match": 7
+      }
+    },
+    {
+      "showId": "voltron",
+      "showTitle": "Voltron",
+      "catalogItems": 124,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 124
+      }
+    },
+    {
+      "showId": "mask",
+      "showTitle": "M.A.S.K.",
+      "catalogItems": 75,
+      "included": 0,
+      "reasons": {
+        "no-summary": 74,
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "silverhawks",
+      "showTitle": "SilverHawks",
+      "catalogItems": 65,
+      "included": 58,
+      "reasons": {
+        "no-unambiguous-match": 7
+      }
+    },
+    {
+      "showId": "dungeons-dragons",
+      "showTitle": "Dungeons & Dragons",
+      "catalogItems": 27,
+      "included": 0,
+      "reasons": {
+        "no-summary": 24,
+        "conflicting-numbering": 2,
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "centurions",
+      "showTitle": "The Centurions",
+      "catalogItems": 65,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 65
+      }
+    },
+    {
+      "showId": "thundarr",
+      "showTitle": "Thundarr the Barbarian",
+      "catalogItems": 21,
+      "included": 8,
+      "reasons": {
+        "no-summary": 12,
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "inspector-gadget",
+      "showTitle": "Inspector Gadget",
+      "catalogItems": 86,
+      "included": 86,
+      "reasons": {}
+    },
+    {
+      "showId": "spider-friends",
+      "showTitle": "Spider-Man and His Amazing Friends",
+      "catalogItems": 24,
+      "included": 21,
+      "reasons": {
+        "no-unambiguous-match": 1,
+        "conflicting-numbering": 2
+      }
+    },
+    {
+      "showId": "hulk-1982",
+      "showTitle": "The Incredible Hulk (1982 animated)",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 13
+      }
+    },
+    {
+      "showId": "bionic-six",
+      "showTitle": "Bionic Six",
+      "catalogItems": 65,
+      "included": 0,
+      "reasons": {
+        "no-summary": 64,
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "jayce",
+      "showTitle": "Jayce and the Wheeled Warriors",
+      "catalogItems": 65,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 65
+      }
+    },
+    {
+      "showId": "pole-position",
+      "showTitle": "Pole Position",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "no-summary": 11,
+        "no-unambiguous-match": 2
+      }
+    },
+    {
+      "showId": "turbo-teen",
+      "showTitle": "Turbo Teen",
+      "catalogItems": 12,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 12
+      }
+    },
+    {
+      "showId": "bravestarr",
+      "showTitle": "BraveStarr",
+      "catalogItems": 19,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 19
+      }
+    },
+    {
+      "showId": "defenders-earth",
+      "showTitle": "Defenders of the Earth",
+      "catalogItems": 65,
+      "included": 60,
+      "reasons": {
+        "no-unambiguous-match": 5
+      }
+    },
+    {
+      "showId": "drak-pack",
+      "showTitle": "Drak Pack",
+      "catalogItems": 16,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 16
+      }
+    },
+    {
+      "showId": "dragons-lair",
+      "showTitle": "Dragon\u2019s Lair",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "no-summary": 13
+      }
+    },
+    {
+      "showId": "galaxy-rangers",
+      "showTitle": "The Adventures of the Galaxy Rangers",
+      "catalogItems": 65,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 65
+      }
+    },
+    {
+      "showId": "visionaries",
+      "showTitle": "Visionaries: Knights of the Magical Light",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "no-summary": 13
+      }
+    },
+    {
+      "showId": "space-ghost",
+      "showTitle": "Space Ghost and Dino Boy",
+      "catalogItems": 20,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 20
+      }
+    },
+    {
+      "showId": "herculoids",
+      "showTitle": "The Herculoids",
+      "catalogItems": 18,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 18
+      }
+    },
+    {
+      "showId": "galtar",
+      "showTitle": "Galtar and the Golden Lance",
+      "catalogItems": 21,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 2,
+        "no-summary": 19
+      }
+    },
+    {
+      "showId": "speed-buggy",
+      "showTitle": "Speed Buggy",
+      "catalogItems": 16,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 16
+      }
+    },
+    {
+      "showId": "captain-caveman",
+      "showTitle": "Captain Caveman and the Teen Angels",
+      "catalogItems": 16,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 16
+      }
+    },
+    {
+      "showId": "hong-kong-phooey",
+      "showTitle": "Hong Kong Phooey",
+      "catalogItems": 16,
+      "included": 1,
+      "reasons": {
+        "runtime-scope-mismatch": 1,
+        "no-unambiguous-match": 13,
+        "conflicting-numbering": 1
+      }
+    },
+    {
+      "showId": "dynomutt",
+      "showTitle": "Dynomutt, Dog Wonder",
+      "catalogItems": 20,
+      "included": 0,
+      "reasons": {
+        "no-summary": 16,
+        "no-unambiguous-match": 4
+      }
+    },
+    {
+      "showId": "yogi-bear",
+      "showTitle": "Yogi Bear (original shorts)",
+      "catalogItems": 68,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 68
+      }
+    },
+    {
+      "showId": "birdman",
+      "showTitle": "Birdman and the Galaxy Trio",
+      "catalogItems": 20,
+      "included": 0,
+      "reasons": {
+        "runtime-scope-mismatch": 1,
+        "no-unambiguous-match": 18,
+        "conflicting-numbering": 1
+      }
+    },
+    {
+      "showId": "jonny-quest",
+      "showTitle": "Jonny Quest (1964)",
+      "catalogItems": 26,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 26
+      }
+    },
+    {
+      "showId": "super-friends",
+      "showTitle": "Super Friends (1973)",
+      "catalogItems": 16,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 16
+      }
+    },
+    {
+      "showId": "flintstones",
+      "showTitle": "The Flintstones",
+      "catalogItems": 26,
+      "included": 26,
+      "reasons": {}
+    },
+    {
+      "showId": "jetsons",
+      "showTitle": "The Jetsons",
+      "catalogItems": 24,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 24
+      }
+    },
+    {
+      "showId": "wacky-races",
+      "showTitle": "Wacky Races (1968)",
+      "catalogItems": 17,
+      "included": 0,
+      "reasons": {
+        "runtime-scope-mismatch": 1,
+        "no-unambiguous-match": 14,
+        "conflicting-numbering": 2
+      }
+    },
+    {
+      "showId": "butch-cassidy",
+      "showTitle": "Butch Cassidy and the Sundance Kids",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 13
+      }
+    },
+    {
+      "showId": "clue-club",
+      "showTitle": "Clue Club",
+      "catalogItems": 16,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 16
+      }
+    },
+    {
+      "showId": "goober",
+      "showTitle": "Goober and the Ghost Chasers",
+      "catalogItems": 15,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 15
+      }
+    },
+    {
+      "showId": "wheelie",
+      "showTitle": "Wheelie and the Chopper Bunch",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 13
+      }
+    },
+    {
+      "showId": "funky-phantom",
+      "showTitle": "The Funky Phantom",
+      "catalogItems": 17,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 17
+      }
+    },
+    {
+      "showId": "inch-high",
+      "showTitle": "Inch High, Private Eye",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 13
+      }
+    },
+    {
+      "showId": "barney-miller",
+      "showTitle": "Barney Miller",
+      "catalogItems": 1,
+      "included": 1,
+      "reasons": {}
+    },
+    {
+      "showId": "mork-mindy",
+      "showTitle": "Mork & Mindy",
+      "catalogItems": 24,
+      "included": 19,
+      "reasons": {
+        "no-unambiguous-match": 5
+      }
+    },
+    {
+      "showId": "love-boat",
+      "showTitle": "The Love Boat",
+      "catalogItems": 4,
+      "included": 3,
+      "reasons": {
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "benson",
+      "showTitle": "Benson",
+      "catalogItems": 157,
+      "included": 150,
+      "reasons": {
+        "no-unambiguous-match": 7
+      }
+    },
+    {
+      "showId": "barnaby-jones",
+      "showTitle": "Barnaby Jones",
+      "catalogItems": 0,
+      "included": 0,
+      "reasons": {}
+    },
+    {
+      "showId": "baretta",
+      "showTitle": "Baretta",
+      "catalogItems": 58,
+      "included": 55,
+      "reasons": {
+        "no-unambiguous-match": 3
+      }
+    },
+    {
+      "showId": "bj-bear",
+      "showTitle": "B.J. and the Bear",
+      "catalogItems": 12,
+      "included": 10,
+      "reasons": {
+        "not-standalone-checked": 2
+      }
+    },
+    {
+      "showId": "mister-t",
+      "showTitle": "Mister T",
+      "catalogItems": 9,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 9
+      }
+    },
+    {
+      "showId": "frankenstein-impossibles",
+      "showTitle": "Frankenstein Jr. and The Impossibles",
+      "catalogItems": 18,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 18
+      }
+    },
+    {
+      "showId": "jem",
+      "showTitle": "Jem and the Holograms",
+      "catalogItems": 65,
+      "included": 24,
+      "reasons": {
+        "runtime-scope-mismatch": 1,
+        "no-unambiguous-match": 4,
+        "no-summary": 36
+      }
+    },
+    {
+      "showId": "she-ra",
+      "showTitle": "She-Ra: Princess of Power (1985)",
+      "catalogItems": 93,
+      "included": 8,
+      "reasons": {
+        "no-summary": 82,
+        "no-unambiguous-match": 3
+      }
+    },
+    {
+      "showId": "rainbow-brite",
+      "showTitle": "Rainbow Brite (1984)",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 13
+      }
+    },
+    {
+      "showId": "care-bears",
+      "showTitle": "Care Bears (1980s)",
+      "catalogItems": 71,
+      "included": 0,
+      "reasons": {
+        "conflicting-numbering": 10,
+        "runtime-scope-mismatch": 22,
+        "no-unambiguous-match": 4,
+        "no-summary": 35
+      }
+    },
+    {
+      "showId": "my-little-pony",
+      "showTitle": "My Little Pony \u2019n Friends (1986)",
+      "catalogItems": 65,
+      "included": 0,
+      "reasons": {
+        "no-summary": 62,
+        "runtime-scope-mismatch": 3
+      }
+    },
+    {
+      "showId": "grimm-fairy-tale-classics",
+      "showTitle": "Grimm\u2019s Fairy Tale Classics",
+      "catalogItems": 1,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "grape-ape",
+      "showTitle": "The Great Grape Ape Show",
+      "catalogItems": 0,
+      "included": 0,
+      "reasons": {}
+    },
+    {
+      "showId": "shirt-tales",
+      "showTitle": "Shirt Tales (1982)",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "no-summary": 12,
+        "conflicting-numbering": 1
+      }
+    },
+    {
+      "showId": "heathcliff",
+      "showTitle": "Heathcliff and the Catillac Cats (1984)",
+      "catalogItems": 86,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 86
+      }
+    },
+    {
+      "showId": "garfield-friends",
+      "showTitle": "Garfield and Friends (1988)",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "no-summary": 13
+      }
+    },
+    {
+      "showId": "cartoon-planet",
+      "showTitle": "Cartoon Planet (1995)",
+      "catalogItems": 22,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 22
+      }
+    },
+    {
+      "showId": "space-ghost-c2c",
+      "showTitle": "Space Ghost Coast to Coast",
+      "catalogItems": 14,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 14
+      }
+    },
+    {
+      "showId": "athf",
+      "showTitle": "Aqua Teen Hunger Force (2000)",
+      "catalogItems": 76,
+      "included": 59,
+      "reasons": {
+        "no-unambiguous-match": 8,
+        "conflicting-numbering": 9
+      }
+    },
+    {
+      "showId": "squidbillies",
+      "showTitle": "Squidbillies",
+      "catalogItems": 1,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "robot-chicken",
+      "showTitle": "Robot Chicken",
+      "catalogItems": 1,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "beavis-butthead",
+      "showTitle": "Beavis and Butt-Head (1990s)",
+      "catalogItems": 197,
+      "included": 43,
+      "reasons": {
+        "not-standalone-checked": 2,
+        "no-unambiguous-match": 7,
+        "no-summary": 99,
+        "runtime-scope-mismatch": 20,
+        "conflicting-numbering": 26
+      }
+    },
+    {
+      "showId": "the-maxx",
+      "showTitle": "The Maxx (1995)",
+      "catalogItems": 13,
+      "included": 3,
+      "reasons": {
+        "no-unambiguous-match": 9,
+        "runtime-scope-mismatch": 1
+      }
+    },
+    {
+      "showId": "the-tick",
+      "showTitle": "The Tick (1994 animated)",
+      "catalogItems": 36,
+      "included": 32,
+      "reasons": {
+        "runtime-scope-mismatch": 3,
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "ycdtotv",
+      "showTitle": "You Can\u2019t Do That on Television",
+      "catalogItems": 158,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 158
+      }
+    },
+    {
+      "showId": "harvey-birdman",
+      "showTitle": "Harvey Birdman, Attorney at Law",
+      "catalogItems": 39,
+      "included": 33,
+      "reasons": {
+        "no-unambiguous-match": 6
+      }
+    },
+    {
+      "showId": "sealab-2021",
+      "showTitle": "Sealab 2021",
+      "catalogItems": 52,
+      "included": 0,
+      "reasons": {
+        "no-summary": 52
+      }
+    },
+    {
+      "showId": "home-movies",
+      "showTitle": "Home Movies",
+      "catalogItems": 52,
+      "included": 0,
+      "reasons": {
+        "no-summary": 42,
+        "no-unambiguous-match": 7,
+        "conflicting-numbering": 3
+      }
+    },
+    {
+      "showId": "brak-show",
+      "showTitle": "The Brak Show",
+      "catalogItems": 28,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 28
+      }
+    },
+    {
+      "showId": "daria",
+      "showTitle": "Daria",
+      "catalogItems": 65,
+      "included": 63,
+      "reasons": {
+        "conflicting-numbering": 2
+      }
+    },
+    {
+      "showId": "taxi",
+      "showTitle": "Taxi (1978)",
+      "catalogItems": 114,
+      "included": 85,
+      "reasons": {
+        "no-unambiguous-match": 5,
+        "not-standalone-checked": 24
+      }
+    },
+    {
+      "showId": "wkrp",
+      "showTitle": "WKRP in Cincinnati",
+      "catalogItems": 12,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 12
+      }
+    },
+    {
+      "showId": "rockford-files",
+      "showTitle": "The Rockford Files",
+      "catalogItems": 120,
+      "included": 27,
+      "reasons": {
+        "no-unambiguous-match": 25,
+        "no-summary": 63,
+        "conflicting-numbering": 1,
+        "not-standalone-checked": 3,
+        "runtime-scope-mismatch": 1
+      }
+    },
+    {
+      "showId": "bionic-woman",
+      "showTitle": "The Bionic Woman (1976)",
+      "catalogItems": 60,
+      "included": 6,
+      "reasons": {
+        "no-summary": 42,
+        "no-unambiguous-match": 4,
+        "conflicting-numbering": 8
+      }
+    },
+    {
+      "showId": "josie-pussycats",
+      "showTitle": "Josie and the Pussycats (1970)",
+      "catalogItems": 16,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 16
+      }
+    },
+    {
+      "showId": "fat-albert",
+      "showTitle": "Fat Albert and the Cosby Kids",
+      "catalogItems": 122,
+      "included": 0,
+      "reasons": {
+        "no-summary": 90,
+        "no-unambiguous-match": 12,
+        "conflicting-numbering": 8,
+        "not-standalone-checked": 12
+      }
+    },
+    {
+      "showId": "good-times",
+      "showTitle": "Good Times",
+      "catalogItems": 133,
+      "included": 105,
+      "reasons": {
+        "no-unambiguous-match": 28
+      }
+    },
+    {
+      "showId": "jeffersons",
+      "showTitle": "The Jeffersons",
+      "catalogItems": 244,
+      "included": 13,
+      "reasons": {
+        "no-summary": 189,
+        "no-unambiguous-match": 42
+      }
+    },
+    {
+      "showId": "sanford-son",
+      "showTitle": "Sanford and Son",
+      "catalogItems": 37,
+      "included": 37,
+      "reasons": {}
+    },
+    {
+      "showId": "gimme-break",
+      "showTitle": "Gimme a Break!",
+      "catalogItems": 135,
+      "included": 3,
+      "reasons": {
+        "no-unambiguous-match": 19,
+        "no-summary": 111,
+        "conflicting-numbering": 2
+      }
+    },
+    {
+      "showId": "kotter",
+      "showTitle": "Welcome Back, Kotter",
+      "catalogItems": 20,
+      "included": 18,
+      "reasons": {
+        "no-unambiguous-match": 2
+      }
+    },
+    {
+      "showId": "whos-boss",
+      "showTitle": "Who\u2019s the Boss?",
+      "catalogItems": 2,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 2
+      }
+    },
+    {
+      "showId": "quantum-leap",
+      "showTitle": "Quantum Leap (1989)",
+      "catalogItems": 96,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 96
+      }
+    },
+    {
+      "showId": "flash-1990",
+      "showTitle": "The Flash (1990)",
+      "catalogItems": 22,
+      "included": 20,
+      "reasons": {
+        "not-standalone-checked": 1,
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "star-trek-tos",
+      "showTitle": "Star Trek: The Original Series",
+      "catalogItems": 79,
+      "included": 76,
+      "reasons": {
+        "no-unambiguous-match": 3
+      }
+    },
+    {
+      "showId": "star-trek-tng",
+      "showTitle": "Star Trek: The Next Generation",
+      "catalogItems": 175,
+      "included": 168,
+      "reasons": {
+        "not-standalone-checked": 3,
+        "no-unambiguous-match": 3,
+        "conflicting-numbering": 1
+      }
+    },
+    {
+      "showId": "star-trek-ds9",
+      "showTitle": "Star Trek: Deep Space Nine",
+      "catalogItems": 2,
+      "included": 1,
+      "reasons": {
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "star-trek-voyager",
+      "showTitle": "Star Trek: Voyager",
+      "catalogItems": 168,
+      "included": 138,
+      "reasons": {
+        "not-standalone-checked": 2,
+        "no-unambiguous-match": 28
+      }
+    },
+    {
+      "showId": "star-trek-enterprise",
+      "showTitle": "Star Trek: Enterprise",
+      "catalogItems": 97,
+      "included": 74,
+      "reasons": {
+        "runtime-scope-mismatch": 1,
+        "multipart-title-mismatch": 19,
+        "no-unambiguous-match": 3
+      }
+    },
+    {
+      "showId": "star-trek-tas",
+      "showTitle": "Star Trek: The Animated Series (1973)",
+      "catalogItems": 16,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 16
+      }
+    },
+    {
+      "showId": "star-wars-droids",
+      "showTitle": "Star Wars: Droids (1985)",
+      "catalogItems": 14,
+      "included": 13,
+      "reasons": {
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "sealab-2020",
+      "showTitle": "Sealab 2020 (1972)",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 3,
+        "no-summary": 10
+      }
+    },
+    {
+      "showId": "venture-bros",
+      "showTitle": "The Venture Bros.",
+      "catalogItems": 28,
+      "included": 26,
+      "reasons": {
+        "not-standalone-checked": 2
+      }
+    },
+    {
+      "showId": "flash-gordon-1979",
+      "showTitle": "The New Adventures of Flash Gordon (1979)",
+      "catalogItems": 24,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 24
+      }
+    },
+    {
+      "showId": "return-planet-apes",
+      "showTitle": "Return to the Planet of the Apes (1975)",
+      "catalogItems": 13,
+      "included": 9,
+      "reasons": {
+        "no-unambiguous-match": 4
+      }
+    },
+    {
+      "showId": "valley-dinosaurs",
+      "showTitle": "Valley of the Dinosaurs (1974)",
+      "catalogItems": 15,
+      "included": 0,
+      "reasons": {
+        "no-summary": 12,
+        "conflicting-numbering": 2,
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "classic-doctor-who",
+      "showTitle": "Doctor Who (1963\u20131989)",
+      "catalogItems": 70,
+      "included": 58,
+      "reasons": {
+        "no-unambiguous-match": 12
+      }
+    },
+    {
+      "showId": "highwayman",
+      "showTitle": "The Highwayman (1987\u20131988)",
+      "catalogItems": 10,
+      "included": 6,
+      "reasons": {
+        "not-standalone-checked": 1,
+        "no-unambiguous-match": 3
+      }
+    },
+    {
+      "showId": "max-headroom",
+      "showTitle": "Max Headroom (1987)",
+      "catalogItems": 14,
+      "included": 12,
+      "reasons": {
+        "conflicting-numbering": 1,
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "blakes-seven",
+      "showTitle": "Blake\u2019s 7 (1978)",
+      "catalogItems": 52,
+      "included": 52,
+      "reasons": {}
+    },
+    {
+      "showId": "real-ghostbusters",
+      "showTitle": "The Real Ghostbusters (1986)",
+      "catalogItems": 135,
+      "included": 14,
+      "reasons": {
+        "no-summary": 118,
+        "no-unambiguous-match": 1,
+        "conflicting-numbering": 1,
+        "runtime-scope-mismatch": 1
+      }
+    },
+    {
+      "showId": "robotech",
+      "showTitle": "Robotech (1985)",
+      "catalogItems": 85,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 85
+      }
+    },
+    {
+      "showId": "star-blazers",
+      "showTitle": "Star Blazers (1979)",
+      "catalogItems": 52,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 52
+      }
+    },
+    {
+      "showId": "sliders",
+      "showTitle": "Sliders (1995)",
+      "catalogItems": 20,
+      "included": 20,
+      "reasons": {}
+    },
+    {
+      "showId": "seaquest",
+      "showTitle": "seaQuest DSV (1993)",
+      "catalogItems": 7,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 1,
+        "conflicting-numbering": 6
+      }
+    },
+    {
+      "showId": "babylon-five",
+      "showTitle": "Babylon 5 (1993)",
+      "catalogItems": 108,
+      "included": 95,
+      "reasons": {
+        "no-unambiguous-match": 13
+      }
+    },
+    {
+      "showId": "farscape",
+      "showTitle": "Farscape (1999)",
+      "catalogItems": 66,
+      "included": 51,
+      "reasons": {
+        "conflicting-numbering": 1,
+        "multipart-title-mismatch": 2,
+        "no-unambiguous-match": 12
+      }
+    },
+    {
+      "showId": "eerie-indiana",
+      "showTitle": "Eerie, Indiana (1991)",
+      "catalogItems": 19,
+      "included": 14,
+      "reasons": {
+        "no-unambiguous-match": 3,
+        "conflicting-numbering": 2
+      }
+    },
+    {
+      "showId": "six-million-man",
+      "showTitle": "The Six Million Dollar Man",
+      "catalogItems": 34,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 34
+      }
+    },
+    {
+      "showId": "sledge-hammer",
+      "showTitle": "Sledge Hammer",
+      "catalogItems": 41,
+      "included": 38,
+      "reasons": {
+        "no-unambiguous-match": 3
+      }
+    },
+    {
+      "showId": "land-lost",
+      "showTitle": "Land of the Lost",
+      "catalogItems": 43,
+      "included": 1,
+      "reasons": {
+        "no-summary": 42
+      }
+    },
+    {
+      "showId": "prisoner",
+      "showTitle": "The Prisoner",
+      "catalogItems": 17,
+      "included": 13,
+      "reasons": {
+        "not-standalone-checked": 1,
+        "conflicting-numbering": 3
+      }
+    },
+    {
+      "showId": "brisco-county",
+      "showTitle": "The Adventures of Brisco County Jr",
+      "catalogItems": 27,
+      "included": 22,
+      "reasons": {
+        "not-standalone-checked": 1,
+        "conflicting-numbering": 4
+      }
+    },
+    {
+      "showId": "mr-merlin",
+      "showTitle": "Mr Merlin",
+      "catalogItems": 22,
+      "included": 0,
+      "reasons": {
+        "no-summary": 19,
+        "no-unambiguous-match": 1,
+        "multipart-title-mismatch": 2
+      }
+    },
+    {
+      "showId": "cities-gold",
+      "showTitle": "The Mysterious Cities of Gold",
+      "catalogItems": 39,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 39
+      }
+    },
+    {
+      "showId": "sapphire-steel",
+      "showTitle": "Sapphire and Steel",
+      "catalogItems": 34,
+      "included": 23,
+      "reasons": {
+        "no-unambiguous-match": 1,
+        "no-summary": 10
+      }
+    },
+    {
+      "showId": "tomorrow-people",
+      "showTitle": "The Tomorrow People",
+      "catalogItems": 68,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 68
+      }
+    },
+    {
+      "showId": "tripods",
+      "showTitle": "The Tripods",
+      "catalogItems": 24,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 24
+      }
+    },
+    {
+      "showId": "red-dwarf",
+      "showTitle": "Red Dwarf",
+      "catalogItems": 52,
+      "included": 46,
+      "reasons": {
+        "no-unambiguous-match": 6
+      }
+    },
+    {
+      "showId": "starlost",
+      "showTitle": "The Starlost",
+      "catalogItems": 16,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 16
+      }
+    },
+    {
+      "showId": "alien-nation",
+      "showTitle": "Alien Nation",
+      "catalogItems": 22,
+      "included": 20,
+      "reasons": {
+        "not-standalone-checked": 1,
+        "no-summary": 1
+      }
+    },
+    {
+      "showId": "invaders",
+      "showTitle": "The Invaders",
+      "catalogItems": 43,
+      "included": 19,
+      "reasons": {
+        "no-summary": 24
+      }
+    },
+    {
+      "showId": "time-tunnel",
+      "showTitle": "The Time Tunnel",
+      "catalogItems": 30,
+      "included": 30,
+      "reasons": {}
+    },
+    {
+      "showId": "dino-riders",
+      "showTitle": "Dino Riders",
+      "catalogItems": 14,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 14
+      }
+    },
+    {
+      "showId": "inhumanoids",
+      "showTitle": "Inhumanoids",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "no-summary": 13
+      }
+    },
+    {
+      "showId": "gobots",
+      "showTitle": "Challenge of the GoBots",
+      "catalogItems": 65,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 65
+      }
+    },
+    {
+      "showId": "battle-planets",
+      "showTitle": "Battle of the Planets",
+      "catalogItems": 85,
+      "included": 0,
+      "reasons": {
+        "no-summary": 72,
+        "no-unambiguous-match": 13
+      }
+    },
+    {
+      "showId": "saber-rider",
+      "showTitle": "Saber Rider and the Star Sheriffs",
+      "catalogItems": 52,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 52
+      }
+    },
+    {
+      "showId": "dinosaucers",
+      "showTitle": "Dinosaucers",
+      "catalogItems": 65,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 65
+      }
+    },
+    {
+      "showId": "teddy-ruxpin",
+      "showTitle": "The Adventures of Teddy Ruxpin",
+      "catalogItems": 52,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 52
+      }
+    },
+    {
+      "showId": "ulysses-31",
+      "showTitle": "Ulysses 31",
+      "catalogItems": 26,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 26
+      }
+    },
+    {
+      "showId": "ewoks",
+      "showTitle": "Ewoks",
+      "catalogItems": 26,
+      "included": 12,
+      "reasons": {
+        "no-unambiguous-match": 1,
+        "no-summary": 1,
+        "conflicting-numbering": 12
+      }
+    },
+    {
+      "showId": "mario-super-show",
+      "showTitle": "The Super Mario Bros Super Show",
+      "catalogItems": 17,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 17
+      }
+    },
+    {
+      "showId": "captain-n",
+      "showTitle": "Captain N",
+      "catalogItems": 33,
+      "included": 0,
+      "reasons": {
+        "no-summary": 23,
+        "no-unambiguous-match": 8,
+        "runtime-scope-mismatch": 2
+      }
+    },
+    {
+      "showId": "scarecrow-king",
+      "showTitle": "Scarecrow and Mrs King",
+      "catalogItems": 88,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 88
+      }
+    },
+    {
+      "showId": "miami-vice",
+      "showTitle": "Miami Vice",
+      "catalogItems": 111,
+      "included": 83,
+      "reasons": {
+        "not-standalone-checked": 3,
+        "conflicting-numbering": 13,
+        "no-unambiguous-match": 12
+      }
+    },
+    {
+      "showId": "beans-baxter",
+      "showTitle": "The New Adventures of Beans Baxter",
+      "catalogItems": 17,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 1,
+        "no-unambiguous-match": 3,
+        "no-summary": 13
+      }
+    },
+    {
+      "showId": "soap",
+      "showTitle": "Soap",
+      "catalogItems": 87,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 87
+      }
+    },
+    {
+      "showId": "police-squad",
+      "showTitle": "Police Squad",
+      "catalogItems": 6,
+      "included": 6,
+      "reasons": {}
+    },
+    {
+      "showId": "alf",
+      "showTitle": "ALF",
+      "catalogItems": 100,
+      "included": 86,
+      "reasons": {
+        "no-unambiguous-match": 14
+      }
+    },
+    {
+      "showId": "perfect-strangers",
+      "showTitle": "Perfect Strangers",
+      "catalogItems": 150,
+      "included": 40,
+      "reasons": {
+        "no-summary": 86,
+        "no-unambiguous-match": 21,
+        "conflicting-numbering": 3
+      }
+    },
+    {
+      "showId": "small-wonder",
+      "showTitle": "Small Wonder",
+      "catalogItems": 2,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 1,
+        "no-summary": 1
+      }
+    },
+    {
+      "showId": "muppet-show",
+      "showTitle": "The Muppet Show",
+      "catalogItems": 2,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 2
+      }
+    },
+    {
+      "showId": "aeon-flux",
+      "showTitle": "Aeon Flux",
+      "catalogItems": 11,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 11
+      }
+    },
+    {
+      "showId": "liquid-television",
+      "showTitle": "Liquid Television",
+      "catalogItems": 22,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 22
+      }
+    },
+    {
+      "showId": "dr-katz",
+      "showTitle": "Dr Katz",
+      "catalogItems": 81,
+      "included": 2,
+      "reasons": {
+        "no-summary": 77,
+        "no-unambiguous-match": 2
+      }
+    },
+    {
+      "showId": "critic",
+      "showTitle": "The Critic",
+      "catalogItems": 23,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 23
+      }
+    },
+    {
+      "showId": "duckman",
+      "showTitle": "Duckman",
+      "catalogItems": 70,
+      "included": 63,
+      "reasons": {
+        "no-unambiguous-match": 6,
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "mission-hill",
+      "showTitle": "Mission Hill",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 13
+      }
+    },
+    {
+      "showId": "oblongs",
+      "showTitle": "The Oblongs",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "no-summary": 8,
+        "no-unambiguous-match": 5
+      }
+    },
+    {
+      "showId": "clone-high",
+      "showTitle": "Clone High",
+      "catalogItems": 13,
+      "included": 8,
+      "reasons": {
+        "conflicting-numbering": 5
+      }
+    },
+    {
+      "showId": "moral-orel",
+      "showTitle": "Moral Orel",
+      "catalogItems": 44,
+      "included": 0,
+      "reasons": {
+        "conflicting-numbering": 8,
+        "no-unambiguous-match": 10,
+        "no-summary": 26
+      }
+    },
+    {
+      "showId": "danger-mouse",
+      "showTitle": "Danger Mouse",
+      "catalogItems": 90,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 90
+      }
+    },
+    {
+      "showId": "count-duckula",
+      "showTitle": "Count Duckula",
+      "catalogItems": 65,
+      "included": 0,
+      "reasons": {
+        "no-summary": 58,
+        "no-unambiguous-match": 7
+      }
+    },
+    {
+      "showId": "double-dare",
+      "showTitle": "Double Dare",
+      "catalogItems": 187,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 187
+      }
+    },
+    {
+      "showId": "salute-shorts",
+      "showTitle": "Salute Your Shorts",
+      "catalogItems": 26,
+      "included": 0,
+      "reasons": {
+        "no-summary": 20,
+        "no-unambiguous-match": 6
+      }
+    },
+    {
+      "showId": "hey-dude",
+      "showTitle": "Hey Dude",
+      "catalogItems": 65,
+      "included": 0,
+      "reasons": {
+        "no-summary": 61,
+        "no-unambiguous-match": 4
+      }
+    },
+    {
+      "showId": "pete-pete",
+      "showTitle": "The Adventures of Pete and Pete",
+      "catalogItems": 22,
+      "included": 1,
+      "reasons": {
+        "no-unambiguous-match": 5,
+        "conflicting-numbering": 8,
+        "no-summary": 8
+      }
+    },
+    {
+      "showId": "space-sentinels",
+      "showTitle": "Space Sentinels",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 13
+      }
+    },
+    {
+      "showId": "blackstar",
+      "showTitle": "Blackstar",
+      "catalogItems": 13,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 13
+      }
+    },
+    {
+      "showId": "kolchak",
+      "showTitle": "Kolchak",
+      "catalogItems": 22,
+      "included": 19,
+      "reasons": {
+        "not-standalone-checked": 3
+      }
+    },
+    {
+      "showId": "hitchhikers-guide",
+      "showTitle": "The Hitchhiker\u2019s Guide to the Galaxy (1981)",
+      "catalogItems": 6,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 6
+      }
+    },
+    {
+      "showId": "man-atlantis",
+      "showTitle": "Man from Atlantis (1977)",
+      "catalogItems": 17,
+      "included": 13,
+      "reasons": {
+        "not-standalone-checked": 4
+      }
+    },
+    {
+      "showId": "remington-steele",
+      "showTitle": "Remington Steele (1982)",
+      "catalogItems": 1,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "x-men-tas",
+      "showTitle": "X-Men: The Animated Series (1992)",
+      "catalogItems": 76,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 76
+      }
+    },
+    {
+      "showId": "batman-tas",
+      "showTitle": "Batman: The Animated Series (1992)",
+      "catalogItems": 85,
+      "included": 41,
+      "reasons": {
+        "multipart-title-mismatch": 13,
+        "conflicting-numbering": 27,
+        "no-unambiguous-match": 4
+      }
+    },
+    {
+      "showId": "nypd-blue",
+      "showTitle": "NYPD Blue (1993)",
+      "catalogItems": 260,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 260
+      }
+    },
+    {
+      "showId": "cagney-lacey",
+      "showTitle": "Cagney & Lacey (1981)",
+      "catalogItems": 57,
+      "included": 54,
+      "reasons": {
+        "no-unambiguous-match": 3
+      }
+    },
+    {
+      "showId": "china-beach",
+      "showTitle": "China Beach (1988)",
+      "catalogItems": 1,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "northern-exposure",
+      "showTitle": "Northern Exposure (1990)",
+      "catalogItems": 110,
+      "included": 79,
+      "reasons": {
+        "no-unambiguous-match": 15,
+        "conflicting-numbering": 16
+      }
+    },
+    {
+      "showId": "picket-fences",
+      "showTitle": "Picket Fences (1992)",
+      "catalogItems": 88,
+      "included": 78,
+      "reasons": {
+        "conflicting-numbering": 1,
+        "no-unambiguous-match": 9
+      }
+    },
+    {
+      "showId": "st-elsewhere",
+      "showTitle": "St. Elsewhere (1982)",
+      "catalogItems": 137,
+      "included": 17,
+      "reasons": {
+        "no-summary": 113,
+        "conflicting-numbering": 7
+      }
+    },
+    {
+      "showId": "hill-street-blues",
+      "showTitle": "Hill Street Blues (1981)",
+      "catalogItems": 146,
+      "included": 135,
+      "reasons": {
+        "runtime-scope-mismatch": 1,
+        "no-unambiguous-match": 10
+      }
+    },
+    {
+      "showId": "kojak",
+      "showTitle": "Kojak (1973)",
+      "catalogItems": 122,
+      "included": 11,
+      "reasons": {
+        "not-standalone-checked": 11,
+        "no-summary": 88,
+        "no-unambiguous-match": 11,
+        "conflicting-numbering": 1
+      }
+    },
+    {
+      "showId": "starsky-hutch",
+      "showTitle": "Starsky & Hutch (1975)",
+      "catalogItems": 39,
+      "included": 21,
+      "reasons": {
+        "not-standalone-checked": 5,
+        "no-unambiguous-match": 9,
+        "conflicting-numbering": 4
+      }
+    },
+    {
+      "showId": "emergency",
+      "showTitle": "Emergency! (1972)",
+      "catalogItems": 33,
+      "included": 28,
+      "reasons": {
+        "not-standalone-checked": 1,
+        "conflicting-numbering": 4
+      }
+    },
+    {
+      "showId": "dallas",
+      "showTitle": "Dallas (1978)",
+      "catalogItems": 49,
+      "included": 37,
+      "reasons": {
+        "multipart-title-mismatch": 12
+      }
+    },
+    {
+      "showId": "room-222",
+      "showTitle": "Room 222 (1969)",
+      "catalogItems": 70,
+      "included": 0,
+      "reasons": {
+        "no-summary": 65,
+        "no-unambiguous-match": 5
+      }
+    },
+    {
+      "showId": "woody-woodpecker",
+      "showTitle": "Woody Woodpecker \u00b7 original shorts",
+      "catalogItems": 6,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 6
+      }
+    },
+    {
+      "showId": "dastardly-muttley",
+      "showTitle": "Dastardly and Muttley in Their Flying Machines (1969)",
+      "catalogItems": 1,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "mighty-hercules",
+      "showTitle": "The Mighty Hercules (1963)",
+      "catalogItems": 1,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "the-dukes-animated",
+      "showTitle": "The Dukes (1983 animated)",
+      "catalogItems": 20,
+      "included": 0,
+      "reasons": {
+        "no-summary": 17,
+        "no-unambiguous-match": 3
+      }
+    },
+    {
+      "showId": "great-space-coaster",
+      "showTitle": "The Great Space Coaster (1981)",
+      "catalogItems": 21,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 21
+      }
+    },
+    {
+      "showId": "pac-man-1982",
+      "showTitle": "Pac-Man (1982)",
+      "catalogItems": 6,
+      "included": 0,
+      "reasons": {
+        "runtime-scope-mismatch": 6
+      }
+    },
+    {
+      "showId": "silver-spoons",
+      "showTitle": "Silver Spoons (1982)",
+      "catalogItems": 23,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 22,
+        "no-summary": 1
+      }
+    },
+    {
+      "showId": "wonder-years",
+      "showTitle": "The Wonder Years (1988)",
+      "catalogItems": 115,
+      "included": 113,
+      "reasons": {
+        "conflicting-numbering": 2
+      }
+    },
+    {
+      "showId": "captain-kangaroo",
+      "showTitle": "Captain Kangaroo",
+      "catalogItems": 14,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 14
+      }
+    },
+    {
+      "showId": "gargoyles",
+      "showTitle": "Gargoyles (1994)",
+      "catalogItems": 78,
+      "included": 74,
+      "reasons": {
+        "multipart-title-mismatch": 1,
+        "no-summary": 3
+      }
+    },
+    {
+      "showId": "gummi-bears",
+      "showTitle": "Adventures of the Gummi Bears (1985)",
+      "catalogItems": 94,
+      "included": 0,
+      "reasons": {
+        "no-summary": 89,
+        "no-unambiguous-match": 3,
+        "runtime-scope-mismatch": 2
+      }
+    },
+    {
+      "showId": "tmnt-1987",
+      "showTitle": "Teenage Mutant Ninja Turtles (1987)",
+      "catalogItems": 5,
+      "included": 4,
+      "reasons": {
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "animaniacs",
+      "showTitle": "Animaniacs (1993)",
+      "catalogItems": 99,
+      "included": 0,
+      "reasons": {
+        "no-summary": 9,
+        "no-unambiguous-match": 87,
+        "conflicting-numbering": 2,
+        "not-standalone-checked": 1
+      }
+    },
+    {
+      "showId": "tiny-toons",
+      "showTitle": "Tiny Toon Adventures (1990)",
+      "catalogItems": 3,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 3
+      }
+    },
+    {
+      "showId": "darkwing-duck",
+      "showTitle": "Darkwing Duck (1991)",
+      "catalogItems": 91,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 91
+      }
+    },
+    {
+      "showId": "rescue-rangers",
+      "showTitle": "Chip \u2019n Dale: Rescue Rangers (1989)",
+      "catalogItems": 3,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 3
+      }
+    },
+    {
+      "showId": "mighty-morphin-power-rangers",
+      "showTitle": "Mighty Morphin Power Rangers (1993)",
+      "catalogItems": 146,
+      "included": 5,
+      "reasons": {
+        "no-summary": 123,
+        "conflicting-numbering": 14,
+        "no-unambiguous-match": 4
+      }
+    },
+    {
+      "showId": "punky-brewster",
+      "showTitle": "Punky Brewster (1984)",
+      "catalogItems": 86,
+      "included": 77,
+      "reasons": {
+        "no-unambiguous-match": 4,
+        "conflicting-numbering": 5
+      }
+    },
+    {
+      "showId": "clarissa",
+      "showTitle": "Clarissa Explains It All (1991)",
+      "catalogItems": 54,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 43,
+        "no-summary": 11
+      }
+    },
+    {
+      "showId": "ramona",
+      "showTitle": "Ramona (1988)",
+      "catalogItems": 5,
+      "included": 5,
+      "reasons": {}
+    },
+    {
+      "showId": "snorks",
+      "showTitle": "Snorks (1984)",
+      "catalogItems": 76,
+      "included": 0,
+      "reasons": {
+        "no-unambiguous-match": 76
+      }
+    },
+    {
+      "showId": "captain-planet",
+      "showTitle": "Captain Planet and the Planeteers (1990)",
+      "catalogItems": 113,
+      "included": 26,
+      "reasons": {
+        "no-summary": 86,
+        "no-unambiguous-match": 1
+      }
+    },
+    {
+      "showId": "road-to-avonlea",
+      "showTitle": "Road to Avonlea (1990)",
+      "catalogItems": 3,
+      "included": 0,
+      "reasons": {
+        "multipart-title-mismatch": 1,
+        "no-summary": 2
+      }
+    },
+    {
+      "showId": "harlem-globetrotters",
+      "showTitle": "Harlem Globetrotters (1970)",
+      "catalogItems": 17,
+      "included": 0,
+      "reasons": {
+        "no-summary": 17
+      }
+    },
+    {
+      "showId": "new-scooby-doo-movies",
+      "showTitle": "The New Scooby-Doo Movies (1972)",
+      "catalogItems": 24,
+      "included": 24,
+      "reasons": {}
+    },
+    {
+      "showId": "bananaman",
+      "showTitle": "Bananaman (1983)",
+      "catalogItems": 40,
+      "included": 0,
+      "reasons": {
+        "no-summary": 37,
+        "no-unambiguous-match": 3
+      }
+    },
+    {
+      "showId": "george-jungle-1967",
+      "showTitle": "George of the Jungle (1967)",
+      "catalogItems": 17,
+      "included": 0,
+      "reasons": {
+        "not-standalone-checked": 17
+      }
+    },
+    {
+      "showId": "super-globetrotters",
+      "showTitle": "The Super Globetrotters (1979)",
+      "catalogItems": 2,
+      "included": 0,
+      "reasons": {
+        "no-summary": 2
+      }
+    },
+    {
+      "showId": "swamp-thing-1990",
+      "showTitle": "Swamp Thing (1990)",
+      "catalogItems": 72,
+      "included": 72,
+      "reasons": {}
+    },
+    {
+      "showId": "beauty-beast-1987",
+      "showTitle": "Beauty and the Beast (1987)",
+      "catalogItems": 55,
+      "included": 42,
+      "reasons": {
+        "no-unambiguous-match": 4,
+        "conflicting-numbering": 9
+      }
+    }
+  ]
+}

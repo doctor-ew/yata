@@ -150,13 +150,13 @@ Resources:
                 Resource: !Sub '${IngestLog.Arn}'
               - Effect: Allow
                 Action: s3:GetObject
-                Resource: [!Sub '${Evidence.Arn}/corpora/*', !Sub '${Evidence.Arn}/embeddings/*']
+                Resource: [!Sub '${Evidence.Arn}/corpora/*', !Sub '${Evidence.Arn}/embeddings/*', !Sub '${Evidence.Arn}/ingestion/*']
               - Effect: Allow
                 Action: s3:ListBucket
                 Resource: !GetAtt Evidence.Arn
               - Effect: Allow
                 Action: s3:PutObject
-                Resource: [!Sub '${Evidence.Arn}/current.json', !Sub '${Evidence.Arn}/embeddings/*']
+                Resource: [!Sub '${Evidence.Arn}/current.json', !Sub '${Evidence.Arn}/embeddings/*', !Sub '${Evidence.Arn}/ingestion/*']
               - Effect: Allow
                 Action: s3vectors:PutVectors
                 Resource: !GetAtt EpisodeIndex.IndexArn

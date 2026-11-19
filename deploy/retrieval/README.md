@@ -31,7 +31,7 @@ python scripts/run-retrieval-pilot.py --deployment /tmp/yata-retrieval/deploymen
 
 The generator verifies the authoritative shared catalog and matches checked standalone episodes to TVmaze records. It rejects ambiguous identity, numbering, collection and runtime-scope conflicts. Obvious exact-title equivalents, including part-number words/digits and punctuation, are normalized without dropping the part number. Catalog titles/numbers are not rewritten.
 
-The uploader rechecks the current catalog SHA, revision, identities and canonical JavaScript source/standalone eligibility. It uploads the complete corpus under its SHA256 key. The writer embeds at most 150 documents and caches embeddings by evidence identity/model. Vector keys include corpus revision so staging cannot overwrite the active edition's keys. Only a fully ingested edition updates the private current pointer. Failed ingestion leaves the old active edition; retry can reuse completed embeddings. Content uploads are data operations, not unmanaged resource provisioning.
+The uploader rechecks the current catalog SHA, revision, identities and canonical JavaScript source/standalone eligibility. It uploads the complete corpus under its SHA256 key. The writer accepts at most 12,000 documents / 16 MB, processes 200-document resumable chunks and caches embeddings by evidence identity/model. Each chunk writes a private content-bound completion receipt. The final chunk validates every preceding receipt before activation. Vector keys include corpus revision so staging cannot overwrite the active edition's keys. Only a fully ingested edition updates the private current pointer. Failed ingestion leaves the old active edition; retry can reuse completed embeddings. Content uploads are data operations, not unmanaged resource provisioning.
 
 TVmaze attribution, source references and CC BY-SA provenance remain attached. Provider snapshots, full summaries and derived vectors stay private. Publication/redistribution of new enrichment is a separate decision. No scripts from the researched directories are ingested.
 
@@ -71,10 +71,18 @@ Use --configure-jev only for initial configuration or deliberate credential rota
 
 The direct API uses the verified jev-latest alias and records the returned model in cached decisions. That alias can move; reevaluate before public release. A Choice selects from the exact supplied evidence IDs plus an explicit none option. A companion Noul checks whether any evidence supports the story. The validator requires a complete normalized choice distribution, adequate support/confidence/margin and known IDs. Provider text/actions/URLs never become playback commands. Calls use fixed HTTPS, reject redirects, have bounded UTF-8 bodies/timeouts and do not retry. Failure does not silently invoke a second paid provider.
 
-The Jev experiment can see all 86 summaries, while the hybrid strategy starts from 10 vector candidates. Report that unequal candidate pool when comparing results. This is a source-aware small-corpus experiment, not a general accuracy claim or public app feature.
+The Jev strategy receives a query-specific bounded shortlist, rather than the entire corpus. Explicit series scope is derived from corpus show titles; a named series can provide up to 100 candidates when its UTF-8 state fits the 48 KB complete-request preflight envelope. Other requests use at most 40 lexical candidates. The hybrid strategy starts from 10 vector candidates. Report those candidate-pool differences when comparing results; broad unsupported plot recall remains an evaluation limitation.
 
 [TypeSafe API](https://docs.typesafe.ai/api/system-one) · [Secrets Manager pricing](https://aws.amazon.com/secrets-manager/pricing/)
 
 ## Guarded companion integration
 
 The existing buddy route now has an opt-in summary retrieval path. The search function itself remains IAM-only. See [companion architecture](../../docs/buddy-retrieval/ARCHITECTURE.md) for the public-session boundary, exact-function IAM bridge, shared-role limitation, native response transport and current coverage. The private pilot results above remain development measurements.
+
+## Catalog-scale evidence and ingestion allowance
+
+`build-episode-evidence.mjs --shows all` uses reviewed TVmaze identities from the current artwork feed and the authoritative public catalog. It preserves standalone-source exclusions. Unique normalized full titles can reconcile same-season episode-number variants only when runtime and multipart scope agree; catalog/provider numbers remain distinct in provenance. Generic short labels, ambiguous titles, cross-season matches and unsupported multipart identity remain excluded. Leading articles and numeric/spelled multipart labels normalize generally; no plot-to-episode rules are embedded.
+
+Online query/Jev attempts retain the existing one-cent conservative reservations and monthly/daily caps. Ingestion-only embedding reservations are computed from bounded UTF-8 byte length: one token per byte, at $0.02/million tokens plus 25% margin, rounded up to microUSD. The CLI refuses a reviewed ingestion whose summed reservation exceeds $1. This is an embedding allowance, not an AWS bill cap; storage, vectors, Lambda and DynamoDB are separate usage charges. Price basis: https://aws.amazon.com/blogs/machine-learning/get-started-with-amazon-titan-text-embeddings-v2-a-new-state-of-the-art-embeddings-model-on-amazon-bedrock/ .
+
+Checkpoint objects are private `ingestion/<corpus revision>/<start>.json` data. Their read/write IAM permissions are declared in CloudFormation. No public route, writer role, model permission or client credential is added. Failed/partial work leaves the previous corpus active.

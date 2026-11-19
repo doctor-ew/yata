@@ -107,10 +107,8 @@ class EvidenceTests(unittest.TestCase):
         runtime.embed.side_effect = [[0.0] * 512, RuntimeError('stopped')]
         with self.assertRaises(RuntimeError):
             ingest.handler({'corpusRevision': core.digest(data)}, None, runtime=runtime)
-        self.assertTrue(runtime.vectors.put_vectors.called)
+        self.assertFalse(runtime.vectors.put_vectors.called)
         self.assertFalse(any(c.kwargs.get('Key') == 'current.json' for c in runtime.s3.put_object.call_args_list))
-        key = runtime.vectors.put_vectors.call_args.kwargs['vectors'][0]['key']
-        self.assertTrue(key.startswith(core.digest(data) + ':'))
 
     def test_vector_filter_pins_corpus_and_rejects_stale_or_distant_candidates(self):
         runtime = object.__new__(handler.Runtime)
@@ -146,3 +144,96 @@ class EvidenceTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+class ExpandedCoverageTests(unittest.TestCase):
+    def test_numbering_variant_is_explicit_and_catalog_number_is_preserved(self):
+        doc = document()
+        record = {k: v for k, v in doc.items() if k not in ['evidenceId', 'fetchedAt']}
+        record['match'] = {**record['match'], 'providerNumber': 2, 'method': 'canonical-title-numbering-variant'}
+        variant = {'evidenceId': core.digest(core.canonical_bytes(record)), **record}
+        self.assertIsNotNone(core.validate_corpus({'version': 1, 'catalogRevision': 'a' * 64, 'documents': [variant]}))
+        record['match']['method'] = 'canonical-title'
+        variant = {'evidenceId': core.digest(core.canonical_bytes(record)), **record}
+        with self.assertRaises(ValueError):
+            core.validate_corpus({'version': 1, 'catalogRevision': 'a' * 64, 'documents': [variant]})
+
+    def test_shortlists_derive_series_scope_from_data_and_bound_provider_state(self):
+        docs = []
+        for n in range(1, 151):
+            d = document(n)
+            d.update(showId='new-series' if n > 100 else 'other-series', showTitle='The Newly Added Series (1985)' if n > 100 else 'Unrelated Series')
+            docs.append(d)
+        selected = core.jev_candidates(docs, 'Play the episode of Newly Added Series where a rider escapes')
+        self.assertEqual(len(selected), 50)
+        self.assertEqual({d['showId'] for d in selected}, {'new-series'})
+        self.assertLessEqual(len(core.jev_candidates(docs, 'a rider escapes')), 40)
+        huge = [{**d, 'summary': 'é' * 3000} for d in docs]
+        self.assertLessEqual(len(core.jev_candidates(huge, 'a rider escapes')), 40)
+        import jev
+        encoded = json.dumps(jev.request_body('a rider escapes', core.jev_candidates(huge, 'a rider escapes')), ensure_ascii=False).encode()
+        self.assertLessEqual(len(encoded), 48000)
+
+    def test_ingestion_reservation_is_bounded_by_utf8_and_query_default_is_unchanged(self):
+        self.assertEqual(core.document_reservation('a' * 400), 10)
+        self.assertEqual(core.document_reservation('😀' * 5000), 500)
+        db = Mock()
+        budget.reserve(db, 'fixture', 3000000, 2000000, reservation=500)
+        cost = db.transact_write_items.call_args.kwargs['TransactItems'][0]['Update']['ExpressionAttributeValues'][':cost']['N']
+        self.assertEqual(cost, '500')
+        for invalid in [True, 0, -1, core.RESERVATION + 1]:
+            with self.assertRaises(ValueError):
+                budget.reserve(db, 'fixture', 3000000, 2000000, reservation=invalid)
+
+    def test_parallel_ingest_reservations_serialize_container_ledger_writes(self):
+        from concurrent.futures import ThreadPoolExecutor
+        import threading
+        import time
+        gate = threading.Lock()
+        active = 0
+        maximum = 0
+        def transaction(**kwargs):
+            nonlocal active, maximum
+            with gate:
+                active += 1
+                maximum = max(maximum, active)
+            time.sleep(0.002)
+            with gate:
+                active -= 1
+        db = Mock()
+        db.transact_write_items.side_effect = transaction
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            list(pool.map(lambda _: budget.reserve(db, 'fixture', 3000000, 2000000, reservation=10), range(12)))
+        self.assertEqual(maximum, 1)
+        self.assertEqual(db.transact_write_items.call_count, 12)
+
+    def test_supported_possibilities_keep_authoritative_manual_action_identities(self):
+        docs = [document(), document(2)]
+        runtime = Mock()
+        runtime.corpus.return_value = ({'catalogRevision': 'a' * 64, 'documents': docs}, 'b' * 64)
+        runtime.cached.return_value = {'ids': [], 'possibleIds': [d['evidenceId'] for d in docs], 'decision': 'possibilities'}
+        result = handler.handler({'query': 'remember the mechanic gang story', 'strategy': 'jev', 'limit': 3}, None, runtime=runtime)
+        self.assertEqual(result['searchKind'], 'jev-possibilities')
+        self.assertEqual([d['episodeId'] for d in result['results']], [d['episodeId'] for d in docs])
+        self.assertTrue(all(d['sourceUrl'].startswith('https://www.tvmaze.com/episodes/') for d in result['results']))
+
+    def test_checkpointed_chunks_do_not_activate_before_all_chunks_exist(self):
+        corpus = {'version': 1, 'catalogRevision': 'a' * 64, 'documents': [document(n) for n in range(1, 202)]}
+        data = core.canonical_bytes(corpus)
+        vector = json.dumps({'model': core.MODEL, 'dimensions': core.DIMENSIONS, 'embedding': [0.0] * 512}).encode()
+        runtime = Mock()
+        runtime.read.side_effect = lambda key, maximum: data if key.startswith('corpora/') else vector
+        result = ingest.handler({'corpusRevision': core.digest(data), 'start': 0}, None, runtime=runtime)
+        self.assertEqual(result['status'], 'staged')
+        self.assertEqual(result['nextStart'], 200)
+        self.assertEqual(runtime.vectors.put_vectors.call_count, 8)
+        self.assertTrue(all(v['key'].startswith(core.digest(data) + ':') for c in runtime.vectors.put_vectors.call_args_list for v in c.kwargs['vectors']))
+        self.assertTrue(all(len(c.kwargs['vectors']) <= 25 for c in runtime.vectors.put_vectors.call_args_list))
+        self.assertFalse(any(c.kwargs.get('Key') == 'current.json' for c in runtime.s3.put_object.call_args_list))
+        runtime.s3.put_object.reset_mock()
+        with self.assertRaises(ValueError):
+            ingest.handler({'corpusRevision': core.digest(data), 'start': 200}, None, runtime=runtime)
+        self.assertFalse(any(c.kwargs.get('Key') == 'current.json' for c in runtime.s3.put_object.call_args_list))
+        runtime.read.side_effect = lambda key, maximum: data if key.startswith('corpora/') else json.dumps(ingest.checkpoint(corpus, core.digest(data), 0)).encode() if key.startswith('ingestion/') else vector
+        result = ingest.handler({'corpusRevision': core.digest(data), 'start': 200}, None, runtime=runtime)
+        self.assertEqual(result['status'], 'ready')
+        self.assertTrue(any(c.kwargs.get('Key') == 'current.json' for c in runtime.s3.put_object.call_args_list))

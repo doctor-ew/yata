@@ -4,7 +4,7 @@ import os
 import re
 import time
 from core import (MODEL, DIMENSIONS, canonical_bytes, digest, validate_corpus, validate_query,
-                  exact_titles, lexical_results, merge_rankings, semantic_candidates, validate_embedding, public_result)
+                  exact_titles, lexical_results, merge_rankings, semantic_candidates, validate_embedding, public_result, MAX_CORPUS_BYTES, RESERVATION, document_reservation, jev_candidates)
 from budget import reserve
 
 
@@ -39,16 +39,16 @@ class Runtime:
         from core import HEX
         if not HEX.fullmatch(revision) or manifest['key'] != f'corpora/{revision}.json':
             raise ValueError('Invalid evidence manifest')
-        data = self.read(manifest['key'], 2000000)
+        data = self.read(manifest['key'], MAX_CORPUS_BYTES)
         if digest(data) != revision:
             raise ValueError('Corpus checksum mismatch')
         return validate_corpus(json.loads(data)), revision
 
-    def allowance(self):
-        reserve(self.db, self.table, int(os.environ['MONTHLY_ALLOWANCE_MICROUSD']), int(os.environ['DAILY_ALLOWANCE_MICROUSD']))
+    def allowance(self, reservation=RESERVATION):
+        reserve(self.db, self.table, int(os.environ['MONTHLY_ALLOWANCE_MICROUSD']), int(os.environ['DAILY_ALLOWANCE_MICROUSD']), reservation=reservation)
 
-    def embed(self, text):
-        self.allowance()
+    def embed(self, text, *, ingestion=False):
+        self.allowance(document_reservation(text) if ingestion else RESERVATION)
         response = self.bedrock.invoke_model(modelId=MODEL, contentType='application/json', accept='application/json',
             body=json.dumps({'inputText': text, 'dimensions': DIMENSIONS, 'normalize': True}))
         try:
@@ -104,16 +104,22 @@ def handler(event, context, *, runtime=None):
             ids = exact
         elif event.get('strategy') == 'jev':
             from jev import MODEL as JEV_MODEL
-            key = digest(canonical_bytes(['jev-choice-v1', JEV_MODEL, revision, query.casefold()]))
+            key = digest(canonical_bytes(['jev-choice-shortlist-v3', JEV_MODEL, revision, query.casefold()]))
             cached = runtime.cached(key, embedding=False)
             kind = 'cached-jev' if cached is not None else 'jev-corpus'
             if cached is None:
-                cached = runtime.jev(query, corpus['documents'])
+                candidates = jev_candidates(corpus['documents'], query)
+                if not candidates:
+                    return {'status': 'ok', 'results': [], 'searchKind': 'no-evidence-match'}
+                cached = runtime.jev(query, candidates)
                 try:
                     runtime.cache(key, cached)
                 except Exception:
                     pass
             ids = [eid for eid in cached.get('ids', []) if eid in docs]
+            if not ids and cached.get('decision') == 'possibilities':
+                ids = [eid for eid in cached.get('possibleIds', []) if eid in docs][:3]
+                kind = 'jev-possibilities'
         else:
             key = digest(canonical_bytes(['candidates-v2', MODEL, DIMENSIONS, revision, query.casefold()]))
             try:

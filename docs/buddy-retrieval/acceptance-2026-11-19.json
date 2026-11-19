@@ -1,0 +1,54 @@
+{
+  "ingestion": null,
+  "evaluation": {
+    "method": "source-aware developer fixtures, not blind validation",
+    "strategy": "jev",
+    "positiveCases": [
+      {
+        "id": "episode-296",
+        "expectedEvidenceId": "0be6e16a24361e6d583acd07ab8f8b1f93fb59d0901e4e55786b1f690176e12e",
+        "rank": 1,
+        "searchKind": "jev-possibilities",
+        "returnedEvidenceIds": [
+          "0be6e16a24361e6d583acd07ab8f8b1f93fb59d0901e4e55786b1f690176e12e",
+          "f92ee9aff2fe1b6085c20a0c6eb6a7a4444094b342ad606f5796cb1bba15bb77"
+        ]
+      },
+      {
+        "id": "episode-498",
+        "expectedEvidenceId": "88495fc1a2b08b741a891d5d178ff41490f1404018630a4196d3eebb14599189",
+        "rank": 1,
+        "searchKind": "jev-corpus",
+        "returnedEvidenceIds": [
+          "88495fc1a2b08b741a891d5d178ff41490f1404018630a4196d3eebb14599189"
+        ]
+      },
+      {
+        "id": "mirror",
+        "expectedEvidenceId": "201cbf1aa95dc1fdad0ee6c02db87fce51fbfbd7a8c49b21d42a219c49522af7",
+        "rank": 1,
+        "searchKind": "jev-corpus",
+        "returnedEvidenceIds": [
+          "201cbf1aa95dc1fdad0ee6c02db87fce51fbfbd7a8c49b21d42a219c49522af7"
+        ]
+      }
+    ],
+    "negativeCases": [
+      {
+        "id": "untimed-dialogue",
+        "results": 0,
+        "searchKind": null
+      },
+      {
+        "id": "invented-plot",
+        "results": 0,
+        "searchKind": "jev-corpus"
+      }
+    ],
+    "cacheSearchKind": "jev-possibilities",
+    "top1": 3,
+    "top5": 3,
+    "cases": 3
+  },
+  "method": "source-aware developer acceptance fixtures; ambiguous Knight Rider alternatives are not an exact identification"
+}

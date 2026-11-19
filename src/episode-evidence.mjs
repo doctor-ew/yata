@@ -11,6 +11,7 @@ export function canonicalEpisodeTitle(value,showTitle='') {
  const words=String(showTitle).replace(/\s*\(\d{4}(?:[–-]\d{4})?\)\s*$/,'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().match(/[a-z0-9]+/g);
  if(words?.length)text=text.replace(new RegExp('^'+words.join('[\\W_]*')+'(?:[\\W_]+|$)'),'');
  text=text.replace(/^[\W_]*(?:s\d+\s*e\d+|\d{1,2}x\d{1,3})(?:[\W_]+|$)/i,'').trim();
+ text=text.replace(/^(?:the|a|an)\s+/,'');
  const parts={one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10};
  const suffix=text.match(/(?:\(?\bpart[\s._:-]*(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)\)?|\((\d{1,2})\))[\s.!?,:;-]*$/i);
  let part=null;
@@ -46,8 +47,13 @@ export function buildEpisodeEvidence({show,episode,providerEpisodes,providerShow
  if(!match)return {document:null,reason:'no-unambiguous-match'};
  const catalogTitle=canonicalEpisodeTitle(episode.title,show.title),providerTitle=canonicalEpisodeTitle(match.name);
  if(catalogTitle.base&&catalogTitle.part!==providerTitle.part)return {document:null,reason:'multipart-title-mismatch'};
- // A unique title is insufficient when catalog and provider numbering conflict.
- if(match.season!==episode.season||match.number!==episode.number)return {document:null,reason:'conflicting-numbering'};
+ // A unique exact title can establish identity across release-order numbering variants.
+ // Seasons, multipart identity and runtime scope must still agree; generic short
+ // labels and substring-only matches cannot override conflicting numbers.
+ const numberingVariant=match.number!==episode.number;
+ const uniqueCanonical=canonical&&providerEpisodes.filter(item=>{const t=canonicalEpisodeTitle(item.name);return t.base===catalogTitle.base&&t.part===catalogTitle.part;}).length===1;
+ if(match.season!==episode.season||numberingVariant&&(!uniqueCanonical||catalogTitle.base.length<8||catalogTitle.part!==null))return {document:null,reason:'conflicting-numbering'};
+ if(numberingVariant&&(typeof match.runtime!=='number'||!Number.isFinite(match.runtime)||match.runtime<=0))return {document:null,reason:'numbering-variant-runtime-uncertain'};
  // Provider runtime is often a broadcast slot; 48 ad-free minutes can match 60,
  // but one 48-minute installment cannot inherit a 120-minute premiere summary.
  if(match.runtime!==null&&match.runtime!==undefined){
@@ -61,7 +67,7 @@ export function buildEpisodeEvidence({show,episode,providerEpisodes,providerShow
  let url;try{url=new URL(match.url);}catch{return {document:null,reason:'invalid-provider-url'};}
  if(url.protocol!=='https:'||url.hostname!=='www.tvmaze.com'||!url.pathname.startsWith(`/episodes/${match.id}/`))return {document:null,reason:'invalid-provider-url'};
  const titleMatches=providerEpisodes.filter(item=>normalize(item.name).length>=5&&normalize(episode.title).includes(normalize(item.name)));
- const method=canonical?'canonical-title':titleMatches.length===1?'unique-title':titleMatches.length>1?'title-and-number':'titleless-number';
+ const method=numberingVariant?'canonical-title-numbering-variant':canonical?'canonical-title':titleMatches.length===1?'unique-title':titleMatches.length>1?'title-and-number':'titleless-number';
  const record={showId:show.id,episodeId:episode.id,sourceId:source.id,catalogRevision,showTitle:show.title,episodeTitle:episode.title,season:episode.season,number:episode.number,summary,text:`${show.title} — ${episode.title}\n${summary}`,provider:'TVmaze',sourceUrl:url.href,license:'CC BY-SA',match:{method,providerShowId,providerEpisodeId:match.id,providerEpisodeTitle:match.name,providerSeason:match.season,providerNumber:match.number}};
  return {document:{evidenceId:createHash('sha256').update(JSON.stringify(record)).digest('hex'),...record,fetchedAt},reason:null};
 }
