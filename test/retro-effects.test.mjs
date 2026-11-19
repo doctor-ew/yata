@@ -168,3 +168,5 @@ test('channel timing and sound callback begin on the render frame, and pending c
  f.controls.channelChange({onStart:()=>starts++});assert.equal(f.frames.size,1);f.flushFrame();assert.equal(starts,1);assert.equal(f.timers.size,1);
  f.controls.channelChange({onStart:()=>starts++});f.change(f.staticToggle,false);f.flushFrame();assert.equal(starts,1);assert.equal(f.frames.size,0);assert.equal(f.timers.size,0);f.controls.dispose();
 });
+
+test('one static preference suppresses loading snow, including zero level and accessibility',()=>{const f=fixture();assert.equal(f.body.classes.has('static-disabled'),false);f.change(f.staticToggle,false);assert.equal(f.body.classes.has('static-disabled'),true);f.change(f.staticToggle,true);assert.equal(f.body.classes.has('static-disabled'),false);f.input(f.levelInput,0);assert.equal(f.body.classes.has('static-disabled'),true);f.input(f.levelInput,12);f.reducedQuery.matches=true;f.reducedQuery.dispatchEvent(new Event('change'));assert.equal(f.body.classes.has('static-disabled'),true);f.controls.dispose();assert.equal(f.body.classes.has('static-disabled'),false);});

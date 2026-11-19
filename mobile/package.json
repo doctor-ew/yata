@@ -1,6 +1,6 @@
 {
   "name": "yata-mobile",
-  "version": "0.8.18",
+  "version": "0.8.19",
   "description": "YATA Android and iOS apps",
   "scripts": {
     "build": "node build.mjs",

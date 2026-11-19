@@ -2,6 +2,10 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.19 — 2026-11-19
+
+- The saved Static switch now disables both channel-change and loading snow. Zero strength and accessibility preferences suppress both; sound remains separately configurable.
+
 ## 0.8.18 — 2026-11-19
 
 - Loading and channel changes now share the same original animated TV snow; removed the remaining SVG loading texture.

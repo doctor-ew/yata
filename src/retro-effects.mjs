@@ -45,6 +45,7 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
   }
   function reflect() {
     body.classList.toggle('crt-mode', preferences.crt);
+    body.classList.toggle('static-disabled', !enabled());
     cabinet?.setAttribute('data-theme', preferences.theme);
     screenToggle.checked = preferences.crt; staticToggle.checked = preferences.static;
     if (themeSelect) themeSelect.value = preferences.theme;
@@ -102,7 +103,7 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
   return { pulse, channelChange,
     dispose() {
       if (disposed) return;
-      disposed = true; stopPulse(); body.classList.toggle('crt-mode', false);
+      disposed = true; stopPulse(); body.classList.toggle('crt-mode', false); body.classList.toggle('static-disabled', false);
       cabinet?.removeAttribute('data-theme');
       for (const [element, event, callback] of listeners) element.removeEventListener(event, callback);
       for (const query of media) query.removeEventListener?.('change', mediaChanged);

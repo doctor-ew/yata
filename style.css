@@ -1573,3 +1573,6 @@ html:not(.native-app) .masthead nav a[aria-current="page"]{background:#be784c;co
 /* Original animated monochrome snow, clipped to the picture; cut, never dissolve. */
 .retro-static-channel-change { z-index:9; opacity:1; filter:none; background:#777 url('./assets/decor/channel-snow.gif') center/100% 100% no-repeat; animation:none; }
 @media(prefers-reduced-motion:reduce),(forced-colors:active){.retro-static-channel-change{display:none;animation:none}}
+
+.static-disabled .tuning-static{display:none}
+@media(prefers-reduced-motion:reduce),(forced-colors:active){.tuning-snow{display:none}}

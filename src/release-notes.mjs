@@ -1,5 +1,6 @@
 export const CHANGELOG_URL='https://github.com/doctor-ew/yata/blob/main/CHANGELOG.md';
 export const RELEASES=[
+ {version:'0.8.19',date:'2026-11-19',changes:['The saved Static switch now disables both channel-change and loading snow. Zero strength and accessibility preferences suppress both; sound remains separately configurable.']},
  {version:'0.8.18',date:'2026-11-19',changes:['Loading and channel changes now share the same original animated TV snow; removed the remaining SVG loading texture.']},
  {version:'0.8.17',date:'2026-11-19',changes:['Replaced the repeating SVG tuning texture with original animated monochrome snow frames and a direct cut back to the picture. Removed the fade-out.']},
  {version:'0.8.16',date:'2026-11-19',changes:["Channel transitions now use higher-contrast monochrome TV snow, with timing and sound starting on a render frame after synchronous UI work. The hiss is longer and more distinct; mute, volume and accessibility settings remain respected.", "Enter now sends a buddy message; Shift+Enter inserts a line break. Talk remains available, and IME composition does not accidentally submit.", "Removed the show-specific motorcycle shortcut. Descriptions use the verified AI planner with the current catalog; episode alternatives are explicitly labelled and require selection."]},
