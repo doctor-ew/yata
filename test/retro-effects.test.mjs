@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mountRetroEffects, RETRO_EFFECTS_STORAGE_KEY } from '../src/retro-effects.mjs';
 
 function fixture(saved = null, { brokenStorage = false, reduced = false, forced = false } = {}) {
-  const timers = new Map(), writes = [], animations = []; let timerId = 0;
+  const timers = new Map(), frames = new Map(), writes = [], animations = []; let timerId = 0;
   class Element extends EventTarget {
     children = []; checked = false; hidden = false; attributes = new Map(); parentElement = null;
     value = ''; disabled = false; textContent = ''; style = {setProperty: (key, value) => this.attributes.set(key, value)};
@@ -20,6 +20,8 @@ function fixture(saved = null, { brokenStorage = false, reduced = false, forced 
     matchMedia: query => query.includes('reduced-motion') ? reducedQuery : forcedQuery,
     setTimeout: (callback, ms) => { timers.set(++timerId, {callback, ms}); return timerId; },
     clearTimeout: id => timers.delete(id),
+    requestAnimationFrame: callback => {frames.set(++timerId,callback);return timerId;},
+    cancelAnimationFrame: id => frames.delete(id),
   };
   const [body, shell, screenToggle, staticToggle, player, cabinet, themeSelect, levelInput, durationInput, modeSelect, previewButton, levelOutput, durationOutput] = Array.from({length: 13}, () => Object.assign(new Element(), {ownerDocument: documentRef}));
   body.append(cabinet); cabinet.append(shell); shell.append(player);
@@ -30,7 +32,7 @@ function fixture(saved = null, { brokenStorage = false, reduced = false, forced 
   const controls = mountRetroEffects({body, shell, screenToggle, staticToggle, storage, cabinet, themeSelect, levelInput, durationInput, modeSelect, previewButton, levelOutput, durationOutput});
   const change = (input, checked) => { input.checked = checked; input.dispatchEvent(new Event('change')); };
   const input = (control, value, event = 'input') => { control.value = String(value); control.dispatchEvent(new Event(event)); };
-  return {cabinet, themeSelect, levelInput, durationInput, modeSelect, previewButton, levelOutput, durationOutput, input, body, shell, player, screenToggle, staticToggle, timers, writes, animations, controls, change, reducedQuery, forcedQuery};
+  return {frames, flushFrame(){const callbacks=[...frames.values()];frames.clear();callbacks.forEach(fn=>fn());}, cabinet, themeSelect, levelInput, durationInput, modeSelect, previewButton, levelOutput, durationOutput, input, body, shell, player, screenToggle, staticToggle, timers, writes, animations, controls, change, reducedQuery, forcedQuery};
 }
 
 test('retro effects default on, validate saved booleans and preserve the provider node', () => {
@@ -113,7 +115,7 @@ test('continuous static respects toggles, media preferences and cleanup', () => 
   assert.equal(f.shell.children[1].hidden, true);
   f.change(f.staticToggle, true); const overlay = f.shell.children[1];
   assert.equal(overlay.hidden, false); assert.ok(overlay.classes.has('retro-static-continuous')); assert.equal(f.timers.size, 0);
-  f.previewButton.dispatchEvent(new Event('click')); assert.equal(f.timers.size, 1);
+  f.previewButton.dispatchEvent(new Event('click')); f.flushFrame(); assert.equal(f.timers.size, 1);
   [...f.timers.values()][0].callback(); assert.equal(overlay.hidden, false);
   f.forcedQuery.matches = true; f.forcedQuery.dispatchEvent(new Event('change'));
   assert.equal(overlay.hidden, true); assert.equal(f.controls.pulse(), false); assert.equal(f.previewButton.disabled, true);
@@ -152,11 +154,17 @@ test('dial pulses bypass the tuning toggle while respecting motion and zero stre
 });
 
 test('channel snow holds briefly, replaces previous pulses and restores continuous grain',()=>{
- const f=fixture();const overlay=f.shell.children[1];assert.equal(f.controls.channelChange(),true);assert.ok(overlay.classes.has('retro-static-channel-change'));assert.equal(f.animations.at(-1).frames[1].opacity,1);assert.equal(f.player.parentElement,f.shell);
- f.controls.channelChange();assert.equal(f.timers.size,1);assert.equal(f.animations[0].cancelled,true);[...f.timers.values()][0].callback();assert.equal(overlay.hidden,true);assert.equal(overlay.classes.has('retro-static-channel-change'),false);
- f.input(f.modeSelect,'continuous','change');f.controls.channelChange();[...f.timers.values()][0].callback();assert.equal(overlay.hidden,false);assert.ok(overlay.classes.has('retro-static-continuous'));f.controls.dispose();
+ const f=fixture();const overlay=f.shell.children[1];assert.equal(f.controls.channelChange(),true);assert.equal(f.timers.size,0);f.flushFrame();assert.ok(overlay.classes.has('retro-static-channel-change'));assert.equal(f.animations.at(-1).frames[1].opacity,1);assert.equal(f.player.parentElement,f.shell);
+ f.controls.channelChange();f.flushFrame();assert.equal(f.timers.size,1);assert.equal(f.animations[0].cancelled,true);[...f.timers.values()][0].callback();assert.equal(overlay.hidden,true);assert.equal(overlay.classes.has('retro-static-channel-change'),false);
+ f.input(f.modeSelect,'continuous','change');f.controls.channelChange();f.flushFrame();[...f.timers.values()][0].callback();assert.equal(overlay.hidden,false);assert.ok(overlay.classes.has('retro-static-continuous'));f.controls.dispose();
 });
 test('channel snow respects static off, zero strength and accessibility preferences',()=>{
  for(const opts of [{reduced:true},{forced:true}]){const f=fixture(null,opts);assert.equal(f.controls.channelChange(),false);assert.equal(f.timers.size,0);f.controls.dispose();}
  const f=fixture();f.change(f.staticToggle,false);assert.equal(f.controls.channelChange(),false);f.change(f.staticToggle,true);f.input(f.levelInput,0);assert.equal(f.controls.channelChange(),false);f.controls.dispose();
+});
+
+test('channel timing and sound callback begin on the render frame, and pending changes cancel safely',()=>{
+ const f=fixture();let starts=0;f.controls.channelChange({onStart:()=>starts++});assert.equal(starts,0);assert.equal(f.timers.size,0);assert.equal(f.frames.size,1);
+ f.controls.channelChange({onStart:()=>starts++});assert.equal(f.frames.size,1);f.flushFrame();assert.equal(starts,1);assert.equal(f.timers.size,1);
+ f.controls.channelChange({onStart:()=>starts++});f.change(f.staticToggle,false);f.flushFrame();assert.equal(starts,1);assert.equal(f.frames.size,0);assert.equal(f.timers.size,0);f.controls.dispose();
 });

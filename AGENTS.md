@@ -13,3 +13,5 @@ Validate changes with relevant tests and builds. Web deploys and mobile installs
 Keep CHANGELOG.md current for each user-visible release. Back shipped changes with repository commits or GitHub release notes; do not describe roadmap work as shipped. Keep src/release-notes.mjs aligned with the latest published version so buddy “what’s new” replies use verified facts. Preserve changelog links on web and in the native About menu.
 
 When Arcade source catalogs change, regenerate src/arcade-games.mjs with scripts/build-game-index.mjs. Keep game-name resolution finite and metadata-only; model output must never become a launch URL. Preserve the launcher-only AI/Turnstile policy and the embedded game pages’ network restrictions.
+
+After user-visible changes, publish a concise sourced update to the remote YATA Pensieve pool and confirm the remote receipt. The user explicitly prefers remote updates every time. Local captures or held/pending outbox entries are not a completed remote update. If personal authentication fails, report the blocker and retain the local handoff for retry; never put credentials in repository files or memories.

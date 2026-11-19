@@ -2,6 +2,17 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.16 — 2026-11-19
+
+- Channel transitions now use higher-contrast monochrome TV snow, with timing and sound starting on a render frame after synchronous UI work. The hiss is longer and more distinct; mute, volume and accessibility settings remain respected.
+- Enter now sends a buddy message; Shift+Enter inserts a line break. Talk remains available, and IME composition does not accidentally submit.
+- Removed the show-specific motorcycle shortcut. Descriptions use the verified AI planner with the current catalog; episode alternatives are explicitly labelled and require selection.
+
+## 0.8.15 — 2026-11-19
+
+- Removed the show-specific motorcycle comparison shortcut. Descriptive watch requests now use the verified AI planner and current playable catalog; literal show-title requests keep the instant path.
+- When a named-series episode search finds only other-series candidates, the buddy labels them as possible alternatives and waits for a selection. It does not claim they are the requested episode or silently change playback.
+
 ## 0.8.14 — 2026-11-19
 
 - Fixed tuning snow and optional sound being skipped by Guide, Library or buddy playback after the previous player was cleared.

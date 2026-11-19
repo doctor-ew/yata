@@ -1,5 +1,5 @@
 export const DIAL_FEEDBACK_STORAGE_KEY = 'yata.dial-feedback.v1';
-const SOUND_SECONDS = .112;
+const SOUND_SECONDS = .24;
 
 // Original optional procedural tuning sound; volume and mute follow the player.
 export function mountDialFeedback({ windowRef, storage, toggle, getVolume = () => 1, getMuted = () => false, pulse = () => {} }) {
@@ -58,7 +58,7 @@ export function mountDialFeedback({ windowRef, storage, toggle, getVolume = () =
           const time = index / sampleRate;
           const click = time < .022 ? .65 * (2 / Math.PI) * Math.asin(Math.sin(2 * Math.PI * 1450 * time)) * Math.exp(-180 * time) * Math.min(1, time / .001) : 0;
           const noiseTime = time - .012;
-          const noise = noiseTime >= 0 && noiseTime < .1 ? .28 * (Math.random() * 2 - 1) * Math.min(1, noiseTime / .003) * (1 - noiseTime / .1) : 0;
+          const noise = noiseTime >= 0 && noiseTime < .22 ? .6 * (Math.random() * 2 - 1) * Math.min(1, noiseTime / .003) * (1 - noiseTime / .22) : 0;
           samples[index] = click + noise;
         }
         graph = {nodes: [], source: null, cleaned: false};
@@ -69,7 +69,7 @@ export function mountDialFeedback({ windowRef, storage, toggle, getVolume = () =
         source.buffer = buffer; source.loop = false;
         highpass.type = 'highpass'; highpass.frequency.value = Math.min(300, sampleRate / 4); highpass.Q.value = .7;
         lowpass.type = 'lowpass'; lowpass.frequency.value = Math.min(4500, sampleRate / 2 - 1); lowpass.Q.value = .7;
-        gain.gain.value = .08 * volume;
+        gain.gain.value = .12 * volume;
         source.connect(highpass); highpass.connect(lowpass); lowpass.connect(gain); gain.connect(context.destination);
         source.onended = () => cleanup(graph);
         active = graph;

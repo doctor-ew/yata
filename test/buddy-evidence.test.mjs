@@ -16,7 +16,7 @@ test('watching a described episode requests evidence before show-level playback'
  for(const text of ['Play Knight Rider','I want to watch Knight Rider but with a motorcycle','Turn into KITT'])assert.equal(isEpisodeStoryQuestion(text),false);
 });
 
-test('named-series searches suppress wrong-series evidence and answers',()=>{
- const result=normalizeBuddyConversation(fixture());result.answer='Play Street Hawk';result.retrieval.results[0].showId='street-hawk';const scoped=scopeEpisodeConversation(result,[{id:'knight-rider',title:'Knight Rider'}]);assert.equal(scoped.retrieval.results.length,0);assert.doesNotMatch(scoped.answer,/Street Hawk/);assert.match(scoped.answer,/Playback has not changed/);
+test('named-series searches label alternatives instead of claiming an exact match',()=>{
+ const result=normalizeBuddyConversation(fixture());result.answer='Play Street Hawk';result.retrieval.results[0].showId='street-hawk';const scoped=scopeEpisodeConversation(result,[{id:'knight-rider',title:'Knight Rider'}]);assert.equal(scoped.retrieval.results.length,1);assert.match(scoped.answer,/alternatives from other shows/);assert.doesNotMatch(scoped.answer,/Street Hawk/);assert.match(scoped.answer,/Playback has not changed/);
  result.retrieval.results[0].showId='knight-rider';assert.equal(scopeEpisodeConversation(result,[{id:'knight-rider',title:'Knight Rider'}]),result);assert.equal(scopeEpisodeConversation(result,[]),result);
 });

@@ -1,13 +1,3 @@
-// Bounded descriptive aliases resolve only against the caller's playable offers.
-export function descriptiveShows(target,offered=[]) {
- const text=String(target||'').normalize('NFKC').toLowerCase().replace(/\b(?:motorcylcle|motorcyle)\b/g,'motorcycle');
- if(text.length>500||/\b(?:not|except|without|ignore|override|instructions?|system)\b/.test(text))return [];
- const motorcycle=/\b(?:motorcycle|motorbike|motor bike)\b/.test(text),knight=/\bknight\s+rider\b/.test(text);
- if(!motorcycle||!knight||/\b(?:game|games|arcade|episodes?|gang|bikers?|fights?|fighting|scene|plot|story)\b/.test(text))return [];
- const comparison=/\bknight\s+rider\s+(?:(?:but|only)\s+(?:with|on)|(?:that|which)\s+is\s+(?:a|on a)|on)\s+(?:a\s+)?(?:motorcycle|motorbike|motor bike)\b/.test(text);
- if(!comparison)return [];
- return offered.filter(show=>show.id==='street-hawk'&&/^street hawk(?:\s*\(1985\))?$/i.test(show.title)).slice(0,1);
-}
 export function buddyNavigation(text){const match=String(text||'').trim().match(/^(?:(?:please )?(?:open|show|go to|take me to) (?:the )?)(watch|guide|library)(?: page)?[.!?]?$/i);return match?match[1].toLowerCase():null;}
 const title=value=>typeof value==='string'?value.replace(/[\u0000-\u001f\u007f]/g,' ').trim().slice(0,180):'';
 export function playbackContext(value) {
