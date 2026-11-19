@@ -2,7 +2,7 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
-## 0.8.14 — 2026-11-18
+## 0.8.14 — 2026-11-19
 
 - Fixed tuning snow and optional sound being skipped by Guide, Library or buddy playback after the previous player was cleared.
 - Specific episode requests now precede show-channel commands. Named Knight Rider episode plots cannot silently become Street Hawk; unsupported matches leave playback unchanged.
