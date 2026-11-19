@@ -4,7 +4,7 @@
 
 A retro channel-surfing TV app built by Drew Schillinger: classic television, Saturday morning cartoons, vintage commercial breaks and character-inspired AI companions.
 
-[Watch on the web](https://doctorew.com/tv/) · [Download Android](https://github.com/doctor-ew/yata/releases/tag/yata-android-v0.8.19) · [What’s new](CHANGELOG.md) · [Report a bug](https://github.com/doctor-ew/yata/issues/new/choose)
+[Watch on the web](https://doctorew.com/tv/) · [Download Android](https://github.com/doctor-ew/yata/releases/tag/yata-android-v0.8.20) · [What’s new](CHANGELOG.md) · [Report a bug](https://github.com/doctor-ew/yata/issues/new/choose)
 
 ![YATA Watch screen with a vintage television, upcoming programs and an AI companion](docs/media/watch.png)
 
@@ -19,7 +19,7 @@ A retro channel-surfing TV app built by Drew Schillinger: classic television, Sa
 | Platform | Availability |
 | --- | --- |
 | Web | [Open YATA](https://doctorew.com/tv/) in a modern desktop or mobile browser. |
-| Android | [0.8.19 APK preview](https://github.com/doctor-ew/yata/releases/download/yata-android-v0.8.19/YATA-0.8.19-android-debug.apk). Debug-signed for sideload testing; not a Google Play release. [All releases](https://github.com/doctor-ew/yata/releases). |
+| Android | [0.8.20 APK preview](https://github.com/doctor-ew/yata/releases/download/yata-android-v0.8.20/YATA-0.8.20-android-debug.apk). Debug-signed for sideload testing; not a Google Play release. [All releases](https://github.com/doctor-ew/yata/releases). |
 | iPhone / iPad | Try the website now. A Capacitor iOS project is prepared; no compiled Apple build or TestFlight distribution has been verified in this checkout. [Apple build handoff](docs/apple/TONIGHT-HANDOFF.md). |
 | Apple TV | A separate native client is planned; no tvOS app ships here. |
 

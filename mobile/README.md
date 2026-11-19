@@ -21,7 +21,7 @@ npm run android:build
 
 Set `JAVA_HOME` to a JDK 21 installation and `ANDROID_HOME` to an Android SDK containing the platform/build packages required by `android/variables.gradle`. `build.mjs` reads the current public catalog and checks its SHA-256 before bundling it. It does not bundle video files, credentials, APK backups or Arcade runtimes.
 
-The generated APK is copied to `artifacts/YATA-0.8.19-android-debug.apk`. The Gradle output remains `android/app/build/outputs/apk/debug/app-debug.apk`. It is signed with the local Android debug key for sideload testing. Connect one Android device with USB debugging enabled, authorize the Mac, and run from this directory:
+The generated APK is copied to `artifacts/YATA-0.8.20-android-debug.apk`. The Gradle output remains `android/app/build/outputs/apk/debug/app-debug.apk`. It is signed with the local Android debug key for sideload testing. Connect one Android device with USB debugging enabled, authorize the Mac, and run from this directory:
 
 ```sh
 adb install -r android/app/build/outputs/apk/debug/app-debug.apk
@@ -44,7 +44,7 @@ Capacitor and the App/Browser plugins are MIT licensed. The repository's MIT lic
 
 ## Current shared interface
 
-The current Android sideload preview is 0.8.19 (version code 30). It shares the web interface, saved Channel 00 queue, library filters, remote catalog and companion roster, and sourced episode search. The private retrieval service contains 4,192 summaries across 114 series; coverage remains partial. Ambiguous results require a manual episode selection. See [retrieval coverage](../docs/buddy-retrieval/COVERAGE-EXPANSION.md).
+The current Android sideload preview is 0.8.20 (version code 31). It shares the web interface, saved Channel 00 queue, library filters, remote catalog and companion roster, and sourced episode search. The private retrieval service contains 4,192 summaries across 114 series; coverage remains partial. Ambiguous results require a manual episode selection. See [retrieval coverage](../docs/buddy-retrieval/COVERAGE-EXPANSION.md).
 
 **More → Playback settings → Static** saves the static preference and suppresses both channel-change and loading snow. Sound has its own setting. Zero strength, reduced-motion and forced-color preferences suppress animated snow. Enter sends buddy chat; Shift+Enter inserts a newline, and Talk remains available.
 

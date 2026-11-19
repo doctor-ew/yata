@@ -24,3 +24,12 @@ export function directWatchShows(target,offered){
  remaining=remaining.replace(/\b(?:and|or|the|a|an|some|episodes?|of|please|now|today|tonight)\b/g,'').trim();
  return remaining?[]:matches;
 }
+
+// Explicit channel commands use the guarded planner, not conversational generation.
+export function channelRequest(text){
+ const s=safeCommand(text);if(!s)return null;
+ const match=s.match(/^(?:make|create|build|assemble)(?:\s+(?:me|us))?\s+(?:(?:a|my|our|new|personal)\s+)?(?:tv\s+)?(?:channel|lineup|stream)(?:\s+for\s+(?:me|us))?(?:\s+(?:(?:with|of|from|featuring|about|based on)\s+)?(.+))?$/i);
+ if(match)return {target:(match[1]||'').trim()};
+ const themed=s.match(/^(?:make|create|build|assemble)(?:\s+(?:me|us))?\s+(?:a\s+)?(.{1,120}?)\s+(?:channel|lineup|stream)(?:\s+(?:(?:with|of|from|featuring)\s+)?(.+))?$/i);
+ return themed?{target:[themed[1],themed[2]].filter(Boolean).join(' ')}:null;
+}
