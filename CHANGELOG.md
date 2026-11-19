@@ -2,6 +2,10 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.17 — 2026-11-19
+
+- Replaced the repeating SVG tuning texture with original animated monochrome snow frames and a direct cut back to the picture. Removed the fade-out.
+
 ## 0.8.16 — 2026-11-19
 
 - Channel transitions now use higher-contrast monochrome TV snow, with timing and sound starting on a render frame after synchronous UI work. The hiss is longer and more distinct; mute, volume and accessibility settings remain respected.

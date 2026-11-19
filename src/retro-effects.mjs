@@ -73,10 +73,10 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
   function pulse({ force = false, transition = false } = {}) {
     if (disposed || suppressed() || preferences.staticLevel <= 0 || (!force && !preferences.static)) return false;
     stopPulse(); overlay.hidden = false; shell.classList.toggle('retro-static-active', true);
-    // Channel snow holds a steady grey field, then clears; playback is never delayed.
+    // Independent snow frames cut directly back to the picture; playback is never delayed.
     overlay.classList.toggle('retro-static-channel-change', transition);
     animation = overlay.animate?.(transition ? [
-      { opacity: 1, offset: 0 }, { opacity: 1, offset: .75 }, { opacity: 0, offset: 1 },
+      { opacity: 1, offset: 0 }, { opacity: 1, offset: 1 },
     ] : [
       { opacity: preferences.staticLevel / 100, backgroundPosition: '0px 0px' },
       { opacity: 0, backgroundPosition: '13px 7px' },
