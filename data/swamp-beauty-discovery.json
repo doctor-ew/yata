@@ -1,0 +1,3081 @@
+{
+  "checkedAt": "2026-11-19T01:19:11.652Z",
+  "shows": [
+    {
+      "showId": "swamp-thing-1990",
+      "title": "Swamp Thing (1990)",
+      "channel": "scifi",
+      "item": "swamp-thing-1990-complete-tv-series",
+      "minimum": 1100,
+      "maximum": 2000,
+      "episodes": [
+        {
+          "id": "swamp-beauty-a58f9ae24340a699c35f",
+          "title": "Swamp Thing S01E01 - The Emerald Heart",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1404.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-a58f9ae24340a699c35f",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E01%20-%20The%20Emerald%20Heart.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-90da8d4ff39d17df9b8f",
+          "title": "Swamp Thing S01E02 - The Living Image",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1407.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-90da8d4ff39d17df9b8f",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E02%20-%20The%20Living%20Image.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-d7bc66f750edde858db0",
+          "title": "Swamp Thing S01E03 - The Death of Dr. Arcane",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1407.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-d7bc66f750edde858db0",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E03%20-%20The%20Death%20of%20Dr.%20Arcane.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-138c81c4da8d080ce12e",
+          "title": "Swamp Thing S01E04 - The Legend of the Swamp Maiden",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1409.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-138c81c4da8d080ce12e",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E04%20-%20The%20Legend%20of%20the%20Swamp%20Maiden.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-b98f8ea04f21a7fcd6d3",
+          "title": "Swamp Thing S01E05 - Spirit of the Swamp",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1409.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-b98f8ea04f21a7fcd6d3",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E05%20-%20Spirit%20of%20the%20Swamp.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-76572ad9272054bea763",
+          "title": "Swamp Thing S01E06 - Blood Wind",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1407.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-76572ad9272054bea763",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E06%20-%20Blood%20Wind.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-e80ba50aad79fb4275a3",
+          "title": "Swamp Thing S01E07 - Grotesquery",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1406.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-e80ba50aad79fb4275a3",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E07%20-%20Grotesquery.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-36f48583d4e34c5298ff",
+          "title": "Swamp Thing S01E08 - Natural Enemy",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1405.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-36f48583d4e34c5298ff",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E08%20-%20Natural%20Enemy.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-0f8bc936ac3b83ce12fc",
+          "title": "Swamp Thing S01E09 - Treasure",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1406.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-0f8bc936ac3b83ce12fc",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E09%20-%20Treasure.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-d3aafc4f7b6f1c3b7198",
+          "title": "Swamp Thing S01E10 - New Acquaintance",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1408.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-d3aafc4f7b6f1c3b7198",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E10%20-%20New%20Acquaintance.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-d179a6aee83e5b2c4f93",
+          "title": "Swamp Thing S01E11 - Falco",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1406.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-d179a6aee83e5b2c4f93",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E11%20-%20Falco.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-ab6b9bd67d30dc748310",
+          "title": "Swamp Thing S01E12 - From Beyond the Grave",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1407.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-ab6b9bd67d30dc748310",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E12%20-%20From%20Beyond%20the%20Grave.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-8dc8020050792fa8c682",
+          "title": "Swamp Thing S01E13 - The Shipment",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1409.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-8dc8020050792fa8c682",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E13%20-%20The%20Shipment.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-3c07db00acd032f5c8df",
+          "title": "Swamp Thing S01E14 - Birth Marks",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 1407.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-3c07db00acd032f5c8df",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E14%20-%20Birth%20Marks.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-388477eb54d7c5a504f2",
+          "title": "Swamp Thing S01E15 - Dark Side of the Mirror",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 1408.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-388477eb54d7c5a504f2",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E15%20-%20Dark%20Side%20of%20the%20Mirror.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-22d60cfa82965bed6a2c",
+          "title": "Swamp Thing S01E16 - Silent Screams",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 1407.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-22d60cfa82965bed6a2c",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E16%20-%20Silent%20Screams.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-c482e816d45f4c26bb53",
+          "title": "Swamp Thing S01E17 - Walk a Mile in My Shoots",
+          "season": 1,
+          "number": 17,
+          "durationSeconds": 1407.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-c482e816d45f4c26bb53",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E17%20-%20Walk%20a%20Mile%20in%20My%20Shoots.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-7217e006491184fabc43",
+          "title": "Swamp Thing S01E18 - The Watchers",
+          "season": 1,
+          "number": 18,
+          "durationSeconds": 1408.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-7217e006491184fabc43",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E18%20-%20The%20Watchers.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-d50940df00b2a446b29f",
+          "title": "Swamp Thing S01E19 - The Hunt",
+          "season": 1,
+          "number": 19,
+          "durationSeconds": 1408.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-d50940df00b2a446b29f",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E19%20-%20The%20Hunt.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-4ff836167ab51dec2f5a",
+          "title": "Swamp Thing S01E20 - Touch of Death",
+          "season": 1,
+          "number": 20,
+          "durationSeconds": 1408.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-4ff836167ab51dec2f5a",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E20%20-%20Touch%20of%20Death.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-dbbfb1cb29dc39301428",
+          "title": "Swamp Thing S01E21 - Tremors of the Heart",
+          "season": 1,
+          "number": 21,
+          "durationSeconds": 1409.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-dbbfb1cb29dc39301428",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E21%20-%20Tremors%20of%20the%20Heart.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-46b172e623558f6473fc",
+          "title": "Swamp Thing S01E22 - The Prometheus Parabola",
+          "season": 1,
+          "number": 22,
+          "durationSeconds": 1407.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-46b172e623558f6473fc",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E22%20-%20The%20Prometheus%20Parabola.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-f810b892b3057b80818b",
+          "title": "Swamp Thing S02E01 - Night of the Dying",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1408.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-f810b892b3057b80818b",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E01%20-%20Night%20of%20the%20Dying.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-02b23c113d0e97f78584",
+          "title": "Swamp Thing S02E02 - Love Lost",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1409.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-02b23c113d0e97f78584",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E02%20-%20Love%20Lost.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-75c9c2dcebd9f3024da0",
+          "title": "Swamp Thing S02E03 - Mist Demeanor",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 1409.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-75c9c2dcebd9f3024da0",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E03%20-%20Mist%20Demeanor.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-411def5f5a7045d125e0",
+          "title": "Swamp Thing S02E04 - A Nightmare on Jackson Street",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 1409.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-411def5f5a7045d125e0",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E04%20-%20A%20Nightmare%20on%20Jackson%20Street.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-265d0afb0445dde97c04",
+          "title": "Swamp Thing S02E05 - Better Angels",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 1408.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-265d0afb0445dde97c04",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E05%20-%20Better%20Angels.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-a48854672e24f04c0eb5",
+          "title": "Swamp Thing S02E06 - Children of the Fool",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 1409.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-a48854672e24f04c0eb5",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E06%20-%20Children%20of%20the%20Fool.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-3533b3b7a032a7c93531",
+          "title": "Swamp Thing S02E07 - A Jury of His Fears",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 1408.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-3533b3b7a032a7c93531",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E07%20-%20A%20Jury%20of%20His%20Fears.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-99f959d63e2532ab5c87",
+          "title": "Swamp Thing S02E08 - Poisonous",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 1412.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-99f959d63e2532ab5c87",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E08%20-%20Poisonous.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-1a0fed30ea487dc319ed",
+          "title": "Swamp Thing S02E09 - Smoke and Mirrors",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 1409.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-1a0fed30ea487dc319ed",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E09%20-%20Smoke%20and%20Mirrors.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-28a1b7d71d3436efd164",
+          "title": "Swamp Thing S02E10 - This Old House of Mayan",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 1407.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-28a1b7d71d3436efd164",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E10%20-%20This%20Old%20House%20of%20Mayan.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-7aae4046159689dd398f",
+          "title": "Swamp Thing S02E11 - Sonata",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 1408.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-7aae4046159689dd398f",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E11%20-%20Sonata.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-7790542dbaa5f8d0a288",
+          "title": "Swamp Thing S03E01 - Dead and Married",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 1409.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-7790542dbaa5f8d0a288",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E01%20-%20Dead%20and%20Married.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-bba498c80ef03bce6611",
+          "title": "Swamp Thing S03E02 - Powers of Darkness",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 1408.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-bba498c80ef03bce6611",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E02%20-%20Powers%20of%20Darkness.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-41ce0cae14b53aae81a1",
+          "title": "Swamp Thing S03E03 - Special Request",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 1409.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-41ce0cae14b53aae81a1",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E03%20-%20Special%20Request.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-f35762078b525cca4309",
+          "title": "Swamp Thing S03E04 - What Goes Around Comes Around, Comes Around",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 1408.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-f35762078b525cca4309",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E04%20-%20What%20Goes%20Around%20Comes%20Around%2C%20Comes%20Around.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-c5b142a5d71419616b41",
+          "title": "Swamp Thing S03E05 - Fear Itself",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 1408.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-c5b142a5d71419616b41",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E05%20-%20Fear%20Itself.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-60a54f4d2ba6356905f1",
+          "title": "Swamp Thing S03E06 - Changes",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 1412.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-60a54f4d2ba6356905f1",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E06%20-%20Changes.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-905e69a33dd57c7d1c3a",
+          "title": "Swamp Thing S03E07 - Destiny",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 1410.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-905e69a33dd57c7d1c3a",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E07%20-%20Destiny.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-7ac0232104bef9232ec0",
+          "title": "Swamp Thing S03E08 - Tatania",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 1409.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-7ac0232104bef9232ec0",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E08%20-%20Tatania.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-b4270fecd59cc08b1330",
+          "title": "Swamp Thing S03E09 - Mirador's Brain",
+          "season": 3,
+          "number": 9,
+          "durationSeconds": 1409.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-b4270fecd59cc08b1330",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E09%20-%20Mirador's%20Brain.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-3d89fb0cf540025056db",
+          "title": "Swamp Thing S03E10 - Lesser of Two Evils",
+          "season": 3,
+          "number": 10,
+          "durationSeconds": 1408.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-3d89fb0cf540025056db",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E10%20-%20Lesser%20of%20Two%20Evils.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-5333ecf68f927c3c3944",
+          "title": "Swamp Thing S03E11 - Revelations",
+          "season": 3,
+          "number": 11,
+          "durationSeconds": 1409.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-5333ecf68f927c3c3944",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E11%20-%20Revelations.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-14def7cc15f6ff901f2a",
+          "title": "Swamp Thing S03E12 - Easy Prey",
+          "season": 3,
+          "number": 12,
+          "durationSeconds": 1411.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-14def7cc15f6ff901f2a",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E12%20-%20Easy%20Prey.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-357a9959794075424794",
+          "title": "Swamp Thing S03E13 - The Handyman",
+          "season": 3,
+          "number": 13,
+          "durationSeconds": 1410.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-357a9959794075424794",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E13%20-%20The%20Handyman.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-b919cf76975a5fe9398d",
+          "title": "Swamp Thing S03E14 - Future Tense",
+          "season": 3,
+          "number": 14,
+          "durationSeconds": 1408.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-b919cf76975a5fe9398d",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E14%20-%20Future%20Tense.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-eefe75c36b5a59f2227f",
+          "title": "Swamp Thing S03E15 - Hide in the Night",
+          "season": 3,
+          "number": 15,
+          "durationSeconds": 1407.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-eefe75c36b5a59f2227f",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E15%20-%20Hide%20in%20the%20Night.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-76b80b885665405cd3aa",
+          "title": "Swamp Thing S03E16 - Pay Day",
+          "season": 3,
+          "number": 16,
+          "durationSeconds": 1409.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-76b80b885665405cd3aa",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E16%20-%20Pay%20Day.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-004afd66947e92ce3ef1",
+          "title": "Swamp Thing S03E17 - The Return of LaRoche",
+          "season": 3,
+          "number": 17,
+          "durationSeconds": 1408.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-004afd66947e92ce3ef1",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E17%20-%20The%20Return%20of%20LaRoche.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-282ca29098338caebdbb",
+          "title": "Swamp Thing S03E18 - Rites of Passage",
+          "season": 3,
+          "number": 18,
+          "durationSeconds": 1410.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-282ca29098338caebdbb",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E18%20-%20Rites%20of%20Passage.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-4fa6d7cca3641feaa46a",
+          "title": "Swamp Thing S03E19 - Never Alone",
+          "season": 3,
+          "number": 19,
+          "durationSeconds": 1408.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-4fa6d7cca3641feaa46a",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E19%20-%20Never%20Alone.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-89fee2f582969f0ac86e",
+          "title": "Swamp Thing S03E20 - A Most Bitter Pill",
+          "season": 3,
+          "number": 20,
+          "durationSeconds": 1408.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-89fee2f582969f0ac86e",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E20%20-%20A%20Most%20Bitter%20Pill.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-bd8b9ff4dc8626de093d",
+          "title": "Swamp Thing S03E21 - The Curse",
+          "season": 3,
+          "number": 21,
+          "durationSeconds": 1408.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-bd8b9ff4dc8626de093d",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E21%20-%20The%20Curse.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-6b346f17ce2ea39ef614",
+          "title": "Swamp Thing S03E22 - Judgment Day",
+          "season": 3,
+          "number": 22,
+          "durationSeconds": 1409.37,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-6b346f17ce2ea39ef614",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E22%20-%20Judgment%20Day.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-f904158ffceac8424145",
+          "title": "Swamp Thing S03E23 - Eye of the Storm",
+          "season": 3,
+          "number": 23,
+          "durationSeconds": 1408.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-f904158ffceac8424145",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E23%20-%20Eye%20of%20the%20Storm.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-451098b99ae3b7041149",
+          "title": "Swamp Thing S03E24 - Vendetta",
+          "season": 3,
+          "number": 24,
+          "durationSeconds": 1410.73,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-451098b99ae3b7041149",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E24%20-%20Vendetta.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-d9e10d429469d92bde56",
+          "title": "Swamp Thing S03E25 - The Hurting",
+          "season": 3,
+          "number": 25,
+          "durationSeconds": 1408.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-d9e10d429469d92bde56",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E25%20-%20The%20Hurting.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-48c0d8eea0b356795883",
+          "title": "Swamp Thing S03E26 - The Burning Times",
+          "season": 3,
+          "number": 26,
+          "durationSeconds": 1410.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-48c0d8eea0b356795883",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E26%20-%20The%20Burning%20Times.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-bbdf733efec41cd5809c",
+          "title": "Swamp Thing S03E27 - The Specter of Death",
+          "season": 3,
+          "number": 27,
+          "durationSeconds": 1410.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-bbdf733efec41cd5809c",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E27%20-%20The%20Specter%20of%20Death.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-3fb2a5d3b42d85561915",
+          "title": "Swamp Thing S03E28 - Cross-Fired",
+          "season": 3,
+          "number": 28,
+          "durationSeconds": 1410.69,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-3fb2a5d3b42d85561915",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E28%20-%20Cross-Fired.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-b47cd34891a06f82322c",
+          "title": "Swamp Thing S03E29 - Patient Zero",
+          "season": 3,
+          "number": 29,
+          "durationSeconds": 1408.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-b47cd34891a06f82322c",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E29%20-%20Patient%20Zero.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-0cdc4e9445051e41e7a7",
+          "title": "Swamp Thing S03E30 - The Chains of Forever",
+          "season": 3,
+          "number": 30,
+          "durationSeconds": 1406.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-0cdc4e9445051e41e7a7",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E30%20-%20The%20Chains%20of%20Forever.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-e3753076526429475fed",
+          "title": "Swamp Thing S03E31 - In the Beginning",
+          "season": 3,
+          "number": 31,
+          "durationSeconds": 1408.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-e3753076526429475fed",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E31%20-%20In%20the%20Beginning.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-29942d893ae175af9ae9",
+          "title": "Swamp Thing S03E32 - Brotherly Love",
+          "season": 3,
+          "number": 32,
+          "durationSeconds": 1409.81,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-29942d893ae175af9ae9",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E32%20-%20Brotherly%20Love.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-a580de0dbdef2bae8465",
+          "title": "Swamp Thing S03E33 - An Eye for an Eye",
+          "season": 3,
+          "number": 33,
+          "durationSeconds": 1409.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-a580de0dbdef2bae8465",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E33%20-%20An%20Eye%20for%20an%20Eye.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-0452d271ca7f4c7af899",
+          "title": "Swamp Thing S03E34 - Yo Ho Ho",
+          "season": 3,
+          "number": 34,
+          "durationSeconds": 1410.75,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-0452d271ca7f4c7af899",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E34%20-%20Yo%20Ho%20Ho.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-fc4cf76e04ac9ab1f2b5",
+          "title": "Swamp Thing S03E35 - Heart of Stone",
+          "season": 3,
+          "number": 35,
+          "durationSeconds": 1408.58,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-fc4cf76e04ac9ab1f2b5",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E35%20-%20Heart%20of%20Stone.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-720e0ce90e45dc3ed9bc",
+          "title": "Swamp Thing S03E36 - Romancing Arcane",
+          "season": 3,
+          "number": 36,
+          "durationSeconds": 1408.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-720e0ce90e45dc3ed9bc",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E36%20-%20Romancing%20Arcane.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-f5a73d7f5800c5de5b26",
+          "title": "Swamp Thing S03E37 - Swamp of Dreams",
+          "season": 3,
+          "number": 37,
+          "durationSeconds": 1408.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-f5a73d7f5800c5de5b26",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E37%20-%20Swamp%20of%20Dreams.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-236733962d782a895920",
+          "title": "Swamp Thing S03E38 - Heart of the Mantis",
+          "season": 3,
+          "number": 38,
+          "durationSeconds": 1410.75,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-236733962d782a895920",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E38%20-%20Heart%20of%20the%20Mantis.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-80bf1c311d0dbaf15f20",
+          "title": "Swamp Thing S03E39 - That's a Wrap",
+          "season": 3,
+          "number": 39,
+          "durationSeconds": 1409.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-80bf1c311d0dbaf15f20",
+              "provider": "archive",
+              "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E39%20-%20That's%20a%20Wrap.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E01%20-%20The%20Emerald%20Heart.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E02%20-%20The%20Living%20Image.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E04%20-%20The%20Legend%20of%20the%20Swamp%20Maiden.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E05%20-%20Spirit%20of%20the%20Swamp.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E06%20-%20Blood%20Wind.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E07%20-%20Grotesquery.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E09%20-%20Treasure.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E08%20-%20Natural%20Enemy.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E11%20-%20Falco.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E12%20-%20From%20Beyond%20the%20Grave.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E03%20-%20The%20Death%20of%20Dr.%20Arcane.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E15%20-%20Dark%20Side%20of%20the%20Mirror.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E13%20-%20The%20Shipment.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E14%20-%20Birth%20Marks.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E16%20-%20Silent%20Screams.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E17%20-%20Walk%20a%20Mile%20in%20My%20Shoots.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E10%20-%20New%20Acquaintance.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E18%20-%20The%20Watchers.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E19%20-%20The%20Hunt.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E20%20-%20Touch%20of%20Death.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E21%20-%20Tremors%20of%20the%20Heart.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S01E22%20-%20The%20Prometheus%20Parabola.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E02%20-%20Love%20Lost.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E01%20-%20Night%20of%20the%20Dying.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E03%20-%20Mist%20Demeanor.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E04%20-%20A%20Nightmare%20on%20Jackson%20Street.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E05%20-%20Better%20Angels.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E06%20-%20Children%20of%20the%20Fool.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E07%20-%20A%20Jury%20of%20His%20Fears.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E08%20-%20Poisonous.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E09%20-%20Smoke%20and%20Mirrors.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E10%20-%20This%20Old%20House%20of%20Mayan.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S02E11%20-%20Sonata.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E01%20-%20Dead%20and%20Married.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E05%20-%20Fear%20Itself.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E04%20-%20What%20Goes%20Around%20Comes%20Around%2C%20Comes%20Around.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E02%20-%20Powers%20of%20Darkness.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E03%20-%20Special%20Request.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E06%20-%20Changes.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E07%20-%20Destiny.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E09%20-%20Mirador's%20Brain.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E10%20-%20Lesser%20of%20Two%20Evils.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E11%20-%20Revelations.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E08%20-%20Tatania.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E12%20-%20Easy%20Prey.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E13%20-%20The%20Handyman.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E16%20-%20Pay%20Day.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E15%20-%20Hide%20in%20the%20Night.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E14%20-%20Future%20Tense.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E17%20-%20The%20Return%20of%20LaRoche.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E18%20-%20Rites%20of%20Passage.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E19%20-%20Never%20Alone.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E20%20-%20A%20Most%20Bitter%20Pill.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E21%20-%20The%20Curse.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E22%20-%20Judgment%20Day.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E23%20-%20Eye%20of%20the%20Storm.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E25%20-%20The%20Hurting.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E24%20-%20Vendetta.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E26%20-%20The%20Burning%20Times.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E27%20-%20The%20Specter%20of%20Death.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E31%20-%20In%20the%20Beginning.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E29%20-%20Patient%20Zero.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E28%20-%20Cross-Fired.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E30%20-%20The%20Chains%20of%20Forever.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E32%20-%20Brotherly%20Love.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E33%20-%20An%20Eye%20for%20an%20Eye.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E34%20-%20Yo%20Ho%20Ho.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E35%20-%20Heart%20of%20Stone.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E36%20-%20Romancing%20Arcane.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E38%20-%20Heart%20of%20the%20Mantis.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E37%20-%20Swamp%20of%20Dreams.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/swamp-thing-1990-complete-tv-series/Swamp%20Thing%20S03E39%20-%20That's%20a%20Wrap.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        }
+      ]
+    },
+    {
+      "showId": "beauty-beast-1987",
+      "title": "Beauty and the Beast (1987)",
+      "channel": "drama",
+      "item": "Beauty-and-the-beast-complete-tv-series-dvdrip",
+      "minimum": 2400,
+      "maximum": 6500,
+      "episodes": [
+        {
+          "id": "swamp-beauty-18cbd446768e65718f49",
+          "title": "S1.E01 ∙ Once Upon a Time in the City of New York",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 2917.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-18cbd446768e65718f49",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E01%20%E2%88%99%20Once%20Upon%20a%20Time%20in%20the%20City%20of%20New%20York%20B1_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-d94f26941eb2391bcb62",
+          "title": "S1.E02 ∙ Terrible Savior",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 2903.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-d94f26941eb2391bcb62",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E02%20%E2%88%99%20Terrible%20Savior%20B2_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-9c88ffe1544ae23186f4",
+          "title": "S1.E03 ∙ Siege",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 2928.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-9c88ffe1544ae23186f4",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E03%20%E2%88%99%20Siege%20B3_t03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-c5f361834c53a9edfc09",
+          "title": "S1.E04 ∙ No Way Down",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 2944.46,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-c5f361834c53a9edfc09",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E04%20%E2%88%99%20No%20Way%20Down%20B4_t04.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-b6ae463bca9aa1675f49",
+          "title": "S1.E05 ∙ Masques",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 2900.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-b6ae463bca9aa1675f49",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E05%20%E2%88%99%20Masques%20B1_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-3b91a39a331eceb4bf09",
+          "title": "S1.E06 ∙ Beast Within",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 2932.78,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-3b91a39a331eceb4bf09",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E06%20%E2%88%99%20Beast%20Within%20B2_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-03e19b5530e58d792899",
+          "title": "S1.E07 ∙ Nor Iron Bars a Cage",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 2929.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-03e19b5530e58d792899",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E07%20%E2%88%99%20Nor%20Iron%20Bars%20a%20Cage%20B3_t03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-1f624b1a7be004057351",
+          "title": "S1.E08 ∙ Song of Orpheus",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 2928.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-1f624b1a7be004057351",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E08%20%E2%88%99%20Song%20of%20Orpheus%20B4_t04.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-86cbc77ebcbfa95750ac",
+          "title": "S1.E09 ∙ Dark Spirit",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 2925.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-86cbc77ebcbfa95750ac",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E09%20%E2%88%99%20Dark%20Spirit%20B1_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-6a6cd787fbce12eecf21",
+          "title": "S1.E10 ∙ A Children's Story",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 2928.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-6a6cd787fbce12eecf21",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E10%20%E2%88%99%20A%20Children's%20Story%20B2_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-2de629581d5ddad9fbf9",
+          "title": "S1.E11 ∙ An Impossible Silence",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 2929.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-2de629581d5ddad9fbf9",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E11%20%E2%88%99%20An%20Impossible%20Silence%20B3_t03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-ce3835e7db63db1c804e",
+          "title": "S1.E12 ∙ Shades of Grey",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 2928.53,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-ce3835e7db63db1c804e",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E12%20%E2%88%99%20Shades%20of%20Grey%20B4_t04.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-9d5bd71b45b9cd9a20da",
+          "title": "S1.E13 ∙ China Moon",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 2924.69,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-9d5bd71b45b9cd9a20da",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E13%20%E2%88%99%20China%20Moon%20B1_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-fe8903aedc20826171d0",
+          "title": "S1.E14 ∙ The Alchemist",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 2895.66,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-fe8903aedc20826171d0",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E14%20%E2%88%99%20The%20Alchemist%20B2_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-a4f57ac71d4f900b0488",
+          "title": "S1.E15 ∙ Temptation",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 2900.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-a4f57ac71d4f900b0488",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E15%20%E2%88%99%20Temptation%20B3_t03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-714df1704d646f11847b",
+          "title": "S1.E16 ∙ Promises of Someday",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 2896.59,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-714df1704d646f11847b",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E16%20%E2%88%99%20Promises%20of%20Someday%20B4_t04.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-238c61593ef4c04b543d",
+          "title": "S1.E17 ∙ Down to a Sunless Sea",
+          "season": 1,
+          "number": 17,
+          "durationSeconds": 2895.73,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-238c61593ef4c04b543d",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E17%20%E2%88%99%20Down%20to%20a%20Sunless%20Sea%20B1_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-18e39fce6371bbc8c972",
+          "title": "S1.E18 ∙ Fever",
+          "season": 1,
+          "number": 18,
+          "durationSeconds": 2893.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-18e39fce6371bbc8c972",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E18%20%E2%88%99%20Fever%20B2_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-b9a8beaca6abbd9f196d",
+          "title": "S1.E19 ∙ Everything Is Everything",
+          "season": 1,
+          "number": 19,
+          "durationSeconds": 2897.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-b9a8beaca6abbd9f196d",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E19%20%E2%88%99%20Everything%20Is%20Everything%20B3_t03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-b06aeae41070a677a1eb",
+          "title": "S1.E20 ∙ To Reign in Hell",
+          "season": 1,
+          "number": 20,
+          "durationSeconds": 2868.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-b06aeae41070a677a1eb",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E20%20%E2%88%99%20To%20Reign%20in%20Hell%20B1_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-28b4a5acfa55b69682d8",
+          "title": "S1.E21 ∙ Ozymandias",
+          "season": 1,
+          "number": 21,
+          "durationSeconds": 2895.83,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-28b4a5acfa55b69682d8",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E21%20%E2%88%99%20Ozymandias%20B2_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-bfea8f0e5915905d9d2c",
+          "title": "S1.E22 ∙ A Happy Life",
+          "season": 1,
+          "number": 22,
+          "durationSeconds": 2896.66,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-bfea8f0e5915905d9d2c",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E22%20%E2%88%99%20A%20Happy%20Life%20B3_t03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-4d776b58962da22a0b3c",
+          "title": "S2.E01 ∙ Chamber Music C1_t00",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 2864.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-4d776b58962da22a0b3c",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E01%20%E2%88%99%20Chamber%20Music%20C1_t00.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-84d879b58b492fcd553f",
+          "title": "S2.E02 ∙ Remember Love",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 2833.48,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-84d879b58b492fcd553f",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E02%20%E2%88%99%20Remember%20Love%20B2_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-59242e1f0768d302c8ac",
+          "title": "S2.E03 ∙ Ashes, Ashes",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 2864.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-59242e1f0768d302c8ac",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E03%20%E2%88%99%20Ashes%2C%20Ashes%20B3_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-2e06895a7debcdd619d3",
+          "title": "S2.E04 ∙ Dead of Winter",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 2861.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-2e06895a7debcdd619d3",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E04%20%E2%88%99%20Dead%20of%20Winter%20B4_t03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-4ed70d768dffb0493ce3",
+          "title": "S2.E05 ∙ God Bless the Child",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 2864.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-4ed70d768dffb0493ce3",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E05%20%E2%88%99%20God%20Bless%20the%20Child%20B1_t00.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-64592e380fabf1695447",
+          "title": "S2.E06 ∙ Sticks and Stones",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 2842.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-64592e380fabf1695447",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E06%20%E2%88%99%20Sticks%20and%20Stones%20B2_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-47e5802ed0c5e5b3932f",
+          "title": "S2.E07 ∙ A Fair and Perfect Knight",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 2844.81,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-47e5802ed0c5e5b3932f",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E07%20%E2%88%99%20A%20Fair%20and%20Perfect%20Knight%20B4_t03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-dd9a160017a907a8e6fa",
+          "title": "S2.E08 ∙ Labyrinths C1_t02",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 2866.19,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-dd9a160017a907a8e6fa",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E08%20%E2%88%99%20Labyrinths%20C1_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-b20ecdb7b58dcb55c468",
+          "title": "S2.E09 ∙ Brothers",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 2864.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-b20ecdb7b58dcb55c468",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E09%20%E2%88%99%20Brothers%20B1_t00.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-ea83753759ea1f55696f",
+          "title": "S2.E10 ∙ A Gentle Rain",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 2864.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-ea83753759ea1f55696f",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E10%20%E2%88%99%20A%20Gentle%20Rain%20B2_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-dac371fb222d50b1f1f6",
+          "title": "S2.E11 ∙ The Outsiders",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 2865.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-dac371fb222d50b1f1f6",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E11%20%E2%88%99%20The%20Outsiders%20B3_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-e77e986486d873de89e6",
+          "title": "S2.E12 ∙ Orphans C1_t03",
+          "season": 2,
+          "number": 12,
+          "durationSeconds": 2846.89,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-e77e986486d873de89e6",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E12%20%E2%88%99%20Orphans%20C1_t03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-bda09f49186e84d9592c",
+          "title": "S2.E13 ∙ Arabesque",
+          "season": 2,
+          "number": 13,
+          "durationSeconds": 2861.74,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-bda09f49186e84d9592c",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E13%20%E2%88%99%20Arabesque%20B1_t00.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-ac61d6a1892b71f7e70e",
+          "title": "S2.E14 ∙ When the Blue Bird Sings",
+          "season": 2,
+          "number": 14,
+          "durationSeconds": 2865,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-ac61d6a1892b71f7e70e",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E14%20%E2%88%99%20When%20the%20Blue%20Bird%20Sings%20B2_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-96a9fb5bc38a081dd7e4",
+          "title": "S2.E15 ∙ The Watcher",
+          "season": 2,
+          "number": 15,
+          "durationSeconds": 2745.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-96a9fb5bc38a081dd7e4",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E15%20%E2%88%99%20The%20Watcher%20B3_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-73da0e4e459df3c37b5d",
+          "title": "S2.E16 ∙ A Distant Shore C1_t03",
+          "season": 2,
+          "number": 16,
+          "durationSeconds": 2833.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-73da0e4e459df3c37b5d",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E16%20%E2%88%99%20A%20Distant%20Shore%20C1_t03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-0f781217093fa109be25",
+          "title": "S2.E17 ∙ Trial",
+          "season": 2,
+          "number": 17,
+          "durationSeconds": 2860.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-0f781217093fa109be25",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E17%20%E2%88%99%20Trial%20B1_t00.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-85a4e4115e65fff0af14",
+          "title": "S2.E18 ∙ A Kingdom by the Sea C1_t01",
+          "season": 2,
+          "number": 18,
+          "durationSeconds": 2835.37,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-85a4e4115e65fff0af14",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E18%20%E2%88%99%20A%20Kingdom%20by%20the%20Sea%20C1_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-266b2059214c382a9252",
+          "title": "S2.E19 ∙ The Hollow Men",
+          "season": 2,
+          "number": 19,
+          "durationSeconds": 2864.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-266b2059214c382a9252",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E19%20%E2%88%99%20The%20Hollow%20Men%20B3_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-0a661fda1aae6a477568",
+          "title": "S2.E20 ∙ What Rough Beast",
+          "season": 2,
+          "number": 20,
+          "durationSeconds": 2834.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-0a661fda1aae6a477568",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E20%20%E2%88%99%20What%20Rough%20Beast%20B1_t00.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-bad0566c7da86c677eb7",
+          "title": "S2.E21 ∙ Ceremony of Innocence",
+          "season": 2,
+          "number": 21,
+          "durationSeconds": 2834.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-bad0566c7da86c677eb7",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E21%20%E2%88%99%20Ceremony%20of%20Innocence%20B2_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-e3889bf2b5ba8a8a730a",
+          "title": "S2.E22 ∙ The Rest Is Silence C1_t02",
+          "season": 2,
+          "number": 22,
+          "durationSeconds": 2833.55,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-e3889bf2b5ba8a8a730a",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E22%20%E2%88%99%20The%20Rest%20Is%20Silence%20C1_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-f39fd39d6e1749538eb1",
+          "title": "S3.E01 ∙ Though Lovers Be Lost...",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 5335.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-f39fd39d6e1749538eb1",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E01%20%E2%88%99%20Though%20Lovers%20Be%20Lost...%20B1_t00.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-39d952be81db6ce2a18f",
+          "title": "S3.E02 ∙ Walk Slowly",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 2795.5,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-39d952be81db6ce2a18f",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E02%20%E2%88%99%20Walk%20Slowly%20B2_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-346e95fe2df794863886",
+          "title": "S3.E03 ∙ Nevermore",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 2756.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-346e95fe2df794863886",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E03%20%E2%88%99%20Nevermore%20B3_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-4958b08b7c7e589707bd",
+          "title": "S3.E04 ∙ Snow",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 2752.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-4958b08b7c7e589707bd",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E04%20%E2%88%99%20Snow%20B1_t00.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-0568252d4b631b197d96",
+          "title": "S3.E05 ∙ Beggar's Comet",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 2725,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-0568252d4b631b197d96",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E05%20%E2%88%99%20Beggar's%20Comet%20B2_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-9391b30cd9c6da2fd21d",
+          "title": "S3.E06 ∙ A Time to Heal",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 2757.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-9391b30cd9c6da2fd21d",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E06%20%E2%88%99%20A%20Time%20to%20Heal%20B3_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-55ebdc6470694c7c4abe",
+          "title": "S3.E07 ∙ The Chimes at Midnight",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 2640.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-55ebdc6470694c7c4abe",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E07%20%E2%88%99%20The%20Chimes%20at%20Midnight%20B1_t00.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-cbe18c23ca8e7e920c89",
+          "title": "S3.E08 ∙ Invictus",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 2767.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-cbe18c23ca8e7e920c89",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E08%20%E2%88%99%20Invictus%20B2_t01.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-07a4fab7d123efef447c",
+          "title": "S3.E09 ∙ In the Forests of the Night",
+          "season": 3,
+          "number": 9,
+          "durationSeconds": 2797,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-07a4fab7d123efef447c",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E09%20%E2%88%99%20In%20the%20Forests%20of%20the%20Night%20B4_t03.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-c690de8be82e9d380c22",
+          "title": "S3.E10 ∙ The Reckoning",
+          "season": 3,
+          "number": 10,
+          "durationSeconds": 2651.99,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-c690de8be82e9d380c22",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E10%20%E2%88%99%20The%20Reckoning%20B3_t02.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "swamp-beauty-7553f01738fa96e56ebc",
+          "title": "S3.E11 ∙ Legacies",
+          "season": 3,
+          "number": 11,
+          "durationSeconds": 2678.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "swamp-beauty-source-7553f01738fa96e56ebc",
+              "provider": "archive",
+              "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E11%20%E2%88%99%20Legacies%20B4_t03.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E02%20%E2%88%99%20Terrible%20Savior%20B2_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E03%20%E2%88%99%20Siege%20B3_t03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E01%20%E2%88%99%20Once%20Upon%20a%20Time%20in%20the%20City%20of%20New%20York%20B1_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E06%20%E2%88%99%20Beast%20Within%20B2_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E04%20%E2%88%99%20No%20Way%20Down%20B4_t04.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E05%20%E2%88%99%20Masques%20B1_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E09%20%E2%88%99%20Dark%20Spirit%20B1_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E10%20%E2%88%99%20A%20Children's%20Story%20B2_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E07%20%E2%88%99%20Nor%20Iron%20Bars%20a%20Cage%20B3_t03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E13%20%E2%88%99%20China%20Moon%20B1_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E14%20%E2%88%99%20The%20Alchemist%20B2_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E11%20%E2%88%99%20An%20Impossible%20Silence%20B3_t03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E12%20%E2%88%99%20Shades%20of%20Grey%20B4_t04.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E08%20%E2%88%99%20Song%20of%20Orpheus%20B4_t04.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E15%20%E2%88%99%20Temptation%20B3_t03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E16%20%E2%88%99%20Promises%20of%20Someday%20B4_t04.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E19%20%E2%88%99%20Everything%20Is%20Everything%20B3_t03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E18%20%E2%88%99%20Fever%20B2_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E17%20%E2%88%99%20Down%20to%20a%20Sunless%20Sea%20B1_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E20%20%E2%88%99%20To%20Reign%20in%20Hell%20B1_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E21%20%E2%88%99%20Ozymandias%20B2_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S1.E22%20%E2%88%99%20A%20Happy%20Life%20B3_t03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E02%20%E2%88%99%20Remember%20Love%20B2_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E01%20%E2%88%99%20Chamber%20Music%20C1_t00.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E04%20%E2%88%99%20Dead%20of%20Winter%20B4_t03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E03%20%E2%88%99%20Ashes%2C%20Ashes%20B3_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E06%20%E2%88%99%20Sticks%20and%20Stones%20B2_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E05%20%E2%88%99%20God%20Bless%20the%20Child%20B1_t00.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E08%20%E2%88%99%20Labyrinths%20C1_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E07%20%E2%88%99%20A%20Fair%20and%20Perfect%20Knight%20B4_t03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E10%20%E2%88%99%20A%20Gentle%20Rain%20B2_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E09%20%E2%88%99%20Brothers%20B1_t00.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E11%20%E2%88%99%20The%20Outsiders%20B3_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E13%20%E2%88%99%20Arabesque%20B1_t00.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E14%20%E2%88%99%20When%20the%20Blue%20Bird%20Sings%20B2_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E12%20%E2%88%99%20Orphans%20C1_t03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E15%20%E2%88%99%20The%20Watcher%20B3_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E16%20%E2%88%99%20A%20Distant%20Shore%20C1_t03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E17%20%E2%88%99%20Trial%20B1_t00.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E19%20%E2%88%99%20The%20Hollow%20Men%20B3_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E18%20%E2%88%99%20A%20Kingdom%20by%20the%20Sea%20C1_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E20%20%E2%88%99%20What%20Rough%20Beast%20B1_t00.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E21%20%E2%88%99%20Ceremony%20of%20Innocence%20B2_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E02%20%E2%88%99%20Walk%20Slowly%20B2_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E01%20%E2%88%99%20Though%20Lovers%20Be%20Lost...%20B1_t00.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E03%20%E2%88%99%20Nevermore%20B3_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S2.E22%20%E2%88%99%20The%20Rest%20Is%20Silence%20C1_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E04%20%E2%88%99%20Snow%20B1_t00.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E05%20%E2%88%99%20Beggar's%20Comet%20B2_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E06%20%E2%88%99%20A%20Time%20to%20Heal%20B3_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E07%20%E2%88%99%20The%20Chimes%20at%20Midnight%20B1_t00.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E10%20%E2%88%99%20The%20Reckoning%20B3_t02.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E11%20%E2%88%99%20Legacies%20B4_t03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E09%20%E2%88%99%20In%20the%20Forests%20of%20the%20Night%20B4_t03.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://archive.org/download/Beauty-and-the-beast-complete-tv-series-dvdrip/S3.E08%20%E2%88%99%20Invictus%20B2_t01.mp4",
+          "method": "GET bytes=0-1023",
+          "verified": true,
+          "status": 206,
+          "contentType": "video/mp4"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Original 1990 live-action Swamp Thing and original 1987 Beauty and the Beast, not their remakes or films.",
+    "Uploader season/episode numbering is retained. Endpoint checks are not full decoding or continued-availability guarantees."
+  ]
+}

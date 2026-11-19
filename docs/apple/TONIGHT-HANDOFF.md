@@ -10,7 +10,7 @@ The shared frontend is JavaScript, packaged with Capacitor 8.6.2. Porting it all
 
 ## Latest changes to bring over
 
-Pull current `main` before building. The 0.8.13 shared frontend adds short channel-change TV snow, an optional procedural tuning hiss/click and a 240 ms default tuning length. Saved tuning durations remain respected. Visual effects respect static-off, zero strength, reduced motion and forced colors. Sound follows its own channel/dial setting, volume and mute. Source loading/buffering still has its separate bounded tuning overlay. Both clients must use the same transition implementation and avoid artificial playback delays.
+Pull current `main` before building. The 0.8.14 shared frontend includes the 0.8.13 channel-tuning feature and fixes its Guide/Library/buddy playback paths. Episode requests now take precedence over show-channel playback; explicit-series searches cannot offer another series. Knight Rider plot coverage has not been added to the retrieval corpus, so unsupported matches leave playback unchanged. The shared frontend adds short channel-change TV snow, an optional procedural tuning hiss/click and a 240 ms default tuning length. Saved tuning durations remain respected. Visual effects respect static-off, zero strength, reduced motion and forced colors. Sound follows its own channel/dial setting, volume and mute. Source loading/buffering still has its separate bounded tuning overlay. Both clients must use the same transition implementation and avoid artificial playback delays.
 
 Changes since the early native builds also include:
 
@@ -28,7 +28,7 @@ Changes since the early native builds also include:
 
 The remote buddy roster has 54 entries. Recent additions: Punky, Clarissa, Vicki, Maude, Dorothy, Rose, Blanche, Sophia, original Firefly, Junior Wetworth, Brainy Smurf, original Frank Drebin, Les Nessman, Mrs. Roper and original Jonny Quest Bandit. Junior is the orange Snork requested; Allstar was not added. New approved presentation profiles arrive remotely; new native capabilities still require a build.
 
-The current public catalog has 267 shows, 12,380 entries and 12,694 sources. Recent additions include Punky Brewster, Clarissa, Ramona, Snorks, Captain Planet, Road to Avonlea, Pinwheel and the five-series cartoon wave. That wave adds 17 Harlem Globetrotters episodes, 24 New Scooby-Doo Movies, two English Super Globetrotters, 40 uploader-labelled Bananaman shorts and 17 intact original George/Super Chicken/Tom Slick programs. Bananaman guide/upload numbering differs; preserve that documented discrepancy. The original BSG pilot is already a combined Parts 1–3 entry, approximately 2h19m.
+The current public catalog has 269 shows, 12,507 entries and 12,821 sources. Recent additions include 72 original live-action Swamp Thing (1990) entries, 55 Beauty and the Beast (1987) entries, Punky Brewster, Clarissa, Ramona, Snorks, Captain Planet, Road to Avonlea, Pinwheel and the five-series cartoon wave. That wave adds 17 Harlem Globetrotters episodes, 24 New Scooby-Doo Movies, two English Super Globetrotters, 40 uploader-labelled Bananaman shorts and 17 intact original George/Super Chicken/Tom Slick programs. Bananaman guide/upload numbering differs; preserve that documented discrepancy. The original BSG pilot is already a combined Parts 1–3 entry, approximately 2h19m.
 
 ## iOS work tonight
 

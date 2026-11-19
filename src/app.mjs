@@ -508,10 +508,11 @@ function playerError(message, generation) {
 
 function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMode = mode === 'live' ? 'station' : 'show', queuePosition = null, autoPlay = true) {
   if(!ownerMode&&!publicCatalogReady)return;
-  const changingChannel = active && active.showId !== show.id;
   stopPlayer();
   const generation = playerGeneration;
-  if(changingChannel){retroEffects.channelChange();if(!document.hidden)void dialFeedback.play({visual:false});}else retroEffects.pulse();
+  // Guide, library and buddy routes may dispose the previous player before arriving here.
+  // Every new foreground source gets the same tuning feedback, independent of old player state.
+  if(autoPlay){retroEffects.channelChange();if(!document.hidden)void dialFeedback.play({visual:false});}else retroEffects.pulse();
   active = { showId: show.id, episodeId: episode.id, sourceId: source.id, offset, mode, queueMode, queuePosition };
   watchDimensions={channel:show.id===MOVIE_SHOW_ID?'movies':queueMode==='custom-queue'?'custom':queueMode==='station'?(isCustomChannel(catalog)?'custom':catalog.settings.channel):'library',provider:source.provider};watchTracker.begin(watchDimensions);
   $('standby').hidden = true;

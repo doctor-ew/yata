@@ -4131,6 +4131,38 @@
       "tvmazeId": 16748,
       "image": "assets/show-art/super-globetrotters.jpg",
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/55/139787.jpg"
+    },
+    "swamp-thing-1990": {
+      "premiered": "1990-07-27",
+      "ended": "1993-05-01",
+      "genres": [
+        "Drama",
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "title": "Swamp Thing",
+      "year": 1990,
+      "tvmazeId": 15110,
+      "sourceUrl": "https://www.tvmaze.com/shows/15110/swamp-thing",
+      "image": "assets/show-art/swamp-thing-1990.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/51/128436.jpg"
+    },
+    "beauty-beast-1987": {
+      "premiered": "1987-09-25",
+      "ended": "1990-08-04",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Fantasy"
+      ],
+      "type": "Scripted",
+      "title": "Beauty and the Beast",
+      "year": 1987,
+      "tvmazeId": 3746,
+      "sourceUrl": "https://www.tvmaze.com/shows/3746/beauty-and-the-beast",
+      "image": "assets/show-art/beauty-beast-1987.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/495/1237547.jpg"
     }
   }
 }
