@@ -4235,6 +4235,578 @@
       "tvmazeId": 7704,
       "image": "assets/show-art/a-different-world.webp",
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/28/70808.jpg"
+    },
+    "wings": {
+      "title": "Wings (1990)",
+      "premiered": "1990-04-19",
+      "ended": "1997-05-21",
+      "year": 1990,
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1510/wings",
+      "tvmazeId": 1510,
+      "image": "assets/show-art/wings.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/8/21252.jpg"
+    },
+    "major-dad": {
+      "title": "Major Dad (1989)",
+      "premiered": "1989-09-17",
+      "ended": "1993-04-16",
+      "year": 1989,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/2131/major-dad",
+      "tvmazeId": 2131,
+      "image": "assets/show-art/major-dad.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/610/1526170.jpg"
+    },
+    "coach": {
+      "title": "Coach (1989)",
+      "premiered": "1989-03-01",
+      "ended": "1997-05-14",
+      "year": 1989,
+      "genres": [
+        "Comedy",
+        "Sports"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7531/coach",
+      "tvmazeId": 7531,
+      "image": "assets/show-art/coach.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/27/69511.jpg"
+    },
+    "newhart": {
+      "title": "Newhart (1982)",
+      "premiered": "1982-10-25",
+      "ended": "1990-05-21",
+      "year": 1982,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1488/newhart",
+      "tvmazeId": 1488,
+      "image": "assets/show-art/newhart.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/8/21195.jpg"
+    },
+    "married-children": {
+      "title": "Married... with Children (1987)",
+      "premiered": "1987-04-05",
+      "ended": "1997-06-09",
+      "year": 1987,
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/499/married-with-children",
+      "tvmazeId": 499,
+      "image": "assets/show-art/married-children.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/4/10311.jpg"
+    },
+    "twin-peaks": {
+      "title": "Twin Peaks (1990)",
+      "premiered": "1990-04-08",
+      "ended": "2017-09-03",
+      "year": 1990,
+      "genres": [
+        "Crime",
+        "Mystery",
+        "Supernatural"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/156/twin-peaks",
+      "tvmazeId": 156,
+      "image": "assets/show-art/twin-peaks.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/0/2142.jpg"
+    },
+    "baywatch": {
+      "title": "Baywatch (1989)",
+      "premiered": "1989-09-22",
+      "ended": "2001-05-14",
+      "year": 1989,
+      "genres": [
+        "Drama",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1070/baywatch",
+      "tvmazeId": 1070,
+      "image": "assets/show-art/baywatch.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/6/17081.jpg"
+    },
+    "murder-she-wrote": {
+      "title": "Murder, She Wrote (1984)",
+      "premiered": "1984-09-30",
+      "ended": "2003-05-09",
+      "year": 1984,
+      "genres": [
+        "Drama",
+        "Crime",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/2083/murder-she-wrote",
+      "tvmazeId": 2083,
+      "image": "assets/show-art/murder-she-wrote.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/11/28859.jpg"
+    },
+    "murphy-brown": {
+      "title": "Murphy Brown (1988)",
+      "premiered": "1988-11-14",
+      "ended": "2018-12-20",
+      "year": 1988,
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7220/murphy-brown",
+      "tvmazeId": 7220,
+      "image": "assets/show-art/murphy-brown.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/26/67171.jpg"
+    },
+    "hawaii-five-o": {
+      "title": "Hawaii Five-O (1968)",
+      "premiered": "1968-09-20",
+      "ended": "1980-04-05",
+      "year": 1968,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/962/hawaii-five-o",
+      "tvmazeId": 962,
+      "image": "assets/show-art/hawaii-five-o.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/6/16397.jpg"
+    },
+    "tales-crypt": {
+      "title": "Tales from the Crypt (1989)",
+      "premiered": "1989-06-10",
+      "ended": "1996-07-19",
+      "year": 1989,
+      "genres": [
+        "Comedy",
+        "Fantasy",
+        "Horror"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/453/tales-from-the-crypt",
+      "tvmazeId": 453,
+      "image": "assets/show-art/tales-crypt.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/3/9142.jpg"
+    },
+    "night-court": {
+      "title": "Night Court (1984)",
+      "premiered": "1984-01-04",
+      "ended": "1992-05-31",
+      "year": 1984,
+      "genres": [
+        "Comedy",
+        "Legal"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1489/night-court",
+      "tvmazeId": 1489,
+      "image": "assets/show-art/night-court.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/8/21196.jpg"
+    },
+    "matlock": {
+      "title": "Matlock (1986)",
+      "premiered": "1986-03-03",
+      "ended": "1995-05-04",
+      "year": 1986,
+      "genres": [
+        "Drama",
+        "Crime",
+        "Legal"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1748/matlock",
+      "tvmazeId": 1748,
+      "image": "assets/show-art/matlock.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/9/24437.jpg"
+    },
+    "heat-night": {
+      "title": "In the Heat of the Night (1988)",
+      "premiered": "1988-03-06",
+      "ended": "1995-05-16",
+      "year": 1988,
+      "genres": [
+        "Drama",
+        "Crime",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7605/in-the-heat-of-the-night",
+      "tvmazeId": 7605,
+      "image": "assets/show-art/heat-night.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/28/70115.jpg"
+    },
+    "moonlighting": {
+      "title": "Moonlighting (1985)",
+      "premiered": "1985-03-03",
+      "ended": "1989-05-14",
+      "year": 1985,
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Mystery"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1487/moonlighting",
+      "tvmazeId": 1487,
+      "image": "assets/show-art/moonlighting.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/8/21190.jpg"
+    },
+    "young-riders": {
+      "title": "The Young Riders (1989)",
+      "premiered": "1989-09-20",
+      "ended": "1992-07-23",
+      "year": 1989,
+      "genres": [
+        "Western"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/14818/the-young-riders",
+      "tvmazeId": 14818,
+      "image": "assets/show-art/young-riders.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/50/125429.jpg"
+    },
+    "head-class": {
+      "title": "Head of the Class (1986)",
+      "premiered": "1986-09-17",
+      "ended": "1991-06-25",
+      "year": 1986,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/5497/head-of-the-class",
+      "tvmazeId": 5497,
+      "image": "assets/show-art/head-class.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/55931.jpg"
+    },
+    "doogie-howser": {
+      "title": "Doogie Howser, M.D. (1989)",
+      "premiered": "1989-09-19",
+      "ended": "1993-03-24",
+      "year": 1989,
+      "genres": [
+        "Comedy",
+        "Medical"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1095/doogie-howser-md",
+      "tvmazeId": 1095,
+      "image": "assets/show-art/doogie-howser.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/6/17223.jpg"
+    },
+    "la-law": {
+      "title": "L.A. Law (1986)",
+      "premiered": "1986-09-15",
+      "ended": "2002-05-12",
+      "year": 1986,
+      "genres": [
+        "Drama",
+        "Crime",
+        "Legal"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1481/la-law",
+      "tvmazeId": 1481,
+      "image": "assets/show-art/la-law.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/8/21145.jpg"
+    },
+    "tj-hooker": {
+      "title": "T. J. Hooker (1982)",
+      "premiered": "1982-03-13",
+      "ended": "1986-05-28",
+      "year": 1982,
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/4467/t-j-hooker",
+      "tvmazeId": 4467,
+      "image": "assets/show-art/tj-hooker.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/633/1582911.jpg"
+    },
+    "square-pegs": {
+      "title": "Square Pegs (1982)",
+      "premiered": "1982-09-27",
+      "ended": "1983-03-07",
+      "year": 1982,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/12742/square-pegs",
+      "tvmazeId": 12742,
+      "image": "assets/show-art/square-pegs.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/43/109177.jpg"
+    },
+    "my-two-dads": {
+      "title": "My Two Dads (1987)",
+      "premiered": "1987-09-20",
+      "ended": "1990-04-30",
+      "year": 1987,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/4636/my-two-dads",
+      "tvmazeId": 4636,
+      "image": "assets/show-art/my-two-dads.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/21/52545.jpg"
+    },
+    "bosom-buddies": {
+      "title": "Bosom Buddies (1980)",
+      "premiered": "1980-11-27",
+      "ended": "1982-03-25",
+      "year": 1980,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/4645/bosom-buddies",
+      "tvmazeId": 4645,
+      "image": "assets/show-art/bosom-buddies.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/21/52593.jpg"
+    },
+    "jake-fatman": {
+      "title": "Jake and the Fatman (1987)",
+      "premiered": "1987-09-26",
+      "ended": "1992-05-06",
+      "year": 1987,
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/8171/jake-and-the-fatman",
+      "tvmazeId": 8171,
+      "image": "assets/show-art/jake-fatman.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/29/74119.jpg"
+    },
+    "dear-john": {
+      "title": "Dear John... (1988)",
+      "premiered": "1988-10-06",
+      "ended": "1992-07-22",
+      "year": 1988,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/4573/dear-john",
+      "tvmazeId": 4573,
+      "image": "assets/show-art/dear-john.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/52226.jpg"
+    },
+    "21-jump-street": {
+      "title": "21 Jump Street (1987)",
+      "premiered": "1987-04-12",
+      "ended": "1991-04-27",
+      "year": 1987,
+      "genres": [
+        "Drama",
+        "Action",
+        "Adventure"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1052/21-jump-street",
+      "tvmazeId": 1052,
+      "image": "assets/show-art/21-jump-street.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/6/16974.jpg"
+    },
+    "solid-gold": {
+      "title": "Solid Gold (1980)",
+      "premiered": "1980-09-13",
+      "ended": "1988-07-23",
+      "year": 1980,
+      "genres": [
+        "Music"
+      ],
+      "type": "Variety",
+      "sourceUrl": "https://www.tvmaze.com/shows/16339/solid-gold",
+      "tvmazeId": 16339,
+      "image": "assets/show-art/solid-gold.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/54/136118.jpg"
+    },
+    "thats-incredible": {
+      "title": "That's Incredible! (1980)",
+      "premiered": "1980-03-03",
+      "ended": "1984-04-30",
+      "year": 1980,
+      "genres": [],
+      "type": "Reality",
+      "sourceUrl": "https://www.tvmaze.com/shows/83761/thats-incredible",
+      "tvmazeId": 83761,
+      "image": "assets/show-art/thats-incredible.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/561/1404755.jpg"
+    },
+    "mighty-mouse": {
+      "title": "Mighty Mouse the New Adventures (1987)",
+      "premiered": "1987-09-19",
+      "ended": "1988-10-22",
+      "year": 1987,
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/19233/mighty-mouse-the-new-adventures",
+      "tvmazeId": 19233,
+      "image": "assets/show-art/mighty-mouse.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/67/168292.jpg"
+    },
+    "teen-wolf": {
+      "title": "Teen Wolf: The Animated Series (1986)",
+      "premiered": "1986-09-13",
+      "ended": "1987-11-07",
+      "year": 1986,
+      "genres": [
+        "Comedy",
+        "Adventure",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/9700/teen-wolf-the-animated-series",
+      "tvmazeId": 9700,
+      "image": "assets/show-art/teen-wolf.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/33/84270.jpg"
+    },
+    "star-search": {
+      "title": "Star Search (1983)",
+      "premiered": "1983-09-17",
+      "ended": "1983-09-17",
+      "year": 1983,
+      "genres": [],
+      "type": "Reality",
+      "sourceUrl": "https://www.tvmaze.com/shows/88655/star-search",
+      "tvmazeId": 88655,
+      "image": "assets/show-art/star-search.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/601/1504183.jpg"
+    },
+    "rhoda": {
+      "title": "Rhoda (1974)",
+      "premiered": "1974-09-09",
+      "ended": "1978-12-09",
+      "year": 1974,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7483/rhoda",
+      "tvmazeId": 7483,
+      "image": "assets/show-art/rhoda.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/262/655093.jpg"
+    },
+    "ripleys": {
+      "title": "Ripley's Believe It or Not (1982)",
+      "premiered": "1982-10-24",
+      "ended": "1986-02-06",
+      "year": 1982,
+      "genres": [],
+      "type": "Reality",
+      "sourceUrl": "https://www.tvmaze.com/shows/48703/ripleys-believe-it-or-not",
+      "tvmazeId": 48703,
+      "image": "assets/show-art/ripleys.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/261/654401.jpg"
+    },
+    "hulk-wrestling": {
+      "title": "Hulk Hogan's Rock 'N' Wrestling (1985)",
+      "premiered": "1985-09-14",
+      "ended": "1986-10-18",
+      "year": 1985,
+      "genres": [
+        "Sports"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/28076/hulk-hogans-rock-n-wrestling",
+      "tvmazeId": 28076,
+      "image": "assets/show-art/hulk-wrestling.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/111/277607.jpg"
+    },
+    "match-game": {
+      "title": "Match Game (1973)",
+      "premiered": "1973-07-02",
+      "ended": "1979-04-20",
+      "year": 1973,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/50538/match-game",
+      "tvmazeId": 50538,
+      "image": "assets/show-art/match-game.webp",
+      "imageSource": "https://i.ytimg.com/vi/VFxspObaHOw/hqdefault.jpg"
+    },
+    "password-plus": {
+      "title": "Password Plus (1979)",
+      "premiered": "1979-01-08",
+      "ended": "1982-03-26",
+      "year": 1979,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/17542/password-plus",
+      "tvmazeId": 17542,
+      "image": "assets/show-art/password-plus.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/355/888141.jpg"
+    },
+    "hollywood-squares": {
+      "title": "The Hollywood Squares (1966)",
+      "premiered": "1966-10-17",
+      "ended": "1980-06-16",
+      "year": 1966,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/16296/the-hollywood-squares",
+      "tvmazeId": 16296,
+      "image": "assets/show-art/hollywood-squares.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/54/135973.jpg"
+    },
+    "press-your-luck": {
+      "title": "Press Your Luck (1983)",
+      "premiered": "1983-09-19",
+      "ended": "1986-09-26",
+      "year": 1983,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/19549/press-your-luck",
+      "tvmazeId": 19549,
+      "image": "assets/show-art/press-your-luck.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/356/892405.jpg"
+    },
+    "price-right": {
+      "title": "The Price is Right (1972)",
+      "premiered": "1972-09-15",
+      "ended": null,
+      "year": 1972,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/6657/the-price-is-right",
+      "tvmazeId": 6657,
+      "image": "assets/show-art/price-right.webp",
+      "imageSource": "https://archive.org/download/tpir-5145d/__ia_thumb.jpg"
     }
   }
 }

@@ -1,0 +1,675 @@
+{
+  "version": 1,
+  "shows": [
+    {
+      "id": "wings",
+      "title": "Wings (1990)",
+      "channel": "comedy",
+      "year": 1990,
+      "tvmazeId": 1510,
+      "metadataUrl": "https://api.tvmaze.com/shows/1510",
+      "items": [
+        "legacy-20260729201647172",
+        "15-my-brothers-back-and-theres-going-to-be-trouble-20260730003353397"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "major-dad",
+      "title": "Major Dad (1989)",
+      "channel": "comedy",
+      "year": 1989,
+      "tvmazeId": 2131,
+      "metadataUrl": "https://api.tvmaze.com/shows/2131",
+      "items": [
+        "s_20251018"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "coach",
+      "title": "Coach (1989)",
+      "channel": "comedy",
+      "year": 1989,
+      "tvmazeId": 7531,
+      "metadataUrl": "https://api.tvmaze.com/shows/7531",
+      "items": [
+        "coach-season-7"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "newhart",
+      "title": "Newhart (1982)",
+      "channel": "comedy",
+      "year": 1982,
+      "tvmazeId": 1488,
+      "metadataUrl": "https://api.tvmaze.com/shows/1488",
+      "items": [
+        "newhart-s-01",
+        "NewhartSeries2",
+        "NewhartSeries4",
+        "NewhartSeries5"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "married-children",
+      "title": "Married... with Children (1987)",
+      "channel": "comedy",
+      "year": 1987,
+      "tvmazeId": 499,
+      "metadataUrl": "https://api.tvmaze.com/shows/499",
+      "items": [
+        "01x-08-the-poker-game",
+        "married...-with-children-3x-06-her-cups-runneth-over"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "twin-peaks",
+      "title": "Twin Peaks (1990)",
+      "channel": "drama",
+      "year": 1990,
+      "tvmazeId": 156,
+      "metadataUrl": "https://api.tvmaze.com/shows/156",
+      "items": [
+        "twin-peaks-1x-00-pilot"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "baywatch",
+      "title": "Baywatch (1989)",
+      "channel": "action",
+      "year": 1989,
+      "tvmazeId": 1070,
+      "metadataUrl": "https://api.tvmaze.com/shows/1070",
+      "items": [
+        "Baywatch_02181995",
+        "Baywatch_19971206"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "murder-she-wrote",
+      "title": "Murder, She Wrote (1984)",
+      "channel": "drama",
+      "year": 1984,
+      "tvmazeId": 2083,
+      "metadataUrl": "https://api.tvmaze.com/shows/2083",
+      "items": [
+        "murder-she-wrote-s-06",
+        "murder-she-wrote-s-02",
+        "murder-she-wrote.-s-03-e-19.-no-accounting-for-murder-no-accounting-for-murder"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "murphy-brown",
+      "title": "Murphy Brown (1988)",
+      "channel": "comedy",
+      "year": 1988,
+      "tvmazeId": 7220,
+      "metadataUrl": "https://api.tvmaze.com/shows/7220",
+      "items": [
+        "murphy-brown-s06E15-the-thrill-of-the-hunt",
+        "murphy-brown-s01E05-murphy-s-pony",
+        "murphy-brown-s02E06-buddies-schmuddies",
+        "murphy-brown-s03E15-hoarse-play"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "hawaii-five-o",
+      "title": "Hawaii Five-O (1968)",
+      "channel": "seventies",
+      "year": 1968,
+      "tvmazeId": 962,
+      "metadataUrl": "https://api.tvmaze.com/shows/962",
+      "items": [
+        "hawaii-5.0-2x16-bored-she-hung-herself"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "tales-crypt",
+      "title": "Tales from the Crypt (1989)",
+      "channel": "drama",
+      "year": 1989,
+      "tvmazeId": 453,
+      "metadataUrl": "https://api.tvmaze.com/shows/453",
+      "items": [
+        "tales-from-the-crypt-s-01-e-02",
+        "tales-from-the-crypt-s-05-e-03-forever-ambergris"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "night-court",
+      "title": "Night Court (1984)",
+      "channel": "comedy",
+      "year": 1984,
+      "tvmazeId": 1489,
+      "metadataUrl": "https://api.tvmaze.com/shows/1489",
+      "items": [
+        "night-court-9x-22-the-1992-boat-show"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "matlock",
+      "title": "Matlock (1986)",
+      "channel": "drama",
+      "year": 1986,
+      "tvmazeId": 1748,
+      "metadataUrl": "https://api.tvmaze.com/shows/1748",
+      "items": [
+        "matlock-1986-diary-of-a-perfect-murder-tv-movie"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500,
+      "include": "Fullscreen"
+    },
+    {
+      "id": "heat-night",
+      "title": "In the Heat of the Night (1988)",
+      "channel": "drama",
+      "year": 1988,
+      "tvmazeId": 7605,
+      "metadataUrl": "https://api.tvmaze.com/shows/7605",
+      "items": [
+        "in-the-heat-of-the-night-1988-1985-complete-series"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "moonlighting",
+      "title": "Moonlighting (1985)",
+      "channel": "drama",
+      "year": 1985,
+      "tvmazeId": 1487,
+      "metadataUrl": "https://api.tvmaze.com/shows/1487",
+      "items": [
+        "moonlighting-season-1-e-01"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "young-riders",
+      "title": "The Young Riders (1989)",
+      "channel": "action",
+      "year": 1989,
+      "tvmazeId": 14818,
+      "metadataUrl": "https://api.tvmaze.com/shows/14818",
+      "items": [
+        "the-young-riders"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "head-class",
+      "title": "Head of the Class (1986)",
+      "channel": "comedy",
+      "year": 1986,
+      "tvmazeId": 5497,
+      "metadataUrl": "https://api.tvmaze.com/shows/5497",
+      "items": [
+        "head-of-the-class-1.01"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "doogie-howser",
+      "title": "Doogie Howser, M.D. (1989)",
+      "channel": "comedy",
+      "year": 1989,
+      "tvmazeId": 1095,
+      "metadataUrl": "https://api.tvmaze.com/shows/1095",
+      "items": [
+        "doogie-howser-lando18_202604"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "la-law",
+      "title": "L.A. Law (1986)",
+      "channel": "drama",
+      "year": 1986,
+      "tvmazeId": 1481,
+      "metadataUrl": "https://api.tvmaze.com/shows/1481",
+      "items": [
+        "la-law-1986-1994-complete-series"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "tj-hooker",
+      "title": "T. J. Hooker (1982)",
+      "channel": "action",
+      "year": 1982,
+      "tvmazeId": 4467,
+      "metadataUrl": "https://api.tvmaze.com/shows/4467",
+      "items": [],
+      "youtube": [
+        {
+          "id": "8Y5OVnpKwCY",
+          "title": "T.J. Hooker FULL PILOT EPISODE | T.J. Hooker (1982)",
+          "duration": 4454,
+          "channel": "Piece of the Action",
+          "playable_in_embed": true,
+          "is_live": false
+        },
+        {
+          "id": "sFU1JQMgXrk",
+          "title": "Trackdown | T.J. Hooker | FULL EPISODE | S4E13 | ActionCore",
+          "duration": 2889,
+          "channel": "ActionCore",
+          "playable_in_embed": true,
+          "is_live": false
+        },
+        {
+          "id": "rmmDPANyeu4",
+          "title": "Requiem for a Cop | T.J. HOOKER | FULL EPISODE | S2E19 | ActionCore",
+          "duration": 2923,
+          "channel": "ActionCore",
+          "playable_in_embed": true,
+          "is_live": false
+        }
+      ],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "square-pegs",
+      "title": "Square Pegs (1982)",
+      "channel": "comedy",
+      "year": 1982,
+      "tvmazeId": 12742,
+      "metadataUrl": "https://api.tvmaze.com/shows/12742",
+      "items": [
+        "square-pegs-1982-83-sjp"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500,
+      "includePattern": "^(?!00 )\\d{2}.*\\b[eE]\\d{2}\\b"
+    },
+    {
+      "id": "my-two-dads",
+      "title": "My Two Dads (1987)",
+      "channel": "comedy",
+      "year": 1987,
+      "tvmazeId": 4636,
+      "metadataUrl": "https://api.tvmaze.com/shows/4636",
+      "items": [
+        "my-two-dads-season-3-episode-20-kind-of-a-drag",
+        "my-two-dads-season-1-episode-15"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "bosom-buddies",
+      "title": "Bosom Buddies (1980)",
+      "channel": "comedy",
+      "year": 1980,
+      "tvmazeId": 4645,
+      "metadataUrl": "https://api.tvmaze.com/shows/4645",
+      "items": [
+        "bosom-buddies-complete"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "jake-fatman",
+      "title": "Jake and the Fatman (1987)",
+      "channel": "drama",
+      "year": 1987,
+      "tvmazeId": 8171,
+      "metadataUrl": "https://api.tvmaze.com/shows/8171",
+      "items": [
+        "jake.-and.-the.-fatman.-s-01",
+        "jake-and-the-fatman-s02",
+        "jake-and-the-fatman-s03",
+        "jake-and-the-fatman-s04",
+        "jake-and-the-fatman-s05"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "dear-john",
+      "title": "Dear John... (1988)",
+      "channel": "comedy",
+      "year": 1988,
+      "tvmazeId": 4573,
+      "metadataUrl": "https://api.tvmaze.com/shows/4573",
+      "items": [],
+      "youtube": [
+        {
+          "id": "p5G-if3yfBM",
+          "title": "Dear John 1988 S01E11 The Return of Ricky",
+          "duration": 1386,
+          "channel": "Retro Rewind TV",
+          "playable_in_embed": true,
+          "is_live": false
+        },
+        {
+          "id": "yDDcAzh25V0",
+          "title": "Dear John 1988 S01E10 Honest John",
+          "duration": 1389,
+          "channel": "Retro Rewind TV",
+          "playable_in_embed": true,
+          "is_live": false
+        },
+        {
+          "id": "-_w_S5AE8gE",
+          "title": "Dear John 1988 S01E08 Dancing in the Dark",
+          "duration": 1384,
+          "channel": "Retro Rewind TV",
+          "playable_in_embed": true,
+          "is_live": false
+        }
+      ],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "21-jump-street",
+      "title": "21 Jump Street (1987)",
+      "channel": "action",
+      "year": 1987,
+      "tvmazeId": 1052,
+      "metadataUrl": "https://api.tvmaze.com/shows/1052",
+      "items": [
+        "21-jump-street-1x-03-america-what-a-town"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "solid-gold",
+      "title": "Solid Gold (1980)",
+      "channel": "seventies",
+      "year": 1980,
+      "tvmazeId": 16339,
+      "metadataUrl": "https://api.tvmaze.com/shows/16339",
+      "items": [
+        "solidgoldmarch281981convertvideoonline.com",
+        "solidgoldmarch211981convertvideoonline.com",
+        "s-01-e-02-natalie-cole-the-spinners-christopher-cross-s.-o.-s.-band-1980-09-20"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "thats-incredible",
+      "title": "That's Incredible! (1980)",
+      "channel": "seventies",
+      "year": 1980,
+      "tvmazeId": 83761,
+      "metadataUrl": "https://api.tvmaze.com/shows/83761",
+      "items": [
+        "thats-incredible-syndicated-rerun",
+        "thats-incredible-7"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "mighty-mouse",
+      "title": "Mighty Mouse the New Adventures (1987)",
+      "channel": "cartoons",
+      "year": 1987,
+      "tvmazeId": 19233,
+      "metadataUrl": "https://api.tvmaze.com/shows/19233",
+      "items": [
+        "mighty_mouse_the_new_adventures_the_complete_series"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500,
+      "exclude": "Extras/"
+    },
+    {
+      "id": "teen-wolf",
+      "title": "Teen Wolf: The Animated Series (1986)",
+      "channel": "cartoons",
+      "year": 1986,
+      "tvmazeId": 9700,
+      "metadataUrl": "https://api.tvmaze.com/shows/9700",
+      "items": [],
+      "youtube": [
+        {
+          "id": "t6bJbaHOn50",
+          "title": "The Cartoon Adventures of Teen Wolf - S01E01 - \"Teen Wolf's Family Secret\" - 1986",
+          "duration": 1472,
+          "channel": "DNOstalgia",
+          "playable_in_embed": true,
+          "is_live": false
+        }
+      ],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "star-search",
+      "title": "Star Search (1983)",
+      "channel": "seventies",
+      "year": 1983,
+      "tvmazeId": 88655,
+      "metadataUrl": "https://api.tvmaze.com/shows/88655",
+      "items": [],
+      "youtube": [
+        {
+          "id": "lH9iIZtJY7Y",
+          "title": "Star Search March 30, 1991 FULL EPISODE",
+          "duration": 2409,
+          "channel": "Silver Shadows Cinema",
+          "playable_in_embed": true,
+          "is_live": false
+        }
+      ],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "rhoda",
+      "title": "Rhoda (1974)",
+      "channel": "comedy",
+      "year": 1974,
+      "tvmazeId": 7483,
+      "metadataUrl": "https://api.tvmaze.com/shows/7483",
+      "items": [
+        "rhoda-Lando18"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "ripleys",
+      "title": "Ripley's Believe It or Not (1982)",
+      "channel": "seventies",
+      "year": 1982,
+      "tvmazeId": 48703,
+      "metadataUrl": "https://api.tvmaze.com/shows/48703",
+      "items": [],
+      "youtube": [
+        {
+          "id": "gN2jlsk7G2U",
+          "title": "Ripley's Believe It Or Not.S01E11 ABC - December 19, 1982",
+          "duration": 2915,
+          "channel": "judge crater",
+          "playable_in_embed": true,
+          "is_live": false
+        }
+      ],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "hulk-wrestling",
+      "title": "Hulk Hogan's Rock 'N' Wrestling (1985)",
+      "channel": "cartoons",
+      "year": 1985,
+      "tvmazeId": 28076,
+      "metadataUrl": "https://api.tvmaze.com/shows/28076",
+      "items": [
+        "HulkHoganSRockNWrestlingAllTimeChampSpecialAnima"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "match-game",
+      "title": "Match Game (1973)",
+      "channel": "seventies",
+      "year": 1973,
+      "tvmazeId": 50538,
+      "metadataUrl": "https://api.tvmaze.com/shows/50538",
+      "items": [],
+      "youtube": [
+        {
+          "id": "VFxspObaHOw",
+          "title": "The Very First Show! Episode 1 | Match Game 1973 | Gene Rayburn | BUZZR",
+          "duration": 1334,
+          "channel": "BUZZR",
+          "playable_in_embed": true,
+          "is_live": false
+        },
+        {
+          "id": "uMtaruvZBw0",
+          "title": "Fannie Flagg\u2019s Match Game Debut! | Episode 76 | Match Game 1973 | Gene Rayburn | BUZZR",
+          "duration": 1311,
+          "channel": "BUZZR",
+          "playable_in_embed": true,
+          "is_live": false
+        }
+      ],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "password-plus",
+      "title": "Password Plus (1979)",
+      "channel": "seventies",
+      "year": 1979,
+      "tvmazeId": 17542,
+      "metadataUrl": "https://api.tvmaze.com/shows/17542",
+      "items": [
+        "password-plus-81_0656",
+        "password-plus-1-15-80",
+        "password-plus-12-17-81"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "hollywood-squares",
+      "title": "The Hollywood Squares (1966)",
+      "channel": "seventies",
+      "year": 1966,
+      "tvmazeId": 16296,
+      "metadataUrl": "https://api.tvmaze.com/shows/16296",
+      "items": [
+        "the-hollywood-squares-august-12-1966-bert-parks-pilot"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "press-your-luck",
+      "title": "Press Your Luck (1983)",
+      "channel": "seventies",
+      "year": 1983,
+      "tvmazeId": 19549,
+      "metadataUrl": "https://api.tvmaze.com/shows/19549",
+      "items": [
+        "press-your-luck-522-john-diane-christal",
+        "press-your-luck-589-craig-ron-georgia",
+        "press-your-luck-596-ann-betsy-tommy"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "price-right",
+      "title": "The Price is Right (1972)",
+      "channel": "seventies",
+      "year": 1972,
+      "tvmazeId": 6657,
+      "metadataUrl": "https://api.tvmaze.com/shows/6657",
+      "items": [
+        "tpir-5145d",
+        "tpir-5434d-full",
+        "tpir-5621d-hq"
+      ],
+      "youtube": [],
+      "min": 1100,
+      "max": 6500
+    },
+    {
+      "id": "magnum",
+      "title": "Magnum, P.I.",
+      "channel": "action",
+      "year": 1980,
+      "tvmazeId": null,
+      "items": [
+        "magnum-p.-i.-season-4-episode-04-distant-relative-1542040354385"
+      ],
+      "youtube": [],
+      "min": 2300,
+      "max": 6500
+    }
+  ]
+}
