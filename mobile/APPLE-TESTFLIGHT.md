@@ -1,6 +1,14 @@
 # Apple beta delivery
 
-## Status
+## iOS 0.8.21 update — 2026-11-19
+
+Integrated main commit `1b5ffad` with the existing Apple target, URL scheme and Android-derived icon. This update includes the validated remote buddy roster and existing remote catalog reader, cached/bundled fallback, companion search, chat routing and shared UI fixes through 0.8.21. New approved show/profile data can refresh without a new binary; new capabilities still require a release.
+
+All 299 JavaScript tests and the syntax checks passed. Roster tests cover a newly downloaded profile, alias resolution, retained pins and offline cache. The signed iOS 0.8.21 (3) archive and simulator build succeeded; the simulator installed and launched. Physical device playback and a newly published production buddy were not tested. No production catalog or roster was modified for testing. Apple background audio remains unimplemented. tvOS was not updated in this build.
+
+Build/upload evidence: `/private/tmp/yata-ios-0821-build3.log`; tests: `/private/tmp/yata-ios-update-tests.log`; simulator: `/private/tmp/yata-ios-0821-sim.log`. Upload and external review status must be checked separately before announcing tester availability.
+
+## Historical 0.8.10 status
 
 Updated on 2026-11-17 on branch `feature/apple-testflight`. App Store Connect app 6836149390, **Yet Another Television App**, contains iOS and tvOS version 0.8.10 build 1. Both uploads succeeded and both builds show **Ready to Test**. Export-compliance questionnaires are complete. The YATA Internal group contains both builds and one account-holder tester with status **Invited**. Automatic distribution is disabled; future builds must be added explicitly. Both platform builds were subsequently submitted for external beta review and verified Waiting for Review in YATA Public Beta. The public invitation link is https://testflight.apple.com/join/f7ZWnFZx (open to anyone, no custom tester limit). Apple states testers cannot join until the group has an approved build. No public App Store release was submitted.
 
