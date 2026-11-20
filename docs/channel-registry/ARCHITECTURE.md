@@ -57,7 +57,7 @@ node scripts/publish-catalog.mjs --catalog /tmp/registry-candidate.json --publis
   --compatibility-base-revision REVIEWED_V2_HASH
 ```
 
-Use the actual returned revisions; `none` applies only to an absent head. `data/channel-registry.json` is the initial authoring definition, not an independent runtime authority. Future content workflows must start from the current canonical shared catalog and preserve its registry. Do not regenerate the public catalog from the seed.
+Use the actual returned revisions; `none` applies only to an absent head. `data/channel-registry.json` is the initial authoring definition, not an independent runtime authority. Future content workflows must start from the current canonical shared catalog and preserve its registry. Episode-evidence generation and ingestion verification use the canonical v3 revision. Shell deployment rejects all publication heads and immutable catalog paths. Do not regenerate the public catalog from the seed.
 
 ## Infrastructure and analytics
 
