@@ -26,3 +26,5 @@ Anonymous aggregate usage is implemented in 0.7.1. See [ANALYTICS.md](ANALYTICS.
 
 - [Saved Channel 00 episode queue, #6](https://github.com/doctor-ew/yata/issues/6): shipped in 0.8.0, including reorder/remove, saved position and guide actions.
 - [Pause/resume follow-up, #7](https://github.com/doctor-ew/yata/issues/7): identified metadata and page-cache reset paths corrected in 0.8.0; automated WebKit checks pass. The original viewer’s physical iPhone retest remains open.
+
+- [Dedicated vintage Game Shows channel](https://github.com/doctor-ew/yata/issues/46): coordinate compatible feed/client rollout before enabling a new channel identifier.

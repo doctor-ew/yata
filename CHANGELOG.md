@@ -4,6 +4,8 @@ User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub
 
 ## Remote content update — 2026-11-20
 
+- 2026-11-20 remote lineup expansion: added 39 original-era shows and 1,291 checked entries, including Wings, Newhart, the requested comedy/drama/cartoon batch and five vintage game shows. Existing clients refresh the feeds; no new APK is required.
+
 - 2026-11-20 remote content update: added original Kids in the Hall, Mr. Belvedere, 227, Family Matters and A Different World (127 entries), plus Sandra Clark, Steve Urkel and Dwayne Wayne companions. Reload or relaunch; no new APK is required.
 
 - Added original Kids in the Hall, Mr. Belvedere, 227, Family Matters and A Different World to Comedy: 127 checked entries, with partial availability recorded in the catalog update report.
