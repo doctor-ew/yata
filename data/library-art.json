@@ -5167,6 +5167,19 @@
       "sourceUrl": "https://www.youtube.com/watch?v=3ZwVzyHaCG0",
       "image": "assets/show-art/youre-on.webp",
       "imageSource": "https://i.ytimg.com/vi/3ZwVzyHaCG0/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGHIgSSg6MA8=&rs=AOn4CLBja0SEax1xIImSUsNQNnUvvV3CEg"
+    },
+    "fishcenter": {
+      "title": "FishCenter Live",
+      "year": 2014,
+      "genres": [
+        "Comedy",
+        "Talk Show"
+      ],
+      "type": "Talk Show",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-thursday-october-15th-2015",
+      "image": "assets/show-art/fishcenter.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/58/145809.jpg",
+      "imageCreditUrl": "https://www.tvmaze.com/shows/17267/fishcenter"
     }
   }
 }
