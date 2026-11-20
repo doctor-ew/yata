@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp" android:height="90dp"
+    android:viewportWidth="320" android:viewportHeight="180">
+    <path android:fillColor="#28342F" android:pathData="M0,0h320v180h-320z" />
+    <!-- Reuse the existing Android television mark, without external artwork. -->
+    <group android:translateX="12" android:translateY="36">
+        <path android:fillColor="#E5C591" android:pathData="M22,31h64v47h-64z" />
+        <path android:fillColor="#18231E" android:pathData="M28,37h42v34h-42z" />
+        <path android:fillColor="#BE643A" android:pathData="M33,43h32v22h-32z" />
+        <path android:fillColor="#FAEDCD" android:pathData="M43,47l5,8 5,-8h5l-8,13v3h-4v-3l-8,-13z" />
+        <path android:fillColor="#28342F" android:pathData="M76,41h6v6h-6z M76,54h6v6h-6z M28,78h6v5h-6z M74,78h6v5h-6z" />
+        <path android:strokeColor="#E5C591" android:strokeWidth="3" android:pathData="M54,31L40,20 M54,31L67,18" />
+    </group>
+    <!-- YATA lettering as paths so no installed font is needed. -->
+    <path android:fillColor="#FAEDCD" android:pathData="M126,70h8l8,14 8,-14h8l-12,22v18h-8v-18z M164,110l12,-40h10l12,40h-8l-2,-8h-14l-2,8z M176,94h10l-5,-17z M202,70h32v8h-12v32h-8v-32h-12z M240,110l12,-40h10l12,40h-8l-2,-8h-14l-2,8z M252,94h10l-5,-17z" android:fillType="evenOdd" />
+</vector>

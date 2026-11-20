@@ -1,0 +1,25 @@
+// Separate opt-in build: phone assets, package ID, manifest and APK remain separate.
+import {execFileSync} from 'node:child_process';
+import {cp,mkdir,readFile,writeFile,copyFile,rm} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {build} from 'esbuild';
+const root=path.dirname(fileURLToPath(import.meta.url));
+const java=execFileSync('mise',['where','java@temurin-21.0.13+9.0.LTS'],{encoding:'utf8'}).trim();
+const sdk=process.env.ANDROID_HOME||path.join(process.env.HOME,'Library/Android/sdk');
+const env={...process.env,JAVA_HOME:java,ANDROID_HOME:sdk,ANDROID_SDK_ROOT:sdk};
+execFileSync(process.execPath,['build.mjs'],{cwd:root,env,stdio:'inherit'});
+execFileSync(path.join(root,'node_modules/.bin/cap'),['sync','android'],{cwd:root,env,stdio:'inherit'});
+const assets=path.join(root,'android/app/tv-assets');await rm(assets,{recursive:true,force:true});await mkdir(assets,{recursive:true});
+await cp(path.join(root,'android/app/src/main/assets'),assets,{recursive:true,force:true});
+const web=path.join(assets,'public/tv');
+await build({entryPoints:[path.join(root,'tv-entry.mjs')],bundle:true,format:'esm',external:['./native.mjs'],outfile:path.join(web,'tv-navigation.mjs')});
+await copyFile(path.join(root,'tv.css'),path.join(web,'tv.css'));
+const html=path.join(web,'index.html');await writeFile(html,(await readFile(html,'utf8')).replace('src="native.mjs"','src="tv-navigation.mjs"').replace('</head>','<link rel="stylesheet" href="tv.css"></head>'));
+const config=path.join(assets,'capacitor.config.json');const settings=JSON.parse(await readFile(config,'utf8'));settings.appId='com.doctorew.yata.tv';settings.appName='YATA TV';await writeFile(config,JSON.stringify(settings));
+execFileSync(path.join(root,'android/gradlew'),['-p',path.join(root,'android'),'-PyataTv','--project-cache-dir',path.join(root,'android/.gradle-tv'),'assembleDebug'],{cwd:root,env,stdio:'inherit'});
+await mkdir(path.join(root,'artifacts'),{recursive:true});
+const {version}=JSON.parse(await readFile(path.join(root,'package.json'),'utf8'));
+const artifact=path.join(root,`artifacts/YATA-TV-${version}-debug.apk`);
+await copyFile(path.join(root,'android/app/build-tv/outputs/apk/debug/app-debug.apk'),artifact);
+console.log('TV APK: '+artifact);
