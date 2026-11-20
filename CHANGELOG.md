@@ -4,6 +4,8 @@ User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub
 
 ## Unreleased — Apple beta updates
 
+- Uploaded Apple TV 0.8.21 (4) to App Store Connect on 2026-11-20 with Watch startup and automatic channel playback. Apple accepted the upload for processing; TestFlight readiness and tester access are not yet verified. See `docs/apple/TVOS-TESTFLIGHT-0.8.21-4.md`.
+
 - Apple TV opens Watch and autoplays the last available channel, falling back to 01. Native playback rotates verified Archive episodes and advances automatically; Library remains available. Channel 00 and shared wall-clock scheduling remain unimplemented.
 
 - Prepare iOS 0.8.21 with validated remote companion profiles and catalog refresh, preserving cached/bundled fallback and pinned companions. Includes the shared 0.8.11–0.8.21 updates listed below.
