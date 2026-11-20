@@ -6,7 +6,7 @@ Integrated main commit `1b5ffad` with the existing Apple target, URL scheme and 
 
 All 299 JavaScript tests and the syntax checks passed. Roster tests cover a newly downloaded profile, alias resolution, retained pins and offline cache. The signed iOS 0.8.21 (3) archive and simulator build succeeded; the simulator installed and launched. Physical device playback and a newly published production buddy were not tested. No production catalog or roster was modified for testing. Apple background audio remains unimplemented. tvOS was not updated in this build.
 
-Build/upload evidence: `/private/tmp/yata-ios-0821-build3.log`; tests: `/private/tmp/yata-ios-update-tests.log`; simulator: `/private/tmp/yata-ios-0821-sim.log`. Upload and external review status must be checked separately before announcing tester availability.
+Build/upload evidence: `/private/tmp/yata-ios-0821-build3.log`; tests: `/private/tmp/yata-ios-update-tests.log`; simulator: `/private/tmp/yata-ios-0821-sim.log`. Xcode confirmed EXPORT SUCCEEDED and upload success on November 19 at 19:52 Eastern. Apple processing, tester assignment and external review remain separate gates; this upload is not yet a claim of tester availability.
 
 ## Historical 0.8.10 status
 
