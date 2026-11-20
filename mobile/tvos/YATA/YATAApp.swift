@@ -9,6 +9,7 @@ struct YATAApp: App {
 struct LibraryView: View {
     @StateObject private var catalog = CatalogStore()
     @State private var query = ""
+    @State private var tab = "watch"
 
     var filteredShows: [Show] {
         catalog.shows.filter { query.isEmpty || $0.title.localizedCaseInsensitiveContains(query) }
@@ -16,7 +17,9 @@ struct LibraryView: View {
     }
 
     var body: some View {
-        TabView {
+        TabView(selection: $tab) {
+            WatchView(catalog: catalog, active: tab == "watch")
+                .tabItem { Label("Watch", systemImage: "play.tv") }.tag("watch")
             NavigationStack {
                 List {
                     Section {
@@ -38,11 +41,102 @@ struct LibraryView: View {
                     if let show = catalog.shows.first(where: { $0.id == id }) { EpisodesView(show: show) }
                 }
             }
-            .tabItem { Label("Library", systemImage: "tv") }
-            AboutView().tabItem { Label("About", systemImage: "info.circle") }
+            .tabItem { Label("Library", systemImage: "tv") }.tag("library")
+            AboutView().tabItem { Label("About", systemImage: "info.circle") }.tag("about")
         }
         .tint(.orange)
         .task { await catalog.load() }
+    }
+}
+
+struct WatchView: View {
+    @ObservedObject var catalog: CatalogStore
+    let active: Bool
+    @AppStorage("yata.tv.lastChannel") private var lastChannel = "mixed"
+    @State private var selected = "mixed"
+    @State private var playlist: [Episode] = []
+    @State private var index = 0
+    @State private var player = AVPlayer()
+    @State private var started = false
+    @State private var playbackError = false
+
+    var body: some View {
+        VStack(spacing: 16) {
+            HStack {
+                Text("YATA").font(.headline)
+                Picker("Channel", selection: $selected) {
+                    ForEach(TVChannel.all) { channel in
+                        Text("\(channel.number) · \(channel.name)").tag(channel.id)
+                    }
+                }.onChange(of: selected) { _, _ in tune() }
+            }
+            if playlist.isEmpty {
+                ContentUnavailableView("Waiting for a playable channel", systemImage: "tv", description: Text(catalog.status))
+            } else {
+                VideoPlayer(player: player)
+                Text(playlist[index].title).font(.caption)
+                HStack {
+                    Button("Previous channel") { changeChannel(-1) }
+                    Button("Next program") { advance() }
+                    Button("Next channel") { changeChannel(1) }
+                }
+                if playbackError {
+                    Text("This stream could not play. Try the next program.").foregroundStyle(.orange)
+                }
+            }
+        }
+        .padding(32)
+        .onChange(of: catalog.shows.map(\.id)) { _, _ in startIfReady() }
+        .onAppear { startIfReady(); if active { player.play() } }
+        .onChange(of: active) { _, value in
+            if value { startIfReady(); player.play() } else { player.pause() }
+        }
+        .onDisappear { player.pause() }
+        .onReceive(NotificationCenter.default.publisher(for: .AVPlayerItemDidPlayToEndTime)) { notice in
+            guard active, let item = notice.object as? AVPlayerItem, item === player.currentItem else { return }
+            advance()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .AVPlayerItemFailedToPlayToEndTime)) { notice in
+            guard let item = notice.object as? AVPlayerItem, item === player.currentItem else { return }
+            playbackError = true
+        }
+    }
+
+    private func startIfReady() {
+        guard !started, !catalog.shows.isEmpty else { return }
+        selected = TVChannel.startup(last: lastChannel, shows: catalog.shows)
+        started = true
+        tune()
+    }
+
+    private func tune() {
+        playlist = TVChannel.playlist(selected, shows: catalog.shows)
+        index = 0
+        guard !playlist.isEmpty else { player.replaceCurrentItem(with: nil); return }
+        lastChannel = selected
+        playCurrent()
+    }
+
+    private func playCurrent() {
+        guard playlist.indices.contains(index), let url = playlist[index].playableURL else { return }
+        playbackError = false
+        try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback)
+        try? AVAudioSession.sharedInstance().setActive(true)
+        player.replaceCurrentItem(with: AVPlayerItem(url: url))
+        if active { player.play() }
+    }
+
+    private func advance() {
+        guard !playlist.isEmpty else { return }
+        index = (index + 1) % playlist.count
+        playCurrent()
+    }
+
+    private func changeChannel(_ delta: Int) {
+        let available = TVChannel.all.filter { !TVChannel.playlist($0.id, shows: catalog.shows).isEmpty }
+        guard !available.isEmpty else { return }
+        let current = available.firstIndex { $0.id == selected } ?? 0
+        selected = available[(current + delta + available.count) % available.count].id
     }
 }
 

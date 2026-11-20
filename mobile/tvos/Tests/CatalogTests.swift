@@ -25,6 +25,23 @@ struct CatalogTests {
         precondition(Source(provider: "archive", url: valid, availability: "verified").playableURL != nil)
         precondition(Source(provider: "archive", url: valid, availability: "unavailable").playableURL == nil)
         precondition(Source(provider: "youtube", url: valid, availability: "verified").playableURL == nil)
+        let source = Source(provider: "archive", url: valid, availability: "verified")
+        let a = Episode(id: "a", title: "A", sources: [source], kind: "episode")
+        let b = Episode(id: "b", title: "B", sources: [source], kind: "episode")
+        let c = Episode(id: "c", title: "C", sources: [source], kind: "episode")
+        let bumper = Episode(id: "bumper", title: "Break", sources: [source], kind: "bumper")
+        let blocked = Episode(id: "blocked", title: "Unavailable", sources: [], kind: "episode")
+        let shows = [Show(id: "one", title: "One", channel: "action", episodes: [a, b, bumper, blocked]),
+                     Show(id: "two", title: "Two", channel: "comedy", episodes: [c])]
+        precondition(TVChannel.startup(last: "comedy", shows: shows) == "comedy")
+        precondition(TVChannel.startup(last: "custom", shows: shows) == "mixed")
+        precondition(TVChannel.startup(last: "scifi", shows: shows) == "mixed")
+        precondition(TVChannel.playlist("mixed", shows: shows).map(\.id) == ["a", "c", "b"])
+        precondition(TVChannel.playlist("action", shows: shows).map(\.id) == ["a", "b"])
+        precondition(TVChannel.playlist("unknown", shows: shows).isEmpty)
+        precondition(TVChannel.playlist("mixed", shows: []).isEmpty)
+        precondition(!TVChannel.playlist("mixed", shows: catalog.shows).isEmpty)
+        print("PASS: saved channel, missing/empty channel fallback, mixed rotation, provider filtering and empty catalog")
         print("PASS: published snapshot decoding, tamper rejection, manifest path, provider and playback URL boundaries")
     }
 }

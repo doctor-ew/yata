@@ -18,6 +18,7 @@ struct Episode: Decodable, Identifiable {
     let id: String
     let title: String
     let sources: [Source]
+    var kind: String? = nil
 
     var playableURL: URL? { sources.compactMap(\.playableURL).first }
 }
@@ -115,5 +116,41 @@ final class CatalogStore: ObservableObject {
         } catch {
             status = shows.isEmpty ? error.localizedDescription : "Using bundled catalog. Refresh unavailable."
         }
+    }
+}
+
+// Native channel rotation uses verified playable episodes, one show per turn.
+// Shared wall-clock scheduling and the Channel 00 queue remain separate work.
+struct TVChannel: Identifiable {
+    let id: String
+    let number: String
+    let name: String
+
+    static let all = [
+        TVChannel(id: "mixed", number: "01", name: "YATA Channels"),
+        TVChannel(id: "action", number: "02", name: "Action Adventure"),
+        TVChannel(id: "cartoons", number: "04", name: "Saturday Morning"),
+        TVChannel(id: "comedy", number: "05", name: "Comedy"),
+        TVChannel(id: "seventies", number: "06", name: "70s Prime Time"),
+        TVChannel(id: "late-night", number: "07", name: "Late Night Toons"),
+        TVChannel(id: "nick", number: "08", name: "Nickelodeon"),
+        TVChannel(id: "drama", number: "09", name: "Drama"),
+        TVChannel(id: "scifi", number: "10", name: "Sci-Fi")
+    ]
+
+    static func startup(last: String, shows: [Show]) -> String {
+        all.contains(where: { $0.id == last }) && !playlist(last, shows: shows).isEmpty ? last : "mixed"
+    }
+
+    static func playlist(_ channel: String, shows: [Show]) -> [Episode] {
+        guard all.contains(where: { $0.id == channel }) else { return [] }
+        let queues = shows.filter {
+            (channel == "mixed" || $0.channel == channel) && $0.id != "vintage-commercials"
+        }.map { $0.episodes.filter { $0.kind == "episode" && $0.playableURL != nil } }
+        var result: [Episode] = []
+        for index in 0..<(queues.map(\.count).max() ?? 0) {
+            for queue in queues where index < queue.count { result.append(queue[index]) }
+        }
+        return result
     }
 }
