@@ -4163,6 +4163,78 @@
       "sourceUrl": "https://www.tvmaze.com/shows/3746/beauty-and-the-beast",
       "image": "assets/show-art/beauty-beast-1987.jpg",
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/495/1237547.jpg"
+    },
+    "kids-in-the-hall": {
+      "title": "The Kids in the Hall",
+      "premiered": "1988-10-16",
+      "ended": "2022-05-12",
+      "year": 1988,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/5112/the-kids-in-the-hall",
+      "tvmazeId": 5112,
+      "image": "assets/show-art/kids-in-the-hall.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/21/54518.jpg"
+    },
+    "mr-belvedere": {
+      "title": "Mr. Belvedere",
+      "premiered": "1985-03-15",
+      "ended": "1990-07-08",
+      "year": 1985,
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7603/mr-belvedere",
+      "tvmazeId": 7603,
+      "image": "assets/show-art/mr-belvedere.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/28/70108.jpg"
+    },
+    "227": {
+      "title": "227",
+      "premiered": "1985-09-14",
+      "ended": "1990-05-06",
+      "year": 1985,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7602/227",
+      "tvmazeId": 7602,
+      "image": "assets/show-art/227.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/63/158609.jpg"
+    },
+    "family-matters": {
+      "title": "Family Matters",
+      "premiered": "1989-09-22",
+      "ended": "1998-07-17",
+      "year": 1989,
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/1250/family-matters",
+      "tvmazeId": 1250,
+      "image": "assets/show-art/family-matters.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/7/17918.jpg"
+    },
+    "a-different-world": {
+      "title": "A Different World",
+      "premiered": "1987-09-24",
+      "ended": "1993-07-09",
+      "year": 1987,
+      "genres": [
+        "Comedy"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7704/a-different-world",
+      "tvmazeId": 7704,
+      "image": "assets/show-art/a-different-world.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/28/70808.jpg"
     }
   }
 }
