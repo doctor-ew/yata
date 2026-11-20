@@ -40,14 +40,14 @@ test('sound follows media mute and volume while visual feedback remains availabl
   for(const options of[{muted:true},{volume:0},{volume:-1},{volume:NaN},{volume:Infinity}]){const f=fixture(options);assert.equal(await f.controls.play(),false);assert.equal(f.contexts.length,0);assert.equal(f.pulses.length,1);f.controls.dispose();}
   const levels=[];
   for(const volume of[.1,.5,1,4]){const f=fixture({volume});assert.equal(await f.controls.play(),true);const gain=f.contexts[0].nodes.find(node=>node.kind==='gain').gain.value;levels.push(gain);assert.ok(gain>0&&gain<=.12);f.controls.dispose();}
-  assert.deepEqual(levels,[.008,.04,.08,.08]);
+  assert.deepEqual(levels,[.012,.06,.12,.12]);
 });
 
 test('procedural sound is finite, filtered and low amplitude, and graphs disconnect on ended',async()=>{
   const f=fixture();await f.controls.play();const context=f.contexts[0],source=context.nodes.find(node=>node.kind==='source'),buffer=context.buffers[0];
-  assert.equal(buffer.channels,1);assert.ok(buffer.length/buffer.sampleRate<=.113);assert.equal(source.loop,false);
+  assert.equal(buffer.channels,1);assert.ok(buffer.length/buffer.sampleRate<=.241);assert.equal(source.loop,false);
   assert.ok(buffer.data.every(sample=>Number.isFinite(sample)&&Math.abs(sample)<=1));assert.equal(buffer.data[0],0);
-  assert.ok(source.stopped-source.started<=.113);assert.deepEqual(context.nodes.filter(node=>node.kind==='filter').map(node=>node.type),['highpass','lowpass']);
+  assert.ok(source.stopped-source.started<=.241);assert.deepEqual(context.nodes.filter(node=>node.kind==='filter').map(node=>node.type),['highpass','lowpass']);
   source.onended();assert.ok(context.nodes.every(node=>node.disconnected));assert.equal(source.onended,null);f.controls.dispose();
 });
 
@@ -74,4 +74,9 @@ test('suspended contexts resume on a gesture and stale resumes cannot create sou
     if(action==='disable')f.change(false);else if(action==='dispose')f.controls.dispose();else f.stateRef.muted=true;
     f.resume();assert.equal(await pending,false);assert.equal(f.contexts[0].nodes.length,0);f.controls.dispose();
   }
+});
+
+test('channel tuning can play sound without restarting the visual snow, while mute still wins',async()=>{
+ const f=fixture();assert.equal(await f.controls.play({visual:false}),true);assert.equal(f.pulses.length,0);assert.equal(f.contexts.length,1);f.controls.dispose();
+ const muted=fixture({muted:true});assert.equal(await muted.controls.play({visual:false}),false);assert.equal(muted.contexts.length,0);assert.equal(muted.pulses.length,0);muted.controls.dispose();
 });

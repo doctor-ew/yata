@@ -1,3 +1,4 @@
+import{RELEASES}from'./release-notes.mjs';
 import{ARCADE_GAMES,refreshArcadeGames}from'./arcade-games.mjs';
 import{mountEpisodeSearch}from'./episode-search-ui.mjs';
 import{resolveEpisodeSearchResult}from'./episode-search.mjs';
@@ -47,6 +48,7 @@ const sampleWatch=()=>watchTracker.sample(session?.getState?.(),!document.hidden
 
 if(!document.documentElement.classList.contains('native-app'))mountAppearance(document.getElementById('web-room-settings'));
 const $ = id => document.getElementById(id);
+for(const label of document.querySelectorAll('[data-app-version]'))label.textContent='v'+RELEASES[0].version;
 const staticHosting = document.querySelector('meta[name="drew-tv-hosting"]')?.content === 'static';
 const ownerMode = !staticHosting && ['127.0.0.1','localhost','[::1]'].includes(location.hostname);
 document.body.classList.toggle('public-view', !ownerMode);
@@ -283,7 +285,7 @@ function renderChannels() {
       if(arcade){if(arcadeUnlocked)location.assign('/arcade/');return;}
       if(custom&&!customShows(catalog)?.length){$('open-channel-builder').click();return;}
       const next=custom?tuneCustomChannel(copyCatalog()):copyCatalog();if(!custom){next.settings.channel=c.id;next.settings.streamShow=null;next.settings.streamShows=null;next.settings.customQueueActive=false;}
-      if(await commitSettings(next)){selectedShowId=channelShows()[0]?.id||catalog.shows[0].id;stopPlayer();render();retroEffects.pulse();}
+      if(await commitSettings(next)){selectedShowId=channelShows()[0]?.id||catalog.shows[0].id;stopPlayer();render();tuningFeedback();}
     },'channel'+(arcade?' channel-arcade':''));
     if(arcade){node.id='arcade-channel';node.disabled=!arcadeUnlocked;node.title=arcadeUnlocked?'Open the arcade':'Locked · enter the Konami code';}
     else node.setAttribute('aria-pressed',String(custom?isCustomChannel(catalog):c.id===catalog.settings.channel&&!isCustomChannel(catalog)));
@@ -478,6 +480,11 @@ function openSource(showId = selectedShowId, episodeId = null) {
   $('source-dialog').showModal();
 }
 
+function tuningFeedback(){
+ const sound=()=>{if(!document.hidden)void dialFeedback.play({visual:false});};
+ if(!retroEffects.channelChange({onStart:sound}))sound();
+}
+
 let episodeArtPromise;
 const episodeInformation=createEpisodeInformation({root:$('episode-information'),artwork:()=>episodeArtPromise??=fetch(new URL('../data/library-art.json',import.meta.url)).then(r=>r.json()).then(data=>data.shows)});
 let tuningTimer;
@@ -510,7 +517,9 @@ function playEpisode(show, episode, source, offset = 0, mode = 'start', queueMod
   if(!ownerMode&&!publicCatalogReady)return;
   stopPlayer();
   const generation = playerGeneration;
-  retroEffects.pulse();
+  // Guide, library and buddy routes may dispose the previous player before arriving here.
+  // Every new foreground source gets the same tuning feedback, independent of old player state.
+  if(autoPlay)tuningFeedback();else retroEffects.pulse();
   active = { showId: show.id, episodeId: episode.id, sourceId: source.id, offset, mode, queueMode, queuePosition };
   watchDimensions={channel:show.id===MOVIE_SHOW_ID?'movies':queueMode==='custom-queue'?'custom':queueMode==='station'?(isCustomChannel(catalog)?'custom':catalog.settings.channel):'library',provider:source.provider};watchTracker.begin(watchDimensions);
   $('standby').hidden = true;
@@ -1020,13 +1029,12 @@ $('dial-mode').addEventListener('change', () => {
 $('dial-next-show').addEventListener('click', async () => {
   const show = nextDialShow(catalog, currentDialShowId());
   if (!show) { notify('No checked shows are available in this channel yet.'); return; }
-  dialFeedback.play(); selectedShowId = show.id;
+  selectedShowId = show.id;
   if (await configureStream({ streamShow: show.id, rotation: 'random', shuffleSeed: newMix() }, true)) notify(`Tuned to ${show.title}.`);
 });
 $('dial-random').addEventListener('click', async () => {
   const patch = randomDialPatch(catalog, { mode: dialMode, seed: newMix(), currentShowId: currentDialShowId() });
   if (!patch) { notify('No checked shows are available for this mix yet.'); return; }
-  dialFeedback.play();
   if (await configureStream(patch, true)) notify(patch.streamShow ? `Random show: ${catalog.shows.find(show => show.id === patch.streamShow).title}.` : `New random mix: ${selectedChannel().name}.`);
 });
 function renderStreamSettings() {

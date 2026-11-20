@@ -1,5 +1,5 @@
 export const RETRO_EFFECTS_STORAGE_KEY = 'yata.retro-effects.v1';
-const DEFAULTS = { crt: true, static: true, theme: '80s', staticLevel: 12, staticDuration: 180, staticMode: 'tuning' };
+const DEFAULTS = { crt: true, static: true, theme: '80s', staticLevel: 12, staticDuration: 240, staticMode: 'tuning' };
 const THEMES = ['none', '70s', '80s', '90s'];
 const bounded = (value, min, max, fallback) => typeof value === 'number' && Number.isFinite(value) ? Math.min(max, Math.max(min, value)) : fallback;
 
@@ -11,7 +11,9 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
   const forcedColors = view?.matchMedia?.('(forced-colors: active)');
   const startTimer = view?.setTimeout ? view.setTimeout.bind(view) : setTimeout;
   const clearTimer = view?.clearTimeout ? view.clearTimeout.bind(view) : clearTimeout;
-  let preferences = { ...DEFAULTS }, timer = null, animation = null, disposed = false;
+  const requestFrame = view?.requestAnimationFrame?.bind(view) || (fn => startTimer(fn, 0));
+  const cancelFrame = view?.cancelAnimationFrame?.bind(view) || clearTimer;
+  let preferences = { ...DEFAULTS }, timer = null, frame = null, animation = null, disposed = false;
   try {
     const saved = JSON.parse(storage?.getItem(RETRO_EFFECTS_STORAGE_KEY) || 'null');
     if (saved && !Array.isArray(saved) && typeof saved.crt === 'boolean' && typeof saved.static === 'boolean') {
@@ -34,12 +36,16 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
     shell.classList.toggle('retro-static-active', !overlay.hidden);
   }
   function stopPulse() {
+    if (frame !== null) cancelFrame(frame);
+    frame = null;
     if (timer !== null) clearTimer(timer);
     timer = null; animation?.cancel(); animation = null;
+    overlay.classList.toggle('retro-static-channel-change', false);
     reflectNoise();
   }
   function reflect() {
     body.classList.toggle('crt-mode', preferences.crt);
+    body.classList.toggle('static-disabled', !enabled());
     cabinet?.setAttribute('data-theme', preferences.theme);
     screenToggle.checked = preferences.crt; staticToggle.checked = preferences.static;
     if (themeSelect) themeSelect.value = preferences.theme;
@@ -50,6 +56,7 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
     if (durationOutput) durationOutput.textContent = `${preferences.staticDuration} ms`;
     if (previewButton) previewButton.disabled = !enabled();
     overlay.style.setProperty('--static-opacity', String(preferences.staticLevel / 100));
+    overlay.style.setProperty('--static-contrast', String(Math.max(.25,Math.min(2.5,preferences.staticLevel/12))));
     reflectNoise();
   }
   function save() {
@@ -64,26 +71,39 @@ export function mountRetroEffects({ body, shell, screenToggle, staticToggle, sto
   listen(levelInput, 'input', () => update('staticLevel', bounded(Number(levelInput.value), 0, 30, DEFAULTS.staticLevel)));
   listen(durationInput, 'input', () => update('staticDuration', bounded(Number(durationInput.value), 80, 800, DEFAULTS.staticDuration)));
   listen(modeSelect, 'change', () => update('staticMode', modeSelect.value === 'continuous' ? 'continuous' : 'tuning'));
-  function pulse({ force = false } = {}) {
+  function pulse({ force = false, transition = false } = {}) {
     if (disposed || suppressed() || preferences.staticLevel <= 0 || (!force && !preferences.static)) return false;
     stopPulse(); overlay.hidden = false; shell.classList.toggle('retro-static-active', true);
-    // One bounded, low-contrast fade; no sound or full-screen white/black flash.
-    animation = overlay.animate?.([
+    // Independent snow frames cut directly back to the picture; playback is never delayed.
+    overlay.classList.toggle('retro-static-channel-change', transition);
+    animation = overlay.animate?.(transition ? [
+      { opacity: 1, offset: 0 }, { opacity: 1, offset: 1 },
+    ] : [
       { opacity: preferences.staticLevel / 100, backgroundPosition: '0px 0px' },
       { opacity: 0, backgroundPosition: '13px 7px' },
     ], { duration: preferences.staticDuration, iterations: 1, easing: 'ease-out' }) || null;
     timer = startTimer(stopPulse, preferences.staticDuration);
     return true;
   }
-  listen(previewButton, 'click', pulse);
+  function channelChange({onStart} = {}) {
+    if(disposed || !enabled())return false;
+    stopPulse();
+    // Start the visible interval after synchronous guide/layout work has finished.
+    frame = requestFrame(() => {
+      frame = null;
+      if(pulse({transition:true}))try{onStart?.();}catch{/* Feedback must not block playback. */}
+    });
+    return true;
+  }
+  listen(previewButton, 'click', () => channelChange());
   const mediaChanged = () => { stopPulse(); reflect(); };
   const media = [reducedMotion, forcedColors].filter(Boolean);
   for (const query of media) query.addEventListener?.('change', mediaChanged);
   reflect();
-  return { pulse,
+  return { pulse, channelChange,
     dispose() {
       if (disposed) return;
-      disposed = true; stopPulse(); body.classList.toggle('crt-mode', false);
+      disposed = true; stopPulse(); body.classList.toggle('crt-mode', false); body.classList.toggle('static-disabled', false);
       cabinet?.removeAttribute('data-theme');
       for (const [element, event, callback] of listeners) element.removeEventListener(event, callback);
       for (const query of media) query.removeEventListener?.('change', mediaChanged);

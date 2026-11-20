@@ -10,9 +10,9 @@ The response includes the character reply and bounded retrieval metadata. The cl
 
 ## Coverage and limits
 
-The initial corpus contains 86 summaries: 74 Gargoyles and 12 Street Hawk. This is summary search, not transcript, script, exact quotation, current-screen or scene-timestamp search. Summaries may contain whole-episode spoilers. The retrieval service can return candidate matches rather than a proven answer. The client does not accept new playback URLs from model output.
+The active corpus contains 4,192 summaries across 114 series, expanded from the initial 86-summary pilot. See [coverage and acceptance evidence](COVERAGE-EXPANSION.md). This is summary search, not transcript, script, exact quotation, current-screen or scene-timestamp search. Summaries may contain whole-episode spoilers. The retrieval service can return candidate matches rather than a proven answer. The client does not accept new playback URLs from model output.
 
-The interface currently routes explicit episode/story/plot questions of at most 300 characters to retrieval. Existing direct watch, queue, game, character, update and feedback commands retain their own paths. Conversational memory and follow-up pronoun resolution are not supplied by this change.
+The interface currently routes bounded explicit episode/story/plot questions to retrieval. Existing direct watch, queue, game, character, update and feedback commands retain their own paths. Conversational memory and follow-up pronoun resolution are not supplied by this change.
 
 ## Infrastructure and access
 

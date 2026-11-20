@@ -1,0 +1,13 @@
+// The real native iframe protocol with local HTTP/verification stand-ins.
+import assert from'node:assert/strict';import{readFile}from'node:fs/promises';import{fileURLToPath}from'node:url';
+const{chromium}=await import(process.argv[2]||'playwright'),root=fileURLToPath(new URL('..',import.meta.url));
+const browser=await chromium.launch({headless:true,...(process.argv[3]?{executablePath:process.argv[3]}:{})});
+try{
+ const page=await browser.newPage(),apiCalls=[];
+ await page.route('https://localhost/tv/bridge-test',r=>r.fulfill({contentType:'text/html',body:'<!doctype html><body><div id="verification"></div></body>'}));
+ for(const origin of ['https://localhost/tv/','https://doctorew.com/tv/'])await page.route(origin+'**',async r=>{const url=new URL(r.request().url());if(url.pathname.endsWith('/bridge-test'))return r.fulfill({contentType:'text/html',body:'<!doctype html><body><div id="verification"></div></body>'});const name=url.pathname.slice(4);try{const data=await readFile(root+'/'+name);await r.fulfill({contentType:name.endsWith('.mjs')?'text/javascript':name.endsWith('.json')?'application/json':name.endsWith('.html')?'text/html':'image/png',body:data});}catch{await r.abort();}});
+ await page.route('https://challenges.cloudflare.com/**',r=>r.fulfill({contentType:'text/javascript',body:"window.turnstile={render(c,o){window.fixtureCallback=o.callback;return 1},execute(){queueMicrotask(()=>fixtureCallback('fixture-verification'))},remove(){}};"}));
+ await page.route('https://skippyts.doctorew.com/**',r=>{const body=JSON.parse(r.request().postData());apiCalls.push(body);return r.fulfill({json:r.request().url().endsWith('/session')?{sessionToken:'private-fixture-grant',expiresAt:Date.now()/1000+1800}:{route:{version:1,status:'classified',intent:'build-channel',confidence:.99}}});});
+ await page.goto('https://localhost/tv/bridge-test');const result=await page.evaluate(async()=>{window.messages=[];window.addEventListener('message',e=>messages.push(e.data));const{requestEmbeddedBuddy}=await import('/tv/src/buddy-service-client.mjs');return requestEmbeddedBuddy('intent',document.getElementById('verification'),{question:"Let's create a channel with He-Man, Battlestar Galactica, and transformers",personality:'twiki'},new AbortController().signal);});
+ assert.equal(result.intent,'build-channel');assert.equal(apiCalls.at(-1).mode,'intent');assert.equal(apiCalls.at(-1).personality,'twiki');assert.equal(apiCalls.at(-1).sessionToken,'private-fixture-grant');assert.equal(await page.evaluate(()=>JSON.stringify(messages).includes('private-fixture-grant')),false);assert.equal(await page.locator('iframe').count(),0);console.log({nativeIntentBridge:true,verifiedMode:true,grantStayedInVerifiedFrame:true});
+}finally{await browser.close();}

@@ -35,3 +35,17 @@ test('short exact titles require unique provider identity and matching season an
  assert.equal(make({...episode,title:'Street Hawk S01E01 M.I.A. extras'},[{...provider,name:'M.I.A.',runtime:60}]).document,null);
  assert.equal(make({...episode,title:'Street Hawk S01E01 The Adjuster'},[{...provider,name:'The Adjustor',runtime:60}]).document,null);
 });
+
+test('unique full titles can reconcile same-season release ordering without offsets or plot guesses',()=>{
+ const ep={...episode,title:'Street Hawk S01E04 Good Day at White Rock',number:4,durationSeconds:48*60},entry={...provider,name:'Good Day at White Rock',number:3,runtime:60};
+ const result=make(ep,[entry]);assert.ok(result.document);assert.equal(result.document.number,4);assert.equal(result.document.match.providerNumber,3);assert.equal(result.document.match.method,'canonical-title-numbering-variant');
+ for(const entries of [[entry,{...entry,id:22,number:4}],[{...entry,season:2}],[{...entry,runtime:120}],[{...entry,name:'Good Day at White Rock (1)'}]])assert.equal(make(ep,entries).document,null);
+ assert.equal(make({...ep,title:'Street Hawk S01E04 Pilot'},[{...entry,name:'Pilot'}]).reason,'conflicting-numbering');
+});
+
+test('leading title articles normalize generically without resolving ambiguous variants',()=>{
+ const ep={...episode,title:'Street Hawk S01E01 Train of Thought',durationSeconds:48*60};
+ assert.ok(make(ep,[{...provider,name:'A Train of Thought',runtime:60}]).document);
+ assert.deepEqual(canonicalEpisodeTitle('The Train of Thought'),canonicalEpisodeTitle('A Train of Thought'));
+ assert.equal(make(ep,[{...provider,name:'A Train of Thought',runtime:60},{...provider,id:22,name:'The Train of Thought',runtime:60}]).document,null);
+});

@@ -4,7 +4,7 @@ import os
 import re
 import time
 from core import (MODEL, DIMENSIONS, canonical_bytes, digest, validate_corpus, validate_query,
-                  exact_titles, lexical_results, merge_rankings, semantic_candidates, validate_embedding, public_result)
+                  exact_titles, lexical_results, merge_rankings, semantic_candidates, validate_embedding, public_result, MAX_CORPUS_BYTES, RESERVATION, document_reservation, jev_candidates)
 from budget import reserve
 
 
@@ -39,16 +39,16 @@ class Runtime:
         from core import HEX
         if not HEX.fullmatch(revision) or manifest['key'] != f'corpora/{revision}.json':
             raise ValueError('Invalid evidence manifest')
-        data = self.read(manifest['key'], 2000000)
+        data = self.read(manifest['key'], MAX_CORPUS_BYTES)
         if digest(data) != revision:
             raise ValueError('Corpus checksum mismatch')
         return validate_corpus(json.loads(data)), revision
 
-    def allowance(self):
-        reserve(self.db, self.table, int(os.environ['MONTHLY_ALLOWANCE_MICROUSD']), int(os.environ['DAILY_ALLOWANCE_MICROUSD']))
+    def allowance(self, reservation=RESERVATION):
+        reserve(self.db, self.table, int(os.environ['MONTHLY_ALLOWANCE_MICROUSD']), int(os.environ['DAILY_ALLOWANCE_MICROUSD']), reservation=reservation)
 
-    def embed(self, text):
-        self.allowance()
+    def embed(self, text, *, ingestion=False):
+        self.allowance(document_reservation(text) if ingestion else RESERVATION)
         response = self.bedrock.invoke_model(modelId=MODEL, contentType='application/json', accept='application/json',
             body=json.dumps({'inputText': text, 'dimensions': DIMENSIONS, 'normalize': True}))
         try:
@@ -74,19 +74,50 @@ class Runtime:
         self.db.put_item(TableName=self.table, Item={'pk': {'S': 'yata-search:cache:' + key},
             'result': {'S': json.dumps(value)}, 'expiresAt': {'N': str(int(time.time()) + 86400)}})
 
-    def jev(self, query, documents):
+    def jev_key(self):
         if os.environ.get('JEV_ENABLED') != 'true' or not os.environ.get('JEV_SECRET_ARN'):
             raise ValueError('Jev is disabled')
         import boto3
         from botocore.config import Config
+        return boto3.client('secretsmanager', config=Config(retries={'max_attempts': 0}, connect_timeout=3, read_timeout=5)).get_secret_value(SecretId=os.environ['JEV_SECRET_ARN'])['SecretString']
+
+    def jev(self, query, documents):
         from jev import choose, request_body
-        request_body(query, documents)  # Validate the bounded request before reserving paid work.
-        secret = boto3.client('secretsmanager', config=Config(retries={'max_attempts': 0}, connect_timeout=3, read_timeout=5)).get_secret_value(SecretId=os.environ['JEV_SECRET_ARN'])['SecretString']
+        request_body(query, documents)
+        secret=self.jev_key()
         self.allowance()
         return choose(query, documents, secret)
 
+    def classify(self, query):
+        from intent import classify, request_body
+        request_body(query)
+        secret=self.jev_key()
+        self.allowance()
+        return classify(query,secret)
+
+
+def intent_handler(event, *, runtime=None):
+    from intent import validate_event, validate_result
+    try:
+        query=validate_event(event)
+    except (ValueError,TypeError):
+        return {'version':1,'status':'invalid-request','intent':'clarify','confidence':0}
+    try:
+        runtime=runtime or Runtime()
+        key=digest(canonical_bytes(['intent-v1',query.casefold()]))
+        value=runtime.cached(key,embedding=False)
+        if value is None:
+            value=validate_result(runtime.classify(query))
+            try:runtime.cache(key,value)
+            except Exception:pass
+        return validate_result(value)
+    except Exception:
+        return {'version':1,'status':'unavailable','intent':'clarify','confidence':0}
+
 
 def handler(event, context, *, runtime=None):
+    if isinstance(event,dict) and event.get("operation")=="intent":
+        return intent_handler(event,runtime=runtime)
     try:
         query, limit = validate_query(event)
     except (ValueError, TypeError):
@@ -104,16 +135,22 @@ def handler(event, context, *, runtime=None):
             ids = exact
         elif event.get('strategy') == 'jev':
             from jev import MODEL as JEV_MODEL
-            key = digest(canonical_bytes(['jev-choice-v1', JEV_MODEL, revision, query.casefold()]))
+            key = digest(canonical_bytes(['jev-choice-shortlist-v3', JEV_MODEL, revision, query.casefold()]))
             cached = runtime.cached(key, embedding=False)
             kind = 'cached-jev' if cached is not None else 'jev-corpus'
             if cached is None:
-                cached = runtime.jev(query, corpus['documents'])
+                candidates = jev_candidates(corpus['documents'], query)
+                if not candidates:
+                    return {'status': 'ok', 'results': [], 'searchKind': 'no-evidence-match'}
+                cached = runtime.jev(query, candidates)
                 try:
                     runtime.cache(key, cached)
                 except Exception:
                     pass
             ids = [eid for eid in cached.get('ids', []) if eid in docs]
+            if not ids and cached.get('decision') == 'possibilities':
+                ids = [eid for eid in cached.get('possibleIds', []) if eid in docs][:3]
+                kind = 'jev-possibilities'
         else:
             key = digest(canonical_bytes(['candidates-v2', MODEL, DIMENSIONS, revision, query.casefold()]))
             try:

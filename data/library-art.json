@@ -3993,6 +3993,176 @@
       "tvmazeId": 54357,
       "image": "assets/show-art/ramona.webp",
       "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/301/753436.jpg"
+    },
+    "snorks": {
+      "title": "Snorks",
+      "premiered": "1984-09-15",
+      "ended": "1989-01-14",
+      "year": 1984,
+      "genres": [
+        "Comedy",
+        "Adventure",
+        "Children"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/12422/snorks",
+      "tvmazeId": 12422,
+      "image": "assets/show-art/snorks.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/42/106167.jpg"
+    },
+    "captain-planet": {
+      "title": "Captain Planet and the Planeteers",
+      "premiered": "1990-09-15",
+      "ended": "1996-02-24",
+      "year": 1990,
+      "genres": [
+        "Adventure",
+        "Children",
+        "Fantasy"
+      ],
+      "type": "Animation",
+      "sourceUrl": "https://www.tvmaze.com/shows/4416/captain-planet-and-the-planeteers",
+      "tvmazeId": 4416,
+      "image": "assets/show-art/captain-planet.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/51753.jpg"
+    },
+    "road-to-avonlea": {
+      "title": "Road to Avonlea",
+      "premiered": "1990-01-07",
+      "ended": "1996-03-31",
+      "year": 1990,
+      "genres": [
+        "Drama",
+        "Family",
+        "History"
+      ],
+      "type": "Scripted",
+      "sourceUrl": "https://www.tvmaze.com/shows/7876/road-to-avonlea",
+      "tvmazeId": 7876,
+      "image": "assets/show-art/road-to-avonlea.webp",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/28/72162.jpg"
+    },
+    "pinwheel": {
+      "title": "Pinwheel",
+      "year": null,
+      "genres": [
+        "Children",
+        "Family"
+      ],
+      "sourceUrl": "https://archive.org/details/nickelodeon-pinwheel-1987-1-hr-20m_202408",
+      "image": "assets/show-art/pinwheel.webp",
+      "imageSource": "https://archive.org/download/nickelodeon-pinwheel-1987-1-hr-20m_202408/__ia_thumb.jpg",
+      "type": "Variety"
+    },
+    "harlem-globetrotters": {
+      "title": "Harlem Globe Trotters",
+      "premiered": "1970-09-12",
+      "ended": "1971-10-16",
+      "genres": [
+        "Adventure",
+        "Children",
+        "Sports"
+      ],
+      "type": "Animation",
+      "year": 1970,
+      "sourceUrl": "https://www.tvmaze.com/shows/4048/harlem-globe-trotters",
+      "tvmazeId": 4048,
+      "image": "assets/show-art/harlem-globetrotters.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/50665.jpg"
+    },
+    "new-scooby-doo-movies": {
+      "title": "The New Scooby-Doo Movies",
+      "premiered": "1972-09-09",
+      "ended": "1973-10-27",
+      "genres": [
+        "Comedy",
+        "Children",
+        "Mystery"
+      ],
+      "type": "Animation",
+      "year": 1972,
+      "sourceUrl": "https://www.tvmaze.com/shows/4286/the-new-scooby-doo-movies",
+      "tvmazeId": 4286,
+      "image": "assets/show-art/new-scooby-doo-movies.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/20/51150.jpg"
+    },
+    "bananaman": {
+      "title": "Bananaman",
+      "premiered": "1983-10-03",
+      "ended": "1986-04-15",
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "year": 1983,
+      "sourceUrl": "https://www.tvmaze.com/shows/5677/bananaman",
+      "tvmazeId": 5677,
+      "image": "assets/show-art/bananaman.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/56896.jpg"
+    },
+    "george-jungle-1967": {
+      "title": "George of the Jungle",
+      "premiered": "1967-09-09",
+      "ended": "1967-12-30",
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "type": "Animation",
+      "year": 1967,
+      "sourceUrl": "https://www.tvmaze.com/shows/5659/george-of-the-jungle",
+      "tvmazeId": 5659,
+      "image": "assets/show-art/george-jungle-1967.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/22/56873.jpg"
+    },
+    "super-globetrotters": {
+      "title": "The Super Globetrotters",
+      "premiered": "1979-09-22",
+      "ended": "1979-12-15",
+      "genres": [
+        "Comedy",
+        "Children",
+        "Sports"
+      ],
+      "type": "Animation",
+      "year": 1979,
+      "sourceUrl": "https://www.tvmaze.com/shows/16748/the-super-globetrotters",
+      "tvmazeId": 16748,
+      "image": "assets/show-art/super-globetrotters.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/55/139787.jpg"
+    },
+    "swamp-thing-1990": {
+      "premiered": "1990-07-27",
+      "ended": "1993-05-01",
+      "genres": [
+        "Drama",
+        "Action",
+        "Science-Fiction"
+      ],
+      "type": "Scripted",
+      "title": "Swamp Thing",
+      "year": 1990,
+      "tvmazeId": 15110,
+      "sourceUrl": "https://www.tvmaze.com/shows/15110/swamp-thing",
+      "image": "assets/show-art/swamp-thing-1990.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/51/128436.jpg"
+    },
+    "beauty-beast-1987": {
+      "premiered": "1987-09-25",
+      "ended": "1990-08-04",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Fantasy"
+      ],
+      "type": "Scripted",
+      "title": "Beauty and the Beast",
+      "year": 1987,
+      "tvmazeId": 3746,
+      "sourceUrl": "https://www.tvmaze.com/shows/3746/beauty-and-the-beast",
+      "image": "assets/show-art/beauty-beast-1987.jpg",
+      "imageSource": "https://static.tvmaze.com/uploads/images/original_untouched/495/1237547.jpg"
     }
   }
 }

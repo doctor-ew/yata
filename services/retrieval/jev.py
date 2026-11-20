@@ -40,14 +40,18 @@ def select(raw, documents):
     ordered = sorted(scores.values(), reverse=True)
     margin = ordered[0] - ordered[1] if len(ordered) > 1 else ordered[0] if ordered else 0
     accepted = choice in allowed and exists >= .85 and confidence >= .8 and scores.get(choice, 0) >= .85 and margin >= .5
-    return {'ids': [choice] if accepted else [], 'supported': exists, 'confidence': confidence,
-            'model': str(raw.get('model', ''))[:100], 'decision': 'selected' if accepted else 'abstain'}
+    # A supported split distribution can offer choices without claiming an exact match.
+    possible = [eid for eid, score in sorted(scores.items(), key=lambda item: -item[1])
+                if eid in allowed and score >= .15][:3] if not accepted and exists >= .85 and confidence >= .5 else []
+    if len(possible) < 2:
+        possible = []
+    return {'ids': [choice] if accepted else [], 'possibleIds': possible, 'supported': exists, 'confidence': confidence,
+            'model': str(raw.get('model', ''))[:100], 'decision': 'selected' if accepted else 'possibilities' if possible else 'abstain'}
 
 
-def choose(query, documents, api_key, *, opener=None):
+def invoke(body, api_key, *, opener=None):
     if not isinstance(api_key, str) or not 1 <= len(api_key) <= 2048 or '\n' in api_key or '\r' in api_key:
         raise ValueError('Jev credential unavailable')
-    body = request_body(query, documents)
     encoded = json.dumps(body, ensure_ascii=False).encode()
     if len(encoded) > 50000:
         raise ValueError('Jev request exceeds pilot token envelope')
@@ -59,4 +63,8 @@ def choose(query, documents, api_key, *, opener=None):
         data = response.read(1000001)
         if len(data) > 1000000:
             raise ValueError('Jev response too large')
-    return select(json.loads(data), documents)
+    return json.loads(data)
+
+
+def choose(query, documents, api_key, *, opener=None):
+    return select(invoke(request_body(query, documents), api_key, opener=opener), documents)

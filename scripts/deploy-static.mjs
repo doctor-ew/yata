@@ -21,7 +21,7 @@ const uploadOrder = name => name === 'index.html' ? 2 : name === 'src/app.mjs' ?
 for (const file of manifest.files.sort((a, b) => uploadOrder(a.name) - uploadOrder(b.name))) {
  const key = config.base.slice(1) + file.name;
  const result = await aws(['s3api', 'put-object', '--bucket', config.bucket, '--key', key, '--body', path.join(output, file.name),
-  '--content-type', file.contentType, '--cache-control', file.name === 'index.html' ? 'no-cache, max-age=0' : 'public, max-age=300', '--metadata', `sha256=${file.sha256}`]);
+  '--content-type', file.contentType, '--cache-control', /\.(?:mjs|css|html)$/.test(file.name) ? 'no-cache, max-age=0, must-revalidate' : 'public, max-age=300', '--metadata', `sha256=${file.sha256}`]);
  uploads.push({ key, etag: result.ETag, versionId: result.VersionId });
  console.log(`Uploaded ${key}`);
 }

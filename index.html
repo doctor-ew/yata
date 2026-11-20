@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <link rel="preload" as="image" href="assets/decor/channel-snow.gif">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -22,6 +23,7 @@
 <body>
   <header class="masthead">
     <a class="brand" href="#watch" aria-label="YATA home"><span class="brand-icon" aria-hidden="true">y.</span><span>YA<span class="brand-tv">TA</span><small>YET ANOTHER TV APP</small></span></a>
+    <span class="app-version" data-app-version aria-label="YATA interface version"></span>
     <nav aria-label="Main navigation"><a href="#watch">Watch</a><a href="#guide">Guide</a><a href="#library">The library</a><button id="manage-sources" class="nav-button">Manage sources <span aria-hidden="true">↗</span></button></nav>
     <span class="header-note">PERSONAL TELEVISION<br><span id="clock">LOCAL TIME</span></span>
   </header>
@@ -115,7 +117,7 @@
     <section class="collection-tools" aria-labelledby="collection-heading"><div><h2 id="collection-heading">Catalog tools.</h2><p>Edit locally. Review and publish to update the shared catalog.</p></div><div class="tool-actions"><button id="seed-all" class="button primary">Fill all shows</button><button id="bulk-open" class="button small">Seed playlists +</button><button id="export-catalog" class="button small">Export catalog ↓</button><label class="button small import-button" for="import-catalog">Import catalog ↑<input id="import-catalog" type="file" accept="application/json,.json"></label></div></section>
   </main>
 
-  <footer><a class="footer-brand" href="#watch">YATA</a><div class="creator-credit"><span>Created by <strong>Drew Schillinger</strong></span><nav aria-label="Creator links"><a href="https://github.com/doctor-ew" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://cto2go.co" target="_blank" rel="noopener noreferrer">CTO2GO ↗</a><a href="https://doctorew.com" target="_blank" rel="noopener noreferrer">doctorew.com ↗</a></nav><small>Based on Floating Browser by Chris Hansen.</small><small>Retro-TV inspiration: <a href="https://www.myretrotvs.com/" target="_blank" rel="noopener noreferrer">MyRetroTVs by Joey Cato</a> · <a href="https://github.com/Nikolay1243/retro-tv-webos" target="_blank" rel="noopener noreferrer">Nikolay1243’s launcher</a>.</small><a href="https://github.com/doctor-ew/yata/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">What’s new ↗</a><a href="ATTRIBUTION.md" target="_blank" rel="noopener noreferrer">Credits &amp; attribution ↗</a></div><a href="README.md" target="_blank" rel="noopener">About &amp; source guide ↗</a></footer>
+  <footer><a class="footer-brand" href="#watch">YATA</a><span class="app-version" data-app-version></span><div class="creator-credit"><span>Created by <strong>Drew Schillinger</strong></span><nav aria-label="Creator links"><a href="https://github.com/doctor-ew" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://cto2go.co" target="_blank" rel="noopener noreferrer">CTO2GO ↗</a><a href="https://doctorew.com" target="_blank" rel="noopener noreferrer">doctorew.com ↗</a></nav><small>Based on Floating Browser by Chris Hansen.</small><small>Retro-TV inspiration: <a href="https://www.myretrotvs.com/" target="_blank" rel="noopener noreferrer">MyRetroTVs by Joey Cato</a> · <a href="https://github.com/Nikolay1243/retro-tv-webos" target="_blank" rel="noopener noreferrer">Nikolay1243’s launcher</a>.</small><a href="https://github.com/doctor-ew/yata/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">What’s new ↗</a><a href="ATTRIBUTION.md" target="_blank" rel="noopener noreferrer">Credits &amp; attribution ↗</a></div><a href="README.md" target="_blank" rel="noopener">About &amp; source guide ↗</a></footer>
   <dialog id="channel-builder" class="settings-overlay" aria-labelledby="channel-builder-title">
     <div class="dialog-top"><div><p class="eyebrow">YATA / PROGRAMMING DEPARTMENT</p><h2 id="channel-builder-title">You want what on television?</h2></div><button id="close-channel-builder" type="button" class="icon-button" aria-label="Close channel builder">×</button></div>
     <div class="channel-host"><img id="channel-host-image" width="80" height="96" alt="" hidden><div><p id="channel-host-name"></p><a id="channel-host-credit" target="_blank" rel="noopener noreferrer" hidden></a></div><button id="change-channel-host" type="button" class="button small">Different host</button></div>
@@ -138,14 +140,14 @@
           <details class="static-options"><summary>Adjust static</summary><div class="static-settings">
             <label>When<select id="static-mode"><option value="tuning">When tuning</option><option value="continuous">Continuous grain</option></select></label>
             <label class="static-range">Strength <output id="static-level-value" for="static-level">12%</output><input id="static-level" type="range" min="0" max="30" step="1" value="12"></label>
-            <label class="static-range">Tuning length <output id="static-duration-value" for="static-duration">180 ms</output><input id="static-duration" type="range" min="80" max="800" step="20" value="180"></label>
+            <label class="static-range">Tuning length <output id="static-duration-value" for="static-duration">240 ms</output><input id="static-duration" type="range" min="80" max="800" step="20" value="240"></label>
             <button id="static-preview" class="button small" type="button">Preview static</button>
           </div></details>
         </div>
         <label>Commercials per break<select id="commercial-count"><option value="1">1 commercial</option><option value="2">2 commercials</option><option value="3">3 commercials</option><option value="random" selected>Random · 1–3 commercials</option></select></label>
         <label>Playback position<select id="seek-visibility"><option value="auto">On hover or click</option><option value="always">Always visible</option><option value="off">Off</option></select></label>
         <label>Random dial<select id="dial-mode"><option value="channel">This channel · random mix</option><option value="show">One random show</option><option value="all">Everything · random mix</option></select></label>
-        <label class="bumper-setting"><input id="dial-feedback" type="checkbox" checked> Dial click &amp; static burst</label>
+        <label class="bumper-setting"><input id="dial-feedback" type="checkbox" checked> Channel / dial click &amp; static burst</label>
         <p id="commercial-description">Breaks follow complete stories. Choose a fixed count or a random 1–3. Always skippable.</p>
         <p id="stream-description">Random episodes from random shows. Multipart stories stay together.</p>
       </section>

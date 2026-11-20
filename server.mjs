@@ -8,7 +8,7 @@ import path from 'node:path';
 
 const root = fileURLToPath(new URL('.', import.meta.url));
 const port = Number(process.env.PORT || 4173);
-const types = { '.webp':'image/webp', '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.md': 'text/plain; charset=utf-8' };
+const types = { '.gif':'image/gif', '.webp':'image/webp', '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.md': 'text/plain; charset=utf-8' };
 const publisher = createOwnerPublicationHandler({ getOrigin: () => `http://127.0.0.1:${server.address()?.port || port}` });
 const server = http.createServer(async (req, res) => {
   if (await handleArcade(req, res)) return;

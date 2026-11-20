@@ -1,0 +1,2 @@
+// Collector-accepted dimensions; keep in sync with services/analytics/handler.py.
+export const ANALYTICS_HOSTS=["arnold", "benson", "c3po", "captainkangaroo", "docbrown", "donkeykong", "fonz", "frogger", "gadget", "gonzo", "horshack", "jabberjaw", "jem", "kermit", "kitt", "kojak", "mario", "mastershake", "mrmagoo", "mrsgarrett", "mrt", "mspiggy", "murdock", "none", "orko", "pacman", "penny", "qbert", "revjim", "robin", "scooter", "shera", "skeletor", "sonic", "starbuck", "statlerwaldorf", "strawberry", "stubing", "twiki", "velma"];

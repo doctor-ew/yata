@@ -1,13 +1,90 @@
 # YATA changelog
 
-User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
+User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; Apple TestFlight betas are distributed separately. Media availability can change.
 
 ## Unreleased — Apple beta updates
+
+- Prepare iOS 0.8.21 with validated remote companion profiles and catalog refresh, preserving cached/bundled fallback and pinned companions. Includes the shared 0.8.11–0.8.21 updates listed below.
 
 - Reuse the Android retro-TV launcher artwork for iOS and Apple TV icons, replacing the iOS template icon and tvOS text artwork.
 
 - Added a native Apple TV library, show search and Archive video player with a verified bundled catalog and public catalog refresh. YouTube, buddy chat, Arcade and scheduled channel playback are not implemented in this target.
 - Prepared iOS custom-link handling and a repeatable Apple archive/upload command. Build 0.8.10 (1) is available for internal TestFlight testing and submitted for external beta review; device validation remains incomplete.
+
+## 0.8.21 — 2026-11-19
+
+- A bounded Jev intent router handles natural requests that do not match direct commands. Uncertain requests ask for clarification; catalog checks still control every action.
+- Added a visible interface version, alphabetically sorted searchable companion selection, and Krystal from Squidbillies plus original Boss Hogg.
+- Video now uses an inset rectangular viewport with contain sizing to keep the picture clear of the cabinet edges.
+
+## 0.8.20 — 2026-11-19
+
+- Explicit make/create/build-channel requests now call the guarded planner inside buddy chat. After the buddy asks what to include, the next reply builds the channel instead of becoming ordinary conversation.
+- Fixed the backend show-count ceiling rejecting the current catalog. Existing request-byte, verification and usage limits remain unchanged.
+
+## 0.8.19 — 2026-11-19
+
+- The saved Static switch now disables both channel-change and loading snow. Zero strength and accessibility preferences suppress both; sound remains separately configurable.
+
+## 0.8.18 — 2026-11-19
+
+- Loading and channel changes now share the same original animated TV snow; removed the remaining SVG loading texture.
+
+## 0.8.17 — 2026-11-19
+
+- Replaced the repeating SVG tuning texture with original animated monochrome snow frames and a direct cut back to the picture. Removed the fade-out.
+
+## 0.8.16 — 2026-11-19
+
+- Channel transitions now use higher-contrast monochrome TV snow, with timing and sound starting on a render frame after synchronous UI work. The hiss is longer and more distinct; mute, volume and accessibility settings remain respected.
+- Enter now sends a buddy message; Shift+Enter inserts a line break. Talk remains available, and IME composition does not accidentally submit.
+- Removed the show-specific motorcycle shortcut. Descriptions use the verified AI planner with the current catalog; episode alternatives are explicitly labelled and require selection.
+
+## 0.8.15 — 2026-11-19
+
+- Removed the show-specific motorcycle comparison shortcut. Descriptive watch requests now use the verified AI planner and current playable catalog; literal show-title requests keep the instant path.
+- When a named-series episode search finds only other-series candidates, the buddy labels them as possible alternatives and waits for a selection. It does not claim they are the requested episode or silently change playback.
+
+## 0.8.14 — 2026-11-19
+
+- Fixed tuning snow and optional sound being skipped by Guide, Library or buddy playback after the previous player was cleared.
+- Specific episode requests now precede show-channel commands. Named Knight Rider episode plots cannot silently become Street Hawk; unsupported matches leave playback unchanged.
+- Added 72 checked original live-action Swamp Thing (1990) entries to Sci-Fi and 55 Beauty and the Beast (1987) entries to Drama, with original artwork.
+
+## 0.8.13 — 2026-11-18
+
+- Channel changes now show a brief burst of animated grey TV snow, then clear to the next picture without delaying playback. Optional channel tuning hiss and click follow the existing sound setting, player volume and mute.
+- The effect respects static-off, zero strength, reduced-motion and forced-color preferences. Tuning duration remains configurable; the new default is 240 ms.
+
+## Catalog update — 2026-11-18
+
+- Added Harlem Globetrotters (1970), The New Scooby-Doo Movies (1972), The Super Globetrotters (1979), Bananaman (1983) and original George of the Jungle (1967), with original-series artwork.
+- Added 100 checked entries: 17 Harlem episodes, 24 Scooby guest-star episodes, two English Super Globetrotters episodes, 40 uploader-labelled Bananaman shorts and 17 intact George/Super Chicken/Tom Slick programs.
+- Available through the shared catalog on web and Android 0.8.10 or later; no APK update.
+
+## Buddy roster update — 2026-11-18
+
+- Added Mrs. Roper and original Jonny Quest’s Bandit as selectable remote companions, with credited vintage portraits and three hover lines each. No APK update required.
+
+- Added original WKRP in Cincinnati companion Les Nessman, with credited portrait, selectable aliases and three rotating hover lines. Available through the remote roster without another APK.
+- Added Junior Wetworth from Snorks, Brainy Smurf and original Police Squad-era Frank Drebin, with credited original-era images and distinct greetings and hover lines.
+- Available through the remote roster on web and Android 0.8.12 without another APK. Ask the companion to turn into Wetworth, Brainy or Detective Drebin.
+
+## 0.8.12 — 2026-11-18
+
+- Companion rosters, portraits, aliases, greetings and hover lines now refresh from a validated public feed, with cached and bundled offline fallback.
+- Pinned buddies survive roster refreshes. TV and Arcade selections, channel hosts and the native chat bridge use the same refreshed roster.
+- Future approved characters can be published without an APK update. New capabilities still require application changes; character voices and permissions remain controlled by the backend.
+
+## Catalog update — 2026-11-18
+
+- Added Pinwheel to Nickelodeon with four surviving broadcast recordings labelled as full episodes by the uploader. Original episode numbers are unknown; short clips and partial tapes were excluded. Available through catalog refresh on apps from 0.8.10, with no APK update required.
+
+## 0.8.11 — 2026-11-18
+
+- Added Snorks (1984): 76 checked standalone shorts on Saturday Morning.
+- Added Captain Planet and the Planeteers (1990): 113 checked episodes on Saturday Morning, including its New Adventures continuation.
+- Added Road to Avonlea (1990) to Drama with three checked season-five episodes and original-series artwork. The original Smurfs remains available with 432 checked entries.
 
 ## 0.8.10 — 2026-11-18
 
