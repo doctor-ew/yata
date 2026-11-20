@@ -40,6 +40,12 @@ Stage 1: launcher declarations and artwork; compile Android resources and build 
 
 Current evidence (2026-11-19): AAPT2 35.0.0 compiled the banner successfully; git diff --check passed. Full android-build.mjs attempt failed before packaging because its JDK 21 was absent. SDK inspection also found only platforms 34 and 35, not required platform 36; the expected cmdline-tools directory is absent. No APK, emulator run or physical onn test is claimed. Restore the required local toolchain before package validation. Do not lower project SDK levels to conceal the environment gap.
 
+### Toolchain recovery and package validation
+
+On 2026-11-19, installed the build script's exact Temurin 21.0.13+9 LTS with mise. Restored Google's macOS ARM64 command-line tools (archive SHA-1 checked against Google's repository metadata), platform android-36 and Build Tools 36.0.0 in the existing user SDK. Android Studio was not reinstalled and the global Java default was not changed.
+
+Retried `mobile/android-build.mjs`: BUILD SUCCESSFUL, 183 tasks executed. Produced local ignored artifact `mobile/artifacts/YATA-0.8.21-android-debug.apk`. This resolves the earlier toolchain blocker; it does not establish remote navigation or physical-device compatibility. No APK was published or installed on a device.
+
 ## References
 
 - [Android TV setup, launcher, optional features and banner](https://developer.android.com/training/tv/get-started/create)
