@@ -23,4 +23,4 @@ Channel 00 queues and shared wall-clock scheduling remain unimplemented. The cur
 
 Check processing and existing tester groups in App Store Connect. Browser host was unavailable; native Google Chrome access was denied by Computer Use. Tester access was not changed and no beta-review submission was made.
 
-Remote Pensieve handoff remains pending after personal authentication failed with HTTP 401 and MCP pool discovery was unavailable. Retry with the summary above and this report as the citation. No remote receipt is claimed.
+Remote Pensieve handoff completed through the signed-in browser at https://pensieve.doctorew.com in the YATA private pool. Saved "YATA Apple TV TestFlight handoff — 2026-11-20", then queued indexing and searched "YATA Apple TV TestFlight handoff 0.8.21 build4 e0a3d15". The new handoff returned as the first search result. This verifies remote persistence and retrieval. The separate CLI/MCP personal credential was not repaired. The implementation/upload commits are still local on fix/tvos-autoplay-channel; transfer that branch before cloud continuation.
