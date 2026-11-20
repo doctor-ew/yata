@@ -18,9 +18,9 @@ The initial experience covers launch, guide/library, show and episode selection,
 
 ## Architecture decision
 
-Extend the Android client rather than fork the catalog or introduce a new backend. Keep Leanback optional so phones remain eligible; declare touch optional and add the TV launch category and a banner derived from the existing Android mark. This first patch only enables launcher discovery. It does not establish remote usability or Play eligibility.
+The user subsequently required that onn work must not change or disrupt the phone APK. Superseding the initial unified-manifest proposal: build an explicit TV preview with application ID com.doctorew.yata.tv, TV-only manifest/resources/assets, Gradle output and project cache. Restore the ordinary phone manifest exactly to main. Keep the default phone build and runtime entry point unchanged. TV-specific behavior is loaded only in the separate artifact; no new backend or catalog fork. The preview does not establish Play eligibility.
 
-The next implementation slice must detect television mode through the native UI-mode API, expose that bounded capability to the local shell, and apply a TV layout without changing the phone layout. Choose explicit focus ownership for the guide, library, episode list, dialogs and player. Avoid a global key handler that steals text-entry, media or embedded-player input. Restore focus to the triggering control after closing a panel; Back closes the active panel before leaving the screen. Confirm Capacitor lifecycle and bridge APIs against installed source before coding that slice.
+TV mode is selected by the explicit build artifact, not screen-size heuristics or a new native bridge. The TV-only entry point loads the shared native runtime, then mounts a TV stylesheet and remote navigation. Choose explicit focus ownership for the guide, library, episode list, dialogs and player. Avoid a global key handler that steals text-entry, media or embedded-player input. Restore focus to the triggering control after closing a panel; Back closes the active panel before leaving the screen. Confirm Capacitor lifecycle and bridge APIs against installed source before coding that slice.
 
 Reuse public catalog and buddy metadata contracts, integrity checks and cached fallback. Compatible content additions should not require a new APK. Native features and incompatible schema changes still need client releases. Never publish a generated seed over the live catalog. Keep AI verification, finite action/ID routing and embedded Arcade network restrictions intact.
 
@@ -53,3 +53,15 @@ Retried `mobile/android-build.mjs`: BUILD SUCCESSFUL, 183 tasks executed. Produc
 - [Upstream scope and reported device](https://github.com/doctor-ew/yata/issues/43)
 
 Rollback: revert the launcher declarations and banner together; no data migration or public service change is involved.
+
+## Separate TV preview implementation
+
+- `mobile/android-tv-build.mjs` builds verified base assets, copies them into ignored TV-only assets and adds the TV entry/style. Gradle receives the explicit yataTv property and a separate project cache. The default `mobile/android-build.mjs` is unchanged.
+- `mobile/android/app/build.gradle` switches only when yataTv is present: package com.doctorew.yata.tv, build-tv output, TV assets/resources/manifest. Phone package remains com.doctorew.yata. TV uses the same Java namespace and validated native plugins.
+- `mobile/tv-navigation.mjs` implements directional geometry, visible/enabled candidates, modal scope, dialog focus return, recovery when a control disappears, and scrolling. Enter enters text/select editing; Escape leaves editing; horizontal slider keys retain native behavior. Existing native Back handling closes dialogs and returns through navigation history.
+- `mobile/tv.css` provides larger controls, visible focus, channel buttons instead of the phone channel picker, and exposed playback controls. It is never linked by the phone artifact.
+- `mobile/tv-entry.mjs` gives companion verification a clear unavailable error in this preview. Shared buddy-return URLs use the phone's yata scheme (`src/buddy-bridge.mjs:5`); TV intentionally registers no competing deep link. Arcade and provider/browser interaction remain unverified and are not promoted as TV-compatible.
+
+Validation so far: 299 unit tests passed. New browser focus tests passed, including dialog containment/return, text editing and offscreen navigation. Actual shared app shell tests passed for Watch/Guide/Library, More, Back and D-pad navigation with external network blocked. Both APK builds passed, including phone after TV. AAPT2 and ZIP inspection confirm the phone has its original package/launcher and no TV module/style; TV has a separate package/launcher/banner. A build-cache collision found during switching was corrected with a TV-specific Gradle project cache and verified by rebuilding both directions.
+
+Existing browser-tv-guide.mjs times out because an episode-actions dialog intercepts a pointer click. The same failure was reproduced in a detached origin/main worktree; it is not a passing regression check. Physical onn validation and Google Play submission remain outstanding. See REVIEW.md for final emulator evidence.

@@ -2,6 +2,11 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## Android TV experimental preview — 2026-11-20
+
+- Separate opt-in YATA TV package with remote focus navigation and larger TV controls; the default phone APK keeps its original package and entry point.
+- TV companion verification reports an unavailable state until a separate callback flow is supported. Physical onn compatibility and store publication are not yet verified.
+
 ## 0.8.21 — 2026-11-19
 
 - A bounded Jev intent router handles natural requests that do not match direct commands. Uncertain requests ask for clarification; catalog checks still control every action.

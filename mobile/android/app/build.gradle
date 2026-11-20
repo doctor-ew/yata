@@ -1,10 +1,13 @@
 apply plugin: 'com.android.application'
 
+def yataTv = project.hasProperty('yataTv')
+if (yataTv) { layout.buildDirectory.set(file('build-tv')) }
+
 android {
     namespace = "com.doctorew.yata"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.doctorew.yata"
+        applicationId yataTv ? "com.doctorew.yata.tv" : "com.doctorew.yata"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 32
@@ -14,6 +17,13 @@ android {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
              // Default: https://android.googlesource.com/platform/frameworks/base/+/282e181b58cf72b6ca770dc7ca5f91f135444502/tools/aapt/AaptAssets.cpp#61
             ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
+        }
+    }
+    if (yataTv) {
+        sourceSets.main {
+            manifest.srcFile 'src/tv/AndroidManifest.xml'
+            assets.srcDirs = ['tv-assets']
+            res.srcDirs += ['src/tv/res']
         }
     }
     buildTypes {
