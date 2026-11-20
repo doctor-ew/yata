@@ -4,6 +4,8 @@ User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub
 
 ## Remote content update — 2026-11-20
 
+- 2026-11-20 remote game-show update: added 27 classic/Nickelodeon collections and 46 source entries, including Dick Clark-era Pyramid, Wheel of Fortune, Jeopardy!, The Joker’s Wild, Classic Concentration and grouped You’re On! recording parts. Nick game shows stay on Nickelodeon; no new APK is required.
+
 - 2026-11-20 remote lineup expansion: added 39 original-era shows and 1,291 checked entries, including Wings, Newhart, the requested comedy/drama/cartoon batch and five vintage game shows. Existing clients refresh the feeds; no new APK is required.
 
 - 2026-11-20 remote content update: added original Kids in the Hall, Mr. Belvedere, 227, Family Matters and A Different World (127 entries), plus Sandra Clark, Steve Urkel and Dwayne Wayne companions. Reload or relaunch; no new APK is required.

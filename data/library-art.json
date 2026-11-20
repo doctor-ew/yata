@@ -4807,6 +4807,366 @@
       "tvmazeId": 6657,
       "image": "assets/show-art/price-right.webp",
       "imageSource": "https://archive.org/download/tpir-5145d/__ia_thumb.jpg"
+    },
+    "pyramid-25000": {
+      "title": "The $25,000 Pyramid — Dick Clark",
+      "premiered": "1982-09-20",
+      "year": 1982,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/84020/the-25000-pyramid",
+      "image": "assets/show-art/pyramid-25000.webp",
+      "imageSource": "https://i.ytimg.com/vi_webp/67bIMCuM6KA/maxresdefault.webp",
+      "ended": "1985-06-24",
+      "tvmazeId": 84020
+    },
+    "pyramid-100000": {
+      "title": "The $100,000 Pyramid — Dick Clark",
+      "premiered": "1985-09-09",
+      "year": 1985,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/84022/the-100000-pyramid",
+      "image": "assets/show-art/pyramid-100000.webp",
+      "imageSource": "https://i.ytimg.com/vi/wigXoOOzf2M/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGE0gUyhlMA8=&rs=AOn4CLAwrUZouIzIxQfGBGdLBvgSMrii-Q",
+      "ended": "1988-09-02",
+      "tvmazeId": 84022
+    },
+    "wheel-fortune": {
+      "title": "Wheel of Fortune — Pat Sajak era",
+      "premiered": null,
+      "year": null,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=jltNRehjd6k",
+      "image": "assets/show-art/wheel-fortune.webp",
+      "imageSource": "https://i.ytimg.com/vi/jltNRehjd6k/hqdefault.jpg"
+    },
+    "jeopardy": {
+      "title": "Jeopardy! — Alex Trebek era",
+      "premiered": "1984-09-10",
+      "year": 1984,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/2193/jeopardy",
+      "image": "assets/show-art/jeopardy.webp",
+      "imageSource": "https://i.ytimg.com/vi/xXnclEs8Qhc/maxresdefault.jpg",
+      "ended": null,
+      "tvmazeId": 2193
+    },
+    "jokers-wild": {
+      "title": "The Joker’s Wild — Jack Barry era",
+      "premiered": "1972-09-04",
+      "year": 1972,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/28335/the-jokers-wild",
+      "image": "assets/show-art/jokers-wild.webp",
+      "imageSource": "https://i.ytimg.com/vi/1OT7x1N-IaY/hqdefault.jpg",
+      "ended": "1972-09-04",
+      "tvmazeId": 28335
+    },
+    "classic-concentration": {
+      "title": "Classic Concentration",
+      "premiered": null,
+      "year": null,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=t8jJj6uL7LA",
+      "image": "assets/show-art/classic-concentration.webp",
+      "imageSource": "https://i.ytimg.com/vi/t8jJj6uL7LA/hqdefault.jpg"
+    },
+    "family-feud": {
+      "title": "Family Feud — Richard Dawson era",
+      "premiered": null,
+      "year": null,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=O4D8yIYiyzE",
+      "image": "assets/show-art/family-feud.webp",
+      "imageSource": "https://i.ytimg.com/vi_webp/O4D8yIYiyzE/maxresdefault.webp"
+    },
+    "card-sharks": {
+      "title": "Card Sharks — Jim Perry era",
+      "premiered": "1978-04-24",
+      "year": 1978,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/2192/card-sharks",
+      "image": "assets/show-art/card-sharks.webp",
+      "imageSource": "https://i.ytimg.com/vi_webp/2MphomUQwN0/maxresdefault.webp",
+      "ended": "1980-09-25",
+      "tvmazeId": 2192
+    },
+    "lets-make-deal": {
+      "title": "Let’s Make a Deal — Monty Hall era",
+      "premiered": null,
+      "year": null,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=3IZGLu7ZgCg",
+      "image": "assets/show-art/lets-make-deal.webp",
+      "imageSource": "https://i.ytimg.com/vi_webp/3IZGLu7ZgCg/maxresdefault.webp"
+    },
+    "tattletales": {
+      "title": "Tattletales",
+      "premiered": "1974-02-18",
+      "year": 1974,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/81327/tattletales",
+      "image": "assets/show-art/tattletales.webp",
+      "imageSource": "https://i.ytimg.com/vi_webp/jmcDsXigfLI/maxresdefault.webp",
+      "ended": "1984-05-25",
+      "tvmazeId": 81327
+    },
+    "blockbusters": {
+      "title": "Blockbusters — Bill Cullen era",
+      "premiered": "1980-10-27",
+      "year": 1980,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/62668/blockbusters",
+      "image": "assets/show-art/blockbusters.webp",
+      "imageSource": "https://i.ytimg.com/vi/jZ_up9yAxxY/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC6AKKAgwIABABGH8gVigkMA8=&rs=AOn4CLCiYCuXtOhGMRI4lboLS4oKU4F7VA",
+      "ended": "1981-06-11",
+      "tvmazeId": 62668
+    },
+    "super-password": {
+      "title": "Super Password",
+      "premiered": "1984-09-24",
+      "year": 1984,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/2138/super-password",
+      "image": "assets/show-art/super-password.webp",
+      "imageSource": "https://i.ytimg.com/vi/VpI4tD4Y5Tc/hqdefault.jpg",
+      "ended": "1989-03-24",
+      "tvmazeId": 2138
+    },
+    "body-language": {
+      "title": "Body Language",
+      "premiered": "1984-06-04",
+      "year": 1984,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/56650/body-language",
+      "image": "assets/show-art/body-language.webp",
+      "imageSource": "https://i.ytimg.com/vi_webp/sKGWiF0fCqc/maxresdefault.webp",
+      "ended": "1986-01-03",
+      "tvmazeId": 56650
+    },
+    "to-tell-truth": {
+      "title": "To Tell the Truth — Garry Moore era",
+      "premiered": null,
+      "year": null,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=phTvLgfsFjI",
+      "image": "assets/show-art/to-tell-truth.webp",
+      "imageSource": "https://i.ytimg.com/vi/phTvLgfsFjI/hqdefault.jpg"
+    },
+    "whats-my-line": {
+      "title": "What’s My Line? — John Daly era",
+      "premiered": "1950-02-02",
+      "year": 1950,
+      "genres": [
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/9612/whats-my-line",
+      "image": "assets/show-art/whats-my-line.webp",
+      "imageSource": "https://i.ytimg.com/vi/RhpKOBaK6U4/hqdefault.jpg",
+      "ended": "1967-09-03",
+      "tvmazeId": 9612
+    },
+    "finders-keepers": {
+      "title": "Finders Keepers (Nickelodeon, 1987)",
+      "premiered": null,
+      "year": 1987,
+      "genres": [
+        "Children",
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zf1tIJvrt6A",
+      "image": "assets/show-art/finders-keepers.webp",
+      "imageSource": "https://i.ytimg.com/vi/Zf1tIJvrt6A/maxresdefault.jpg"
+    },
+    "think-fast": {
+      "title": "Think Fast (Nickelodeon)",
+      "premiered": null,
+      "year": 1989,
+      "genres": [
+        "Children",
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=6MW49b4Xa3Q",
+      "image": "assets/show-art/think-fast.webp",
+      "imageSource": "https://i.ytimg.com/vi/6MW49b4Xa3Q/maxresdefault.jpg"
+    },
+    "make-grade": {
+      "title": "Make the Grade",
+      "premiered": null,
+      "year": 1989,
+      "genres": [
+        "Children",
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=sOhxjAEyHg8",
+      "image": "assets/show-art/make-grade.webp",
+      "imageSource": "https://i.ytimg.com/vi/sOhxjAEyHg8/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGGUgZShlMA8=&rs=AOn4CLCMzLQbAFX9cMvz7cD-yRuuroO_ww"
+    },
+    "wild-crazy-kids": {
+      "title": "Wild & Crazy Kids (1990)",
+      "premiered": null,
+      "year": 1990,
+      "genres": [
+        "Children",
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=9V-P8755pWQ",
+      "image": "assets/show-art/wild-crazy-kids.webp",
+      "imageSource": "https://i.ytimg.com/vi/9V-P8755pWQ/maxresdefault.jpg"
+    },
+    "get-picture": {
+      "title": "Get the Picture (Nickelodeon)",
+      "premiered": null,
+      "year": 1991,
+      "genres": [
+        "Children",
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=qAfxfGTXeFE",
+      "image": "assets/show-art/get-picture.webp",
+      "imageSource": "https://i.ytimg.com/vi/qAfxfGTXeFE/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-A4ACgAOKAgwIABABGH8gPCgWMA8=&rs=AOn4CLDbDYl7AVtpC7haW-sgiPzjsL5Wdg"
+    },
+    "nick-arcade": {
+      "title": "Nick Arcade",
+      "premiered": "1992-01-04",
+      "year": 1992,
+      "genres": [
+        "Children",
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/65929/nick-arcade",
+      "image": "assets/show-art/nick-arcade.webp",
+      "imageSource": "https://i.ytimg.com/vi_webp/Ly7dNjNgTVk/maxresdefault.webp",
+      "ended": "1992-05-24",
+      "tvmazeId": 65929
+    },
+    "nick-guts": {
+      "title": "Nickelodeon GUTS",
+      "premiered": null,
+      "year": 1992,
+      "genres": [
+        "Children",
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=EnBQsjdK0Cs",
+      "image": "assets/show-art/nick-guts.webp",
+      "imageSource": "https://i.ytimg.com/vi/EnBQsjdK0Cs/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGGUgUChKMA8=&rs=AOn4CLAACu6AC7I47vvZvLy8JkeQUsNDbw"
+    },
+    "global-guts": {
+      "title": "Global GUTS",
+      "premiered": null,
+      "year": 1995,
+      "genres": [
+        "Children",
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=p2VctwltItQ",
+      "image": "assets/show-art/global-guts.webp",
+      "imageSource": "https://i.ytimg.com/vi/p2VctwltItQ/maxresdefault.jpg"
+    },
+    "legends-temple": {
+      "title": "Legends of the Hidden Temple (1993)",
+      "premiered": "1993-09-11",
+      "year": 1993,
+      "genres": [
+        "Children",
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.tvmaze.com/shows/6309/legends-of-the-hidden-temple",
+      "image": "assets/show-art/legends-temple.webp",
+      "imageSource": "https://i.ytimg.com/vi/zonGEOlfYzQ/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGH8gKygTMA8=&rs=AOn4CLALtRDFdzt4XbOvZuAZL9GqfWOHNQ",
+      "ended": "2016-11-26",
+      "tvmazeId": 6309
+    },
+    "figure-it-out": {
+      "title": "Figure It Out — Summer Sanders era",
+      "premiered": null,
+      "year": 1997,
+      "genres": [
+        "Children",
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=dBeU0Wn7Rn8",
+      "image": "assets/show-art/figure-it-out.webp",
+      "imageSource": "https://i.ytimg.com/vi/dBeU0Wn7Rn8/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHeA4AC6AKKAgwIABABGH8gWCgtMA8=&rs=AOn4CLDkAyYThj9GCeCt1JwUE3D0mqCAkQ"
+    },
+    "what-would-you-do": {
+      "title": "What Would You Do? (Nickelodeon)",
+      "premiered": null,
+      "year": 1991,
+      "genres": [
+        "Children",
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=WGB8Qocn7ek",
+      "image": "assets/show-art/what-would-you-do.webp",
+      "imageSource": "https://i.ytimg.com/vi/WGB8Qocn7ek/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGH8gRCguMA8=&rs=AOn4CLAI9FZwPpT1ZDnMh7SfwmV01YF47g"
+    },
+    "youre-on": {
+      "title": "You’re On! (Nickelodeon)",
+      "premiered": null,
+      "year": 1998,
+      "genres": [
+        "Children",
+        "Game Show"
+      ],
+      "type": "Game Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=3ZwVzyHaCG0",
+      "image": "assets/show-art/youre-on.webp",
+      "imageSource": "https://i.ytimg.com/vi/3ZwVzyHaCG0/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGHIgSSg6MA8=&rs=AOn4CLBja0SEax1xIImSUsNQNnUvvV3CEg"
     }
   }
 }

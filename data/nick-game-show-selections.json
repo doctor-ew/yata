@@ -1,0 +1,668 @@
+{
+  "version": 1,
+  "notes": [
+    "The viewer’s ambiguous Pyramid request is interpreted as Dick Clark’s $25,000/$100,000 variants; no $64,000 Question entry is claimed.",
+    "Nickelodeon game shows stay in the existing nick channel. Other classic game shows use seventies until the separate channel-capability rollout.",
+    "Original series and host eras only. Reactions, retrospective documentaries, clips, promos and unrelated modern finales were excluded.",
+    "Season/episode information follows explicit uploader labels only; no canonical matching or transcript ingestion is claimed."
+  ],
+  "shows": [
+    {
+      "id": "pyramid-25000",
+      "title": "The $25,000 Pyramid — Dick Clark",
+      "channel": "seventies",
+      "sourceEraYear": 1982,
+      "videos": [
+        {
+          "id": "67bIMCuM6KA",
+          "title": "The New $25,000 Pyramid June 9, 1983 Betty White & Soupy Sales",
+          "duration": 1288,
+          "channel": "Game Show Tube",
+          "channel_url": "https://www.youtube.com/channel/UCrPdz7Te9m0lkR8ceHSwAsA",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi_webp/67bIMCuM6KA/maxresdefault.webp"
+        },
+        {
+          "id": "2aZbYpLN4pE",
+          "title": "The New $25,000 Pyramid June 1983 Audrey Landers & Grant Goodeve",
+          "duration": 1251,
+          "channel": "Game Show Tube",
+          "channel_url": "https://www.youtube.com/channel/UCrPdz7Te9m0lkR8ceHSwAsA",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi_webp/2aZbYpLN4pE/maxresdefault.webp"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "pyramid-100000",
+      "title": "The $100,000 Pyramid — Dick Clark",
+      "channel": "seventies",
+      "sourceEraYear": 1985,
+      "videos": [
+        {
+          "id": "wigXoOOzf2M",
+          "title": "The $100,000 Pyramid (Clark) - 1985",
+          "duration": 1301,
+          "channel": "A Daytime to Remember",
+          "channel_url": "https://www.youtube.com/channel/UCE0QXo4J0DU6q4bizYgK5kQ",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/wigXoOOzf2M/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGE0gUyhlMA8=&rs=AOn4CLAwrUZouIzIxQfGBGdLBvgSMrii-Q"
+        },
+        {
+          "id": "FcAfvNw5-jE",
+          "title": "The $100,000 Pyramid - September 12, 1985",
+          "duration": 1319,
+          "channel": "412GameShows",
+          "channel_url": "https://www.youtube.com/channel/UCD_vxPF3lgwsKMZoItxe1tw",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/FcAfvNw5-jE/hqdefault.jpg"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "wheel-fortune",
+      "title": "Wheel of Fortune — Pat Sajak era",
+      "channel": "seventies",
+      "sourceEraYear": 1975,
+      "videos": [
+        {
+          "id": "jltNRehjd6k",
+          "title": "NBC Network - Wheel of Fortune - \"Paula / Sheri / Bill\" (Complete Broadcast, 10/10/1986) 📺",
+          "duration": 1850,
+          "channel": "The Museum of Classic Chicago Television (www.FuzzyMemories.TV)",
+          "channel_url": "https://www.youtube.com/channel/UC-ssAZ6qVu0glgFUIsC8VSA",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/jltNRehjd6k/hqdefault.jpg"
+        },
+        {
+          "id": "G4_muG0u-b8",
+          "title": "Wheel of Fortune on WBNG-TV Binghamton NY May 28, 1987",
+          "duration": 1974,
+          "channel": "binghamton broadcasters",
+          "channel_url": "https://www.youtube.com/channel/UCthJOdpa1w0d462ueeqZx8Q",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/G4_muG0u-b8/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGHIgXig6MA8=&rs=AOn4CLBBte4AFR7HMhRC8gHsCBhTLHqF_g"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "jeopardy",
+      "title": "Jeopardy! — Alex Trebek era",
+      "channel": "seventies",
+      "sourceEraYear": 1984,
+      "videos": [
+        {
+          "id": "xXnclEs8Qhc",
+          "title": "Jeopardy! (Trebek) [February 1985; FULL EPISODE]",
+          "duration": 1700,
+          "channel": "The Millionaire Archive",
+          "channel_url": "https://www.youtube.com/channel/UCqq9qW4zOzyK6IMsJ8A1gNg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/xXnclEs8Qhc/maxresdefault.jpg"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "jokers-wild",
+      "title": "The Joker’s Wild — Jack Barry era",
+      "channel": "seventies",
+      "sourceEraYear": 1972,
+      "videos": [
+        {
+          "id": "1OT7x1N-IaY",
+          "title": "Joker's Wild (1975) | FULL EPISODE | S1E46 | Game Show Rewind",
+          "duration": 1702,
+          "channel": "Game Show Rewind",
+          "channel_url": "https://www.youtube.com/channel/UCiKuoHrzSeY2pmhm6IrQdPg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/1OT7x1N-IaY/hqdefault.jpg"
+        },
+        {
+          "id": "gw-shsiXR0A",
+          "title": "1978 Joker's Wild--Excited Phil Gilbert Goes for Fifth Win",
+          "duration": 1336,
+          "channel": "7277Genius",
+          "channel_url": "https://www.youtube.com/channel/UCebJ9HwHPQ5_J9Ij7l1_SHw",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/gw-shsiXR0A/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHOBYAC4AOKAgwIABABGGUgYShOMA8=&rs=AOn4CLAx7_qaCYQT8imsLCxdPT-Gncb02g"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "classic-concentration",
+      "title": "Classic Concentration",
+      "channel": "seventies",
+      "sourceEraYear": 1987,
+      "videos": [
+        {
+          "id": "t8jJj6uL7LA",
+          "title": "Classic Concentration | Wayne Vs. Nancy (12/24/1987)",
+          "duration": 1260,
+          "channel": "Digifangsn",
+          "channel_url": "https://www.youtube.com/channel/UCBUlPedIwKJLacLKXEunTBQ",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/t8jJj6uL7LA/hqdefault.jpg"
+        },
+        {
+          "id": "mJnOuAVNstg",
+          "title": "Classic Concentration I November 21, 1989",
+          "duration": 1280,
+          "channel": " Network 3000",
+          "channel_url": "https://www.youtube.com/channel/UC6S0rV_WMhGSPWzLs5zdKag",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi_webp/mJnOuAVNstg/maxresdefault.webp"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "family-feud",
+      "title": "Family Feud — Richard Dawson era",
+      "channel": "seventies",
+      "sourceEraYear": 1976,
+      "videos": [
+        {
+          "id": "O4D8yIYiyzE",
+          "title": "DuRoss Family | Nun gets a Dawson Smooch! | 1978 | Family Feud 50th | BUZZR",
+          "duration": 1795,
+          "channel": "BUZZR",
+          "channel_url": "https://www.youtube.com/channel/UCNkETBwkARrGDx-G7P-jLJg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi_webp/O4D8yIYiyzE/maxresdefault.webp"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "card-sharks",
+      "title": "Card Sharks — Jim Perry era",
+      "channel": "seventies",
+      "sourceEraYear": 1978,
+      "videos": [
+        {
+          "id": "2MphomUQwN0",
+          "title": "High Stakes Begin | Episode 1 | Card Sharks 1978 | Jim Perry | BUZZR",
+          "duration": 1335,
+          "channel": "BUZZR",
+          "channel_url": "https://www.youtube.com/channel/UCNkETBwkARrGDx-G7P-jLJg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi_webp/2MphomUQwN0/maxresdefault.webp"
+        },
+        {
+          "id": "2SkEtlKjAnI",
+          "title": "Card Sharks ’78 | Ep. 93 | Will Laurie Stay on Top, or Can Steve Break Through? | Jim Perry | BUZZR",
+          "duration": 1338,
+          "channel": "BUZZR",
+          "channel_url": "https://www.youtube.com/channel/UCNkETBwkARrGDx-G7P-jLJg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi_webp/2SkEtlKjAnI/maxresdefault.webp"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "lets-make-deal",
+      "title": "Let’s Make a Deal — Monty Hall era",
+      "channel": "seventies",
+      "sourceEraYear": 1984,
+      "videos": [
+        {
+          "id": "3IZGLu7ZgCg",
+          "title": "Let's Make A Deal with Monty Hall | Big Deal: $9,629 | 1985 | FULL EPISODE",
+          "duration": 1301,
+          "channel": "Let's Make a Deal with Monty Hall",
+          "channel_url": "https://www.youtube.com/channel/UCD2Xqt76PXbYmemSQchk3SQ",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi_webp/3IZGLu7ZgCg/maxresdefault.webp"
+        },
+        {
+          "id": "R_tz1V9Paxs",
+          "title": "Let's Make A Deal with Monty Hall | Big Deal: $9,450 | 1985 | FULL EPISODE",
+          "duration": 1299,
+          "channel": "Let's Make a Deal with Monty Hall",
+          "channel_url": "https://www.youtube.com/channel/UCD2Xqt76PXbYmemSQchk3SQ",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi_webp/R_tz1V9Paxs/maxresdefault.webp"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "tattletales",
+      "title": "Tattletales",
+      "channel": "seventies",
+      "sourceEraYear": 1974,
+      "videos": [
+        {
+          "id": "jmcDsXigfLI",
+          "title": "Tattletales |1976 | Wink Martindale's 1st appearance | Bert Convy | BUZZR",
+          "duration": 1321,
+          "channel": "BUZZR",
+          "channel_url": "https://www.youtube.com/channel/UCNkETBwkARrGDx-G7P-jLJg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi_webp/jmcDsXigfLI/maxresdefault.webp"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "blockbusters",
+      "title": "Blockbusters — Bill Cullen era",
+      "channel": "seventies",
+      "sourceEraYear": 1980,
+      "videos": [
+        {
+          "id": "jZ_up9yAxxY",
+          "title": "Blockbusters (April 1, 1981 | #81_0109): Paula/Jerry & Judy (V2, WC)",
+          "duration": 1818,
+          "channel": "The Game Show Channel",
+          "channel_url": "https://www.youtube.com/channel/UC7jjTY2rqu2ghmqhzKRGclQ",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/jZ_up9yAxxY/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC6AKKAgwIABABGH8gVigkMA8=&rs=AOn4CLCiYCuXtOhGMRI4lboLS4oKU4F7VA"
+        },
+        {
+          "id": "w3vSJwAlwag",
+          "title": "Blockbusters Episode #127 - Terry v. Pat/Russ",
+          "duration": 1372,
+          "channel": "BUZZRPlus+",
+          "channel_url": "https://www.youtube.com/channel/UCuo4U_rxFO1yl2-eJtzBPaQ",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi_webp/w3vSJwAlwag/maxresdefault.webp"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "super-password",
+      "title": "Super Password",
+      "channel": "seventies",
+      "sourceEraYear": 1984,
+      "videos": [
+        {
+          "id": "VpI4tD4Y5Tc",
+          "title": "Super Password NBC Daytime 1989 Bert Convy Episode 1",
+          "duration": 1230,
+          "channel": "Douglas Tew",
+          "channel_url": "https://www.youtube.com/channel/UCseifJZtXbfJZmpowvFRPsw",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/VpI4tD4Y5Tc/hqdefault.jpg"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "body-language",
+      "title": "Body Language",
+      "channel": "seventies",
+      "sourceEraYear": 1984,
+      "videos": [
+        {
+          "id": "sKGWiF0fCqc",
+          "title": "Body Language - Betty White & Ed Begley, Jr. (July 4, 1984)",
+          "duration": 1298,
+          "channel": "Chad Mosher",
+          "channel_url": "https://www.youtube.com/channel/UCm1AKKJrF8A-An2s_hLuLBA",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi_webp/sKGWiF0fCqc/maxresdefault.webp"
+        },
+        {
+          "id": "Y87vQQDj1cs",
+          "title": "Body Language June 4 1984",
+          "duration": 1634,
+          "channel": "trades14u",
+          "channel_url": "https://www.youtube.com/channel/UCUkFcqxe7SHBMIel3S3hrRQ",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/Y87vQQDj1cs/hqdefault.jpg"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "to-tell-truth",
+      "title": "To Tell the Truth — Garry Moore era",
+      "channel": "seventies",
+      "sourceEraYear": 1969,
+      "videos": [
+        {
+          "id": "phTvLgfsFjI",
+          "title": "To Tell the Truth 1970",
+          "duration": 1362,
+          "channel": "morenomark1",
+          "channel_url": "https://www.youtube.com/channel/UC_MxdEgS4M-3Aln9zx3Ogaw",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/phTvLgfsFjI/hqdefault.jpg"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "whats-my-line",
+      "title": "What’s My Line? — John Daly era",
+      "channel": "seventies",
+      "sourceEraYear": 1950,
+      "videos": [
+        {
+          "id": "RhpKOBaK6U4",
+          "title": "What's My Line? - Final CBS Show; PANEL: Martin Gabel, Steve Allen (Sep 3, 1967) [W/ COMMERCIALS]",
+          "duration": 1709,
+          "channel": "What's My Line?",
+          "channel_url": "https://www.youtube.com/channel/UChPE75Fvvl1HmdAsO7Nzb8w",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/RhpKOBaK6U4/hqdefault.jpg"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "finders-keepers",
+      "title": "Finders Keepers (Nickelodeon, 1987)",
+      "channel": "nick",
+      "sourceEraYear": 1987,
+      "videos": [
+        {
+          "id": "Zf1tIJvrt6A",
+          "title": "Finders Keepers - November 4, 1987 (Kathy/Tim vs. Lacey/Justin)",
+          "duration": 1476,
+          "channel": "Videotaped Games",
+          "channel_url": "https://www.youtube.com/channel/UCGninSQwxRfQZgQfoqmgmZA",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/Zf1tIJvrt6A/maxresdefault.jpg"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "think-fast",
+      "title": "Think Fast (Nickelodeon)",
+      "channel": "nick",
+      "sourceEraYear": 1989,
+      "videos": [
+        {
+          "id": "6MW49b4Xa3Q",
+          "title": "Think Fast - 1989 (Chris/Pat vs. Tina/Jim)",
+          "duration": 1605,
+          "channel": "Videotaped Games",
+          "channel_url": "https://www.youtube.com/channel/UCGninSQwxRfQZgQfoqmgmZA",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/6MW49b4Xa3Q/maxresdefault.jpg"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "make-grade",
+      "title": "Make the Grade",
+      "channel": "nick",
+      "sourceEraYear": 1989,
+      "videos": [
+        {
+          "id": "sOhxjAEyHg8",
+          "title": "Make the Grade - October 9, 1989",
+          "duration": 1563,
+          "channel": "Corey Schwartz",
+          "channel_url": "https://www.youtube.com/channel/UCJOZ6yBeFc0cjZFVlfZ9s_w",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/sOhxjAEyHg8/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGGUgZShlMA8=&rs=AOn4CLCMzLQbAFX9cMvz7cD-yRuuroO_ww"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "wild-crazy-kids",
+      "title": "Wild & Crazy Kids (1990)",
+      "channel": "nick",
+      "sourceEraYear": 1990,
+      "videos": [
+        {
+          "id": "9V-P8755pWQ",
+          "title": "Wild & Crazy Kids Season 2 Full Episode | 1991 Nickelodeon with commercials",
+          "duration": 1546,
+          "channel": "ACarchives",
+          "channel_url": "https://www.youtube.com/channel/UCWxf_RwzV4bORL1LN4Z_0Eg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/9V-P8755pWQ/maxresdefault.jpg"
+        },
+        {
+          "id": "KGjARCDfkZo",
+          "title": "Wild & Crazy Kids 1990 Season 1 Re-Airing Medieval Times Full Episode 1995 commercials Nickelodeon",
+          "duration": 1691,
+          "channel": "ACarchives",
+          "channel_url": "https://www.youtube.com/channel/UCWxf_RwzV4bORL1LN4Z_0Eg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/KGjARCDfkZo/maxresdefault.jpg"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "get-picture",
+      "title": "Get the Picture (Nickelodeon)",
+      "channel": "nick",
+      "sourceEraYear": 1991,
+      "videos": [
+        {
+          "id": "qAfxfGTXeFE",
+          "title": "\"Get the Picture\" (Mike O'Malley) – Spring 1991 Season: Jess/Jack vs. Hagan/Jeff (Full Ep., 1991)",
+          "duration": 1459,
+          "channel": "Jordan2002's Corner of Nostalgia",
+          "channel_url": "https://www.youtube.com/channel/UC38mrnputhNyMxeFA4uc0zw",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/qAfxfGTXeFE/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-A4ACgAOKAgwIABABGH8gPCgWMA8=&rs=AOn4CLDbDYl7AVtpC7haW-sgiPzjsL5Wdg"
+        },
+        {
+          "id": "dDabXlfzERw",
+          "title": "\"Get the Picture\" (Mike O'Malley) • Spring 1991 Season: Jennifer/Tony vs. Aliyah/Jay (Full Ep.)",
+          "duration": 1457,
+          "channel": "Jordan2002's Corner of Nostalgia",
+          "channel_url": "https://www.youtube.com/channel/UC38mrnputhNyMxeFA4uc0zw",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/dDabXlfzERw/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-A4ACgAOKAgwIABABGGUgUyhcMA8=&rs=AOn4CLABJIpFpdKUxAoUmwbLBeZ61OOjYw"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "nick-arcade",
+      "title": "Nick Arcade",
+      "channel": "nick",
+      "sourceEraYear": 1992,
+      "videos": [
+        {
+          "id": "Ly7dNjNgTVk",
+          "title": "Nick Arcade 1992 Full Episode with Commercials Nickelodeon Game Show",
+          "duration": 1993,
+          "channel": "ACarchives",
+          "channel_url": "https://www.youtube.com/channel/UCWxf_RwzV4bORL1LN4Z_0Eg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi_webp/Ly7dNjNgTVk/maxresdefault.webp"
+        },
+        {
+          "id": "FlxUiVxeaHI",
+          "title": "Nickelodeon Arcade - Season 1, Episode 22 (1992) | Brainstorm FaceOff, Hammerhead Shark, Mongo",
+          "duration": 1407,
+          "channel": "Kai Meiros",
+          "channel_url": "https://www.youtube.com/channel/UC1fnwavIaCIL9YlVwprfvLA",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/FlxUiVxeaHI/maxresdefault.jpg"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "nick-guts",
+      "title": "Nickelodeon GUTS",
+      "channel": "nick",
+      "sourceEraYear": 1992,
+      "videos": [
+        {
+          "id": "EnBQsjdK0Cs",
+          "title": "Nickelodeon Guts Season 1 Episode 24",
+          "duration": 1464,
+          "channel": "COOL SERIES - Television and Film",
+          "channel_url": "https://www.youtube.com/channel/UCo-LNQ7kDaJ-SemHpb3sCRQ",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/EnBQsjdK0Cs/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGGUgUChKMA8=&rs=AOn4CLAACu6AC7I47vvZvLy8JkeQUsNDbw"
+        },
+        {
+          "id": "mZ-UVhu2xWs",
+          "title": "Nickelodeon Guts Season 2 Episode 8",
+          "duration": 1459,
+          "channel": "COOL SERIES - Television and Film",
+          "channel_url": "https://www.youtube.com/channel/UCo-LNQ7kDaJ-SemHpb3sCRQ",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/mZ-UVhu2xWs/maxresdefault.jpg"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "global-guts",
+      "title": "Global GUTS",
+      "channel": "nick",
+      "sourceEraYear": 1995,
+      "videos": [
+        {
+          "id": "p2VctwltItQ",
+          "title": "Nickelodeon Global Guts Season 1 Episode 22",
+          "duration": 1468,
+          "channel": "COOL SERIES - Television and Film",
+          "channel_url": "https://www.youtube.com/channel/UCo-LNQ7kDaJ-SemHpb3sCRQ",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/p2VctwltItQ/maxresdefault.jpg"
+        },
+        {
+          "id": "AMqT3C8gaKY",
+          "title": "Nickelodeon Global Guts Season 1 Episode 31",
+          "duration": 1466,
+          "channel": "COOL SERIES - Television and Film",
+          "channel_url": "https://www.youtube.com/channel/UCo-LNQ7kDaJ-SemHpb3sCRQ",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/AMqT3C8gaKY/maxresdefault.jpg"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "legends-temple",
+      "title": "Legends of the Hidden Temple (1993)",
+      "channel": "nick",
+      "sourceEraYear": 1993,
+      "videos": [
+        {
+          "id": "zonGEOlfYzQ",
+          "title": "Legends of The Hidden Temple - The Golden Cup of Belshazzar",
+          "duration": 1440,
+          "channel": "Murgs Retro",
+          "channel_url": "https://www.youtube.com/channel/UC7iut-XR1ceTJbrxrTJlbOA",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/zonGEOlfYzQ/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGH8gKygTMA8=&rs=AOn4CLALtRDFdzt4XbOvZuAZL9GqfWOHNQ"
+        },
+        {
+          "id": "kf9rZqEAiog",
+          "title": "Legends of the hidden Temple:( The ♥️ Shaped Pillow of Annie Taylor )",
+          "duration": 1465,
+          "channel": "90'sRetroPalooza",
+          "channel_url": "https://www.youtube.com/channel/UCOSJzw5Hoysfgv3unlMnQfQ",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/kf9rZqEAiog/hqdefault.jpg?v=6919cb7a"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "figure-it-out",
+      "title": "Figure It Out — Summer Sanders era",
+      "channel": "nick",
+      "sourceEraYear": 1997,
+      "videos": [
+        {
+          "id": "dBeU0Wn7Rn8",
+          "title": "Figure It Out S1E5 (1997) | Full Episode – Classic Nickelodeon Game Show with Summer Sanders",
+          "duration": 1460,
+          "channel": "Dusty Digital",
+          "channel_url": "https://www.youtube.com/channel/UCnLEKJKx6nGJOA04eHKK71g",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/dBeU0Wn7Rn8/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHeA4AC6AKKAgwIABABGH8gWCgtMA8=&rs=AOn4CLDkAyYThj9GCeCt1JwUE3D0mqCAkQ"
+        },
+        {
+          "id": "XE-dCW27Yzs",
+          "title": "Figure It Out S1E2 (1997) | Full Episode – Classic Nickelodeon Game Show with Summer Sanders",
+          "duration": 1460,
+          "channel": "Dusty Digital",
+          "channel_url": "https://www.youtube.com/channel/UCnLEKJKx6nGJOA04eHKK71g",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/XE-dCW27Yzs/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHeA4AC6AKKAgwIABABGH8gMCgTMA8=&rs=AOn4CLC1DzY6CDnZzA3ufwGPGhEoYlamBQ"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "what-would-you-do",
+      "title": "What Would You Do? (Nickelodeon)",
+      "channel": "nick",
+      "sourceEraYear": 1991,
+      "videos": [
+        {
+          "id": "WGB8Qocn7ek",
+          "title": "Classic Nickelodeon Episode:  What Would You Do?",
+          "duration": 1706,
+          "channel": "WINMADDOG31",
+          "channel_url": "https://www.youtube.com/channel/UC8l1Xo4qd-XMbzG6u1nT31Q",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/WGB8Qocn7ek/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGH8gRCguMA8=&rs=AOn4CLAI9FZwPpT1ZDnMh7SfwmV01YF47g"
+        },
+        {
+          "id": "GPH2IPxlX9o",
+          "title": "What Would You Do: '91 A",
+          "duration": 1526,
+          "channel": "BobVorsh",
+          "channel_url": "https://www.youtube.com/channel/UCY5EZu74hZlZP-7bOoOF9eg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/GPH2IPxlX9o/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG-AoAC8AGKAgwIABABGGUgZShlMA8=&rs=AOn4CLBC5iBfEAF9f3ZJj_E3Te0VyBQMfA"
+        }
+      ],
+      "scope": "Partial starter selection of original-era source programs."
+    },
+    {
+      "id": "youre-on",
+      "title": "You’re On! (Nickelodeon)",
+      "channel": "nick",
+      "sourceEraYear": 1998,
+      "videos": [
+        {
+          "id": "3ZwVzyHaCG0",
+          "title": "You're On! (1/3)",
+          "duration": 470,
+          "channel": "BobVorsh",
+          "channel_url": "https://www.youtube.com/channel/UCY5EZu74hZlZP-7bOoOF9eg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/3ZwVzyHaCG0/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGHIgSSg6MA8=&rs=AOn4CLBja0SEax1xIImSUsNQNnUvvV3CEg"
+        },
+        {
+          "id": "ku-QmmfkPsM",
+          "title": "You're On (2/3)",
+          "duration": 437,
+          "channel": "BobVorsh",
+          "channel_url": "https://www.youtube.com/channel/UCY5EZu74hZlZP-7bOoOF9eg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/ku-QmmfkPsM/hqdefault.jpg"
+        },
+        {
+          "id": "O_Nlw4wtSdk",
+          "title": "You're On! (3/3)",
+          "duration": 552,
+          "channel": "BobVorsh",
+          "channel_url": "https://www.youtube.com/channel/UCY5EZu74hZlZP-7bOoOF9eg",
+          "playable_in_embed": true,
+          "thumbnail": "https://i.ytimg.com/vi/O_Nlw4wtSdk/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGGUgZCg6MA8=&rs=AOn4CLA0lIhjhf8VJiRe8zqCHX3dYixvvQ"
+        }
+      ],
+      "scope": "One source recording split across three uploader parts; not three distinct episodes."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+import{readFile,writeFile}from'node:fs/promises';import{validateCatalog}from'../src/domain.mjs';
+const[baseFile,outFile]=process.argv.slice(2);if(!outFile)throw Error('Provide authoritative base snapshot and candidate output.');
+const selection=JSON.parse(await readFile(new URL('../data/nick-game-show-selections.json',import.meta.url),'utf8'));const base=JSON.parse(await readFile(baseFile,'utf8'));const report=[];
+for(const s of selection.shows){if(base.shows.some(x=>x.id===s.id))throw Error('Existing show needs an explicit merge review.');const episodes=s.videos.map((x,index)=>{
+ if(x.playable_in_embed!==true||!Number.isFinite(x.duration)||x.duration<=0||x.duration>2400||!/^[A-Za-z0-9_-]{11}$/.test(x.id))throw Error('Invalid reviewed video metadata.');
+ const order=x.title.match(/\bS(\d+)E(\d+)/i)||x.title.match(/Season\s*(\d+).*Episode\s*(\d+)/i);
+ const parts=s.id==='youre-on';return{id:`${s.id}-yt-${x.id}`,title:parts?`You’re On! — uploader recording, part ${index+1} of 3`:x.title.slice(0,500),season:parts?0:order?+order[1]:0,number:parts?index+1:order?+order[2]:0,durationSeconds:x.duration,group:parts?'youre-on-bobvorsh-recording':'',kind:'episode',sources:[{id:`youtube-${x.id}`,provider:'youtube',url:`https://www.youtube.com/watch?v=${x.id}`,availability:'verified'}]};});base.shows.push({id:s.id,title:s.title,channel:s.channel,imdbUrl:null,episodes});report.push({id:s.id,title:s.title,channel:s.channel,entries:episodes.length,scope:s.scope});}
+const catalog=validateCatalog(base);await writeFile(outFile,JSON.stringify(catalog)+'\n');console.log(JSON.stringify(report,null,2));
