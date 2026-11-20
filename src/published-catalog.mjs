@@ -1,7 +1,8 @@
 import { validateCatalog, MAX_IMPORT_BYTES, MAX_CATALOG_SHOWS, MAX_CATALOG_EPISODES } from "./domain.mjs";
-import { migratedShowChannel } from "./channels.mjs";
+import { CHANNEL_REGISTRY_CAPABILITY, MAX_CHANNELS } from "./channel-registry.mjs";
 export const LEGACY_PUBLISHED_MANIFEST_PATH = "data/published-catalog-manifest.json";
 export const PUBLISHED_MANIFEST_PATH = "data/published-catalog-v2-manifest.json";
+export const REGISTRY_MANIFEST_PATH = "data/published-catalog-v3-manifest.json";
 const REVISION = /^[a-f0-9]{64}$/;
 export function catalogCounts(catalog) {
   return {
@@ -16,7 +17,7 @@ export function catalogCounts(catalog) {
 export function validatePublishedManifest(raw) {
   if (
     !raw ||
-    raw.version !== 1 ||
+    ![1, 2].includes(raw.version) ||
     !REVISION.test(raw.revision) ||
     raw.catalog !== `data/catalogs/${raw.revision}.json` ||
     typeof raw.updatedAt !== "string" ||
@@ -37,8 +38,15 @@ export function validatePublishedManifest(raw) {
     counts.sources > 100000
   )
     throw Error("Invalid shared catalog counts.");
+  if (raw.version === 2 && (
+    !Array.isArray(raw.requires) || raw.requires.length !== 1 || raw.requires[0] !== CHANNEL_REGISTRY_CAPABILITY ||
+    !Array.isArray(raw.channelIds) || raw.channelIds.length < 9 || raw.channelIds.length > MAX_CHANNELS ||
+    new Set(raw.channelIds).size !== raw.channelIds.length ||
+    raw.channelIds.some(id => typeof id !== 'string' || !/^[a-z][a-z0-9-]{0,31}$/.test(id) || ['all','none','library','movies','custom','arcade','constructor','prototype'].includes(id))
+  )) throw Error("Unsupported shared channel registry contract.");
   return {
-    version: 1,
+    version: raw.version,
+    ...(raw.version === 2 ? {requires:[...raw.requires],channelIds:[...raw.channelIds]} : {}),
     revision: raw.revision,
     catalog: raw.catalog,
     updatedAt: raw.updatedAt,
@@ -61,13 +69,15 @@ export async function snapshotRevision(text, cryptoRef = globalThis.crypto) {
 export async function fetchPublishedCatalog({
   fetcher = globalThis.fetch,
   currentRevision = null,
-  manifestUrl = PUBLISHED_MANIFEST_PATH,
+  manifestUrl = REGISTRY_MANIFEST_PATH,
   cryptoRef = globalThis.crypto,
 } = {}) {
   const response = await fetcher(manifestUrl, {
     cache: "no-store",
     credentials: "omit",
   });
+  if (response.status === 404 && manifestUrl === REGISTRY_MANIFEST_PATH)
+    return fetchPublishedCatalog({fetcher,currentRevision,manifestUrl:PUBLISHED_MANIFEST_PATH,cryptoRef});
   if (response.status === 404 && manifestUrl === PUBLISHED_MANIFEST_PATH)
     return fetchPublishedCatalog({fetcher,currentRevision,manifestUrl:LEGACY_PUBLISHED_MANIFEST_PATH,cryptoRef});
   if (response.status === 404)
@@ -80,6 +90,7 @@ export async function fetchPublishedCatalog({
     };
   if (!response.ok) throw Error("The shared catalog could not be loaded.");
   const manifest = validatePublishedManifest(await response.json());
+  if (manifestUrl === REGISTRY_MANIFEST_PATH && manifest.version !== 2) throw Error("Registry feed requires a version-2 manifest.");
   if (manifest.revision === currentRevision)
     return {
       available: true,
@@ -101,6 +112,7 @@ export async function fetchPublishedCatalog({
   )
     throw Error("The shared catalog snapshot failed its integrity check.");
   const catalog = validateCatalog(JSON.parse(text));
+  validateRegistryManifestCatalog(manifest, catalog);
   const counts = catalogCounts(catalog);
   if (Object.keys(counts).some((key) => counts[key] !== manifest.counts[key]))
     throw Error("The shared catalog counts do not match its manifest.");
@@ -149,7 +161,7 @@ export function mergePublishedCatalog(master, previous) {
   if(previous.settings.customQueue?.length){try{next.settings=validateCatalog({...next,settings:{...next.settings,customQueue:previous.settings.customQueue,customMode:previous.settings.customMode??'episodes',customQueueActive:previous.settings.customQueueActive===true}}).settings;}catch{/* Invalid local queue cannot alter shared content. */}}
   const selected = next.settings.streamShows ? null : previous.settings.streamShow;
   const moved=next.shows.find(show=>show.id===selected);
-  if (moved && previous.settings.channel !== 'mixed' && migratedShowChannel(selected, previous.settings.channel) === moved.channel) next.settings.channel = moved.channel;
+  if (moved && previous.settings.channel !== 'mixed') next.settings.channel = moved.channel;
   if (
     selected !== null &&
     typeof selected === "string" &&
@@ -172,4 +184,11 @@ export function mergePublishedCatalog(master, previous) {
   if (Number.isFinite(previous.epoch) && previous.epoch >= 0)
     next.epoch = previous.epoch;
   return validateCatalog(next);
+}
+
+export function validateRegistryManifestCatalog(manifest, catalog) {
+  if (manifest.version === 2) {
+    if (!catalog.channelRegistry || JSON.stringify(manifest.channelIds) !== JSON.stringify(catalog.channelRegistry.channels.map(c => c.id)))
+      throw Error('Shared channel registry does not match its manifest.');
+  } else if (catalog.channelRegistry) throw Error('Registry catalog requires a registry manifest.');
 }

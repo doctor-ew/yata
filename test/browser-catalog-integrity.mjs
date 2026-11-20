@@ -25,7 +25,7 @@ try {
   if(publicView){
     const text=JSON.stringify(createSeed()),revision=createHash('sha256').update(text).digest('hex'),seed=createSeed();
     const counts={shows:seed.shows.length,episodes:seed.shows.reduce((n,s)=>n+s.episodes.length,0),sources:seed.shows.reduce((n,s)=>n+s.episodes.reduce((m,e)=>m+e.sources.length,0),0)};
-    await ctx.route('**/data/published-catalog-v2-manifest.json',route=>route.fulfill({json:{version:1,revision,catalog:`data/catalogs/${revision}.json`,updatedAt:new Date().toISOString(),counts}}));
+    await ctx.route('**/data/published-catalog-v3-manifest.json',r=>r.fulfill({status:404,body:'{}'}));await ctx.route('**/data/published-catalog-v2-manifest.json',route=>route.fulfill({json:{version:1,revision,catalog:`data/catalogs/${revision}.json`,updatedAt:new Date().toISOString(),counts}}));
     await ctx.route('**/data/catalogs/*.json',route=>route.fulfill({contentType:'application/json',body:text}));
   }
   if(publicView)await ctx.route(origin+'/',async route=>{const response=await route.fetch();await route.fulfill({response,body:(await response.text()).replace('<head>','<head><meta name="drew-tv-hosting" content="static">')});});
@@ -69,19 +69,19 @@ try {
  const unchanged=await failureTab.evaluate(async()=>{const {openBrowserCatalogDatabase}=await import('/src/catalog-database.mjs');const db=await openBrowserCatalogDatabase();const record=await db.read();db.close();return record.catalog.shows[0].episodes[0].title;});assert.equal(unchanged,state.shows[0].episodes[0].title);
  assert.deepEqual(errors,[]);await owner.close();
  const viewer=await context({publicView:true}),publicPage=await viewer.newPage();await publicPage.goto(origin);
- await publicPage.waitForFunction(count=>document.querySelectorAll('#channels button').length===count,CHANNELS.length);
+ await publicPage.waitForFunction(count=>document.querySelectorAll('#channels button').length===count,CHANNELS.length+2);
  assert.equal(await publicPage.locator('.collection-tools').isVisible(),false);assert.equal(await publicPage.locator('#manage-sources').isVisible(),false);
  await publicPage.evaluate(()=>{for(const id of['bulk-open','seed-all','manage-sources','show-add'])document.getElementById(id).dispatchEvent(new Event('click'));document.getElementById('source-form').dispatchEvent(new Event('submit',{cancelable:true}));});
  assert.equal(await publicPage.locator('#source-dialog').evaluate(node=>node.open),false);assert.equal(await publicPage.locator('#bulk-dialog').evaluate(node=>node.open),false);
  await publicPage.getByRole('button',{name:'View episodes and sources for The Dukes of Hazzard',exact:true}).click();
  assert.equal(await publicPage.getByRole('button',{name:'Remove item',exact:true}).count(),0);assert.equal(await publicPage.getByRole('button',{name:'Remove source',exact:true}).count(),0);
  assert.ok(await publicPage.getByRole('button',{name:'Share episode ↗',exact:true}).count()>=1);
- await publicPage.locator('#close-show').click();await publicPage.locator('#channels button').nth(2).click();
+ await publicPage.locator('#close-show').click();await publicPage.getByRole('button',{name:'Channel 10: Sci-Fi',exact:true}).click();
  await publicPage.waitForFunction(()=>document.querySelector('#channel-label').textContent.includes('SCI-FI'));await viewer.close();
  const readonly=await context({noLocks:true}),readPage=await readonly.newPage();await readPage.goto(origin);
  await readPage.locator('#catalog-recovery').waitFor();assert.match(await readPage.locator('#catalog-recovery').textContent(),/read-only/);
  const before=await readPage.evaluate(key=>localStorage.getItem(key),STORAGE_KEY);
- await readPage.locator('#channels button').nth(2).click();await readPage.waitForFunction(()=>document.querySelector('#channel-label').textContent.includes('SCI-FI'));
+ await readPage.getByRole('button',{name:'Channel 10: Sci-Fi',exact:true}).click();await readPage.waitForFunction(()=>document.querySelector('#channel-label').textContent.includes('SCI-FI'));
  assert.equal(await readPage.evaluate(key=>localStorage.getItem(key),STORAGE_KEY),before);assert.equal(await readPage.locator('#export-catalog').isEnabled(),true);await readonly.close();
  console.log('Passed real IndexedDB two-tab simultaneous writer conflict, draft export/reload warning, public viewer guards, and safe read-only fallback.');
 } finally {await browser?.close();child.kill();}

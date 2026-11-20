@@ -39,7 +39,7 @@ def main():
             name = item['name']
             relative = pathlib.PurePosixPath(name)
             require(not relative.is_absolute() and '..' not in relative.parts and '\\' not in name, 'Unsafe release path')
-            require(name not in ['data/published-catalog-manifest.json','data/published-catalog-v2-manifest.json'] and not name.startswith('data/catalogs/'), 'Catalog publication is a separate workflow')
+            require(name not in ['data/published-catalog-manifest.json','data/published-catalog-v2-manifest.json','data/published-catalog-v3-manifest.json'] and not name.startswith('data/catalogs/'), 'Catalog publication is a separate workflow')
             require(not name.endswith('.apk') and not any(p.startswith('.') for p in relative.parts), 'Private artifact in release')
             path = (directory / name).resolve()
             require(path.is_relative_to(directory), 'Release file escaped directory')

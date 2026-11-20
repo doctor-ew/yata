@@ -28,7 +28,7 @@ def read_public(url, maximum=15000000):
 
 
 def verify_bindings(corpus):
-    manifest = json.loads(read_public('https://doctorew.com/tv/data/published-catalog-v2-manifest.json', 3000))
+    manifest = json.loads(read_public('https://doctorew.com/tv/data/published-catalog-v3-manifest.json', 8192))
     revision = manifest['revision']
     require(corpus['catalogRevision'] == revision, 'Catalog changed; regenerate/review evidence before ingestion')
     require(manifest['catalog'] == f'data/catalogs/{revision}.json', 'Invalid catalog manifest')
@@ -38,12 +38,16 @@ def verify_bindings(corpus):
     # Reuse the actual JS domain rules instead of approximating direct playback in Python.
     subprocess.run(['node', '--input-type=module', '-e', """
 import {validateCatalog,stationSource} from './src/domain.mjs';
+import {validatePublishedManifest,validateRegistryManifestCatalog,catalogCounts} from './src/published-catalog.mjs';
 import {standaloneEpisode} from './src/episode-evidence.mjs';
 let text='';for await(const chunk of process.stdin)text+=chunk;
-const raw=JSON.parse(text),catalog=validateCatalog(raw.catalog);
+const raw=JSON.parse(text),catalog=validateCatalog(raw.catalog),manifest=validatePublishedManifest(raw.manifest);
+if(manifest.version!==2)throw Error('Expected canonical registry manifest');
+validateRegistryManifestCatalog(manifest,catalog);
+const counts=catalogCounts(catalog);if(Object.keys(counts).some(key=>counts[key]!==manifest.counts[key]))throw Error('Catalog counts mismatch');
 for(const doc of raw.documents){const show=catalog.shows.find(s=>s.id===doc.showId),episode=show?.episodes.find(e=>e.id===doc.episodeId);
  if(!episode||!standaloneEpisode(episode)||stationSource(episode)?.id!==doc.sourceId)throw Error('Evidence is not a checked standalone direct-video item');}
-"""], cwd=ROOT, input=json.dumps({'catalog': catalog, 'documents': corpus['documents']}), text=True, check=True, timeout=20)
+"""], cwd=ROOT, input=json.dumps({'catalog': catalog, 'manifest': manifest, 'documents': corpus['documents']}), text=True, check=True, timeout=20)
     shows = {s['id']: s for s in catalog['shows']}
     for doc in corpus['documents']:
         show = shows.get(doc['showId'])

@@ -21,7 +21,7 @@ npm run android:build
 
 Set `JAVA_HOME` to a JDK 21 installation and `ANDROID_HOME` to an Android SDK containing the platform/build packages required by `android/variables.gradle`. `build.mjs` reads the current public catalog and checks its SHA-256 before bundling it. It does not bundle video files, credentials, APK backups or Arcade runtimes.
 
-The generated APK is copied to `artifacts/YATA-0.8.21-android-debug.apk`. The Gradle output remains `android/app/build/outputs/apk/debug/app-debug.apk`. It is signed with the local Android debug key for sideload testing. Connect one Android device with USB debugging enabled, authorize the Mac, and run from this directory:
+The generated APK is copied to `artifacts/YATA-0.8.22-android-debug.apk`. The Gradle output remains `android/app/build/outputs/apk/debug/app-debug.apk`. It is signed with the local Android debug key for sideload testing. Connect one Android device with USB debugging enabled, authorize the Mac, and run from this directory:
 
 ```sh
 adb install -r android/app/build/outputs/apk/debug/app-debug.apk
@@ -48,7 +48,7 @@ Version 0.8.21 adds a semantic intent fallback using the existing verified-origi
 
 ## Current shared interface
 
-The current Android sideload preview is 0.8.21 (version code 32). It shares the web interface, saved Channel 00 queue, library filters, remote catalog and companion roster, and sourced episode search. The private retrieval service contains 4,192 summaries across 114 series; coverage remains partial. Ambiguous results require a manual episode selection. See [retrieval coverage](../docs/buddy-retrieval/COVERAGE-EXPANSION.md).
+The current Android sideload preview is 0.8.22 (version code 33). It shares the web interface, saved Channel 00 queue, library filters, remote catalog and companion roster, and sourced episode search. The private retrieval service contains 4,192 summaries across 114 series; coverage remains partial. Ambiguous results require a manual episode selection. See [retrieval coverage](../docs/buddy-retrieval/COVERAGE-EXPANSION.md).
 
 **More → Playback settings → Static** saves the static preference and suppresses both channel-change and loading snow. Sound has its own setting. Zero strength, reduced-motion and forced-color preferences suppress animated snow. Enter sends buddy chat; Shift+Enter inserts a newline, and Talk remains available.
 
@@ -109,3 +109,9 @@ Click or right-click a guide episode for Play now, Play next on 00, or Add to en
 Queue order and playback position persist on the same browser or app installation; they do not synchronize between devices. Exact episode-queue sharing is not included yet; episode sharing remains available. The native background snapshot remains usable for queued Archive sources.
 
 Repeated Archive metadata events apply the initial seek only once. Page-cache transitions checkpoint and pause the player without disposing it; full navigation saves a local resume bookmark. A reload offers Resume last episode, and Channel 00 resumes its saved episode and position. Native iOS device testing remains separate from automated browser-engine tests.
+
+### Remote channel registry (0.8.22)
+
+The native reader explicitly permits the v3 publication manifest. The verified snapshot now contains its channel registry and show assignments together. Navigation, Guide, Library, mix and remix controls refresh from that data; future compatible ordinary channels need no new APK. Game Shows is channel 11. Older clients retain their compatible feed. See [registry architecture and rollout](../docs/channel-registry/ARCHITECTURE.md).
+
+For prepublication build checks only, `YATA_REVIEWED_CATALOG` may point to the exact frozen candidate and `YATA_REVIEWED_REVISION` must supply its SHA-256. This is explicitly logged as a reviewed local bundle, not a live publication. Release builds use the default verified public feed.

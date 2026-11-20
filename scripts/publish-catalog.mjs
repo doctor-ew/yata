@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import {
-  createCatalogPublisher,
+  createRegistryCatalogPublisher,
   frozenCatalog,
   PublicationError,
 } from "./catalog-publisher.mjs";
@@ -11,15 +11,16 @@ import { MAX_IMPORT_BYTES } from "../src/domain.mjs";
 export async function runPublishCatalogCli(
   args,
   {
-    publisher = createCatalogPublisher(),
+    publisher = createRegistryCatalogPublisher(),
     read = (file) => readFile(file, "utf8"),
   } = {},
 ) {
-  let file, expectedRevision, reviewedRevision;
+  let file, expectedRevision, reviewedRevision, compatibilityBaseRevision;
   let publish = false;
   for (let index = 0; index < args.length; index++) {
     const argument = args[index];
     if (argument === "--catalog") file = args[++index];
+    else if (argument === "--compatibility-base-revision") {const value=args[++index];compatibilityBaseRevision=value==='none'?null:value;}
     else if (argument === "--expected-revision") {
       const revision = args[++index];
       expectedRevision = revision === "none" ? null : revision;
@@ -30,7 +31,7 @@ export async function runPublishCatalogCli(
       publish = false;
     else
       throw new Error(
-        "Use --catalog FILE [--dry-run] or --publish --expected-revision REVISION|none --reviewed-revision SNAPSHOT_HASH.",
+        "Use --catalog FILE [--dry-run] or --publish --expected-revision REVISION|none --reviewed-revision SNAPSHOT_HASH --compatibility-base-revision REVISION|none.",
       );
   }
   if (!file) throw new Error("Provide a catalog file with --catalog.");
@@ -46,6 +47,7 @@ export async function runPublishCatalogCli(
       revision: review.revision,
       counts: review.counts,
       diff: review.diff,
+      ...(review.compatibilityRevision?{compatibilityBaseRevision:review.compatibilityBaseRevision,compatibilityRevision:review.compatibilityRevision,compatibilityDiff:review.compatibilityDiff}:{}),
     };
   }
   if (
@@ -63,7 +65,7 @@ export async function runPublishCatalogCli(
       409,
     );
   }
-  return publisher.publish(catalog, { expectedRevision, reviewedRevision });
+  return publisher.publish(catalog, { expectedRevision, reviewedRevision, ...(compatibilityBaseRevision!==undefined?{compatibilityBaseRevision}:{}) });
 }
 
 if (

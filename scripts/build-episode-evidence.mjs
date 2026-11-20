@@ -13,7 +13,7 @@ let selected=options.shows==='all'?null:options.shows.split(',').filter(Boolean)
 const out=resolve(options.out);await mkdir(join(out,'provider-cache'),{recursive:true});
 let catalog,catalogRevision;
 if(options.catalog){const text=await readFile(resolve(options.catalog),'utf8');if(Buffer.byteLength(text)>MAX_IMPORT_BYTES)throw Error('Oversized catalog.');catalogRevision=createHash('sha256').update(text).digest('hex');if(!options.revision||options.revision!==catalogRevision)throw Error('Local catalog must match the explicitly supplied SHA256 revision.');catalog=validateCatalog(JSON.parse(text));}
-else{const result=await fetchPublishedCatalog({manifestUrl:'https://doctorew.com/tv/data/published-catalog-v2-manifest.json',fetcher:(url,settings)=>fetch(new URL(url,'https://doctorew.com/tv/'),{...settings,signal:AbortSignal.timeout(20000)})});if(!result.available||!result.catalog)throw Error('Authoritative published catalog unavailable.');catalog=result.catalog;catalogRevision=result.revision;}
+else{const result=await fetchPublishedCatalog({fetcher:(url,settings)=>fetch(new URL(url,'https://doctorew.com/tv/'),{...settings,signal:AbortSignal.timeout(20000)})});if(!result.available||!result.catalog)throw Error('Authoritative published catalog unavailable.');catalog=result.catalog;catalogRevision=result.revision;}
 const metadata=JSON.parse(await readFile(join(root,'data/library-art.json'),'utf8')).shows;
 selected??=catalog.shows.filter(show=>Number.isSafeInteger(metadata[show.id]?.tvmazeId)).map(show=>show.id);
 const documents=[],coverage=[];let lastRequest=0;

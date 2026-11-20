@@ -3,6 +3,7 @@ from unittest.mock import Mock,patch
 from pathlib import Path
 spec=importlib.util.spec_from_file_location('analytics',Path(__file__).with_name('handler.py'));m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 class AnalyticsTests(unittest.TestCase):
+ def setUp(self):m._registry_cache.update(until=float('inf'),channels=set(m.CHANNELS))
  def item(self,**patch):return {'metric':'play_start','channel':'action','platform':'web','provider':'archive','host':'none','version':'0.7.1','value':1,**patch}
  def event(self,items=None):return {'httpMethod':'POST','headers':{'origin':'https://doctorew.com','content-type':'application/json'},'body':json.dumps({'batch':'a'*32,'events':items or [self.item()]}),'requestContext':{'identity':{'sourceIp':'192.0.2.1'}}}
  @patch.dict(os.environ,{'ANALYTICS_SECRET':'fixture','ANALYTICS_GUARD_TABLE':'fixture'})
@@ -25,4 +26,24 @@ class AnalyticsTests(unittest.TestCase):
   e=self.event();e['body']='x'*10001;self.assertEqual(m.handler(e,None)['statusCode'],400)
  def test_rate_hash_rotates_hourly_and_ttl_is_short(self):
   first=m.quota('fixture','secret','a'*32,'192.0.2.1',datetime.datetime(2026,11,17,10,tzinfo=datetime.timezone.utc));second=m.quota('fixture','secret','b'*32,'192.0.2.1',datetime.datetime(2026,11,17,11,tzinfo=datetime.timezone.utc));self.assertNotEqual(first['TransactItems'][1]['Update']['Key'],second['TransactItems'][1]['Update']['Key'])
+
+class RegistryTests(unittest.TestCase):
+ def setUp(self):m._registry_cache.update(until=0,channels=set(m.CHANNELS))
+ def manifest(self):return {'version':2,'requires':['channel-registry-v1'],'channelIds':list(m.CHANNELS.difference({'none','custom','library','movies'}))+['future-documentaries']}
+ def response(self,body):
+  response=Mock();response.__enter__=Mock(return_value=response);response.__exit__=Mock(return_value=False);response.read.return_value=json.dumps(body).encode();return response
+ def test_registry_dimensions_are_finite_and_cached(self):
+  opener=Mock();opener.open.return_value=self.response(self.manifest())
+  with patch.object(m.urllib.request,'build_opener',return_value=opener):
+   channels=m.published_channels();self.assertIn('future-documentaries',channels);self.assertNotIn('anything-else',channels);m.published_channels();self.assertEqual(opener.open.call_count,1)
+   self.assertEqual(opener.open.call_args.args[0],'https://doctorew.com/tv/data/published-catalog-v3-manifest.json');self.assertEqual(opener.open.call_args.kwargs['timeout'],2)
+  m._registry_cache['until']=0
+  with patch.object(m.urllib.request,'build_opener',side_effect=TimeoutError):self.assertIn('future-documentaries',m.published_channels())
+ def test_invalid_registry_cannot_expand_dimensions(self):
+  bad=self.manifest();bad['channelIds'].append('unbounded/<script>');opener=Mock();opener.open.return_value=self.response(bad)
+  with patch.object(m.urllib.request,'build_opener',return_value=opener):self.assertEqual(m.published_channels(),m.CHANNELS)
+ def test_new_channel_events_need_published_identity(self):
+  body={'batch':'a'*32,'events':[AnalyticsTests().item(channel='future-documentaries')]}
+  with self.assertRaises(ValueError):m.validate(body)
+  self.assertEqual(m.validate(body,m.CHANNELS|{'future-documentaries'})[0]['channel'],'future-documentaries')
 if __name__=='__main__':unittest.main()

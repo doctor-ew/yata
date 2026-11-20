@@ -1,18 +1,12 @@
+import {DEFAULT_CHANNELS} from './channel-defaults.mjs';
+import {validateChannelRegistry} from './channel-registry.mjs';
 import { EXPANDED_ERA_SHOWS } from './expanded-era.mjs';
 export const NICK_SHOW_IDS = new Set(['ycdtotv','turkey-tv','danger-mouse','count-duckula','cities-gold','double-dare','out-control','salute-shorts','hey-dude','pete-pete','nickelodeon-bumps']);
 export const SERIAL_SHOW_IDS = new Set(['gargoyles','dallas','rocky-bullwinkle','st-elsewhere','hill-street-blues','nypd-blue','cagney-lacey','china-beach','northern-exposure','picket-fences']);
-export const CHANNELS = [
-  { id: 'mixed', number: '01', name: 'YATA Channels', subtitle: 'All TV channels.', accent: '#ffc66e' },
-  { id: 'action', number: '02', name: 'Action Adventure', subtitle: 'Action and adventure.', accent: '#ff927b' },
-  { id: 'scifi', number: '10', name: 'Sci-Fi', subtitle: 'Science-fiction series.', accent: '#79cde5' },
-  { id: 'cartoons', number: '04', name: 'Saturday Morning', subtitle: 'Animated series.', accent: '#ac9aff' },
-  { id: 'nick', number: '08', name: 'Nickelodeon', subtitle: 'After school · classic Nick.', accent: '#df8658' },
-  { id: 'comedy', number: '05', name: 'Comedy', subtitle: 'Comedy series.', accent: '#f4c36e' },
-  { id: 'drama', number: '09', name: 'Drama', subtitle: 'Hospital rounds and precinct roll calls.', accent: '#8fa9ad' },
-  { id: 'seventies', number: '06', name: '70s Prime Time', subtitle: 'Detectives and road shows.', accent: '#d8b16d' },
-  { id: 'late-night', number: '07', name: 'Late Night Toons', subtitle: 'Adult animation · 1990s–2000s.', accent: '#b2a0ce' },
-];
+export const CHANNELS = DEFAULT_CHANNELS.map(channel=>({...channel}));
 export const SHOW_CHANNEL_IDS = CHANNELS.filter(channel=>channel.id!=='mixed').map(channel=>channel.id);
+export function applyChannelRegistry(registry){const clean=validateChannelRegistry(registry);CHANNELS.splice(0,CHANNELS.length,...clean.channels.map(({fallback,...channel})=>channel));SHOW_CHANNEL_IDS.splice(0,SHOW_CHANNEL_IDS.length,...CHANNELS.filter(c=>c.id!=='mixed').map(c=>c.id));return clean;}
+export function catalogChannels(catalog){return catalog?.channelRegistry?.channels??DEFAULT_CHANNELS;}
 export function mixIncludes(settings, channel) { return !Array.isArray(settings.mixChannels) || settings.mixChannels.includes(channel); }
 export const SCI_FI_SHOW_IDS = new Set([
   ...EXPANDED_ERA_SHOWS.filter(show=>show.channel==='scifi').map(show=>show.id),

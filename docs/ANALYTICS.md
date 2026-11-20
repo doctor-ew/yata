@@ -36,3 +36,5 @@ Event log retention is configured to 30 days. The dashboard queries the last sev
 The collector uses a five-request-per-second API throttle with burst ten, reserved Lambda concurrency two, a 600-batch hourly keyed-IP quota and a 100,000-batch daily global quota. It rejects extra fields, arbitrary dimensions and inflated counts before event logging. Duplicate batches are rejected through a transactional guard receipt. Synthetic verification uses version `0.0.0`, excluded from dashboard queries.
 
 Tests cover opt-out/privacy signals, payload allowlisting, dropped offline batches, watch timing through seeks/pauses/hidden views, collector validation and rate-limit failures. Live smoke tests must confirm accepted safe events and rejected extra fields. Device-level screen-off analytics is not claimed.
+
+Channel dimensions in 0.8.22 follow the fixed-origin, bounded public v3 manifest, cached for five minutes with a finite last-good/bootstrap fallback. Arbitrary viewer dimensions remain rejected. See [the registry contract](channel-registry/ARCHITECTURE.md).

@@ -16,7 +16,7 @@ if(native){
  // Video remains in its original player.
  window.fetch=async(input,options={})=>{
   const url=new URL(typeof input==='string'?input:input instanceof URL?input.href:input.url,location.href);
-  const catalog=url.origin===location.origin&&(/^\/tv\/data\/(?:published-catalog-(?:v2-)?manifest|library-art|arcade-games|buddy-personas)\.json$/.test(url.pathname)||/^\/tv\/data\/catalogs\/[a-f0-9]{64}\.json$/.test(url.pathname));
+  const catalog=url.origin===location.origin&&(/^\/tv\/data\/(?:published-catalog-(?:v[23]-)?manifest|library-art|arcade-games|buddy-personas)\.json$/.test(url.pathname)||/^\/tv\/data\/catalogs\/[a-f0-9]{64}\.json$/.test(url.pathname));
   const caption=url.hostname==='archive.org'&&url.protocol==='https:'&&/^\/download\/[^/]+\/.+\.(vtt|srt)$/i.test(url.pathname);
   if(!catalog&&!caption)return originalFetch(input,options);
   try{

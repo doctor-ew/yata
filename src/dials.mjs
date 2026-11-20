@@ -1,9 +1,9 @@
 import { MOVIE_SHOW_ID } from './collections.mjs';
-import { CHANNELS, mixIncludes } from './channels.mjs';
+import { catalogChannels, mixIncludes } from './channels.mjs';
 import { COMMERCIAL_SHOW_ID, parseDuration, stationSource } from './domain.mjs';
 
 export function availableDialShows(catalog, channel = catalog.settings.channel) {
-  if (!CHANNELS.some(item => item.id === channel)) throw new RangeError('Choose an available station channel.');
+  if (!catalogChannels(catalog).some(item => item.id === channel)) throw new RangeError('Choose an available station channel.');
   return catalog.shows.filter(show => show.id !== COMMERCIAL_SHOW_ID && show.id !== MOVIE_SHOW_ID && (channel === 'mixed' || show.channel === channel) && (channel!=='mixed'||mixIncludes(catalog.settings,show.channel)) && show.episodes.some(episode => episode.kind === 'episode' && parseDuration(episode.durationSeconds) !== null && stationSource(episode)));
 }
 
