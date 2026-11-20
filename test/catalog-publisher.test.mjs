@@ -346,18 +346,18 @@ test("public loader validates raw snapshot bytes, manifest paths and counts; 403
       : { ok: true, text: async () => snapshot };
   };
   assert.equal(
-    (await fetchPublishedCatalog({ fetcher })).catalog.shows.length,
+    (await fetchPublishedCatalog({ manifestUrl:PUBLISHED_MANIFEST_PATH, fetcher })).catalog.shows.length,
     2,
   );
   calls = 0;
   assert.equal(
-    (await fetchPublishedCatalog({ fetcher, currentRevision: frozen.revision }))
+    (await fetchPublishedCatalog({ manifestUrl:PUBLISHED_MANIFEST_PATH, fetcher, currentRevision: frozen.revision }))
       .unchanged,
     true,
   );
   assert.equal(calls, 1);
   snapshot += " ";
-  await assert.rejects(fetchPublishedCatalog({ fetcher }), /integrity check/);
+  await assert.rejects(fetchPublishedCatalog({ manifestUrl:PUBLISHED_MANIFEST_PATH, fetcher }), /integrity check/);
   assert.throws(() =>
     validatePublishedManifest({
       ...manifest,
@@ -365,7 +365,7 @@ test("public loader validates raw snapshot bytes, manifest paths and counts; 403
     }),
   );
   assert.equal(
-    (await fetchPublishedCatalog({ fetcher: async () => ({ status: 404 }) }))
+    (await fetchPublishedCatalog({ manifestUrl:PUBLISHED_MANIFEST_PATH, fetcher: async () => ({ status: 404 }) }))
       .available,
     false,
   );

@@ -2,6 +2,13 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## 0.8.22 — 2026-11-20
+
+- Channel 11 is Game Shows: 20 existing vintage game-show collections have their own lineup. Nickelodeon game shows stay on Nick.
+- Channel navigation, guide, library filters, mix switches and remix choices now use the verified remote channel registry. After this app update, compatible new ordinary channels can arrive without another build.
+- Saved channel choices and personal queues remain local. Older apps keep a compatible feed with their existing categories.
+- Channel definitions and assignments publish together. Publication checks both reviewed revisions and reports a pending older-app feed repair explicitly. Anonymous analytics accepts only finite published channel identities.
+
 ## Remote content update — 2026-11-20
 
 - 2026-11-20 remote game-show update: added 27 classic/Nickelodeon collections and 46 source entries, including Dick Clark-era Pyramid, Wheel of Fortune, Jeopardy!, The Joker’s Wild, Classic Concentration and grouped You’re On! recording parts. Nick game shows stay on Nickelodeon; no new APK is required.

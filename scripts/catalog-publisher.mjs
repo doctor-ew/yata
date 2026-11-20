@@ -9,8 +9,9 @@ import { createSeed } from "../src/catalog.mjs";
 import {
   catalogCounts,
   validatePublishedManifest,
-  PUBLISHED_MANIFEST_PATH,
+  PUBLISHED_MANIFEST_PATH, REGISTRY_MANIFEST_PATH, validateRegistryManifestCatalog,
 } from "../src/published-catalog.mjs";
+import { CHANNEL_REGISTRY_CAPABILITY, assertRegistryEvolution, compatibilityCatalog } from "../src/channel-registry.mjs";
 const exec = promisify(execFile);
 const REVISION = /^[a-f0-9]{64}$/;
 export class PublicationError extends Error {
@@ -134,6 +135,7 @@ const stale = () =>
 export function createCatalogPublisher({
   config,
   runAws,
+  manifestPath = PUBLISHED_MANIFEST_PATH,
   clock = () => new Date(),
 } = {}) {
   const setup = async () =>
@@ -195,7 +197,7 @@ export function createCatalogPublisher({
     const file = path.join(dir, "manifest.json");
     let result;
     try {
-      result = await object(c, c.base.slice(1) + PUBLISHED_MANIFEST_PATH, file);
+      result = await object(c, c.base.slice(1) + manifestPath, file);
     } catch (error) {
       if (["NoSuchKey", "NotFound"].includes(error.code))
         return { manifest: null, etag: null, catalog: null };
@@ -207,6 +209,7 @@ export function createCatalogPublisher({
     let manifest;
     try {
       manifest = validatePublishedManifest(JSON.parse(text));
+      if (manifestPath === REGISTRY_MANIFEST_PATH && manifest.version !== 2) throw Error("Invalid registry feed version.");
     } catch {
       throw new PublicationError("Shared catalog manifest is invalid.");
     }
@@ -231,6 +234,7 @@ export function createCatalogPublisher({
       } catch {
         throw new PublicationError("Shared catalog snapshot is invalid.");
       }
+      validateRegistryManifestCatalog(manifest, catalog);
       const counts = catalogCounts(catalog);
       if (Object.keys(counts).some((k) => counts[k] !== manifest.counts[k]))
         throw new PublicationError("Shared catalog counts are invalid.");
@@ -310,7 +314,7 @@ export function createCatalogPublisher({
         if (baseRevision === snapshot.revision)
           return {
             ...previous.manifest,
-            manifestPath: PUBLISHED_MANIFEST_PATH,
+            manifestPath: manifestPath,
             invalidationId: null,
             cacheInvalidationPending: false,
             unchanged: true,
@@ -358,7 +362,8 @@ export function createCatalogPublisher({
             );
         }
         let manifest = {
-            version: 1,
+            version: snapshot.catalog.channelRegistry ? 2 : 1,
+            ...(snapshot.catalog.channelRegistry ? {requires:[CHANNEL_REGISTRY_CAPABILITY],channelIds:snapshot.catalog.channelRegistry.channels.map(c=>c.id)} : {}),
             revision: snapshot.revision,
             catalog: relative,
             updatedAt: clock().toISOString(),
@@ -375,7 +380,7 @@ export function createCatalogPublisher({
             "--bucket",
             c.bucket,
             "--key",
-            c.base.slice(1) + PUBLISHED_MANIFEST_PATH,
+            c.base.slice(1) + manifestPath,
             "--expected-bucket-owner",
             c.account,
             "--body",
@@ -419,7 +424,7 @@ export function createCatalogPublisher({
             "--distribution-id",
             c.distribution,
             "--paths",
-            c.base + PUBLISHED_MANIFEST_PATH,
+            c.base + manifestPath,
           ]);
           invalidationId = result.Invalidation?.Id || null;
         } catch {
@@ -427,12 +432,52 @@ export function createCatalogPublisher({
         }
         return {
           ...manifest,
-          manifestPath: PUBLISHED_MANIFEST_PATH,
+          manifestPath: manifestPath,
           invalidationId,
           cacheInvalidationPending,
           unchanged: false,
         };
       });
     },
+  };
+}
+
+// Canonical registry + assignments share one immutable snapshot and one CAS.
+// The legacy projection has its own CAS; a partial success is reported explicitly.
+export function createRegistryCatalogPublisher(options = {}) {
+  const canonical = createCatalogPublisher({...options,manifestPath:REGISTRY_MANIFEST_PATH});
+  const legacy = createCatalogPublisher({...options,manifestPath:PUBLISHED_MANIFEST_PATH});
+  async function heads() { return {current:await canonical.shared(),compatibility:await legacy.shared()}; }
+  function check(input, previous) {
+    if (!input.channelRegistry) throw new PublicationError('Publication requires a channel registry.', 'INVALID_CATALOG', 400);
+    if (previous?.channelRegistry) assertRegistryEvolution(previous.channelRegistry,input.channelRegistry);
+  }
+  return {
+    async capability() {return canonical.capability();},
+    async shared() { const value=await canonical.shared();return value.available ? value : legacy.shared(); },
+    async preview(input, options={}) {
+      const {current,compatibility}=await heads();check(input,current.catalog);
+      const result=await canonical.preview(input,options);
+      const projection=frozenCatalog(compatibilityCatalog(result.catalog));
+      return {...result,diff:publicationDiff(current.catalog??compatibility.catalog,result.catalog),compatibilityBaseRevision:compatibility.revision,compatibilityRevision:projection.revision,compatibilityDiff:publicationDiff(compatibility.catalog,projection.catalog)};
+    },
+    async publishFile(file, options) {
+      const text=await readFile(file,'utf8');if(Buffer.byteLength(text)>MAX_IMPORT_BYTES)throw new PublicationError('Catalog exceeds the shared publication size limit.','INVALID_CATALOG',400);
+      return this.publish(JSON.parse(text),options);
+    },
+    async publish(input, options={}) {
+      const {current,compatibility}=await heads();check(input,current.catalog);
+      // Refuse to overwrite a newer legacy inventory reviewed by another publisher.
+      if (options.compatibilityBaseRevision === undefined) throw new PublicationError('Review the compatibility feed before publishing.','INVALID_REVISION',400);
+      if (options.compatibilityBaseRevision !== compatibility.revision) throw stale();
+      const projection=frozenCatalog(compatibilityCatalog(frozenCatalog(input).catalog));
+      const result=await canonical.publish(input,options);
+      try {
+        const receipt=await legacy.publish(projection.catalog,{expectedRevision:compatibility.revision,reviewedRevision:projection.revision});
+        return {...result,compatibilityPending:false,compatibilityRevision:receipt.revision};
+      } catch {
+        return {...result,compatibilityPending:true,compatibilityRevision:projection.revision};
+      }
+    }
   };
 }

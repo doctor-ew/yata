@@ -47,6 +47,7 @@ class YataCatalogPlugin: CAPPlugin, CAPBridgedPlugin {
             target = caption; limit = 1_000_000
         } else if path != "/tv/data/published-catalog-manifest.json" &&
                     path != "/tv/data/published-catalog-v2-manifest.json" &&
+                path != "/tv/data/published-catalog-v3-manifest.json" &&
                     path != "/tv/data/library-art.json" &&
                     path != "/tv/data/buddy-personas.json" && path != "/tv/data/arcade-games.json" &&
                     path.range(of: #"^/tv/data/catalogs/[a-f0-9]{64}\.json$"#, options: .regularExpression) == nil {

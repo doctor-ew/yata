@@ -3,7 +3,7 @@ import { mkdtemp, writeFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import {
-  createCatalogPublisher,
+  createRegistryCatalogPublisher,
   PublicationError,
 } from "./scripts/catalog-publisher.mjs";
 const BODY_LIMIT = 4 * 1024 * 1024;
@@ -45,7 +45,7 @@ function equalToken(given, expected) {
   return actual.length === wanted.length && timingSafeEqual(actual, wanted);
 }
 export function createOwnerPublicationHandler({
-  publisher = createCatalogPublisher(),
+  publisher = createRegistryCatalogPublisher(),
   getOrigin,
   clock = () => Date.now(),
   previewLifetimeMs = 10 * 60 * 1000,
@@ -175,15 +175,18 @@ export function createOwnerPublicationHandler({
             await writeFile(file, prepared.text, { mode: 0o600, flag: "wx" });
             reviews.set(reviewId, {
               file,
+              compatibilityBaseRevision: prepared.compatibilityBaseRevision,
               baseRevision: prepared.baseRevision,
               revision: prepared.revision,
               expiresAt,
             });
             respond(res, 200, {
               reviewId,
+              compatibilityBaseRevision: prepared.compatibilityBaseRevision,
               baseRevision: prepared.baseRevision,
               revision: prepared.revision,
               diff: prepared.diff,
+              compatibilityDiff: prepared.compatibilityDiff,
               counts: prepared.counts,
               expiresAt: new Date(expiresAt).toISOString(),
             });
@@ -213,6 +216,7 @@ export function createOwnerPublicationHandler({
           const result = await publisher.publishFile(review.file, {
             expectedRevision: review.baseRevision,
             reviewedRevision: review.revision,
+            compatibilityBaseRevision: review.compatibilityBaseRevision,
           });
           await removeReview(input.reviewId);
           respond(res, 200, result);

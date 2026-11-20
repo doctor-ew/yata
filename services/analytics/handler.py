@@ -5,6 +5,8 @@ import hmac
 import json
 import os
 import re
+import time
+import urllib.request
 
 METRICS = {'app_open', 'play_start', 'watch_seconds', 'play_error', 'ai_attempt', 'ai_success', 'ai_failure', 'ai_cancel', 'ai_handoff', 'feedback_draft', 'arcade_unlock'}
 CHANNELS = {'none', 'mixed', 'action', 'scifi', 'cartoons', 'nick', 'comedy', 'drama', 'seventies', 'late-night', 'custom', 'library', 'movies'}
@@ -12,7 +14,40 @@ HOSTS = {'none', 'stubing', 'arnold', 'jabberjaw', 'benson', 'mrt', 'murdock', '
 ORIGINS = {'https://doctorew.com', 'https://www.doctorew.com', 'https://localhost', 'capacitor://localhost'}
 
 
-def validate(body):
+_registry_cache = {'until': 0, 'channels': set(CHANNELS)}
+
+
+def published_channels():
+    """Bounded fixed-origin registry lookup; never accept viewer-supplied dimensions."""
+    now = time.monotonic()
+    if now < _registry_cache['until']:
+        return _registry_cache['channels']
+    _registry_cache['until'] = now + 300
+    class NoRedirect(urllib.request.HTTPRedirectHandler):
+        def redirect_request(self, req, fp, code, msg, headers, newurl):
+            return None
+    try:
+        opener = urllib.request.build_opener(NoRedirect())
+        with opener.open('https://doctorew.com/tv/data/published-catalog-v3-manifest.json', timeout=2) as response:
+            raw = response.read(8193)
+        if len(raw) > 8192:
+            raise ValueError('Oversized registry manifest')
+        manifest = json.loads(raw)
+        ids = manifest.get('channelIds')
+        if (manifest.get('version') != 2 or manifest.get('requires') != ['channel-registry-v1']
+            or not isinstance(ids, list) or not 9 <= len(ids) <= 32
+            or any(not isinstance(v, str) or not re.fullmatch(r'[a-z][a-z0-9-]{0,31}', v) for v in ids)
+            or len(set(ids)) != len(ids) or any(v in {'all', 'none', 'library', 'movies', 'custom', 'arcade', 'constructor', 'prototype'} for v in ids)
+            or not CHANNELS.difference({'none', 'custom', 'library', 'movies'}).issubset(ids)):
+            raise ValueError('Invalid registry manifest')
+        _registry_cache['channels'] = CHANNELS.union(ids)
+    except Exception:
+        pass  # Keep finite last-good dimensions during a publisher/network outage.
+    return _registry_cache['channels']
+
+
+def validate(body, channels=None):
+    channels = CHANNELS if channels is None else channels
     if not isinstance(body, dict) or set(body) != {'batch', 'events'} or not isinstance(body['batch'], str) or not re.fullmatch(r'[a-f0-9]{32}', body['batch']):
         raise ValueError('Invalid batch')
     events = body['events']
@@ -23,7 +58,7 @@ def validate(body):
         if not isinstance(e, dict) or set(e) != {'metric', 'channel', 'platform', 'provider', 'host', 'version', 'value'}:
             raise ValueError('Invalid fields')
         if (not isinstance(e['metric'], str) or e['metric'] not in METRICS
-            or not isinstance(e['channel'], str) or e['channel'] not in CHANNELS
+            or not isinstance(e['channel'], str) or e['channel'] not in channels
             or e['platform'] not in ['web', 'android', 'ios']
             or e['provider'] not in ['none', 'archive', 'youtube', 'tubi']
             or not isinstance(e['host'], str) or e['host'] not in HOSTS
@@ -46,7 +81,7 @@ def quota(table, secret, batch, ip, now):
     return {'TransactItems': items}
 
 
-def handler(event, _context, *, dynamo=None, emit=print):
+def handler(event, _context, *, dynamo=None, emit=print, channel_loader=published_channels):
     headers = {str(k).lower(): v for k, v in (event.get('headers') or {}).items()}
     origin = headers.get('origin', '')
     response_headers = {'Content-Type': 'application/json', 'Cache-Control': 'no-store', 'Vary': 'Origin', 'X-Content-Type-Options': 'nosniff'}
@@ -64,7 +99,10 @@ def handler(event, _context, *, dynamo=None, emit=print):
     if not isinstance(raw, str) or event.get('isBase64Encoded') or len(raw.encode()) > 10000 or not re.match(r'^application/json(?:\s*;|$)', headers.get('content-type', ''), re.I):
         return respond(400)
     try:
-        events = validate(json.loads(raw))
+        body = json.loads(raw)
+        proposed = body.get('events', []) if isinstance(body, dict) else []
+        unknown = isinstance(proposed, list) and any(isinstance(e, dict) and isinstance(e.get('channel'), str) and e['channel'] not in CHANNELS for e in proposed)
+        events = validate(body, channel_loader() if unknown else CHANNELS)
     except (ValueError, TypeError):
         return respond(400)
     ip = event.get('requestContext', {}).get('identity', {}).get('sourceIp')

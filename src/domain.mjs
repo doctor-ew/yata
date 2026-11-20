@@ -1,7 +1,9 @@
+import {DEFAULT_CHANNELS} from './channel-defaults.mjs';
+import {validateChannelRegistry} from './channel-registry.mjs';
 import{validateEpisodeQueue,episodeQueueSelected,resolveEpisodeQueue}from'./episode-queue.mjs';
 import {scheduleSeed,activeRotation} from './remix.mjs';
 import { MOVIE_SHOW_ID } from './collections.mjs';
-import { CHANNELS, SHOW_CHANNEL_IDS, migratedShowChannel, mixIncludes, SERIAL_SHOW_IDS } from './channels.mjs';
+import { migratedShowChannel, mixIncludes, SERIAL_SHOW_IDS } from './channels.mjs';
 import { randomRotation, createCommercialBreak } from './shuffle.mjs';
 export const COMMERCIAL_SHOW_ID = 'vintage-commercials';
 export const STORAGE_KEY = 'drew-tv.catalog.v1';
@@ -117,8 +119,11 @@ export async function importArchive(raw, fetcher = globalThis.fetch, timeoutMs =
 
 export function validateCatalog(raw) {
   if (!raw || raw.version !== 1 || !Array.isArray(raw.shows) || raw.shows.length > MAX_CATALOG_SHOWS || !raw.shows.length) fail(`Expected a version-1 YATA catalog with 1–${MAX_CATALOG_SHOWS} shows.`);
+  const registry=raw.channelRegistry===undefined?null:validateChannelRegistry(raw.channelRegistry);
+  const channelDefinitions=registry?.channels??DEFAULT_CHANNELS;
+  const showChannelIds=channelDefinitions.filter(c=>c.id!=='mixed').map(c=>c.id);
   if (!Number.isFinite(raw.epoch) || raw.epoch < 0) fail('Invalid station start time.');
-  if (!raw.settings || !CHANNELS.some(channel => channel.id === raw.settings.channel) || typeof raw.settings.bumpers !== 'boolean') fail('Invalid station settings.');
+  if (!raw.settings || !channelDefinitions.some(channel => channel.id === raw.settings.channel) || typeof raw.settings.bumpers !== 'boolean') fail('Invalid station settings.');
   const rotation = raw.settings.rotation ?? 'random';
   const shuffleSeed = raw.settings.shuffleSeed ?? 1984;
   const storiesPerTurn = raw.settings.storiesPerTurn ?? 1;
@@ -136,8 +141,8 @@ export function validateCatalog(raw) {
 
   const mixChannels = raw.settings.mixChannels ?? null;
   const channelRemixes = raw.settings.channelRemixes ?? {};
-  if(!channelRemixes||typeof channelRemixes!=='object'||Array.isArray(channelRemixes)||Object.entries(channelRemixes).some(([key,value])=>!CHANNELS.some(c=>c.id===key)||!value||typeof value!=='object'||!Number.isInteger(value.seed)||value.seed<0||value.seed>4294967295||!Number.isFinite(value.epoch)||value.epoch<0))fail('Invalid channel remix settings.');
-  if(mixChannels!==null&&(!Array.isArray(mixChannels)||mixChannels.length>SHOW_CHANNEL_IDS.length||new Set(mixChannels).size!==mixChannels.length||mixChannels.some(id=>!SHOW_CHANNEL_IDS.includes(id))))fail('Choose valid distinct channels for the YATA mix.');
+  if(!channelRemixes||typeof channelRemixes!=='object'||Array.isArray(channelRemixes)||Object.entries(channelRemixes).some(([key,value])=>!channelDefinitions.some(c=>c.id===key)||!value||typeof value!=='object'||!Number.isInteger(value.seed)||value.seed<0||value.seed>4294967295||!Number.isFinite(value.epoch)||value.epoch<0))fail('Invalid channel remix settings.');
+  if(mixChannels!==null&&(!Array.isArray(mixChannels)||mixChannels.length>showChannelIds.length||new Set(mixChannels).size!==mixChannels.length||mixChannels.some(id=>!showChannelIds.includes(id))))fail('Choose valid distinct channels for the YATA mix.');
   if (streamShows !== null && (!Array.isArray(streamShows) || streamShows.length < 1 || streamShows.length > 12 || new Set(streamShows).size !== streamShows.length)) fail('Choose 1–12 distinct shows for a bespoke channel.');
   if (streamShows !== null) streamShows.forEach(id);
   if (!['random', 'ordered'].includes(rotation)) fail('Choose random or ordered rotation.');
@@ -151,7 +156,7 @@ export function validateCatalog(raw) {
     const sid = id(s.id);
     if (showIds.has(sid)) fail('Duplicate show ID.');
     showIds.add(sid);
-    if (!SHOW_CHANNEL_IDS.includes(s.channel) || !Array.isArray(s.episodes)) fail('Invalid show channel or episode list.');
+    if (!showChannelIds.includes(s.channel) || !Array.isArray(s.episodes)) fail('Invalid show channel or episode list.');
     let imdbUrl = null;
     if (s.imdbUrl != null && s.imdbUrl !== '') {
       const u = httpsUrl(s.imdbUrl);
@@ -179,7 +184,8 @@ export function validateCatalog(raw) {
       return { id: eid, title: text(e.title, 'episode title'), season: e.season, number: e.number,
         durationSeconds: e.durationSeconds, group: e.group.trim(), kind: e.kind, sources };
     });
-    return { id: sid, title: text(s.title, 'show title'), channel: migratedShowChannel(sid, s.channel), imdbUrl, episodes };
+    if(s.legacyChannel!==undefined&&(!registry||!DEFAULT_CHANNELS.some(c=>c.id===s.legacyChannel&&c.id!=='mixed')))fail('Invalid legacy show channel.');
+    return { id: sid, title: text(s.title, 'show title'), channel: registry?s.channel:migratedShowChannel(sid, s.channel), ...(s.legacyChannel?{legacyChannel:s.legacyChannel}:{}), imdbUrl, episodes };
   });
   // Preserve a legacy show-only stream when its curated show moves channels.
   const migratedStream = streamShow !== null && raw.shows.find(show=>show.id===streamShow)?.channel===raw.settings.channel && shows.find(show=>show.id===streamShow)?.channel!==raw.settings.channel;
@@ -200,7 +206,7 @@ export function validateCatalog(raw) {
     const sources = input.sources.map(entry=>({showId:id(entry.showId),url:parseSourceUrl(entry.url).url}));
     if (episodes.length || sources.length) exclusions = {episodes,sources};
   }
-  return { version: 1, epoch: raw.epoch, shows, ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}),...(customQueue.length?{customQueue,customMode,customQueueActive}:{}),...(customShows?{customShows:[...customShows],customTitle:customTitle.trim(),customSeed,customEpoch,customRotation}:{}), ...(mixChannels!==null?{mixChannels:[...mixChannels]}:{}),...(Object.keys(channelRemixes).length?{channelRemixes:Object.fromEntries(Object.entries(channelRemixes).map(([key,value])=>[key,{seed:value.seed,epoch:value.epoch}]))}:{}) } };
+  return { version: 1, epoch: raw.epoch, shows, ...(registry?{channelRegistry:registry}:{}), ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}),...(customQueue.length?{customQueue,customMode,customQueueActive}:{}),...(customShows?{customShows:[...customShows],customTitle:customTitle.trim(),customSeed,customEpoch,customRotation}:{}), ...(mixChannels!==null?{mixChannels:[...mixChannels]}:{}),...(Object.keys(channelRemixes).length?{channelRemixes:Object.fromEntries(Object.entries(channelRemixes).map(([key,value])=>[key,{seed:value.seed,epoch:value.epoch}]))}:{}) } };
 }
 
 export function parseCatalogJson(input) {

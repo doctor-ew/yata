@@ -1,3 +1,5 @@
+import{applyChannelRegistry,catalogChannels}from'./channels.mjs';
+import{defaultChannelRegistry}from'./channel-registry.mjs';
 import{RELEASES}from'./release-notes.mjs';
 import{ARCADE_GAMES,refreshArcadeGames}from'./arcade-games.mjs';
 import{mountEpisodeSearch}from'./episode-search-ui.mjs';
@@ -66,6 +68,7 @@ let viewerPreferences=null;
 const catalogStore = ownerMode ? await openCatalogStore({storage,seed:createSeed()}) : openViewerCatalog();
 const loaded = catalogStore.loaded;
 let catalog = catalogStore.catalog;
+applyChannelRegistry(catalog.channelRegistry??defaultChannelRegistry());analytics.setChannelRegistry(catalog.channelRegistry??defaultChannelRegistry());
 let publisherReview = null, publisherCsrf = null, publicationUi = null, publishedBusy = false;
 let rejectedCatalog = null, lastSaveError = '', unsavedChanges = false, pendingWrites = 0;
 let selectedShowId = catalog.shows[0].id, editingEpisodeId = null;
@@ -90,7 +93,7 @@ const uid = prefix => `${prefix}-${crypto.randomUUID()}`;
 const dialFeedback = mountDialFeedback({ windowRef: window, storage, toggle: $('dial-feedback'), getVolume: () => transportState()?.volume ?? preferredAudio?.volume ?? 1, getMuted: () => transportState()?.muted ?? preferredAudio?.muted ?? false, pulse: () => retroEffects.pulse({ force: true }) });
 
 const mixControls=mountMixControls({root:$('mix-panel'),channels:CHANNELS,getSettings:()=>catalog.settings,onChange:async ids=>{const next=copyCatalog(),main=next.settings.channel==='mixed'&&!next.settings.streamShow&&!next.settings.streamShows,playing=transportState()?.paused===false;if(ids.length===CHANNELS.length-1)delete next.settings.mixChannels;else next.settings.mixChannels=ids;if(main){next.epoch=Date.now()/1000;if(next.settings.channelRemixes?.mixed)next.settings.channelRemixes.mixed.epoch=next.epoch;}if(await commitSettings(next)){if(main)stopPlayer();render();if(main&&playing)tuneLive();return true;}return false;}});
-mountLineupRemix({root:$('remix-panel'),channels:[CUSTOM_CHANNEL,...CHANNELS],getChannel:()=>isCustomChannel(catalog)?'custom':catalog.settings.channel,onRemix:async channel=>{
+const remixControls=mountLineupRemix({root:$('remix-panel'),channels:CHANNELS,getChannels:()=>[CUSTOM_CHANNEL,...CHANNELS],getChannel:()=>isCustomChannel(catalog)?'custom':catalog.settings.channel,onRemix:async channel=>{
  if(!ownerMode&&!publicCatalogReady)return false;
  if(channel==='custom'&&!customShows(catalog)?.length){notify('Assemble channel 00 first.');return false;}
  const current=channel==='all'||channel===(isCustomChannel(catalog)?'custom':catalog.settings.channel),playing=transportState()?.paused===false;
@@ -277,7 +280,7 @@ function episodeDetail(e, movie = false) {
 }
 
 function renderChannels() {
-  mixControls.sync();
+  mixControls.sync();remixControls.sync();renderLibraryChannels();
   const stations=[CUSTOM_CHANNEL,...CHANNELS.slice(0,2),ARCADE_CHANNEL,...CHANNELS.slice(2)];
   $('channels').replaceChildren(...stations.map(c=>{
     const custom=c.id==='custom',arcade=c.id==='arcade';
@@ -381,6 +384,7 @@ function presentEpisodeTitle(episode,show){
 }
 
 function render() {
+  applyChannelRegistry(catalog.channelRegistry??defaultChannelRegistry());analytics.setChannelRegistry(catalog.channelRegistry??defaultChannelRegistry());
   queueUi?.render();renderResume(); renderChannels(); renderGuide(); renderLibrary(); renderDials(); stationGuide.render();
   if(guideJumpPending&&(ownerMode||publicCatalogReady)&&!$('guide').hidden){guideJumpPending=false;requestAnimationFrame(()=>{if(!$('guide').hidden)$(innerWidth<=1000?'screen-column':'guide').scrollIntoView({block:'start'});});}
 }
@@ -760,7 +764,9 @@ for (const id of ['close-source', 'cancel-source']) $(id).addEventListener('clic
 $('source-dialog').addEventListener('cancel', event => { if (importBusy) event.preventDefault(); });
 $('search').addEventListener('input', renderLibrary);
 for(const id of ['library-channel','library-genre','library-decade','library-availability','library-sort'])$(id)?.addEventListener('change',renderLibrary);
-if($('library-channel'))for(const channel of CHANNELS.filter(c=>c.id!=='mixed')){const option=element('option',channel.name);option.value=channel.id;$('library-channel').append(option);}
+let libraryChannelKey='';
+function renderLibraryChannels(){const select=$('library-channel');if(!select)return;const key=JSON.stringify(CHANNELS.map(c=>[c.id,c.name]));if(key===libraryChannelKey)return;libraryChannelKey=key;const selected=select.value,all=element('option','All channels');all.value='all';select.replaceChildren(all,...CHANNELS.filter(c=>c.id!=='mixed').map(c=>{const o=element('option',c.name);o.value=c.id;return o;}));select.value=CHANNELS.some(c=>c.id===selected)?selected:'all';}
+renderLibraryChannels();
 $('library-reset')?.addEventListener('click',()=>{$('search').value='';for(const id of ['library-channel','library-genre','library-decade','library-availability'])$(id).value='all';$('library-sort').value='title';renderLibrary();});
 void loadLibraryArtwork();
 for (const id of ['tune-live', 'standby-play']) $(id).addEventListener('click', tuneLive);
@@ -1104,7 +1110,7 @@ function createPublisherUi() {
       const review=await publisherRequest('preview',{catalog:payload});
       if(catalog!==frozen)throw Error('The local catalog changed during review. Review it again before publishing.');
       publisherReview={...review,baseCatalog:frozen};
-      detail.textContent=JSON.stringify({counts:review.counts,changes:review.diff,expiresAt:review.expiresAt},null,2);
+      detail.textContent=JSON.stringify({counts:review.counts,changes:review.diff,compatibilityChanges:review.compatibilityDiff,expiresAt:review.expiresAt},null,2);
       status.textContent='Review the changes below. Confirm publishes this frozen catalog to every visitor.';confirmButton.disabled=false;
     } catch(error){status.textContent=error.message;} finally{preview.disabled=!catalogStore.writable;}
   });
@@ -1113,7 +1119,7 @@ function createPublisherUi() {
     confirmButton.disabled=true; preview.disabled=true;
     try {
       const receipt=await publisherRequest('confirm',{reviewId:review.reviewId});publisherReview=null;
-      status.textContent=receipt.cacheInvalidationPending?'Catalog published. Cache refresh is pending; do not publish again.':'Catalog published. Visitors will receive the new shared catalog.';
+      status.textContent=receipt.compatibilityPending?'Catalog published. Older-app feed repair is pending; review the shared catalog before retrying.':receipt.cacheInvalidationPending?'Catalog published. Cache refresh is pending; do not publish again.':'Catalog published. Visitors will receive the new shared catalog.';
       detail.textContent=JSON.stringify({revision:receipt.revision,counts:receipt.counts,updatedAt:receipt.updatedAt},null,2);
     } catch(error){publisherReview=null;status.textContent=error.message+' Review again before confirming.';}
     finally{preview.disabled=!catalogStore.writable;}
@@ -1130,7 +1136,7 @@ function createPublisherUi() {
   const add=button('Add a show',()=>{
     if(!ownerMode||!catalogStore.writable)return;
     const name=prompt('New show name');if(!name?.trim())return;
-    const choice=prompt('Channel: action, scifi, cartoons, comedy, seventies, or late-night','scifi');if(!['action','scifi','cartoons','comedy','seventies','late-night'].includes(choice))return;
+    const choices=catalogChannels(catalog).filter(c=>c.id!=='mixed');const choice=prompt('Channel: '+choices.map(c=>c.id).join(', '),'scifi');if(!choices.some(c=>c.id===choice))return;
     const next=copyCatalog(), show={id:uid('show'),title:name.trim(),channel:choice,imdbUrl:null,episodes:[]};next.shows.push(show);
     void commit(next).then(saved=>{if(saved){selectedShowId=show.id;render();openShow(show.id);status.textContent='New show saved locally. Add sources, then review publication to share it.';}});
   });add.disabled=!catalogStore.writable;

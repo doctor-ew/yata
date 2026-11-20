@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "channels": [
+    {
+      "id": "mixed",
+      "number": "01",
+      "name": "YATA Channels",
+      "subtitle": "All TV channels.",
+      "accent": "#ffc66e",
+      "fallback": "mixed"
+    },
+    {
+      "id": "action",
+      "number": "02",
+      "name": "Action Adventure",
+      "subtitle": "Action and adventure.",
+      "accent": "#ff927b",
+      "fallback": "action"
+    },
+    {
+      "id": "scifi",
+      "number": "10",
+      "name": "Sci-Fi",
+      "subtitle": "Science-fiction series.",
+      "accent": "#79cde5",
+      "fallback": "scifi"
+    },
+    {
+      "id": "cartoons",
+      "number": "04",
+      "name": "Saturday Morning",
+      "subtitle": "Animated series.",
+      "accent": "#ac9aff",
+      "fallback": "cartoons"
+    },
+    {
+      "id": "nick",
+      "number": "08",
+      "name": "Nickelodeon",
+      "subtitle": "After school · classic Nick.",
+      "accent": "#df8658",
+      "fallback": "nick"
+    },
+    {
+      "id": "game-shows",
+      "number": "11",
+      "name": "Game Shows",
+      "subtitle": "Classic daytime games and prime-time prizes.",
+      "accent": "#dfbc70",
+      "fallback": "seventies"
+    },
+    {
+      "id": "comedy",
+      "number": "05",
+      "name": "Comedy",
+      "subtitle": "Comedy series.",
+      "accent": "#f4c36e",
+      "fallback": "comedy"
+    },
+    {
+      "id": "drama",
+      "number": "09",
+      "name": "Drama",
+      "subtitle": "Hospital rounds and precinct roll calls.",
+      "accent": "#8fa9ad",
+      "fallback": "drama"
+    },
+    {
+      "id": "seventies",
+      "number": "06",
+      "name": "70s Prime Time",
+      "subtitle": "Detectives and road shows.",
+      "accent": "#d8b16d",
+      "fallback": "seventies"
+    },
+    {
+      "id": "late-night",
+      "number": "07",
+      "name": "Late Night Toons",
+      "subtitle": "Adult animation · 1990s–2000s.",
+      "accent": "#b2a0ce",
+      "fallback": "late-night"
+    }
+  ]
+}
