@@ -86,7 +86,7 @@ This is whole-episode summary search. It does not search full scripts, prove exa
 
 The published catalog, library artwork, Arcade metadata and companion roster are data-driven. Validated public feeds can refresh content without rebuilding the app; new native capabilities still require an app update. The TV catalog uses immutable snapshots and SHA-256 verification. Native clients retain a bundled snapshot for offline catalog browsing; playback needs a network connection.
 
-The published catalog observed on November 18, 2026 contains **269 shows and collections, 12,507 catalog entries and 12,821 source records**. Those counts include collections and break material; they do not imply complete series, uninterrupted availability or verified playback of every file. [Catalog API](docs/CATALOG-API.md).
+The published catalog observed on November 20, 2026 contains **341 shows and collections, 13,983 catalog entries and 14,297 source records**. FishCenter Live is a small 12-broadcast selection in Comedy, with dated source descriptions for Drew-related segments; it adds no channel button. Those counts include collections and break material; they do not imply complete series, uninterrupted availability or verified playback of every file. [Catalog API](docs/CATALOG-API.md).
 
 Videos play through their listed providers, including Internet Archive and the official YouTube player. Tubi sources open at the provider. YATA does not bundle TV video files. Provider ads, embed restrictions, regions, captions and availability can vary. Show art and media retain their owners’ rights; catalog inclusion does not establish redistribution rights.
 

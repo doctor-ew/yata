@@ -1,0 +1,339 @@
+{
+  "version": 1,
+  "scope": "Twelve selected archived broadcasts. Four source descriptions explicitly bill Drew as replacement/guest host; other entries contain Drew-related segments or references. No identity-by-face, current live feed or complete-series claim.",
+  "indexUrl": "https://archive.org/advancedsearch.php?q=title%3AFishcenter+AND+Drew&output=json",
+  "indexed": 12,
+  "recordings": [
+    {
+      "identifier": "fishcenter-live-tuesday-april-14th-2015",
+      "title": "Fishcenter Live - Tuesday, April 14th, 2015",
+      "date": "2015-04-14",
+      "description": "Streamed live on adultswim.com at 4:00p EST. Site description: Matt's Aquarium Video | Choe's DJ Video | Periscope Through Drew's Stuff | Ms. Max Man | Guess That Drew-Gi-Oh! | Guest Quest",
+      "file": "Fishcenter Live - Tuesday, April 14th, 2015.mp4",
+      "durationSeconds": 3846.03,
+      "bytes": 935704191,
+      "metadataUrl": "https://archive.org/metadata/fishcenter-live-tuesday-april-14th-2015",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-tuesday-april-14th-2015",
+      "url": "https://archive.org/download/fishcenter-live-tuesday-april-14th-2015/Fishcenter%20Live%20-%20Tuesday%2C%20April%2014th%2C%202015.mp4",
+      "verification": {
+        "checkedAt": "2026-11-20T19:13:54.980Z",
+        "httpStatus": 206,
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-255/935704191",
+        "cors": null,
+        "mp4Header": true,
+        "media": {
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "width": 1280,
+          "height": 720,
+          "durationSeconds": 3846.033333
+        }
+      }
+    },
+    {
+      "identifier": "fishcenter-live-wednesday-april-15th-2015",
+      "title": "Fishcenter Live - Wednesday, April 15th, 2015",
+      "date": "2015-04-15",
+      "description": "Streamed live on adultswim.com at 4:00p EST. Site description: Mountin' Drew | Michelle Sleeps Late/Fishcenter Trivia | Mimosa Red Flag | Coin Quest Drone | Matt's Break Room Periscope | Cash Quest | When You Wish Upon a Choe",
+      "file": "Fishcenter Live - Wednesday, April 15th, 2015.mp4",
+      "durationSeconds": 4150.37,
+      "bytes": 1011742755,
+      "metadataUrl": "https://archive.org/metadata/fishcenter-live-wednesday-april-15th-2015",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-wednesday-april-15th-2015",
+      "url": "https://archive.org/download/fishcenter-live-wednesday-april-15th-2015/Fishcenter%20Live%20-%20Wednesday%2C%20April%2015th%2C%202015.mp4",
+      "verification": {
+        "checkedAt": "2026-11-20T19:13:54.361Z",
+        "httpStatus": 206,
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-255/1011742755",
+        "cors": null,
+        "mp4Header": true,
+        "media": {
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "width": 1280,
+          "height": 720,
+          "durationSeconds": 4150.366667
+        }
+      }
+    },
+    {
+      "identifier": "fishcenter-live-monday-april-20th-2015",
+      "title": "Fishcenter Live - Monday, April 20th, 2015",
+      "date": "2015-04-20",
+      "description": "Streamed live on adultswim.com at 4:00p EST. Site description: FC Recap | Harold plays Fish or Cut Bait | Bobby from NJ likes stuff | Top 5 Drew Bumbles | Matt Periscopes to steal Drew's toy | Lucas from Belgium vid, gets a call from us | Max breaks up with Yanielle",
+      "file": "Fishcenter Live - Monday, April 20th, 2015.mp4",
+      "durationSeconds": 4260.67,
+      "bytes": 1050054544,
+      "metadataUrl": "https://archive.org/metadata/fishcenter-live-monday-april-20th-2015",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-monday-april-20th-2015",
+      "url": "https://archive.org/download/fishcenter-live-monday-april-20th-2015/Fishcenter%20Live%20-%20Monday%2C%20April%2020th%2C%202015.mp4",
+      "verification": {
+        "checkedAt": "2026-11-20T19:13:54.930Z",
+        "httpStatus": 206,
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-255/1050054544",
+        "cors": null,
+        "mp4Header": true,
+        "media": {
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "width": 1280,
+          "height": 720,
+          "durationSeconds": 4260.666667
+        }
+      }
+    },
+    {
+      "identifier": "fishcenter-live-monday-may-11th-2015",
+      "title": "Fishcenter Live - Monday, May 11th, 2015",
+      "date": "2015-05-11",
+      "description": "Streamed live on adultswim.com at 4:00p EST. Site description: Fishcenter Recap | Choe's Suspension. Drew replaces him. Immediately bumbles everything. | Caller plays No Drewies | Knuckles plays Fishcenter Classic Trivia and wins double or nothing. | Tank Show Match Video - Eel vs David Anderson | Tank Tag | Squire Stop with Skyler",
+      "file": "Fishcenter Live - Monday, May 11th, 2015.mp4",
+      "durationSeconds": 4326.57,
+      "bytes": 2098515072,
+      "metadataUrl": "https://archive.org/metadata/fishcenter-live-monday-may-11th-2015",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-monday-may-11th-2015",
+      "url": "https://archive.org/download/fishcenter-live-monday-may-11th-2015/Fishcenter%20Live%20-%20Monday%2C%20May%2011th%2C%202015.mp4",
+      "verification": {
+        "checkedAt": "2026-11-20T19:13:54.731Z",
+        "httpStatus": 206,
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-255/2098515072",
+        "cors": null,
+        "mp4Header": true,
+        "media": {
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "width": 1280,
+          "height": 720,
+          "durationSeconds": 4326.533333
+        }
+      }
+    },
+    {
+      "identifier": "fishcenter-live-thursday-july-23rd-2015",
+      "title": "Fishcenter Live - Thursday, July 23rd, 2015",
+      "date": "2015-07-23",
+      "description": "Streamed live on adultswim.com at 4:00p EST. Description: Welcome to national hot dog day | Game: beer or peepee | extended game of no Dreweys ends drew | Game: dog stop | Game: putting on the condiwitz | video: greenbird origins | Video: voicemails",
+      "file": "Fishcenter Live - Thursday, July 23rd, 2015.mp4",
+      "durationSeconds": 4079.67,
+      "bytes": 1015310204,
+      "metadataUrl": "https://archive.org/metadata/fishcenter-live-thursday-july-23rd-2015",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-thursday-july-23rd-2015",
+      "url": "https://archive.org/download/fishcenter-live-thursday-july-23rd-2015/Fishcenter%20Live%20-%20Thursday%2C%20July%2023rd%2C%202015.mp4",
+      "verification": {
+        "checkedAt": "2026-11-20T19:13:54.360Z",
+        "httpStatus": 206,
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-255/1015310204",
+        "cors": null,
+        "mp4Header": true,
+        "media": {
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "width": 1280,
+          "height": 720,
+          "durationSeconds": 4079.666667
+        }
+      }
+    },
+    {
+      "identifier": "fishcenter-live-monday-july-27th-2015",
+      "title": "Fishcenter Live - Monday, July 27th, 2015",
+      "date": "2015-07-27",
+      "description": "Streamed live on adultswim.com at 4:00p EST. Site description: Video: Fishcenter Live St Wars Intro A Drew Hope | Video: Recap | Video/Call : Troy's ballet Fishcenter setup | Game: Puttin On The 200 List | Video: halfway through summer season | graphs. Game: Bert or Ernie | Game: Trivia 2 rounds, Butt or Elbow,",
+      "file": "Fishcenter Live - Monday, July 27th, 2015.mp4",
+      "durationSeconds": 4188.1,
+      "bytes": 1040714512,
+      "metadataUrl": "https://archive.org/metadata/fishcenter-live-monday-july-27th-2015",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-monday-july-27th-2015",
+      "url": "https://archive.org/download/fishcenter-live-monday-july-27th-2015/Fishcenter%20Live%20-%20Monday%2C%20July%2027th%2C%202015.mp4",
+      "verification": {
+        "checkedAt": "2026-11-20T19:13:54.454Z",
+        "httpStatus": 206,
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-255/1040714512",
+        "cors": null,
+        "mp4Header": true,
+        "media": {
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "width": 1280,
+          "height": 720,
+          "durationSeconds": 4188.1
+        }
+      }
+    },
+    {
+      "identifier": "fishcenter-live-tuesday-july-28th-2015",
+      "title": "Fishcenter Live - Tuesday, July 28th, 2015",
+      "date": "2015-07-28",
+      "description": "Streamed live on adultswim.com at 4:00p EST. Site description: Matt microphone bumbles | Video: Find Choe Love | Dave angry. Hamburgled bugs. Game is broken | Game: Trivia (1 question left) | Calling Drew to ask about Bugs | Choe calling Orez | Calling Win. Game: Win for Win",
+      "file": "Fishcenter Live - Tuesday, July 28th, 2015.mp4",
+      "durationSeconds": 4020.67,
+      "bytes": 982391631,
+      "metadataUrl": "https://archive.org/metadata/fishcenter-live-tuesday-july-28th-2015",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-tuesday-july-28th-2015",
+      "url": "https://archive.org/download/fishcenter-live-tuesday-july-28th-2015/Fishcenter%20Live%20-%20Tuesday%2C%20July%2028th%2C%202015.mp4",
+      "verification": {
+        "checkedAt": "2026-11-20T19:13:54.367Z",
+        "httpStatus": 206,
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-255/982391631",
+        "cors": null,
+        "mp4Header": true,
+        "media": {
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "width": 1280,
+          "height": 720,
+          "durationSeconds": 4020.666667
+        }
+      }
+    },
+    {
+      "identifier": "fishcenter-live-wednesday-september-23rd-2015",
+      "title": "Fishcenter Live - Wednesday, September 23rd, 2015",
+      "date": "2015-09-23",
+      "description": "Streamed live on adultswim.com at 4:00p EST. Site description: Fishcenter Theme: Ted Lester (Feat. Drew) | Pope Call | Stay Puff | Fish Fighter | Rebecca Brand: Hummingbird | Guess That Gourd! | Fat Bingo",
+      "file": "Fishcenter Live - Wednesday, September 23rd, 2015 (better quality).mp4",
+      "durationSeconds": 4139.83,
+      "bytes": 994017977,
+      "metadataUrl": "https://archive.org/metadata/fishcenter-live-wednesday-september-23rd-2015",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-wednesday-september-23rd-2015",
+      "url": "https://archive.org/download/fishcenter-live-wednesday-september-23rd-2015/Fishcenter%20Live%20-%20Wednesday%2C%20September%2023rd%2C%202015%20(better%20quality).mp4",
+      "verification": {
+        "checkedAt": "2026-11-20T19:13:55.546Z",
+        "httpStatus": 206,
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-255/994017977",
+        "cors": null,
+        "mp4Header": true,
+        "media": {
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "width": 1280,
+          "height": 720,
+          "durationSeconds": 4139.833333
+        }
+      }
+    },
+    {
+      "identifier": "fishcenter-live-thursday-october-15th-2015",
+      "title": "Fishcenter Live - Thursday, October 15th, 2015",
+      "date": "2015-10-15",
+      "description": "Streamed live on adultswim.com at 4:00p EST. Site description: FishCenter Theme: Pat Metal Version | Choe Out/Drew In | It Takes Drew (Music Video) | How Many Baous? | Litigious Company Boot Guess Game | No Drewies | York or York | Guess That Choemster Monster | Choe Hums | Ass Bear Warning",
+      "file": "Fishcenter Live - Thursday, October 15th, 2015.mp4",
+      "durationSeconds": 4203.17,
+      "bytes": 1015206286,
+      "metadataUrl": "https://archive.org/metadata/fishcenter-live-thursday-october-15th-2015",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-thursday-october-15th-2015",
+      "url": "https://archive.org/download/fishcenter-live-thursday-october-15th-2015/Fishcenter%20Live%20-%20Thursday%2C%20October%2015th%2C%202015.mp4",
+      "verification": {
+        "checkedAt": "2026-11-20T19:13:54.353Z",
+        "httpStatus": 206,
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-255/1015206286",
+        "cors": null,
+        "mp4Header": true,
+        "media": {
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "width": 1280,
+          "height": 720,
+          "durationSeconds": 4203.166667
+        }
+      }
+    },
+    {
+      "identifier": "fishcenter-live-friday-october-16th-2015",
+      "title": "Fishcenter Live - Friday, October 16th, 2015",
+      "date": "2015-10-16",
+      "description": "Streamed live on adultswim.com at 4:00p EST. Site description: FishCenter Theme: Max & Doc Folk Version | Autumn 4-Week Score Summary | Guess That Gourd! | Bumble Berry | York or York? | House Calls With Dr. Rich | How Many Waka Bakas? | Drew Hums",
+      "file": "Fishcenter Live - Friday, October 16th, 2015.mp4",
+      "durationSeconds": 4780.73,
+      "bytes": 1184082821,
+      "metadataUrl": "https://archive.org/metadata/fishcenter-live-friday-october-16th-2015",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-friday-october-16th-2015",
+      "url": "https://archive.org/download/fishcenter-live-friday-october-16th-2015/Fishcenter%20Live%20-%20Friday%2C%20October%2016th%2C%202015.mp4",
+      "verification": {
+        "checkedAt": "2026-11-20T19:13:55.108Z",
+        "httpStatus": 206,
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-255/1184082821",
+        "cors": null,
+        "mp4Header": true,
+        "media": {
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "width": 1280,
+          "height": 720,
+          "durationSeconds": 4780.733333
+        }
+      }
+    },
+    {
+      "identifier": "fishcenter-live-monday-august-15-2016",
+      "title": "Fishcenter Live - Monday, 15 August 2016",
+      "date": "2016-08-15",
+      "description": "Special Guest Hosts Rebecca and Drew | Weekly Recap | Ned's Bad News | No Drewies | A-Bombawits | Hamburgled",
+      "file": "fishcenter_20160815.mp4",
+      "durationSeconds": 4122.36,
+      "bytes": 1806091386,
+      "metadataUrl": "https://archive.org/metadata/fishcenter-live-monday-august-15-2016",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-monday-august-15-2016",
+      "url": "https://archive.org/download/fishcenter-live-monday-august-15-2016/fishcenter_20160815.mp4",
+      "verification": {
+        "checkedAt": "2026-11-20T19:13:55.801Z",
+        "httpStatus": 206,
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-255/1806091386",
+        "cors": null,
+        "mp4Header": true,
+        "media": {
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "width": 1280,
+          "height": 720,
+          "durationSeconds": 4122.358667
+        }
+      }
+    },
+    {
+      "identifier": "fishcenter-live-tuesday-august-16-2016",
+      "title": "Fishcenter Live - Tuesday, 16 August 2016",
+      "date": "2016-08-16",
+      "description": "Special Guest Host Drew | Jorts or No Jorts | Blue Attacks Hamburger | Sneak Peek Drews New Job |",
+      "file": "fishcenter_20160816.mp4",
+      "durationSeconds": 3893.36,
+      "bytes": 1705740736,
+      "metadataUrl": "https://archive.org/metadata/fishcenter-live-tuesday-august-16-2016",
+      "sourceUrl": "https://archive.org/details/fishcenter-live-tuesday-august-16-2016",
+      "url": "https://archive.org/download/fishcenter-live-tuesday-august-16-2016/fishcenter_20160816.mp4",
+      "verification": {
+        "checkedAt": "2026-11-20T19:13:55.541Z",
+        "httpStatus": 206,
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-255/1705740736",
+        "cors": null,
+        "mp4Header": true,
+        "media": {
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "width": 1280,
+          "height": 720,
+          "durationSeconds": 3893.358667
+        }
+      }
+    }
+  ],
+  "excluded": [],
+  "notes": [
+    "Small selection only, following the user request not to flood the lineup. One collection in Comedy; no additional channel.",
+    "Source descriptions mention Drew; incidental references, games and songs do not prove an on-camera appearance.",
+    "The 33-second iGetBumblesDone DrewRap clip linked from Drew’s public post is excluded from ordinary rotation.",
+    "No invented season or episode numbers. Dates and descriptive titles follow Archive metadata."
+  ]
+}
