@@ -1,0 +1,3335 @@
+{
+  "checkedAt": "2026-11-20T14:54:11.582Z",
+  "notes": [
+    "Original-era selections only. Excludes a mislabeled 2022 Kids in the Hall recording and the 2026 A Different World reboot.",
+    "One encoding per recording; episode and language labels remain subject to source accuracy. Range checks do not establish full decoding, rights or continued availability.",
+    "The 227 collection is incomplete despite its uploader title. A Different World 6.17-18 stays one combined recording without fabricated split points."
+  ],
+  "selections": [
+    {
+      "id": "kids-in-the-hall",
+      "title": "The Kids in the Hall (1988)",
+      "items": [],
+      "tvmazeId": 5112
+    },
+    {
+      "id": "mr-belvedere",
+      "title": "Mr. Belvedere",
+      "items": [
+        "mr.-belvedere-s-04e-20-the-counselor-1"
+      ],
+      "tvmazeId": 7603
+    },
+    {
+      "id": "227",
+      "title": "227 (1985)",
+      "items": [
+        "227-complete_TV_Series_CTV"
+      ],
+      "tvmazeId": 7602
+    },
+    {
+      "id": "family-matters",
+      "title": "Family Matters",
+      "items": [
+        "family-matters-s-01-e-03-short-story",
+        "family-matters-s-01-e-05-straight-as",
+        "family-matters-s-01-e-01-the-mama-who-came-to-dinner",
+        "family-matters-s-06-e-21-whats-up-doc",
+        "family-matters-s-03-e-04-words-hurt",
+        "family-matters-s-01-e-21-bowl-me-over",
+        "family-matters-s-05-e-21-a-camping-we-will-go",
+        "family-matters-s-01-e-02-two-income-family",
+        "family-matters-s-03-e-13-choir-trouble",
+        "family-matters-s-04-e-01-surely-you-joust",
+        "family-matters-s-01-e-16-the-party",
+        "family-matters-s-07-e-01-little-big-guy",
+        "family-matters-s-07-e-14-life-in-the-fast-lane",
+        "family-matters-s-01-e-06-basketball-blues",
+        "family-matters-s-01-e-22-rock-video",
+        "family-matters-s-08-e-16-father-time",
+        "family-matters-s-01-e-07-body-damage",
+        "family-matters-s-09-e-07-stevil-ii-this-time-hes-not-alone",
+        "family-matters-stevil-ii-this-time-hes-not-alone-full-halloween-episode",
+        "family-matters-s-01-e-14-bakers-dozen",
+        "family-matters-s-09-e-18-throw-urkel-from-the-train",
+        "family-matters-s-01-e-11-the-quilt",
+        "family-matters-s-01-e-13-mans-best-friend",
+        "family-matters-s-05-e-17-father-of-the-bride",
+        "family-matters-s-03-e-22-the-urkel-who-came-to-dinner",
+        "family-matters-s-04-e-06-whose-kid-is-it-anyway",
+        "family-matters-s-05-e-03-saved-by-the-erkel"
+      ],
+      "tvmazeId": 1250
+    },
+    {
+      "id": "a-different-world",
+      "title": "A Different World (1987)",
+      "items": [
+        "a-different-world-6.17-18",
+        "ADifferentWorldAllSFairSeason2Episode9",
+        "a-different-world-season-6-episode-25-college-kid"
+      ],
+      "tvmazeId": 7704
+    }
+  ],
+  "records": [
+    {
+      "item": "mr.-belvedere-s-04e-20-the-counselor-1",
+      "title": "Mr. Belvedere S 04e 20 The Counselor 1",
+      "url": "https://archive.org/details/mr.-belvedere-s-04e-20-the-counselor-1"
+    },
+    {
+      "item": "227-complete_TV_Series_CTV",
+      "title": "227 (Complete TV Series) (CTV)",
+      "url": "https://archive.org/details/227-complete_TV_Series_CTV"
+    },
+    {
+      "item": "family-matters-s-01-e-03-short-story",
+      "title": "Family Matters S 01 E 03 Short Story",
+      "url": "https://archive.org/details/family-matters-s-01-e-03-short-story"
+    },
+    {
+      "item": "family-matters-s-01-e-05-straight-as",
+      "title": "Family Matters S 01 E 05 Straight A's",
+      "url": "https://archive.org/details/family-matters-s-01-e-05-straight-as"
+    },
+    {
+      "item": "family-matters-s-01-e-01-the-mama-who-came-to-dinner",
+      "title": "Family Matters S 01 E 01 The Mama Who Came To Dinner",
+      "url": "https://archive.org/details/family-matters-s-01-e-01-the-mama-who-came-to-dinner"
+    },
+    {
+      "item": "family-matters-s-06-e-21-whats-up-doc",
+      "title": "Family Matters S 06 E 21 What's Up Doc",
+      "url": "https://archive.org/details/family-matters-s-06-e-21-whats-up-doc"
+    },
+    {
+      "item": "family-matters-s-03-e-04-words-hurt",
+      "title": "Family Matters S 03 E 04 Words Hurt",
+      "url": "https://archive.org/details/family-matters-s-03-e-04-words-hurt"
+    },
+    {
+      "item": "family-matters-s-01-e-21-bowl-me-over",
+      "title": "Family Matters S 01 E 21 Bowl Me Over",
+      "url": "https://archive.org/details/family-matters-s-01-e-21-bowl-me-over"
+    },
+    {
+      "item": "family-matters-s-05-e-21-a-camping-we-will-go",
+      "title": "Family Matters S 05 E 21 A Camping We Will Go",
+      "url": "https://archive.org/details/family-matters-s-05-e-21-a-camping-we-will-go"
+    },
+    {
+      "item": "family-matters-s-01-e-02-two-income-family",
+      "title": "Family Matters S 01 E 02 Two Income Family",
+      "url": "https://archive.org/details/family-matters-s-01-e-02-two-income-family"
+    },
+    {
+      "item": "family-matters-s-03-e-13-choir-trouble",
+      "title": "Family Matters S 03 E 13 Choir Trouble",
+      "url": "https://archive.org/details/family-matters-s-03-e-13-choir-trouble"
+    },
+    {
+      "item": "family-matters-s-04-e-01-surely-you-joust",
+      "title": "Family Matters S 04 E 01 Surely You Joust",
+      "url": "https://archive.org/details/family-matters-s-04-e-01-surely-you-joust"
+    },
+    {
+      "item": "family-matters-s-01-e-16-the-party",
+      "title": "Family Matters S 01 E 16 The Party",
+      "url": "https://archive.org/details/family-matters-s-01-e-16-the-party"
+    },
+    {
+      "item": "family-matters-s-07-e-01-little-big-guy",
+      "title": "Family Matters S 07 E 01 Little Big Guy",
+      "url": "https://archive.org/details/family-matters-s-07-e-01-little-big-guy"
+    },
+    {
+      "item": "family-matters-s-07-e-14-life-in-the-fast-lane",
+      "title": "Family Matters S 07 E 14 Life In The Fast Lane",
+      "url": "https://archive.org/details/family-matters-s-07-e-14-life-in-the-fast-lane"
+    },
+    {
+      "item": "family-matters-s-01-e-06-basketball-blues",
+      "title": "Family Matters S 01 E 06 Basketball Blues",
+      "url": "https://archive.org/details/family-matters-s-01-e-06-basketball-blues"
+    },
+    {
+      "item": "family-matters-s-01-e-22-rock-video",
+      "title": "Family Matters S 01 E 22 Rock Video",
+      "url": "https://archive.org/details/family-matters-s-01-e-22-rock-video"
+    },
+    {
+      "item": "family-matters-s-08-e-16-father-time",
+      "title": "Family Matters S 08 E 16 Father Time",
+      "url": "https://archive.org/details/family-matters-s-08-e-16-father-time"
+    },
+    {
+      "item": "family-matters-s-01-e-07-body-damage",
+      "title": "Family Matters S 01 E 07 Body Damage",
+      "url": "https://archive.org/details/family-matters-s-01-e-07-body-damage"
+    },
+    {
+      "item": "family-matters-s-09-e-07-stevil-ii-this-time-hes-not-alone",
+      "title": "Family Matters S 09 E 07 Stevil II This Time He's Not Alone",
+      "url": "https://archive.org/details/family-matters-s-09-e-07-stevil-ii-this-time-hes-not-alone"
+    },
+    {
+      "item": "family-matters-stevil-ii-this-time-hes-not-alone-full-halloween-episode",
+      "title": "Family Matters Stevil II This Time He’s Not Alone ( Full Halloween Episode)",
+      "url": "https://archive.org/details/family-matters-stevil-ii-this-time-hes-not-alone-full-halloween-episode"
+    },
+    {
+      "item": "family-matters-s-01-e-14-bakers-dozen",
+      "title": "Family Matters S 01 E 14 Baker's Dozen",
+      "url": "https://archive.org/details/family-matters-s-01-e-14-bakers-dozen"
+    },
+    {
+      "item": "family-matters-s-09-e-18-throw-urkel-from-the-train",
+      "title": "Family Matters S 09 E 18 Throw Urkel From The Train",
+      "url": "https://archive.org/details/family-matters-s-09-e-18-throw-urkel-from-the-train"
+    },
+    {
+      "item": "family-matters-s-01-e-11-the-quilt",
+      "title": "Family Matters S 01 E 11 The Quilt",
+      "url": "https://archive.org/details/family-matters-s-01-e-11-the-quilt"
+    },
+    {
+      "item": "family-matters-s-01-e-13-mans-best-friend",
+      "title": "Family Matters S 01 E 13 Man's Best Friend",
+      "url": "https://archive.org/details/family-matters-s-01-e-13-mans-best-friend"
+    },
+    {
+      "item": "family-matters-s-05-e-17-father-of-the-bride",
+      "title": "Family Matters S 05 E 17 Father Of The Bride",
+      "url": "https://archive.org/details/family-matters-s-05-e-17-father-of-the-bride"
+    },
+    {
+      "item": "family-matters-s-03-e-22-the-urkel-who-came-to-dinner",
+      "title": "Family Matters S 03 E 22 The Urkel Who Came To Dinner",
+      "url": "https://archive.org/details/family-matters-s-03-e-22-the-urkel-who-came-to-dinner"
+    },
+    {
+      "item": "family-matters-s-04-e-06-whose-kid-is-it-anyway",
+      "title": "Family Matters S 04 E 06 Number One With Happens",
+      "url": "https://archive.org/details/family-matters-s-04-e-06-whose-kid-is-it-anyway"
+    },
+    {
+      "item": "family-matters-s-05-e-03-saved-by-the-erkel",
+      "title": "Family Matters S 05 E 03 Saved By The Erkel",
+      "url": "https://archive.org/details/family-matters-s-05-e-03-saved-by-the-erkel"
+    },
+    {
+      "item": "a-different-world-6.17-18",
+      "title": "A Different World - Kadeem Hardison, Jasmine Guy, Lisa Bonet",
+      "url": "https://archive.org/details/a-different-world-6.17-18"
+    },
+    {
+      "item": "ADifferentWorldAllSFairSeason2Episode9",
+      "title": "A Different World- All's Fair (Season 2, Episode 9)",
+      "url": "https://archive.org/details/ADifferentWorldAllSFairSeason2Episode9"
+    },
+    {
+      "item": "a-different-world-season-6-episode-25-college-kid",
+      "title": "A Different World Season 6 Episode 25 - College Kid.",
+      "url": "https://archive.org/details/a-different-world-season-6-episode-25-college-kid"
+    }
+  ],
+  "shows": [
+    {
+      "id": "kids-in-the-hall",
+      "title": "The Kids in the Hall (1988)",
+      "channel": "comedy",
+      "imdbUrl": null,
+      "episodes": [
+        {
+          "id": "kids-youtube-EKE2WBwuNo4",
+          "title": "The Kids in the Hall | Season 1 Episode 2",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1412,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "youtube-EKE2WBwuNo4",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=EKE2WBwuNo4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "kids-youtube-AZ4CSkOd9tM",
+          "title": "The Kids in the Hall | Season 1 Episode 4",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1472,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "youtube-AZ4CSkOd9tM",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=AZ4CSkOd9tM",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "kids-youtube-Yew3n0WxZkw",
+          "title": "The Kids in the Hall | Season 1 Episode 6",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1321,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "youtube-Yew3n0WxZkw",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Yew3n0WxZkw",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "kids-youtube-EMwcOvtVqx8",
+          "title": "The Kids in the Hall | Season 1 Episode 8",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1088,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "youtube-EMwcOvtVqx8",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=EMwcOvtVqx8",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "kids-youtube-Bn_Rl0Cyjjo",
+          "title": "Kids in the Hall | Season 1 Episode 13",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1486,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "youtube-Bn_Rl0Cyjjo",
+              "provider": "youtube",
+              "url": "https://www.youtube.com/watch?v=Bn_Rl0Cyjjo",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mr-belvedere",
+      "title": "Mr. Belvedere",
+      "channel": "comedy",
+      "imdbUrl": null,
+      "episodes": [
+        {
+          "id": "mr-belvedere-07b8df1aca75a5d7b893",
+          "title": "Mr. Belvedere S04e20 The Counselor-1",
+          "season": 4,
+          "number": 20,
+          "durationSeconds": 1441.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-07b8df1aca75a5d7b893",
+              "provider": "archive",
+              "url": "https://archive.org/download/mr.-belvedere-s-04e-20-the-counselor-1/Mr.%20Belvedere%20S04e20%20The%20Counselor-1.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "227",
+      "title": "227 (1985)",
+      "channel": "comedy",
+      "imdbUrl": null,
+      "episodes": [
+        {
+          "id": "227-9d3807ad41a35fcbf0d5",
+          "title": "227 - S01E01",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1435.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-9d3807ad41a35fcbf0d5",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E01.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-8100c9a607687a844a17",
+          "title": "227 - S01E02",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1435.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-8100c9a607687a844a17",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E02.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-9df45d62bb8a6ab09165",
+          "title": "227 - S01E03",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1432.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-9df45d62bb8a6ab09165",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E03.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-380f023c8f5be5a908ab",
+          "title": "227 - S01E04",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1435.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-380f023c8f5be5a908ab",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E04.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-91ff532f4350e4a7ed44",
+          "title": "227 - S01E05",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1435.27,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-91ff532f4350e4a7ed44",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E05.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-cb8865327aad7acf6e38",
+          "title": "227 - S01E06",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1433.27,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-cb8865327aad7acf6e38",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E06.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-181589c69d0a5e151e56",
+          "title": "227 - S01E07",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1433.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-181589c69d0a5e151e56",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E07.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-d1ee996380515c8f1e4c",
+          "title": "227 - S01E08",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1433.37,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-d1ee996380515c8f1e4c",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E08.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-6c56d3d5bfa3d79a0215",
+          "title": "227 - S01E09",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1432.73,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-6c56d3d5bfa3d79a0215",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E09.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-6db440314fcd4b36db28",
+          "title": "227 - S01E10",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1430.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-6db440314fcd4b36db28",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E10.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-974524fccb4c47b73a59",
+          "title": "227 - S01E11",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1433.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-974524fccb4c47b73a59",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E11.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-cb47116b8ed23c91c7ee",
+          "title": "227 - S01E12",
+          "season": 1,
+          "number": 12,
+          "durationSeconds": 1430.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-cb47116b8ed23c91c7ee",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E12.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-a387062458643d915882",
+          "title": "227 - S01E13",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1424.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-a387062458643d915882",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E13.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-0d0f847934e5a8b68396",
+          "title": "227 - S01E14",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 1425.32,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-0d0f847934e5a8b68396",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E14.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-4cb626003e1172f36359",
+          "title": "227 - S01E15",
+          "season": 1,
+          "number": 15,
+          "durationSeconds": 1420.79,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-4cb626003e1172f36359",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E15.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-c86b19579cce607a8e7d",
+          "title": "227 - S01E16",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 1436.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-c86b19579cce607a8e7d",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E16.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-edb77bec5e6da418e0cf",
+          "title": "227 - S01E17",
+          "season": 1,
+          "number": 17,
+          "durationSeconds": 1439.27,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-edb77bec5e6da418e0cf",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E17.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-922e501453e8da25edbc",
+          "title": "227 - S01E18",
+          "season": 1,
+          "number": 18,
+          "durationSeconds": 1438.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-922e501453e8da25edbc",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E18.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-7701de387524715e03b9",
+          "title": "227 - S01E19",
+          "season": 1,
+          "number": 19,
+          "durationSeconds": 1435.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-7701de387524715e03b9",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E19.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-4cf46ce443d2eb0209f6",
+          "title": "227 - S01E20",
+          "season": 1,
+          "number": 20,
+          "durationSeconds": 1440.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-4cf46ce443d2eb0209f6",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E20.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-1c236dfc32c3ebeacc48",
+          "title": "227 - S01E21",
+          "season": 1,
+          "number": 21,
+          "durationSeconds": 1446.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-1c236dfc32c3ebeacc48",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E21.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-b9a3e7868b9048f744c6",
+          "title": "227 - S01E22",
+          "season": 1,
+          "number": 22,
+          "durationSeconds": 1426.86,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-b9a3e7868b9048f744c6",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E22.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-726406992480e685b19f",
+          "title": "227 - S02E01",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1378.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-726406992480e685b19f",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E01.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-949db8ce2369d7d9879b",
+          "title": "227 - S02E02",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1438.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-949db8ce2369d7d9879b",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E02.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-4361fa5fd5472d6792ae",
+          "title": "227 - S02E03",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 1437.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-4361fa5fd5472d6792ae",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E03.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-14124f427539ae02882b",
+          "title": "227 - S02E04",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 1438.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-14124f427539ae02882b",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E04.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-e00278af30408514ed65",
+          "title": "227 - S02E05",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 1438.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-e00278af30408514ed65",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E05.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-0671412f1cd6d8882ae4",
+          "title": "227 - S02E06",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 1441.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-0671412f1cd6d8882ae4",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E06.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-76c83c3b1d2067dc708f",
+          "title": "227 - S02E07",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 1439.37,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-76c83c3b1d2067dc708f",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E07.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-d9547a4561b985882b57",
+          "title": "227 - S02E08",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 1437.44,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-d9547a4561b985882b57",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E08.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-8307ee33af1367997981",
+          "title": "227 - S02E09",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 1438.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-8307ee33af1367997981",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E09.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-9199357f6fc954f34f87",
+          "title": "227 - S02E10",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 1439.01,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-9199357f6fc954f34f87",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E10.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-41f5cfdabe135508cf02",
+          "title": "227 - S02E11",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 1439.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-41f5cfdabe135508cf02",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E11.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-6d2e3a81a453e2d03fe8",
+          "title": "227 - S02E12",
+          "season": 2,
+          "number": 12,
+          "durationSeconds": 1439.04,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-6d2e3a81a453e2d03fe8",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E12.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-0750f977ab7d567c7d09",
+          "title": "227 - S02E13",
+          "season": 2,
+          "number": 13,
+          "durationSeconds": 1439.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-0750f977ab7d567c7d09",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E13.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-686a14c5892d955e3a2c",
+          "title": "227 - S02E14",
+          "season": 2,
+          "number": 14,
+          "durationSeconds": 1438.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-686a14c5892d955e3a2c",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E14.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-2a8506b51c3482a10c3a",
+          "title": "227 - S02E15",
+          "season": 2,
+          "number": 15,
+          "durationSeconds": 1438.34,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-2a8506b51c3482a10c3a",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E15.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-e8278893b85432760f1b",
+          "title": "227 - S02E16",
+          "season": 2,
+          "number": 16,
+          "durationSeconds": 1437.94,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-e8278893b85432760f1b",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E16.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-18ebb834ea5d5fe018c3",
+          "title": "227 - S02E17",
+          "season": 2,
+          "number": 17,
+          "durationSeconds": 1438.14,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-18ebb834ea5d5fe018c3",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E17.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-a84f9c8585b967aef1d6",
+          "title": "227 - S02E18",
+          "season": 2,
+          "number": 18,
+          "durationSeconds": 1437.74,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-a84f9c8585b967aef1d6",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E18.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-89f4c7eac92f2b84b352",
+          "title": "227 - S02E19",
+          "season": 2,
+          "number": 19,
+          "durationSeconds": 1437.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-89f4c7eac92f2b84b352",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E19.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-c56c4171e232fb848859",
+          "title": "227 - S02E20",
+          "season": 2,
+          "number": 20,
+          "durationSeconds": 1422.36,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-c56c4171e232fb848859",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E20.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-74ce70a4b6aeb5135ad4",
+          "title": "227 - S02E21",
+          "season": 2,
+          "number": 21,
+          "durationSeconds": 1437.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-74ce70a4b6aeb5135ad4",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E21.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-8c351ed4b128cf37ac45",
+          "title": "227 - S02E22",
+          "season": 2,
+          "number": 22,
+          "durationSeconds": 1435.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-8c351ed4b128cf37ac45",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E22.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-74679f2d370ce874e7bd",
+          "title": "227 - S03E01",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 1433.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-74679f2d370ce874e7bd",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E01.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-1d21fac381aa6a5daaa0",
+          "title": "227 - S03E02",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 1433.87,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-1d21fac381aa6a5daaa0",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E02.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-4c1d3dbeddc33d21fb4c",
+          "title": "227 - S03E03",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 1433.63,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-4c1d3dbeddc33d21fb4c",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E03.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-4e20b51a1aaa888e308f",
+          "title": "227 - S03E04",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 1433.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-4e20b51a1aaa888e308f",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E04.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-72c385498502c87b4a71",
+          "title": "227 - S03E05",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 1433.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-72c385498502c87b4a71",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E05.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-11e72a2362d3a3bd559b",
+          "title": "227 - S03E06",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 1433.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-11e72a2362d3a3bd559b",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E06.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-fa3b1bf1606525a465ad",
+          "title": "227 - S03E07",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 1433.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-fa3b1bf1606525a465ad",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E07.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-f1d9751edf591a7d5de5",
+          "title": "227 - S03E08",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 1432.93,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-f1d9751edf591a7d5de5",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E08.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-57ba9ba0254c09fb2123",
+          "title": "227 - S03E09",
+          "season": 3,
+          "number": 9,
+          "durationSeconds": 1433.6,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-57ba9ba0254c09fb2123",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E09.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-76a4572922dff8f9ddf4",
+          "title": "227 - S03E10",
+          "season": 3,
+          "number": 10,
+          "durationSeconds": 1398.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-76a4572922dff8f9ddf4",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E10.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-937c0b4e12e70db4526b",
+          "title": "227 - S03E11",
+          "season": 3,
+          "number": 11,
+          "durationSeconds": 1432.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-937c0b4e12e70db4526b",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E11.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-0cb9d498bd774aaa9f87",
+          "title": "227 - S03E12",
+          "season": 3,
+          "number": 12,
+          "durationSeconds": 1433.07,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-0cb9d498bd774aaa9f87",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E12.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-e0f5519ec8c5f90e9e1a",
+          "title": "227 - S03E13",
+          "season": 3,
+          "number": 13,
+          "durationSeconds": 1433.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-e0f5519ec8c5f90e9e1a",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E13.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-16814fd6f2d046aa16a5",
+          "title": "227 - S03E14",
+          "season": 3,
+          "number": 14,
+          "durationSeconds": 1433.47,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-16814fd6f2d046aa16a5",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E14.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-f14f4111aec7fe64e750",
+          "title": "227 - S03E15",
+          "season": 3,
+          "number": 15,
+          "durationSeconds": 1433.33,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-f14f4111aec7fe64e750",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E15.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-13c13f8b3112a512c786",
+          "title": "227 - S03E16",
+          "season": 3,
+          "number": 16,
+          "durationSeconds": 1432.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-13c13f8b3112a512c786",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E16.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-aebf7a5eb63eb4895f95",
+          "title": "227 - S03E17",
+          "season": 3,
+          "number": 17,
+          "durationSeconds": 1432.57,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-aebf7a5eb63eb4895f95",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E17.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-123820a814e81132c4e8",
+          "title": "227 - S03E18",
+          "season": 3,
+          "number": 18,
+          "durationSeconds": 1432.8,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-123820a814e81132c4e8",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E18.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-5ce1f2400786f418d49e",
+          "title": "227 - S03E19",
+          "season": 3,
+          "number": 19,
+          "durationSeconds": 1432.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-5ce1f2400786f418d49e",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E19.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-32265aa5ceb4d52e2516",
+          "title": "227 - S03E20",
+          "season": 3,
+          "number": 20,
+          "durationSeconds": 1432.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-32265aa5ceb4d52e2516",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E20.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-1686bd8cc8b3f2d033fe",
+          "title": "227 - S03E21",
+          "season": 3,
+          "number": 21,
+          "durationSeconds": 1432.67,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-1686bd8cc8b3f2d033fe",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E21.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-e6c1801f233c9c06d728",
+          "title": "227 - S03E22",
+          "season": 3,
+          "number": 22,
+          "durationSeconds": 1432.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-e6c1801f233c9c06d728",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E22.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-00e0e80d035d095d779e",
+          "title": "227 - S03E23",
+          "season": 3,
+          "number": 23,
+          "durationSeconds": 1433.03,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-00e0e80d035d095d779e",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E23.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-c857d33ffa9066967f2c",
+          "title": "227 - S03E24",
+          "season": 3,
+          "number": 24,
+          "durationSeconds": 1433.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-c857d33ffa9066967f2c",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E24.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-da98e8dbab10cbadaae5",
+          "title": "227 - S04E01",
+          "season": 4,
+          "number": 1,
+          "durationSeconds": 1447.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-da98e8dbab10cbadaae5",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E01.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-f244e182b08f6c02e8be",
+          "title": "227 - S04E02",
+          "season": 4,
+          "number": 2,
+          "durationSeconds": 1447.61,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-f244e182b08f6c02e8be",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E02.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-de634e4c884a268a8e40",
+          "title": "227 - S04E03",
+          "season": 4,
+          "number": 3,
+          "durationSeconds": 1442.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-de634e4c884a268a8e40",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E03.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-a48a4bc12c4af5167b32",
+          "title": "227 - S04E04",
+          "season": 4,
+          "number": 4,
+          "durationSeconds": 1447.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-a48a4bc12c4af5167b32",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E04.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-de035871a55d6ffc869f",
+          "title": "227 - S04E05",
+          "season": 4,
+          "number": 5,
+          "durationSeconds": 1416.92,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-de035871a55d6ffc869f",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E05.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-2780b23790c98c30d62d",
+          "title": "227 - S04E06",
+          "season": 4,
+          "number": 6,
+          "durationSeconds": 1447.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-2780b23790c98c30d62d",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E06.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-528b840b691ad578f832",
+          "title": "227 - S04E07",
+          "season": 4,
+          "number": 7,
+          "durationSeconds": 1417.82,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-528b840b691ad578f832",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E07.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-5c9adad8d98eaeb1d132",
+          "title": "227 - S04E08",
+          "season": 4,
+          "number": 8,
+          "durationSeconds": 1447.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-5c9adad8d98eaeb1d132",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E08.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-42a864dd9a22a3081535",
+          "title": "227 - S04E09",
+          "season": 4,
+          "number": 9,
+          "durationSeconds": 1447.41,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-42a864dd9a22a3081535",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E09.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-77785da4545c67c15d48",
+          "title": "227 - S04E10",
+          "season": 4,
+          "number": 10,
+          "durationSeconds": 1447.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-77785da4545c67c15d48",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E10.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-7cec120c78135dfa22b7",
+          "title": "227 - S04E11",
+          "season": 4,
+          "number": 11,
+          "durationSeconds": 1447.71,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-7cec120c78135dfa22b7",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E11.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-d6e1e7b8c96302ae0ff9",
+          "title": "227 - S04E12",
+          "season": 4,
+          "number": 12,
+          "durationSeconds": 1447.18,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-d6e1e7b8c96302ae0ff9",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E12.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-315f7888a8332204fb58",
+          "title": "227 - S04E13",
+          "season": 4,
+          "number": 13,
+          "durationSeconds": 1448.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-315f7888a8332204fb58",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E13.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-55d2ed81f5d62f10aad0",
+          "title": "227 - S04E14",
+          "season": 4,
+          "number": 14,
+          "durationSeconds": 1448.15,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-55d2ed81f5d62f10aad0",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E14.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-b79ee1bd1305daa42a4a",
+          "title": "227 - S04E15",
+          "season": 4,
+          "number": 15,
+          "durationSeconds": 1442.91,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-b79ee1bd1305daa42a4a",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E15.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-69f88bdcaf6001ad9812",
+          "title": "227 - S04E16",
+          "season": 4,
+          "number": 16,
+          "durationSeconds": 1448.15,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-69f88bdcaf6001ad9812",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E16.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-c736204e46a47994ea1b",
+          "title": "227 - S04E17",
+          "season": 4,
+          "number": 17,
+          "durationSeconds": 1448.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-c736204e46a47994ea1b",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E17.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-2448fe7f8578e3e4b1e2",
+          "title": "227 - S04E18",
+          "season": 4,
+          "number": 18,
+          "durationSeconds": 1448.78,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-2448fe7f8578e3e4b1e2",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E18.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-0ebb7cc1ded4c63e984c",
+          "title": "227 - S04E19",
+          "season": 4,
+          "number": 19,
+          "durationSeconds": 1448.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-0ebb7cc1ded4c63e984c",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E19.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-6e9ea3ae0b5b2d8fb0d0",
+          "title": "227 - S04E20",
+          "season": 4,
+          "number": 20,
+          "durationSeconds": 1448.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-6e9ea3ae0b5b2d8fb0d0",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E20.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-8539dc317ef9287424d0",
+          "title": "227 - S04E21",
+          "season": 4,
+          "number": 21,
+          "durationSeconds": 1418.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-8539dc317ef9287424d0",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E21.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-6f2aeff03463c3786d51",
+          "title": "227 - S04E22",
+          "season": 4,
+          "number": 22,
+          "durationSeconds": 1448.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-6f2aeff03463c3786d51",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E22.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-290745651a4f43a91c7d",
+          "title": "227 - S04E23",
+          "season": 4,
+          "number": 23,
+          "durationSeconds": 1395.13,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-290745651a4f43a91c7d",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E23.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "227-5facad51fe01f3911c09",
+          "title": "227 - S04E24",
+          "season": 4,
+          "number": 24,
+          "durationSeconds": 1448.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-5facad51fe01f3911c09",
+              "provider": "archive",
+              "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E24.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-matters",
+      "title": "Family Matters",
+      "channel": "comedy",
+      "imdbUrl": null,
+      "episodes": [
+        {
+          "id": "family-matters-5c82d4e7db804ce55fdc",
+          "title": "Family Matters S01E01 The Mama Who Came to Dinner",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1427.7,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-5c82d4e7db804ce55fdc",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-01-e-01-the-mama-who-came-to-dinner/Family%20Matters%20S01E01%20The%20Mama%20Who%20Came%20to%20Dinner.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-440f412dcbd37057801e",
+          "title": "Family Matters S01E02 Two-Income Family",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1430.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-440f412dcbd37057801e",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-01-e-02-two-income-family/Family%20Matters%20S01E02%20Two-Income%20Family.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-3f87e4ddef72ec8c73d9",
+          "title": "Family Matters S01E03 Short Story",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1429.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-3f87e4ddef72ec8c73d9",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-01-e-03-short-story/Family%20Matters%20S01E03%20Short%20Story.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-f71f658b1db122cd0af1",
+          "title": "Family Matters S01E05 Straight A's",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1428.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-f71f658b1db122cd0af1",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-01-e-05-straight-as/Family%20Matters%20S01E05%20Straight%20A's.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-bf29fc350c65f3cb183e",
+          "title": "Family Matters S01E06 Basketball Blues",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1450.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-bf29fc350c65f3cb183e",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-01-e-06-basketball-blues/Family%20Matters%20S01E06%20Basketball%20Blues.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-91cb5db688e9a6f243af",
+          "title": "Family Matters S01E07 Body Damage",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1430.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-91cb5db688e9a6f243af",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-01-e-07-body-damage/Family%20Matters%20S01E07%20Body%20Damage.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-bad42bc934bfd42e039d",
+          "title": "Family Matters S01E11 The Quilt",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1450.02,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-bad42bc934bfd42e039d",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-01-e-11-the-quilt/Family%20Matters%20S01E11%20The%20Quilt.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-cc9435b8c4976d36e875",
+          "title": "Family Matters S01E13 Man's Best Friend",
+          "season": 1,
+          "number": 13,
+          "durationSeconds": 1449,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-cc9435b8c4976d36e875",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-01-e-13-mans-best-friend/Family%20Matters%20S01E13%20Man's%20Best%20Friend.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-53b0fd9c08f4a33c239e",
+          "title": "Family Matters S01E14 Baker's Dozen",
+          "season": 1,
+          "number": 14,
+          "durationSeconds": 1449,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-53b0fd9c08f4a33c239e",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-01-e-14-bakers-dozen/Family%20Matters%20S01E14%20Baker's%20Dozen.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-ef9da957cb279231eb09",
+          "title": "Family Matters S01E16 The Party",
+          "season": 1,
+          "number": 16,
+          "durationSeconds": 1449.48,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-ef9da957cb279231eb09",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-01-e-16-the-party/Family%20Matters%20S01E16%20The%20Party.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-b2843686a42e91be7447",
+          "title": "Family Matters S01E21 Bowl Me Over",
+          "season": 1,
+          "number": 21,
+          "durationSeconds": 1449,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-b2843686a42e91be7447",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-01-e-21-bowl-me-over/Family%20Matters%20S01E21%20Bowl%20Me%20Over.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-b1adfa7b0305859e70c5",
+          "title": "Family Matters S01E22 Rock Video",
+          "season": 1,
+          "number": 22,
+          "durationSeconds": 1449,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-b1adfa7b0305859e70c5",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-01-e-22-rock-video/Family%20Matters%20S01E22%20Rock%20Video.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-0f59b0b6ab64dafc2ba2",
+          "title": "Family Matters S03E04 Words Hurt",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 1370.61,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-0f59b0b6ab64dafc2ba2",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-03-e-04-words-hurt/Family%20Matters%20S03E04%20Words%20Hurt.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-7b70cf050a135a7b1a8a",
+          "title": "Family Matters S03E13 Choir Trouble",
+          "season": 3,
+          "number": 13,
+          "durationSeconds": 1370.95,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-7b70cf050a135a7b1a8a",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-03-e-13-choir-trouble/Family%20Matters%20S03E13%20Choir%20Trouble.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-f453dd4d98a98ef9def5",
+          "title": "Family Matters S03E22 The Urkel Who Came to Dinner",
+          "season": 3,
+          "number": 22,
+          "durationSeconds": 1370.81,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-f453dd4d98a98ef9def5",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-03-e-22-the-urkel-who-came-to-dinner/Family%20Matters%20S03E22%20The%20Urkel%20Who%20Came%20to%20Dinner.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-46d91fbf2bb54b061ce9",
+          "title": "Family Matters S04E01 Surely You Joust",
+          "season": 4,
+          "number": 1,
+          "durationSeconds": 1283.76,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-46d91fbf2bb54b061ce9",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-04-e-01-surely-you-joust/Family%20Matters%20S04E01%20Surely%20You%20Joust.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-922c8b3d1c5be628c393",
+          "title": "Family Matters S04E06 Whose Kid Is It Anyway",
+          "season": 4,
+          "number": 6,
+          "durationSeconds": 1313.62,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-922c8b3d1c5be628c393",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-04-e-06-whose-kid-is-it-anyway/Family%20Matters%20S04E06%20Whose%20Kid%20Is%20It%20Anyway.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-78d412e3a56d39737d92",
+          "title": "Family Matters S05E03 Saved by the Erkel",
+          "season": 5,
+          "number": 3,
+          "durationSeconds": 1379.45,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-78d412e3a56d39737d92",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-05-e-03-saved-by-the-erkel/Family%20Matters%20S05E03%20Saved%20by%20the%20Erkel.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-e457828637cc50e42aa7",
+          "title": "Family Matters S05E17 Father of the Bride",
+          "season": 5,
+          "number": 17,
+          "durationSeconds": 1378.43,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-e457828637cc50e42aa7",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-05-e-17-father-of-the-bride/Family%20Matters%20S05E17%20Father%20of%20the%20Bride.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-ad4b7365cd9b646f8f13",
+          "title": "Family Matters S05E21 A-Camping We Will Go",
+          "season": 5,
+          "number": 21,
+          "durationSeconds": 1379.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-ad4b7365cd9b646f8f13",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-05-e-21-a-camping-we-will-go/Family%20Matters%20S05E21%20A-Camping%20We%20Will%20Go.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-a9c2000a8a06f1ef62e0",
+          "title": "Family Matters S06E21 What's Up Doc",
+          "season": 6,
+          "number": 21,
+          "durationSeconds": 1332.27,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-a9c2000a8a06f1ef62e0",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-06-e-21-whats-up-doc/Family%20Matters%20S06E21%20What's%20Up%20Doc.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-18670519e86e9ca0b6df",
+          "title": "Family Matters S07E01 Little Big Guy",
+          "season": 7,
+          "number": 1,
+          "durationSeconds": 1326.44,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-18670519e86e9ca0b6df",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-07-e-01-little-big-guy/Family%20Matters%20S07E01%20Little%20Big%20Guy.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-fac7768352f818730fcf",
+          "title": "Family Matters S07E14 Life in the Fast Lane",
+          "season": 7,
+          "number": 14,
+          "durationSeconds": 1326.09,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-fac7768352f818730fcf",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-07-e-14-life-in-the-fast-lane/Family%20Matters%20S07E14%20Life%20in%20the%20Fast%20Lane.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-2bf6033c2168f30d1d7a",
+          "title": "Family Matters S08E16 Father Time",
+          "season": 8,
+          "number": 16,
+          "durationSeconds": 1318.08,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-2bf6033c2168f30d1d7a",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-08-e-16-father-time/Family%20Matters%20S08E16%20Father%20Time.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-885b2f64e9a0a8e9b1f2",
+          "title": "Family Matters S09E07 Stevil II This Time He's Not Alone",
+          "season": 9,
+          "number": 7,
+          "durationSeconds": 1334.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-885b2f64e9a0a8e9b1f2",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-09-e-07-stevil-ii-this-time-hes-not-alone/Family%20Matters%20S09E07%20Stevil%20II%20This%20Time%20He's%20Not%20Alone.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "family-matters-a70caacee9cacc0fd4ec",
+          "title": "Family Matters S09E18 Throw Urkel from the Train",
+          "season": 9,
+          "number": 18,
+          "durationSeconds": 1352.26,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-a70caacee9cacc0fd4ec",
+              "provider": "archive",
+              "url": "https://archive.org/download/family-matters-s-09-e-18-throw-urkel-from-the-train/Family%20Matters%20S09E18%20Throw%20Urkel%20from%20the%20Train.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-different-world",
+      "title": "A Different World (1987)",
+      "channel": "comedy",
+      "imdbUrl": null,
+      "episodes": [
+        {
+          "id": "a-different-world-07c1cf9c1ec653faa029",
+          "title": "A Different World — uploader-labelled 6.17–18 · combined recording",
+          "season": 0,
+          "number": 0,
+          "durationSeconds": 2747.48,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-07c1cf9c1ec653faa029",
+              "provider": "archive",
+              "url": "https://archive.org/download/a-different-world-6.17-18/A%20Different%20World%20-%206.17-18.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "a-different-world-76b0a22ec5030da7bf30",
+          "title": "A-Different-World-All s-Fair- Season-2 -Episode-9 ",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 1414.28,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-76b0a22ec5030da7bf30",
+              "provider": "archive",
+              "url": "https://archive.org/download/ADifferentWorldAllSFairSeason2Episode9/A-Different-World-All_s-Fair-_Season-2_-Episode-9_.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "a-different-world-23964bd6539970fdc027",
+          "title": "A Different World Season 6 Episode 25 - College Kid",
+          "season": 6,
+          "number": 25,
+          "durationSeconds": 1403.11,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "archive-23964bd6539970fdc027",
+              "provider": "archive",
+              "url": "https://archive.org/download/a-different-world-season-6-episode-25-college-kid/A%20Different%20World%20Season%206%20Episode%2025%20-%20College%20Kid.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceChecks": [
+    {
+      "url": "https://www.youtube.com/watch?v=Yew3n0WxZkw",
+      "verified": true,
+      "method": "yt-dlp public metadata",
+      "channel": "FilmRise Television",
+      "embeddable": true,
+      "durationSeconds": 1321
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AZ4CSkOd9tM",
+      "verified": true,
+      "method": "yt-dlp public metadata",
+      "channel": "FilmRise Television",
+      "embeddable": true,
+      "durationSeconds": 1472
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=EMwcOvtVqx8",
+      "verified": true,
+      "method": "yt-dlp public metadata",
+      "channel": "FilmRise Television",
+      "embeddable": true,
+      "durationSeconds": 1088
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=EKE2WBwuNo4",
+      "verified": true,
+      "method": "yt-dlp public metadata",
+      "channel": "FilmRise Television",
+      "embeddable": true,
+      "durationSeconds": 1412
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Bn_Rl0Cyjjo",
+      "verified": true,
+      "method": "yt-dlp public metadata",
+      "channel": "FilmRise Television",
+      "embeddable": true,
+      "durationSeconds": 1486
+    },
+    {
+      "url": "https://archive.org/download/mr.-belvedere-s-04e-20-the-counselor-1/Mr.%20Belvedere%20S04e20%20The%20Counselor-1.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E05.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E03.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E02.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E04.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E01.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E08.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E06.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E07.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E11.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E09.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E10.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E12.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E14.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E13.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E16.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E17.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E15.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E18.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E19.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E20.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E21.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E01.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E02.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E03.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E04.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E05.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E06.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E07.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S01E22.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E08.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E11.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E09.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E12.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E10.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E13.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E14.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E16.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E15.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E19.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E18.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E17.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E20.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E21.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S02E22.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E01.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E02.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E03.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E04.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E06.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E05.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E07.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E08.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E11.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E10.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E09.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E12.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E13.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E14.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E15.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E17.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E16.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E18.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E19.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E20.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E22.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E21.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E23.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S03E24.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E01.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E02.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E04.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E03.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E05.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E06.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E07.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E09.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E08.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E11.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E12.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E10.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E13.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E14.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E15.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E17.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E16.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E18.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E21.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E19.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E20.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E22.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E23.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/227-complete_TV_Series_CTV/227%20-%20S04E24.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-01-e-01-the-mama-who-came-to-dinner/Family%20Matters%20S01E01%20The%20Mama%20Who%20Came%20to%20Dinner.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-01-e-02-two-income-family/Family%20Matters%20S01E02%20Two-Income%20Family.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-01-e-05-straight-as/Family%20Matters%20S01E05%20Straight%20A's.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-01-e-03-short-story/Family%20Matters%20S01E03%20Short%20Story.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-01-e-07-body-damage/Family%20Matters%20S01E07%20Body%20Damage.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-01-e-11-the-quilt/Family%20Matters%20S01E11%20The%20Quilt.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-01-e-13-mans-best-friend/Family%20Matters%20S01E13%20Man's%20Best%20Friend.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-01-e-14-bakers-dozen/Family%20Matters%20S01E14%20Baker's%20Dozen.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-01-e-16-the-party/Family%20Matters%20S01E16%20The%20Party.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-01-e-21-bowl-me-over/Family%20Matters%20S01E21%20Bowl%20Me%20Over.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-01-e-22-rock-video/Family%20Matters%20S01E22%20Rock%20Video.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-03-e-04-words-hurt/Family%20Matters%20S03E04%20Words%20Hurt.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-03-e-13-choir-trouble/Family%20Matters%20S03E13%20Choir%20Trouble.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-01-e-06-basketball-blues/Family%20Matters%20S01E06%20Basketball%20Blues.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-03-e-22-the-urkel-who-came-to-dinner/Family%20Matters%20S03E22%20The%20Urkel%20Who%20Came%20to%20Dinner.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-04-e-01-surely-you-joust/Family%20Matters%20S04E01%20Surely%20You%20Joust.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-04-e-06-whose-kid-is-it-anyway/Family%20Matters%20S04E06%20Whose%20Kid%20Is%20It%20Anyway.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-05-e-17-father-of-the-bride/Family%20Matters%20S05E17%20Father%20of%20the%20Bride.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-05-e-03-saved-by-the-erkel/Family%20Matters%20S05E03%20Saved%20by%20the%20Erkel.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-05-e-21-a-camping-we-will-go/Family%20Matters%20S05E21%20A-Camping%20We%20Will%20Go.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-06-e-21-whats-up-doc/Family%20Matters%20S06E21%20What's%20Up%20Doc.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-07-e-01-little-big-guy/Family%20Matters%20S07E01%20Little%20Big%20Guy.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-07-e-14-life-in-the-fast-lane/Family%20Matters%20S07E14%20Life%20in%20the%20Fast%20Lane.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-08-e-16-father-time/Family%20Matters%20S08E16%20Father%20Time.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-09-e-07-stevil-ii-this-time-hes-not-alone/Family%20Matters%20S09E07%20Stevil%20II%20This%20Time%20He's%20Not%20Alone.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/family-matters-s-09-e-18-throw-urkel-from-the-train/Family%20Matters%20S09E18%20Throw%20Urkel%20from%20the%20Train.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/a-different-world-6.17-18/A%20Different%20World%20-%206.17-18.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/a-different-world-season-6-episode-25-college-kid/A%20Different%20World%20Season%206%20Episode%2025%20-%20College%20Kid.ia.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    },
+    {
+      "url": "https://archive.org/download/ADifferentWorldAllSFairSeason2Episode9/A-Different-World-All_s-Fair-_Season-2_-Episode-9_.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true,
+      "method": "GET bytes=0-1023"
+    }
+  ]
+}

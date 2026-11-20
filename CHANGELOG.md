@@ -2,6 +2,14 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## Remote content update — 2026-11-20
+
+- 2026-11-20 remote content update: added original Kids in the Hall, Mr. Belvedere, 227, Family Matters and A Different World (127 entries), plus Sandra Clark, Steve Urkel and Dwayne Wayne companions. Reload or relaunch; no new APK is required.
+
+- Added original Kids in the Hall, Mr. Belvedere, 227, Family Matters and A Different World to Comedy: 127 checked entries, with partial availability recorded in the catalog update report.
+- Added Sandra Clark (Jackée’s 227 character), Steve Urkel and Dwayne Wayne as remotely delivered companions with original portraits.
+- Existing compatible web/mobile clients receive the feeds after reload or relaunch; no new APK is required. Retrieval corpus coverage is unchanged.
+
 ## 0.8.21 — 2026-11-19
 
 - A bounded Jev intent router handles natural requests that do not match direct commands. Uncertain requests ask for clarification; catalog checks still control every action.
