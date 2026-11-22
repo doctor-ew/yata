@@ -53,6 +53,7 @@ export function mountBuddy({getCatalog=()=>({shows:[],settings:{}}),isReady=()=>
  const planner=requestPlan||((...args)=>native()?requestEmbeddedBuddy('channel',verification,...args):webPlanner(...args)),webPlanner=createChannelAi(options);
  const intentRequest=requestIntent||((...args)=>native()?requestEmbeddedBuddy('intent',verification,...args):webIntent(...args)),webIntent=createBuddyIntent(options);
  const feedbackRequest=requestFeedback||((...args)=>native()?requestEmbeddedBuddy('feedback',verification,...args):webFeedback(...args)),webFeedback=createBuddyFeedback(options);
+ const feedbackVerificationObserver=new MutationObserver(records=>{if(intake&&controller&&panel.open&&records.some(record=>record.addedNodes.length))verification.scrollIntoView({block:'nearest'});});feedbackVerificationObserver.observe(verification,{childList:true,subtree:true});
  const notePolicy=createCompanionNotePolicy();greeting.setAttribute('role','status');greeting.setAttribute('tabindex','0');greeting.setAttribute('aria-label','Companion note. Click or press Escape to dismiss.');greeting.onclick=()=>{greeting.hidden=true;notePolicy.dismiss();};greeting.onkeydown=event=>{if(['Escape','Enter',' '].includes(event.key)){event.preventDefault();greeting.hidden=true;notePolicy.dismiss();}};
  let noteTimer;const readContext=()=>{try{return playbackContext(getPlaybackContext());}catch{return playbackContext(null);}};
  const hoverRotation=createBuddyHoverRotation();let pointerWithin=false,focusWithin=false;
@@ -88,16 +89,16 @@ export function mountBuddy({getCatalog=()=>({shows:[],settings:{}}),isReady=()=>
   if(intake.stage==='sending')return true;
   const current=intake,message={text:question,answerTo:current.lastQuestion};
   try{validateFeedbackReport({version:1,messages:[...current.messages,message]});}catch{say('Your report is getting long. I’ve kept the details; use the editable form to include this last message.');feedbackActions();feedbackForm();const field=document.querySelector('#feedback-panel [name=details]');if(field)field.value=field.value+'\n\n'+question;return true;}
-  current.messages.push(message);say(question,'you');controller=new AbortController();const active=controller,timer=setTimeout(()=>active.abort('timeout'),20000);send.disabled=true;input.disabled=true;feedbackActions();
+  current.messages.push(message);say(question,'you');controller=new AbortController();const active=controller,timer=setTimeout(()=>active.abort('timeout'),120000);send.disabled=true;input.disabled=true;feedbackActions();
   try{
    const result=normalizeFeedbackAssessment(await feedbackRequest({question:JSON.stringify({version:1,messages:current.messages}),personality:state.persona.personality},active.signal,text=>status.textContent=text));
    if(active.signal.aborted||intake!==current)return true;
-   if(result.status!=='assessed'){current.stage='fallback';say('I couldn’t reliably assess what’s missing. Your report text is kept. You can review and edit it in the form.');feedbackActions();return true;}
+   if(result.status!=='assessed'){current.stage='fallback';status.textContent='Assessment could not finish reliably. Your draft is kept; use the form to continue.';say('I couldn’t reliably assess what’s missing. Your report text is kept. You can review and edit it in the form.');feedbackActions();return true;}
    current.kind=result.kind;
    if(result.next==='ready'){reviewFeedback();return true;}
-   if(current.asked.has(result.next)){current.stage='fallback';say('You’ve already answered that question, so I won’t ask again. Your details are kept; review and edit the draft in the form.');feedbackActions();return true;}
+   if(current.asked.has(result.next)){current.stage='fallback';status.textContent='Your previous answer is kept. Use the form to review the draft.';say('You’ve already answered that question, so I won’t ask again. Your details are kept; review and edit the draft in the form.');feedbackActions();return true;}
    current.asked.add(result.next);current.lastQuestion=result.next;current.stage='collect';say(FEEDBACK_QUESTIONS[result.next]);feedbackActions();input.focus();input.scrollIntoView({block:'nearest'});status.textContent='Reply here, or use the form. Nothing has been sent to Drew.';
-  }catch{if(intake===current&&!active.signal.aborted){current.stage='fallback';say('Feedback assistance is unavailable. Your report text is kept; use the form to review and edit it.');feedbackActions();}else if(intake===current&&active.signal.aborted&&active.signal.reason==='timeout'){current.stage='fallback';say('Feedback assistance timed out. Your report text is kept; use the form to continue.');feedbackActions();}}
+  }catch{if(intake===current&&!active.signal.aborted){current.stage='fallback';status.textContent='Feedback assistance is unavailable. Your draft is kept; use the form to continue.';say('Feedback assistance is unavailable. Your report text is kept; use the form to review and edit it.');feedbackActions();}else if(intake===current&&active.signal.aborted&&active.signal.reason==='timeout'){current.stage='fallback';status.textContent='Feedback assistance timed out. Your draft is kept; use the form to continue.';say('Feedback assistance timed out. Your report text is kept; use the form to continue.');feedbackActions();}}
   finally{clearTimeout(timer);if(controller===active){controller=null;send.disabled=false;input.disabled=false;if(intake===current&&current.stage==='collect')input.focus();}}
   return true;
  }
