@@ -2,7 +2,7 @@ export const FEEDBACK_KINDS=Object.freeze(['bug','feature','channel','content','
 export const FEEDBACK_QUESTIONS=Object.freeze({
  description:'What feature is involved, and what problem or change would you like to report?',
  action:'What did you click or try just before the problem happened?',
- actual:'What happened after that—did a draft open, did you see an error, or did nothing happen?',
+ actual:'What happened after that? Tell me what you saw—an error, no response, or something else.',
  desired:'What would you like the app to do differently?',
 });
 const keys=(value,allowed)=>value&&typeof value==='object'&&!Array.isArray(value)&&Object.keys(value).length===allowed.length&&Object.keys(value).every(k=>allowed.includes(k));
