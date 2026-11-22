@@ -4,7 +4,7 @@ User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub
 
 ## Unreleased
 
-- In native fullscreen, the Watch / Guide / Library bar collapses to an up arrow. Tap to reveal navigation or collapse it again; leaving fullscreen restores the normal bar. Prepared in source; requires an Android app update.
+- Fullscreen playback controls collapse to an accessible up arrow. Tap to reveal rewind, pause, forward and next; tap the down arrow to collapse them again. Exiting fullscreen restores the normal controls. Prepared in source; requires an Android app update.
 
 ## 0.8.22 — 2026-11-20
 

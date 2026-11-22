@@ -1091,7 +1091,7 @@ $('show-shuffle').addEventListener('click', () => {
   $('watch').scrollIntoView();
 });
 
-mountWindowMode({ documentRef: document, screen: $('screen-column'), toggle: $('fill-window'), closeButton: $('exit-window'), fullScreenButton: $('screen-fullscreen'), getPlaybackState: transportState, isWatching: () => location.hash !== '#library' });
+mountWindowMode({ documentRef: document, screen: $('screen-column'), toggle: $('fill-window'), closeButton: $('exit-window'), fullScreenButton: $('screen-fullscreen'), controlsToggle: $('fullscreen-controls-toggle'), transport: $('playback-transport'), getPlaybackState: transportState, isWatching: () => location.hash !== '#library' });
 
 $('movie-browse').addEventListener('click', () => openShow(MOVIE_SHOW_ID));
 $('movie-shuffle').addEventListener('click', async () => { if (await configureStream({channel: 'scifi', streamShow: MOVIE_SHOW_ID, rotation: 'random', shuffleSeed: newMix()}, true)) $('watch').scrollIntoView(); });

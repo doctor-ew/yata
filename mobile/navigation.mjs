@@ -1,4 +1,3 @@
-import{mountFullscreenNavigation}from'./fullscreen-navigation.mjs';
 import{mountAnalyticsSettings}from'../src/analytics.mjs';
 import{mountAppearance}from'./appearance.mjs';
 export function mountMobileNavigation({android,report,actions}){
@@ -25,10 +24,8 @@ export function mountMobileNavigation({android,report,actions}){
  const sync=()=>{const nodes=[...originalChannels.children];picker.replaceChildren(...nodes.flatMap((node,index)=>{if(node.disabled)return [];const option=doc.createElement('option');option.value=String(index);option.textContent=node.getAttribute('aria-label');option.selected=node.getAttribute('aria-pressed')==='true';return [option];}));picker.disabled=doc.body.classList.contains('public-catalog-pending');};
  picker.onchange=()=>originalChannels.children[Number(picker.value)]?.click();new MutationObserver(sync).observe(originalChannels,{childList:true,subtree:true,attributes:true,attributeFilter:['disabled','aria-pressed']});sync();
  const nav=doc.createElement('nav');nav.id='native-navigation';nav.setAttribute('aria-label','Main navigation');
- const navLinks=doc.createElement('div');navLinks.id='native-navigation-links';nav.append(navLinks);
- for(const[id,label]of[['watch','Watch'],['guide','Guide'],['library','Library']]){const a=doc.createElement('a');a.href='#'+id;a.textContent=label;a.dataset.view=id;navLinks.append(a);}doc.body.append(nav);
- mountFullscreenNavigation({doc,nav,links:navLinks,screen:doc.getElementById('screen-column')});
- const view=()=>{const selected=['guide','library'].includes(location.hash.slice(1))?location.hash.slice(1):'watch';html.dataset.nativeView=selected;for(const a of navLinks.children){if(a.dataset.view===selected)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');}};
+ for(const[id,label]of[['watch','Watch'],['guide','Guide'],['library','Library']]){const a=doc.createElement('a');a.href='#'+id;a.textContent=label;a.dataset.view=id;nav.append(a);}doc.body.append(nav);
+ const view=()=>{const selected=['guide','library'].includes(location.hash.slice(1))?location.hash.slice(1):'watch';html.dataset.nativeView=selected;for(const a of nav.children){if(a.dataset.view===selected)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');}};
  window.addEventListener('hashchange',view);view();window.addEventListener('yata:playback-ready',()=>{history.replaceState(null,'','#watch');view();});
  const info=doc.querySelector('.watch-info'),description=doc.querySelector('#episode-information');doc.querySelector('.transport[aria-label="Video playback controls"]').after(info);info.after(description);
  const controls=doc.createElement('dialog');controls.id='touch-konami';controls.setAttribute('aria-label','Arcade unlock controls');const title=doc.createElement('h2');title.textContent='A familiar sequence…';const help=doc.createElement('p');help.textContent='↑ ↑ ↓ ↓ ← → ← → B A';controls.append(title,help);const keys=doc.createElement('div');keys.className='native-secret-keys';controls.append(keys);

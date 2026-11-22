@@ -26,14 +26,15 @@ test('window mode preserves player placement, restores inert/focus/scroll state 
  controls.enter(); controls.dispose(); assert.equal(controls.isOpen(), false); toggle.dispatchEvent(new Event('click')); assert.equal(controls.isOpen(), false);
 });
 
-function fullscreenFixture({nativeVideo=null,fullscreen=true}={}){
+function fullscreenFixture({nativeVideo=null,fullscreen=true,drawer=false}={}){
  const doc=new EventTarget(),view=new EventTarget();view.scrollTo=()=>{};view.innerWidth=390;view.innerHeight=844;let landscape=false;
  view.matchMedia=q=>({matches:q.includes('orientation')?landscape:q.includes('coarse')});doc.defaultView=view;doc.documentElement={style:{overflow:''}};doc.hidden=false;
  class Node extends EventTarget{children=[];parentElement=null;inert=false;hidden=false;isConnected=true;attributes=new Map();append(x){this.children.push(x);x.parentElement=this;}getAttribute(n){return this.attributes.get(n)??null;}setAttribute(n,v){this.attributes.set(n,v);}removeAttribute(n){this.attributes.delete(n);}focus(){doc.activeElement=this;}getClientRects(){return [{}];}}
  doc.body=new Node();doc.body.classList={toggle(){}};const screen=new Node(),toggle=new Node(),closeButton=new Node(),fullScreenButton=new Node();doc.body.append(screen);screen.append(toggle);screen.append(closeButton);screen.append(fullScreenButton);screen.querySelectorAll=()=>[toggle,closeButton,fullScreenButton];screen.querySelector=()=>nativeVideo;doc.activeElement=toggle;
+ const controlsToggle=drawer?new Node():undefined,transport=drawer?new Node():undefined;if(drawer){screen.append(controlsToggle);screen.append(transport);}
  let requests=0;screen.requestFullscreen=fullscreen?async()=>{requests++;doc.fullscreenElement=screen;doc.dispatchEvent(new Event('fullscreenchange'));}:undefined;doc.exitFullscreen=async()=>{doc.fullscreenElement=null;doc.dispatchEvent(new Event('fullscreenchange'));};
- let playing=true,watching=true;const controls=mountWindowMode({documentRef:doc,screen,toggle,closeButton,fullScreenButton,getPlaybackState:()=>({ready:true,paused:!playing}),isWatching:()=>watching});
- return{doc,view,screen,toggle,fullScreenButton,controls,requests:()=>requests,setPlaying:x=>playing=x,setWatching:x=>watching=x,rotate:value=>{landscape=value;view.innerWidth=value?844:390;view.innerHeight=value?390:844;view.dispatchEvent(new Event('resize'));}};
+ let playing=true,watching=true;const controls=mountWindowMode({documentRef:doc,screen,toggle,closeButton,fullScreenButton,controlsToggle,transport,getPlaybackState:()=>({ready:true,paused:!playing}),isWatching:()=>watching});
+ return{doc,view,screen,toggle,fullScreenButton,controlsToggle,transport,controls,requests:()=>requests,setPlaying:x=>playing=x,setWatching:x=>watching=x,rotate:value=>{landscape=value;view.innerWidth=value?844:390;view.innerHeight=value?390:844;view.dispatchEvent(new Event('resize'));}};
 }
 test('fullscreen button requests real fullscreen and browser exit restores the in-place layout',async()=>{
  const f=fullscreenFixture();f.fullScreenButton.click?.();f.fullScreenButton.dispatchEvent(new Event('click'));await Promise.resolve();assert.equal(f.requests(),1);assert.equal(f.controls.isOpen(),true);await f.doc.exitFullscreen();assert.equal(f.controls.isOpen(),false);assert.equal(f.screen.parentElement,f.doc.body);f.controls.dispose();
@@ -51,4 +52,14 @@ test('a delayed browser fullscreen-exit event cannot close a newly rotated autom
  f.doc.exitFullscreen=async()=>{};f.controls.exit();f.rotate(true);assert.equal(f.controls.isOpen(),true);
  f.doc.fullscreenElement=null;f.doc.dispatchEvent(new Event('fullscreenchange'));
  assert.equal(f.controls.isOpen(),true);f.rotate(false);assert.equal(f.controls.isOpen(),false);f.controls.dispose();
+});
+
+test('fullscreen playback drawer collapses on entry and restores normal controls on exit',()=>{
+ const f=fullscreenFixture({fullscreen:false,drawer:true});
+ f.controls.enter();assert.equal(f.transport.hidden,true);assert.equal(f.controlsToggle.hidden,false);assert.equal(f.controlsToggle.getAttribute('aria-expanded'),'false');
+ f.controlsToggle.dispatchEvent(new Event('click'));assert.equal(f.transport.hidden,false);assert.equal(f.controlsToggle.getAttribute('aria-expanded'),'true');
+ f.controlsToggle.dispatchEvent(new Event('click'));assert.equal(f.transport.hidden,true);
+ f.controls.exit();assert.equal(f.transport.hidden,false);assert.equal(f.controlsToggle.hidden,true);assert.equal(f.screen.parentElement,f.doc.body);
+ f.rotate(true);assert.equal(f.transport.hidden,true);f.rotate(false);assert.equal(f.transport.hidden,false);
+ f.controls.dispose();f.controlsToggle.dispatchEvent(new Event('click'));assert.equal(f.transport.hidden,false);
 });

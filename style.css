@@ -1581,10 +1581,8 @@ html:not(.native-app) .masthead nav a[aria-current="page"]{background:#be784c;co
 .player-host{min-width:0;min-height:0;inset:8px;overflow:hidden}.player-host>video,.player-host>iframe,.player-host>div{position:absolute;inset:0;max-width:100%;max-height:100%;min-width:0;min-height:0}.player-host>video{object-fit:contain;object-position:center;background:#000}.window-mode #player-host{inset:0}
 .buddy-settings input[type=search]{width:100%;min-height:40px}.buddy-settings select{width:100%}
 
-#native-navigation-links{display:flex;flex:1;min-width:0;gap:4px}
-#native-navigation-links[hidden],#native-navigation-toggle[hidden]{display:none!important}
-#native-navigation-toggle{align-self:center;width:48px;min-height:44px;padding:0;border:1px solid #e5d8b755;border-radius:22px;background:#151512e8;color:#fff4df;font:28px/1 sans-serif}
-#native-navigation-toggle:focus-visible{outline:3px solid #f5c695;outline-offset:3px}
-html.native-app body.window-mode #native-navigation{display:flex;flex-direction:column;gap:4px;z-index:21}
-html.native-app body.window-mode #native-navigation-links{width:100%}
-html.native-app body.window-mode #native-navigation[data-collapsed=true]{left:50%;right:auto;bottom:max(6px,env(safe-area-inset-bottom));transform:translateX(-50%);width:auto;max-width:64px!important;padding:0;border:0;background:transparent;box-shadow:none}
+/* Explicit fullscreen drawer: never rely on sticky touch hover to hide it. */
+#playback-transport[hidden],.fullscreen-controls-toggle[hidden]{display:none!important}
+.fullscreen-controls-toggle{position:absolute;bottom:max(8px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:9;width:48px;min-height:44px;padding:0;border:1px solid #e5d8b755;border-radius:22px;background:#151512b8;color:#fff4df;font:28px/1 sans-serif}
+.fullscreen-controls-toggle:focus-visible{outline:3px solid #f5c695;outline-offset:3px}
+.window-mode:has(#fullscreen-controls-toggle[aria-expanded="true"]) .transport{opacity:1!important;pointer-events:auto!important;padding-bottom:calc(56px + env(safe-area-inset-bottom))!important}
