@@ -15,12 +15,13 @@ The viewer approved the expanded cult science-fiction, Adult Swim and British co
 | Spaced | Comedy | 14 | [Archive collection](https://archive.org/details/spacedtvshow) |
 | Metalocalypse | Comedy | 60 | [Official Adult Swim pages](https://www.adultswim.com/videos/metalocalypse) |
 | Frisky Dingo | Comedy | 24 | [Official Adult Swim pages](https://www.adultswim.com/videos/frisky-dingo) |
+| Monty Python’s Flying Circus | Comedy | 43 | [Archive collection](https://archive.org/details/monty-pythons-flying-circus-s-3-e-08-the-cycli) |
 
 The 17 other suggested titles are already present in the observed live catalog: Space: 1999, The Venture Bros., Farscape, Red Dwarf, Blake’s 7, UFO, Harvey Birdman, Sealab 2021, Space Ghost Coast to Coast, Aqua Teen Hunger Force, The Brak Show, Home Movies, The Oblongs, Mission Hill, The Tick (animated), Dr Katz and The Critic. Their records are unchanged.
 
 ## Evidence and limits
 
-`data/cult-tv-selections.json` stores the selected records, exact source URLs, durations and source checks. All 153 selected Archive files returned successful byte-range responses with video content types. These checks establish accessible video bytes, not complete decoding, language verification, distribution rights or all-region playback. The official Adult Swim collection pages supplied 84 non-expired episode records with `auth: false`; those links open externally through the existing provider integration. Their sources remain `unverified` because playback was not tested. No TV video files were downloaded into the repository.
+`data/cult-tv-selections.json` stores the selected records, exact source URLs, durations and source checks. All 196 selected Archive files returned successful byte-range responses with video content types. These checks establish accessible video bytes, not complete decoding, language verification, distribution rights or all-region playback. The official Adult Swim collection pages supplied 84 non-expired episode records with `auth: false`; those links open externally through the existing provider integration. Their sources remain `unverified` because playback was not tested. No TV video files were downloaded into the repository.
 
 Firefly follows the selected collection’s numbered story order, starting with Serenity. Boosh concert videos, unrelated Luxury Comedy material, Darkplace extras, the Look Around You pilot, edited IT Crowd copies and unidentified DVD segments are excluded. These are selected entries, not verified complete-series claims.
 
@@ -36,7 +37,7 @@ node scripts/cult-tv-candidate.mjs /private/path/base.json /private/path/candida
 
 The script verifies the base SHA-256, refuses duplicate shows and an existing output file, validates the catalog and checks preservation of original records. If the live base changed, review and rebase the additions rather than replacing the new live catalog.
 
-Prepared candidate SHA-256: `a3b66a6f4d9196a4ed0ac23c4a783bd78a1f4793bee665a13b163d49a0746f1c`. Result: 350 shows, 14,220 entries and 14,534 sources; 5,363,812 bytes. The candidate itself remains outside the repository. Publication must use the existing registry publisher and its concurrency review, with any required compatible feed reviewed alongside it. No manifest or immutable published snapshot was changed. Artwork has not been prepared for these additions.
+Prepared candidate SHA-256: `1cea11aaff048d0a1e7e22bd554360bbb83ecb1ae2e5b6c8fed259faf2734786`. Result: 351 shows, 14,263 entries and 14,577 sources; 5,382,714 bytes. The candidate itself remains outside the repository. Publication must use the existing registry publisher and its concurrency review, with any required compatible feed reviewed alongside it. No manifest or immutable published snapshot was changed. Artwork has not been prepared for these additions.
 
 Fresh checks: candidate schema validation; exact comparison of all 341 original show records; 27 tests across catalog-publisher, catalog-integrity and catalog-feeds; static build (530 files); candidate script syntax check. Physical-device and full provider playback tests were not run.
 
@@ -45,3 +46,5 @@ Fresh checks: candidate schema validation; exact comparison of all 341 original 
 This cloud environment has no `aws` executable or configured cloud secret bindings. Live publication was not attempted. No release was shipped, so changelog and latest published release notes remain unchanged. Finish publication with the owner’s authorized publishing environment, read back the live manifest and snapshot, and record the resulting publication receipt before describing these additions as live.
 
 Pensieve MCP is configured but `codex mcp list` reports `Not logged in`. No remote memory update was sent or confirmed. After successful publication, send a concise sourced update to the remote YATA pool using this report, the repository commit and the live publication receipt; retain its remote receipt. This file is a local handoff, not a completed remote update. Credentials must stay outside repository files and memories.
+
+Monty Python follow-up: the user requested Monty Python after the original candidate review. The live manifest still matched the pinned base. Added 43 individually numbered Flying Circus source files after fresh byte-range checks; uploader-truncated titles are retained without inventing missing text. This is a partial selection, not all 45 episodes. Films, compilations and mixed television recordings are excluded. Rebuilt candidate schema validation and exact preservation of the 341 original records passed. This content-only follow-up did not rerun the earlier static build or 27 tests. Publication and Pensieve blockers above remain unresolved.

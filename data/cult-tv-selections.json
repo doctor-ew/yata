@@ -4102,6 +4102,745 @@
           ]
         }
       ]
+    },
+    {
+      "id": "monty-python",
+      "title": "Monty Python’s Flying Circus",
+      "channel": "comedy",
+      "imdbUrl": null,
+      "episodes": [
+        {
+          "id": "monty-python-5fe1f5477d8e4176fa74",
+          "title": "Monty Python’s Flying Circus — Whither Canada",
+          "season": 1,
+          "number": 1,
+          "durationSeconds": 1881.52,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-5fe1f5477d8e4176fa74",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E01%20-%20Whither%20Canada.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-4e1b6706173a6ba79ce4",
+          "title": "Monty Python’s Flying Circus — Sex & Violence",
+          "season": 1,
+          "number": 2,
+          "durationSeconds": 1982.12,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-4e1b6706173a6ba79ce4",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E02%20-%20Sex%20%26%20Violence.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-1a8890e6bf3825e14407",
+          "title": "Monty Python’s Flying Circus — How to Recognise Different Types of Trees from Quite a Long Way Away",
+          "season": 1,
+          "number": 3,
+          "durationSeconds": 1853.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-1a8890e6bf3825e14407",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E03%20-%20How%20to%20Recognise%20Different%20Types%20of%20Trees%20from%20Quite%20a%20Long%20Way%20Away.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-4575dd8165b4100fb00b",
+          "title": "Monty Python’s Flying Circus — Owl-Stretching Time",
+          "season": 1,
+          "number": 4,
+          "durationSeconds": 1748.2,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-4575dd8165b4100fb00b",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E04%20-%20Owl-Stretching%20Time.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-f2cef4cdd77e0975524c",
+          "title": "Monty Python’s Flying Circus — Man's Crisis of Identity in the Latter Half of the 20th Century",
+          "season": 1,
+          "number": 5,
+          "durationSeconds": 1730.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-f2cef4cdd77e0975524c",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E05%20-%20Man%27s%20Crisis%20of%20Identity%20in%20the%20Latter%20Half%20of%20the%2020th%20Century.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-09819f37f2cb447ffcf4",
+          "title": "Monty Python’s Flying Circus — The BBC Entry for the Zinc Stoat of Budapes",
+          "season": 1,
+          "number": 6,
+          "durationSeconds": 1770.41,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-09819f37f2cb447ffcf4",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E06%20-%20The%20BBC%20Entry%20for%20the%20Zinc%20Stoat%20of%20Budapes.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-77fdd1f70dc45a48b9bc",
+          "title": "Monty Python’s Flying Circus — You're No Fun Anymore",
+          "season": 1,
+          "number": 7,
+          "durationSeconds": 1786.52,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-77fdd1f70dc45a48b9bc",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E07%20-%20You%27re%20No%20Fun%20Anymore.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-b22878eb36221f9bd1f0",
+          "title": "Monty Python’s Flying Circus — Full Frontal Nudity",
+          "season": 1,
+          "number": 8,
+          "durationSeconds": 1766.23,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-b22878eb36221f9bd1f0",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S1%20E08%20-%20Full%20Frontal%20Nudity.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-2b4699e0d8ff755bd4bf",
+          "title": "Monty Python’s Flying Circus — The Ant, an Introduction",
+          "season": 1,
+          "number": 9,
+          "durationSeconds": 1749.65,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-2b4699e0d8ff755bd4bf",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S1%20E09%20-%20The%20Ant%2C%20an%20Introduction.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-e5ecbb2bb8f98268b916",
+          "title": "Monty Python’s Flying Circus — Untitled",
+          "season": 1,
+          "number": 10,
+          "durationSeconds": 1860.06,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-e5ecbb2bb8f98268b916",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S1%20E10%20-%20Untitled.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-8c183958db40fe3575b5",
+          "title": "Monty Python’s Flying Circus — The Royal Philharmonic Orchestra Goes to the Bathroom",
+          "season": 1,
+          "number": 11,
+          "durationSeconds": 1876.17,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-8c183958db40fe3575b5",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S1%20E11%20-%20The%20Royal%20Philharmonic%20Orchestra%20Goes%20to%20the%20Bathroom.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-a2ade0954acca177eb3a",
+          "title": "Monty Python’s Flying Circus — Dinsdale",
+          "season": 2,
+          "number": 1,
+          "durationSeconds": 1836.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-a2ade0954acca177eb3a",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E01%20-%20Dinsdale.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-4c8a45cec9e7d62208a6",
+          "title": "Monty Python’s Flying Circus — The Spani",
+          "season": 2,
+          "number": 2,
+          "durationSeconds": 1841.25,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-4c8a45cec9e7d62208a6",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E02%20-%20The%20Spani.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-c8dadbce4a9ad1227074",
+          "title": "Monty Python’s Flying Circus — Deja Vu",
+          "season": 2,
+          "number": 3,
+          "durationSeconds": 1826.97,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-c8dadbce4a9ad1227074",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E03%20-%20Deja%20Vu.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-f96cf32bd7be022fae03",
+          "title": "Monty Python’s Flying Circus — The Buzz",
+          "season": 2,
+          "number": 4,
+          "durationSeconds": 1829.9,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-f96cf32bd7be022fae03",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E04%20-%20The%20Buzz.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-b2a96a23315f804ec967",
+          "title": "Monty Python’s Flying Circus — Live from",
+          "season": 2,
+          "number": 5,
+          "durationSeconds": 1819.35,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-b2a96a23315f804ec967",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E05%20-%20Live%20from.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-0e78dfb3ce71a8783cb9",
+          "title": "Monty Python’s Flying Circus — Its a Liv",
+          "season": 2,
+          "number": 6,
+          "durationSeconds": 1786.1,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-0e78dfb3ce71a8783cb9",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E06%20-%20Its%20a%20Liv.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-d0b46133e88d00255583",
+          "title": "Monty Python’s Flying Circus — The Attil",
+          "season": 2,
+          "number": 7,
+          "durationSeconds": 1678.18,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-d0b46133e88d00255583",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E07%20-%20The%20Attil.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-c6b958debeea90ab3d4c",
+          "title": "Monty Python’s Flying Circus — Archaeolo",
+          "season": 2,
+          "number": 8,
+          "durationSeconds": 1807.84,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-c6b958debeea90ab3d4c",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E08%20-%20Archaeolo.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-e7600789d65afe3c9fee",
+          "title": "Monty Python’s Flying Circus — How to Re",
+          "season": 2,
+          "number": 9,
+          "durationSeconds": 1845.96,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-e7600789d65afe3c9fee",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E09%20-%20How%20to%20Re.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-591d550356cefc04ba6d",
+          "title": "Monty Python’s Flying Circus — Scott of",
+          "season": 2,
+          "number": 10,
+          "durationSeconds": 1821.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-591d550356cefc04ba6d",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E10%20-%20Scott%20of.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-43dee6f56e04bec58a5a",
+          "title": "Monty Python’s Flying Circus — How Not",
+          "season": 2,
+          "number": 11,
+          "durationSeconds": 1804.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-43dee6f56e04bec58a5a",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E11%20-%20How%20Not.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-48f823d28390986e0bb4",
+          "title": "Monty Python’s Flying Circus — Spam",
+          "season": 2,
+          "number": 12,
+          "durationSeconds": 1852.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-48f823d28390986e0bb4",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E12%20-%20Spam.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-c46a619443396508f0f5",
+          "title": "Monty Python’s Flying Circus — Royal Ep",
+          "season": 2,
+          "number": 13,
+          "durationSeconds": 1834.59,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-c46a619443396508f0f5",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E13%20-%20Royal%20Ep.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-198b18bf8e0034f54894",
+          "title": "Monty Python’s Flying Circus — Njorls Sa",
+          "season": 3,
+          "number": 1,
+          "durationSeconds": 1877.68,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-198b18bf8e0034f54894",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E01%20-%20Njorls%20Sa.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-00ffaece448ceb32594e",
+          "title": "Monty Python’s Flying Circus — Mr and Mr",
+          "season": 3,
+          "number": 2,
+          "durationSeconds": 1773.77,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-00ffaece448ceb32594e",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E02%20-%20Mr%20and%20Mr.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-cbb286c56c4415ad3926",
+          "title": "Monty Python’s Flying Circus — The Money",
+          "season": 3,
+          "number": 3,
+          "durationSeconds": 1751.85,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-cbb286c56c4415ad3926",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E03%20-%20The%20Money.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-f30bcb491758fb234155",
+          "title": "Monty Python’s Flying Circus — Blood Dev",
+          "season": 3,
+          "number": 4,
+          "durationSeconds": 1823.05,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-f30bcb491758fb234155",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E04%20-%20Blood%20Dev.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-e283b5bc526095f6e499",
+          "title": "Monty Python’s Flying Circus — The All-E",
+          "season": 3,
+          "number": 5,
+          "durationSeconds": 1868.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-e283b5bc526095f6e499",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E05%20-%20The%20All-E.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-f141d89e025acd79f692",
+          "title": "Monty Python’s Flying Circus — The War A",
+          "season": 3,
+          "number": 6,
+          "durationSeconds": 1728.38,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-f141d89e025acd79f692",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E06%20-%20The%20War%20A.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-8e52c5186b01630f63bb",
+          "title": "Monty Python’s Flying Circus — Salad Day",
+          "season": 3,
+          "number": 7,
+          "durationSeconds": 1748.18,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-8e52c5186b01630f63bb",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E07%20-%20Salad%20Day.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-f980400ba5f06762c62a",
+          "title": "Monty Python’s Flying Circus — The Cycli",
+          "season": 3,
+          "number": 8,
+          "durationSeconds": 1867.74,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-f980400ba5f06762c62a",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E08%20-%20The%20Cycli.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-7b92e713d806d05590f1",
+          "title": "Monty Python’s Flying Circus — The Nude",
+          "season": 3,
+          "number": 9,
+          "durationSeconds": 1927.3,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-7b92e713d806d05590f1",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E09%20-%20The%20Nude.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-35086d09f871f7e7e6e4",
+          "title": "Monty Python’s Flying Circus — E Henry",
+          "season": 3,
+          "number": 10,
+          "durationSeconds": 1699.52,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-35086d09f871f7e7e6e4",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E10%20-%20E%20Henry.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-b051286075997620f3af",
+          "title": "Monty Python’s Flying Circus — Dennis M",
+          "season": 3,
+          "number": 11,
+          "durationSeconds": 1912.42,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-b051286075997620f3af",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E11%20-%20Dennis%20M.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-996f4ef71c8a258bf039",
+          "title": "Monty Python’s Flying Circus — A Book a",
+          "season": 3,
+          "number": 12,
+          "durationSeconds": 1738.39,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-996f4ef71c8a258bf039",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E12%20-%20A%20Book%20a.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-e2ca3ee54490a8508ff2",
+          "title": "Monty Python’s Flying Circus — The Brit",
+          "season": 3,
+          "number": 13,
+          "durationSeconds": 1721.64,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-e2ca3ee54490a8508ff2",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E13%20-%20The%20Brit.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-bb0c3b797bc8b94abdf3",
+          "title": "Monty Python’s Flying Circus — The Golde",
+          "season": 4,
+          "number": 1,
+          "durationSeconds": 1714.56,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-bb0c3b797bc8b94abdf3",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S4%20E01%20-%20The%20Golde.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-d8aae84ad8e2f27270d1",
+          "title": "Monty Python’s Flying Circus — Michael E",
+          "season": 4,
+          "number": 2,
+          "durationSeconds": 1759.98,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-d8aae84ad8e2f27270d1",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S4%20E02%20-%20Michael%20E.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-feb0f032f5a3cb95e270",
+          "title": "Monty Python’s Flying Circus — The Light",
+          "season": 4,
+          "number": 3,
+          "durationSeconds": 1988.72,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-feb0f032f5a3cb95e270",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S4%20E03%20-%20The%20Light.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-3c6099a14af5a93e59e5",
+          "title": "Monty Python’s Flying Circus — Hamlet",
+          "season": 4,
+          "number": 4,
+          "durationSeconds": 1674.18,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-3c6099a14af5a93e59e5",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S4%20E04%20-%20Hamlet.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-fb499b9929fe7add7e7b",
+          "title": "Monty Python’s Flying Circus — Mr Neutro",
+          "season": 4,
+          "number": 5,
+          "durationSeconds": 1869.88,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-fb499b9929fe7add7e7b",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S4%20E05%20-%20Mr%20Neutro.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        },
+        {
+          "id": "monty-python-95fd5e99280737947954",
+          "title": "Monty Python’s Flying Circus — Party Pol",
+          "season": 4,
+          "number": 6,
+          "durationSeconds": 1717.21,
+          "group": "",
+          "kind": "episode",
+          "sources": [
+            {
+              "id": "source-95fd5e99280737947954",
+              "provider": "archive",
+              "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S4%20E06%20-%20Party%20Pol.ia.mp4",
+              "availability": "verified"
+            }
+          ]
+        }
+      ]
     }
   ],
   "sourceChecks": [
@@ -5184,6 +5923,350 @@
     {
       "url": "https://archive.org/download/spacedtvshow/Spaced%20S02E07.mp4",
       "method": "GET bytes=0-1023",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E01%20-%20Whither%20Canada.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:23.429833+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E02%20-%20Sex%20%26%20Violence.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:23.430452+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E03%20-%20How%20to%20Recognise%20Different%20Types%20of%20Trees%20from%20Quite%20a%20Long%20Way%20Away.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:23.430982+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E04%20-%20Owl-Stretching%20Time.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:23.431578+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E05%20-%20Man%27s%20Crisis%20of%20Identity%20in%20the%20Latter%20Half%20of%20the%2020th%20Century.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:23.432203+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E06%20-%20The%20BBC%20Entry%20for%20the%20Zinc%20Stoat%20of%20Budapes.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:23.437867+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20%20S1%20E07%20-%20You%27re%20No%20Fun%20Anymore.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:23.438581+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S1%20E08%20-%20Full%20Frontal%20Nudity.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:23.441219+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S1%20E09%20-%20The%20Ant%2C%20an%20Introduction.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:23.444873+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S1%20E10%20-%20Untitled.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:23.445308+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S1%20E11%20-%20The%20Royal%20Philharmonic%20Orchestra%20Goes%20to%20the%20Bathroom.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.046623+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E01%20-%20Dinsdale.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.166996+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E02%20-%20The%20Spani.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.178643+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E03%20-%20Deja%20Vu.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.224564+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E04%20-%20The%20Buzz.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.256100+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E05%20-%20Live%20from.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.299659+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E06%20-%20Its%20a%20Liv.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.325684+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E07%20-%20The%20Attil.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.330552+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E08%20-%20Archaeolo.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.406968+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E09%20-%20How%20to%20Re.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.426349+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E10%20-%20Scott%20of.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.488939+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E11%20-%20How%20Not.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.501169+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E12%20-%20Spam.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.513847+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S2%20E13%20-%20Royal%20Ep.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.515077+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E01%20-%20Njorls%20Sa.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.523002+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E02%20-%20Mr%20and%20Mr.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.601467+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E03%20-%20The%20Money.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.605705+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E04%20-%20Blood%20Dev.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.651294+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E05%20-%20The%20All-E.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.688341+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E06%20-%20The%20War%20A.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.695047+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E07%20-%20Salad%20Day.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.716239+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E08%20-%20The%20Cycli.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.791404+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E09%20-%20The%20Nude.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.799685+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E10%20-%20E%20Henry.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.824208+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E11%20-%20Dennis%20M.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.842402+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E12%20-%20A%20Book%20a.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.848279+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S3%20E13%20-%20The%20Brit.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.888895+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S4%20E01%20-%20The%20Golde.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.944526+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S4%20E02%20-%20Michael%20E.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:24.957690+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S4%20E03%20-%20The%20Light.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:25.011863+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S4%20E04%20-%20Hamlet.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:25.038853+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S4%20E05%20-%20Mr%20Neutro.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:25.067774+00:00",
+      "status": 206,
+      "contentType": "video/mp4",
+      "verified": true
+    },
+    {
+      "url": "https://archive.org/download/monty-pythons-flying-circus-s-3-e-08-the-cycli/Monty%20Pythons%20Flying%20Circus%20S4%20E06%20-%20Party%20Pol.ia.mp4",
+      "method": "GET bytes=0-1023",
+      "checkedAt": "2026-11-22T03:52:25.118968+00:00",
       "status": 206,
       "contentType": "video/mp4",
       "verified": true
