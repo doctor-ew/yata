@@ -1,0 +1,204 @@
+{
+  "date": "2026-11-22T17:49:19.265957+00:00",
+  "website": "https://doctorew.com/tv/",
+  "implementationCommit": "495f39b8aa32658fd16a3754338cff613923a940",
+  "webReleaseCommit": "c0858f871c7fb0fd40287363d682d0825c2cad1e",
+  "verificationFixCommit": "7918a85e0d1fde266ee2917a4c30616f28192cea",
+  "publicHashes": [
+    {
+      "name": "buddy.css",
+      "sha256": "df46ba108201ad920072347280770080e90b883e0ffaf9ae7a4687587955ed21",
+      "matches": true
+    },
+    {
+      "name": "src/saved-lineups.mjs",
+      "sha256": "f057b65380b453aa615171ad123e5837e156fb1a327de22f3665bb33fd907429",
+      "matches": true
+    },
+    {
+      "name": "src/release-notes.mjs",
+      "sha256": "f8421e33ea3288bc3c7decec4e06fcb60e61b77e303c497829e7ca8cfd28f48a",
+      "matches": true
+    },
+    {
+      "name": "src/feedback-intake.mjs",
+      "sha256": "f6cab39995647467cab5c0cf859961cf67602c0c0fd0a73c07db7cd320604af3",
+      "matches": true
+    },
+    {
+      "name": "src/feedback.mjs",
+      "sha256": "422178585c97cc79b91fea5119b37b3888e68d91eca43649e11656590f84abe2",
+      "matches": true
+    },
+    {
+      "name": "src/channel-builder.mjs",
+      "sha256": "d42586fafcf0a0e21d88476a5e6e3d3ab1d280cdf14b6f276ccb83727307caed",
+      "matches": true
+    },
+    {
+      "name": "src/channel-ai.mjs",
+      "sha256": "0fe2bfada19e4ecfadef1f985f4c3b3eee484565bd7c69c3f61c4ab7416c5d53",
+      "matches": true
+    },
+    {
+      "name": "src/buddy-service-client.mjs",
+      "sha256": "614c3f25f476e8c7b9b6b760f28cc68080e0f205fac86e6f0ab7be1c31df9823",
+      "matches": true
+    },
+    {
+      "name": "src/buddy-ui.mjs",
+      "sha256": "c8733dbb396bd26059043daaa9cf2cca596583c69575fea0f3e36f11153f5858",
+      "matches": true
+    },
+    {
+      "name": "src/custom-channel.mjs",
+      "sha256": "9db5412d9c4e79c76d85225e22b1883080465f8f6cc17d902cb2fa57a84ea549",
+      "matches": true
+    },
+    {
+      "name": "src/channel-builder-ui.mjs",
+      "sha256": "9b700dd77c02dd7f88eae772d06b4e213955c6f2b61cb29f92ad2aeaf11a3ba7",
+      "matches": true
+    },
+    {
+      "name": "src/domain.mjs",
+      "sha256": "5d42b8d815936da2447c4a812f58e114f1f1e5239417747666c0f578979f4f26",
+      "matches": true
+    },
+    {
+      "name": "src/published-catalog.mjs",
+      "sha256": "8aa3188230ddb79cc8dd211b4af84a9deb4f1fe7cd85332351f8d0036b551cbc",
+      "matches": true
+    },
+    {
+      "name": "src/window-mode.mjs",
+      "sha256": "65130776da89d4ee4fada26dedce1466182ed7110d8fdc8278b799484cc72375",
+      "matches": true
+    },
+    {
+      "name": "src/app.mjs",
+      "sha256": "1b5387bf778512a0f953f0d0c05683d0b09aa3a80ca2bc607dbaf5ac592990ff",
+      "matches": true
+    },
+    {
+      "name": "src/buddy-service.mjs",
+      "sha256": "ab4e96e3ebd7f58491840c986a2f3095a3b1e9c3c2cf676fd36d874859d8760b",
+      "matches": true
+    },
+    {
+      "name": "style.css",
+      "sha256": "038bfebfdec5b13ec3a90a3b7f4711410ebf488b6e67771517ca445a0bcc7e06",
+      "matches": true
+    },
+    {
+      "name": "index.html",
+      "sha256": "8ccf010908ad0eedf157447098139e62bbc690686e3e56b6568dfb87f7c1a902",
+      "matches": true
+    }
+  ],
+  "publicApiCanaries": [
+    {
+      "case": "feedback-invalid-session",
+      "status": 401,
+      "expected": 401,
+      "passed": true,
+      "code": "verification_required"
+    },
+    {
+      "case": "feedback-invalid-body",
+      "status": 400,
+      "expected": 400,
+      "passed": true,
+      "code": null
+    },
+    {
+      "case": "legacy-buddy-invalid-session",
+      "status": 401,
+      "expected": 401,
+      "passed": true,
+      "code": "verification_required"
+    }
+  ],
+  "livePrivateAssessments": [
+    {
+      "case": "complete",
+      "functionError": null,
+      "assessment": {
+        "version": 1,
+        "status": "assessed",
+        "kind": "bug",
+        "next": "ready",
+        "confidence": 0.99
+      }
+    },
+    {
+      "case": "missing-outcome",
+      "functionError": null,
+      "assessment": {
+        "version": 1,
+        "status": "clarify",
+        "kind": "other",
+        "next": "clarify",
+        "confidence": 0
+      }
+    },
+    {
+      "case": "missing-detail",
+      "functionError": null,
+      "assessment": {
+        "version": 1,
+        "status": "clarify",
+        "kind": "other",
+        "next": "clarify",
+        "confidence": 0
+      }
+    },
+    {
+      "case": "answered",
+      "functionError": null,
+      "assessment": {
+        "version": 1,
+        "status": "assessed",
+        "kind": "bug",
+        "next": "ready",
+        "confidence": 1.0
+      }
+    },
+    {
+      "case": "explicit-bug-missing-outcome",
+      "assessment": {
+        "version": 1,
+        "status": "assessed",
+        "kind": "bug",
+        "next": "actual",
+        "confidence": 0.88
+      }
+    }
+  ],
+  "browserAcceptance": {
+    "interactiveVerificationCompleted": false,
+    "initialAutomatedRun": {
+      "api": [],
+      "pageErrors": [],
+      "focusedReport": true,
+      "reviewReady": false,
+      "status": "Checking this browser\u2026",
+      "formFallback": true
+    },
+    "followup": "Verification deadline/visibility and stale fallback status fixed; final local browser regression and public byte verification passed. Browser access host unavailable for a further interactive pass."
+  },
+  "nativePackageReleased": false,
+  "publishedFiles": 18,
+  "catalogManifestsUnchanged": true,
+  "catalogRevisions": {
+    "published-catalog-v3-manifest.json": "e6fcea9b8cae48d80eb226b34651cd79a0b4f96ccc15cbf73a659f77bf978023",
+    "published-catalog-v2-manifest.json": "debb988b968553916da0cc54770dcc127c2dc000ee366b346d4391d829e4bf00"
+  },
+  "deploymentChecks": {
+    "serviceUpdatesComplete": true,
+    "deployedPackageHashesVerified": true,
+    "runtimeSettingsPreserved": true,
+    "cloudFrontInvalidationsComplete": true,
+    "privateRollbackRecordsRetained": true
+  }
+}

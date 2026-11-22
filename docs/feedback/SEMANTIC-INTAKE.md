@@ -1,6 +1,6 @@
 # Semantic feedback intake
 
-Status: implemented in source; not deployed. This supersedes the form-first feedback behavior prepared in PR 58. Issue: https://github.com/doctor-ew/yata/issues/57.
+Status: deployed on the web on November 22, 2026. See DEPLOYMENT-2026-11-22.md for actual rollout evidence and the outstanding interactive-browser acceptance check. This supersedes the form-first feedback behavior prepared in PR 58. Issue: https://github.com/doctor-ew/yata/issues/57.
 
 ## Viewer flow
 
@@ -41,7 +41,7 @@ Those temporary directories already exist after this run; use a new output direc
 
 ## Deployment boundary
 
-Deployment remains a separate action. Update the private service and guarded public API before publishing the web client and verified-origin iframe. The native client needs a new package for its new mode; existing packages continue using their existing flow. A new client facing an older public service falls back to the form.
+The November 22 deployment updated the private service and guarded public API before publishing the web client and verified-origin iframe. Future rollouts must preserve that order. The native client needs a new package for its new mode; existing packages continue using their existing flow. A new client facing an older public service falls back to the form.
 
 Use the existing reviewed deployment workflows, retain unrelated package entries and resource configuration, and verify actual deployed bytes and session-denial canaries. Do not widen IAM or publish an unauthenticated endpoint. Do not republish the catalog. Native transport preserves the existing frame source, website origin and nonce checks; session grants stay inside the verified website frame.
 
