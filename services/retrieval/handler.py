@@ -95,6 +95,27 @@ class Runtime:
         self.allowance()
         return classify(query,secret)
 
+    def assess_feedback(self, report):
+        from feedback import assess, request_body
+        request_body(report)
+        secret = self.jev_key()
+        self.allowance()
+        return assess(report, secret)
+
+
+def feedback_handler(event, *, runtime=None):
+    from feedback import validate_event, validate_result, uncertain
+    try:
+        report = validate_event(event)
+    except (ValueError, TypeError, UnicodeError):
+        return uncertain()
+    try:
+        runtime = runtime or Runtime()
+        # Feedback may contain personal information: never persist report text or decisions.
+        return validate_result(runtime.assess_feedback(report))
+    except Exception:
+        return uncertain()
+
 
 def intent_handler(event, *, runtime=None):
     from intent import validate_event, validate_result
@@ -116,6 +137,8 @@ def intent_handler(event, *, runtime=None):
 
 
 def handler(event, context, *, runtime=None):
+    if isinstance(event, dict) and event.get("operation") == "feedback":
+        return feedback_handler(event, runtime=runtime)
     if isinstance(event,dict) and event.get("operation")=="intent":
         return intent_handler(event,runtime=runtime)
     try:

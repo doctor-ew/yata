@@ -1,0 +1,255 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "YATA guarded feedback assessment",
+    "version": "1.0.0",
+    "description": "Proposed feedback extension only. Existing session verification, moderation and quotas remain required. No issue posting endpoint."
+  },
+  "servers": [
+    {
+      "url": "https://skippyts.doctorew.com"
+    }
+  ],
+  "paths": {
+    "/chatbot": {
+      "post": {
+        "operationId": "assessFeedback",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "mode",
+                  "question",
+                  "personality",
+                  "sessionToken"
+                ],
+                "properties": {
+                  "mode": {
+                    "type": "string",
+                    "enum": [
+                      "feedback"
+                    ]
+                  },
+                  "question": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 4000,
+                    "description": "JSON-encoded FeedbackReport. At most 6 viewer feedback messages, 1000 UTF-16 code units each and 2400 total. No general chat history."
+                  },
+                  "personality": {
+                    "type": "string",
+                    "description": "An existing approved companion identity."
+                  },
+                  "sessionToken": {
+                    "type": "string",
+                    "maxLength": 2048
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Finite assessment; never generated issue text or URLs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "assessment"
+                  ],
+                  "properties": {
+                    "assessment": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "version",
+                        "status",
+                        "kind",
+                        "next",
+                        "confidence"
+                      ],
+                      "properties": {
+                        "version": {
+                          "type": "integer",
+                          "enum": [
+                            1
+                          ]
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "assessed",
+                            "clarify",
+                            "unavailable"
+                          ]
+                        },
+                        "kind": {
+                          "type": "string",
+                          "enum": [
+                            "bug",
+                            "feature",
+                            "channel",
+                            "content",
+                            "other"
+                          ]
+                        },
+                        "next": {
+                          "type": "string",
+                          "enum": [
+                            "description",
+                            "action",
+                            "actual",
+                            "desired",
+                            "ready",
+                            "clarify"
+                          ]
+                        },
+                        "confidence": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 1
+                        }
+                      }
+                    }
+                  }
+                },
+                "example": {
+                  "assessment": {
+                    "version": 1,
+                    "status": "assessed",
+                    "kind": "bug",
+                    "next": "ready",
+                    "confidence": 0.98
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request."
+          },
+          "401": {
+            "description": "Invalid or expired verification."
+          },
+          "429": {
+            "description": "Existing quota denied."
+          },
+          "503": {
+            "description": "Service unavailable."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "FeedbackReport": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "version",
+          "messages"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "enum": [
+              1
+            ]
+          },
+          "messages": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 6,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "text",
+                "answerTo"
+              ],
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1000
+                },
+                "answerTo": {
+                  "type": "string",
+                  "nullable": true,
+                  "enum": [
+                    null,
+                    "description",
+                    "action",
+                    "actual",
+                    "desired"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "FeedbackAssessment": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "version",
+          "status",
+          "kind",
+          "next",
+          "confidence"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "enum": [
+              1
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "assessed",
+              "clarify",
+              "unavailable"
+            ]
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "bug",
+              "feature",
+              "channel",
+              "content",
+              "other"
+            ]
+          },
+          "next": {
+            "type": "string",
+            "enum": [
+              "description",
+              "action",
+              "actual",
+              "desired",
+              "ready",
+              "clarify"
+            ]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 // Native requests run in the verified website origin; grants never leave it.
 export function requestEmbeddedBuddy(mode,container,request,signal,onPhase=()=>{}){
- if(!['buddy','channel','intent'].includes(mode))return Promise.reject(Error('Unknown buddy request.'));
+ if(!['buddy','channel','intent','feedback'].includes(mode))return Promise.reject(Error('Unknown buddy request.'));
  return new Promise((resolve,reject)=>{
   const frame=document.createElement('iframe'),nonce=crypto.randomUUID().replaceAll('-','');let done=false,sent=false;
   frame.title='Verify your buddy request';frame.src='https://doctorew.com/tv/buddy-service.html#'+nonce;frame.style.cssText='width:100%;height:100px;border:0';

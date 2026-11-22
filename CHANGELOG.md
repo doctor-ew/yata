@@ -6,7 +6,7 @@ User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub
 
 - Channel plans explain unmatched list requests and show a review before saving or playing suggested alternatives.
 - Save up to 50 named personal lineups, switch between them, or remove them without replacing the others. Existing Channel 00 lineups are retained.
-- Requests & bugs opens a visible feedback form with summary focus and public GitHub draft review. These changes are prepared in source, not deployed.
+- Requests & bugs focuses conversational report intake. Jev assessment identifies a missing detail or moves a complete report to review; repeated questions and service failures retain the text with an editable form fallback. GitHub draft opening is explicit and is not reported as delivery. These changes are prepared in source, not deployed.
 
 - Fullscreen playback controls collapse to an accessible up arrow. Tap to reveal rewind, pause, forward and next; tap the down arrow to collapse them again. Exiting fullscreen restores the normal controls. Prepared in source; requires an Android app update.
 

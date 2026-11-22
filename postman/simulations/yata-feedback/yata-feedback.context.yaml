@@ -1,0 +1,23 @@
+purpose:
+  stands_in_for: Proposed YATA guarded feedback assessment HTTP contract.
+  unblocks: Browser verification of targeted questions, explicit review and retained drafts under failures without paid provider calls or public issue posting.
+assumptions:
+  - id: finite-response-and-review
+    status: supported
+    claim: The tested client handles finite assessment responses without opening a draft before explicit review.
+    reason: The local mock derives its envelope from the proposed contract; browser tests run the actual client transport and UI.
+    verification: The browser-feedback-intake regression exercised targeted questions, direct review, invalid output, HTTP 503, unavailable output, opening failure and cancellation. The local simulation recorded the session and assessment HTTP requests. No live provider was used.
+    source: services/buddy-feedback/openapi.json; test/browser-feedback-intake.mjs; postman/mocks/buddy-feedback/default.js
+    updated_at: '2026-11-22'
+  - id: deployed-provider-quality
+    status: unknown
+    claim: The deployed service correctly identifies missing details for real viewer reports.
+    reason: Semantic responses are synthetic fixtures and the new guarded API mode has not been deployed or called live.
+    verification: Not performed. Verify production versions, authorization and actual Jev distributions separately before release.
+    source: services/retrieval/feedback.py; services/buddy-feedback/guarded-api.patch
+    updated_at: '2026-11-22'
+fingerprints:
+  - id: local-feedback-contract
+    date: '2026-11-22'
+    commit: null
+    cli: Postman 1.75.0
