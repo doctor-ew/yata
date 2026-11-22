@@ -33,7 +33,7 @@ export function createChannelAi({sitekey,container,fetcher=fetch,verify=challeng
     try{
     if(!grant||grant.expiresAt*1000<Date.now()+30000){onPhase('Checking this browser…');const turnstileToken=await verify(sitekey,container,signal);grant=await post('/session',{turnstileToken},signal);if(typeof grant.sessionToken!=='string'||!Number.isFinite(grant.expiresAt)){grant=null;throw Error('Invalid browser verification. Try again.');}}
     if(signal.aborted)throw Error('Request cancelled.');onPhase(mode==='channel'?'The programming department is arguing over your lineup…':'Your buddy is thinking…');
-    const envelope=await post('/chatbot',{...request,...(['channel','buddy','intent'].includes(mode)?{mode}:{}),sessionToken:grant.sessionToken},signal);
+    const envelope=await post('/chatbot',{...request,...(['channel','buddy','intent','feedback'].includes(mode)?{mode}:{}),sessionToken:grant.sessionToken},signal);
     const result=structured?envelope:envelope[responseKey];
     if(result===undefined||result===null||(responseKey==='answer'&&!structured&&(typeof result!=='string'||!result.trim()||result.length>12000)))throw Error('The host sent an unreadable reply. Try again.');
     analytics.record('ai_success',dimensions);return result;
@@ -45,3 +45,5 @@ export function createBuddyChat(options={}){const request=createChannelAi({...op
 export function createBuddyConversation(options={}){const request=createChannelAi({...options,mode: "buddy",responseKey: "answer",structured:true});return async(...args)=>normalizeBuddyConversation(await request(...args));}
 
 export function createBuddyIntent(options={}){return createChannelAi({...options,mode:'intent',responseKey:'route'});}
+
+export function createBuddyFeedback(options={}){return createChannelAi({...options,mode:'feedback',responseKey:'assessment'});}

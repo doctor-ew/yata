@@ -1,0 +1,10 @@
+version: 1
+name: YATA guarded feedback assessment
+slug: yata-guarded-feedback-assessment
+protocol: http
+port: 4500
+scenarios:
+  - name: default
+    path: ./default.js
+    default: true
+interceptRequests: true

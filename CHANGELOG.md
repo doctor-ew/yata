@@ -4,11 +4,14 @@ User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub
 
 ## Unreleased
 
-- Channel plans explain unmatched list requests and show a review before saving or playing suggested alternatives.
-- Save up to 50 named personal lineups, switch between them, or remove them without replacing the others. Existing Channel 00 lineups are retained.
-- Requests & bugs opens a visible feedback form with summary focus and public GitHub draft review. These changes are prepared in source, not deployed.
+- Android and Apple packages have not been updated with the November 22 web interface changes.
 
-- Fullscreen playback controls collapse to an accessible up arrow. Tap to reveal rewind, pause, forward and next; tap the down arrow to collapse them again. Exiting fullscreen restores the normal controls. Prepared in source; requires an Android app update.
+## Web update — 2026-11-22
+
+- 2026-11-22 web update: Requests & bugs uses Jev-assisted report intake with targeted follow-ups, editable review and a form fallback. Opening a GitHub draft is not reported as delivery.
+- 2026-11-22 web update: save up to 50 named personal lineups and switch or remove them without replacing the others. Channel 00 plays the selected lineup; saved presets remain local to this browser.
+- 2026-11-22 web update: planner-generated channels explain unmatched list requests and suggested alternatives, then wait for your review before saving or playing.
+- 2026-11-22 web update: fullscreen playback controls start collapsed behind an accessible arrow and restore normal controls on exit. Existing Android and Apple packages require a separate app update for these interface changes.
 
 ## 0.8.22 — 2026-11-20
 

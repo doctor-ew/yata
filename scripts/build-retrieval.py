@@ -15,7 +15,7 @@ with tempfile.TemporaryDirectory(prefix='yata-retrieval-build-') as folder:
     stage = pathlib.Path(folder)
     subprocess.run([sys.executable, '-m', 'pip', 'install', '--quiet', '--no-compile', '--target', str(stage),
                     '-r', str(root / 'services/retrieval/requirements-lock.txt')], check=True)
-    for name in ['core.py', 'budget.py', 'handler.py', 'ingest.py', 'jev.py', 'intent.py']:
+    for name in ['core.py', 'budget.py', 'handler.py', 'ingest.py', 'jev.py', 'intent.py', 'feedback.py']:
         (stage / name).write_bytes((root / 'services/retrieval' / name).read_bytes())
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(args.out, 'w', zipfile.ZIP_DEFLATED) as archive:

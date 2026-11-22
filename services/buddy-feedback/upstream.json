@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/doctor-ew/midthown_hackathon_camp",
+  "revision": "a8118ff7ebe259fe515f6a8e003dd5c03ec68c00",
+  "patch": "guarded-api.patch",
+  "module": "feedbackAssessment.ts"
+}

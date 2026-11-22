@@ -1,0 +1,46 @@
+diff --git a/src/handler.ts b/src/handler.ts
+index f45e975..d253840 100644
+--- a/src/handler.ts
++++ b/src/handler.ts
+@@ -1,3 +1,4 @@
++import {assessFeedback, parseFeedbackReport, feedbackUnavailable} from './feedbackAssessment';
+ import {routeIntent} from './episodeRetrieval';
+ import {EpisodeRetrieval, retrieveEpisodes, retrievalContext, responseBudget} from './episodeRetrieval';
+ import { buddyPrompt, safeBuddyReply, moderateBuddy, injectionAttempt } from './buddySafety';
+@@ -140,6 +141,13 @@ export const handler = async (
+       return {statusCode: 200, headers, body: JSON.stringify(grant)};
+     }
+     const { action, body: requestBody } = await authorize(event, config);
++    if (requestBody.mode === "feedback") {
++      const query=requestBody.question || "";
++      const text=parseFeedbackReport(query).messages.map(message=>message.text).join('\n');
++      const assessment=injectionAttempt(text)||!await moderateBuddy(text,Math.max(1,Math.min(6000,remaining(14000))))?feedbackUnavailable():await assessFeedback(query,undefined,Math.min(12000,remaining(1000)));
++      console.info(JSON.stringify({event:'buddy-feedback',status:assessment.status,next:assessment.next}));
++      return {statusCode:200,headers,body:JSON.stringify({assessment})};
++    }
+     if (requestBody.mode === "intent") {
+       const question=requestBody.question || "";
+       const route=injectionAttempt(question)||!await moderateBuddy(question,Math.max(1,Math.min(6000,remaining(14000))))?{version:1,status:'clarify',intent:'clarify',confidence:0}:await routeIntent(question,undefined,Math.min(12000,remaining(1000)));
+diff --git a/src/security.ts b/src/security.ts
+index b8fb487..7cfd3d1 100644
+--- a/src/security.ts
++++ b/src/security.ts
+@@ -99,13 +99,17 @@ export function parseRequest(event: APIGatewayProxyEvent): { action: Action; bod
+   if (!Object.prototype.hasOwnProperty.call(body, "sessionToken") && !body.turnstileToken?.trim()) throw new PublicError(403, "Please complete the verification and try again.");
+   if (body.retrievalQuery !== undefined && (body.mode !== "buddy" || !body.retrievalQuery.trim() || Buffer.byteLength(body.retrievalQuery,"utf8") > 1200 || body.retrievalQuery !== body.question)) throw new PublicError(400, "Invalid episode search request.");
+   if (body.mode !== undefined || body.host !== undefined || body.shows !== undefined) {
+-    if (body.mode === "buddy" || body.mode === "intent") {
++    if (body.mode === "buddy" || body.mode === "intent" || body.mode === "feedback") {
+       if (action !== "chatbot" || !require("./buddySafety").isBuddyPersonality(body.personality) || body.host !== undefined || body.shows !== undefined || body.language !== undefined || body.programmingLanguage !== undefined) throw new PublicError(400, "Invalid buddy request.");
+     } else {
+       if (action !== "chatbot" || body.mode !== "channel" || body.personality !== undefined || body.language !== undefined || body.programmingLanguage !== undefined) throw new PublicError(400, "Invalid channel request.");
+       try { require("./channelPlanner").parseChannelRequest(body); } catch { throw new PublicError(400, "Invalid channel request or available-show list."); }
+     }
+   }
++  if (body.mode === "feedback") {
++    if(body.retrievalQuery!==undefined)throw new PublicError(400,"Invalid feedback request.");
++    try { require("./feedbackAssessment").parseFeedbackReport(body.question); } catch { throw new PublicError(400,"Invalid feedback request."); }
++  }
+   if (body.mode === "intent" && (!body.question?.trim() || body.question.length>1000 || Buffer.byteLength(body.question,"utf8")>4000 || body.retrievalQuery!==undefined)) throw new PublicError(400,"Invalid intent request.");
+   if (action === "foxtrot") {
+     if (!body.programmingLanguage?.trim()) throw new PublicError(400, "Choose a programming language.");
