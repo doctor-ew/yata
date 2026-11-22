@@ -48,7 +48,8 @@
           <aside class="tv-cabinet-controls" aria-label="Television tuning dials"><span class="tv-cabinet-label" aria-hidden="true">YATA · COLOR</span><div class="tv-dial"><button id="dial-next-show" type="button" class="tv-knob" aria-label="Next show" title="Next show"></button><span class="dial-caption" aria-hidden="true">SHOW +</span></div><div class="tv-dial"><button id="dial-random" type="button" class="tv-knob" aria-label="Random channel mix" title="Random channel mix"></button><span class="dial-caption" aria-hidden="true">RANDOM</span></div><div class="tv-speaker" aria-hidden="true"></div></aside>
           </div>
           <div id="player-error" class="player-error" role="alert" hidden><p id="player-error-text"></p><div><button id="retry" class="button small">Retry</button><button id="skip-error" class="button small">Skip episode</button><a id="error-original" class="button small" target="_blank" rel="noopener noreferrer">Open original ↗</a></div></div>
-          <section class="transport" aria-label="Video playback controls">
+          <button id="fullscreen-controls-toggle" class="fullscreen-controls-toggle" type="button" aria-controls="playback-transport" aria-expanded="false" aria-label="Show playback controls" hidden>⌃</button>
+          <section id="playback-transport" class="transport" aria-label="Video playback controls">
             <div id="seek-panel" class="seek-panel" hidden><div class="transport-position"><label for="video-seek">POSITION</label><output id="video-time">00:00:00 out of --:--:--</output></div>
             <input id="video-seek" type="range" min="0" max="1" step="1" value="0" aria-label="Playback position" disabled></div>
             <div class="transport-buttons"><button id="toggle-seek-panel" type="button" class="text-button seek-reveal" aria-controls="seek-panel" aria-expanded="false" aria-pressed="false" title="Pin playback position">Position</button>

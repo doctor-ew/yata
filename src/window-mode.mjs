@@ -1,14 +1,29 @@
 // Change presentation in place: reparenting an iframe can restart its provider player.
-export function mountWindowMode({ documentRef, screen, toggle, closeButton, fullScreenButton, getPlaybackState = () => null, isWatching = () => true }) {
+export function mountWindowMode({ documentRef, screen, toggle, closeButton, fullScreenButton, controlsToggle, transport, getPlaybackState = () => null, isWatching = () => true }) {
   let open = false, lastFocus = null, overflow = '', savedAttributes, scroll = { x: 0, y: 0 };
   const inertStates = new Map();
   let automatic = false, suppressRotation = false, ownedFullscreen = false, nativeVideo = null;
   const view = documentRef.defaultView;
   let lastLandscape = !!view?.matchMedia?.('(orientation: landscape)').matches;
+  let controlsExpanded = false;
+  const originalTransportHidden = transport?.hidden ?? false;
+  function showControls(expanded) {
+    controlsExpanded = expanded;
+    if (transport) transport.hidden = open ? !expanded : originalTransportHidden;
+    if (controlsToggle) {
+      controlsToggle.hidden = !open;
+      controlsToggle.textContent = expanded ? '⌄' : '⌃';
+      controlsToggle.setAttribute('aria-expanded', String(expanded));
+      controlsToggle.setAttribute('aria-label', expanded ? 'Hide playback controls' : 'Show playback controls');
+    }
+  }
+  const toggleControls = () => { if (open) showControls(!controlsExpanded); };
+  controlsToggle?.addEventListener('click', toggleControls);
   const attributes = ['role', 'aria-modal', 'aria-label', 'tabindex'];
   function setOpen(value) {
     if (open === value) return;
     open = value;
+    showControls(false);
     if (open) {
       lastFocus = documentRef.activeElement;
       scroll = { x: documentRef.defaultView?.scrollX || 0, y: documentRef.defaultView?.scrollY || 0 };
@@ -101,5 +116,5 @@ export function mountWindowMode({ documentRef, screen, toggle, closeButton, full
   view?.addEventListener?.('hashchange', routeChanged);
   toggle.addEventListener('click', toggleMode); closeButton.addEventListener('click', close); documentRef.addEventListener('keydown', keyboard);
   return { enter: () => enter(true), exit: close, isOpen: () => open,
-    dispose() { close(); fullScreenButton?.removeEventListener('click', toggleMode); documentRef.removeEventListener('fullscreenchange', fullscreenChanged); documentRef.removeEventListener('yata:exit-fullscreen', close); documentRef.removeEventListener('playing', refreshRotation, true); documentRef.removeEventListener('yata:playback-state', refreshRotation); view?.removeEventListener?.('resize', refreshRotation); view?.removeEventListener?.('orientationchange', refreshRotation); view?.removeEventListener?.('hashchange', routeChanged); toggle.removeEventListener('click', toggleMode); closeButton.removeEventListener('click', close); documentRef.removeEventListener('keydown', keyboard); } };
+    dispose() { close(); controlsToggle?.removeEventListener('click', toggleControls); fullScreenButton?.removeEventListener('click', toggleMode); documentRef.removeEventListener('fullscreenchange', fullscreenChanged); documentRef.removeEventListener('yata:exit-fullscreen', close); documentRef.removeEventListener('playing', refreshRotation, true); documentRef.removeEventListener('yata:playback-state', refreshRotation); view?.removeEventListener?.('resize', refreshRotation); view?.removeEventListener?.('orientationchange', refreshRotation); view?.removeEventListener?.('hashchange', routeChanged); toggle.removeEventListener('click', toggleMode); closeButton.removeEventListener('click', close); documentRef.removeEventListener('keydown', keyboard); } };
 }

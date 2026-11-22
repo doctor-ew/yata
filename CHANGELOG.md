@@ -2,6 +2,10 @@
 
 User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub release publication dates in UTC. Early web milestones are backfilled from repository history. Android downloads are debug-signed sideload prereleases; iOS/TestFlight is not released. Media availability can change.
 
+## Unreleased
+
+- Fullscreen playback controls collapse to an accessible up arrow. Tap to reveal rewind, pause, forward and next; tap the down arrow to collapse them again. Exiting fullscreen restores the normal controls. Prepared in source; requires an Android app update.
+
 ## 0.8.22 — 2026-11-20
 
 - Channel 11 is Game Shows: 20 existing vintage game-show collections have their own lineup. Nickelodeon game shows stay on Nick.
