@@ -1,3 +1,4 @@
+import{savedLineups,selectSavedLineup,removeSavedLineup,MAX_SAVED_LINEUPS}from'./saved-lineups.mjs';
 import{applyChannelRegistry,catalogChannels}from'./channels.mjs';
 import{defaultChannelRegistry}from'./channel-registry.mjs';
 import{RELEASES}from'./release-notes.mjs';
@@ -135,6 +136,15 @@ function playBuddyEvidence(selection){
 }
 mountBuddy({onPlayEvidence:playBuddyEvidence,getPlaybackContext:companionPlaybackContext,onNavigate:navigateStation,getCatalog:()=>catalog,isReady:()=>ownerMode||publicCatalogReady,onShow:openShow,onGame:id=>gameGate.request(id),onCancelGame:()=>gameGate.cancel(),onQueue:queueFromBuddy,onWatch:async(showIds,title)=>{const next=createCustomChannel(catalog,showIds,title,{seed:newMix(),now:Date.now()/1000});if(!await commitSettings(next))return false;stopPlayer();render();tuneLive();return true;}});
 
+const savedLineupsRoot=element('section',null,'mix-panel');savedLineupsRoot.id='saved-lineups';savedLineupsRoot.setAttribute('aria-label','Saved personal lineups');$('open-channel-builder').closest('.channel-builder-action').after(savedLineupsRoot);
+function renderSavedLineups(){
+ const items=savedLineups(catalog);savedLineupsRoot.replaceChildren();savedLineupsRoot.hidden=!items.length;if(!items.length)return;
+ const label=element('label','Saved lineups'),select=element('select');select.id='saved-lineup-select';label.htmlFor=select.id;
+ for(const item of items){const option=element('option',item.title);option.value=item.id;select.append(option);}select.value=catalog.settings.activeLineupId||'legacy';
+ const play=element('button','Play selected lineup');play.type='button';play.className='button small';play.onclick=async()=>{try{const next=selectSavedLineup(catalog,select.value);if(await commitSettings(next)){stopPlayer();render();tuneLive();}}catch(error){notify(error.message);}};
+ const remove=element('button','Remove selected lineup');remove.type='button';remove.className='button small';remove.onclick=async()=>{const id=select.value,active=isCustomChannel(catalog)&&(catalog.settings.activeLineupId||'legacy')===id;if(await commitSettings(removeSavedLineup(catalog,id))){if(active)stopPlayer();render();notify('Saved lineup removed.');}};
+ savedLineupsRoot.append(label,select,play,remove,element('p',`${items.length} of ${MAX_SAVED_LINEUPS} saved lineups. Channel 00 plays the selected lineup; your episode queue is kept separately.`));
+}
 const queueRoot=element('details',null,'mix-panel episode-queue');queueRoot.id='episode-queue';$('open-channel-builder').closest('.channel-builder-action').after(queueRoot);
 const queueUi=mountEpisodeQueue({root:queueRoot,getCatalog:()=>catalog,onPlay:playQueuedEpisode,onEdit:async(id,action)=>{if(await commitSettings(editEpisodeQueue(copyCatalog(),id,action))){render();queueUi.render();}},onMode:async mode=>{const next=copyCatalog();next.settings.customMode=mode;next.settings.customQueueActive=false;if(mode==='episodes')next.settings.streamShows=null;if(await commitSettings(next)){stopPlayer();render();queueUi.render();}}});
 async function queueFromBuddy(showId,position){
@@ -385,7 +395,7 @@ function presentEpisodeTitle(episode,show){
 
 function render() {
   applyChannelRegistry(catalog.channelRegistry??defaultChannelRegistry());analytics.setChannelRegistry(catalog.channelRegistry??defaultChannelRegistry());
-  queueUi?.render();renderResume(); renderChannels(); renderGuide(); renderLibrary(); renderDials(); stationGuide.render();
+  renderSavedLineups();queueUi?.render();renderResume(); renderChannels(); renderGuide(); renderLibrary(); renderDials(); stationGuide.render();
   if(guideJumpPending&&(ownerMode||publicCatalogReady)&&!$('guide').hidden){guideJumpPending=false;requestAnimationFrame(()=>{if(!$('guide').hidden)$(innerWidth<=1000?'screen-column':'guide').scrollIntoView({block:'start'});});}
 }
 

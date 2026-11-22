@@ -4,3 +4,25 @@ test('creating channel 00 leaves every base station lineup and clock intact, inc
 test('channel 00 persists while tuning regular stations and across shared catalog refreshes',()=>{const c=fixture(),personal=validateCatalog(createCustomChannel(c,['dukes','he-man'],'Keep me',{seed:4,now:9000}));const regular=validateCatalog({...personal,settings:{...personal.settings,channel:'action',streamShows:null}});const reloaded=mergePublishedCatalog(c,regular);assert.deepEqual(reloaded.settings.customShows,['dukes','he-man']);assert.equal(reloaded.settings.customEpoch,9000);assert.equal(reloaded.settings.customSeed,4);assert.equal(reloaded.settings.customTitle,'Keep me');assert.deepEqual(tuneCustomChannel(reloaded).settings.streamShows,['dukes','he-man']);const changed=structuredClone(c);changed.shows=changed.shows.filter(s=>s.id!=='dukes');assert.deepEqual(mergePublishedCatalog(changed,regular).settings.customShows,['he-man']);});
 test('remixing channel 00 does not reshuffle the ordinary TV channels',()=>{const n=validateCatalog(createCustomChannel(fixture(),['dukes','he-man'],'Remix',{seed:1,now:10})),before=compileGuide(n),after=compileGuide(validateCatalog(remixLineups(n,'custom',{seed:()=>99,now:20})));assert.equal(after[0].epoch,20);for(const row of before.slice(1))assert.deepEqual(after.find(r=>r.channel.id===row.channel.id),row);});
 test('arcade shortcut uses 03 with classic previews and unlock state survives the tab session',()=>{assert.equal(ARCADE_CHANNEL.number,'03');assert.deepEqual(ARCADE_CHANNEL.games,['Star Wars','Spy Hunter','Q*bert','Donkey Kong','Star Raiders']);const map=new Map(),storage={getItem:k=>map.get(k),setItem:(k,v)=>map.set(k,v)};assert.equal(readArcadeUnlock(storage),false);saveArcadeUnlock(storage);assert.equal(readArcadeUnlock(storage),true);const blocked={getItem(){throw Error('blocked')},setItem(){throw Error('blocked')}};assert.equal(readArcadeUnlock(blocked),false);assert.doesNotThrow(()=>saveArcadeUnlock(blocked));});
+
+import{savedLineups,selectSavedLineup,removeSavedLineup,MAX_SAVED_LINEUPS}from'../src/saved-lineups.mjs';
+test('saved lineups retain previous selection, clocks and queue through serialization and refresh',()=>{
+ const legacy=fixture();Object.assign(legacy.settings,{customShows:['dukes'],customTitle:'Legacy',customSeed:7,customEpoch:42,customRotation:'ordered'});
+ let c=validateCatalog(createCustomChannel(legacy,['he-man'],'Cartoons',{seed:2,now:50}));
+ c=validateCatalog(createCustomChannel(c,['knight-rider'],'Cars',{seed:3,now:60}));
+ assert.equal(savedLineups(c).length,3);const items=savedLineups(c);c=validateCatalog(JSON.parse(JSON.stringify(c)));
+ c=validateCatalog(selectSavedLineup(c,'legacy'));assert.deepEqual(c.settings.streamShows,['dukes']);assert.equal(c.settings.customSeed,7);assert.equal(c.settings.customEpoch,42);assert.equal(c.settings.customRotation,'ordered');
+ const fresh=mergePublishedCatalog(fixture(),c);assert.equal(savedLineups(fresh).length,3);assert.equal(fresh.settings.activeLineupId,'legacy');
+ const removed=structuredClone(fixture());removed.shows=removed.shows.filter(s=>s.id!=='dukes');const refreshed=mergePublishedCatalog(removed,c);assert.equal(savedLineups(refreshed).length,2);assert.equal(refreshed.settings.activeLineupId,undefined);
+ c=validateCatalog(removeSavedLineup(c,items[1].id));assert.equal(savedLineups(c).length,2);assert.deepEqual(c.settings.streamShows,['dukes']);
+ c=validateCatalog(removeSavedLineup(c,'legacy'));assert.equal(savedLineups(c).length,1);assert.equal(c.settings.customShows,undefined);assert.equal(c.settings.streamShows,undefined);
+});
+test('saved lineup validation rejects duplicate ids, unknown shows, clocks and excessive storage',()=>{
+ const c=createCustomChannel(fixture(),['dukes'],'Valid',{seed:1,now:1}),item=c.settings.savedLineups[0];
+ for(const savedLineups of [[item,item],[{...item,showIds:['missing']}],[{...item,seed:-1}],[{...item,title:' '}],Array.from({length:MAX_SAVED_LINEUPS+1},(_,i)=>({...item,id:'lineup-'+i}))])assert.throws(()=>validateCatalog({...c,settings:{...c.settings,savedLineups}}));
+ assert.throws(()=>validateCatalog({...c,settings:{...c.settings,activeLineupId:'missing'}}));
+ const full={...c,settings:{...c.settings,savedLineups:Array.from({length:MAX_SAVED_LINEUPS},(_,i)=>({...item,id:'lineup-'+i})),activeLineupId:'lineup-0'}};
+ assert.throws(()=>createCustomChannel(full,['he-man'],'Overflow'),/50/);
+ const queue=[{showId:'dukes',episodeId:'dukes-episode',sourceId:'dukes-source'}];const withQueue={...c,settings:{...c.settings,customQueue:queue,customMode:'episodes'}};
+ const selected=selectSavedLineup(withQueue,item.id);assert.deepEqual(selected.settings.customQueue,queue);assert.equal(selected.settings.customMode,'shows');
+});

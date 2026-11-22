@@ -1,3 +1,4 @@
+import{validateSavedLineups}from'./saved-lineups.mjs';
 import {DEFAULT_CHANNELS} from './channel-defaults.mjs';
 import {validateChannelRegistry} from './channel-registry.mjs';
 import{validateEpisodeQueue,episodeQueueSelected,resolveEpisodeQueue}from'./episode-queue.mjs';
@@ -192,6 +193,9 @@ export function validateCatalog(raw) {
   const channel = migratedStream ? shows.find(show=>show.id===streamShow).channel : raw.settings.channel;
   if (streamShows !== null && (streamShow !== null || channel !== 'mixed' || streamShows.some(sid => sid === COMMERCIAL_SHOW_ID || sid === MOVIE_SHOW_ID || !shows.some(show => show.id === sid)))) fail('Invalid bespoke channel selection.');
   if(customShows!==null&&customShows.some(sid=>sid===COMMERCIAL_SHOW_ID||sid===MOVIE_SHOW_ID||!shows.some(s=>s.id===sid)))fail('Invalid saved channel 00 lineup.');
+  const savedLineups=validateSavedLineups(raw.settings.savedLineups??[],new Set(shows.filter(s=>s.id!==COMMERCIAL_SHOW_ID&&s.id!==MOVIE_SHOW_ID).map(s=>s.id)));
+  const activeLineupId=raw.settings.activeLineupId;
+  if(activeLineupId!==undefined&&!savedLineups.some(item=>item.id===activeLineupId))fail('Invalid active personal lineup.');
   if (streamShow === COMMERCIAL_SHOW_ID) fail('Choose a program show for the stream.');
   if (streamShow !== null && !shows.some(show => show.id === streamShow && (channel === 'mixed' || show.channel === channel))) fail('The selected stream show is not in this channel.');
   if (raw.publishedRevision !== undefined && !/^[a-f0-9]{64}$/.test(raw.publishedRevision)) fail('Invalid published catalog revision.');
@@ -206,7 +210,7 @@ export function validateCatalog(raw) {
     const sources = input.sources.map(entry=>({showId:id(entry.showId),url:parseSourceUrl(entry.url).url}));
     if (episodes.length || sources.length) exclusions = {episodes,sources};
   }
-  return { version: 1, epoch: raw.epoch, shows, ...(registry?{channelRegistry:registry}:{}), ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}),...(customQueue.length?{customQueue,customMode,customQueueActive}:{}),...(customShows?{customShows:[...customShows],customTitle:customTitle.trim(),customSeed,customEpoch,customRotation}:{}), ...(mixChannels!==null?{mixChannels:[...mixChannels]}:{}),...(Object.keys(channelRemixes).length?{channelRemixes:Object.fromEntries(Object.entries(channelRemixes).map(([key,value])=>[key,{seed:value.seed,epoch:value.epoch}]))}:{}) } };
+  return { version: 1, epoch: raw.epoch, shows, ...(registry?{channelRegistry:registry}:{}), ...(raw.publishedRevision ? {publishedRevision:raw.publishedRevision} : {}), ...(exclusions ? {exclusions} : {}), settings: { ...(raw.settings.savedLineups!==undefined?{savedLineups}:{}),...(activeLineupId!==undefined?{activeLineupId}:{}), channel, bumpers: raw.settings.bumpers, rotation, shuffleSeed, storiesPerTurn, commercialCount, streamShow, ...(streamShows ? {streamShows} : {}),...(customQueue.length?{customQueue,customMode,customQueueActive}:{}),...(customShows?{customShows:[...customShows],customTitle:customTitle.trim(),customSeed,customEpoch,customRotation}:{}), ...(mixChannels!==null?{mixChannels:[...mixChannels]}:{}),...(Object.keys(channelRemixes).length?{channelRemixes:Object.fromEntries(Object.entries(channelRemixes).map(([key,value])=>[key,{seed:value.seed,epoch:value.epoch}]))}:{}) } };
 }
 
 export function parseCatalogJson(input) {
