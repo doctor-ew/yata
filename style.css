@@ -1586,3 +1586,8 @@ html:not(.native-app) .masthead nav a[aria-current="page"]{background:#be784c;co
 .fullscreen-controls-toggle{position:absolute;bottom:max(8px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:9;width:48px;min-height:44px;padding:0;border:1px solid #e5d8b755;border-radius:22px;background:#151512b8;color:#fff4df;font:28px/1 sans-serif}
 .fullscreen-controls-toggle:focus-visible{outline:3px solid #f5c695;outline-offset:3px}
 .window-mode:has(#fullscreen-controls-toggle[aria-expanded="true"]) .transport{opacity:1!important;pointer-events:auto!important;padding-bottom:calc(56px + env(safe-area-inset-bottom))!important}
+
+#saved-lineups{display:grid;gap:10px;min-width:0}
+#saved-lineups[hidden]{display:none}
+#saved-lineups select{box-sizing:border-box;min-width:0;width:100%;min-height:44px;padding:8px;background:#211e18;color:#f2e7cd;border:1px solid #927a52;border-radius:6px;font:inherit}
+#saved-lineups button{min-height:44px;white-space:normal}

@@ -20,7 +20,18 @@ try{
   mountBuddy({isReady:()=>window.catalogReady,getCatalog:()=>({shows,settings:{}}),onWatch:async(ids,title)=>{calls.watch.push({ids,title});return true;},requestIntent:async r=>{calls.intents.push(r);return{version:1,status:window.intentUncertain?'clarify':'classified',intent:window.intentUncertain?'clarify':r.question.startsWith("Let's")?'build-channel':'conversation',confidence:.98};},requestPlan:async r=>{calls.plans.push(r);return{host:r.host,title:'Requested mix',intro:'Your requested mix is ready.',showIds:window.invalid?['unknown']:shows.slice(0,4).map(s=>s.id)};},requestChat:async r=>{calls.chats.push(r);return{answer:'Ordinary conversation.'};}});
  });
  await page.locator('.buddy-avatar').click();
- const send=async text=>{await page.locator('#buddy-question').fill(text);await page.locator('#buddy-question').press('Enter');await page.waitForFunction(()=>!document.querySelector('.buddy-chat button').disabled);};
+ const send=async(text,accept=true)=>{await page.locator('#buddy-question').fill(text);await page.locator('#buddy-question').press('Enter');await page.waitForFunction(()=>!document.querySelector('.buddy-chat button').disabled);const save=page.getByRole('button',{name:'Save & play this lineup',exact:true});if(accept&&await save.count())await save.click();};
+ // A missing-title list produces a review, never an automatic replacement.
+ await page.getByRole('button',{name:'Make me a channel',exact:true}).click();
+ await send('Legend of Zelda animated series, Galaxy High, Gravedale High, CBS Storybreak, COPS animated series',false);
+ assert.equal(await page.evaluate(()=>calls.watch.length),0);assert.match(await page.locator('.buddy-conversation').innerText(),/couldn’t match.*Legend of Zelda/s);
+ await page.getByRole('button',{name:'Keep my current channel',exact:true}).click();assert.equal(await page.evaluate(()=>calls.watch.length),0);
+ await page.evaluate(()=>calls.plans=[]);
+ // Feedback opens above the companion with a visible, focused field.
+ await page.getByRole('button',{name:'Requests & bugs',exact:true}).click();
+ const feedback=page.locator('#feedback-panel');assert(await feedback.evaluate(e=>e.matches(':modal')));assert.equal(await page.evaluate(()=>document.activeElement.name),'summary');
+ await page.setViewportSize({width:390,height:844});assert(await feedback.isVisible());assert(await feedback.evaluate(e=>{const r=e.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&[...e.querySelectorAll('input,textarea,select')].every(f=>{const b=f.getBoundingClientRect();return b.left>=r.left&&b.right<=r.right;});}));assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:'/tmp/yata-feedback-phone.png'});await feedback.locator('[name=summary]').fill('Feedback input is visible');await feedback.locator('[name=details]').fill('This is a test draft; do not post.');await feedback.getByRole('button',{name:'Close',exact:true}).click();
+ await page.getByRole('button',{name:'Requests & bugs',exact:true}).click();assert.equal(await page.evaluate(()=>document.activeElement.name),'summary');await page.keyboard.press('Escape');
  await send('please make a channel of knight rider, GI joe, transformers, greatest american hero');
  assert.equal(await page.evaluate(()=>calls.plans.length),1);assert.equal(await page.evaluate(()=>calls.chats.length),0);assert.equal(await page.evaluate(()=>JSON.parse(calls.plans[0].shows).length),259);assert.equal(await page.evaluate(()=>calls.watch[0].ids.length),4);
  await page.getByRole('button',{name:'Make me a channel',exact:true}).click();await send('cartoons and action');assert.equal(await page.evaluate(()=>calls.plans.length),2);
