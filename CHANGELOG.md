@@ -9,6 +9,13 @@ User-visible changes to YATA web, Android and Arcade. Versioned dates use GitHub
 - Saved channel choices and personal queues remain local. Older apps keep a compatible feed with their existing categories.
 - Channel definitions and assignments publish together. Publication checks both reviewed revisions and reports a pending older-app feed repair explicitly. Anonymous analytics accepts only finite published channel identities.
 
+## Remote content update — 2026-11-21
+
+- 2026-11-21 remote content update: added 10 cult TV shows and 280 selected entries, including Firefly, Metalocalypse, Garth Marenghi’s Darkplace and Monty Python’s Flying Circus. Adult Swim sources open at the provider; no new APK is required.
+- Added Firefly, Metalocalypse, Garth Marenghi’s Darkplace, Lexx, Frisky Dingo, The Mighty Boosh, Look Around You, The IT Crowd, Spaced and Monty Python’s Flying Circus: 280 selected entries across 10 shows.
+- Both current and older-app catalog feeds are updated; no new APK is required. Adult Swim entries open at the provider. Source checks establish accessible bytes or official episode metadata, not full playback or all-region availability.
+- [Publication receipt and coverage](docs/catalog-updates/2026-11-21-cult-tv-published.md). Snuff Box and Toast of London remain pending.
+
 ## Remote content update — 2026-11-20
 
 - 2026-11-20 remote content update: added one FishCenter Live collection with 12 selected archived broadcasts in Comedy, including four dates explicitly billing Drew as replacement or guest host. Rotation remains balanced by show; no new channel or APK is required.
